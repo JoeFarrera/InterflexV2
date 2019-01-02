@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<DCContainer
+   id="PanelSgatipdocView1UIModel"
+   xmlns="http://xmlns.oracle.com/adfm/uimodel"
+   version="10.1.2.17.96"
+   Package="es.sysmap.interflex.view"
+   FindMode="true"
+   EnableTokenValidation="true" >
+   <Contents >
+      <DCIterator
+         id="SgatipdocView1Iter"
+         Binds="AppModuleDataControl.SgatipdocView1" >
+      </DCIterator>
+      <DCIterator
+         id="SgaTipMovView1Iter"
+         Binds="AppModuleDataControl.SgaTipMovView1"
+         RangeSize="10" >
+      </DCIterator>
+      <DCControl
+         id="Idtipdoc"
+         SubType="DCTextField"
+         IterBinding="SgatipdocView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Idtipdoc" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Descrip"
+         SubType="DCTextField"
+         IterBinding="SgatipdocView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Descrip" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Tipmov"
+         SubType="DCTextField"
+         IterBinding="SgatipdocView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Tipmov" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="DescTipmov"
+         DefClass="oracle.jbo.uicli.jui.JUComboBoxDef"
+         SubType="DCComboBox"
+         BindingClass="oracle.jbo.uicli.jui.JUComboBoxBinding"
+         IterBinding="SgatipdocView1Iter"
+         DTClass="oracle.adf.dt.objects.JUDTCtrlListLOV"
+         ApplyValidation="false"
+         isDynamic="false"
+         ListOperMode="0"
+         ListIter="SgaTipMovView1Iter" >
+         <AttrNames>
+            <Item Value="Tipmov" />
+         </AttrNames>
+         <ListAttrNames>
+            <Item Value="Value" />
+         </ListAttrNames>
+         <ListDisplayAttrNames>
+            <Item Value="Abbreviation" />
+         </ListDisplayAttrNames>
+      </DCControl>
+      <DCControl
+         id="Host"
+         SubType="DCTextField"
+         IterBinding="SgatipdocView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Host" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Host1"
+         DefClass="oracle.jbo.uicli.jui.JUButtonDef"
+         SubType="DCButton"
+         BindingClass="oracle.jbo.uicli.jui.JUButtonBinding"
+         IterBinding="SgatipdocView1Iter"
+         ApplyValidation="false"
+         isDynamic="false"
+         ListOperMode="0"
+         StaticList="true"
+         BoolVal="true" >
+         <AttrNames>
+            <Item Value="Host" />
+         </AttrNames>
+         <ValueList>
+            <Item Value="S" />
+            <Item Value="N" />
+         </ValueList>
+      </DCControl>
+   </Contents>
+</DCContainer>

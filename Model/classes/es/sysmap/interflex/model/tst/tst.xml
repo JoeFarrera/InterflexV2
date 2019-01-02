@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE JboPackage SYSTEM "jbo_03_01.dtd">
+
+<JboPackage
+   Name="tst"
+   SeparateXMLFiles="true"
+   PackageName="es.sysmap.interflex.model.tst" >
+   <DesignTime>
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_ejbPackage" Value="false" />
+   </DesignTime>
+   <Containee
+      Name="SgavdisponibleentradaView"
+      FullName="es.sysmap.interflex.model.tst.SgavdisponibleentradaView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgaventradaspendienteView"
+      FullName="es.sysmap.interflex.model.tst.SgaventradaspendienteView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgaventradaspendientedisponibleViewLink"
+      FullName="es.sysmap.interflex.model.tst.SgaventradaspendientedisponibleViewLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="TestAppModule"
+      FullName="es.sysmap.interflex.model.tst.TestAppModule"
+      ObjectType="AppModule" >
+   </Containee>
+   <Containee
+      Name="SgavsalidaspendienteView"
+      FullName="es.sysmap.interflex.model.tst.SgavsalidaspendienteView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgavexistenciadisponiblemldView"
+      FullName="es.sysmap.interflex.model.tst.SgavexistenciadisponiblemldView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgavsalidaspendientedisponibleViewLink"
+      FullName="es.sysmap.interflex.model.tst.SgavsalidaspendientedisponibleViewLink"
+      ObjectType="ViewLink" >
+   </Containee>
+</JboPackage>

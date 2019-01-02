@@ -1,0 +1,19 @@
+declare
+
+piddoc sgacdoc.iddoc%type;
+begin
+piddoc := 10;
+insert into sgacdoc (iddoc, idcabstr, idcabnum, numlineas, numbultos, estado, IDTIPDOC)
+values (piddoc, 'MICK', 10, 3, 0, 'N', 'SO');
+
+insert into sgaldoc (iddoc, idlin, cantot, canpen, canres, idart, idpuesto)
+values (piddoc, 1, 100, 100, 0, (select idart from sgaarticulo where idartif = 'BM00251'), 2);
+
+insert into sgaldoc (iddoc, idlin, cantot, canpen, canres, idart, idpuesto)
+values (piddoc, 2, 100, 100, 0, (select idart from sgaarticulo where idartif = 'BM00706'), 2);
+
+
+insert into sgaldoc (iddoc, idlin, cantot, canpen, canres, idart, idpuesto)
+values (piddoc, 3, 1000, 1000, 0, (select idart from sgaarticulo where idartif = 'TB40S'), 2);
+end;
+/

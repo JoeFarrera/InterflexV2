@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+
+<Entity
+   Name="Sgatipobulto"
+   DBObjectType="table"
+   DBObjectName="SGATIPOBULTO"
+   AliasName="Sgatipobulto"
+   BindingStyle="Oracle"
+   UseGlueCode="false"
+   RowClass="es.sysmap.interflex.model.bdc.SgatipobultoImpl" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_codeGenFlag2" Value="Access" />
+      <AttrArray Name="_publishEvents">
+      </AttrArray>
+   </DesignTime>
+   <Attribute
+      Name="Idtip"
+      IsNotNull="true"
+      Precision="18"
+      ColumnName="IDTIP"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="SGATIPOBULTO"
+      PrimaryKey="true" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="10" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Canlin"
+      IsNotNull="true"
+      Precision="11"
+      Scale="2"
+      ColumnName="CANLIN"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      TableName="SGATIPOBULTO"
+      PrimaryKey="true" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Largo"
+      Precision="6"
+      Scale="0"
+      ColumnName="LARGO"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      TableName="SGATIPOBULTO" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Ancho"
+      Precision="6"
+      Scale="0"
+      ColumnName="ANCHO"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      TableName="SGATIPOBULTO" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Alto"
+      Precision="6"
+      Scale="0"
+      ColumnName="ALTO"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      TableName="SGATIPOBULTO" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Peso"
+      Precision="10"
+      Scale="2"
+      ColumnName="PESO"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      TableName="SGATIPOBULTO" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </Attribute>
+   <AccessorAttribute
+      Name="Sgabulto"
+      Association="es.sysmap.interflex.model.bdc.SgabultoFk51274951815495Assoc"
+      AssociationEnd="es.sysmap.interflex.model.bdc.SgabultoFk51274951815495Assoc.Sgabulto"
+      AssociationOtherEnd="es.sysmap.interflex.model.bdc.SgabultoFk51274951815495Assoc.Sgatipobulto"
+      Type="oracle.jbo.RowIterator"
+      IsUpdateable="false" >
+   </AccessorAttribute>
+   <AccessorAttribute
+      Name="Sgabulto1"
+      Association="es.sysmap.interflex.model.bdc.SgabultoFk51274951815495Assoc1"
+      AssociationEnd="es.sysmap.interflex.model.bdc.SgabultoFk51274951815495Assoc1.Sgabulto1"
+      AssociationOtherEnd="es.sysmap.interflex.model.bdc.SgabultoFk51274951815495Assoc1.Sgatipobulto1"
+      Type="oracle.jbo.RowIterator"
+      IsUpdateable="false" >
+   </AccessorAttribute>
+   <Key
+      Name="SgatipobultoPk" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgatipobulto.Idtip" />
+         <Item Value="es.sysmap.interflex.model.bdc.Sgatipobulto.Canlin" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SGATIPOBULTO_PK" />
+         <Attr Name="_isPrimary" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC003981" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgatipobulto.Idtip" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C003981" />
+         <Attr Name="_checkCondition" Value="&#34;IDTIP&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC003984" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgatipobulto.Idtip" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C003984" />
+         <Attr Name="_checkCondition" Value="&#34;IDTIP&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC007765" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgatipobulto.Idtip" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C007765" />
+         <Attr Name="_checkCondition" Value="&#34;IDTIP&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC007822" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgatipobulto.Canlin" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C007822" />
+         <Attr Name="_checkCondition" Value="&#34;CANLIN&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+</Entity>

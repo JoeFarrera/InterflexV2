@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+
+<ViewObject
+   Name="SgavbultoView"
+   BindingStyle="Oracle"
+   CustomQuery="true"
+   RowClass="es.sysmap.interflex.model.dmc.SgavbultoViewRowImpl"
+   ComponentClass="es.sysmap.interflex.model.dmc.SgavbultoViewImpl"
+   MsgBundleClass="es.sysmap.interflex.model.dmc.common.SgavbultoViewRowImplMsgBundle"
+   RowInterface="es.sysmap.interflex.model.dmc.common.SgavbultoViewRow"
+   ClientRowProxyName="es.sysmap.interflex.model.dmc.client.SgavbultoViewRowClient"
+   UseGlueCode="false" >
+   <SQLQuery><![CDATA[
+select IDBULTO,
+	PESO,
+	IDDOC,
+	DETALLES,
+	IDPUESTO
+from sgavbulto
+   ]]></SQLQuery>
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_codeGenFlag2" Value="Access|Coll|Msg" />
+      <Attr Name="_isExpertMode" Value="true" />
+   </DesignTime>
+   <ViewAttribute
+      Name="Idbulto"
+      IsPersistent="false"
+      IsNotNull="true"
+      PrecisionRule="true"
+      Precision="6"
+      Scale="0"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      PrimaryKey="true"
+      AliasName="IDBULTO"
+      Expression="IDBULTO"
+      SQLType="NUMERIC" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Peso"
+      IsPersistent="false"
+      PrecisionRule="true"
+      Precision="9"
+      Scale="0"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      AliasName="PESO"
+      Expression="PESO"
+      SQLType="NUMERIC" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Iddoc"
+      IsPersistent="false"
+      IsNotNull="true"
+      PrecisionRule="true"
+      Precision="9"
+      Scale="0"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      PrimaryKey="true"
+      AliasName="IDDOC"
+      Expression="IDDOC"
+      SQLType="NUMERIC" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Detalles"
+      IsPersistent="false"
+      PrecisionRule="true"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      AliasName="DETALLES"
+      Expression="DETALLES"
+      SQLType="NUMERIC" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Estado"
+      IsUpdateable="false"
+      IsPersistent="false"
+      PrecisionRule="true"
+      Precision="1"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="VIEW_ATTR"
+      SQLType="VARCHAR" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Idpuesto"
+      IsPersistent="false"
+      PrecisionRule="true"
+      Precision="2"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="IDPUESTO"
+      Expression="IDPUESTO"
+      SQLType="VARCHAR" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Descestado"
+      IsUpdateable="false"
+      IsPersistent="false"
+      PrecisionRule="true"
+      Precision="15"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="DESCESTADO"
+      SQLType="VARCHAR" >
+   </ViewAttribute>
+   <AttrArray Name="KeyAttributes">
+      <Item Value="Idbulto" />
+      <Item Value="Iddoc" />
+   </AttrArray>
+   <ViewLinkAccessor
+      Name="SgavldocEntradesView"
+      ViewLink="es.sysmap.interflex.model.dmc.SgavbultovldocentradesLink"
+      Type="oracle.jbo.RowIterator"
+      IsUpdateable="false" >
+   </ViewLinkAccessor>
+   <ViewLinkAccessor
+      Name="SgaldocEntradesView"
+      ViewLink="es.sysmap.interflex.model.dmc.SgavbultoLdocViewLink"
+      Type="oracle.jbo.Row"
+      IsUpdateable="false" >
+   </ViewLinkAccessor>
+</ViewObject>

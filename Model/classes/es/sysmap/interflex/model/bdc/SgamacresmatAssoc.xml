@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE Association SYSTEM "jbo_03_01.dtd">
+
+<Association
+   Name="SgamacresmatAssoc" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.2.17.96" />
+   </DesignTime>
+   <AssociationEnd
+      Name="Sgamac1"
+      Cardinality="1"
+      Source="true"
+      Owner="es.sysmap.interflex.model.bdc.Sgamac"
+      LockTopContainer="false" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgamac.Idmac" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_aggregation" Value="0" />
+         <Attr Name="_isUpdateable" Value="true" />
+         <Attr Name="_finderName" Value="Sgamac1" />
+      </DesignTime>
+   </AssociationEnd>
+   <AssociationEnd
+      Name="SgaresmatMany"
+      Cardinality="-1"
+      Owner="es.sysmap.interflex.model.bdc.Sgaresmat" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaresmat.Idmac" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_aggregation" Value="0" />
+         <Attr Name="_isUpdateable" Value="true" />
+         <Attr Name="_finderName" Value="SgaresmatMany" />
+      </DesignTime>
+   </AssociationEnd>
+</Association>

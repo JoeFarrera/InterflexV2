@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<DCContainer
+   id="PanelSgavsumexistenciaView1UIModel"
+   xmlns="http://xmlns.oracle.com/adfm/uimodel"
+   version="10.1.2.17.96"
+   Package="es.sysmap.interflex.view"
+   FindMode="true"
+   EnableTokenValidation="true" >
+   <Contents >
+      <DCIterator
+         id="SgavsumexistenciaView1Iter"
+         Binds="AppModuleDataControl.SgavsumexistenciaView1"
+         RangeSize="1" >
+      </DCIterator>
+      <DCControl
+         id="Idartif"
+         SubType="DCTextField"
+         IterBinding="SgavsumexistenciaView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Idartif" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Descarticulo"
+         SubType="DCTextField"
+         IterBinding="SgavsumexistenciaView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Descarticulo" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Cantot"
+         SubType="DCTextField"
+         IterBinding="SgavsumexistenciaView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Cantot" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Canres"
+         SubType="DCTextField"
+         IterBinding="SgavsumexistenciaView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Canres" />
+         </AttrNames>
+      </DCControl>
+   </Contents>
+</DCContainer>

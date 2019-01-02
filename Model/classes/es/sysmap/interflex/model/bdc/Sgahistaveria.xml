@@ -1,0 +1,257 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+
+<Entity
+   Name="Sgahistaveria"
+   DBObjectType="table"
+   DBObjectName="SGAHISTAVERIA"
+   AliasName="Sgahistaveria"
+   BindingStyle="Oracle"
+   UseGlueCode="false"
+   RowClass="es.sysmap.interflex.model.bdc.SgahistaveriaImpl"
+   DefClass="es.sysmap.interflex.model.bdc.SgahistaveriaDefImpl" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_codeGenFlag2" Value="Init|Access|Def" />
+      <AttrArray Name="_publishEvents">
+      </AttrArray>
+   </DesignTime>
+   <Attribute
+      Name="Idaveria"
+      IsNotNull="true"
+      Precision="10"
+      Scale="0"
+      ColumnName="IDAVERIA"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      TableName="SGAHISTAVERIA"
+      PrimaryKey="true" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Idtraslo"
+      IsNotNull="true"
+      Precision="1"
+      Scale="0"
+      ColumnName="IDTRASLO"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      TableName="SGAHISTAVERIA" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Createdon"
+      IsUpdateable="while_insert"
+      ColumnName="CREATEDON"
+      Domain="es.sysmap.interflex.model.bdc.FlexiDate"
+      Type="es.sysmap.interflex.model.bdc.common.FlexiDate"
+      ColumnType="DATE"
+      SQLType="DATE"
+      TableName="SGAHISTAVERIA"
+      HistoryColumn="DateHistory" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="7" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Temps"
+      IsNotNull="true"
+      Precision="9"
+      Scale="0"
+      ColumnName="TEMPS"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      TableName="SGAHISTAVERIA" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Estado"
+      IsNotNull="true"
+      Precision="1"
+      ColumnName="ESTADO"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="SGAHISTAVERIA" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="1" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Ubiori"
+      Precision="6"
+      ColumnName="UBIORI"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="SGAHISTAVERIA" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="6" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Ubides"
+      Precision="6"
+      ColumnName="UBIDES"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="SGAHISTAVERIA" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="6" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Idord"
+      Precision="5"
+      Scale="0"
+      ColumnName="IDORD"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      TableName="SGAHISTAVERIA" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Pasilloactual"
+      IsNotNull="true"
+      Precision="1"
+      Scale="0"
+      ColumnName="PASILLOACTUAL"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      TableName="SGAHISTAVERIA" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Pasillodestino"
+      IsNotNull="true"
+      Precision="1"
+      Scale="0"
+      ColumnName="PASILLODESTINO"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      TableName="SGAHISTAVERIA" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Posubiori"
+      Precision="1"
+      Scale="0"
+      ColumnName="POSUBIORI"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      TableName="SGAHISTAVERIA" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Posubides"
+      Precision="1"
+      Scale="0"
+      ColumnName="POSUBIDES"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      TableName="SGAHISTAVERIA" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </Attribute>
+   <Key
+      Name="SgahistaveriaPk" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgahistaveria.Idaveria" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SGAHISTAVERIA_PK" />
+         <Attr Name="_isPrimary" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC007335" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgahistaveria.Idaveria" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C007335" />
+         <Attr Name="_checkCondition" Value="&#34;IDAVERIA&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC007336" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgahistaveria.Idtraslo" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C007336" />
+         <Attr Name="_checkCondition" Value="&#34;IDTRASLO&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC007338" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgahistaveria.Temps" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C007338" />
+         <Attr Name="_checkCondition" Value="&#34;TEMPS&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC007339" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgahistaveria.Estado" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C007339" />
+         <Attr Name="_checkCondition" Value="&#34;ESTADO&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC007340" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgahistaveria.Pasilloactual" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C007340" />
+         <Attr Name="_checkCondition" Value="&#34;PASILLOACTUAL&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC007341" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgahistaveria.Pasillodestino" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C007341" />
+         <Attr Name="_checkCondition" Value="&#34;PASILLODESTINO&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+</Entity>

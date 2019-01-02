@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE Association SYSTEM "jbo_03_01.dtd">
+
+<Association
+   Name="SysC0012520Assoc" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.2.17.96" />
+   </DesignTime>
+   <AssociationEnd
+      Name="Sgalbulto"
+      Cardinality="1"
+      Source="true"
+      Owner="es.sysmap.interflex.model.bdc.Sgalbulto" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgalbulto.Iddoc" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_minCardinality" Value="1" />
+         <Attr Name="_aggregation" Value="0" />
+         <Attr Name="_isUpdateable" Value="true" />
+         <Attr Name="_finderName" Value="Sgalbulto" />
+         <Attr Name="_foreignKey" Value="es.sysmap.interflex.model.bdc.Sgalbulto.SysC0012412" />
+      </DesignTime>
+   </AssociationEnd>
+   <AssociationEnd
+      Name="Sgaexistencia"
+      Cardinality="-1"
+      Owner="es.sysmap.interflex.model.bdc.Sgaexistencia" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaexistencia.Idmac" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_aggregation" Value="0" />
+         <Attr Name="_isUpdateable" Value="true" />
+         <Attr Name="_finderName" Value="Sgaexistencia" />
+         <Attr Name="_foreignKey" Value="es.sysmap.interflex.model.bdc.Sgaexistencia.SysC0012520" />
+      </DesignTime>
+   </AssociationEnd>
+</Association>

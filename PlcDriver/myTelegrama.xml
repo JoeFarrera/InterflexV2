@@ -1,0 +1,21 @@
+<Telegrama idTelegrama="1234" lenTelegrama="68">
+   <valor id="tipoTel" index="1" len="4" tipo="str">MOVI</valor>
+   <valor id="lenDatos" index="5" len="2" tipo="int">48</valor>
+   <Detalles>
+      <valor id="numMovimiento" index="20" len="4" tipo="int">1234</valor>
+      <valor id="origen" index="24" len="2" tipo="int">11<valor id="lado" index="26" len="1" tipo="byte">1</valor><valor id="columna" index="27" len="1" tipo="byte">12</valor><valor id="nivel" index="28" len="1" tipo="byte">13</valor><valor id="posUbicacion" index="29" len="1" tipo="byte">2</valor></valor>
+      <valor id="destino" index="30" len="2" tipo="int">55<valor id="lado" index="32" len="1" tipo="byte">1</valor><valor id="columna" index="33" len="1" tipo="byte">1</valor><valor id="nivel" index="34" len="1" tipo="byte">2</valor><valor id="posUbicacion" index="35" len="1" tipo="byte">3</valor></valor>
+      <valor id="tipCarga" index="36" len="1" tipo="byte">1</valor>
+      <valor id="tipMov" index="37" len="1" tipo="byte">1</valor>
+      <valor id="pesTeorico" index="38" len="2" tipo="int">123</valor>
+      <valor id="pesReal" index="40" len="2" tipo="int">-56</valor>
+      <valor id="tolPeso" index="42" len="1" tipo="byte">22</valor>
+      <valor id="numCargas" index="43" len="1" tipo="byte">1</valor>
+      <valor id="numLote" index="44" len="2" tipo="int">0</valor>
+      <valor id="posAct" index="46" len="2" tipo="int">21</valor>
+      <valor id="codError" index="48" len="1" tipo="byte">33</valor>
+      <valor id="estadoOrden" index="49" len="1" tipo="byte">6</valor>
+      <valor id="transelevador" index="50" len="1" tipo="byte">1</valor>
+      <valor id="matricula" index="52" len="10" tipo="str">1000000345</valor>
+   </Detalles>
+</Telegrama>

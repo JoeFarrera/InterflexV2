@@ -1,0 +1,27 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BC4JConfig>
+   <AppModuleConfigBag>
+      <AppModuleConfig name="AppModuleLocal">
+         <jbo.sql92.JdbcDriverClass>net.sourceforge.jtds.jdbc.Driver</jbo.sql92.JdbcDriverClass>
+         <ApplicationName>es.sysmap.interflex.modelrps.dmc.AppModule</ApplicationName>
+         <AppModuleJndiName>es.sysmap.interflex.modelrps.dmc.AppModule</AppModuleJndiName>
+         <JDBCName>ERPS</JDBCName>
+         <jbo.project>ModelRps</jbo.project>
+         <DeployPlatform>LOCAL</DeployPlatform>
+         <jbo.SQLBuilder>SQL92</jbo.SQLBuilder>
+         <jbo.TypeMapEntries>Java</jbo.TypeMapEntries>
+      </AppModuleConfig>
+   </AppModuleConfigBag>
+   <ConnectionDefinition name="ERPS">
+      <ENTRY name="URL" value="jdbc:jtds:sqlserver://srverps:1433/INTERFLEX;user=admusr;password=ADMUSR;"/>
+      <ENTRY name="ConnectionName" value="ERPS"/>
+      <ENTRY name="user" value="admusr"/>
+      <ENTRY name="ConnectionType" value="OTHER_JDBC"/>
+      <ENTRY name="password">
+         <![CDATA[{904}05FDB716349AD0F4D9EBB76AED67248F52]]>
+      </ENTRY>
+      <ENTRY name="DeployPassword" value="true"/>
+      <ENTRY name="JdbcDriver" value="net.sourceforge.jtds.jdbc.Driver"/>
+      <ENTRY name="DeployPassword" value="true"/>
+   </ConnectionDefinition>
+</BC4JConfig>

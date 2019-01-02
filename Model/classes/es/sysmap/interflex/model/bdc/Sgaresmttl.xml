@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+
+<Entity
+   Name="Sgaresmttl"
+   DBObjectType="table"
+   DBObjectName="SGARESMATTL"
+   AliasName="Sgaresmttl"
+   BindingStyle="Oracle"
+   UseGlueCode="false"
+   RowClass="es.sysmap.interflex.model.bdc.SgaresmttlImpl"
+   DefClass="es.sysmap.interflex.model.bdc.SgaresmttlDefImpl" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_codeGenFlag2" Value="Access|Def" />
+      <AttrArray Name="_publishEvents">
+      </AttrArray>
+   </DesignTime>
+   <Attribute
+      Name="Iddoc"
+      IsNotNull="true"
+      Precision="9"
+      Scale="0"
+      ColumnName="IDDOC"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      TableName="SGARESMATTL"
+      PrimaryKey="true" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Idmac"
+      IsNotNull="true"
+      Precision="12"
+      ColumnName="IDMAC"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="SGARESMATTL"
+      PrimaryKey="true" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="12" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Createdby"
+      IsUpdateable="while_insert"
+      Precision="10"
+      ColumnName="CREATEDBY"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="SGARESMATTL"
+      HistoryColumn="UserHistory" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="10" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Modifiedby"
+      Precision="10"
+      ColumnName="MODIFIEDBY"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="SGARESMATTL"
+      HistoryColumn="UserHistory" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="10" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Createdon"
+      IsUpdateable="while_insert"
+      ColumnName="CREATEDON"
+      Type="oracle.jbo.domain.Date"
+      ColumnType="DATE"
+      SQLType="DATE"
+      TableName="SGARESMATTL"
+      HistoryColumn="DateHistory" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="7" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Modifiedon"
+      ColumnName="MODIFIEDON"
+      Type="oracle.jbo.domain.Date"
+      ColumnType="DATE"
+      SQLType="DATE"
+      TableName="SGARESMATTL"
+      HistoryColumn="DateHistory" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="7" />
+      </DesignTime>
+   </Attribute>
+   <AccessorAttribute
+      Name="Sgacdoc"
+      Association="es.sysmap.interflex.model.bdc.SgacdocresmattlAssociation"
+      AssociationEnd="es.sysmap.interflex.model.bdc.SgacdocresmattlAssociation.Sgacdoc"
+      AssociationOtherEnd="es.sysmap.interflex.model.bdc.SgacdocresmattlAssociation.Sgaresmttl"
+      Type="es.sysmap.interflex.model.bdc.SgacdocImpl" >
+   </AccessorAttribute>
+   <AccessorAttribute
+      Name="Sgamac"
+      Association="es.sysmap.interflex.model.bdc.SgaresmattlSgamacAssociation"
+      AssociationEnd="es.sysmap.interflex.model.bdc.SgaresmattlSgamacAssociation.Sgamac"
+      AssociationOtherEnd="es.sysmap.interflex.model.bdc.SgaresmattlSgamacAssociation.Sgaresmttl"
+      Type="es.sysmap.interflex.model.bdc.SgamacImpl" >
+   </AccessorAttribute>
+   <ViewLinkAccessor
+      Name="SgacdocTL"
+      ViewLink="es.sysmap.interflex.model.dmc.SgacdocTLResmatTLViewLink"
+      ViewLinkEnd="es.sysmap.interflex.model.dmc.SgacdocTLResmatTLViewLink.SgacdocTL"
+      ViewLinkOtherEnd="es.sysmap.interflex.model.dmc.SgacdocTLResmatTLViewLink.SgaresmttlView"
+      Type="oracle.jbo.RowIterator"
+      IsUpdateable="false" >
+   </ViewLinkAccessor>
+   <Key
+      Name="SgaresmttlPrimaryKey" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaresmttl.Iddoc" />
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaresmttl.Idmac" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SGARESMTTL_PRIMARY_KEY" />
+         <Attr Name="_isPrimary" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0026520" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaresmttl.Iddoc" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0026520" />
+         <Attr Name="_checkCondition" Value="&#34;IDDOC&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0026522" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaresmttl.Idmac" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0026522" />
+         <Attr Name="_checkCondition" Value="&#34;IDMAC&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SgacdocIddocFk" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaresmttl.Iddoc" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SGACDOC_IDDOC_FK" />
+         <Attr Name="_referencedKey" Value="SYS_C0026265" />
+         <Attr Name="_isForeign" Value="true" />
+      </DesignTime>
+   </Key>
+</Entity>

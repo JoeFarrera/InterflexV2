@@ -1,0 +1,495 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+
+<Entity
+   Name="Sgahistordtran"
+   DBObjectType="table"
+   DBObjectName="SGAHISTORDTRAN"
+   AliasName="Sgahistordtran"
+   BindingStyle="Oracle"
+   UseGlueCode="false"
+   RowClass="es.sysmap.interflex.model.bdc.SgahistordtranImpl"
+   DefClass="es.sysmap.interflex.model.bdc.SgahistordtranDefImpl"
+   MsgBundleClass="es.sysmap.interflex.model.bdc.common.SgahistordtranImplMsgBundle" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_codeGenFlag2" Value="Init|Access|Def|Msg" />
+      <AttrArray Name="_publishEvents">
+      </AttrArray>
+   </DesignTime>
+   <Attribute
+      Name="Idhistord"
+      IsNotNull="true"
+      Precision="10"
+      Scale="0"
+      ColumnName="IDHISTORD"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      TableName="SGAHISTORDTRAN"
+      PrimaryKey="true" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Estado"
+      IsNotNull="true"
+      Precision="1"
+      ColumnName="ESTADO"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="SGAHISTORDTRAN" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="1" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Idord"
+      IsNotNull="true"
+      Precision="5"
+      Scale="0"
+      ColumnName="IDORD"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      TableName="SGAHISTORDTRAN" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Idtip"
+      IsNotNull="true"
+      Precision="1"
+      ColumnName="IDTIP"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="SGAHISTORDTRAN" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="1" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Estadofin"
+      Precision="1"
+      ColumnName="ESTADOFIN"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="SGAHISTORDTRAN" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="1" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Idmac"
+      IsNotNull="true"
+      Precision="12"
+      ColumnName="IDMAC"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="SGAHISTORDTRAN" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="12" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Idordreubic"
+      Precision="5"
+      Scale="0"
+      ColumnName="IDORDREUBIC"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      TableName="SGAHISTORDTRAN" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Createdby"
+      IsUpdateable="while_insert"
+      Precision="10"
+      ColumnName="CREATEDBY"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="SGAHISTORDTRAN"
+      HistoryColumn="UserHistory" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="10" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Createdon"
+      IsUpdateable="while_insert"
+      ColumnName="CREATEDON"
+      Domain="es.sysmap.interflex.model.bdc.FlexiDate"
+      Type="es.sysmap.interflex.model.bdc.common.FlexiDate"
+      ColumnType="DATE"
+      SQLType="DATE"
+      TableName="SGAHISTORDTRAN"
+      HistoryColumn="DateHistory" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="7" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Modifiedby"
+      Precision="10"
+      ColumnName="MODIFIEDBY"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="SGAHISTORDTRAN"
+      HistoryColumn="UserHistory" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="10" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Modifiedon"
+      ColumnName="MODIFIEDON"
+      Domain="es.sysmap.interflex.model.bdc.FlexiDate"
+      Type="es.sysmap.interflex.model.bdc.common.FlexiDate"
+      ColumnType="DATE"
+      SQLType="DATE"
+      TableName="SGAHISTORDTRAN"
+      HistoryColumn="DateHistory" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="7" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Coderror"
+      IsNotNull="true"
+      DefaultValue="0"
+      Precision="2"
+      Scale="0"
+      ColumnName="CODERROR"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      TableName="SGAHISTORDTRAN" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Idtrasloini"
+      Precision="1"
+      Scale="0"
+      ColumnName="IDTRASLOINI"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      TableName="SGAHISTORDTRAN" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Ubiori"
+      IsNotNull="true"
+      Precision="6"
+      ColumnName="UBIORI"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="SGAHISTORDTRAN" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="6" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Posubiori"
+      Precision="1"
+      Scale="0"
+      ColumnName="POSUBIORI"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      TableName="SGAHISTORDTRAN" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Ubidesini"
+      Precision="6"
+      ColumnName="UBIDESINI"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="SGAHISTORDTRAN" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="6" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Posubidesini"
+      Precision="1"
+      Scale="0"
+      ColumnName="POSUBIDESINI"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      TableName="SGAHISTORDTRAN" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Ubidesfin"
+      Precision="6"
+      ColumnName="UBIDESFIN"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="SGAHISTORDTRAN" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="6" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Posubidesfin"
+      Precision="1"
+      Scale="0"
+      ColumnName="POSUBIDESFIN"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      TableName="SGAHISTORDTRAN" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Idtraslofin"
+      Precision="1"
+      Scale="0"
+      ColumnName="IDTRASLOFIN"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      TableName="SGAHISTORDTRAN" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Fecasig"
+      ColumnName="FECASIG"
+      Domain="es.sysmap.interflex.model.bdc.FlexiDate"
+      Type="es.sysmap.interflex.model.bdc.common.FlexiDate"
+      ColumnType="DATE"
+      SQLType="DATE"
+      TableName="SGAHISTORDTRAN" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="7" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Fecfin"
+      ColumnName="FECFIN"
+      Domain="es.sysmap.interflex.model.bdc.FlexiDate"
+      Type="es.sysmap.interflex.model.bdc.common.FlexiDate"
+      ColumnType="DATE"
+      SQLType="DATE"
+      TableName="SGAHISTORDTRAN" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="7" />
+      </DesignTime>
+   </Attribute>
+   <AccessorAttribute
+      Name="SgaubicacionOri"
+      Association="es.sysmap.interflex.model.bdc.SgahistordtranUbiOriAssociation"
+      AssociationEnd="es.sysmap.interflex.model.bdc.SgahistordtranUbiOriAssociation.SgaubicacionOri"
+      AssociationOtherEnd="es.sysmap.interflex.model.bdc.SgahistordtranUbiOriAssociation.Sgahistordtran"
+      Type="es.sysmap.interflex.model.bdc.SgaubicacionImpl" >
+   </AccessorAttribute>
+   <AccessorAttribute
+      Name="SgaubicacionDes"
+      Association="es.sysmap.interflex.model.bdc.SgahistordtranUbiDesAssociation"
+      AssociationEnd="es.sysmap.interflex.model.bdc.SgahistordtranUbiDesAssociation.SgaubicacionDes"
+      AssociationOtherEnd="es.sysmap.interflex.model.bdc.SgahistordtranUbiDesAssociation.Sgahistordtran1"
+      Type="oracle.jbo.RowIterator"
+      IsUpdateable="false" >
+   </AccessorAttribute>
+   <AccessorAttribute
+      Name="SgaubicacionDesfin"
+      Association="es.sysmap.interflex.model.bdc.SgahistordtranUbiDesfinAssociation"
+      AssociationEnd="es.sysmap.interflex.model.bdc.SgahistordtranUbiDesfinAssociation.SgaubicacionDesfin"
+      AssociationOtherEnd="es.sysmap.interflex.model.bdc.SgahistordtranUbiDesfinAssociation.Sgahistordtran2"
+      Type="es.sysmap.interflex.model.bdc.SgaubicacionImpl" >
+   </AccessorAttribute>
+   <Key
+      Name="SgahistordtranPrimaryKey" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgahistordtran.Idhistord" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SGAHISTORDTRAN_PRIMARY_KEY" />
+         <Attr Name="_isPrimary" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0011867" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgahistordtran.Idord" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0011867" />
+         <Attr Name="_checkCondition" Value="&#34;IDORD&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0011868" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgahistordtran.Idtip" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0011868" />
+         <Attr Name="_checkCondition" Value="&#34;IDTIP&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0011870" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgahistordtran.Idmac" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0011870" />
+         <Attr Name="_checkCondition" Value="&#34;IDMAC&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0011871" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgahistordtran.Coderror" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0011871" />
+         <Attr Name="_checkCondition" Value="&#34;CODERROR&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0011876" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgahistordtran.Ubiori" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0011876" />
+         <Attr Name="_checkCondition" Value="&#34;UBIORI&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0011877" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgahistordtran.Idhistord" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0011877" />
+         <Attr Name="_checkCondition" Value="&#34;IDHISTORD&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0011879" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgahistordtran.Estado" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0011879" />
+         <Attr Name="_checkCondition" Value="&#34;ESTADO&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0012403" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgahistordtran.Idord" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0012403" />
+         <Attr Name="_checkCondition" Value="&#34;IDORD&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0012404" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgahistordtran.Idtip" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0012404" />
+         <Attr Name="_checkCondition" Value="&#34;IDTIP&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0012405" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgahistordtran.Idmac" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0012405" />
+         <Attr Name="_checkCondition" Value="&#34;IDMAC&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0012406" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgahistordtran.Coderror" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0012406" />
+         <Attr Name="_checkCondition" Value="&#34;CODERROR&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0012407" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgahistordtran.Ubiori" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0012407" />
+         <Attr Name="_checkCondition" Value="&#34;UBIORI&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0012408" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgahistordtran.Idhistord" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0012408" />
+         <Attr Name="_checkCondition" Value="&#34;IDHISTORD&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0012409" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgahistordtran.Estado" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0012409" />
+         <Attr Name="_checkCondition" Value="&#34;ESTADO&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+</Entity>

@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE AppModule SYSTEM "jbo_03_01.dtd">
+
+<AppModule
+   Name="TestAppModule"
+   ComponentClass="es.sysmap.interflex.model.tst.TestAppModuleImpl" >
+   <Properties>
+      <Property Name ="DATA_CONTROL_NAME" Value ="TestAppModuleDataControl" />
+   </Properties>
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_deployType" Value="0" />
+      <Attr Name="_ejbAppModule" Value="false" />
+   </DesignTime>
+   <ViewUsage
+      Name="SgavdisponibleentradaView1"
+      ViewObjectName="es.sysmap.interflex.model.tst.SgavdisponibleentradaView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaventradaspendienteView1"
+      ViewObjectName="es.sysmap.interflex.model.tst.SgaventradaspendienteView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavdisponibleentradaView2"
+      ViewObjectName="es.sysmap.interflex.model.tst.SgavdisponibleentradaView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaldocView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaldocView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgamacView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgamacView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgalbultoView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgalbultoView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavsalidaspendienteView1"
+      ViewObjectName="es.sysmap.interflex.model.tst.SgavsalidaspendienteView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavexistenciadisponiblemldView1"
+      ViewObjectName="es.sysmap.interflex.model.tst.SgavexistenciadisponiblemldView" >
+   </ViewUsage>
+   <ViewLinkUsage
+      Name="SgaventradaspendientedisponibleViewLink1"
+      ViewLinkObjectName="es.sysmap.interflex.model.tst.SgaventradaspendientedisponibleViewLink"
+      SrcViewUsageName="es.sysmap.interflex.model.tst.TestAppModule.SgaventradaspendienteView1"
+      DstViewUsageName="es.sysmap.interflex.model.tst.TestAppModule.SgavdisponibleentradaView2" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgavsalidaspendientedisponibleViewLink1"
+      ViewLinkObjectName="es.sysmap.interflex.model.tst.SgavsalidaspendientedisponibleViewLink"
+      SrcViewUsageName="es.sysmap.interflex.model.tst.TestAppModule.SgavsalidaspendienteView1"
+      DstViewUsageName="es.sysmap.interflex.model.tst.TestAppModule.SgavexistenciadisponiblemldView1" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+</AppModule>

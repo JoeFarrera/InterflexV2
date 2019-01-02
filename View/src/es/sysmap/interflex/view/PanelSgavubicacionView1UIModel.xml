@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<DCContainer
+   id="PanelSgavubicacionView1UIModel"
+   xmlns="http://xmlns.oracle.com/adfm/uimodel"
+   version="10.1.2.17.96"
+   Package="es.sysmap.interflex.view"
+   FindMode="false"
+   EnableTokenValidation="true" >
+   <Contents >
+      <DCIterator
+         id="SgavubicacionView1Iter"
+         Binds="AppModuleDataControl.SgavubicacionView1" >
+      </DCIterator>
+      <DCControl
+         id="SgavubicacionView1"
+         DefClass="oracle.jbo.uicli.jui.JUTableDef"
+         SubType="DCTable"
+         BindingClass="oracle.jbo.uicli.jui.JUTableBinding"
+         IterBinding="SgavubicacionView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Idubi" />
+            <Item Value="Descubi" />
+            <Item Value="Zona" />
+            <Item Value="Pasillo" />
+            <Item Value="Columna" />
+            <Item Value="Nivel" />
+            <Item Value="Lado" />
+            <Item Value="Desctipubi" />
+            <Item Value="Desctipalm" />
+            <Item Value="Rotacion" />
+            <Item Value="Descestado" />
+            <Item Value="Posicion" />
+            <Item Value="Descestadopos" />
+            <Item Value="Descaccesopos" />
+            <Item Value="Idmac" />
+         </AttrNames>
+      </DCControl>
+   </Contents>
+</DCContainer>

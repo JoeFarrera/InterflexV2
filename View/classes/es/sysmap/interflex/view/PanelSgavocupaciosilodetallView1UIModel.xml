@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<DCContainer
+   id="PanelSgavocupaciosilodetallView1UIModel"
+   xmlns="http://xmlns.oracle.com/adfm/uimodel"
+   version="10.1.2.17.96"
+   Package="es.sysmap.interflex.view"
+   FindMode="false"
+   EnableTokenValidation="true" >
+   <Contents >
+      <DCIterator
+         id="SgavocupaciosilodetallView1Iter"
+         Binds="AppModuleDataControl.SgavocupaciosilodetallView1" >
+      </DCIterator>
+      <DCControl
+         id="SgavocupaciosilodetallView1"
+         DefClass="oracle.jbo.uicli.jui.JUTableDef"
+         SubType="DCTable"
+         IterBinding="SgavocupaciosilodetallView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Pasillo" />
+            <Item Value="Ubicaciones" />
+            <Item Value="Posicions" />
+            <Item Value="Poslibre" />
+            <Item Value="Posocup" />
+            <Item Value="Posres" />
+            <Item Value="Pocupacio" />
+            <Item Value="Contotal" />
+            <Item Value="Conlibre" />
+            <Item Value="Conocup" />
+            <Item Value="Conres" />
+            <Item Value="Pconocupacio" />
+            <Item Value="Eptotal" />
+            <Item Value="Eplibre" />
+            <Item Value="Epocup" />
+            <Item Value="Epres" />
+            <Item Value="Pepocupacio" />
+            <Item Value="Jlatotal" />
+            <Item Value="Jlalibre" />
+            <Item Value="Jlaocup" />
+            <Item Value="Jlares" />
+            <Item Value="Pjlaocupacio" />
+         </AttrNames>
+      </DCControl>
+   </Contents>
+</DCContainer>

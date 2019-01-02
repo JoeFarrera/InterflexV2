@@ -1,0 +1,1236 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE JboPackage SYSTEM "jbo_03_01.dtd">
+
+<JboPackage
+   Name="dmc"
+   SeparateXMLFiles="true"
+   PackageName="es.sysmap.interflex.model.dmc" >
+   <Data>
+      <Property Name ="NAMESPACE_REFERENCE" Value ="1001::::BC4JContainer" />
+      <Property Name ="ID" Value ="eb49de55-0107-1000-8036-c0a8000180a3::dmc::BC4JPackage" />
+   </Data>
+   <DesignTime>
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_ejbPackage" Value="false" />
+   </DesignTime>
+   <Containee
+      Name="SgaarticuloView"
+      FullName="es.sysmap.interflex.model.dmc.SgaarticuloView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgabultoView"
+      FullName="es.sysmap.interflex.model.dmc.SgabultoView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgacdocView"
+      FullName="es.sysmap.interflex.model.dmc.SgacdocView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgaexistenciaView"
+      FullName="es.sysmap.interflex.model.dmc.SgaexistenciaView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgalbultoView"
+      FullName="es.sysmap.interflex.model.dmc.SgalbultoView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgaldocView"
+      FullName="es.sysmap.interflex.model.dmc.SgaldocView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgamacView"
+      FullName="es.sysmap.interflex.model.dmc.SgamacView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgaposicionubicacionView"
+      FullName="es.sysmap.interflex.model.dmc.SgaposicionubicacionView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgaresmatView"
+      FullName="es.sysmap.interflex.model.dmc.SgaresmatView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgatipdocView"
+      FullName="es.sysmap.interflex.model.dmc.SgatipdocView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgatipmactipubiView"
+      FullName="es.sysmap.interflex.model.dmc.SgatipmactipubiView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgatipoalmacenView"
+      FullName="es.sysmap.interflex.model.dmc.SgatipoalmacenView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgatipomacView"
+      FullName="es.sysmap.interflex.model.dmc.SgatipomacView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgatipoubicacionView"
+      FullName="es.sysmap.interflex.model.dmc.SgatipoubicacionView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SysC0010954Link"
+      FullName="es.sysmap.interflex.model.dmc.SysC0010954Link"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SysC0010962Link"
+      FullName="es.sysmap.interflex.model.dmc.SysC0010962Link"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SysC0010961Link"
+      FullName="es.sysmap.interflex.model.dmc.SysC0010961Link"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SysC0010965Link"
+      FullName="es.sysmap.interflex.model.dmc.SysC0010965Link"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SysC0010966Link"
+      FullName="es.sysmap.interflex.model.dmc.SysC0010966Link"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SysC0010955Link"
+      FullName="es.sysmap.interflex.model.dmc.SysC0010955Link"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SysC0010956Link"
+      FullName="es.sysmap.interflex.model.dmc.SysC0010956Link"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SysC0010959Link"
+      FullName="es.sysmap.interflex.model.dmc.SysC0010959Link"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SysC0010951Link"
+      FullName="es.sysmap.interflex.model.dmc.SysC0010951Link"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SysC0010953Link"
+      FullName="es.sysmap.interflex.model.dmc.SysC0010953Link"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SysC0010970Link"
+      FullName="es.sysmap.interflex.model.dmc.SysC0010970Link"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SysC0010971Link"
+      FullName="es.sysmap.interflex.model.dmc.SysC0010971Link"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SysC0010960Link"
+      FullName="es.sysmap.interflex.model.dmc.SysC0010960Link"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SysC0010973Link"
+      FullName="es.sysmap.interflex.model.dmc.SysC0010973Link"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SysC0010972Link"
+      FullName="es.sysmap.interflex.model.dmc.SysC0010972Link"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="AppModule"
+      FullName="es.sysmap.interflex.model.dmc.AppModule"
+      ObjectType="AppModule" >
+   </Containee>
+   <Containee
+      Name="TestTelegrama"
+      FullName="es.sysmap.interflex.model.dmc.TestTelegrama"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgaRefCodesView"
+      FullName="es.sysmap.interflex.model.dmc.SgaRefCodesView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgatipomaclovView"
+      FullName="es.sysmap.interflex.model.dmc.SgatipomaclovView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgaubicacionView"
+      FullName="es.sysmap.interflex.model.dmc.SgaubicacionView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SysC0010957Link"
+      FullName="es.sysmap.interflex.model.dmc.SysC0010957Link"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SysC0010958Link"
+      FullName="es.sysmap.interflex.model.dmc.SysC0010958Link"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SysC0010967Link"
+      FullName="es.sysmap.interflex.model.dmc.SysC0010967Link"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SysC0010968Link"
+      FullName="es.sysmap.interflex.model.dmc.SysC0010968Link"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgatipoubicacionlovView"
+      FullName="es.sysmap.interflex.model.dmc.SgatipoubicacionlovView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgaubicacionManualView"
+      FullName="es.sysmap.interflex.model.dmc.SgaubicacionManualView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgaubicacionMiniLoadView"
+      FullName="es.sysmap.interflex.model.dmc.SgaubicacionMiniLoadView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgaubicacionMiniLoadPosicionUbicacionLink"
+      FullName="es.sysmap.interflex.model.dmc.SgaubicacionMiniLoadPosicionUbicacionLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgaubicacionSiloView"
+      FullName="es.sysmap.interflex.model.dmc.SgaubicacionSiloView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgaubicacionPlcView"
+      FullName="es.sysmap.interflex.model.dmc.SgaubicacionPlcView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgaubicacionSiloPosicionUbicacionLink"
+      FullName="es.sysmap.interflex.model.dmc.SgaubicacionSiloPosicionUbicacionLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgavexistenciaView"
+      FullName="es.sysmap.interflex.model.dmc.SgavexistenciaView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgavsumexistenciaView"
+      FullName="es.sysmap.interflex.model.dmc.SgavsumexistenciaView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgavsumexistenciaLink"
+      FullName="es.sysmap.interflex.model.dmc.SgavsumexistenciaLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgavubicacionView"
+      FullName="es.sysmap.interflex.model.dmc.SgavubicacionView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgaordtranView"
+      FullName="es.sysmap.interflex.model.dmc.SgaordtranView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgaordtranSgaordtranFk1Link"
+      FullName="es.sysmap.interflex.model.dmc.SgaordtranSgaordtranFk1Link"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="Sgavmac2aposicionminiloadView"
+      FullName="es.sysmap.interflex.model.dmc.Sgavmac2aposicionminiloadView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgavubicacionlibreminiloadView"
+      FullName="es.sysmap.interflex.model.dmc.SgavubicacionlibreminiloadView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgaPuestoPickingView"
+      FullName="es.sysmap.interflex.model.dmc.SgaPuestoPickingView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgacdocEntradesView"
+      FullName="es.sysmap.interflex.model.dmc.SgacdocEntradesView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgavbultoView"
+      FullName="es.sysmap.interflex.model.dmc.SgavbultoView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgaldocEntradesView"
+      FullName="es.sysmap.interflex.model.dmc.SgaldocEntradesView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgapuestomanipView"
+      FullName="es.sysmap.interflex.model.dmc.SgapuestomanipView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgavcdocView"
+      FullName="es.sysmap.interflex.model.dmc.SgavcdocView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgavldocView"
+      FullName="es.sysmap.interflex.model.dmc.SgavldocView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgavcdocvldocLink"
+      FullName="es.sysmap.interflex.model.dmc.SgavcdocvldocLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgavldocEntradesView"
+      FullName="es.sysmap.interflex.model.dmc.SgavldocEntradesView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgavcdocvbultoLink"
+      FullName="es.sysmap.interflex.model.dmc.SgavcdocvbultoLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgavbultovldocentradesLink"
+      FullName="es.sysmap.interflex.model.dmc.SgavbultovldocentradesLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgaedocView"
+      FullName="es.sysmap.interflex.model.dmc.SgaedocView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgacdocedocLink"
+      FullName="es.sysmap.interflex.model.dmc.SgacdocedocLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgavedocView"
+      FullName="es.sysmap.interflex.model.dmc.SgavedocView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgavcdocvedocLink"
+      FullName="es.sysmap.interflex.model.dmc.SgavcdocvedocLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgacdocEntradesldocEntradesLink"
+      FullName="es.sysmap.interflex.model.dmc.SgacdocEntradesldocEntradesLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgavldocEntradesldocEntradesLink"
+      FullName="es.sysmap.interflex.model.dmc.SgavldocEntradesldocEntradesLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgauserView"
+      FullName="es.sysmap.interflex.model.dmc.SgauserView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SysC0010952Link"
+      FullName="es.sysmap.interflex.model.dmc.SysC0010952Link"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgaldocEntradesMacViewLink"
+      FullName="es.sysmap.interflex.model.dmc.SgaldocEntradesMacViewLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgamacExistentView"
+      FullName="es.sysmap.interflex.model.dmc.SgamacExistentView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgaTestEntradaView"
+      FullName="es.sysmap.interflex.model.dmc.SgaTestEntradaView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgacdocbultoLink"
+      FullName="es.sysmap.interflex.model.dmc.SgacdocbultoLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgacdocEntradesbultoLink"
+      FullName="es.sysmap.interflex.model.dmc.SgacdocEntradesbultoLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgabultoldocEntradesLink"
+      FullName="es.sysmap.interflex.model.dmc.SgabultoldocEntradesLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgatrasloView"
+      FullName="es.sysmap.interflex.model.dmc.SgatrasloView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgaordtranSgamacViewLink"
+      FullName="es.sysmap.interflex.model.dmc.SgaordtranSgamacViewLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgaTestMacView"
+      FullName="es.sysmap.interflex.model.dmc.SgaTestMacView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgaTestMacmacLink"
+      FullName="es.sysmap.interflex.model.dmc.SgaTestMacmacLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgamacubicacionposLink"
+      FullName="es.sysmap.interflex.model.dmc.SgamacubicacionposLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgamacubicaciondesLink"
+      FullName="es.sysmap.interflex.model.dmc.SgamacubicaciondesLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgavmacView"
+      FullName="es.sysmap.interflex.model.dmc.SgavmacView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgavmacvexistenciaLink"
+      FullName="es.sysmap.interflex.model.dmc.SgavmacvexistenciaLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgaresmatmacLink"
+      FullName="es.sysmap.interflex.model.dmc.SgaresmatmacLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgamacEnPuestoView"
+      FullName="es.sysmap.interflex.model.dmc.SgamacEnPuestoView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgaresmatOpManView"
+      FullName="es.sysmap.interflex.model.dmc.SgaresmatOpManView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgamacresmatOpManLink"
+      FullName="es.sysmap.interflex.model.dmc.SgamacresmatOpManLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgacdocSortidesView"
+      FullName="es.sysmap.interflex.model.dmc.SgacdocSortidesView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgacdocSortidesldocLink"
+      FullName="es.sysmap.interflex.model.dmc.SgacdocSortidesldocLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgacdocEntradesresmatLink"
+      FullName="es.sysmap.interflex.model.dmc.SgacdocEntradesresmatLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgacdocSortidesResmatLink"
+      FullName="es.sysmap.interflex.model.dmc.SgacdocSortidesResmatLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgavocupaciominiloaddetallView"
+      FullName="es.sysmap.interflex.model.dmc.SgavocupaciominiloaddetallView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgavocupaciosilodetallView"
+      FullName="es.sysmap.interflex.model.dmc.SgavocupaciosilodetallView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgaresmatOpManvldocLink"
+      FullName="es.sysmap.interflex.model.dmc.SgaresmatOpManvldocLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgahistexistView"
+      FullName="es.sysmap.interflex.model.dmc.SgahistexistView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgavhistexistView"
+      FullName="es.sysmap.interflex.model.dmc.SgavhistexistView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgaresmatOpManbultoLink"
+      FullName="es.sysmap.interflex.model.dmc.SgaresmatOpManbultoLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgatipomacSlolovView"
+      FullName="es.sysmap.interflex.model.dmc.SgatipomacSlolovView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgaarticulolovView"
+      FullName="es.sysmap.interflex.model.dmc.SgaarticulolovView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgavtrasloEntSal"
+      FullName="es.sysmap.interflex.model.dmc.SgavtrasloEntSal"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgavordtranpasillotrasloView"
+      FullName="es.sysmap.interflex.model.dmc.SgavordtranpasillotrasloView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="Sgavordtransalidacurso"
+      FullName="es.sysmap.interflex.model.dmc.Sgavordtransalidacurso"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgamacSenseReservaView"
+      FullName="es.sysmap.interflex.model.dmc.SgamacSenseReservaView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgavpuestomanipView"
+      FullName="es.sysmap.interflex.model.dmc.SgavpuestomanipView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgaventradasCandidateView"
+      FullName="es.sysmap.interflex.model.dmc.SgaventradasCandidateView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgaventradascandidateLbultoLink"
+      FullName="es.sysmap.interflex.model.dmc.SgaventradascandidateLbultoLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgaventradascandidateMacLink"
+      FullName="es.sysmap.interflex.model.dmc.SgaventradascandidateMacLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgavsalidascandidateView"
+      FullName="es.sysmap.interflex.model.dmc.SgavsalidascandidateView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgasalidascandidateSgamacViewLink"
+      FullName="es.sysmap.interflex.model.dmc.SgasalidascandidateSgamacViewLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgasalidascandidateSgaldocViewLink"
+      FullName="es.sysmap.interflex.model.dmc.SgasalidascandidateSgaldocViewLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgavordtranView"
+      FullName="es.sysmap.interflex.model.dmc.SgavordtranView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgahistordtranView"
+      FullName="es.sysmap.interflex.model.dmc.SgahistordtranView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgacdocSortidesBultoLink"
+      FullName="es.sysmap.interflex.model.dmc.SgacdocSortidesBultoLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgavhistordtranView"
+      FullName="es.sysmap.interflex.model.dmc.SgavhistordtranView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgavmacpendpuestomldView"
+      FullName="es.sysmap.interflex.model.dmc.SgavmacpendpuestomldView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgavmacpendpuestomldViewLink"
+      FullName="es.sysmap.interflex.model.dmc.SgavmacpendpuestomldViewLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgavubicacionlibreminiloadViewLink"
+      FullName="es.sysmap.interflex.model.dmc.SgavubicacionlibreminiloadViewLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgavmacpendpuestosloView"
+      FullName="es.sysmap.interflex.model.dmc.SgavmacpendpuestosloView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgavmacpendpuestosloViewLink"
+      FullName="es.sysmap.interflex.model.dmc.SgavmacpendpuestosloViewLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgavestadoentradaslomacView"
+      FullName="es.sysmap.interflex.model.dmc.SgavestadoentradaslomacView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgavestadoentradaslomacUbientViewLink"
+      FullName="es.sysmap.interflex.model.dmc.SgavestadoentradaslomacUbientViewLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgavposicionplcView"
+      FullName="es.sysmap.interflex.model.dmc.SgavposicionplcView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgavordtranVPosicionplcViewLink"
+      FullName="es.sysmap.interflex.model.dmc.SgavordtranVPosicionplcViewLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgavordtranpendtraslosloView"
+      FullName="es.sysmap.interflex.model.dmc.SgavordtranpendtraslosloView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgavordtranpendtraslosloOrdtranViewLink"
+      FullName="es.sysmap.interflex.model.dmc.SgavordtranpendtraslosloOrdtranViewLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgaarticuloExistView"
+      FullName="es.sysmap.interflex.model.dmc.SgaarticuloExistView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgabultoExistView"
+      FullName="es.sysmap.interflex.model.dmc.SgabultoExistView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgamovimientoView"
+      FullName="es.sysmap.interflex.model.dmc.SgamovimientoView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgastockView"
+      FullName="es.sysmap.interflex.model.dmc.SgastockView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgacdocExistView"
+      FullName="es.sysmap.interflex.model.dmc.SgacdocExistView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgatipmaclbultoView"
+      FullName="es.sysmap.interflex.model.dmc.SgatipmaclbultoView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgavubicacionlibresloView"
+      FullName="es.sysmap.interflex.model.dmc.SgavubicacionlibresloView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgavubicacionlibresloUbicacionposicionLink"
+      FullName="es.sysmap.interflex.model.dmc.SgavubicacionlibresloUbicacionposicionLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgavubicacionlibreminiloadSgaposicionubicacionLink"
+      FullName="es.sysmap.interflex.model.dmc.SgavubicacionlibreminiloadSgaposicionubicacionLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgamovimientoStockLink"
+      FullName="es.sysmap.interflex.model.dmc.SgamovimientoStockLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgavordtranpendtrasloextraView"
+      FullName="es.sysmap.interflex.model.dmc.SgavordtranpendtrasloextraView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgavestadoentradaslomacMacViewLink"
+      FullName="es.sysmap.interflex.model.dmc.SgavestadoentradaslomacMacViewLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgavestadoentradaslomacSgavubicacionlibresloViewLink"
+      FullName="es.sysmap.interflex.model.dmc.SgavestadoentradaslomacSgavubicacionlibresloViewLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgavpasillocandidateView"
+      FullName="es.sysmap.interflex.model.dmc.SgavpasillocandidateView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgavmacSenseExistenciesView"
+      FullName="es.sysmap.interflex.model.dmc.SgavmacSenseExistenciesView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgavubicacionlibreslosinparamView"
+      FullName="es.sysmap.interflex.model.dmc.SgavubicacionlibreslosinparamView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgavbultoDispSortidaView"
+      FullName="es.sysmap.interflex.model.dmc.SgavbultoDispSortidaView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgaresmatOpManvbultoDispSortidaLink"
+      FullName="es.sysmap.interflex.model.dmc.SgaresmatOpManvbultoDispSortidaLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgavsummacSenseExistenciesView"
+      FullName="es.sysmap.interflex.model.dmc.SgavsummacSenseExistenciesView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgavsummacSenseExistenciesViewLink"
+      FullName="es.sysmap.interflex.model.dmc.SgavsummacSenseExistenciesViewLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgavdocsObertsView"
+      FullName="es.sysmap.interflex.model.dmc.SgavdocsObertsView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgavsalidasinasignarpuestoView"
+      FullName="es.sysmap.interflex.model.dmc.SgavsalidasinasignarpuestoView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgavsalidasinasignarpuestoLdocViewLink"
+      FullName="es.sysmap.interflex.model.dmc.SgavsalidasinasignarpuestoLdocViewLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgavsalidasinasignaralmacenView"
+      FullName="es.sysmap.interflex.model.dmc.SgavsalidasinasignaralmacenView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgavpuestomanipSalidasinasignaralmacenViewLink"
+      FullName="es.sysmap.interflex.model.dmc.SgavpuestomanipSalidasinasignaralmacenViewLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgavsalidasinasignaralmacenLdocViewLink"
+      FullName="es.sysmap.interflex.model.dmc.SgavsalidasinasignaralmacenLdocViewLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgavsalidascandidateNoUpdateView"
+      FullName="es.sysmap.interflex.model.dmc.SgavsalidascandidateNoUpdateView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgavldocunicalineaView"
+      FullName="es.sysmap.interflex.model.dmc.SgavldocunicalineaView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgavldocunicalineaLdocViewLink"
+      FullName="es.sysmap.interflex.model.dmc.SgavldocunicalineaLdocViewLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgavsalidascandidatemacpuestoView"
+      FullName="es.sysmap.interflex.model.dmc.SgavsalidascandidatemacpuestoView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgavsalidascandidatemacpuestoSgamacViewLink"
+      FullName="es.sysmap.interflex.model.dmc.SgavsalidascandidatemacpuestoSgamacViewLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgavsalidascandidatemacpuestoSgaldocViewLink"
+      FullName="es.sysmap.interflex.model.dmc.SgavsalidascandidatemacpuestoSgaldocViewLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgaventradaspendienteView"
+      FullName="es.sysmap.interflex.model.dmc.SgaventradaspendienteView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgapuestomanipUbicacionPpkSiloLink"
+      FullName="es.sysmap.interflex.model.dmc.SgapuestomanipUbicacionPpkSiloLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgapuestomanipUbicacionPpkMiniload"
+      FullName="es.sysmap.interflex.model.dmc.SgapuestomanipUbicacionPpkMiniload"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgavpasillosintrasloView"
+      FullName="es.sysmap.interflex.model.dmc.SgavpasillosintrasloView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgavubicacionInspeccionView"
+      FullName="es.sysmap.interflex.model.dmc.SgavubicacionInspeccionView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgavubicacionInspeccionExistenciesLink"
+      FullName="es.sysmap.interflex.model.dmc.SgavubicacionInspeccionExistenciesLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgavmovsusuariView"
+      FullName="es.sysmap.interflex.model.dmc.SgavmovsusuariView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgavmovscontenidorsView"
+      FullName="es.sysmap.interflex.model.dmc.SgavmovscontenidorsView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgavordtranpendtraslosalextraView"
+      FullName="es.sysmap.interflex.model.dmc.SgavordtranpendtraslosalextraView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="Sgadifstockhost"
+      FullName="es.sysmap.interflex.model.dmc.Sgadifstockhost"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgaubicacionmanlovView"
+      FullName="es.sysmap.interflex.model.dmc.SgaubicacionmanlovView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgaresmatmanView"
+      FullName="es.sysmap.interflex.model.dmc.SgaresmatmanView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgacdocSortidesResmatmanLink"
+      FullName="es.sysmap.interflex.model.dmc.SgacdocSortidesResmatmanLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgavsalidascandidateresmanView"
+      FullName="es.sysmap.interflex.model.dmc.SgavsalidascandidateresmanView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgavsalidascandidatemanualView"
+      FullName="es.sysmap.interflex.model.dmc.SgavsalidascandidatemanualView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgavsaldiascandidatemanualLdocViewLink"
+      FullName="es.sysmap.interflex.model.dmc.SgavsaldiascandidatemanualLdocViewLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgacdocSortidesresmanLocator"
+      FullName="es.sysmap.interflex.model.dmc.SgacdocSortidesresmanLocator"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgacdocSortidesresmanLocatorViewLink"
+      FullName="es.sysmap.interflex.model.dmc.SgacdocSortidesresmanLocatorViewLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgaresmatmanbultoLink"
+      FullName="es.sysmap.interflex.model.dmc.SgaresmatmanbultoLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgavmovsusuariresumView"
+      FullName="es.sysmap.interflex.model.dmc.SgavmovsusuariresumView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgaliniestreballadesView"
+      FullName="es.sysmap.interflex.model.dmc.SgaliniestreballadesView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgavsalidascandidatemanualExistenciaViewLink"
+      FullName="es.sysmap.interflex.model.dmc.SgavsalidascandidatemanualExistenciaViewLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgavresmanPendentsImprimirView"
+      FullName="es.sysmap.interflex.model.dmc.SgavresmanPendentsImprimirView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgapasilloView"
+      FullName="es.sysmap.interflex.model.dmc.SgapasilloView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgavarticulomodpesView"
+      FullName="es.sysmap.interflex.model.dmc.SgavarticulomodpesView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgagrantuserView"
+      FullName="es.sysmap.interflex.model.dmc.SgagrantuserView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgaroleView"
+      FullName="es.sysmap.interflex.model.dmc.SgaroleView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgauserRoleGrantedViewLink"
+      FullName="es.sysmap.interflex.model.dmc.SgauserRoleGrantedViewLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgaroleUserGrantedViewLink"
+      FullName="es.sysmap.interflex.model.dmc.SgaroleUserGrantedViewLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgaRoleNotGrantedView"
+      FullName="es.sysmap.interflex.model.dmc.SgaRoleNotGrantedView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgaetiquetaView"
+      FullName="es.sysmap.interflex.model.dmc.SgaetiquetaView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgacdocEtiquetaViewLink"
+      FullName="es.sysmap.interflex.model.dmc.SgacdocEtiquetaViewLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgaetiquetaExist"
+      FullName="es.sysmap.interflex.model.dmc.SgaetiquetaExist"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgamacPos44PendPesoView"
+      FullName="es.sysmap.interflex.model.dmc.SgamacPos44PendPesoView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgavordtranMLDAgrup"
+      FullName="es.sysmap.interflex.model.dmc.SgavordtranMLDAgrup"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgavcompararmanautoView"
+      FullName="es.sysmap.interflex.model.dmc.SgavcompararmanautoView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgaVTrasloTrasbordoView"
+      FullName="es.sysmap.interflex.model.dmc.SgaVTrasloTrasbordoView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgaochoaView"
+      FullName="es.sysmap.interflex.model.dmc.SgaochoaView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgatipobultoView"
+      FullName="es.sysmap.interflex.model.dmc.SgatipobultoView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgaRefCodesControlPesView"
+      FullName="es.sysmap.interflex.model.dmc.SgaRefCodesControlPesView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgatipobultoParamView"
+      FullName="es.sysmap.interflex.model.dmc.SgatipobultoParamView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgaredurView"
+      FullName="es.sysmap.interflex.model.dmc.SgaredurView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgaEntradaManualRF"
+      FullName="es.sysmap.interflex.model.dmc.SgaEntradaManualRF"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgaLiniaSalidaObert"
+      FullName="es.sysmap.interflex.model.dmc.SgaLiniaSalidaObert"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgavAgenciaTipoEnvio"
+      FullName="es.sysmap.interflex.model.dmc.SgavAgenciaTipoEnvio"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgavFormatosTipoEnvio"
+      FullName="es.sysmap.interflex.model.dmc.SgavFormatosTipoEnvio"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgaVAgenciaTipoEnvioFormatos"
+      FullName="es.sysmap.interflex.model.dmc.SgaVAgenciaTipoEnvioFormatos"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgacdocSortidesTipoEnvioViewLink"
+      FullName="es.sysmap.interflex.model.dmc.SgacdocSortidesTipoEnvioViewLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="ProdembalajesView"
+      FullName="es.sysmap.interflex.model.dmc.ProdembalajesView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="ProdembalajesreferenciaView"
+      FullName="es.sysmap.interflex.model.dmc.ProdembalajesreferenciaView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="ProdembalajesReferenciaViewLink"
+      FullName="es.sysmap.interflex.model.dmc.ProdembalajesReferenciaViewLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="ZTipoenvioView"
+      FullName="es.sysmap.interflex.model.dmc.ZTipoenvioView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="ZAgenciatipoenvioView"
+      FullName="es.sysmap.interflex.model.dmc.ZAgenciatipoenvioView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="AgenciaTipoEnvioViewLink"
+      FullName="es.sysmap.interflex.model.dmc.AgenciaTipoEnvioViewLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgavProdEmbalajesArticuloView"
+      FullName="es.sysmap.interflex.model.dmc.SgavProdEmbalajesArticuloView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgaArticuloProdEmbalajesViewLink"
+      FullName="es.sysmap.interflex.model.dmc.SgaArticuloProdEmbalajesViewLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgaexpedView"
+      FullName="es.sysmap.interflex.model.dmc.SgaexpedView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgaexpedbultoView"
+      FullName="es.sysmap.interflex.model.dmc.SgaexpedbultoView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgaexpedlbultoView"
+      FullName="es.sysmap.interflex.model.dmc.SgaexpedlbultoView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgaexpedExpedbultoViewLink"
+      FullName="es.sysmap.interflex.model.dmc.SgaexpedExpedbultoViewLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgaexpedbultoExpedlbultoViewLink"
+      FullName="es.sysmap.interflex.model.dmc.SgaexpedbultoExpedlbultoViewLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgaexpeddocView"
+      FullName="es.sysmap.interflex.model.dmc.SgaexpeddocView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgaexpedSgaexpeddocViewLink"
+      FullName="es.sysmap.interflex.model.dmc.SgaexpedSgaexpeddocViewLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgavexpeddocView"
+      FullName="es.sysmap.interflex.model.dmc.SgavexpeddocView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgaexpedvexpeddocViewLink"
+      FullName="es.sysmap.interflex.model.dmc.SgaexpedvexpeddocViewLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgavexpedbultoView"
+      FullName="es.sysmap.interflex.model.dmc.SgavexpedbultoView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgaexpedvexpedbultoViewLink"
+      FullName="es.sysmap.interflex.model.dmc.SgaexpedvexpedbultoViewLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgavexpedlbultoView"
+      FullName="es.sysmap.interflex.model.dmc.SgavexpedlbultoView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgavexpedbultovexpedlbultoViewLink"
+      FullName="es.sysmap.interflex.model.dmc.SgavexpedbultovexpedlbultoViewLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgavexpedbultoexpedbultoViewLink"
+      FullName="es.sysmap.interflex.model.dmc.SgavexpedbultoexpedbultoViewLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgaexpeddocCdocViewLink"
+      FullName="es.sysmap.interflex.model.dmc.SgaexpeddocCdocViewLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="Sgavexpeddocexpeddoc"
+      FullName="es.sysmap.interflex.model.dmc.Sgavexpeddocexpeddoc"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgaexpedlbultoSgaldocViewLink"
+      FullName="es.sysmap.interflex.model.dmc.SgaexpedlbultoSgaldocViewLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgazonamanView"
+      FullName="es.sysmap.interflex.model.dmc.SgazonamanView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgaubicacionManualZonamanViewLink"
+      FullName="es.sysmap.interflex.model.dmc.SgaubicacionManualZonamanViewLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgapasillomanualView"
+      FullName="es.sysmap.interflex.model.dmc.SgapasillomanualView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgacdocTLView"
+      FullName="es.sysmap.interflex.model.dmc.SgacdocTLView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgacdocTLExistView"
+      FullName="es.sysmap.interflex.model.dmc.SgacdocTLExistView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgavexistenciaTLView"
+      FullName="es.sysmap.interflex.model.dmc.SgavexistenciaTLView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgacdocTLvexistenciasTLViewLink"
+      FullName="es.sysmap.interflex.model.dmc.SgacdocTLvexistenciasTLViewLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgavbultoLdocViewLink"
+      FullName="es.sysmap.interflex.model.dmc.SgavbultoLdocViewLink"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="SgaRamonedaRutaView"
+      FullName="es.sysmap.interflex.model.dmc.SgaRamonedaRutaView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SgavubicacionRF"
+      FullName="es.sysmap.interflex.model.dmc.SgavubicacionRF"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="Sgavpasillomig"
+      FullName="es.sysmap.interflex.model.dmc.Sgavpasillomig"
+      ObjectType="ViewObject" >
+   </Containee>
+</JboPackage>

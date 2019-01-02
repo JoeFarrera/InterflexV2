@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<DCContainer
+   id="PanelSgaTestMacView1UIModel"
+   xmlns="http://xmlns.oracle.com/adfm/uimodel"
+   version="10.1.2.17.96"
+   Package="es.sysmap.interflex.view"
+   FindMode="false"
+   EnableTokenValidation="true" >
+   <Contents >
+      <DCIterator
+         id="SgaTestMacView1Iter"
+         Binds="AppModuleDataControl.SgaTestMacView1" >
+      </DCIterator>
+      <DCIterator
+         id="SgatipomacSlolovView1Iter"
+         Binds="AppModuleDataControl.SgatipomacSlolovView1"
+         RangeSize="10" >
+      </DCIterator>
+      <DCControl
+         id="Idmac"
+         SubType="DCTextField"
+         IterBinding="SgaTestMacView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Idmac" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Idtipmac"
+         SubType="DCTextField"
+         IterBinding="SgaTestMacView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Idtipmac" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Desctipmac"
+         DefClass="oracle.jbo.uicli.jui.JUComboBoxDef"
+         SubType="DCComboBox"
+         BindingClass="oracle.jbo.uicli.jui.JUComboBoxBinding"
+         IterBinding="SgaTestMacView1Iter"
+         DTClass="oracle.adf.dt.objects.JUDTCtrlListLOV"
+         ApplyValidation="false"
+         isDynamic="false"
+         ListOperMode="0"
+         ListIter="SgatipomacSlolovView1Iter" >
+         <AttrNames>
+            <Item Value="Idtipmac" />
+         </AttrNames>
+         <ListAttrNames>
+            <Item Value="Idtipmac" />
+         </ListAttrNames>
+         <ListDisplayAttrNames>
+            <Item Value="Descrip" />
+         </ListDisplayAttrNames>
+      </DCControl>
+   </Contents>
+</DCContainer>

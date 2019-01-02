@@ -1,0 +1,30 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BC4JConfig>
+   <AppModuleConfigBag>
+      <AppModuleConfig name="14694AC3819">
+         <ApplicationName>es.sysmap.interflex.modelrpsprod.dmc.AppModule</ApplicationName>
+         <java.naming.factory.initial>oracle.jbo.common.JboInitialContextFactory</java.naming.factory.initial>
+         <user>admusr</user>
+         <jbo.SQLBuilder>SQL92</jbo.SQLBuilder>
+         <jbo.TypeMapEntries>Java</jbo.TypeMapEntries>
+         <DBconnection>jdbc:jtds:sqlserver://srverps:1433/PRODUCCION;user=admusr;password=ADMUSR;</DBconnection>
+         <JDBCName>ERPS_PRODUCCION</JDBCName>
+         <jbo.project>ModelRpsProd</jbo.project>
+         <password>ADMUSR</password>
+         <DeployPlatform>LOCAL</DeployPlatform>
+         <jbo.sql92.JdbcDriverClass>net.sourceforge.jtds.jdbc.Driver</jbo.sql92.JdbcDriverClass>
+      </AppModuleConfig>
+   </AppModuleConfigBag>
+   <ConnectionDefinition name="ERPS_PRODUCCION">
+      <ENTRY name="ConnectionName" value="ERPS_PRODUCCION"/>
+      <ENTRY name="URL" value="jdbc:jtds:sqlserver://srverps:1433/PRODUCCION;user=admusr;password=ADMUSR;"/>
+      <ENTRY name="ConnectionType" value="OTHER_JDBC"/>
+      <ENTRY name="user" value="admusr"/>
+      <ENTRY name="password">
+         <![CDATA[{904}05CDE33D4C54BA3DD97329C3CE76D869DB]]>
+      </ENTRY>
+      <ENTRY name="DeployPassword" value="true"/>
+      <ENTRY name="JdbcDriver" value="net.sourceforge.jtds.jdbc.Driver"/>
+      <ENTRY name="DeployPassword" value="true"/>
+   </ConnectionDefinition>
+</BC4JConfig>

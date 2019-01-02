@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<DCContainer
+   id="PanelSgavordtranView1UIModel"
+   xmlns="http://xmlns.oracle.com/adfm/uimodel"
+   version="10.1.2.17.96"
+   Package="es.sysmap.interflex.view"
+   FindMode="false"
+   EnableTokenValidation="true" >
+   <Contents >
+      <DCIterator
+         id="SgavordtranView1Iterator1"
+         Binds="AppModuleDataControl.SgavordtranView1" >
+      </DCIterator>
+      <DCIterator
+         id="SgavposicionplcView1Iterator"
+         Binds="AppModuleDataControl.SgavposicionplcView1"
+         RangeSize="10" >
+      </DCIterator>
+      <DCControl
+         id="SgavordtranView1"
+         DefClass="oracle.jbo.uicli.jui.JUTableDef"
+         SubType="DCTable"
+         BindingClass="oracle.jbo.uicli.jui.JUTableBinding"
+         IterBinding="SgavordtranView1Iterator1"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Feccre" />
+            <Item Value="Idord" />
+            <Item Value="Idmac" />
+            <Item Value="DescripvisualPos" />
+            <Item Value="DescripvisualDes" />
+            <Item Value="Idtraslo" />
+            <Item Value="EstatOrd" />
+            <Item Value="Coderror" />
+            <Item Value="Idordreubic" />
+            <Item Value="EstadoOrd" />
+            <Item Value="EstadoMac" />
+            <Item Value="EstatCon" />
+            <Item Value="Ubipos" />
+            <Item Value="Posubipos" />
+            <Item Value="Ubides" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Ubipos"
+         DefClass="oracle.jbo.uicli.jui.JULovButtonDef"
+         SubType="DCLovButton"
+         BindingClass="oracle.jbo.uicli.jui.JULovButtonBinding"
+         IterBinding="SgavordtranView1Iterator1"
+         DTClass="oracle.adf.dt.objects.JUDTCtrlListLOV"
+         ApplyValidation="false"
+         isDynamic="false"
+         ListOperMode="0"
+         ListIter="SgavposicionplcView1Iterator" >
+         <AttrNames>
+            <Item Value="Ubipos" />
+         </AttrNames>
+         <ListAttrNames>
+            <Item Value="Idubi" />
+         </ListAttrNames>
+         <ListDisplayAttrNames>
+            <Item Value="Descrip" />
+            <Item Value="Posplc" />
+         </ListDisplayAttrNames>
+      </DCControl>
+      <DCControl
+         id="Ubides"
+         DefClass="oracle.jbo.uicli.jui.JULovButtonDef"
+         SubType="DCLovButton"
+         BindingClass="oracle.jbo.uicli.jui.JULovButtonBinding"
+         IterBinding="SgavordtranView1Iterator1"
+         DTClass="oracle.adf.dt.objects.JUDTCtrlListLOV"
+         ApplyValidation="false"
+         isDynamic="false"
+         ListOperMode="0"
+         ListIter="SgavposicionplcView1Iterator" >
+         <AttrNames>
+            <Item Value="Ubides" />
+         </AttrNames>
+         <ListAttrNames>
+            <Item Value="Idubi" />
+         </ListAttrNames>
+         <ListDisplayAttrNames>
+            <Item Value="Descrip" />
+            <Item Value="Posplc" />
+         </ListDisplayAttrNames>
+      </DCControl>
+   </Contents>
+</DCContainer>

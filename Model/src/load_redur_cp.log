@@ -1,0 +1,109 @@
+
+SQL*Loader: Release 9.2.0.1.0 - Production on Sáb Dic 24 13:21:32 2011
+
+Copyright (c) 1982, 2002, Oracle Corporation.  All rights reserved.
+
+Archivo de Control:   load_redur_cp.ctl
+Archivo de Datos:      e:\InterflexV2\dumps\CP.TXT
+  Archivo Defectuoso:     CP.bad
+  Desechar Archivo:  ninguno especificado
+ 
+ (Permitir todos los registros desechados)
+
+Número a cargar: ALL
+Número a ignorar: 0
+Errores permitidos: 50
+Matriz de enlace:     64 filas, máximo de 256000 bytes
+Continuación:    ninguno especificado
+Ruta de acceso utilizada:      Convencional
+
+Tabla SGAREDUR, cargada de cada registro lógico.
+Opción INSERT activa para esta tabla: INSERT
+
+   Nombre Columna               Posición   Long  Term Entorno Tipo de dato
+------------------------------ ---------- ----- ---- ---- ---------------------
+PLAZA                                 1:3     3           CHARACTER            
+COD_POSTAL                            5:9     5           CHARACTER            
+PROVINCIA                           15:17     3           CHARACTER            
+
+Registro 673: Rechazado - Error en tabla SGAREDUR.
+ORA-00001: restricción única (IFDBA.PK) violada
+
+Registro 1551: Rechazado - Error en tabla SGAREDUR.
+ORA-00001: restricción única (IFDBA.PK) violada
+
+Registro 2233: Rechazado - Error en tabla SGAREDUR.
+ORA-00001: restricción única (IFDBA.PK) violada
+
+Registro 2236: Rechazado - Error en tabla SGAREDUR.
+ORA-00001: restricción única (IFDBA.PK) violada
+
+Registro 2239: Rechazado - Error en tabla SGAREDUR.
+ORA-00001: restricción única (IFDBA.PK) violada
+
+Registro 2243: Rechazado - Error en tabla SGAREDUR.
+ORA-00001: restricción única (IFDBA.PK) violada
+
+Registro 4542: Rechazado - Error en tabla SGAREDUR.
+ORA-00001: restricción única (IFDBA.PK) violada
+
+Registro 4748: Rechazado - Error en tabla SGAREDUR.
+ORA-00001: restricción única (IFDBA.PK) violada
+
+Registro 5760: Rechazado - Error en tabla SGAREDUR.
+ORA-00001: restricción única (IFDBA.PK) violada
+
+Registro 5769: Rechazado - Error en tabla SGAREDUR.
+ORA-00001: restricción única (IFDBA.PK) violada
+
+Registro 5995: Rechazado - Error en tabla SGAREDUR.
+ORA-00001: restricción única (IFDBA.PK) violada
+
+Registro 7334: Rechazado - Error en tabla SGAREDUR.
+ORA-00001: restricción única (IFDBA.PK) violada
+
+Registro 7411: Rechazado - Error en tabla SGAREDUR.
+ORA-00001: restricción única (IFDBA.PK) violada
+
+Registro 7977: Rechazado - Error en tabla SGAREDUR.
+ORA-00001: restricción única (IFDBA.PK) violada
+
+Registro 8163: Rechazado - Error en tabla SGAREDUR.
+ORA-00001: restricción única (IFDBA.PK) violada
+
+Registro 10247: Rechazado - Error en tabla SGAREDUR.
+ORA-00001: restricción única (IFDBA.PK) violada
+
+Registro 10255: Rechazado - Error en tabla SGAREDUR.
+ORA-00001: restricción única (IFDBA.PK) violada
+
+Registro 10279: Rechazado - Error en tabla SGAREDUR.
+ORA-00001: restricción única (IFDBA.PK) violada
+
+Registro 10318: Rechazado - Error en tabla SGAREDUR.
+ORA-00001: restricción única (IFDBA.PK) violada
+
+Registro 10361: Rechazado - Error en tabla SGAREDUR.
+ORA-00001: restricción única (IFDBA.PK) violada
+
+
+Tabla SGAREDUR:
+  11839 Filas se ha cargado correctamente.
+  20 Filas no cargada debido a errores de datos.
+  0 Filas no cargada porque todas las cláusulas WHEN han fallado.
+  0 Filas no cargada porque todos los campos eran nulos.
+
+
+Espacio asignado a matriz de enlace:             1280 bytes (64 filas)
+Bytes de buffer de lectura: 1048576
+
+Total de registros lógicos ignorados:          0
+Total de registros lógicos leídos:       11859
+Total de registros lógicos rechazados:        20
+Total de registros lógicos desechados:        0
+
+La ejecución empezó en Sáb Dic 24 13:21:32 2011
+La ejecución terminó en Sáb Dic 24 13:21:33 2011
+
+Tiempo transcurrido:     00:00:01.64
+Tiempo de CPU:         00:00:00.06

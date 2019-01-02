@@ -1,0 +1,5 @@
+<Menu>
+   <Seccio id="Operacions" tooltip="Operacions en llocs de treball" role="role">
+   	<Item id="Class" titol="Entrades" tooltip="Entrades magatzems" role="role">
+   </Seccio>
+</Menu>

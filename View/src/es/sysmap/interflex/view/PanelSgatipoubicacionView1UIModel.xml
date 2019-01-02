@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<DCContainer
+   id="PanelSgatipoubicacionView1UIModel"
+   xmlns="http://xmlns.oracle.com/adfm/uimodel"
+   version="10.1.2.17.96"
+   Package="es.sysmap.interflex.view"
+   FindMode="true"
+   EnableTokenValidation="true" >
+   <Contents >
+      <DCIterator
+         id="SgatipoubicacionView1Iter"
+         Binds="AppModuleDataControl.SgatipoubicacionView1" >
+      </DCIterator>
+      <DCControl
+         id="Idtipubi"
+         SubType="DCTextField"
+         IterBinding="SgatipoubicacionView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Idtipubi" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Descrip"
+         SubType="DCTextField"
+         IterBinding="SgatipoubicacionView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Descrip" />
+         </AttrNames>
+      </DCControl>
+   </Contents>
+</DCContainer>

@@ -1,0 +1,30 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BC4JConfig>
+   <AppModuleConfigBag>
+      <AppModuleConfig name="1033071F6A8">
+         <ApplicationName>es.sysmap.interflex.informix.AppModule</ApplicationName>
+         <java.naming.factory.initial>oracle.jbo.common.JboInitialContextFactory</java.naming.factory.initial>
+         <user>biosca</user>
+         <jbo.SQLBuilder>SQL92</jbo.SQLBuilder>
+         <jbo.TypeMapEntries>Java</jbo.TypeMapEntries>
+         <DBconnection>jdbc:informix-sqli://129.200.9.1:1526/sga:INFORMIXSERVER=se_interflex;</DBconnection>
+         <JDBCName>Interflex_informix</JDBCName>
+         <jbo.project>Informix</jbo.project>
+         <password>5465</password>
+         <DeployPlatform>LOCAL</DeployPlatform>
+         <jbo.sql92.JdbcDriverClass>com.informix.jdbc.IfxDriver</jbo.sql92.JdbcDriverClass>
+      </AppModuleConfig>
+   </AppModuleConfigBag>
+   <ConnectionDefinition name="Interflex_informix">
+      <ENTRY name="URL" value="jdbc:informix-sqli://129.200.9.1:1526/emp0009:INFORMIXSERVER=se_interflex;"/>
+      <ENTRY name="ConnectionName" value="Interflex_informix"/>
+      <ENTRY name="user" value="biosca"/>
+      <ENTRY name="ConnectionType" value="OTHER_JDBC"/>
+      <ENTRY name="password">
+         <![CDATA[{904}051FD4E13BBBA59839553EFB9987FE21FB]]>
+      </ENTRY>
+      <ENTRY name="DeployPassword" value="true"/>
+      <ENTRY name="JdbcDriver" value="com.informix.jdbc.IfxDriver"/>
+      <ENTRY name="DeployPassword" value="true"/>
+   </ConnectionDefinition>
+</BC4JConfig>

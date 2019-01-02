@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<DCContainer
+   id="PanelSgaUbicacionMiniLoadView1UIModel"
+   xmlns="http://xmlns.oracle.com/adfm/uimodel"
+   version="10.1.2.17.96"
+   Package="es.sysmap.interflex.view"
+   FindMode="true"
+   EnableTokenValidation="true" >
+   <Contents >
+      <DCIterator
+         id="SgaubicacionMiniLoadView1Iter"
+         Binds="AppModuleDataControl.SgaubicacionMiniLoadView1" >
+      </DCIterator>
+      <DCControl
+         id="Idubi"
+         SubType="DCTextField"
+         IterBinding="SgaubicacionMiniLoadView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Idubi" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Idtipubi"
+         SubType="DCTextField"
+         IterBinding="SgaubicacionMiniLoadView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Idtipubi" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Columna"
+         SubType="DCTextField"
+         IterBinding="SgaubicacionMiniLoadView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Columna" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Nivel"
+         SubType="DCTextField"
+         IterBinding="SgaubicacionMiniLoadView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Nivel" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Lado"
+         SubType="DCTextField"
+         IterBinding="SgaubicacionMiniLoadView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Lado" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Rotacion"
+         SubType="DCTextField"
+         IterBinding="SgaubicacionMiniLoadView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Rotacion" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Descripvisual"
+         SubType="DCTextField"
+         IterBinding="SgaubicacionMiniLoadView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Descripvisual" />
+         </AttrNames>
+      </DCControl>
+   </Contents>
+</DCContainer>

@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+
+<ViewObject
+   Name="ProdembalajesreferenciaView"
+   SelectList="Prodembalajesreferencia.CODART, 
+       Prodembalajesreferencia.IDFORMATO, 
+       Prodembalajesreferencia.CANTIDAD, 
+       Prodembalajesreferencia.PREDET, 
+       Prodembalajesreferencia.UNIDADMEDIDA"
+   FromList="PRODEMBALAJESREFERENCIA Prodembalajesreferencia"
+   BindingStyle="Oracle"
+   CustomQuery="false"
+   RowClass="es.sysmap.interflex.model.dmc.ProdembalajesreferenciaViewRowImpl"
+   ComponentClass="es.sysmap.interflex.model.dmc.ProdembalajesreferenciaViewImpl"
+   MsgBundleClass="oracle.jbo.common.JboResourceBundle"
+   UseGlueCode="false" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_codeGenFlag2" Value="Access|Coll" />
+      <Attr Name="_isExpertMode" Value="false" />
+   </DesignTime>
+   <EntityUsage
+      Name="Prodembalajesreferencia"
+      Entity="es.sysmap.interflex.model.bdc.Prodembalajesreferencia" >
+      <DesignTime>
+         <Attr Name="_EntireObjectTable" Value="false" />
+         <Attr Name="_queryClause" Value="false" />
+      </DesignTime>
+   </EntityUsage>
+   <ViewAttribute
+      Name="Codart"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Codart"
+      EntityUsage="Prodembalajesreferencia"
+      AliasName="CODART" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Idformato"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Idformato"
+      EntityUsage="Prodembalajesreferencia"
+      AliasName="IDFORMATO" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Cantidad"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Cantidad"
+      EntityUsage="Prodembalajesreferencia"
+      AliasName="CANTIDAD" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Predet"
+      PrecisionRule="true"
+      EntityAttrName="Predet"
+      EntityUsage="Prodembalajesreferencia"
+      AliasName="PREDET" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Unidadmedida"
+      PrecisionRule="true"
+      EntityAttrName="Unidadmedida"
+      EntityUsage="Prodembalajesreferencia"
+      AliasName="UNIDADMEDIDA" >
+   </ViewAttribute>
+</ViewObject>

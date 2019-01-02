@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<DCContainer
+   id="PanelSgavmacSenseExistenciesView2UIModel"
+   xmlns="http://xmlns.oracle.com/adfm/uimodel"
+   version="10.1.2.17.96"
+   Package="es.sysmap.interflex.view"
+   FindMode="false"
+   EnableTokenValidation="true" >
+   <Contents >
+      <DCIterator
+         id="SgavmacSenseExistenciesView2Iter"
+         Binds="AppModuleDataControl.SgavmacSenseExistenciesView2" >
+      </DCIterator>
+      <DCControl
+         id="SgavmacSenseExistenciesView2"
+         DefClass="oracle.jbo.uicli.jui.JUTableDef"
+         SubType="DCTable"
+         IterBinding="SgavmacSenseExistenciesView2Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Idmac" />
+            <Item Value="Multiref" />
+            <Item Value="Idtipmac" />
+            <Item Value="Desctipmac" />
+            <Item Value="Estado" />
+            <Item Value="Descestmac" />
+            <Item Value="Ubipos" />
+            <Item Value="Descvisualpos" />
+            <Item Value="Posubipos" />
+            <Item Value="Ubides" />
+            <Item Value="Descvisualdes" />
+            <Item Value="Posubides" />
+            <Item Value="Idpasillo" />
+         </AttrNames>
+      </DCControl>
+   </Contents>
+</DCContainer>

@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE ViewLink SYSTEM "jbo_03_01.dtd">
+
+<ViewLink
+   Name="SgavsaldiascandidatemanualLdocViewLink" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.2.17.96" />
+   </DesignTime>
+   <ViewLinkDefEnd
+      Name="SgavsalidascandidatemanualView"
+      Cardinality="1"
+      Owner="es.sysmap.interflex.model.dmc.SgavsalidascandidatemanualView"
+      Source="true" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.dmc.SgavsalidascandidatemanualView.Iddoc" />
+         <Item Value="es.sysmap.interflex.model.dmc.SgavsalidascandidatemanualView.Idlin" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_isUpdateable" Value="true" />
+         <Attr Name="_finderName" Value="SgavsalidascandidatemanualView" />
+         <Attr Name="_accessor" Value="false" />
+      </DesignTime>
+   </ViewLinkDefEnd>
+   <ViewLinkDefEnd
+      Name="SgaldocView"
+      Cardinality="1"
+      Owner="es.sysmap.interflex.model.dmc.SgaldocView" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.dmc.SgaldocView.Iddoc" />
+         <Item Value="es.sysmap.interflex.model.dmc.SgaldocView.Idlin" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_minCardinality" Value="1" />
+         <Attr Name="_isUpdateable" Value="true" />
+         <Attr Name="_finderName" Value="SgaldocView" />
+         <Attr Name="_accessor" Value="true" />
+      </DesignTime>
+   </ViewLinkDefEnd>
+</ViewLink>

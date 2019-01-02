@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE ViewLink SYSTEM "jbo_03_01.dtd">
+
+<ViewLink
+   Name="SgacdoctlvresmattlViewLink" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.2.17.96" />
+   </DesignTime>
+   <ViewLinkDefEnd
+      Name="SgacdocTLView"
+      Cardinality="1"
+      Owner="es.sysmap.interflex.model.dmc.SgacdocTLView"
+      Source="true" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.dmc.SgacdocTLView.Iddoc" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_isUpdateable" Value="true" />
+         <Attr Name="_finderName" Value="SgacdocTLView" />
+         <Attr Name="_accessor" Value="true" />
+      </DesignTime>
+   </ViewLinkDefEnd>
+   <ViewLinkDefEnd
+      Name="SgavresmattlView"
+      Cardinality="-1"
+      Owner="es.sysmap.interflex.model.dmc.SgavresmattlView" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.dmc.SgavresmattlView.Iddoc" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_isUpdateable" Value="true" />
+         <Attr Name="_finderName" Value="SgavresmattlView" />
+         <Attr Name="_accessor" Value="true" />
+      </DesignTime>
+   </ViewLinkDefEnd>
+</ViewLink>

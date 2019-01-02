@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report Type="TabularSheet" ScriptLanguage="1" Top="1.0" Left="1.0" Bottom="1.0" Right="1.0" HeaderFromEdge="0.5" FooterFromEdge="0.75" PageNumbering="0" HorizontalWrap="true" PaperSize="8.5x11.0" Orientation="1" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0"
+ Prompting="true"><Version>7.0</Version>
+<ReportProperty Name="report.modified">
+<![CDATA[2015-03-02 11:10:09]]>
+</ReportProperty>
+<ReportProperty Name="TextMode">
+<![CDATA[false]]>
+</ReportProperty>
+<ReportProperty Name="live.edit">
+<![CDATA[false]]>
+</ReportProperty>
+<ReportProperty Name="edit.layout">
+<![CDATA[false]]>
+</ReportProperty>
+<ReportProperty Name="report.created">
+<![CDATA[2005-04-07 16:50:22]]>
+</ReportProperty>
+<Parameters>
+</Parameters>
+<ParameterSheets>
+</ParameterSheets>
+<RunningTotals>
+<RunningTotal
+ name="CANTOT_TOTAL" elementId="Section1" summaryColumn="CANTOT" formula="Sum&lt;0&gt;"/>
+<RunningTotal
+ name="PESO_TOTAL_TOTAL" elementId="Section1" summaryColumn="PESO_TOTAL" formula="Sum&lt;0&gt;"/>
+</RunningTotals>
+<dataViews>
+</dataViews>
+<datasource name="Interflex" type="jdbc">
+<ds_jdbc url="jdbc:oracle:thin:@servidormap2:1521:prod" driver="oracle.jdbc.driver.OracleDriver" requireLogin="true" transactionIsolation="-1" ansiJoin="false" user="ifdbatest" password="\pwd0327170d2f26303f11" tableTypes="TABLE,VIEW">
+<description>Connexió a Interflex</description>
+</ds_jdbc>
+</datasource>
+<query name="TotalBrut" type="jdbc" datasource="Interflex">
+<query_jdbc>
+<uniform_sql parse="true">
+<table>
+<alias><![CDATA[b]]></alias>
+<name><![CDATA[sgabulto]]></name>
+<issql><![CDATA[false]]></issql>
+<xlocation><![CDATA[-1]]></xlocation>
+<ylocation><![CDATA[-1]]></ylocation>
+<xScroll><![CDATA[0]]></xScroll>
+<yScroll><![CDATA[0]]></yScroll>
+</table>
+<column>
+<![CDATA[B.IDDOC]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[]]></type>
+<table><![CDATA[]]></table>
+</column>
+<column>
+<![CDATA[B.IDBULTO]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[]]></type>
+<table><![CDATA[]]></table>
+</column>
+<column>
+<![CDATA[B.PESOCONT]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[]]></type>
+<table><![CDATA[]]></table>
+</column>
+<column>
+<![CDATA[b.pesocont+(select sum(lb1.peso)+b.pesocont/count(*) from sgalbulto lb1 where lb1.iddoc = b.iddoc and lb1.idbulto = b.idbulto    )]]>
+<alias><![CDATA[PesoBrut]]></alias>
+<type><![CDATA[]]></type>
+<table><![CDATA[]]></table>
+</column>
+<where>
+</where>
+<sortby></sortby>
+<groupby></groupby>
+<having>
+</having>
+<sqlstring parseResult="0"><![CDATA[select b.iddoc, b.idbulto, b.pesocont, b.pesocont +  (select sum(lb1.peso) + b.pesocont/count(*) from sgalbulto lb1 where lb1.iddoc = b.iddoc and lb1.idbulto = b.idbulto) PesoBrut
+from sgabulto b
+group by b.iddoc, b.idbulto, b.pesocont]]></sqlstring>
+</uniform_sql>
+<maxrows>0</maxrows>
+<timeout>0</timeout>
+<visible>true</visible>
+</query_jdbc>
+</query>
+<Header Type="512">
+<TextElement ID="Text41" Alignment="65" Indent="2.5" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-PLAIN-10" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<![CDATA[Página {P} de {N}]]>
+</TextElement>
+</Header>
+<Shapes>
+</Shapes>
+<Grid Rows="1" Cols="1">
+<GR Height="515">
+<GD Width="468.0" Repeat="false">
+<SectionElement ID="Section1" Alignment="1" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-BOLD-8" Foreground="-16777216" AdhocEnabled="true">
+<property><name><![CDATA[gen.table]]></name><value><![CDATA[false]]></value></property>
+<property><name><![CDATA[grow]]></name><value><![CDATA[true]]></value></property>
+<property><name><![CDATA[suppress.blank]]></name><value><![CDATA[false]]></value></property>
+<property><name><![CDATA[gen.textbox]]></name><value><![CDATA[false]]></value></property>
+<property><name><![CDATA[field.name]]></name><value><![CDATA[true]]></value></property>
+<property><name><![CDATA[gen.hgap]]></name><value><![CDATA[4]]></value></property>
+<property><name><![CDATA[gen.notGen]]></name><value><![CDATA[true]]></value></property>
+<property><name><![CDATA[gen.removeAll]]></name><value><![CDATA[false]]></value></property>
+<property><name><![CDATA[gen.layout]]></name><value><![CDATA[1]]></value></property>
+<property><name><![CDATA[gen.vgap]]></name><value><![CDATA[2]]></value></property>
+<bindingAttr type="3" class="BindingAttr">
+<filter class="SourceAttr" type="0" source="sgavpackinglistexped_exp" prefix="Interflex">
+</filter>
+<filter class="ConditionAttr" >
+<conditions>
+</conditions>
+</filter>
+<filter class="GroupAttr" sorted="false" >
+<aggregates>
+<dataRef class="inetsoft.report.internal.binding.AggregateField" formula ="Sum&lt;0&gt;" ><dataRef class="inetsoft.report.internal.binding.BaseField" attribute="CANTOT" visible="true" dataType="string" order="0" ></dataRef>
+</dataRef>
+<dataRef class="inetsoft.report.internal.binding.AggregateField" formula ="Sum" ><dataRef class="inetsoft.report.internal.binding.BaseField" attribute="PESO" visible="true" dataType="string" order="0" ></dataRef>
+</dataRef>
+</aggregates>
+<groups>
+<group summarize="true">
+<dataRef class="inetsoft.report.internal.binding.CompositeField" attribute="" visible="true" dataType="string" order="0" ><dataRef class="inetsoft.report.internal.binding.BaseField" attribute="IDBULTO" visible="true" dataType="string" order="0" ></dataRef>
+</dataRef>
+<groupSort sort="1" interval="1.0" option="1" others="1"><otherLabel><![CDATA[Others]]></otherLabel>
+</groupSort>
+<topn class="TopNInfo" topN="0" topNReverse="false" summaryColumn="-1" >
+</topn>
+</group>
+<group summarize="true">
+<dataRef class="inetsoft.report.internal.binding.CompositeField" attribute="" visible="true" dataType="string" order="0" ><dataRef class="inetsoft.report.internal.binding.BaseField" attribute="LARGO" visible="true" dataType="string" order="0" ></dataRef>
+</dataRef>
+<groupSort sort="1" interval="1.0" option="1" others="1"><otherLabel><![CDATA[Others]]></otherLabel>
+</groupSort>
+<topn class="TopNInfo" topN="0" topNReverse="false" summaryColumn="-1" >
+</topn>
+</group>
+<group summarize="true">
+<dataRef class="inetsoft.report.internal.binding.CompositeField" attribute="" visible="true" dataType="string" order="0" ><dataRef class="inetsoft.report.internal.binding.BaseField" attribute="ANCHO" visible="true" dataType="string" order="0" ></dataRef>
+</dataRef>
+<groupSort sort="1" interval="1.0" option="1" others="1"><otherLabel><![CDATA[Others]]></otherLabel>
+</groupSort>
+<topn class="TopNInfo" topN="0" topNReverse="false" summaryColumn="-1" >
+</topn>
+</group>
+<group summarize="true">
+<dataRef class="inetsoft.report.internal.binding.CompositeField" attribute="" visible="true" dataType="string" order="0" ><dataRef class="inetsoft.report.internal.binding.BaseField" attribute="ALTO" visible="true" dataType="string" order="0" ></dataRef>
+</dataRef>
+<groupSort sort="1" interval="1.0" option="1" others="1"><otherLabel><![CDATA[Others]]></otherLabel>
+</groupSort>
+<topn class="TopNInfo" topN="0" topNReverse="false" summaryColumn="-1" >
+</topn>
+</group>
+<group summarize="true">
+<dataRef class="inetsoft.report.internal.binding.CompositeField" attribute="" visible="true" dataType="string" order="0" ><dataRef class="inetsoft.report.internal.binding.BaseField" attribute="PESOCONT" visible="true" dataType="string" order="0" ></dataRef>
+</dataRef>
+<groupSort sort="1" interval="1.0" option="1" others="1"><otherLabel><![CDATA[Others]]></otherLabel>
+</groupSort>
+<topn class="TopNInfo" topN="0" topNReverse="false" summaryColumn="-1" >
+</topn>
+</group>
+<group summarize="true">
+<dataRef class="inetsoft.report.internal.binding.CompositeField" attribute="" visible="true" dataType="string" order="0" ><dataRef class="inetsoft.report.internal.binding.BaseField" attribute="PESO_TOTAL" visible="true" dataType="string" order="0" ></dataRef>
+</dataRef>
+<groupSort sort="1" interval="1.0" option="1" others="1"><otherLabel><![CDATA[Others]]></otherLabel>
+</groupSort>
+<topn class="TopNInfo" topN="0" topNReverse="false" summaryColumn="-1" >
+</topn>
+</group>
+</groups>
+</filter>
+<filter class="ColumnSelectionAttr" >
+<ColumnSelection>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="IDBULTO" visible="true" dataType="double" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="LARGO" visible="true" dataType="double" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="ANCHO" visible="true" dataType="double" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="ALTO" visible="true" dataType="double" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="PESOCONT" visible="true" dataType="double" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="PESO_TOTAL" visible="true" dataType="double" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="PESO" visible="true" dataType="double" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="IDEXPED" visible="true" dataType="double" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="IDCABSTR" visible="true" dataType="string" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="IDCABNUM" visible="true" dataType="string" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="FALBARAN" visible="true" dataType="string" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="IDARTIF" visible="true" dataType="string" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="DESCRIP" visible="true" dataType="string" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="CANTOT" visible="true" dataType="double" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="PESO_TOTAL_NETO" visible="true" dataType="double" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="NOM" visible="true" dataType="string" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="A1" visible="true" dataType="string" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="A2" visible="true" dataType="string" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="A3" visible="true" dataType="string" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="Volumen" visible="true" dataType="string" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="BULTO" visible="true" dataType="string" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="ALBORI" visible="true" dataType="string" order="0" ></dataRef>
+</ColumnSelection>
+<ColumnSelection>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="IDEXPED" visible="true" dataType="double" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="IDCABSTR" visible="true" dataType="string" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="IDCABNUM" visible="true" dataType="string" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="FALBARAN" visible="true" dataType="string" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="IDBULTO" visible="true" dataType="double" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="LARGO" visible="true" dataType="double" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="ANCHO" visible="true" dataType="double" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="ALTO" visible="true" dataType="double" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="PESOCONT" visible="true" dataType="double" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="IDARTIF" visible="true" dataType="string" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="DESCRIP" visible="true" dataType="string" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="CANTOT" visible="true" dataType="double" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="PESO" visible="true" dataType="double" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="PESO_TOTAL" visible="true" dataType="double" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="PESO_TOTAL_NETO" visible="true" dataType="double" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="NOM" visible="true" dataType="string" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="A1" visible="true" dataType="string" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="A2" visible="true" dataType="string" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="A3" visible="true" dataType="string" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="Volumen" visible="true" dataType="string" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="BULTO" visible="true" dataType="string" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="ALBORI" visible="true" dataType="string" order="0" ></dataRef>
+</ColumnSelection>
+<allRows>
+</allRows>
+</filter>
+<bindingOption class="SectionOption" grandTotal="true" >
+</bindingOption>
+</bindingAttr>
+<Section>
+<SectionHeader>
+<SectionBand Height="2.25" Visible="true" ShrinkToFit="false" PageBefore="false" PageAfter="false" SuppressBlank="false" TopBorder="0" LeftBorder="0" Breakable="true" RepeatHeader="false" Underlay="false" AtBottom="false" KeepTogether="false" BottomBorder="0" RightBorder="0" OrphanControl="false" Elements="10">
+<ImageElement ID="Image2" Alignment="65" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-PLAIN-10" Foreground="-16777216" PathType="1" Embedded="true" Layout="0" Wrapping="3" Rotation="0" Size="2.1111112x0.8611111" Margin="0,0,0,0">
+<![CDATA[J:\users\projects\Interflex\View\src\resources\images\logo.gif]]>
+<property><name><![CDATA[adjust.height]]></name><value><![CDATA[false]]></value></property>
+<property><name><![CDATA[grow]]></name><value><![CDATA[false]]></value></property>
+<Image Width="152" Height="62">
+<![CDATA[GhVOi99u>,%-/fsMN<pqE"j(/&.Xjl+(=lL?m:Cm(6U85T@57GX4QS9[Uk`HZCnhq\u>c3zzzi)_.nXp
+Ej*5'Kr_GLJ6fdhjfWpkeccJDCmn)MTrTIh&qO:RM%:`#nPejG]QU&&:"Rd*IK4[kp#&3/nZ%CD3KQU_
+B7c[Vm\k0SX<*2tU1q3i(_FJ=iJ0IVWl3nP&7qk$=@"#QMMh:ZjFPrOod/D=m"7euZqai\6@-A/qDtl*
+#9Js,Y2_fAed@[="^@U_fZ;#"@qhrM";-K?359bp0?7L\%-X=^/UOmMF/#CH)#ucOjkjD;N4_&*1fZ?O
+Ue`=/UjQLtV>=Iq(Z2CY5o"Dok5*G5s^2ouHfScmliZkG,\I2$ECUG_TNJ?O,rqb$UX$H3IUUH<ks@gZ
+rV`UfZ2E"%J:c_T\(;()>IXgorrbc.(V?S.,Gu!!!"l-LVjS%)\_1h!(&pMkGFjFc8Mp-@SbXBl.O>IE
+OA,^rJd6BcK-HA'`i.JZ`;P6E/6%HZ$!%js'LBn)=8Ng+A<EQ([[:K?ldX@m9nj9s12YANTgYa=hj'>B
+@`sa33\YiS%pR9>u=BB<//&Hamq@Ai_+`/H0r+c6<%#ffZ_m`h;kjSOe!F).!7$F0,1,NBO,?pc[4kMS
+8)>M]Lh?:8S!OIF8YS#46e504jL7r$luTdr<EW/Im![;I\eEO>_/cP(&_2.qr(a0?YG8:NMtt[XT6SS8
+7uWl<hPdAOA*DWjGF_DJ`a$N`tMp/nT0?NJMG#Xn:@NH2gspEG[mM>@'Nbs&h@>e\C``a]DBP8pnk%nI
+Ze'I=#Jn[EfS7djK28G.G`Fn'NJCG'WaHMp'm>^hR6=q-*]#[RPTipfa32=c7:d=F34$fj_+LZ^Jjae1
+U.bq;'1)>]K#Y#AjsY6Y`E_6ghI!`4L/_[J-WMf]'Vr*EdfV*5.<UE\!KG8mC:83DZn$TkR]a=7>^8[S
+L(JoF$;u51tDGJYnhRYI1cfrHSM>V;u-c(8,AS@aj_N'q;NM7bkD]/o#Hrj<=e@[%,%1?-_bH0'Jif3F
+45&e%"MqF-o!dcn91]po(jKb&pq;/oG__:G1191d609P$BVAWXW1fQ/bk[G*RE2>!@9+1hNlaZB*1Uq>
+-8#C*jb>mBL^-OginL?)Qf9e@,XCG'Wf%7l[X$R5GO?Zoo#'V>B$lV!C0NUR<42]gte=$*C)$C;7hM9)
+Q!G164WKeG+=%9't&9=iLgkB5K8bWs<B_HM8o2EslRZm"r]YScuC3Q,cU^7uDAEp9FK>4FNXOV6jlD=0
+jB8@F]t[hL=KAqqg?XmhfR5h0XR/$g[]<]XGJ6"98E%!!$^"]fX@AO.aI)fg%X3._PpuiJddW#!@T@IC
+%7OJC!=WmX8sQ]E58:n-\rLs/U\J$><)5^7A25J,ELcnEDZt6B*-Q\)3Jn`#&TShG\q'D4Gq]T9,s8__
+2_%gN/<jD/FEDNEidGqlAflnq]2O-TT7n-kY4nmH24=>P_-@Ih.UKYm9Jko=PGAnb9@42&O()I,8lAH)
+0SuR[NGQlYAH[z!!!#74noPM/P7D
+]]>
+</Image>
+</ImageElement>
+<FieldProperty X="1" Y="0" Width="152" Height="62" VLine="0" VLineColor="-16777216"/>
+<TextElement ID="Text14" Alignment="1" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-PLAIN-10" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<![CDATA[[FALBARAN]]]>
+</TextElement>
+<FieldProperty X="92" Y="81" Width="61" Height="14" VLine="0" VLineColor="-16777216" Binding="FALBARAN"/>
+<TextElement ID="Text13" Alignment="65" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-PLAIN-10" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<property><name><![CDATA[adjust.height]]></name><value><![CDATA[true]]></value></property>
+<property><name><![CDATA[grow]]></name><value><![CDATA[false]]></value></property>
+<![CDATA[[IDCABNUM]]]>
+</TextElement>
+<FieldProperty X="141" Y="98" Width="75" Height="14" VLine="0" VLineColor="-16777216" Binding="IDCABNUM"/>
+<SeparatorElement ID="Separator2" Alignment="1" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-PLAIN-10" Foreground="-16777216" Style="4097" SeparatorAdvance="4">
+</SeparatorElement>
+<FieldProperty X="1" Y="117" Width="465" Height="11" VLine="0" VLineColor="-16777216"/>
+<TextBoxElement ID="TextBox1" Alignment="65" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-BOLD-8" Foreground="-16777216" Border="4097" Shape="1" Justify="false" TextAlignment="17" Shadow="false" Padding="0,1,0,1" BorderColor="-1" Layout="0" Wrapping="3" Rotation="0" Size="2.6388888x0.16666667" Margin="0,0,0,0">
+<property><name><![CDATA[adjust.height]]></name><value><![CDATA[true]]></value></property>
+<property><name><![CDATA[grow]]></name><value><![CDATA[false]]></value></property>
+<![CDATA[[NOM]]]>
+</TextBoxElement>
+<FieldProperty X="249" Y="23" Width="190" Height="12" VLine="0" VLineColor="-16777216" Binding="NOM"/>
+<TextBoxElement ID="TextBox4" Alignment="65" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-BOLD-8" Foreground="-16777216" Border="4097" Shape="1" Justify="false" TextAlignment="17" Shadow="false" Padding="0,1,0,1" BorderColor="-1" Layout="0" Wrapping="3" Rotation="0" Size="2.6388888x0.16666667" Margin="0,0,0,0">
+<property><name><![CDATA[adjust.height]]></name><value><![CDATA[true]]></value></property>
+<property><name><![CDATA[grow]]></name><value><![CDATA[false]]></value></property>
+<![CDATA[[A1]]]>
+</TextBoxElement>
+<FieldProperty X="249" Y="37" Width="190" Height="12" VLine="0" VLineColor="-16777216" Binding="A1"/>
+<TextBoxElement ID="TextBox5" Alignment="65" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-BOLD-8" Foreground="-16777216" Border="4097" Shape="1" Justify="false" TextAlignment="17" Shadow="false" Padding="0,1,0,1" BorderColor="-1" Layout="0" Wrapping="3" Rotation="0" Size="2.6388888x0.16666667" Margin="0,0,0,0">
+<property><name><![CDATA[adjust.height]]></name><value><![CDATA[true]]></value></property>
+<property><name><![CDATA[grow]]></name><value><![CDATA[false]]></value></property>
+<![CDATA[[A2]]]>
+</TextBoxElement>
+<FieldProperty X="249" Y="52" Width="190" Height="12" VLine="0" VLineColor="-16777216" Binding="A2"/>
+<TextBoxElement ID="TextBox6" Alignment="65" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-BOLD-8" Foreground="-16777216" Border="4097" Shape="1" Justify="false" TextAlignment="17" Shadow="false" Padding="0,1,0,1" BorderColor="-1" Layout="0" Wrapping="3" Rotation="0" Size="2.625x0.16666667" Margin="0,0,0,0">
+<property><name><![CDATA[adjust.height]]></name><value><![CDATA[true]]></value></property>
+<property><name><![CDATA[grow]]></name><value><![CDATA[false]]></value></property>
+<![CDATA[[A3]]]>
+<bindingAttr type="1" class="BindingAttr">
+<filter class="SourceAttr" type="0" source="sgavpackinglist_exp" prefix="Interflex">
+</filter>
+</bindingAttr>
+</TextBoxElement>
+<FieldProperty X="249" Y="68" Width="189" Height="12" VLine="0" VLineColor="-16777216" Binding="A3"/>
+<TextElement ID="Text228" Alignment="65" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-BOLD-10" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<property><name><![CDATA[adjust.height]]></name><value><![CDATA[true]]></value></property>
+<property><name><![CDATA[grow]]></name><value><![CDATA[false]]></value></property>
+<![CDATA[Data / Fecha:]]>
+</TextElement>
+<FieldProperty X="3" Y="81" Width="72" Height="14" VLine="0" VLineColor="-16777216"/>
+<TextElement ID="Text229" Alignment="65" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-BOLD-10" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<property><name><![CDATA[adjust.height]]></name><value><![CDATA[true]]></value></property>
+<property><name><![CDATA[grow]]></name><value><![CDATA[false]]></value></property>
+<![CDATA[Delivery Slip Nr. / # Albarán:]]>
+</TextElement>
+<FieldProperty X="2" Y="98" Width="131" Height="14" VLine="0" VLineColor="-16777216"/>
+<Shapes>
+<Shape type="rectangle" x="246.0" y="16.0" width="197.0" height="71.0" style="4097" color="-16777216"/>
+</Shapes>
+</SectionBand>
+</SectionHeader>
+<SectionContent>
+<Section>
+<SectionHeader>
+<SectionBand Height="0.6388889" Visible="true" ShrinkToFit="false" PageBefore="false" PageAfter="false" SuppressBlank="false" TopBorder="0" LeftBorder="0" Breakable="true" RepeatHeader="false" Underlay="false" AtBottom="false" KeepTogether="true" BottomBorder="0" RightBorder="0" OrphanControl="false" TopColor="-16777216" LeftColor="-16777216" BottomColor="-16777216" RightColor="-16777216" Elements="20">
+<TextElement ID="Text127" Alignment="65" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-BOLD-8" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<property><name><![CDATA[adjust.height]]></name><value><![CDATA[true]]></value></property>
+<property><name><![CDATA[grow]]></name><value><![CDATA[false]]></value></property>
+<![CDATA[[BULTO]]]>
+</TextElement>
+<FieldProperty X="8" Y="14" Width="86" Height="10" VLine="0" VLineColor="-16777216" Binding="BULTO"/>
+<TextElement ID="Text192" Alignment="65" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-PLAIN-9" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<![CDATA[[LARGO]]]>
+</TextElement>
+<FieldProperty X="266" Y="15" Width="44" Height="11" VLine="0" VLineColor="-16777216" Binding="LARGO"/>
+<TextElement ID="Text193" Alignment="65" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-PLAIN-9" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<![CDATA[[ANCHO]]]>
+</TextElement>
+<FieldProperty X="324" Y="15" Width="34" Height="11" VLine="0" VLineColor="-16777216" Binding="ANCHO"/>
+<TextElement ID="Text194" Alignment="1" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-BOLD-8" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<![CDATA[[ALTO]]]>
+</TextElement>
+<FieldProperty X="492" Y="0" Width="93" Height="10" VLine="0" VLineColor="-16777216" Binding="ALTO"/>
+<TextElement ID="Text195" Alignment="1" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-BOLD-8" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<![CDATA[[Volúmen]]]>
+</TextElement>
+<FieldProperty X="589" Y="0" Width="93" Height="10" VLine="0" VLineColor="-16777216"/>
+<TextElement ID="Text97" Alignment="65" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-PLAIN-9" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<property><name><![CDATA[__column__]]></name><value><![CDATA[ALTO]]></value></property>
+<![CDATA[[ALTO]]]>
+</TextElement>
+<FieldProperty X="373" Y="15" Width="37" Height="11" VLine="0" VLineColor="-16777216" Binding="ALTO"/>
+<TextElement ID="Text209" Alignment="65" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-BOLD-8" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<property><name><![CDATA[adjust.height]]></name><value><![CDATA[false]]></value></property>
+<property><name><![CDATA[grow]]></name><value><![CDATA[false]]></value></property>
+<![CDATA[Art. / Ref.]]>
+</TextElement>
+<FieldProperty X="75" Y="31" Width="64" Height="13" VLine="0" VLineColor="-16777216"/>
+<TextElement ID="Text210" Alignment="1" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-BOLD-8" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<![CDATA[Description / Descripción]]>
+</TextElement>
+<FieldProperty X="143" Y="31" Width="108" Height="13" VLine="0" VLineColor="-16777216"/>
+<TextElement ID="Text212" Alignment="68" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-BOLD-8" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<property><name><![CDATA[adjust.height]]></name><value><![CDATA[false]]></value></property>
+<property><name><![CDATA[grow]]></name><value><![CDATA[false]]></value></property>
+<![CDATA[Qty. / Cant]]>
+</TextElement>
+<FieldProperty X="368" Y="31" Width="47" Height="13" VLine="0" VLineColor="-16777216"/>
+<TextElement ID="Text213" Alignment="1" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-BOLD-8" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<![CDATA[Wt. / Peso]]>
+</TextElement>
+<FieldProperty X="422" Y="31" Width="41" Height="13" VLine="0" VLineColor="-16777216"/>
+<TextElement ID="Text226" Alignment="1" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-BOLD-8" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<![CDATA[Box / Bulto:]]>
+</TextElement>
+<FieldProperty X="8" Y="0" Width="57" Height="13" VLine="0" VLineColor="-16777216"/>
+<TextElement ID="Text227" Alignment="1" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-BOLD-8" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<![CDATA[Gross Wt. / Peso Bruto:]]>
+</TextElement>
+<FieldProperty X="125" Y="0" Width="85" Height="13" VLine="0" VLineColor="-16777216"/>
+<TextElement ID="Text230" Alignment="65" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-BOLD-7" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<![CDATA[Length / Largo]]>
+</TextElement>
+<FieldProperty X="250" Y="3" Width="51" Height="9" VLine="0" VLineColor="-16777216"/>
+<TextElement ID="Text231" Alignment="65" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-BOLD-7" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<![CDATA[Width / Ancho]]>
+</TextElement>
+<FieldProperty X="307" Y="3" Width="50" Height="9" VLine="0" VLineColor="-16777216"/>
+<TextElement ID="Text232" Alignment="65" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-BOLD-7" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<property><name><![CDATA[adjust.height]]></name><value><![CDATA[true]]></value></property>
+<property><name><![CDATA[grow]]></name><value><![CDATA[false]]></value></property>
+<![CDATA[Vol. m3]]>
+</TextElement>
+<FieldProperty X="426" Y="3" Width="42" Height="9" VLine="0" VLineColor="-16777216"/>
+<TextElement ID="Text233" Alignment="65" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-BOLD-7" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<![CDATA[Height / Alto (cm.)]]>
+</TextElement>
+<FieldProperty X="361" Y="3" Width="62" Height="9" VLine="0" VLineColor="-16777216"/>
+<TextElement ID="Text234" Alignment="1" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-BOLD-8" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<![CDATA[Kg.]]>
+</TextElement>
+<FieldProperty X="196" Y="14" Width="22" Height="13" VLine="0" VLineColor="-16777216"/>
+<TextElement ID="Text105" Alignment="65" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-PLAIN-9" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<property><name><![CDATA[__column__]]></name><value><![CDATA[Volúmen]]></value></property>
+<property><name><![CDATA[__format__]]></name><value><![CDATA[DecimalFormat]]></value></property>
+<property><name><![CDATA[__format_spec__]]></name><value><![CDATA[#,##0.000]]></value></property>
+<![CDATA[[Volumen]]]>
+</TextElement>
+<FieldProperty X="421" Y="15" Width="42" Height="11" VLine="0" VLineColor="-16777216" Binding="Volumen"/>
+<TextElement ID="Text350" Alignment="68" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-BOLD-8" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<property><name><![CDATA[adjust.height]]></name><value><![CDATA[true]]></value></property>
+<property><name><![CDATA[grow]]></name><value><![CDATA[false]]></value></property>
+<![CDATA[[PESOCONT]]]>
+</TextElement>
+<FieldProperty X="139" Y="16" Width="52" Height="10" VLine="0" VLineColor="-16777216" Binding="PESOCONT"/>
+<TextElement ID="Text454" Alignment="65" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-BOLD-8" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<property><name><![CDATA[adjust.height]]></name><value><![CDATA[false]]></value></property>
+<property><name><![CDATA[grow]]></name><value><![CDATA[false]]></value></property>
+<![CDATA[Albarán]]>
+</TextElement>
+<FieldProperty X="7" Y="31" Width="64" Height="13" VLine="0" VLineColor="-16777216"/>
+<Shapes>
+</Shapes>
+</SectionBand>
+</SectionHeader>
+<SectionContent>
+<SectionBand Height="0.19444442" Visible="true" ShrinkToFit="false" PageBefore="false" PageAfter="false" SuppressBlank="false" TopBorder="0" LeftBorder="0" Breakable="true" RepeatHeader="false" Underlay="false" AtBottom="false" KeepTogether="false" BottomBorder="0" RightBorder="0" OrphanControl="false" Elements="6">
+<TextElement ID="Text112" Alignment="65" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-PLAIN-9" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<![CDATA[[IDARTIF]]]>
+</TextElement>
+<FieldProperty X="75" Y="1" Width="64" Height="11" VLine="0" VLineColor="-16777216" Binding="IDARTIF"/>
+<TextElement ID="Text113" Alignment="65" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-PLAIN-9" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<![CDATA[[DESCRIP]]]>
+</TextElement>
+<FieldProperty X="143" Y="1" Width="220" Height="11" VLine="0" VLineColor="-16777216" Binding="DESCRIP"/>
+<TextElement ID="Text115" Alignment="68" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-PLAIN-9" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<property><name><![CDATA[adjust.height]]></name><value><![CDATA[true]]></value></property>
+<property><name><![CDATA[grow]]></name><value><![CDATA[false]]></value></property>
+<![CDATA[[CANTOT]]]>
+</TextElement>
+<FieldProperty X="367" Y="1" Width="48" Height="11" VLine="0" VLineColor="-16777216" Binding="CANTOT"/>
+<TextElement ID="Text116" Alignment="68" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-PLAIN-9" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<property><name><![CDATA[adjust.height]]></name><value><![CDATA[true]]></value></property>
+<property><name><![CDATA[grow]]></name><value><![CDATA[false]]></value></property>
+<![CDATA[[PESO]]]>
+</TextElement>
+<FieldProperty X="419" Y="1" Width="30" Height="11" VLine="0" VLineColor="-16777216" Binding="PESO"/>
+<TextElement ID="Text31" Alignment="65" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-PLAIN-9" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<![CDATA[Kg.]]>
+</TextElement>
+<FieldProperty X="451" Y="1" Width="15" Height="11" VLine="0" VLineColor="-16777216"/>
+<TextElement ID="Text436" Alignment="17" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-PLAIN-9" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<property><name><![CDATA[adjust.height]]></name><value><![CDATA[true]]></value></property>
+<property><name><![CDATA[grow]]></name><value><![CDATA[false]]></value></property>
+<![CDATA[[ALBORI]]]>
+</TextElement>
+<FieldProperty X="7" Y="1" Width="62" Height="11" VLine="0" VLineColor="-16777216" Binding="ALBORI"/>
+<Shapes>
+</Shapes>
+</SectionBand>
+</SectionContent>
+<SectionFooter>
+<SectionBand Height="0.6944445" Visible="true" ShrinkToFit="false" PageBefore="false" PageAfter="false" SuppressBlank="false" TopBorder="0" LeftBorder="0" Breakable="true" RepeatHeader="false" Underlay="false" AtBottom="false" KeepTogether="false" BottomBorder="0" RightBorder="0" OrphanControl="false" TopColor="-16777216" Elements="8">
+<TextElement ID="Text196" Alignment="1" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-BOLD-8" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<![CDATA[]]>
+</TextElement>
+<FieldProperty X="118" Y="8" Width="45" Height="10" VLine="0" VLineColor="-16777216" Binding="CANTOT"/>
+<TextElement ID="Text207" Alignment="68" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-PLAIN-9" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<![CDATA[]]>
+</TextElement>
+<FieldProperty X="406" Y="7" Width="43" Height="11" VLine="0" VLineColor="-16777216" Binding="PESO"/>
+<TextElement ID="Text215" Alignment="4" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-BOLD-8" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<![CDATA[Net Wt. / Peso Neto:]]>
+</TextElement>
+<FieldProperty X="329" Y="8" Width="78" Height="10" VLine="0" VLineColor="-16777216"/>
+<TextElement ID="Text216" Alignment="1" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-BOLD-8" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<![CDATA[Qty. / Cant. Total:]]>
+</TextElement>
+<FieldProperty X="38" Y="5" Width="72" Height="13" VLine="0" VLineColor="-16777216"/>
+<TextElement ID="Text219" Alignment="68" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-BOLD-8" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<property><name><![CDATA[adjust.height]]></name><value><![CDATA[true]]></value></property>
+<property><name><![CDATA[grow]]></name><value><![CDATA[false]]></value></property>
+<![CDATA[Gross Wt. / Peso Bruto:]]>
+</TextElement>
+<FieldProperty X="165" Y="8" Width="88" Height="10" VLine="0" VLineColor="-16777216"/>
+<TextElement ID="Text391" Alignment="4" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-BOLD-8" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<![CDATA[[PESO_TOTAL]]]>
+<bindingAttr type="1" class="BindingAttr">
+<filter class="SourceAttr" type="0" source="sgavpackinglist_exp" prefix="Interflex">
+<joinSources>
+<filter class="SourceAttr" type="4" source="TotalBrut" prefix="Interflex">
+</filter>
+</joinSources>
+<joinRelations>
+<joinInfo>
+<source1>
+<filter class="SourceAttr" type="0" source="sgavpackinglist_exp" prefix="Interflex">
+</filter>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="IDDOC" visible="true" dataType="double" order="0" ></dataRef>
+</source1>
+<source2>
+<filter class="SourceAttr" type="4" source="TotalBrut" prefix="Interflex">
+</filter>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="IDDOC" visible="true" dataType="double" order="0" source="TotalBrut" ></dataRef>
+</source2>
+</joinInfo>
+<joinInfo>
+<source1>
+<filter class="SourceAttr" type="0" source="sgavpackinglist_exp" prefix="Interflex">
+</filter>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="IDBULTO" visible="true" dataType="double" order="0" ></dataRef>
+</source1>
+<source2>
+<filter class="SourceAttr" type="4" source="TotalBrut" prefix="Interflex">
+</filter>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="IDBULTO" visible="true" dataType="double" order="0" source="TotalBrut" ></dataRef>
+</source2>
+</joinInfo>
+</joinRelations>
+</filter>
+</bindingAttr>
+</TextElement>
+<FieldProperty X="260" Y="8" Width="49" Height="10" VLine="0" VLineColor="-16777216" Binding="PESO_TOTAL"/>
+<TextElement ID="Text428" Alignment="65" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-PLAIN-9" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<![CDATA[Kg.]]>
+</TextElement>
+<FieldProperty X="453" Y="7" Width="15" Height="11" VLine="0" VLineColor="-16777216"/>
+<TextElement ID="Text429" Alignment="65" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-PLAIN-9" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<![CDATA[Kg.]]>
+</TextElement>
+<FieldProperty X="312" Y="7" Width="16" Height="11" VLine="0" VLineColor="-16777216"/>
+<Shapes>
+</Shapes>
+</SectionBand>
+</SectionFooter>
+</Section>
+</SectionContent>
+<SectionFooter>
+<SectionBand Height="0.7222222" Visible="true" ShrinkToFit="false" PageBefore="false" PageAfter="false" SuppressBlank="false" TopBorder="0" LeftBorder="0" Breakable="true" RepeatHeader="false" Underlay="false" AtBottom="false" KeepTogether="false" BottomBorder="0" RightBorder="0" OrphanControl="false" Elements="3">
+<TextElement ID="Text308" Alignment="68" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Arial-BOLD-12" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<property><name><![CDATA[adjust.height]]></name><value><![CDATA[true]]></value></property>
+<property><name><![CDATA[grow]]></name><value><![CDATA[false]]></value></property>
+<![CDATA[Net Wt. / Peso Neto Total:]]>
+</TextElement>
+<FieldProperty X="106" Y="37" Width="227" Height="15" VLine="0" VLineColor="-16777216"/>
+<TextElement ID="Text311" Alignment="65" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Arial-BOLD-12" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<property><name><![CDATA[adjust.height]]></name><value><![CDATA[true]]></value></property>
+<property><name><![CDATA[grow]]></name><value><![CDATA[false]]></value></property>
+<![CDATA[Kg.]]>
+</TextElement>
+<FieldProperty X="444" Y="35" Width="19" Height="15" VLine="0" VLineColor="-16777216"/>
+<TextElement ID="Text312" Alignment="68" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Arial-BOLD-12" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<property><name><![CDATA[adjust.height]]></name><value><![CDATA[true]]></value></property>
+<property><name><![CDATA[__format__]]></name><value><![CDATA[DecimalFormat]]></value></property>
+<property><name><![CDATA[grow]]></name><value><![CDATA[false]]></value></property>
+<property><name><![CDATA[__format_spec__]]></name><value><![CDATA[#,##0.00]]></value></property>
+<![CDATA[]]>
+</TextElement>
+<FieldProperty X="345" Y="36" Width="88" Height="15" VLine="0" VLineColor="-16777216" Binding="PESO"/>
+<Shapes>
+</Shapes>
+</SectionBand>
+</SectionFooter>
+</Section>
+<Table Rows="2" Cols="22" HeaderRow="1" HeaderCol="0" TrailerRow="0" TrailerCol="0">
+<TR>
+<TD Type="string"><![CDATA[IDBULTO]]></TD><TD Type="string"><![CDATA[LARGO]]></TD><TD Type="string"><![CDATA[ANCHO]]></TD><TD Type="string"><![CDATA[ALTO]]></TD><TD Type="string"><![CDATA[PESOCONT]]></TD><TD Type="string"><![CDATA[PESO_TOTAL]]></TD><TD Type="string"><![CDATA[PESO]]></TD><TD Type="string"><![CDATA[IDEXPED]]></TD><TD Type="string"><![CDATA[IDCABSTR]]></TD><TD Type="string"><![CDATA[IDCABNUM]]></TD><TD Type="string"><![CDATA[FALBARAN]]></TD><TD Type="string"><![CDATA[IDARTIF]]></TD><TD Type="string"><![CDATA[DESCRIP]]></TD><TD Type="string"><![CDATA[CANTOT]]></TD><TD Type="string"><![CDATA[PESO_TOTAL_NETO]]></TD><TD Type="string"><![CDATA[NOM]]></TD><TD Type="string"><![CDATA[A1]]></TD><TD Type="string"><![CDATA[A2]]></TD><TD Type="string"><![CDATA[A3]]></TD><TD Type="string"><![CDATA[Volumen]]></TD><TD Type="string"><![CDATA[BULTO]]></TD><TD Type="string"><![CDATA[ALBORI]]></TD></TR>
+<TR>
+<TD Type="string"><![CDATA[[IDBULTO]]]></TD><TD Type="string"><![CDATA[[LARGO]]]></TD><TD Type="string"><![CDATA[[ANCHO]]]></TD><TD Type="string"><![CDATA[[ALTO]]]></TD><TD Type="string"><![CDATA[[PESOCONT]]]></TD><TD Type="string"><![CDATA[[PESO_TOTAL]]]></TD><TD Type="string"><![CDATA[[PESO]]]></TD><TD Type="string"><![CDATA[[IDEXPED]]]></TD><TD Type="string"><![CDATA[[IDCABSTR]]]></TD><TD Type="string"><![CDATA[[IDCABNUM]]]></TD><TD Type="string"><![CDATA[[FALBARAN]]]></TD><TD Type="string"><![CDATA[[IDARTIF]]]></TD><TD Type="string"><![CDATA[[DESCRIP]]]></TD><TD Type="string"><![CDATA[[CANTOT]]]></TD><TD Type="string"><![CDATA[[PESO_TOTAL_NETO]]]></TD><TD Type="string"><![CDATA[[NOM]]]></TD><TD Type="string"><![CDATA[[A1]]]></TD><TD Type="string"><![CDATA[[A2]]]></TD><TD Type="string"><![CDATA[[A3]]]></TD><TD Type="string"><![CDATA[[Volumen]]]></TD><TD Type="string"><![CDATA[[BULTO]]]></TD><TD Type="string"><![CDATA[[ALBORI]]]></TD></TR>
+</Table>
+</SectionElement>
+<TextElement ID="Text399" Alignment="1" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-BOLD-8" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<![CDATA[]]>
+</TextElement>
+<SectionElement ID="Section8" Alignment="1" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-PLAIN-10" Foreground="-16777216" AdhocEnabled="true">
+<property><name><![CDATA[gen.table]]></name><value><![CDATA[false]]></value></property>
+<property><name><![CDATA[grow]]></name><value><![CDATA[true]]></value></property>
+<property><name><![CDATA[suppress.blank]]></name><value><![CDATA[false]]></value></property>
+<property><name><![CDATA[gen.textbox]]></name><value><![CDATA[true]]></value></property>
+<property><name><![CDATA[field.name]]></name><value><![CDATA[false]]></value></property>
+<property><name><![CDATA[gen.hgap]]></name><value><![CDATA[4]]></value></property>
+<property><name><![CDATA[gen.notGen]]></name><value><![CDATA[false]]></value></property>
+<property><name><![CDATA[gen.removeAll]]></name><value><![CDATA[false]]></value></property>
+<property><name><![CDATA[gen.layout]]></name><value><![CDATA[1]]></value></property>
+<property><name><![CDATA[gen.vgap]]></name><value><![CDATA[2]]></value></property>
+<bindingAttr type="3" class="BindingAttr">
+<filter class="SourceAttr" type="0" source="SGAVPACKINGLISTTOTALEXP" prefix="Interflex">
+</filter>
+<filter class="ConditionAttr" >
+<conditions>
+</conditions>
+</filter>
+<filter class="GroupAttr" sorted="false" >
+<aggregates>
+</aggregates>
+<groups>
+</groups>
+</filter>
+<filter class="ColumnSelectionAttr" >
+<ColumnSelection>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="PesTotal" visible="true" dataType="string" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="Volumen" visible="true" dataType="string" order="0" ></dataRef>
+</ColumnSelection>
+<ColumnSelection>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="PesTotal" visible="true" dataType="string" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="Volumen" visible="true" dataType="string" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="IDEXPED" visible="true" dataType="string" order="0" ></dataRef>
+</ColumnSelection>
+<allRows>
+</allRows>
+</filter>
+<bindingOption class="SectionOption" grandTotal="true" >
+</bindingOption>
+</bindingAttr>
+<Section>
+<SectionHeader>
+<SectionBand Height="0.4027778" Visible="true" ShrinkToFit="false" PageBefore="false" PageAfter="false" SuppressBlank="false" TopBorder="0" LeftBorder="0" Breakable="true" RepeatHeader="true" Underlay="false" AtBottom="false" KeepTogether="false" BottomBorder="0" RightBorder="0" OrphanControl="false" Elements="3">
+<TextBoxElement ID="TextBox7" Alignment="68" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Arial-BOLD-12" Foreground="-16777216" Border="0" Shape="1" Justify="false" TextAlignment="68" Shadow="false" Padding="0,0,0,0" BorderColor="-16777216" Layout="0" Wrapping="3" Rotation="0" Size="2.9166667x0.20833333" Margin="0,0,0,0">
+<property><name><![CDATA[adjust.height]]></name><value><![CDATA[true]]></value></property>
+<property><name><![CDATA[__column__]]></name><value><![CDATA[PesTotal]]></value></property>
+<property><name><![CDATA[grow]]></name><value><![CDATA[false]]></value></property>
+<![CDATA[Gross Wt. /  Peso Bruto Total:]]>
+</TextBoxElement>
+<FieldProperty X="123" Y="0" Width="210" Height="15" VLine="0" VLineColor="-16777216"/>
+<TextBoxElement ID="TextBox9" Alignment="68" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Arial-BOLD-12" Foreground="-16777216" Border="0" Shape="1" Justify="false" TextAlignment="68" Shadow="false" Padding="0,0,0,0" BorderColor="-16777216" Layout="0" Wrapping="3" Rotation="0" Size="1.2083334x0.20833333" Margin="0,0,0,0">
+<property><name><![CDATA[adjust.height]]></name><value><![CDATA[true]]></value></property>
+<property><name><![CDATA[__format__]]></name><value><![CDATA[DecimalFormat]]></value></property>
+<property><name><![CDATA[__format_spec__]]></name><value><![CDATA[#,##0.00]]></value></property>
+<property><name><![CDATA[grow]]></name><value><![CDATA[false]]></value></property>
+<![CDATA[XXXXXXXX]]>
+</TextBoxElement>
+<FieldProperty X="346" Y="0" Width="87" Height="15" VLine="0" VLineColor="-16777216" Binding="PesTotal"/>
+<TextElement ID="Text426" Alignment="65" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Arial-BOLD-12" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<property><name><![CDATA[adjust.height]]></name><value><![CDATA[true]]></value></property>
+<property><name><![CDATA[grow]]></name><value><![CDATA[false]]></value></property>
+<![CDATA[Kg.]]>
+</TextElement>
+<FieldProperty X="444" Y="0" Width="19" Height="15" VLine="0" VLineColor="-16777216"/>
+<Shapes>
+</Shapes>
+</SectionBand>
+</SectionHeader>
+<SectionContent>
+<SectionBand Height="0.4027778" Visible="true" ShrinkToFit="false" PageBefore="false" PageAfter="false" SuppressBlank="false" TopBorder="0" LeftBorder="0" Breakable="true" RepeatHeader="false" Underlay="false" AtBottom="false" KeepTogether="false" BottomBorder="0" RightBorder="0" OrphanControl="false" Elements="3">
+<TextBoxElement ID="TextBox10" Alignment="68" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Arial-BOLD-12" Foreground="-16777216" Border="0" Shape="1" Justify="false" TextAlignment="68" Shadow="false" Padding="0,0,0,0" BorderColor="-16777216" Layout="0" Wrapping="3" Rotation="0" Size="1.2083334x0.20833333" Margin="0,0,0,0">
+<property><name><![CDATA[adjust.height]]></name><value><![CDATA[true]]></value></property>
+<property><name><![CDATA[__format__]]></name><value><![CDATA[DecimalFormat]]></value></property>
+<property><name><![CDATA[__format_spec__]]></name><value><![CDATA[#,##0.00]]></value></property>
+<property><name><![CDATA[grow]]></name><value><![CDATA[false]]></value></property>
+<![CDATA[XXXXXXX]]>
+</TextBoxElement>
+<FieldProperty X="346" Y="0" Width="87" Height="15" VLine="0" VLineColor="-16777216" Binding="Volumen"/>
+<TextBoxElement ID="TextBox8" Alignment="68" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Arial-BOLD-12" Foreground="-16777216" Border="0" Shape="1" Justify="false" TextAlignment="68" Shadow="false" Padding="0,0,0,0" BorderColor="-16777216" Layout="0" Wrapping="3" Rotation="0" Size="2.9027777x0.20833333" Margin="0,0,0,0">
+<property><name><![CDATA[adjust.height]]></name><value><![CDATA[true]]></value></property>
+<property><name><![CDATA[__column__]]></name><value><![CDATA[Volumen]]></value></property>
+<property><name><![CDATA[grow]]></name><value><![CDATA[false]]></value></property>
+<![CDATA[Total Volume /  Volumen total:]]>
+</TextBoxElement>
+<FieldProperty X="125" Y="0" Width="209" Height="15" VLine="0" VLineColor="-16777216"/>
+<TextElement ID="Text427" Alignment="65" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Arial-BOLD-12" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<property><name><![CDATA[adjust.height]]></name><value><![CDATA[true]]></value></property>
+<property><name><![CDATA[grow]]></name><value><![CDATA[false]]></value></property>
+<![CDATA[m3]]>
+</TextElement>
+<FieldProperty X="444" Y="0" Width="19" Height="15" VLine="0" VLineColor="-16777216"/>
+<Shapes>
+</Shapes>
+</SectionBand>
+</SectionContent>
+<SectionFooter>
+<SectionBand Height="0.3" Visible="false" ShrinkToFit="false" PageBefore="false" PageAfter="false" SuppressBlank="false" TopBorder="0" LeftBorder="0" Breakable="true" RepeatHeader="false" Underlay="false" AtBottom="false" KeepTogether="false" BottomBorder="0" RightBorder="0" OrphanControl="false" Elements="0">
+<Shapes>
+</Shapes>
+</SectionBand>
+</SectionFooter>
+</Section>
+<Table Rows="2" Cols="2" HeaderRow="1" HeaderCol="0" TrailerRow="0" TrailerCol="0">
+<TR>
+<TD Type="string"><![CDATA[PesTotal]]></TD><TD Type="string"><![CDATA[Volumen]]></TD></TR>
+<TR>
+<TD Type="string"><![CDATA[XXXXXXXX]]></TD><TD Type="string"><![CDATA[XXXXXXX]]></TD></TR>
+</Table>
+</SectionElement>
+</GD>
+</GR>
+</Grid>
+</Report>

@@ -1,0 +1,61 @@
+// Make the cell (1,2) is appear in the center of the view
+    int rowIndex = 1;
+    int vColIndex = 2;
+    scrollToCenter(table, rowIndex, vColIndex);
+    
+    // Assumes table is contained in a JScrollPane. Scrolls the
+    // cell (rowIndex, vColIndex) so that it is visible at the center of viewport.
+    public void scrollToCenter(JTable table, int rowIndex, int vColIndex) {
+        if (!(table.getParent() instanceof JViewport)) {
+            return;
+        }
+        JViewport viewport = (JViewport)table.getParent();
+    
+        // This rectangle is relative to the table where the
+        // northwest corner of cell (0,0) is always (0,0).
+        Rectangle rect = table.getCellRect(rowIndex, vColIndex, true);
+    
+        // The location of the view relative to the table
+        Rectangle viewRect = viewport.getViewRect();
+    
+        // Translate the cell location so that it is relative
+        // to the view, assuming the northwest corner of the
+        // view is (0,0).
+        rect.setLocation(rect.x-viewRect.x, rect.y-viewRect.y);
+    
+        // Calculate location of rect if it were at the center of view
+        int centerX = (viewRect.width-rect.width)/2;
+        int centerY = (viewRect.height-rect.height)/2;
+    
+        // Fake the location of the cell so that scrollRectToVisible
+        // will move the cell to the center
+        if (rect.x < centerX) {
+            centerX = -centerX;
+        }
+        if (rect.y < centerY) {
+            centerY = -centerY;
+        }
+        rect.translate(centerX, centerY);
+    
+        // Scroll the area into view.
+        viewport.scrollRectToVisible(rect);
+    }
+
+
+The following creates tables that allow rows and columns to be added or deleted: 
+    // Create a table with empty cells
+    int rows = 10;
+    int cols = 5;
+    table = new JTable(rows, cols);
+    
+    // Create a table with initial data
+    Vector rowData = new Vector();
+    for (int i=0; i<cellData.length; i++) {
+        Vector colData = new Vector(Arrays.asList(cellData[i]));
+        rowData.add(colData);
+    }
+    Vector columnNamesV = new Vector(Arrays.asList(columnNames));
+    
+    table = new JTable(rowData, columnNamesV);
+
+

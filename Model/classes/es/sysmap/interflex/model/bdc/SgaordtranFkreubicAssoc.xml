@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE Association SYSTEM "jbo_03_01.dtd">
+
+<Association
+   Name="SgaordtranFkreubicAssoc" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.2.17.96" />
+   </DesignTime>
+   <AssociationEnd
+      Name="IdordreubicSgaordtran1"
+      Cardinality="1"
+      Source="true"
+      Owner="es.sysmap.interflex.model.bdc.Sgaordtran" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaordtran.Idord" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_aggregation" Value="0" />
+         <Attr Name="_isUpdateable" Value="true" />
+         <Attr Name="_finderName" Value="IdordreubicSgaordtran1" />
+         <Attr Name="_foreignKey" Value="es.sysmap.interflex.model.bdc.Sgaordtran.SgaordtranPrimaryKey" />
+      </DesignTime>
+   </AssociationEnd>
+   <AssociationEnd
+      Name="Sgaordtran1"
+      Cardinality="-1"
+      Owner="es.sysmap.interflex.model.bdc.Sgaordtran" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaordtran.Idordreubic" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_aggregation" Value="0" />
+         <Attr Name="_isUpdateable" Value="true" />
+         <Attr Name="_finderName" Value="Sgaordtran1" />
+         <Attr Name="_foreignKey" Value="es.sysmap.interflex.model.bdc.Sgaordtran.SgaordtranFkreubic" />
+      </DesignTime>
+   </AssociationEnd>
+</Association>

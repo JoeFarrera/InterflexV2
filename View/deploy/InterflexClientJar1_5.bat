@@ -1,0 +1,3 @@
+@echo off
+@echo engegant SGA...
+"C:\Archivos de programa\Java\jre1.5.0_09\bin\java.exe" -Xms128m -Xmx512m -jar viewNew.jar

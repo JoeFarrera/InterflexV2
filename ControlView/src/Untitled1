@@ -1,0 +1,999 @@
+2005-04-19 09:59:06,406 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:07,968 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 09:59:07,968 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 09:59:08,687 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:08,750 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:09,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:09,859 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:09,984 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:11,281 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:12,968 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 09:59:12,968 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 09:59:13,687 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:13,750 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:14,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:14,859 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:15,000 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:16,343 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:17,968 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 09:59:17,984 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 09:59:18,015 DEBUG [Thread-9] sendTelegrama {GestorDatos.java:271} - PRUEBAS: enviat: <Telegrama lenTelegrama="68" tipoTel="BMOV">
+   <Detalles>
+      <numMovimiento index="0" len="4" tipo="int">128</numMovimiento>
+      <origen index="4" len="2" tipo="int">00<lado index="6" len="1" tipo="byte">1</lado>
+        <columna index="7" len="1" tipo="byte">12</columna>
+        <nivel index="8" len="1" tipo="byte">13</nivel>
+        <posUbicacion index="9" len="1" tipo="byte">2</posUbicacion>
+      </origen>
+      <destino index="10" len="2" tipo="int">00<lado index="12" len="1" tipo="byte">1</lado>
+        <columna index="13" len="1" tipo="byte">1</columna>
+        <nivel index="14" len="1" tipo="byte">2</nivel>
+        <posUbicacion index="15" len="1" tipo="byte">3</posUbicacion>
+      </destino>
+      <tipCarga index="16" len="1" tipo="byte">0</tipCarga>
+      <tipMov index="17" len="1" tipo="byte">0</tipMov>
+      <pesTeorico index="18" len="2" tipo="int">0</pesTeorico>
+      <pesReal index="20" len="2" tipo="int">0</pesReal>
+      <tolPeso index="22" len="1" tipo="byte">0</tolPeso>
+      <numCargas index="23" len="1" tipo="byte">0</numCargas>
+      <numLote index="24" len="2" tipo="int">11</numLote>
+      <posAct index="26" len="2" tipo="int">0</posAct>
+      <codError index="28" len="2" tipo="int">0</codError>
+      <estadoOrden index="20" len="1" tipo="byte">0</estadoOrden>
+      <transelevador index="31" len="1" tipo="byte">0</transelevador>
+      <matricula index="32" len="10" tipo="str">100000017074</matricula>
+   </Detalles>
+</Telegrama>
+
+2005-04-19 09:59:18,687 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:18,750 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:19,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:19,859 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:20,015 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:21,296 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:22,968 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 09:59:22,968 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 09:59:23,687 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:23,750 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:24,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:24,859 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:24,984 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:26,281 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:27,968 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 09:59:27,968 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 09:59:28,687 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:28,781 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:29,734 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:29,859 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:29,984 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:31,359 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:32,968 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 09:59:32,968 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 09:59:33,687 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:33,750 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:34,734 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:34,859 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:34,984 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:36,281 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:37,968 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 09:59:37,968 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 09:59:38,687 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:38,750 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:39,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:39,875 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:39,984 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:41,281 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:42,968 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 09:59:42,968 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 09:59:43,687 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:43,750 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:44,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:44,859 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:45,015 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:46,281 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:47,968 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 09:59:47,968 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 09:59:48,750 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:48,781 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:49,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:49,859 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:49,984 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:51,343 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:52,968 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 09:59:52,968 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 09:59:53,687 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:53,765 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:54,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:54,859 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:54,984 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:56,312 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:57,968 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 09:59:57,968 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 09:59:58,687 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:58,750 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:59,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:59,859 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 09:59:59,984 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:01,390 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:02,968 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:00:02,984 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:00:03,687 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:03,750 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:04,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:04,875 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:04,984 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:06,375 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:07,968 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:00:07,968 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:00:08,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:08,750 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:09,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:09,859 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:09,984 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:11,484 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:12,968 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:00:12,968 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:00:13,687 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:13,750 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:14,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:14,875 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:15,000 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:16,281 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:17,968 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:00:17,968 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:00:18,687 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:18,750 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:19,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:19,890 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:19,984 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:21,484 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:22,968 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:00:22,968 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:00:23,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:23,750 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:24,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:24,859 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:24,984 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:26,546 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:27,968 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:00:27,968 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:00:28,687 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:28,750 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:29,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:29,859 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:30,000 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:31,515 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:32,968 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:00:32,968 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:00:33,687 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:33,750 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:34,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:34,859 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:34,984 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:36,296 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:37,968 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:00:37,968 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:00:38,687 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:38,750 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:39,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:39,859 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:40,015 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:41,281 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:42,968 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:00:42,968 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:00:43,687 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:43,781 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:44,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:44,859 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:44,984 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:46,359 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:47,968 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:00:47,968 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:00:48,687 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:48,750 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:49,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:49,859 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:49,984 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:51,312 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:52,968 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:00:52,968 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:00:53,687 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:53,750 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:54,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:54,859 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:55,000 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:56,328 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:57,968 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:00:57,968 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:00:58,687 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:58,781 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:59,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:59,859 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:00:59,984 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:01,296 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:02,968 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:01:02,968 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:01:03,703 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:03,750 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:04,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:04,859 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:05,000 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:06,281 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:07,968 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:01:07,984 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:01:08,687 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:08,750 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:09,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:09,906 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:10,000 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:11,281 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:12,968 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:01:12,968 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:01:13,703 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:13,750 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:14,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:14,859 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:15,000 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:16,281 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:17,968 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:01:17,968 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:01:18,687 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:18,750 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:19,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:19,859 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:19,984 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:21,281 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:22,968 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:01:22,968 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:01:23,687 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:23,750 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:24,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:24,890 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:24,984 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:26,343 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:27,968 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:01:27,968 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:01:28,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:28,750 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:29,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:29,859 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:29,984 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:31,328 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:32,968 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:01:32,968 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:01:33,687 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:33,781 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:34,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:34,859 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:34,984 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:36,312 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:37,968 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:01:37,968 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:01:38,687 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:38,750 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:39,734 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:39,859 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:39,984 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:41,359 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:42,968 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:01:42,968 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:01:43,687 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:43,750 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:44,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:44,859 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:45,000 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:46,515 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:47,968 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:01:47,968 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:01:48,796 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:48,828 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:49,734 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:49,859 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:50,015 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:51,296 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:52,968 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:01:52,968 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:01:53,781 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:53,812 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:54,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:54,890 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:55,000 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:56,328 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:57,968 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:01:57,968 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:01:58,750 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:58,859 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:59,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:59,875 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:01:59,984 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:01,296 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:02,968 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:02:02,968 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:02:03,828 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:03,875 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:04,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:04,859 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:04,984 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:06,281 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:07,968 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:02:07,968 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:02:08,828 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:08,875 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:09,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:09,859 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:10,000 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:11,312 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:12,968 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:02:12,968 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:02:13,765 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:13,859 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:14,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:14,859 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:14,984 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:16,296 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:17,968 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:02:17,968 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:02:18,765 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:18,828 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:19,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:19,859 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:19,984 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:21,281 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:22,968 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:02:22,968 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:02:23,796 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:23,828 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:24,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:24,859 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:25,015 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:26,312 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:27,968 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:02:27,984 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:02:28,781 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:28,843 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:29,765 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:29,859 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:29,984 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:31,406 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:33,031 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:02:33,031 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:02:33,828 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:33,843 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:34,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:34,875 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:34,984 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:36,281 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:38,031 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:02:38,031 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:02:38,781 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:38,828 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:39,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:39,906 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:39,984 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:41,343 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:43,031 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:02:43,031 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:02:43,828 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:43,859 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:44,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:44,875 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:45,031 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:46,328 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:48,031 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:02:48,031 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:02:48,828 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:48,875 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:49,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:49,859 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:50,000 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:51,453 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:53,031 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:02:53,031 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:02:53,781 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:53,875 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:54,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:54,859 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:55,000 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:56,281 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:58,031 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:02:58,031 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:02:58,781 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:58,859 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:59,734 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:02:59,859 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:00,000 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:01,281 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:03,046 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:03:03,046 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:03:03,781 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:03,828 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:04,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:04,859 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:05,000 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:06,281 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:08,062 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:03:08,062 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:03:08,828 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:08,875 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:09,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:09,859 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:10,000 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:11,281 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:13,046 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:03:13,046 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:03:13,828 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:13,843 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:14,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:14,875 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:15,390 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:16,359 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:18,046 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:03:18,046 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:03:18,828 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:18,859 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:19,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:19,890 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:20,031 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:21,281 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:23,031 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:03:23,031 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:03:23,828 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:23,906 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:24,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:24,859 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:25,046 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:26,343 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:28,031 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:03:28,031 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:03:28,828 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:28,921 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:29,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:29,859 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:30,000 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:31,312 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:33,078 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:03:33,078 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:03:33,828 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:33,859 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:34,750 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:34,859 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:35,015 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:36,390 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:38,062 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:03:38,062 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:03:38,828 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:38,843 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:39,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:39,859 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:40,015 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:41,390 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:43,093 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:03:43,093 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:03:43,953 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:43,953 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:44,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:44,859 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:45,015 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:46,421 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:48,031 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:03:48,031 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:03:48,843 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:48,875 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:49,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:49,875 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:50,015 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:51,328 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:53,046 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:03:53,046 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:03:53,843 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:53,875 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:54,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:54,859 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:55,015 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:56,328 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:58,062 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:03:58,062 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:03:58,875 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:58,968 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:59,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:03:59,875 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:00,046 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:01,390 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:03,093 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:04:03,093 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:04:03,875 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:03,937 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:04,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:04,875 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:05,015 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:06,453 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:08,046 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:04:08,046 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:04:08,843 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:08,875 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:09,750 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:09,859 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:10,015 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:11,281 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:13,093 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:04:13,093 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:04:13,875 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:13,906 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:14,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:14,875 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:15,093 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:16,281 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:18,031 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:04:18,031 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:04:18,875 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:19,031 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:19,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:19,859 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:20,031 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:21,296 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:23,093 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:04:23,093 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:04:23,875 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:23,968 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:24,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:24,859 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:25,046 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:26,328 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:28,078 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:04:28,078 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:04:28,875 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:28,953 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:29,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:29,875 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:30,390 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:31,296 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:33,031 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:04:33,031 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:04:33,921 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:33,968 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:34,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:34,859 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:35,046 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:36,328 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:38,031 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:04:38,031 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:04:38,875 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:38,984 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:39,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:39,859 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:40,031 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:41,328 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:43,031 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:04:43,031 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:04:43,875 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:43,953 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:44,750 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:44,859 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:45,046 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:46,328 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:48,078 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:04:48,078 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:04:48,937 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:48,953 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:49,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:49,859 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:50,062 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:51,281 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:53,031 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:04:53,031 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:04:54,000 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:54,203 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:54,812 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:54,890 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:55,093 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:56,312 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:58,031 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:04:58,031 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:04:58,984 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:59,000 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:04:59,812 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:00,000 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:00,093 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:01,328 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:03,031 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:05:03,031 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:05:04,000 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:04,062 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:04,812 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:04,890 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:05,265 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:06,281 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:08,031 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:05:08,031 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:05:08,953 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:09,125 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:09,812 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:09,890 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:10,109 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:11,281 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:13,031 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:05:13,031 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:05:14,015 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:14,093 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:14,859 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:14,890 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:15,093 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:16,296 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:18,031 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:05:18,031 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:05:19,015 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:19,093 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:19,859 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:20,015 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:20,093 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:21,281 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:23,031 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:05:23,031 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:05:24,000 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:24,093 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:24,859 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:24,937 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:25,109 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:26,406 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:28,031 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:05:28,031 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:05:29,062 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:29,093 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:29,859 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:29,937 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:30,171 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:31,640 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:33,031 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:05:33,031 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:05:34,062 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:34,281 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:34,937 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:35,046 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:35,109 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:36,281 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:38,031 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:05:38,031 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:05:39,046 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:39,265 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:39,937 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:40,046 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:40,093 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:41,296 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:43,031 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:05:43,031 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:05:44,031 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:44,265 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:45,046 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:45,109 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:45,125 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:46,312 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:48,031 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:05:48,031 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:05:49,062 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:49,265 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:49,937 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:50,484 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:50,625 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:51,375 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:53,031 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:05:53,031 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:05:54,265 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:54,296 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:54,953 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:55,093 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:55,125 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:56,281 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:58,031 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:05:58,031 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:05:59,046 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:05:59,265 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:00,031 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:00,109 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:00,140 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:01,328 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:03,031 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:06:03,031 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:06:04,062 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:04,265 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:04,953 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:05,093 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:05,171 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:06,437 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:08,031 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:06:08,031 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:06:09,078 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:09,265 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:10,015 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:10,093 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:10,125 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:11,421 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:13,031 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:06:13,109 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:06:14,125 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:14,265 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:14,953 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:15,093 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:15,484 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:16,281 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:18,031 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:06:18,031 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:06:19,078 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:19,265 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:19,953 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:20,093 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:20,140 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:21,281 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:23,031 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:06:23,031 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:06:24,078 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:24,265 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:24,937 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:25,250 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:25,437 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:26,281 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:28,031 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:06:28,031 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:06:29,187 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:29,265 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:29,937 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:30,093 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:30,250 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:31,281 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:33,031 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:06:33,031 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:06:34,093 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:34,328 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:34,953 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:35,093 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:35,250 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:36,406 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:38,031 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:06:38,031 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:06:39,093 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:39,265 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:39,937 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:40,093 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:40,250 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:41,328 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:43,031 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:06:43,031 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:06:44,140 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:44,265 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:44,968 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:45,125 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:45,250 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:46,328 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:48,031 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:06:48,031 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:06:49,093 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:49,265 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:49,953 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:50,109 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:50,250 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:51,359 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:53,031 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:06:53,031 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:06:54,109 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:54,265 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:55,062 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:55,171 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:55,296 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:56,406 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:58,031 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:06:58,031 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:06:59,093 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:06:59,265 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:00,015 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:00,093 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:00,250 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:01,296 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:03,031 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:07:03,031 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:07:04,093 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:04,265 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:05,015 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:05,093 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:05,250 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:06,281 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:08,031 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:07:08,031 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:07:09,093 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:09,265 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:09,937 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:10,109 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:10,250 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:11,281 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:13,031 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:07:13,031 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:07:14,093 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:14,265 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:14,937 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:15,093 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:15,265 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:16,328 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:18,031 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:07:18,031 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:07:19,375 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:19,437 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:19,953 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:20,125 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:20,250 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:21,390 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:23,031 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:07:23,031 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:07:24,093 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:24,437 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:25,015 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:25,093 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:25,250 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:26,437 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:28,031 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:07:28,031 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:07:29,093 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:29,437 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:30,000 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:30,093 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:30,250 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:31,390 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:33,031 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:07:33,046 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:07:34,093 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:34,437 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:34,937 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:35,109 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:35,250 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:36,296 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:38,031 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:07:38,031 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:07:39,093 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:39,437 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:39,953 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:40,109 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:40,281 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:41,296 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:43,031 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:07:43,031 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:07:44,093 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:44,437 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:44,937 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:45,109 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:45,250 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:46,812 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:48,031 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:07:48,031 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:07:49,140 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:49,437 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:49,937 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:50,109 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:50,250 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:51,859 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:53,031 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:07:53,031 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:07:54,171 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:54,437 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:54,968 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:55,109 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:55,250 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:56,828 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:58,031 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:07:58,140 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:07:59,203 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:07:59,437 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:08:04,156 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:08:04,156 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:08:04,390 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:08:14,437 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:08:14,515 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:08:14,515 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:08:14,609 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:08:19,171 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:08:19,187 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:08:19,421 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:08:19,484 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:08:19,562 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:08:22,687 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:08:22,796 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:08:24,500 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:08:24,500 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:08:24,734 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:08:24,781 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:08:24,796 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:08:28,156 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:08:28,250 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:08:29,906 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:08:30,281 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:08:30,328 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:08:31,437 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:08:31,453 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:08:31,750 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:08:34,515 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:08:34,796 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:08:35,640 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:08:36,750 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:08:36,781 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:08:36,875 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:08:36,953 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:08:40,359 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:08:40,406 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:08:40,515 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:08:40,640 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:08:40,640 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:10:26,562 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:10:26,562 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:10:30,250 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:10:30,484 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:10:30,562 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:10:55,515 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:10:55,515 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:10:59,640 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:10:59,703 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:10:59,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:11:00,515 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:11:00,718 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:11:00,718 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:11:00,734 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:11:00,890 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:11:04,656 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:11:04,765 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:11:04,781 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:11:05,515 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:11:05,515 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:11:05,703 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:11:05,890 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:11:05,968 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:11:09,687 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:11:09,781 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:11:09,812 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:11:10,515 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:11:10,515 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:11:10,703 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:11:11,015 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:11:11,125 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:11:14,656 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:11:14,750 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:11:14,843 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:11:15,515 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:11:15,515 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:11:15,765 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:11:15,953 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:11:16,312 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:11:19,656 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:11:19,687 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:11:19,703 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:11:20,515 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:11:20,515 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:11:20,765 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:11:20,968 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:11:21,125 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:11:24,656 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:11:24,687 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:11:24,734 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:11:25,625 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:11:25,625 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:11:25,953 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:11:25,984 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:11:26,125 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:11:29,687 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:11:29,718 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:11:29,828 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:11:30,515 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:11:30,515 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:11:31,015 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:11:31,062 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:11:31,109 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:11:34,656 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:11:34,687 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:11:34,781 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:11:35,515 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:11:35,515 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:11:35,968 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:11:36,109 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:11:36,156 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:11:39,687 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:11:39,718 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:11:39,765 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:11:40,515 TRACE [Thread-9] action {GestorOrdTran.java:482} - Gestor ordres de transport accion eTimeOut:true eMensajeNuevo:false eEndProcess:false ePing:false
+2005-04-19 10:11:40,515 TRACE [Thread-9] action {GestorOrdTran.java:492} - Gestor ordres de transport accion timed out
+2005-04-19 10:11:40,968 TRACE [Thread-18] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:11:41,015 TRACE [Thread-15] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false
+2005-04-19 10:11:41,171 TRACE [Thread-12] action {Traslo.java:401} - Traslo action timeOut: true updateEstado: false

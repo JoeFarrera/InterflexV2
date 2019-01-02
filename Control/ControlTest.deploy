@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<client-deployment nselem="client-deployment" class="oracle.jdeveloper.deploy.jar.ClientProfile" xmlns="http://xmlns.oracle.com/jdeveloper/10120/deploy/j2ee-client-jar">
+   <archiveOptions>
+      <additionalManifests/>
+      <compressed>false</compressed>
+      <hasManifest>true</hasManifest>
+      <mainClass>es.sysmap.interflex.control.PlsStatusTesterDialog</mainClass>
+   </archiveOptions>
+   <defaultConnection/>
+   <deployClientMaxHeapSize/>
+   <earURL path="deploy/ControlTest.ear"/>
+   <enterpriseAppName/>
+   <fileGroups>
+      <groups>
+         <Item class="oracle.jdeveloper.deploy.common.PackagingFileGroup" internalName="project-output">
+            <contributors>
+               <Item type="2"/>
+               <Item type="7"/>
+               <Item type="3"/>
+            </contributors>
+            <displayName>Project Output</displayName>
+            <filters>
+               <rules>
+                  <Item type="1" pattern="**/CVS/"/>
+                  <Item type="1" pattern="**.cdi"/>
+                  <Item type="1" pattern="**.contrib"/>
+                  <Item type="1" pattern="**.keep"/>
+                  <Item type="1" pattern="**.rvi"/>
+                  <Item type="1" pattern=".jsps/"/>
+                  <Item type="0" pattern="**"/>
+               </rules>
+            </filters>
+            <targetWithinJar/>
+         </Item>
+         <Item class="oracle.jdeveloper.deploy.common.ProjectFileGroup">
+            <contributors>
+               <autoInclude>true</autoInclude>
+               <deploySourceAs>0</deploySourceAs>
+               <files class="[Ljava.net.URL;"/>
+               <selectionFilters/>
+            </contributors>
+            <displayName>Analisis</displayName>
+            <filters>
+               <additionalArchives/>
+               <afterFilters/>
+               <beforeFilters/>
+               <duringFilters/>
+               <selectedArchives>
+                  <archives>
+                     <Item path="../sysmap/ChainsawV2/log4j-1.3alpha-7.jar" jar-entry=""/>
+                     <Item protocol="jar" path="file:/C:/jdev1012-1/lib/xmlparserv2.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/jdev1012-1/lib/xmlcomp.jar!/"/>
+                  </archives>
+                  <selectionMode>0</selectionMode>
+               </selectedArchives>
+            </filters>
+            <targetWithinJar/>
+         </Item>
+      </groups>
+   </fileGroups>
+   <jarURL path="deploy/ControlTest.jar"/>
+   <profileDeps/>
+   <properties/>
+</client-deployment>

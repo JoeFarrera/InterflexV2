@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE ViewLink SYSTEM "jbo_03_01.dtd">
+
+<ViewLink
+   Name="SgavbultovldocentradesLink" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.2.17.96" />
+   </DesignTime>
+   <ViewLinkDefEnd
+      Name="SgavbultoView"
+      Cardinality="1"
+      Owner="es.sysmap.interflex.model.dmc.SgavbultoView"
+      Source="true" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.dmc.SgavbultoView.Iddoc" />
+         <Item Value="es.sysmap.interflex.model.dmc.SgavbultoView.Idbulto" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_isUpdateable" Value="true" />
+         <Attr Name="_finderName" Value="SgavbultoView" />
+         <Attr Name="_accessor" Value="false" />
+      </DesignTime>
+   </ViewLinkDefEnd>
+   <ViewLinkDefEnd
+      Name="SgavldocEntradesView"
+      Cardinality="-1"
+      Owner="es.sysmap.interflex.model.dmc.SgavldocEntradesView" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.dmc.SgavldocEntradesView.Iddoc" />
+         <Item Value="es.sysmap.interflex.model.dmc.SgavldocEntradesView.Idbulto" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_isUpdateable" Value="true" />
+         <Attr Name="_finderName" Value="SgavldocEntradesView" />
+         <Attr Name="_accessor" Value="true" />
+      </DesignTime>
+   </ViewLinkDefEnd>
+</ViewLink>

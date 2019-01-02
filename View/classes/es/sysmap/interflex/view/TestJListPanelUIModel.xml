@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<DCContainer
+   id="TestJListPanelUIModel"
+   xmlns="http://xmlns.oracle.com/adfm/uimodel"
+   version="10.1.2.17.96"
+   Package="es.sysmap.interflex.view"
+   FindMode="false"
+   EnableTokenValidation="true" >
+   <Contents >
+      <DCIterator
+         id="SgaarticuloView1Iterator"
+         Binds="AppModuleDataControl.SgaarticuloView1"
+         RangeSize="10" >
+      </DCIterator>
+      <DCIterator
+         id="SgacdocSortidesView1Iterator"
+         Binds="AppModuleDataControl.SgacdocSortidesView1"
+         RangeSize="10" >
+      </DCIterator>
+      <DCIterator
+         id="SgalbultoView1Iterator"
+         Binds="AppModuleDataControl.SgalbultoView1"
+         RangeSize="10" >
+      </DCIterator>
+      <DCIterator
+         id="SgalbultoView5Iterator"
+         Binds="AppModuleDataControl.SgalbultoView5"
+         RangeSize="10" >
+      </DCIterator>
+      <DCIterator
+         id="SgavcdocView1Iterator"
+         Binds="AppModuleDataControl.SgavcdocView1"
+         RangeSize="10" >
+      </DCIterator>
+      <DCControl
+         id="SgacdocSortidesView1"
+         DefClass="oracle.jbo.uicli.jui.JUTreeDef"
+         SubType="DCTree"
+         IterBinding="SgacdocSortidesView1Iterator"
+         ApplyValidation="false"
+         isDynamic="false"
+         ShowsRootHandles="false" >
+         <AttrNames>
+            <Item Value="Iddoc" />
+            <Item Value="Idcabstr" />
+            <Item Value="Idcabnum" />
+            <Item Value="Numlineas" />
+            <Item Value="Numbultos" />
+            <Item Value="Estado" />
+            <Item Value="Operario" />
+            <Item Value="Pestotal" />
+            <Item Value="Motivo" />
+            <Item Value="Nombre" />
+            <Item Value="Direccion" />
+            <Item Value="Codpostal" />
+            <Item Value="Poblacion" />
+            <Item Value="Provincia" />
+            <Item Value="Telefono" />
+            <Item Value="Portes" />
+            <Item Value="Falbaran" />
+            <Item Value="Spedido" />
+            <Item Value="Pais" />
+            <Item Value="Transporte" />
+            <Item Value="Reembolso" />
+            <Item Value="Talbaran" />
+            <Item Value="Nalbaran" />
+            <Item Value="Codempresa" />
+            <Item Value="Transp" />
+            <Item Value="Tportes" />
+            <Item Value="Ccliente" />
+            <Item Value="Idultbulto" />
+            <Item Value="Idtipdoc" />
+            <Item Value="Prioridad" />
+            <Item Value="Estadolineas" />
+            <Item Value="Descestado" />
+            <Item Value="Descestadolineas" />
+         </AttrNames>
+         <JUCtrlHierTypeBinding
+            id="SgacdocSortidesViewNode"
+            DefClass="oracle.jbo.uicli.binding.JUCtrlHierTypeBinding"
+            SubType="DCTree"
+            ApplyValidation="false"
+            isDynamic="false"
+            DefName="es.sysmap.interflex.model.dmc.SgacdocSortidesView" >
+            <Contents >
+               <Accessors>
+                  <Item Value="SgaldocView" />
+               </Accessors>
+            </Contents>
+            <AttrNames>
+               <Item Value="Iddoc" />
+            </AttrNames>
+         </JUCtrlHierTypeBinding>
+         <JUCtrlHierTypeBinding
+            id="SgaldocViewNode"
+            DefClass="oracle.jbo.uicli.binding.JUCtrlHierTypeBinding"
+            SubType="DCTree"
+            ApplyValidation="false"
+            isDynamic="false"
+            DefName="es.sysmap.interflex.model.dmc.SgaldocView" >
+            <Contents >
+               <Accessors>
+               </Accessors>
+            </Contents>
+            <AttrNames>
+               <Item Value="Idart" />
+            </AttrNames>
+         </JUCtrlHierTypeBinding>
+      </DCControl>
+   </Contents>
+</DCContainer>

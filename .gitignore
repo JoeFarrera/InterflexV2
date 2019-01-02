@@ -1,0 +1,8 @@
+#Directories to ignore for git
+Software/*
+sysmap/*
+TEC B-472/*
+*.class
+*.jar
+*.rar
+*.bak

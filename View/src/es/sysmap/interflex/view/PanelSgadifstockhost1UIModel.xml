@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<DCContainer
+   id="PanelSgadifstockhost1UIModel"
+   xmlns="http://xmlns.oracle.com/adfm/uimodel"
+   version="10.1.2.17.96"
+   Package="es.sysmap.interflex.view"
+   FindMode="false"
+   EnableTokenValidation="true" >
+   <Contents >
+      <DCIterator
+         id="Sgadifstockhost1Iter"
+         Binds="AppModuleDataControl.Sgadifstockhost1" >
+      </DCIterator>
+      <DCControl
+         id="Sgadifstockhost1"
+         DefClass="oracle.jbo.uicli.jui.JUTableDef"
+         SubType="DCTable"
+         IterBinding="Sgadifstockhost1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Idartif" />
+            <Item Value="Descrip" />
+            <Item Value="Stock" />
+            <Item Value="Cantot" />
+         </AttrNames>
+      </DCControl>
+   </Contents>
+</DCContainer>

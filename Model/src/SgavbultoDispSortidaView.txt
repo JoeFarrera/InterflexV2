@@ -1,0 +1,5 @@
+select iddoc, idbulto from sgabulto b where
+exists (select 'T' from sgalbulto l where l.idbulto = b.idbulto and l.iddoc = b.iddoc and l.estado != 'F')
+or not exists (select 'T' from sgalbulto l where l.idbulto = b.idbulto and l.iddoc = b.iddoc)
+union 
+select iddoc, to_number('') from sgabulto b

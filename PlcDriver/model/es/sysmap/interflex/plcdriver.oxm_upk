@@ -1,0 +1,10 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<?Oracle-JDeveloper Artifact = '1.0'?>
+<artifact xmlns="http://xmlns.oracle.com/jdeveloper/modeler/artifact" name="plcdriver" type="UMLPackage" cid="ddf3a5ba-0101-1000-822f-c0a80001f0ec::es.sysmap.interflex.plcdriver::UMLPackage">
+   <property xmlns="">
+      <cid name="NAMESPACE_REFERENCE" key="ddf3a5ba-0101-1000-822e-c0a80001f0ec::es.sysmap.interflex::UMLPackage"/>
+      <null name="COMMENT"/>
+   </property>
+   <backreference xmlns=""/>
+   <children xmlns=""/>
+</artifact>

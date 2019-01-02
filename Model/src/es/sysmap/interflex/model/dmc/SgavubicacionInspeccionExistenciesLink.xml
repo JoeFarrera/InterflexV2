@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE ViewLink SYSTEM "jbo_03_01.dtd">
+
+<ViewLink
+   Name="SgavubicacionInspeccionExistenciesLink" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.2.17.96" />
+   </DesignTime>
+   <ViewLinkDefEnd
+      Name="SgavubicacionInspeccionView"
+      Cardinality="1"
+      Owner="es.sysmap.interflex.model.dmc.SgavubicacionInspeccionView"
+      Source="true" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.dmc.SgavubicacionInspeccionView.Idmac" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_isUpdateable" Value="true" />
+         <Attr Name="_finderName" Value="SgavubicacionInspeccionView" />
+         <Attr Name="_accessor" Value="false" />
+      </DesignTime>
+   </ViewLinkDefEnd>
+   <ViewLinkDefEnd
+      Name="SgavexistenciaView"
+      Cardinality="-1"
+      Owner="es.sysmap.interflex.model.dmc.SgavexistenciaView" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.dmc.SgavexistenciaView.Idmac" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_isUpdateable" Value="true" />
+         <Attr Name="_finderName" Value="SgavexistenciaView" />
+         <Attr Name="_accessor" Value="true" />
+      </DesignTime>
+   </ViewLinkDefEnd>
+</ViewLink>

@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+
+<ViewObject
+   Name="SgavAgenciaTipoEnvio"
+   BindingStyle="Oracle"
+   CustomQuery="true"
+   ComponentClass="es.sysmap.interflex.model.dmc.SgavAgenciaTipoEnvioImpl"
+   MsgBundleClass="es.sysmap.interflex.model.dmc.common.SgavAgenciaTipoEnvioRowImplMsgBundle"
+   UseGlueCode="false" >
+   <SQLQuery><![CDATA[
+SELECT ag.ID,
+  ag.CODTRA,
+  ag.TIPOENVIO,
+  cdoc.IDDOC,
+  cdoc.IDCABNUM 
+FROM Z_AGENCIATIPOENVIO ag,
+  SGACDOC cdoc
+where cdoc.transp = ag.codtra
+   ]]></SQLQuery>
+   <DesignTime>
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_codeGenFlag2" Value="Access|Coll|Msg" />
+      <Attr Name="_isExpertMode" Value="true" />
+   </DesignTime>
+   <ViewAttribute
+      Name="Id"
+      IsPersistent="false"
+      IsNotNull="true"
+      PrecisionRule="true"
+      Precision="10"
+      Scale="0"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      AliasName="ID"
+      Expression="NULL"
+      SQLType="NUMERIC" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Codtra"
+      IsPersistent="false"
+      PrecisionRule="true"
+      Precision="12"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="CODTRA"
+      Expression="CODTRA"
+      SQLType="VARCHAR" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="12" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Tipoenvio"
+      IsPersistent="false"
+      PrecisionRule="true"
+      Precision="50"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="TIPOENVIO"
+      Expression="TIPOENVIO"
+      SQLType="VARCHAR" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="50" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Iddoc"
+      IsPersistent="false"
+      IsNotNull="true"
+      PrecisionRule="true"
+      Precision="9"
+      Scale="0"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      AliasName="IDDOC"
+      Expression="IDDOC"
+      SQLType="NUMERIC" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Idcabnum"
+      IsPersistent="false"
+      IsNotNull="true"
+      PrecisionRule="true"
+      Precision="12"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="IDCABNUM"
+      Expression="IDCABNUM"
+      SQLType="VARCHAR" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="12" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewLinkAccessor
+      Name="SgavFormatosTipoEnvio"
+      ViewLink="es.sysmap.interflex.model.dmc.SgaVAgenciaTipoEnvioFormatos"
+      Type="oracle.jbo.RowIterator"
+      IsUpdateable="false" >
+   </ViewLinkAccessor>
+</ViewObject>

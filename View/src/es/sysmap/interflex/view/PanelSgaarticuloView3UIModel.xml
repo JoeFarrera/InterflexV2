@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<DCContainer
+   id="PanelSgaarticuloView3UIModel"
+   xmlns="http://xmlns.oracle.com/adfm/uimodel"
+   version="10.1.2.17.96"
+   Package="es.sysmap.interflex.view"
+   FindMode="true"
+   EnableTokenValidation="true" >
+   <Contents >
+      <DCIterator
+         id="SgaarticuloView3Iter"
+         Binds="AppModuleDataControl.SgaarticuloView3" >
+      </DCIterator>
+      <DCControl
+         id="Idart"
+         SubType="DCTextField"
+         IterBinding="SgaarticuloView3Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Idartif" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Descrip"
+         SubType="DCTextField"
+         IterBinding="SgaarticuloView3Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Descrip" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Pesunit"
+         SubType="DCTextField"
+         IterBinding="SgaarticuloView3Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Pesunit" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Controlpes"
+         SubType="DCTextField"
+         IterBinding="SgaarticuloView3Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Controlpes" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Uniemb"
+         SubType="DCTextField"
+         IterBinding="SgaarticuloView3Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Uniemb" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Uniembesp"
+         SubType="DCTextField"
+         IterBinding="SgaarticuloView3Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Uniembesp" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Idtipmac"
+         SubType="DCTextField"
+         IterBinding="SgaarticuloView3Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Idtipmac" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Unimac"
+         SubType="DCTextField"
+         IterBinding="SgaarticuloView3Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Unimac" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Pesuniven"
+         SubType="DCTextField"
+         IterBinding="SgaarticuloView3Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Pesuniven" />
+         </AttrNames>
+      </DCControl>
+   </Contents>
+</DCContainer>

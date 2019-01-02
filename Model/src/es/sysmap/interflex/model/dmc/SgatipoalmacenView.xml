@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+
+<ViewObject
+   Name="SgatipoalmacenView"
+   SelectList="Sgatipoalmacen.IDTIPALM, 
+       Sgatipoalmacen.DESCRIP"
+   FromList="SGATIPOALMACEN Sgatipoalmacen"
+   OrderBy="Sgatipoalmacen.IDTIPALM"
+   BindingStyle="Oracle"
+   CustomQuery="false"
+   ComponentClass="es.sysmap.interflex.model.dmc.SgatipoalmacenViewImpl"
+   MsgBundleClass="oracle.jbo.common.JboResourceBundle"
+   UseGlueCode="false" >
+   <DesignTime>
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_codeGenFlag2" Value="Access|Coll" />
+      <Attr Name="_isExpertMode" Value="false" />
+   </DesignTime>
+   <EntityUsage
+      Name="Sgatipoalmacen"
+      Entity="es.sysmap.interflex.model.bdc.Sgatipoalmacen" >
+      <DesignTime>
+         <Attr Name="_EntireObjectTable" Value="false" />
+         <Attr Name="_queryClause" Value="true" />
+         <Attr Name="_queryOrderBy" Value="Sgatipoalmacen.IDTIPALM" />
+      </DesignTime>
+   </EntityUsage>
+   <ViewAttribute
+      Name="Idtipalm"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Idtipalm"
+      EntityUsage="Sgatipoalmacen"
+      AliasName="IDTIPALM" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Descrip"
+      PrecisionRule="true"
+      EntityAttrName="Descrip"
+      EntityUsage="Sgatipoalmacen"
+      AliasName="DESCRIP" >
+   </ViewAttribute>
+   <ViewLinkAccessor
+      Name="SgaubicacionView"
+      ViewLink="es.sysmap.interflex.model.dmc.SysC0010968Link"
+      Type="oracle.jbo.RowIterator"
+      IsUpdateable="false" >
+   </ViewLinkAccessor>
+</ViewObject>

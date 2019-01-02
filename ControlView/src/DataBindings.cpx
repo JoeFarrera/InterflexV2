@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<JboProject
+   id="DataBindings"
+   xmlns="http://xmlns.oracle.com/adfm/application"
+   version="10.1.2.17.96"
+   SeparateXMLFiles="false"
+   Package=""
+   ClientType="JClient" >
+   <Contents >
+      <DataControl
+         id="AppModuleDataControl"
+         SubType="DCBC4J"
+         SupportsFindMode="true"
+         SupportsTransactions="true"
+         Package="es.sysmap.interflex.model.dmc"
+         FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl"
+         Configuration="AppModuleLocal" >
+         <Parameters >
+            <Parameter
+               name="Sync"
+               value="Immediate" >
+            </Parameter>
+         </Parameters>
+      </DataControl>
+      <Containee
+         id="PanelArranqueUIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.controlview.PanelArranqueUIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavtrasloEntSal1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgavtrasloEntSal1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavhistordtranView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgavhistordtranView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelComHostUIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.controlview.PanelComHostUIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgaarticuloView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.controlview.PanelSgaarticuloView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavtrasloUIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.controlview.PanelSgavtrasloUIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavordtranView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgavordtranView1UIModel" >
+      </Containee>
+   </Contents>
+</JboProject>

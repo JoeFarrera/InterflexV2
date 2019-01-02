@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE JboProject SYSTEM "jbo_03_01.dtd">
+
+<JboProject
+   Name="ModelRps"
+   SeparateXMLFiles="true"
+   PackageName="" >
+   <DesignTime>
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_jprName" Value="../ModelRps.jpr" />
+      <Attr Name="_ejbPackage" Value="false" />
+      <Attr Name="_jbo.SQLBuilder" Value="SQL92" />
+      <Attr Name="_jbo.TypeMapEntries" Value="Java" />
+      <Attr Name="_NamedConnection" Value="ERPS" />
+      <Attr Name="_appModuleNames0" Value="es.sysmap.interflex.modelrps.dmc.AppModule" />
+   </DesignTime>
+   <Containee
+      Name="bdc"
+      FullName="es.sysmap.interflex.modelrps.bdc.bdc"
+      ObjectType="JboPackage" >
+   </Containee>
+   <Containee
+      Name="dmc"
+      FullName="es.sysmap.interflex.modelrps.dmc.dmc"
+      ObjectType="JboPackage" >
+   </Containee>
+</JboProject>

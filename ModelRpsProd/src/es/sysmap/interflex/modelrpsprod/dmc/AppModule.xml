@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE AppModule SYSTEM "jbo_03_01.dtd">
+
+<AppModule
+   Name="AppModule"
+   ComponentClass="es.sysmap.interflex.modelrpsprod.dmc.AppModuleImpl"
+   ComponentInterface="es.sysmap.interflex.modelrpsprod.dmc.common.AppModule"
+   ClientProxyName="es.sysmap.interflex.modelrpsprod.dmc.client.AppModuleClient" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_deployType" Value="0" />
+      <Attr Name="_ejbAppModule" Value="false" />
+   </DesignTime>
+   <ViewUsage
+      Name="EmbalajesView1"
+      ViewObjectName="es.sysmap.interflex.modelrpsprod.dmc.EmbalajesView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="EmbalajesreferenciaView1"
+      ViewObjectName="es.sysmap.interflex.modelrpsprod.dmc.EmbalajesreferenciaView" >
+   </ViewUsage>
+</AppModule>

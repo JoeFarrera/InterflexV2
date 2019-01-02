@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<DCContainer
+   id="PanelSgaVTrasloTrasbordoView1UIModel"
+   xmlns="http://xmlns.oracle.com/adfm/uimodel"
+   version="10.1.2.17.96"
+   Package="es.sysmap.interflex.view"
+   FindMode="false"
+   EnableTokenValidation="true" >
+   <Contents >
+      <DCIterator
+         id="SgaVTrasloTrasbordoView1Iter"
+         Binds="AppModuleDataControl.SgaVTrasloTrasbordoView1" >
+      </DCIterator>
+      <DCIterator
+         id="SgaVTrasloTrasbordoView1Iterator"
+         Binds="AppModuleDataControl.SgaVTrasloTrasbordoView1"
+         RangeSize="10" >
+      </DCIterator>
+      <DCIterator
+         id="SgaVTrasloTrasbordoView1Iterator1"
+         Binds="AppModuleDataControl.SgaVTrasloTrasbordoView1"
+         RangeSize="10" >
+      </DCIterator>
+      <DCIterator
+         id="SgaVTrasloTrasbordoView1Iterator2"
+         Binds="AppModuleDataControl.SgaVTrasloTrasbordoView1"
+         RangeSize="10" >
+      </DCIterator>
+      <DCControl
+         id="Idtraslo"
+         SubType="DCTextField"
+         IterBinding="SgaVTrasloTrasbordoView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Idtraslo" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Trasbordoentrada1"
+         DefClass="oracle.jbo.uicli.jui.JUButtonDef"
+         SubType="DCButton"
+         IterBinding="SgaVTrasloTrasbordoView1Iterator1"
+         ApplyValidation="false"
+         isDynamic="false"
+         ListOperMode="0"
+         StaticList="true"
+         BoolVal="true" >
+         <AttrNames>
+            <Item Value="Trasbordoentrada" />
+         </AttrNames>
+         <ValueList>
+            <Item Value="S" />
+            <Item Value="N" />
+         </ValueList>
+      </DCControl>
+      <DCControl
+         id="Trasbordosalida1"
+         DefClass="oracle.jbo.uicli.jui.JUButtonDef"
+         SubType="DCButton"
+         IterBinding="SgaVTrasloTrasbordoView1Iterator2"
+         ApplyValidation="false"
+         isDynamic="false"
+         ListOperMode="0"
+         StaticList="true"
+         BoolVal="true" >
+         <AttrNames>
+            <Item Value="Trasbordosalida" />
+         </AttrNames>
+         <ValueList>
+            <Item Value="S" />
+            <Item Value="N" />
+         </ValueList>
+      </DCControl>
+   </Contents>
+</DCContainer>

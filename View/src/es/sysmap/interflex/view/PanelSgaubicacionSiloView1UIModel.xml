@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<DCContainer
+   id="PanelSgaubicacionSiloView1UIModel"
+   xmlns="http://xmlns.oracle.com/adfm/uimodel"
+   version="10.1.2.17.96"
+   Package="es.sysmap.interflex.view"
+   FindMode="true"
+   EnableTokenValidation="true" >
+   <Contents >
+      <DCIterator
+         id="SgatipoubicacionlovView1Iter"
+         Binds="AppModuleDataControl.SgatipoubicacionlovView1"
+         RangeSize="10" >
+      </DCIterator>
+      <DCIterator
+         id="SgaubicacionSiloView1Iter"
+         Binds="AppModuleDataControl.SgaubicacionSiloView1" >
+      </DCIterator>
+      <DCControl
+         id="Idubi"
+         SubType="DCTextField"
+         IterBinding="SgaubicacionSiloView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Idubi" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Idtipubi"
+         SubType="DCTextField"
+         IterBinding="SgaubicacionSiloView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Idtipubi" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Pasillo"
+         SubType="DCTextField"
+         IterBinding="SgaubicacionSiloView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Pasillo" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Columna"
+         SubType="DCTextField"
+         IterBinding="SgaubicacionSiloView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Columna" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Nivel"
+         SubType="DCTextField"
+         IterBinding="SgaubicacionSiloView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Nivel" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Lado"
+         SubType="DCTextField"
+         IterBinding="SgaubicacionSiloView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Lado" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Rotacion"
+         SubType="DCTextField"
+         IterBinding="SgaubicacionSiloView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Rotacion" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Desctipubi"
+         DefClass="oracle.jbo.uicli.jui.JUComboBoxDef"
+         SubType="DCComboBox"
+         BindingClass="oracle.jbo.uicli.jui.JUComboBoxBinding"
+         IterBinding="SgaubicacionSiloView1Iter"
+         DTClass="oracle.adf.dt.objects.JUDTCtrlListLOV"
+         ApplyValidation="false"
+         isDynamic="false"
+         ListOperMode="0"
+         ListIter="SgatipoubicacionlovView1Iter" >
+         <AttrNames>
+            <Item Value="Idtipubi" />
+         </AttrNames>
+         <ListAttrNames>
+            <Item Value="Idtipubi" />
+         </ListAttrNames>
+         <ListDisplayAttrNames>
+            <Item Value="Descrip" />
+         </ListDisplayAttrNames>
+      </DCControl>
+      <DCControl
+         id="Descripvisual"
+         SubType="DCTextField"
+         IterBinding="SgaubicacionSiloView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Descripvisual" />
+         </AttrNames>
+      </DCControl>
+   </Contents>
+</DCContainer>

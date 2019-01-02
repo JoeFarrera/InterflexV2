@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<DCContainer
+   id="PanelSgaldocEntradesView6UIModel"
+   xmlns="http://xmlns.oracle.com/adfm/uimodel"
+   version="10.1.2.17.96"
+   Package="es.sysmap.interflex.view"
+   FindMode="false"
+   EnableTokenValidation="true" >
+   <Contents >
+      <DCIterator
+         id="SgaldocEntradesView2Iter"
+         Binds="AppModuleDataControl.SgaldocEntradesView2" >
+      </DCIterator>
+      <DCIterator
+         id="SgaldocEntradesView2Iterator"
+         Binds="AppModuleDataControl.SgaldocEntradesView2"
+         RangeSize="10" >
+      </DCIterator>
+      <DCControl
+         id="SgaldocEntradesView2"
+         DefClass="oracle.jbo.uicli.jui.JUTableDef"
+         SubType="DCTable"
+         IterBinding="SgaldocEntradesView2Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Idlin" />
+            <Item Value="Idartif" />
+            <Item Value="Cantotbulto" />
+            <Item Value="Canresbulto" />
+            <Item Value="Canpenbulto" />
+            <Item Value="Descestadobulto" />
+            <Item Value="Descrip" />
+            <Item Value="Cantot" />
+            <Item Value="Canres" />
+            <Item Value="Canpen" />
+            <Item Value="Estadobulto" />
+            <Item Value="Estado" />
+            <Item Value="Unimac" />
+            <Item Value="Desctipmac" />
+         </AttrNames>
+      </DCControl>
+   </Contents>
+</DCContainer>

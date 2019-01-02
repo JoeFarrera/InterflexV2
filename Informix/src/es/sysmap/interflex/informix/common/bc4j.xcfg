@@ -1,0 +1,33 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BC4JConfig>
+   <AppModuleConfigBag>
+      <AppModuleConfig name="AppModuleLocal">
+         <DeployPlatform>LOCAL</DeployPlatform>
+         <RELEASE_MODE>Stateless</RELEASE_MODE>
+         <jbo.sql92.JdbcDriverClass>com.informix.jdbc.IfxDriver</jbo.sql92.JdbcDriverClass>
+         <JDBCName>Interflex_informix</JDBCName>
+         <jbo.TypeMapEntries>Java</jbo.TypeMapEntries>
+         <jbo.dofailover>false</jbo.dofailover>
+         <jbo.ampool.doampooling>false</jbo.ampool.doampooling>
+         <jbo.project>Informix</jbo.project>
+         <jbo.ampool.dynamicjdbccredentials>false</jbo.ampool.dynamicjdbccredentials>
+         <AppModuleJndiName>es.sysmap.interflex.informix.AppModule</AppModuleJndiName>
+         <java.naming.factory.initial>oracle.jbo.common.JboInitialContextFactory</java.naming.factory.initial>
+         <ApplicationName>es.sysmap.interflex.informix.AppModule</ApplicationName>
+         <jbo.ampool.resetnontransactionalstate>false</jbo.ampool.resetnontransactionalstate>
+         <jbo.SQLBuilder>SQL92</jbo.SQLBuilder>
+      </AppModuleConfig>
+   </AppModuleConfigBag>
+   <ConnectionDefinition name="Interflex_informix">
+      <ENTRY name="ConnectionName" value="Interflex_informix"/>
+      <ENTRY name="URL" value="jdbc:informix-sqli://129.200.9.1:1526/sga:INFORMIXSERVER=se_interflex;"/>
+      <ENTRY name="ConnectionType" value="OTHER_JDBC"/>
+      <ENTRY name="user" value="biosca"/>
+      <ENTRY name="password">
+         <![CDATA[{904}05C9A4B6ACD8BCEE2BB4DCAA4F7CEB48A8]]>
+      </ENTRY>
+      <ENTRY name="DeployPassword" value="true"/>
+      <ENTRY name="JdbcDriver" value="com.informix.jdbc.IfxDriver"/>
+      <ENTRY name="DeployPassword" value="true"/>
+   </ConnectionDefinition>
+</BC4JConfig>

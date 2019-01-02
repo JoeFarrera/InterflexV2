@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+
+<ViewObject
+   Name="SgaarticulolovView"
+   OrderBy="idartif"
+   BindingStyle="Oracle"
+   CustomQuery="true"
+   ComponentClass="es.sysmap.interflex.model.dmc.SgaarticulolovViewImpl"
+   MsgBundleClass="es.sysmap.interflex.model.dmc.common.SgaarticulolovViewRowImplMsgBundle"
+   FetchMode="FETCH_AS_NEEDED"
+   FetchSize="10"
+   UseGlueCode="false" >
+   <SQLQuery><![CDATA[
+select idartif, descrip 
+from sgaarticulo
+   ]]></SQLQuery>
+   <DesignTime>
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_codeGenFlag2" Value="Access|Coll|Msg" />
+      <Attr Name="_isExpertMode" Value="true" />
+   </DesignTime>
+   <ViewAttribute
+      Name="Idartif"
+      IsPersistent="false"
+      IsNotNull="true"
+      PrecisionRule="true"
+      Precision="14"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="IDARTIF"
+      Expression="IDARTIF"
+      SQLType="VARCHAR" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="14" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Descrip"
+      IsPersistent="false"
+      IsNotNull="true"
+      PrecisionRule="true"
+      Precision="100"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="DESCRIP"
+      Expression="DESCRIP"
+      SQLType="VARCHAR" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="100" />
+      </DesignTime>
+   </ViewAttribute>
+</ViewObject>

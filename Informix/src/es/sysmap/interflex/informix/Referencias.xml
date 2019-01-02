@@ -1,0 +1,189 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+
+<Entity
+   Name="Referencias"
+   DBObjectType="table"
+   DBObjectName="REFERENCIAS"
+   AliasName="Referencias"
+   BindingStyle="JDBC"
+   UseGlueCode="false"
+   RowClass="es.sysmap.interflex.informix.ReferenciasImpl" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_codeGenFlag2" Value="Access" />
+      <AttrArray Name="_publishEvents">
+      </AttrArray>
+   </DesignTime>
+   <Attribute
+      Name="RowID"
+      IsUpdateable="false"
+      ColumnName="ROWID"
+      Type="java.lang.String"
+      ColumnType="ROWID"
+      SQLType="VARCHAR"
+      TableName="REFERENCIAS"
+      PrimaryKey="true" >
+   </Attribute>
+   <Attribute
+      Name="RefAccion"
+      Precision="2"
+      Scale="0"
+      ColumnName="ref_accion"
+      Type="java.math.BigDecimal"
+      ColumnType="decimal"
+      SQLType="DECIMAL"
+      TableName="REFERENCIAS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="4" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="RefCBarra"
+      Precision="13"
+      Scale="0"
+      ColumnName="ref_c_barra"
+      Type="java.math.BigDecimal"
+      ColumnType="decimal"
+      SQLType="DECIMAL"
+      TableName="REFERENCIAS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="15" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="RefControlPeso"
+      Precision="1"
+      Scale="0"
+      ColumnName="ref_control_peso"
+      Type="java.math.BigDecimal"
+      ColumnType="decimal"
+      SQLType="DECIMAL"
+      TableName="REFERENCIAS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="3" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="RefDescRef"
+      Precision="100"
+      ColumnName="ref_desc_ref"
+      Type="java.lang.String"
+      ColumnType="char"
+      SQLType="VARCHAR"
+      TableName="REFERENCIAS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="100" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="RefEstado"
+      Precision="2"
+      Scale="0"
+      ColumnName="ref_estado"
+      Type="java.math.BigDecimal"
+      ColumnType="decimal"
+      SQLType="DECIMAL"
+      TableName="REFERENCIAS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="4" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="RefFcreacion"
+      Precision="19"
+      ColumnName="ref_fcreacion"
+      Type="java.lang.String"
+      ColumnType="char"
+      SQLType="VARCHAR"
+      TableName="REFERENCIAS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="19" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="RefFultAct"
+      Precision="19"
+      ColumnName="ref_fult_act"
+      Type="java.lang.String"
+      ColumnType="char"
+      SQLType="VARCHAR"
+      TableName="REFERENCIAS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="19" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="RefId"
+      Precision="14"
+      ColumnName="ref_id"
+      Type="java.lang.String"
+      ColumnType="char"
+      SQLType="VARCHAR"
+      TableName="REFERENCIAS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="14" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="RefIdAnterior"
+      Precision="14"
+      ColumnName="ref_id_anterior"
+      Type="java.lang.String"
+      ColumnType="char"
+      SQLType="VARCHAR"
+      TableName="REFERENCIAS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="14" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="RefMotivo"
+      Precision="128"
+      ColumnName="ref_motivo"
+      Type="java.lang.String"
+      ColumnType="char"
+      SQLType="VARCHAR"
+      TableName="REFERENCIAS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="128" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="RefPesoUnitario"
+      Precision="9"
+      Scale="0"
+      ColumnName="ref_peso_unitario"
+      Type="java.math.BigDecimal"
+      ColumnType="decimal"
+      SQLType="DECIMAL"
+      TableName="REFERENCIAS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="11" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="RefUEmb"
+      Precision="9"
+      Scale="0"
+      ColumnName="ref_u_emb"
+      Type="java.math.BigDecimal"
+      ColumnType="decimal"
+      SQLType="DECIMAL"
+      TableName="REFERENCIAS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="11" />
+      </DesignTime>
+   </Attribute>
+   <Key
+      Name="ReferenciasPrimaryKey" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.informix.Referencias.RowID" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="REFERENCIAS_PRIMARY_KEY" />
+         <Attr Name="_isPrimary" Value="true" />
+      </DesignTime>
+   </Key>
+</Entity>

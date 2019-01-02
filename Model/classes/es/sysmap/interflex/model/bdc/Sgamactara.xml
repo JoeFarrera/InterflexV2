@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+
+<Entity
+   Name="Sgamactara"
+   DBObjectType="table"
+   DBObjectName="SGAMACTARA"
+   AliasName="Sgamactara"
+   BindingStyle="Oracle"
+   UseGlueCode="false"
+   RowClass="es.sysmap.interflex.model.bdc.SgamactaraImpl"
+   DefClass="es.sysmap.interflex.model.bdc.SgamactaraDefImpl" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_codeGenFlag2" Value="Access|Def" />
+      <AttrArray Name="_publishEvents">
+      </AttrArray>
+   </DesignTime>
+   <Attribute
+      Name="Idmac"
+      IsNotNull="true"
+      Precision="12"
+      ColumnName="IDMAC"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="SGAMACTARA"
+      PrimaryKey="true" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="12" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Idtipmac"
+      IsNotNull="true"
+      Precision="3"
+      ColumnName="IDTIPMAC"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="SGAMACTARA" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="3" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Tara"
+      Precision="9"
+      Scale="2"
+      ColumnName="TARA"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      TableName="SGAMACTARA" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Createdby"
+      IsUpdateable="while_insert"
+      Precision="10"
+      ColumnName="CREATEDBY"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="SGAMACTARA"
+      HistoryColumn="UserHistory" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="10" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Createdon"
+      IsUpdateable="while_insert"
+      ColumnName="CREATEDON"
+      Type="oracle.jbo.domain.Date"
+      ColumnType="DATE"
+      SQLType="DATE"
+      TableName="SGAMACTARA"
+      HistoryColumn="DateHistory" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="7" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Modifiedby"
+      Precision="10"
+      ColumnName="MODIFIEDBY"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="SGAMACTARA"
+      HistoryColumn="UserHistory" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="10" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Modifiedon"
+      ColumnName="MODIFIEDON"
+      Type="oracle.jbo.domain.Date"
+      ColumnType="DATE"
+      SQLType="DATE"
+      TableName="SGAMACTARA"
+      HistoryColumn="DateHistory" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="7" />
+      </DesignTime>
+   </Attribute>
+   <AccessorAttribute
+      Name="Sgamac"
+      Association="es.sysmap.interflex.model.bdc.SgamacMactaraAssociation"
+      AssociationEnd="es.sysmap.interflex.model.bdc.SgamacMactaraAssociation.Sgamac"
+      AssociationOtherEnd="es.sysmap.interflex.model.bdc.SgamacMactaraAssociation.Sgamactara"
+      Type="es.sysmap.interflex.model.bdc.SgamacImpl" >
+   </AccessorAttribute>
+   <Key
+      Name="SgamactaraPrimaryKey" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgamactara.Idmac" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SGAMACTARA_PRIMARY_KEY" />
+         <Attr Name="_isPrimary" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0017076" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgamactara.Idmac" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0017076" />
+         <Attr Name="_checkCondition" Value="&#34;IDMAC&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0017077" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgamactara.Idtipmac" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0017077" />
+         <Attr Name="_checkCondition" Value="&#34;IDTIPMAC&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0017078" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgamactara.Idmac" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0017078" />
+         <Attr Name="_checkCondition" Value="&#34;IDMAC&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0017079" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgamactara.Idtipmac" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0017079" />
+         <Attr Name="_checkCondition" Value="&#34;IDTIPMAC&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+</Entity>

@@ -1,0 +1,3 @@
+-ea -Duql.home= 
+-Dquery.registry.path=G:\\View\\src\\es\\sysmap\\interflex\\informes\\query.xml 
+-Ddatasource.registry.path=G:\\View\\src\\es\\sysmap\\interflex\\informes\\datasource.xml

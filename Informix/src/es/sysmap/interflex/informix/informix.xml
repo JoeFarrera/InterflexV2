@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE JboPackage SYSTEM "jbo_03_01.dtd">
+
+<JboPackage
+   Name="informix"
+   SeparateXMLFiles="true"
+   PackageName="es.sysmap.interflex.informix" >
+   <DesignTime>
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_ejbPackage" Value="false" />
+   </DesignTime>
+   <Containee
+      Name="Cabeceras"
+      FullName="es.sysmap.interflex.informix.Cabeceras"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="CabecerasView"
+      FullName="es.sysmap.interflex.informix.CabecerasView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="AppModule"
+      FullName="es.sysmap.interflex.informix.AppModule"
+      ObjectType="AppModule" >
+   </Containee>
+   <Containee
+      Name="Detalle"
+      FullName="es.sysmap.interflex.informix.Detalle"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="Bultos"
+      FullName="es.sysmap.interflex.informix.Bultos"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="Referencias"
+      FullName="es.sysmap.interflex.informix.Referencias"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="Stocks"
+      FullName="es.sysmap.interflex.informix.Stocks"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="Movimientos"
+      FullName="es.sysmap.interflex.informix.Movimientos"
+      ObjectType="Entity" >
+   </Containee>
+</JboPackage>

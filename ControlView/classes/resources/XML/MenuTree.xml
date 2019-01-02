@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<Menu nomMenu="Menú d'usuari de control">
+  <Seccio nomMenu="Control" tooltip="Configuració" icona="16x16/plain/keys.png" acces="role">
+    <Item nomMenu="Gestor comunicacions PLC" tooltip="Gestor comunicacions PLC" icona="16x16/plain/server_from_client.png" panel="es.sysmap.interflex.controlview.PanelArranque" topicId="gestorPLC" acces="role"/>
+   	<Item nomMenu="Mini load" tooltip="Gestió del miniload" icona="16x16/plain/gears_run.png" panel="es.sysmap.interflex.controlview.PanelSgavtrasloMLD" topicId="traslos" acces="role"/>
+   	<Item nomMenu="Maxi Load 1" tooltip="Gestió del Traslo 1 del Maxi load" icona="16x16/plain/gears_run.png" panel="es.sysmap.interflex.controlview.PanelSgavtrasloSLO1" topicId="traslos" acces="role"/>
+   	<Item nomMenu="Maxi Load 2" tooltip="Gestió del Traslo 2 del Maxi load" icona="16x16/plain/gears_run.png" panel="es.sysmap.interflex.controlview.PanelSgavtrasloSLO2" topicId="traslos" acces="role"/>
+    <Item nomMenu="Neteja BD" tooltip="Neteja de la Base de Dades" icona="16x16/plain/history_delete.png" panel="es.sysmap.interflex.controlview.PanelNetejarBD" topicId="existart" acces="role"/>
+    <Item nomMenu="Interface RPS" tooltip="Actualització taules RPS" icona="16x16/plain/history.png" panel="es.sysmap.interflex.controlview.PanelRpsInterface" topicId="existart" acces="role"/>
+   </Seccio>   
+   <Seccio nomMenu="Consulta" tooltip="Consulta d'ordres" icona="16x16/plain/forklifter.png" acces="role">    
+    <Item nomMenu="Ordres transport" tooltip="Consulta i actualizació d'ordres de transport" icona="16x16/plain/forklifter.png" panel="es.sysmap.interflex.view.PanelSgavordtranView1" topicId="lloctreball" acces="role"/>
+    <Item nomMenu="Estat traslos" tooltip="Estat dels transelevadors" icona="16x16/plain/forklifter.png" panel="es.sysmap.interflex.view.PanelSgavtrasloEntSal1" topicId="estatTraslo" acces="role"/>
+    <Item nomMenu="Históric Ordres de transport" tooltip="Históric d'ordres de transport" icona="16x16/plain/history.png" panel="es.sysmap.interflex.view.PanelSgavhistordtranView1" topicId="histordtran" acces="role"/>
+   </Seccio>   
+</Menu>

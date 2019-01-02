@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<JboProject
+   id="DataBindings"
+   xmlns="http://xmlns.oracle.com/adfm/application"
+   version="10.1.2.17.96"
+   SeparateXMLFiles="false"
+   Package=""
+   ClientType="JClient" >
+   <Contents >
+      <DataControl
+         id="AppModuleDataControl"
+         SubType="DCBC4J"
+         SupportsFindMode="true"
+         SupportsTransactions="true"
+         Package="es.sysmap.interflex.erps_model.dmc"
+         FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl"
+         Configuration="AppModuleLocal" >
+      </DataControl>
+      <DataControl
+         id="AppModuleDataControl11"
+         SubType="DCBC4J"
+         SupportsFindMode="true"
+         SupportsTransactions="true"
+         Package="es.sysmap.interflex.model.dmc"
+         FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl"
+         Configuration="AppModuleLocal" >
+      </DataControl>
+      <Containee
+         id="PanelSgaexpedView2UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.viewtest.PanelSgaexpedView2UIModel" >
+      </Containee>
+      <Containee
+         id="MDPanelSgavexpedbultoView2SgavexpedlbultoView2UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.viewtest.MDPanelSgavexpedbultoView2SgavexpedlbultoView2UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgaexpedView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.viewtest.PanelSgaexpedView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgauserView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.viewtest.PanelSgauserView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavexpedbultoView2UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.viewtest.PanelSgavexpedbultoView2UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgaexped_1View1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.viewtest.PanelSgaexped_1View1UIModel" >
+      </Containee>
+      <Containee
+         id="MDPanelSgaexpedView1SgaexpeddocView2UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.viewtest.MDPanelSgaexpedView1SgaexpeddocView2UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavexpedbultoView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.viewtest.PanelSgavexpedbultoView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavexpedlbultoView2UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.viewtest.PanelSgavexpedlbultoView2UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavexpeddocView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.viewtest.PanelSgavexpeddocView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelZTipoenvioView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.viewtest.PanelZTipoenvioView1UIModel" >
+      </Containee>
+      <Containee
+         id="MDPanelSgaexpedView1SgavexpeddocView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.viewtest.MDPanelSgaexpedView1SgavexpeddocView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgaexpeddocView2UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.viewtest.PanelSgaexpeddocView2UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgaexped_1_2View1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.viewtest.PanelSgaexped_1_2View1UIModel" >
+      </Containee>
+      <Containee
+         id="MDPanelSgaexpedView2SgavexpedbultoView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.viewtest.MDPanelSgaexpedView2SgavexpedbultoView1UIModel" >
+      </Containee>
+   </Contents>
+</JboProject>

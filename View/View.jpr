@@ -1,0 +1,1683 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<project nselem="project" class="oracle.jdeveloper.model.JProject" xmlns="http://xmlns.oracle.com/jdeveloper/10120/jproject">
+   <defaultPackage>es.sysmap.interflex.view</defaultPackage>
+   <defaultPackages class="java.util.ArrayList">
+      <Item class="java.lang.String">es.sysmap.interflex.view</Item>
+      <Item class="java.lang.String">es.sysmap.interflex.view.tests</Item>
+      <Item class="java.lang.String">es.sysmap.interflex.view.test</Item>
+   </defaultPackages>
+   <dependencyList class="java.util.ArrayList">
+      <Item class="oracle.jdeveloper.library.ProjectLibrary">
+         <locked>true</locked>
+         <sourceOwnerURL path="../InterflexV2.jws"/>
+         <sourceURL path="../Bascula/Bascula.jpr"/>
+      </Item>
+      <Item class="oracle.jdeveloper.library.ProjectLibrary">
+         <locked>true</locked>
+         <sourceOwnerURL path="../InterflexV2.jws"/>
+         <sourceURL path="../Model/Model.jpr"/>
+      </Item>
+      <Item class="oracle.jdeveloper.library.ProjectLibrary">
+         <locked>true</locked>
+         <sourceOwnerURL path="../InterflexV2.jws"/>
+         <sourceURL path="../SgaLib/SgaLib.jpr"/>
+      </Item>
+      <Item class="oracle.jdeveloper.library.ProjectLibrary">
+         <locked>true</locked>
+         <sourceOwnerURL path="../Interflex.jws"/>
+         <sourceURL path="../Model/Model.jpr"/>
+      </Item>
+   </dependencyList>
+   <htmlRootDirectory path="public_html/"/>
+   <j2eeWebAppName>Interflex-View-webapp</j2eeWebAppName>
+   <j2eeWebContextRoot>Interflex-View-context-root</j2eeWebContextRoot>
+   <listOfChildren class="oracle.ide.model.DataList">
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/16x16/plain/bullet_ball_blue.png"/>
+         <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/16x16/plain/businessman_preferences.png"/>
+         <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/16x16/plain/businessmen.png"/>
+         <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/16x16/plain/cabinet.png"/>
+         <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/CDocSgaJUNavigationBar.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/16x16/plain/checks.png"/>
+         <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/consultes.gif"/>
+         <nodeClass>oracle.jdeveloper.model.GifImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/copy.gif"/>
+         <nodeClass>oracle.jdeveloper.model.GifImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/16x16/plain/copy.png"/>
+         <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/16x16/plain/cube_green_add.png"/>
+         <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/16x16/plain/cube_green_delete.png"/>
+         <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/16x16/plain/cube_green_new.png"/>
+         <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/16x16/plain/cube_yellow.png"/>
+         <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/16x16/plain/cubes_green.png"/>
+         <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/DataBindings.cpx"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.CpxNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/informes/datasource.xml"/>
+         <nodeClass>oracle.bali.xml.addin.XMLSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/16x16/plain/delete.png"/>
+         <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/16x16/plain/document_into.png"/>
+         <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/16x16/plain/document_ok.png"/>
+         <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/16x16/plain/document_zoom_in.png"/>
+         <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/16x16/plain/document_zoom_out.png"/>
+         <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/16x16/plain/edit.png"/>
+         <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/Etiqueta.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/evacuarmac.gif"/>
+         <nodeClass>oracle.jdeveloper.model.GifImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/exist.gif"/>
+         <nodeClass>oracle.jdeveloper.model.GifImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/findcancel.gif"/>
+         <nodeClass>oracle.jdeveloper.model.GifImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/fondo.jpg"/>
+         <nodeClass>oracle.jdeveloper.model.JpegImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/16x16/plain/forbidden.png"/>
+         <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/16x16/plain/forklifter.png"/>
+         <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/24x24/plain/forklifter.png"/>
+         <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/FormSgacdocTL1SgaresmattlView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/FormSgacdocTL1SgavresmattlView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/FormSgacdocTLView1SgavexistenciaTLView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/16x16/plain/gears_run.png"/>
+         <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/16x16/plain/gears.png"/>
+         <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/16x16/plain/hat_green.png"/>
+         <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/48x48/plain/hat_green.png"/>
+         <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/historics.gif"/>
+         <nodeClass>oracle.jdeveloper.model.GifImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/48x48/plain/id_card_preferences.png"/>
+         <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/Interflex.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/48x48/plain/Keys.png"/>
+         <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/log4j.properties"/>
+         <nodeClass>oracle.ide.model.DeployableTextNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/logo.jpg"/>
+         <nodeClass>oracle.jdeveloper.model.JpegImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL protocol="file" path="/C:/Documents and Settings/Administrador/map.properties"/>
+         <nodeClass>oracle.ide.model.DeployableTextNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/MDPanelEntradesManuals.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/MDPanelEntradesManualsUIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.BindingContainerXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/MDPanelOperacionsManuals.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/MDPanelOperacionsManualsUIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/MDPanelProdembalajesView1ProdembalajesreferenciaView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/MDPanelProdembalajesView1ProdembalajesreferenciaView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/MDPanelSgaarticuloView3SgavProdEmbalajesArticuloView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/MDPanelSgaarticuloView3SgavProdEmbalajesArticuloView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/MDPanelSgabultoView4SgalbultoView5.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/MDPanelSgabultoView4SgalbultoView5UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.BindingContainerXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/MDPanelSgabultoView5SgalbultoView5.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/MDPanelSgabultoView5SgalbultoView5UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.BindingContainerXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/MDPanelSgacdocEntradesView1SgavbultoView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/MDPanelSgacdocEntradesView1SgavbultoView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/MDPanelSgacdocSortidesView2SgaldocView5.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/MDPanelSgacdocSortidesView2SgaldocView5UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/MDPanelSgacdocTLView1SgavexistenciaTLView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/MDPanelSgacdocTLView1SgavexistenciaTLView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/MDPanelSgaexpedView1SgavexpeddocView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/MDPanelSgaexpedView1SgavexpeddocView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.BindingContainerXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/MDPanelSgaUbicacionMiniLoadView1SgaposicionubicacionView4.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/MDPanelSgaUbicacionMiniLoadView1SgaposicionubicacionView4UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/MDPanelSgaubicacionSiloView1SgaposicionubicacionView3.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/MDPanelSgaubicacionSiloView1SgaposicionubicacionView3UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/MDPanelSgauserView1SgagrantuserView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/MDPanelSgauserView1SgagrantuserView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.BindingContainerXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/MDPanelSgavAgenciaTipoEnvio1SgavFormatosTipoEnvio1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/MDPanelSgavAgenciaTipoEnvio1SgavFormatosTipoEnvio1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/MDPanelSgavcdocView1SgavldocView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/MDPanelSgavcdocView1SgavldocView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/MDPanelSgavcdocView2SgavbultoView2.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/MDPanelSgavcdocView2SgavbultoView2UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/MDPanelSgavexpedbultoView2SgavexpedlbultoView2.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/MDPanelSgavexpedbultoView2SgavexpedlbultoView2UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.BindingContainerXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/MDPanelSgavmacView1SgavexistenciaView3.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/MDPanelSgavmacView1SgavexistenciaView3UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/MDPanelSgavocupacio.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/MDPanelSgavocupacioUIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.BindingContainerXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/MDPanelSgavsumexistenciaView1SgavexistenciaView2.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/MDPanelSgavsumexistenciaView1SgavexistenciaView2UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/MDPanelSgavsummacSenseExistenciesView1SgavmacSenseExistenciesView2.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/MDPanelSgavsummacSenseExistenciesView1SgavmacSenseExistenciesView2UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/MDPanelZAgenciatipoenvioView1ZTipoenvioView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/MDPanelZAgenciatipoenvioView1ZTipoenvioView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/XML/MenuTree.xml"/>
+         <nodeClass>oracle.bali.xml.addin.XMLSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/informes/MovsUsuariData.srt"/>
+         <nodeClass>oracle.ide.model.DeployableTextNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/mypc.gif"/>
+         <nodeClass>oracle.jdeveloper.model.GifImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/noevacuarmac.gif"/>
+         <nodeClass>oracle.jdeveloper.model.GifImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/nosortidesauto.gif"/>
+         <nodeClass>oracle.jdeveloper.model.GifImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/16x16/plain/nut_and_bolt.png"/>
+         <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/obrirbulto.gif"/>
+         <nodeClass>oracle.jdeveloper.model.GifImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/16x16/plain/package_new.png"/>
+         <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PackingList.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/informes/PackingList.srt"/>
+         <nodeClass>oracle.ide.model.DeployableTextNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/informes/PackingListExp.srt"/>
+         <nodeClass>oracle.ide.model.DeployableTextNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/informes/PackingListExpedExp.srt"/>
+         <nodeClass>oracle.ide.model.DeployableTextNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelEsperantCarga.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelEsperantCargaUIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.BindingContainerXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelProdembalajesreferenciaView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelProdembalajesreferenciaView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelProdembalajesView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelProdembalajesView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaarticuloView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaarticuloView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.BindingContainerXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaarticuloView2.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaarticuloView2UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaarticuloView3.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaarticuloView3UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgabultoView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgabultoView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgabultoView4.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgabultoView4UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.BindingContainerXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgabultoView5.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgabultoView5UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgacdocEntradesView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgacdocEntradesView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgacdocSortidesView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgacdocSortidesView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgacdocSortidesView2.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgacdocSortidesView2UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgacdocSortidesView3.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgacdocSortidesView3UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgacdocTLView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgacdocTLView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgadifstockhost1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgadifstockhost1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaedocView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaedocView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaexpedbultoView2UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.BindingContainerXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaexpeddocView2.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaexpeddocView2UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaexpedView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaexpedView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.BindingContainerXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaexpedView3.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaexpedView3UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgagrantuserView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgagrantuserView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.BindingContainerXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgalbultoView5.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgalbultoView5UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.BindingContainerXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaldocEntradesView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaldocEntradesView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.BindingContainerXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaldocEntradesView2.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaldocEntradesView2UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaldocEntradesView3.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaldocEntradesView3UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaldocEntradesView4.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaldocEntradesView4UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaldocEntradesView5.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaldocEntradesView5UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaldocEntradesView6.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaldocEntradesView6UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaldocView5.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaldocView5UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaliniestreballadesView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaliniestreballadesView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgamacMultirefSenseReservaView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgamacMultirefSenseReservaView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgamacPos44PendPesoView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgamacPos44PendPesoView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgamacSenseExistenciesView3.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgamacSenseExistenciesView3UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgamacSenseReservaView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgamacSenseReservaView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgamacView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgamacView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgapasillomanualView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgapasillomanualView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgapasilloView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgapasilloView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaposicionubicacionView3.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaposicionubicacionView3UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaposicionubicacionView4.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaposicionubicacionView4UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgapuestomanipView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgapuestomanipView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaresmatmanView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaresmatmanView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaresmatmanView2.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaresmatmanView2UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaresmatOpManView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaresmatOpManView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaresmatOpManView2.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaresmatOpManView2UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaresmatView5.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaresmatView5UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaresmatView6.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaresmatView6UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaroleView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaroleView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.BindingContainerXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaTestEntradaView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaTestEntradaView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaTestMacView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaTestMacView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgatipdocView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgatipdocView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.BindingContainerXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgatipmactipubiView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgatipmactipubiView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgatipoalmacenView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgatipoalmacenView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgatipobultoView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgatipobultoView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgatipomacView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgatipomacView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgatipoubicacionView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgatipoubicacionView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaubicacionManualView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaubicacionManualView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaUbicacionMiniLoadView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaUbicacionMiniLoadView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaubicacionPlcView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaubicacionPlcView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaubicacionSiloView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaubicacionSiloView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaubicacionView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaubicacionView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.BindingContainerXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgauserView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgauserView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavAgenciaTipoEnvio1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavAgenciaTipoEnvio1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavarticulomodpesView.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavarticulomodpesViewUIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.BindingContainerXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavbultoView2.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavbultoView2UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavcdocView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavcdocView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavcdocView2.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavcdocView2UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavcompararmanautoView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavcompararmanautoView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavdocs.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavdocsObertsView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavdocsObertsView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavedocView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavedocView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavexistenciaTLView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavexistenciaTLView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavexistenciaView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavexistenciaView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavexistenciaView2.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavexistenciaView2UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavexistenciaView3.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavexistenciaView3UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavexpedbultoView2.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavexpedbultoView2UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.BindingContainerXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavexpeddocView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavexpeddocView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.BindingContainerXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavexpedlbultoView2.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavexpedlbultoView2UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.BindingContainerXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavFormatosTipoEnvio1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavFormatosTipoEnvio1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavhistexistView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavhistexistView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavhistordtranView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavhistordtranView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavldocEntradesView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavldocEntradesView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavldocView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavldocView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavmacSenseExistenciesView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavmacSenseExistenciesView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavmacView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavmacView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavmovscontenidorsView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavmovscontenidorsView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavmovsusuariresumView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavmovsusuariresumView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavmovsusuariView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavmovsusuariView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavocupaciominiloaddetallView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavocupaciominiloaddetallView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavocupaciosilodetallView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavocupaciosilodetallView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavordtranView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavordtranView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavProdEmbalajesArticuloView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavProdEmbalajesArticuloView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavresmattlView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavresmattlView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavsumexistenciaView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavsumexistenciaView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavsummacSenseExistenciesView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavsummacSenseExistenciesView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavtrasloEntSal1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavtrasloEntSal1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaVTrasloTrasbordoView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgaVTrasloTrasbordoView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavubicacionInspeccionView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavubicacionInspeccionView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavubicacionView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavubicacionView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgazonamanView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgazonamanView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelZAgenciatipoenvioView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelZAgenciatipoenvioView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelZTipoenvioView1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelZTipoenvioView1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PesadaBascula.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/Pos44ExtraThread.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/print.gif"/>
+         <nodeClass>oracle.jdeveloper.model.GifImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/16x16/plain/printer.png"/>
+         <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PuestoExtraInterface.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PuestoListener.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PuestoThread.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/informes/query.xml"/>
+         <nodeClass>oracle.bali.xml.addin.XMLSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/16x16/plain/redo.png"/>
+         <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/24x24/plain/redo.png"/>
+         <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/ResmanList.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/informes/ResmanList.srt"/>
+         <nodeClass>oracle.ide.model.DeployableTextNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/run.gif"/>
+         <nodeClass>oracle.jdeveloper.model.GifImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/16x16/plain/scroll.png"/>
+         <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/sga.properties"/>
+         <nodeClass>oracle.ide.model.DeployableTextNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/SgaJUPanelUIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.BindingContainerXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/sortidesauto.gif"/>
+         <nodeClass>oracle.jdeveloper.model.GifImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/splash.jpg"/>
+         <nodeClass>oracle.jdeveloper.model.JpegImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/stop.gif"/>
+         <nodeClass>oracle.jdeveloper.model.GifImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/suspendrebulto.gif"/>
+         <nodeClass>oracle.jdeveloper.model.GifImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/tancarbulto.gif"/>
+         <nodeClass>oracle.jdeveloper.model.GifImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="../Bascula/classes/testbascula.bat"/>
+         <nodeClass>oracle.ide.model.DeployableTextNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="classes/testExtra.bat"/>
+         <nodeClass>oracle.ide.model.DeployableTextNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/TestJTable.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/TestJTableUIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/16x16/plain/toolbox.png"/>
+         <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/16x16/plain/transform.png"/>
+         <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/TreureContenidor.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/informes/UbicInsp.srt"/>
+         <nodeClass>oracle.ide.model.DeployableTextNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/16x16/plain/undo.png"/>
+         <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/16x16/plain/unknown.png"/>
+         <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/16x16/plain/up_down_question.png"/>
+         <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/VeureDisponibilitat.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="deploy/View.deploy"/>
+         <nodeClass>oracle.ide.model.XMLDataNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/16x16/plain/weight2.png"/>
+         <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/48x48/plain/weight2.png"/>
+         <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/16x16/plain/wrench.png"/>
+         <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL protocol="jar" path="file:/software/IconExperience/ix_ap_all.zip!/16x16/plain/zoom_in.png"/>
+         <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/16x16/plain/zoom_in.png"/>
+         <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/16x16/plain/zoom_out.png"/>
+         <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
+      </Item>
+   </listOfChildren>
+   <ownerMap/>
+   <projectDocPath>
+      <entries class="[Ljava.net.URL;"/>
+   </projectDocPath>
+   <projectLibraryList class="oracle.jdeveloper.library.JProjectLibraryList">
+      <jdkList class="java.util.ArrayList"/>
+      <libraryList class="java.util.ArrayList"/>
+   </projectLibraryList>
+   <projectSettings>
+      <activeConfigName>Development</activeConfigName>
+      <commonData class="java.util.HashMap">
+         <Item>
+            <Key>oracle.bm.commonIde.data.project.ModelerProjectSettings</Key>
+            <Value class="oracle.bm.commonIde.data.project.ModelerProjectSettings">
+               <modelersPath>
+                  <entries>
+                     <Item path="model/"/>
+                  </entries>
+               </modelersPath>
+               <modelersVersion>10.12</modelersVersion>
+            </Value>
+         </Item>
+         <Item>
+            <Key>oracle.jdeveloper.compiler.ant.AntConfiguration</Key>
+            <Value class="oracle.jdeveloper.compiler.ant.AntConfiguration">
+               <arguments class="java.lang.String"/>
+               <makeTarget/>
+               <projectBuildfile/>
+               <rebuildTarget/>
+               <showOutput>true</showOutput>
+            </Value>
+         </Item>
+         <Item>
+            <Key>oracle.jdeveloper.offlinedb.OfflineDBProjectSettings</Key>
+            <Value class="oracle.jdeveloper.offlinedb.OfflineDBProjectSettings">
+               <databasePath>
+                  <entries>
+                     <Item path="database/"/>
+                  </entries>
+               </databasePath>
+            </Value>
+         </Item>
+      </commonData>
+      <configurations class="java.util.TreeMap">
+         <Item>
+            <Key>Development</Key>
+            <Value class="oracle.jdeveloper.model.JProjectConfiguration">
+               <configData class="java.util.HashMap">
+                  <Item>
+                     <Key>oracle.jdeveloper.compiler.OjcConfiguration</Key>
+                     <Value class="oracle.jdeveloper.compiler.OjcConfiguration">
+                        <assertionsEnabled>true</assertionsEnabled>
+                        <copyRes>
+                           <Item>.gif</Item>
+                           <Item>.properties</Item>
+                           <Item>.jpg</Item>
+                           <Item>.jpeg</Item>
+                           <Item>.xml</Item>
+                           <Item>-apf.xml</Item>
+                           <Item>.xcfg</Item>
+                           <Item>.cpx</Item>
+                           <Item>.css</Item>
+                           <Item>.js</Item>
+                           <Item>.png</Item>
+                           <Item>.tld</Item>
+                           <Item>.srt</Item>
+                        </copyRes>
+                        <debugInformation>true</debugInformation>
+                        <excludedClasses class="[Ljava.lang.String;"/>
+                        <internalEncoding>Cp1252</internalEncoding>
+                        <obfuscate>false</obfuscate>
+                        <reverseCopyRes>false</reverseCopyRes>
+                        <showDeprecations>true</showDeprecations>
+                        <showObjectDotStaticWarnings>false</showObjectDotStaticWarnings>
+                        <showPartialImportWarnings>false</showPartialImportWarnings>
+                        <showSelfDeprecations>true</showSelfDeprecations>
+                        <showUnusedImportWarnings>false</showUnusedImportWarnings>
+                        <showWarnings>true</showWarnings>
+                        <target>1.4</target>
+                        <updateImports>true</updateImports>
+                        <updateZipJarImports>false</updateZipJarImports>
+                     </Value>
+                  </Item>
+                  <Item>
+                     <Key>oracle.jdeveloper.javadoc.JProjectJavadoc</Key>
+                     <Value class="oracle.jdeveloper.javadoc.JProjectJavadoc">
+                        <embedDiagram>5</embedDiagram>
+                        <genDiagramDoc>true</genDiagramDoc>
+                        <generateAuthor>false</generateAuthor>
+                        <generateDeprecated>true</generateDeprecated>
+                        <generateIndex>true</generateIndex>
+                        <generateNavbar>true</generateNavbar>
+                        <generateSince>true</generateSince>
+                        <generateTree>true</generateTree>
+                        <generateVersion>false</generateVersion>
+                        <heapSize>32</heapSize>
+                        <imageFormat>1</imageFormat>
+                        <miscOptions class="java.lang.String"/>
+                        <oneOneFormat>false</oneOneFormat>
+                        <outputDirectory path="javadoc/"/>
+                        <scope>-protected</scope>
+                     </Value>
+                  </Item>
+                  <Item>
+                     <Key>oracle.jdeveloper.runner.RunConfiguration</Key>
+                     <Value class="oracle.jdeveloper.runner.RunConfiguration">
+                        <VMName>client</VMName>
+                        <XSLTInputFileURL/>
+                        <XSLTOutputFileURL/>
+                        <allowInput>false</allowInput>
+                        <alwaysUseTarget>false</alwaysUseTarget>
+                        <clearLogBeforeRun>true</clearLogBeforeRun>
+                        <compileBeforeRun>true</compileBeforeRun>
+                        <connectionName/>
+                        <javaOptions>-Xms128m -Xmx512m</javaOptions>
+                        <logCommand>true</logCommand>
+                        <logError>true</logError>
+                        <logExit>true</logExit>
+                        <logOutput>true</logOutput>
+                        <programArguments class="java.lang.String"/>
+                        <runActiveFile>true</runActiveFile>
+                        <runDirectoryURL/>
+                        <targetURL path="src/es/sysmap/interflex/view/Interflex.java"/>
+                        <useProxy>true</useProxy>
+                     </Value>
+                  </Item>
+                  <Item>
+                     <Key>oracle.jdevimpl.config.JProjectLibraries</Key>
+                     <Value class="oracle.jdevimpl.config.JProjectLibraries">
+                        <jdkName>1.4.2_11</jdkName>
+                        <jdkVersionNumber>1.4.2_11</jdkVersionNumber>
+                        <libraries>BC4J Security;BC4J Tester;JClient Runtime;Oracle Intermedia JClient;Oracle JEWT;BC4J Datum;Oracle XML Parser v2;JDeveloper Runtime;SQLJ Runtime;BC4J Runtime;Oracle JDBC;Connection Manager;BC4J Oracle Domains;ADF Model Runtime;Inetsoft;log4j-1.3alpha;Comms</libraries>
+                     </Value>
+                  </Item>
+                  <Item>
+                     <Key>oracle.jdevimpl.config.JProjectPaths</Key>
+                     <Value class="oracle.jdevimpl.config.JProjectPaths">
+                        <additionalClassPath>
+                           <entries>
+                              <Item path="../Xml/classes/"/>
+                              <Item path="../PlcDriver/classes/"/>
+                              <Item path="../etiquetes/classes/"/>
+                           </entries>
+                        </additionalClassPath>
+                        <outputDirectory path="classes/"/>
+                     </Value>
+                  </Item>
+                  <Item>
+                     <Key>oracle.jdevimpl.runner.codecoach.CCConfiguration</Key>
+                     <Value class="oracle.jdevimpl.runner.codecoach.CCConfiguration">
+                        <advices>ALL</advices>
+                        <exclude>com;java;javax;sun;sunw;org;oracle</exclude>
+                        <include class="java.lang.String"/>
+                        <level>4</level>
+                     </Value>
+                  </Item>
+                  <Item>
+                     <Key>oracle.jdevimpl.runner.debug.DebugConfiguration</Key>
+                     <Value class="oracle.jdevimpl.runner.debug.DebugConfiguration">
+                        <JPDAClassicDebugArguments>-Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,server=y,address=&lt;port></JPDAClassicDebugArguments>
+                        <JPDADebugArguments>-Xdebug -Xrunjdwp:transport=dt_socket,server=y,address=&lt;port></JPDADebugArguments>
+                        <OJVMDebugArguments>-XXdebug,quiet,port&lt;port></OJVMDebugArguments>
+                        <breakpointScope>workspace</breakpointScope>
+                        <remoteDebugging>false</remoteDebugging>
+                        <remoteDebuggingParameters class="java.util.HashMap"/>
+                        <remoteDebuggingParametersSaved>false</remoteDebuggingParametersSaved>
+                        <remoteDebuggingProtocol>ojvm</remoteDebuggingProtocol>
+                        <startOption>running</startOption>
+                        <tracingDisabled>java;javax;sun;sunw;apple;com.apple;com.evermind;com.oracle;com.orionserver;com.sun;EDU.oswego;oracle.core;oracle.dms;oracle.ide;oracle.j2ee;oracle.jdbc;oracle.jdevimpl;oracle.jsp;oracle.oc4j;oracle.ojc;oracle.security;oracle.xml;org.omg;org.w3c;org.xml</tracingDisabled>
+                        <tracingEnabled class="java.lang.String"/>
+                     </Value>
+                  </Item>
+                  <Item>
+                     <Key>oracle.jdevimpl.runner.profile.ProfileConfiguration</Key>
+                     <Value class="oracle.jdevimpl.runner.profile.ProfileConfiguration">
+                        <DMSstartID>20000</DMSstartID>
+                        <DMSstate>0</DMSstate>
+                        <eventColumnVisible>
+                           <Item>true</Item>
+                           <Item>true</Item>
+                           <Item>true</Item>
+                           <Item>true</Item>
+                           <Item>true</Item>
+                           <Item>true</Item>
+                        </eventColumnVisible>
+                        <events>G(All events;(G(VM Events;(E(0;GC;-16776961;1);E(10;Wait;-65485;0);E(11;Synch Blocks 0;-39322;0);E(12;Synch Blocks 1;-39322;0);E(13;Synch Blocks 2;-39322;0);E(20;Prepare Class;-16751002;0);E(21;Load Class;-16724992;0);E(22;Resolve Class;-16737997;0);));G(BC4J Events;(E(1000;JBO_MISCELLANEOUS;-4144960;1);E(1001;JDBC_SELECT;-256;1);E(1002;JDBC_CREATE_STATEMENT;-256;1);E(1003;JDBC_CONNECT;-256;1);E(1004;JDBC_CREATE_PREPARED_STATEMENT;-256;1);E(1005;JDBC_EXECUTE;-256;1);E(1006;METAOBJECT_LOAD;-65281;1);E(1007;EXECUTE_QUERY;-16776961;1);E(1008;BC4J_CREATE_COMPOBJ;-65281;0);E(1009;BC4J_CREATE_ROOTAM;-65281;1);E(1010;BC4J_CREATE_VIEWOBJECT;-65281;0);E(1011;BC4J_CREATE_AM;-65281;0);E(1012;BC4J_CREATE_VIEWLINK;-65281;0);E(1013;SQLB_DOENTITYDML;-16776961;1);E(1014;SQLB_DOENTITYSELECT;-16776961;1);E(1015;VIEWOBJECT_GETSTATEMENT;-16776961;1);E(1016;REMOTE_METHOD_CALL;-65536;1);));));</events>
+                        <excludedClasses>java;javax;sun;sunw;com;oracle</excludedClasses>
+                        <excludedInstances class="java.lang.String"/>
+                        <includedClasses class="java.lang.String"/>
+                        <includedInstances class="java.lang.String"/>
+                        <localProfiling>true</localProfiling>
+                        <memColumnVisible>
+                           <Item>true</Item>
+                           <Item>true</Item>
+                           <Item>true</Item>
+                           <Item>true</Item>
+                           <Item>true</Item>
+                           <Item>true</Item>
+                           <Item>true</Item>
+                           <Item>true</Item>
+                           <Item>true</Item>
+                           <Item>true</Item>
+                        </memColumnVisible>
+                        <memoryUpdateInterval>10</memoryUpdateInterval>
+                        <remoteHost class="java.lang.String"/>
+                        <remoteParametersSaved>false</remoteParametersSaved>
+                        <remotePort>4000</remotePort>
+                        <sampleColumnVisible>
+                           <Item>true</Item>
+                           <Item>true</Item>
+                           <Item>true</Item>
+                           <Item>true</Item>
+                           <Item>true</Item>
+                           <Item>true</Item>
+                           <Item>true</Item>
+                        </sampleColumnVisible>
+                        <sampleInterval>5</sampleInterval>
+                        <sliderDepth>20</sliderDepth>
+                        <useAPI>false</useAPI>
+                     </Value>
+                  </Item>
+                  <Item>
+                     <Key>oracle.jdevimpl.runner.xslt.XSLTConfiguration</Key>
+                     <Value class="oracle.jdevimpl.runner.xslt.XSLTConfiguration">
+                        <inputFileURL/>
+                        <outputFileURL/>
+                        <showInputFile>true</showInputFile>
+                        <showOutputFile>true</showOutputFile>
+                        <sourcePath>
+                           <entries class="[Ljava.net.URL;"/>
+                        </sourcePath>
+                     </Value>
+                  </Item>
+                  <Item>
+                     <Key>oracle.jdevimpl.sqlj.config.SqljConfiguration</Key>
+                     <Value class="oracle.jdevimpl.sqlj.config.SqljConfiguration">
+                        <additionalParameters class="java.lang.String"/>
+                        <checkSemantics>false</checkSemantics>
+                        <codegen>oracle</codegen>
+                        <contextConnectionMap class="java.util.HashMap"/>
+                        <contextName>&lt;none></contextName>
+                        <useCache>false</useCache>
+                        <warnAll>false</warnAll>
+                        <warnNull>false</warnNull>
+                        <warnPortable>false</warnPortable>
+                        <warnPrecision>false</warnPrecision>
+                        <warnStrict>false</warnStrict>
+                        <warnVerbose>false</warnVerbose>
+                     </Value>
+                  </Item>
+                  <Item>
+                     <Key>WebappJspCompilerOptions</Key>
+                     <Value class="oracle.jdevimpl.webapp.jsp.JspCompilerOptions">
+                        <forgiveDuplicateDirectiveAttributes>false</forgiveDuplicateDirectiveAttributes>
+                        <requestTimeIntrospection>false</requestTimeIntrospection>
+                        <validate>true</validate>
+                        <validateTLD>true</validateTLD>
+                     </Value>
+                  </Item>
+               </configData>
+            </Value>
+         </Item>
+      </configurations>
+   </projectSettings>
+   <projectSourcePath>
+      <entries>
+         <Item path="src/"/>
+      </entries>
+   </projectSourcePath>
+   <properties class="java.util.HashMap">
+      <Item>
+         <Key>technologyScope</Key>
+         <Value class="oracle.ide.model.TechnologyScope">
+            <technologyKeys>
+               <Item>Java</Item>
+               <Item>JClient</Item>
+               <Item>JavaBeans</Item>
+               <Item>General</Item>
+               <Item>Swing/AWT</Item>
+            </technologyKeys>
+         </Value>
+      </Item>
+      <Item>
+         <Key>useDynamicPaths</Key>
+         <Value class="java.lang.Boolean">true</Value>
+      </Item>
+   </properties>
+</project>

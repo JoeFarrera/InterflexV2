@@ -1,0 +1,11 @@
+<Telegrama lenTelegrama="30" tipoTel="AFMO">
+   <Detalles>
+      <numMovimiento index="0" len="4" tipo="int">5062</numMovimiento>
+      <origen index="4" len="2" tipo="int">50<lado id="lado" index="6" len="1" tipo="byte">1</lado>
+        <columna id="columna" index="7" len="1" tipo="byte">12</columna>
+        <nivel id="nivel" index="8" len="1" tipo="byte">13</nivel>
+        <posUbicacion id="posUbicacion" index="9" len="1" tipo="byte">2</posUbicacion>
+      </origen>
+   </Detalles>
+</Telegrama>
+

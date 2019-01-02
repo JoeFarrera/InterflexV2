@@ -1,0 +1,239 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+
+<ViewObject
+   Name="SgahistexistView"
+   SelectList="Sgahistexist.IDMOV, 
+       Sgahistexist.TIPMOV, 
+       Sgahistexist.IDMAC, 
+
+       Sgahistexist.IDART, 
+       Sgahistexist.CANINI, 
+   
+    Sgahistexist.CANFIN, 
+       Sgahistexist.IDBULTO, 
+     
+  Sgahistexist.IDDOC, 
+       Sgahistexist.IDLIN, 
+       Sgahistexist.IDTIPDOC, 
+
+       Sgahistexist.IDCABSTR, 
+       Sgahistexist.IDCABNUM, 
+
+       Sgahistexist.PESINI, 
+       Sgahistexist.PESFIN, 
+  
+     Sgahistexist.UBIPOS, 
+       Sgahistexist.OBSERV, 
+     
+  Sgahistexist.CREATEDBY, 
+       Sgahistexist.MODIFIEDBY, 
+ 
+      Sgahistexist.CREATEDON, 
+       Sgahistexist.MODIFIEDON, 
+
+       Sgahistexist.INTEGRA, 
+       Sgahistexist.TALBARAN, 
+
+       Sgahistexist.NALBARAN"
+   FromList="SGAHISTEXIST Sgahistexist"
+   BindingStyle="Oracle"
+   CustomQuery="false"
+   ComponentClass="es.sysmap.interflex.model.dmc.SgahistexistViewImpl"
+   MsgBundleClass="oracle.jbo.common.JboResourceBundle"
+   UseGlueCode="false" >
+   <DesignTime>
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_codeGenFlag2" Value="Access|Coll" />
+      <Attr Name="_isExpertMode" Value="false" />
+   </DesignTime>
+   <EntityUsage
+      Name="Sgahistexist"
+      Entity="es.sysmap.interflex.model.bdc.Sgahistexist" >
+      <DesignTime>
+         <Attr Name="_EntireObjectTable" Value="false" />
+         <Attr Name="_queryClause" Value="false" />
+      </DesignTime>
+   </EntityUsage>
+   <ViewAttribute
+      Name="Idmov"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Idmov"
+      EntityUsage="Sgahistexist"
+      AliasName="IDMOV" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Tipmov"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Tipmov"
+      EntityUsage="Sgahistexist"
+      AliasName="TIPMOV" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Idmac"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Idmac"
+      EntityUsage="Sgahistexist"
+      AliasName="IDMAC" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Idart"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Idart"
+      EntityUsage="Sgahistexist"
+      AliasName="IDART" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Canini"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Canini"
+      EntityUsage="Sgahistexist"
+      AliasName="CANINI" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Canfin"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Canfin"
+      EntityUsage="Sgahistexist"
+      AliasName="CANFIN" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Idbulto"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Idbulto"
+      EntityUsage="Sgahistexist"
+      AliasName="IDBULTO" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Iddoc"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Iddoc"
+      EntityUsage="Sgahistexist"
+      AliasName="IDDOC" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Idlin"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Idlin"
+      EntityUsage="Sgahistexist"
+      AliasName="IDLIN" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Idtipdoc"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Idtipdoc"
+      EntityUsage="Sgahistexist"
+      AliasName="IDTIPDOC" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Idcabstr"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Idcabstr"
+      EntityUsage="Sgahistexist"
+      AliasName="IDCABSTR" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Idcabnum"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Idcabnum"
+      EntityUsage="Sgahistexist"
+      AliasName="IDCABNUM" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Pesini"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Pesini"
+      EntityUsage="Sgahistexist"
+      AliasName="PESINI" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Pesfin"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Pesfin"
+      EntityUsage="Sgahistexist"
+      AliasName="PESFIN" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Ubipos"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Ubipos"
+      EntityUsage="Sgahistexist"
+      AliasName="UBIPOS" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Observ"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Observ"
+      EntityUsage="Sgahistexist"
+      AliasName="OBSERV" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Createdby"
+      IsUpdateable="false"
+      PrecisionRule="true"
+      EntityAttrName="Createdby"
+      EntityUsage="Sgahistexist"
+      AliasName="CREATEDBY" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Modifiedby"
+      IsUpdateable="false"
+      PrecisionRule="true"
+      EntityAttrName="Modifiedby"
+      EntityUsage="Sgahistexist"
+      AliasName="MODIFIEDBY" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Createdon"
+      IsUpdateable="false"
+      PrecisionRule="true"
+      EntityAttrName="Createdon"
+      EntityUsage="Sgahistexist"
+      AliasName="CREATEDON" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Modifiedon"
+      IsUpdateable="false"
+      PrecisionRule="true"
+      EntityAttrName="Modifiedon"
+      EntityUsage="Sgahistexist"
+      AliasName="MODIFIEDON" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Integra"
+      PrecisionRule="true"
+      EntityAttrName="Integra"
+      EntityUsage="Sgahistexist"
+      AliasName="INTEGRA" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Talbaran"
+      PrecisionRule="true"
+      EntityAttrName="Talbaran"
+      EntityUsage="Sgahistexist"
+      AliasName="TALBARAN" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Nalbaran"
+      PrecisionRule="true"
+      EntityAttrName="Nalbaran"
+      EntityUsage="Sgahistexist"
+      AliasName="NALBARAN" >
+   </ViewAttribute>
+</ViewObject>

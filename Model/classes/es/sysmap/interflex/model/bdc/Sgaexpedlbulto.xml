@@ -1,0 +1,382 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+
+<Entity
+   Name="Sgaexpedlbulto"
+   DBObjectType="table"
+   DBObjectName="SGAEXPEDLBULTO"
+   AliasName="Sgaexpedlbulto"
+   BindingStyle="Oracle"
+   UseGlueCode="false"
+   RowClass="es.sysmap.interflex.model.bdc.SgaexpedlbultoImpl" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_codeGenFlag2" Value="Access" />
+      <AttrArray Name="_publishEvents">
+      </AttrArray>
+   </DesignTime>
+   <Attribute
+      Name="Idexped"
+      IsNotNull="true"
+      Precision="10"
+      Scale="0"
+      ColumnName="IDEXPED"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      TableName="SGAEXPEDLBULTO"
+      PrimaryKey="true" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Idbulto"
+      IsNotNull="true"
+      Precision="6"
+      Scale="0"
+      ColumnName="IDBULTO"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      TableName="SGAEXPEDLBULTO"
+      PrimaryKey="true" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Iddoc"
+      IsNotNull="true"
+      Precision="9"
+      Scale="0"
+      ColumnName="IDDOC"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      TableName="SGAEXPEDLBULTO"
+      PrimaryKey="true" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Idlin"
+      IsNotNull="true"
+      Precision="4"
+      Scale="0"
+      ColumnName="IDLIN"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      TableName="SGAEXPEDLBULTO"
+      PrimaryKey="true" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Cantot"
+      IsNotNull="true"
+      Precision="11"
+      Scale="2"
+      ColumnName="CANTOT"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      TableName="SGAEXPEDLBULTO" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Createdby"
+      IsUpdateable="while_insert"
+      Precision="10"
+      ColumnName="CREATEDBY"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="SGAEXPEDLBULTO"
+      HistoryColumn="UserHistory" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="10" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Createdon"
+      IsUpdateable="while_insert"
+      ColumnName="CREATEDON"
+      Type="oracle.jbo.domain.Date"
+      ColumnType="DATE"
+      SQLType="DATE"
+      TableName="SGAEXPEDLBULTO"
+      HistoryColumn="DateHistory" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="7" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Modifiedby"
+      Precision="10"
+      ColumnName="MODIFIEDBY"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="SGAEXPEDLBULTO"
+      HistoryColumn="UserHistory" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="10" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Modifiedon"
+      Precision="20"
+      ColumnName="MODIFIEDON"
+      Type="oracle.jbo.domain.Date"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="SGAEXPEDLBULTO"
+      HistoryColumn="DateHistory" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="20" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Peso"
+      Precision="11"
+      Scale="2"
+      ColumnName="PESO"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      TableName="SGAEXPEDLBULTO" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </Attribute>
+   <AccessorAttribute
+      Name="Sgaexpedbulto"
+      Association="es.sysmap.interflex.model.bdc.SgaexpedbultoLbultoAssociation"
+      AssociationEnd="es.sysmap.interflex.model.bdc.SgaexpedbultoLbultoAssociation.Sgaexpedbulto"
+      AssociationOtherEnd="es.sysmap.interflex.model.bdc.SgaexpedbultoLbultoAssociation.Sgaexpedlbulto"
+      Type="es.sysmap.interflex.model.bdc.SgaexpedbultoImpl" >
+   </AccessorAttribute>
+   <AccessorAttribute
+      Name="Sgaexpedbulto1"
+      Association="es.sysmap.interflex.model.bdc.SgaexpedlbultoFk1Assoc"
+      AssociationEnd="es.sysmap.interflex.model.bdc.SgaexpedlbultoFk1Assoc.Sgaexpedbulto1"
+      AssociationOtherEnd="es.sysmap.interflex.model.bdc.SgaexpedlbultoFk1Assoc.Sgaexpedlbulto1"
+      Type="es.sysmap.interflex.model.bdc.SgaexpedbultoImpl" >
+   </AccessorAttribute>
+   <AccessorAttribute
+      Name="Sgaldoc"
+      Association="es.sysmap.interflex.model.bdc.SgaldocExpedlbultoAssoc"
+      AssociationEnd="es.sysmap.interflex.model.bdc.SgaldocExpedlbultoAssoc.Sgaldoc"
+      AssociationOtherEnd="es.sysmap.interflex.model.bdc.SgaldocExpedlbultoAssoc.Sgaexpedlbulto"
+      Type="es.sysmap.interflex.model.bdc.SgaldocImpl" >
+   </AccessorAttribute>
+   <Key
+      Name="SgaexpedlbultoPk" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaexpedlbulto.Idexped" />
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaexpedlbulto.Idbulto" />
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaexpedlbulto.Idlin" />
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaexpedlbulto.Iddoc" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SGAEXPEDLBULTO_PK" />
+         <Attr Name="_isPrimary" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0020774" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaexpedlbulto.Idexped" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0020774" />
+         <Attr Name="_checkCondition" Value="&#34;IDEXPED&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0020776" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaexpedlbulto.Idbulto" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0020776" />
+         <Attr Name="_checkCondition" Value="&#34;IDBULTO&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0020777" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaexpedlbulto.Iddoc" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0020777" />
+         <Attr Name="_checkCondition" Value="&#34;IDDOC&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0020778" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaexpedlbulto.Idlin" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0020778" />
+         <Attr Name="_checkCondition" Value="&#34;IDLIN&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0020779" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaexpedlbulto.Cantot" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0020779" />
+         <Attr Name="_checkCondition" Value="&#34;CANTOT&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0021039" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaexpedlbulto.Idexped" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0021039" />
+         <Attr Name="_checkCondition" Value="&#34;IDEXPED&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0021040" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaexpedlbulto.Idbulto" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0021040" />
+         <Attr Name="_checkCondition" Value="&#34;IDBULTO&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0021041" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaexpedlbulto.Iddoc" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0021041" />
+         <Attr Name="_checkCondition" Value="&#34;IDDOC&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0021042" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaexpedlbulto.Idlin" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0021042" />
+         <Attr Name="_checkCondition" Value="&#34;IDLIN&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0021043" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaexpedlbulto.Cantot" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0021043" />
+         <Attr Name="_checkCondition" Value="&#34;CANTOT&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0022549" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaexpedlbulto.Idexped" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0022549" />
+         <Attr Name="_checkCondition" Value="&#34;IDEXPED&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0022550" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaexpedlbulto.Idbulto" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0022550" />
+         <Attr Name="_checkCondition" Value="&#34;IDBULTO&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0022551" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaexpedlbulto.Iddoc" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0022551" />
+         <Attr Name="_checkCondition" Value="&#34;IDDOC&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0022552" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaexpedlbulto.Idlin" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0022552" />
+         <Attr Name="_checkCondition" Value="&#34;IDLIN&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0022553" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaexpedlbulto.Cantot" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0022553" />
+         <Attr Name="_checkCondition" Value="&#34;CANTOT&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SgaexpedlbultoFk1" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaexpedlbulto.Idexped" />
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaexpedlbulto.Idbulto" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SGAEXPEDLBULTO_FK1" />
+         <Attr Name="_referencedKey" Value="SGAEXPEDBULTO_PK" />
+         <Attr Name="_isForeign" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SgaexpedlbultoFk2" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaexpedlbulto.Iddoc" />
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaexpedlbulto.Idlin" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SGAEXPEDLBULTO_FK2" />
+         <Attr Name="_referencedKey" Value="SGALDOC_PK" />
+         <Attr Name="_isForeign" Value="true" />
+      </DesignTime>
+   </Key>
+</Entity>

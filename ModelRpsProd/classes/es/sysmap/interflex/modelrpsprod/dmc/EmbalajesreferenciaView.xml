@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+
+<ViewObject
+   Name="EmbalajesreferenciaView"
+   BindingStyle="JDBC"
+   CustomQuery="true"
+   RowClass="es.sysmap.interflex.modelrpsprod.dmc.EmbalajesreferenciaViewRowImpl"
+   ComponentClass="es.sysmap.interflex.modelrpsprod.dmc.EmbalajesreferenciaViewImpl"
+   MsgBundleClass="oracle.jbo.common.JboResourceBundle"
+   UseGlueCode="false" >
+   <SQLQuery><![CDATA[
+SELECT DboEmbalajesreferencia.codart,
+       DboEmbalajesreferencia.idFormato,
+       DboEmbalajesreferencia.cantidad,
+       DboEmbalajesreferencia.predet,
+       DboEmbalajesreferencia.unidadmedida
+FROM dbo.EmbalajesReferencia DboEmbalajesreferencia
+   ]]></SQLQuery>
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_codeGenFlag2" Value="Access|Coll" />
+      <Attr Name="_isExpertMode" Value="true" />
+   </DesignTime>
+   <ViewAttribute
+      Name="Codart"
+      IsUpdateable="false"
+      IsPersistent="false"
+      PrecisionRule="true"
+      Precision="50"
+      Type="java.lang.String"
+      ColumnType="nvarchar"
+      PrimaryKey="true"
+      AliasName="codart"
+      Expression="codart"
+      SQLType="VARCHAR" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="50" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Idformato"
+      IsUpdateable="false"
+      IsPersistent="false"
+      PrecisionRule="true"
+      Precision="10"
+      Scale="0"
+      Type="java.lang.Integer"
+      ColumnType="int"
+      PrimaryKey="true"
+      AliasName="idFormato"
+      Expression="idFormato"
+      SQLType="INTEGER" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="11" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Cantidad"
+      IsUpdateable="false"
+      IsPersistent="false"
+      PrecisionRule="true"
+      Precision="10"
+      Scale="0"
+      Type="java.lang.Integer"
+      ColumnType="int"
+      PrimaryKey="true"
+      AliasName="cantidad"
+      Expression="cantidad"
+      SQLType="INTEGER" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="11" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Predet"
+      IsUpdateable="false"
+      IsPersistent="false"
+      PrecisionRule="true"
+      Precision="1"
+      Scale="0"
+      Type="java.lang.Boolean"
+      ColumnType="bit"
+      AliasName="predet"
+      Expression="predet"
+      SQLType="BIT" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="1" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Unidadmedida"
+      IsUpdateable="false"
+      IsPersistent="false"
+      PrecisionRule="true"
+      Precision="5"
+      Type="java.lang.String"
+      ColumnType="nvarchar"
+      AliasName="unidadmedida"
+      Expression="unidadmedida"
+      SQLType="VARCHAR" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="5" />
+      </DesignTime>
+   </ViewAttribute>
+   <AttrArray Name="KeyAttributes">
+      <Item Value="Codart" />
+      <Item Value="Idformato" />
+      <Item Value="Cantidad" />
+   </AttrArray>
+</ViewObject>

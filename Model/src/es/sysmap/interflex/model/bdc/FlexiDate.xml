@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE Domain SYSTEM "jbo_03_01.dtd">
+
+<Domain
+   Name="FlexiDate" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_type" Value="Date" />
+      <Attr Name="_columnType" Value="DATE" />
+      <Attr Name="_isUpdateable" Value="true" />
+      <Attr Name="_isQueriable" Value="true" />
+      <Attr Name="_isPersistent" Value="true" />
+      <Attr Name="_isUnique" Value="false" />
+      <Attr Name="_isNotNull" Value="false" />
+      <Attr Name="_primaryKey" Value="false" />
+      <Attr Name="_RetrievedOnUpdate" Value="false" />
+      <Attr Name="_RetrievedOnInsert" Value="false" />
+      <Attr Name="_DiscrColumn" Value="false" />
+   </DesignTime>
+</Domain>

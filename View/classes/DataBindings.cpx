@@ -1,0 +1,861 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<JboProject
+   id="DataBindings"
+   xmlns="http://xmlns.oracle.com/adfm/application"
+   version="10.1.2.17.96"
+   SeparateXMLFiles="false"
+   Package=""
+   ClientType="JClient" >
+   <Contents >
+      <DataControl
+         id="AppModuleDataControl"
+         SubType="DCBC4J"
+         SupportsFindMode="true"
+         SupportsTransactions="true"
+         Package="es.sysmap.interflex.model.dmc"
+         FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl"
+         Configuration="AppModuleLocal" >
+         <Parameters >
+            <Parameter
+               name="Sync"
+               value="Immediate" >
+            </Parameter>
+         </Parameters>
+      </DataControl>
+      <Containee
+         id="PanelSgaexpedView2UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgaexpedView2UIModel" >
+      </Containee>
+      <Containee
+         id="MDPanelSgavexped2SgaexpedbultoView2UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.MDPanelSgavexped2SgaexpedbultoView2UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavFormatosTipoEnvio1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgavFormatosTipoEnvio1UIModel" >
+      </Containee>
+      <Containee
+         id="MDPanelSgaubicacionManualView1SgaposicionubicacionView2UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.MDPanelSgaubicacionManualView1SgaposicionubicacionView2UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavexistenciaView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgavexistenciaView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavtrasloEntSal1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgavtrasloEntSal1UIModel" >
+      </Containee>
+      <Containee
+         id="MDPanelZAgenciatipoenvioView1ZTipoenvioView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.MDPanelZAgenciatipoenvioView1ZTipoenvioView1UIModel" >
+      </Containee>
+      <Containee
+         id="MDPanelSgaexpedView1SgavexpeddocView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.MDPanelSgaexpedView1SgavexpeddocView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgaexpeddocView2UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgaexpeddocView2UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgazonamanView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgazonamanView1UIModel" >
+      </Containee>
+      <Containee
+         id="MDPanelSgaarticuloView3SgavProdEmbalajesArticuloView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.MDPanelSgaarticuloView3SgavProdEmbalajesArticuloView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgaresmatOpManView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgaresmatOpManView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgacdocTLView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgacdocTLView1UIModel" >
+      </Containee>
+      <Containee
+         id="TestPanelSgamacView2UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.TestPanelSgamacView2UIModel" >
+      </Containee>
+      <Containee
+         id="PanelEsperantCargaUIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelEsperantCargaUIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavProdEmbalajesArticuloView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgavProdEmbalajesArticuloView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavexpedView2UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgavexpedView2UIModel" >
+      </Containee>
+      <Containee
+         id="MDPanelSgabultoView4SgalbultoView5UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.MDPanelSgabultoView4SgalbultoView5UIModel" >
+      </Containee>
+      <Containee
+         id="MDPanelProdembalajesView1ProdembalajesreferenciaView2UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.MDPanelProdembalajesView1ProdembalajesreferenciaView2UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgaexpedView3UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgaexpedView3UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgaexpedbultoView2UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgaexpedbultoView2UIModel" >
+      </Containee>
+      <Containee
+         id="MDPanelSgacdocTLView1SgavexistenciaTLView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.MDPanelSgacdocTLView1SgavexistenciaTLView1UIModel" >
+      </Containee>
+      <Containee
+         id="MDPanelSgaexpedView4SgaexpeddocView2UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.MDPanelSgaexpedView4SgaexpeddocView2UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgauserView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgauserView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavexpedbultoView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgavexpedbultoView1UIModel" >
+      </Containee>
+      <Containee
+         id="MDPanelSgaexpedView1SgaexpeddocView2UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.MDPanelSgaexpedView1SgaexpeddocView2UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavexpeddocView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgavexpeddocView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgaexpedView4UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgaexpedView4UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgatipobultoView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgatipobultoView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgaresmattlView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgaresmattlView1UIModel" >
+      </Containee>
+      <Containee
+         id="MDPanelSgacdocEntradesView1SgavbultoView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.MDPanelSgacdocEntradesView1SgavbultoView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgapasilloView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgapasilloView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgaresmttlView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgaresmttlView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgamacMultirefSenseReservaView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgamacMultirefSenseReservaView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgamacView2UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgamacView2UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgaTestEntradaView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgaTestEntradaView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgacdocSortidesView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgacdocSortidesView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgaresmatView6UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgaresmatView6UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgaubicacionSiloView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgaubicacionSiloView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgaposicionubicacionView3UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgaposicionubicacionView3UIModel" >
+      </Containee>
+      <Containee
+         id="MDPanelSgaubicacionSiloView1SgaposicionubicacionView3UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.MDPanelSgaubicacionSiloView1SgaposicionubicacionView3UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavubicacionInspeccionView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgavubicacionInspeccionView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavmovsusuariView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgavmovsusuariView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgaldocEntradesView5UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgaldocEntradesView5UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgaarticuloView3UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgaarticuloView3UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgaroleView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgaroleView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgaliniestreballadesView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgaliniestreballadesView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgaarticuloView2UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgaarticuloView2UIModel" >
+      </Containee>
+      <Containee
+         id="TestJTableUIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.TestJTableUIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavhistexistView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgavhistexistView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgaposicionubicacionView4UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgaposicionubicacionView4UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgaldocEntradesView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgaldocEntradesView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavsumexistenciaView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgavsumexistenciaView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavldocView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgavldocView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavmacView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgavmacView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgaldocEntradesView3UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgaldocEntradesView3UIModel" >
+      </Containee>
+      <Containee
+         id="MDPanelSgacdocSortidesView1SgaldocView4UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.MDPanelSgacdocSortidesView1SgaldocView4UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgaubicacionPlcView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgaubicacionPlcView1UIModel" >
+      </Containee>
+      <Containee
+         id="MDPanelSgacdocSortidesView1SgaresmatmanView2UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.MDPanelSgacdocSortidesView1SgaresmatmanView2UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavresmattlView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgavresmattlView1UIModel" >
+      </Containee>
+      <Containee
+         id="MDPanelSgavAgenciaTipoEnvio1SgavFormatosTipoEnvio1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.MDPanelSgavAgenciaTipoEnvio1SgavFormatosTipoEnvio1UIModel" >
+      </Containee>
+      <Containee
+         id="MDPanelOperacionsManualsUIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.MDPanelOperacionsManualsUIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgacdocTL1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgacdocTL1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgatipmactipubiView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgatipmactipubiView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgaresmatmanView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgaresmatmanView1UIModel" >
+      </Containee>
+      <Containee
+         id="MDPanelSgavcdocView2SgavbultoView2UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.MDPanelSgavcdocView2SgavbultoView2UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgamacPos44PendPesoView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgamacPos44PendPesoView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgaresmatView5UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgaresmatView5UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgadifstockhost1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgadifstockhost1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgamacSenseReservaRegulViewUIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgamacSenseReservaRegulViewUIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgamacView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgamacView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgaresmatmanView2UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgaresmatmanView2UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgaVTrasloTrasbordoView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgaVTrasloTrasbordoView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavsummacSenseExistenciesView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgavsummacSenseExistenciesView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavhistordtranView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgavhistordtranView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavexistenciaView3UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgavexistenciaView3UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgatipdocView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgatipdocView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgamacSenseReservaMultirefView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgamacSenseReservaMultirefView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavbultoView2UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgavbultoView2UIModel" >
+      </Containee>
+      <Containee
+         id="MDPanelSgacdocTL1SgaresmattlView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.MDPanelSgacdocTL1SgaresmattlView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavocupaciominiloaddetallView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgavocupaciominiloaddetallView1UIModel" >
+      </Containee>
+      <Containee
+         id="MDPanelSgavcdocView1SgavldocView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.MDPanelSgavcdocView1SgavldocView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavordtranView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgavordtranView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgaposicionubicacionView2UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgaposicionubicacionView2UIModel" >
+      </Containee>
+      <Containee
+         id="MDPanelSgavsummacSenseExistenciesView1SgavmacSenseExistenciesView2UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.MDPanelSgavsummacSenseExistenciesView1SgavmacSenseExistenciesView2UIModel" >
+      </Containee>
+      <Containee
+         id="MDPanelEntradesManualsUIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.MDPanelEntradesManualsUIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgabultoView2UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgabultoView2UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavexistenciaTLView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgavexistenciaTLView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgaexpedView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgaexpedView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavexistenciaView2UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgavexistenciaView2UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgaresmatView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgaresmatView1UIModel" >
+      </Containee>
+      <Containee
+         id="TestJListPanelUIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.TestJListPanelUIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgaexped_1View1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgaexped_1View1UIModel" >
+      </Containee>
+      <Containee
+         id="MDPanelSgaexpedView2SgavexpedView2UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.MDPanelSgaexpedView2SgavexpedView2UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgaldocView5UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgaldocView5UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgaldocEntradesView4UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgaldocEntradesView4UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgacdocEntradesView2UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgacdocEntradesView2UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgatipoalmacenView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgatipoalmacenView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgaembalajeView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgaembalajeView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgalbultoView5UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgalbultoView5UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgaexped_1_2View1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgaexped_1_2View1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavmovsusuariresumView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgavmovsusuariresumView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavexpedView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgavexpedView1UIModel" >
+      </Containee>
+      <Containee
+         id="MDPanelSgacdocTL1SgaresmttlView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.MDPanelSgacdocTL1SgaresmttlView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgaedocView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgaedocView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavubicacionView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgavubicacionView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgacdocSortidesView2UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgacdocSortidesView2UIModel" >
+      </Containee>
+      <Containee
+         id="PanelZAgenciatipoenvioView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelZAgenciatipoenvioView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelProdembalajesView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelProdembalajesView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgamacSenseReservaRegularitzarUIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgamacSenseReservaRegularitzarUIModel" >
+      </Containee>
+      <Containee
+         id="MDPanelSgacdocTL1SgavresmattlView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.MDPanelSgacdocTL1SgavresmattlView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavexistenciaView4UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgavexistenciaView4UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavldocEntradesView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgavldocEntradesView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavexpedbultoView2UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgavexpedbultoView2UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgabultoView5UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgabultoView5UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavexpedlbultoView2UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgavexpedlbultoView2UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavcdocView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgavcdocView1UIModel" >
+      </Containee>
+      <Containee
+         id="MDPanelSgauserView1SgagrantuserView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.MDPanelSgauserView1SgagrantuserView1UIModel" >
+      </Containee>
+      <Containee
+         id="MDPanelSgacdocSortidesView2SgaldocView5UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.MDPanelSgacdocSortidesView2SgaldocView5UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgaldocView4UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgaldocView4UIModel" >
+      </Containee>
+      <Containee
+         id="PanelZTipoenvioView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelZTipoenvioView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavexped2UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgavexped2UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgaarticuloView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgaarticuloView1UIModel" >
+      </Containee>
+      <Containee
+         id="MDPanelSgavocupacioUIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.MDPanelSgavocupacioUIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgaubicacionView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgaubicacionView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgaresmatOpManView2UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgaresmatOpManView2UIModel" >
+      </Containee>
+      <Containee
+         id="SgaJUPanelUIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.SgaJUPanelUIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgamacSenseReservaView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgamacSenseReservaView1UIModel" >
+      </Containee>
+      <Containee
+         id="MDPanelSgaexpedView2SgavexpedbultoView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.MDPanelSgaexpedView2SgavexpedbultoView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelEsperantCargaSiloUIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelEsperantCargaSiloUIModel" >
+      </Containee>
+      <Containee
+         id="MDPanelSgacdocEntradesView2SgaldocEntradesView6UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.MDPanelSgacdocEntradesView2SgaldocEntradesView6UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavmovscontenidorsView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgavmovscontenidorsView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgatipoubicacionView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgatipoubicacionView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavexped1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgavexped1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavcdocView2UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgavcdocView2UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavcompararmanautoView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgavcompararmanautoView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgacdocEntradesView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgacdocEntradesView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavocupaciosilodetallView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgavocupaciosilodetallView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgaTestMacView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgaTestMacView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgaldocEntradesView6UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgaldocEntradesView6UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgabultoView4UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgabultoView4UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgapasillomanualView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgapasillomanualView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavarticulomodpesViewUIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgavarticulomodpesViewUIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavmacSenseExistenciesView2UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgavmacSenseExistenciesView2UIModel" >
+      </Containee>
+      <Containee
+         id="MDPanelSgavsumexistenciaView1SgavexistenciaView2UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.MDPanelSgavsumexistenciaView1SgavexistenciaView2UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavedocView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgavedocView1UIModel" >
+      </Containee>
+      <Containee
+         id="MDPanelSgavmacView1SgavexistenciaView3UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.MDPanelSgavmacView1SgavexistenciaView3UIModel" >
+      </Containee>
+      <Containee
+         id="MDPanelSgaUbicacionMiniLoadView1SgaposicionubicacionView4UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.MDPanelSgaUbicacionMiniLoadView1SgaposicionubicacionView4UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgapuestomanipView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgapuestomanipView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgabultoView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgabultoView1UIModel" >
+      </Containee>
+      <Containee
+         id="MDPanelSgavexpedbultoView2SgavexpedlbultoView2UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.MDPanelSgavexpedbultoView2SgavexpedlbultoView2UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavAgenciaTipoEnvio1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgavAgenciaTipoEnvio1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgaubicacionManualView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgaubicacionManualView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgagrantuserView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgagrantuserView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelEsperantCargaMiniLoadUIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelEsperantCargaMiniLoadUIModel" >
+      </Containee>
+      <Containee
+         id="PanelProdembalajesreferenciaView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelProdembalajesreferenciaView1UIModel" >
+      </Containee>
+      <Containee
+         id="MDPanelProdembalajesView1ProdembalajesreferenciaView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.MDPanelProdembalajesView1ProdembalajesreferenciaView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgaUbicacionMiniLoadView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgaUbicacionMiniLoadView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgamacSenseExistenciesView3UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgamacSenseExistenciesView3UIModel" >
+      </Containee>
+      <Containee
+         id="PanelEnConstruccioUIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelEnConstruccioUIModel" >
+      </Containee>
+      <Containee
+         id="PanelOperacionsManualsUIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelOperacionsManualsUIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavdocsObertsView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgavdocsObertsView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgacdocSortidesView3UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgacdocSortidesView3UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavexistenciaView4TestDeleteUIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgavexistenciaView4TestDeleteUIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgaldocEntradesView2UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgaldocEntradesView2UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavmacSenseExistenciesView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgavmacSenseExistenciesView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgatipomacView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.PanelSgatipomacView1UIModel" >
+      </Containee>
+   </Contents>
+</JboProject>

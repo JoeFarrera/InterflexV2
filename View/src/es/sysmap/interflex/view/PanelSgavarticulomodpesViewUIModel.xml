@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<DCContainer
+   id="PanelSgavarticulomodpesViewUIModel"
+   xmlns="http://xmlns.oracle.com/adfm/uimodel"
+   version="10.1.2.17.96"
+   Package="es.sysmap.interflex.view"
+   FindMode="false"
+   EnableTokenValidation="true" >
+   <Contents >
+      <DCIterator
+         id="SgavarticulomodpesView1Iter"
+         Binds="AppModuleDataControl.SgavarticulomodpesView1" >
+      </DCIterator>
+      <DCControl
+         id="Idartif"
+         SubType="DCTextField"
+         IterBinding="SgavarticulomodpesView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Idartif" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Descrip"
+         SubType="DCTextField"
+         IterBinding="SgavarticulomodpesView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Descrip" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Pesunit"
+         SubType="DCTextField"
+         IterBinding="SgavarticulomodpesView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Pesunit" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Fecultmodpes"
+         SubType="DCTextField"
+         IterBinding="SgavarticulomodpesView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Fecultmodpes" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Modpesby"
+         SubType="DCTextField"
+         IterBinding="SgavarticulomodpesView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Modpesby" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Cantot"
+         SubType="DCTextField"
+         IterBinding="SgavarticulomodpesView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Cantot" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Uniemb"
+         SubType="DCTextField"
+         IterBinding="SgavarticulomodpesView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Uniemb" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Idmac1"
+         SubType="DCTextField"
+         IterBinding="SgavarticulomodpesView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Idmac1" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="TaraTeoric"
+         SubType="DCTextField"
+         IterBinding="SgavarticulomodpesView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="TaraTeoric" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="TaraReal"
+         SubType="DCTextField"
+         IterBinding="SgavarticulomodpesView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="TaraReal" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Descrip1"
+         SubType="DCTextField"
+         IterBinding="SgavarticulomodpesView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Descrip1" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="PesActual"
+         SubType="DCTextField"
+         IterBinding="SgavarticulomodpesView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="PesActual" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="PesUnitariReal"
+         SubType="DCTextField"
+         IterBinding="SgavarticulomodpesView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="PesUnitariReal" />
+         </AttrNames>
+      </DCControl>
+   </Contents>
+</DCContainer>

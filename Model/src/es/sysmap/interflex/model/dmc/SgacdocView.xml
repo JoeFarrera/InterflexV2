@@ -1,0 +1,515 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+
+<ViewObject
+   Name="SgacdocView"
+   SelectList="Sgacdoc.IDDOC, 
+       Sgacdoc.IDCABSTR, 
+       Sgacdoc.IDCABNUM, 
+
+       Sgacdoc.NUMLINEAS, 
+       Sgacdoc.NUMBULTOS, 
+      
+ Sgacdoc.ESTADO, 
+       (select u.operario from sgauser u where 
+ u.iduser = sgacdoc.modifiedby) AS OPERARIO, 
+       Sgacdoc.PESTOTAL, 
+
+       Sgacdoc.MOTIVO, 
+       Sgacdoc.NOMBRE, 
+       Sgacdoc.DIRECCION, 
+
+       Sgacdoc.CODPOSTAL, 
+       Sgacdoc.POBLACION, 
+      
+ Sgacdoc.PROVINCIA, 
+       Sgacdoc.TELEFONO, 
+       Sgacdoc.PORTES, 
+
+       Sgacdoc.FALBARAN, 
+       Sgacdoc.SPEDIDO, 
+       Sgacdoc.PAIS, 
+
+       Sgacdoc.TRANSPORTE, 
+       Sgacdoc.REEMBOLSO, 
+     
+  Sgacdoc.TALBARAN, 
+       Sgacdoc.NALBARAN, 
+       Sgacdoc.CODEMPRESA, 
+
+       Sgacdoc.TRANSP, 
+       Sgacdoc.TPORTES, 
+       Sgacdoc.CCLIENTE, 
+
+       Sgacdoc.IDULTBULTO, 
+       Sgacdoc.IDTIPDOC, 
+      
+ Sgacdoc.PRIORIDAD, 
+       (select decode (sgacdoc.estado, &#39;D&#39;, 
+decode ((select sum(numlineas) from sgavcdocldoclbultoenproceso 
+v where v.iddoc = sgacdoc.iddoc), 0, sgacdoc.estado, &#39;P&#39;), sgacdoc.estado) 
+estadoLineas from dual) AS ESTADOLINEAS, 
+       (select abbreviation 
+from sgarefcodes where sgarefcodes.domain =&#39;ESTORD&#39; and sgarefcodes.value 
+= sgacdoc.estado) AS DESCESTADO, 
+       (select abbreviation 
+from sgarefcodes where sgarefcodes.domain                    
+                                                             
+                                                             
+                                                             
+                                                             
+                                                             
+                   =&#39;ESTORD&#39;                                 
+                        and                       sgarefcodes.value 
+                                                             
+                                                             
+           =         (select                                 
+                                                      decode 
+                                                             
+              (sgacdoc.estado,                               
+                                                             
+                                                             
+                                              &#39;D&#39;,           
+                decode                                       
+         ((select                                            
+                  sum(numlineas)                             
+                                                             
+                                                             
+                 from                             sgavcdocldoclbultoenproceso 
+                                                             
+                                                             
+                                                             
+                                                             
+                     v  where                              v.iddoc 
+                                                             
+                           =            sgacdoc.iddoc),      
+                                                             
+                                                0,           
+        sgacdoc.estado,                                      
+                                                             
+                               &#39;P&#39;),                         
+                                                   sgacdoc.estado) 
+                                                             
+                                                             
+                                                       from  
+                    dual)) AS Descestadolineas, 
+       Sgacdoc.IMPRIMIR, 
+
+       Sgacdoc.ESTCOM, 
+       Sgacdoc.IDPUESTOFIN, 
+       
+Sgacdoc.FPEDIDO, 
+       Sgacdoc.TIPDOCSGA, 
+       (select z_agenciatipoenvio.tipoenvio 
+from z_agenciatipoenvio where z_agenciatipoenvio.codtra = sgacdoc.transp) 
+AS TIPOENVIO, 
+       (select idexped from sgaexpeddoc where 
+sgaexpeddoc.iddoc = sgacdoc.iddoc) AS idExped"
+   FromList="SGACDOC Sgacdoc"
+   OrderBy="Sgacdoc.PRIORIDAD asc, Sgacdoc.IDCABNUM"
+   BindingStyle="Oracle"
+   CustomQuery="false"
+   RowClass="es.sysmap.interflex.model.dmc.SgacdocViewRowImpl"
+   ComponentClass="es.sysmap.interflex.model.dmc.SgacdocViewImpl"
+   MsgBundleClass="es.sysmap.interflex.model.dmc.common.SgacdocViewRowImplMsgBundle"
+   RowInterface="es.sysmap.interflex.model.dmc.common.SgacdocViewRow"
+   ClientRowProxyName="es.sysmap.interflex.model.dmc.client.SgacdocViewRowClient"
+   FetchMode="FETCH_AS_NEEDED"
+   UseGlueCode="false" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_codeGenFlag2" Value="Access|Coll|Msg" />
+      <Attr Name="_isExpertMode" Value="false" />
+   </DesignTime>
+   <EntityUsage
+      Name="Sgacdoc"
+      Entity="es.sysmap.interflex.model.bdc.Sgacdoc" >
+      <DesignTime>
+         <Attr Name="_EntireObjectTable" Value="false" />
+         <Attr Name="_queryClause" Value="true" />
+         <Attr Name="_queryOrderBy" Value="Sgacdoc.PRIORIDAD asc, Sgacdoc.IDCABNUM" />
+      </DesignTime>
+   </EntityUsage>
+   <ViewAttribute
+      Name="Iddoc"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Iddoc"
+      EntityUsage="Sgacdoc"
+      AliasName="IDDOC" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Idcabstr"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Idcabstr"
+      EntityUsage="Sgacdoc"
+      AliasName="IDCABSTR" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Idcabnum"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Idcabnum"
+      EntityUsage="Sgacdoc"
+      AliasName="IDCABNUM" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Numlineas"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Numlineas"
+      EntityUsage="Sgacdoc"
+      AliasName="NUMLINEAS" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Numbultos"
+      PrecisionRule="true"
+      EntityAttrName="Numbultos"
+      EntityUsage="Sgacdoc"
+      AliasName="NUMBULTOS" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Estado"
+      PrecisionRule="true"
+      EntityAttrName="Estado"
+      EntityUsage="Sgacdoc"
+      AliasName="ESTADO" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Operario"
+      IsPersistent="false"
+      PrecisionRule="true"
+      EntityAttrName="Operario"
+      EntityUsage="Sgacdoc"
+      AliasName="OPERARIO" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Pestotal"
+      PrecisionRule="true"
+      EntityAttrName="Pestotal"
+      EntityUsage="Sgacdoc"
+      AliasName="PESTOTAL" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Motivo"
+      PrecisionRule="true"
+      EntityAttrName="Motivo"
+      EntityUsage="Sgacdoc"
+      AliasName="MOTIVO" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Nombre"
+      PrecisionRule="true"
+      EntityAttrName="Nombre"
+      EntityUsage="Sgacdoc"
+      AliasName="NOMBRE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Direccion"
+      PrecisionRule="true"
+      EntityAttrName="Direccion"
+      EntityUsage="Sgacdoc"
+      AliasName="DIRECCION" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Codpostal"
+      PrecisionRule="true"
+      EntityAttrName="Codpostal"
+      EntityUsage="Sgacdoc"
+      AliasName="CODPOSTAL" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Poblacion"
+      PrecisionRule="true"
+      EntityAttrName="Poblacion"
+      EntityUsage="Sgacdoc"
+      AliasName="POBLACION" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Provincia"
+      PrecisionRule="true"
+      EntityAttrName="Provincia"
+      EntityUsage="Sgacdoc"
+      AliasName="PROVINCIA" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Telefono"
+      PrecisionRule="true"
+      EntityAttrName="Telefono"
+      EntityUsage="Sgacdoc"
+      AliasName="TELEFONO" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Portes"
+      PrecisionRule="true"
+      EntityAttrName="Portes"
+      EntityUsage="Sgacdoc"
+      AliasName="PORTES" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Falbaran"
+      PrecisionRule="true"
+      EntityAttrName="Falbaran"
+      EntityUsage="Sgacdoc"
+      AliasName="FALBARAN" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Spedido"
+      PrecisionRule="true"
+      EntityAttrName="Spedido"
+      EntityUsage="Sgacdoc"
+      AliasName="SPEDIDO" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Pais"
+      PrecisionRule="true"
+      EntityAttrName="Pais"
+      EntityUsage="Sgacdoc"
+      AliasName="PAIS" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Transporte"
+      PrecisionRule="true"
+      EntityAttrName="Transporte"
+      EntityUsage="Sgacdoc"
+      AliasName="TRANSPORTE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Reembolso"
+      PrecisionRule="true"
+      EntityAttrName="Reembolso"
+      EntityUsage="Sgacdoc"
+      AliasName="REEMBOLSO" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Talbaran"
+      PrecisionRule="true"
+      EntityAttrName="Talbaran"
+      EntityUsage="Sgacdoc"
+      AliasName="TALBARAN" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Nalbaran"
+      PrecisionRule="true"
+      EntityAttrName="Nalbaran"
+      EntityUsage="Sgacdoc"
+      AliasName="NALBARAN" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Codempresa"
+      PrecisionRule="true"
+      EntityAttrName="Codempresa"
+      EntityUsage="Sgacdoc"
+      AliasName="CODEMPRESA" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Transp"
+      PrecisionRule="true"
+      EntityAttrName="Transp"
+      EntityUsage="Sgacdoc"
+      AliasName="TRANSP" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Tportes"
+      PrecisionRule="true"
+      EntityAttrName="Tportes"
+      EntityUsage="Sgacdoc"
+      AliasName="TPORTES" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Ccliente"
+      PrecisionRule="true"
+      EntityAttrName="Ccliente"
+      EntityUsage="Sgacdoc"
+      AliasName="CCLIENTE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Idultbulto"
+      PrecisionRule="true"
+      EntityAttrName="Idultbulto"
+      EntityUsage="Sgacdoc"
+      AliasName="IDULTBULTO" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Idtipdoc"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Idtipdoc"
+      EntityUsage="Sgacdoc"
+      AliasName="IDTIPDOC" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Prioridad"
+      PrecisionRule="true"
+      EntityAttrName="Prioridad"
+      EntityUsage="Sgacdoc"
+      AliasName="PRIORIDAD" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Estadolineas"
+      IsUpdateable="false"
+      IsQueriable="false"
+      IsPersistent="false"
+      PrecisionRule="true"
+      EntityAttrName="Estadolineas"
+      EntityUsage="Sgacdoc"
+      AliasName="ESTADOLINEAS" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Descestado"
+      IsUpdateable="false"
+      IsPersistent="false"
+      PrecisionRule="true"
+      Precision="15"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="DESCESTADO"
+      Expression="(select abbreviation from sgarefcodes where sgarefcodes.domain =&#39;ESTORD&#39; and sgarefcodes.value = sgacdoc.estado)"
+      SQLType="VARCHAR" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Descestadolineas"
+      IsUpdateable="false"
+      IsPersistent="false"
+      PrecisionRule="true"
+      Precision="15"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="Descestadolineas"
+      Expression="(select abbreviation from sgarefcodes where sgarefcodes.domain 
+                                                             
+                                                             
+                                                             
+                                                             
+                                                             
+                                      =&#39;ESTORD&#39;              
+                                           and               
+        sgarefcodes.value                                    
+                                                             
+                                     =         (select       
+                                                             
+                   decode                                    
+                                        (sgacdoc.estado,     
+                                                             
+                                                             
+                                                             
+           &#39;D&#39;,                           decode             
+                                   ((select                  
+                                            sum(numlineas)   
+                                                             
+                                                             
+                                           from              
+               sgavcdocldoclbultoenproceso                   
+                                                             
+                                                             
+                                                             
+                                                             
+   v  where                              v.iddoc             
+                                                             
+               =            sgacdoc.iddoc),                  
+                                                             
+                                    0,                   sgacdoc.estado, 
+                                                             
+                                                             
+       &#39;P&#39;),                                                 
+                           sgacdoc.estado)                   
+                                                             
+                                                             
+                                     from                    
+  dual))"
+      SQLType="VARCHAR" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Imprimir"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Imprimir"
+      EntityUsage="Sgacdoc"
+      AliasName="IMPRIMIR" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Estcom"
+      PrecisionRule="true"
+      EntityAttrName="Estcom"
+      EntityUsage="Sgacdoc"
+      AliasName="ESTCOM" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Idpuestofin"
+      PrecisionRule="true"
+      EntityAttrName="Idpuestofin"
+      EntityUsage="Sgacdoc"
+      AliasName="IDPUESTOFIN" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Fpedido"
+      PrecisionRule="true"
+      EntityAttrName="Fpedido"
+      EntityUsage="Sgacdoc"
+      AliasName="FPEDIDO" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Tipdocsga"
+      PrecisionRule="true"
+      EntityAttrName="Tipdocsga"
+      EntityUsage="Sgacdoc"
+      AliasName="TIPDOCSGA" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="TipoEnvio"
+      IsUpdateable="false"
+      IsPersistent="false"
+      PrecisionRule="true"
+      Precision="16"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="TIPOENVIO"
+      Expression="(select z_agenciatipoenvio.tipoenvio from z_agenciatipoenvio where z_agenciatipoenvio.codtra = sgacdoc.transp)"
+      SQLType="VARCHAR" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="idExped"
+      IsUpdateable="false"
+      IsQueriable="false"
+      IsPersistent="false"
+      PrecisionRule="true"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      AliasName="idExped"
+      Expression="(select idexped from sgaexpeddoc where sgaexpeddoc.iddoc = sgacdoc.iddoc)"
+      SQLType="NUMERIC" >
+   </ViewAttribute>
+   <ViewLinkAccessor
+      Name="SgatipdocView"
+      ViewLink="es.sysmap.interflex.model.dmc.SysC0010970Link"
+      Type="oracle.jbo.Row"
+      Reversed="true"
+      IsUpdateable="false" >
+   </ViewLinkAccessor>
+   <ViewLinkAccessor
+      Name="SgaldocView"
+      ViewLink="es.sysmap.interflex.model.dmc.SysC0010966Link"
+      Type="oracle.jbo.RowIterator"
+      IsUpdateable="false" >
+   </ViewLinkAccessor>
+   <ViewLinkAccessor
+      Name="SgaedocView"
+      ViewLink="es.sysmap.interflex.model.dmc.SgacdocedocLink"
+      Type="oracle.jbo.RowIterator"
+      IsUpdateable="false" >
+   </ViewLinkAccessor>
+   <ViewLinkAccessor
+      Name="SgabultoView"
+      ViewLink="es.sysmap.interflex.model.dmc.SgacdocbultoLink"
+      Type="oracle.jbo.RowIterator"
+      IsUpdateable="false" >
+   </ViewLinkAccessor>
+   <ViewLinkAccessor
+      Name="SgaetiquetaView"
+      ViewLink="es.sysmap.interflex.model.dmc.SgacdocEtiquetaViewLink"
+      Type="oracle.jbo.Row"
+      IsUpdateable="false" >
+   </ViewLinkAccessor>
+</ViewObject>

@@ -1,0 +1,314 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<DCContainer
+   id="PanelSgaldocEntradesView4UIModel"
+   xmlns="http://xmlns.oracle.com/adfm/uimodel"
+   version="10.1.2.17.96"
+   Package="es.sysmap.interflex.view"
+   FindMode="false"
+   EnableTokenValidation="true" >
+   <Contents >
+      <DCIterator
+         id="SgaldocEntradesView3Iter"
+         Binds="AppModuleDataControl.SgaldocEntradesView1" >
+      </DCIterator>
+      <DCIterator
+         id="SgamacView5Iter"
+         Binds="AppModuleDataControl.SgamacView13"
+         RangeSize="10" >
+      </DCIterator>
+      <DCIterator
+         id="SgatipomacSlolovView1Iter"
+         Binds="AppModuleDataControl.SgatipomacSlolovView1"
+         RangeSize="10" >
+      </DCIterator>
+      <DCControl
+         id="Idbulto"
+         SubType="DCTextField"
+         IterBinding="SgaldocEntradesView3Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Idbulto" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Iddoc"
+         SubType="DCTextField"
+         IterBinding="SgaldocEntradesView3Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Iddoc" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Idlin"
+         SubType="DCTextField"
+         IterBinding="SgaldocEntradesView3Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Idlin" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Cantotbulto"
+         SubType="DCTextField"
+         IterBinding="SgaldocEntradesView3Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Cantotbulto" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Canpenbulto"
+         SubType="DCTextField"
+         IterBinding="SgaldocEntradesView3Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Canpenbulto" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Estadobulto"
+         SubType="DCTextField"
+         IterBinding="SgaldocEntradesView3Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Estadobulto" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Idtipmacsol"
+         SubType="DCTextField"
+         IterBinding="SgaldocEntradesView3Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Idtipmac" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Relleno"
+         SubType="DCTextField"
+         IterBinding="SgaldocEntradesView3Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Relleno" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Cantot"
+         SubType="DCTextField"
+         IterBinding="SgaldocEntradesView3Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Cantot" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Canres"
+         SubType="DCTextField"
+         IterBinding="SgaldocEntradesView3Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Canres" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Canpen"
+         SubType="DCTextField"
+         IterBinding="SgaldocEntradesView3Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Canpen" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Idlin1"
+         SubType="DCTextField"
+         IterBinding="SgaldocEntradesView3Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Idlin1" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Iddoc1"
+         SubType="DCTextField"
+         IterBinding="SgaldocEntradesView3Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Iddoc1" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Idartif"
+         SubType="DCTextField"
+         IterBinding="SgaldocEntradesView3Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Idartif" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Descrip"
+         SubType="DCTextField"
+         IterBinding="SgaldocEntradesView3Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Descrip" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Idmac"
+         SubType="DCTextField"
+         IterBinding="SgaldocEntradesView3Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Idmac" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Idtipmac"
+         SubType="DCTextField"
+         IterBinding="SgamacView5Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Idtipmac" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Cancon"
+         SubType="DCTextField"
+         IterBinding="SgaldocEntradesView3Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Cancon" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Idtipmac1"
+         DefClass="oracle.jbo.uicli.jui.JUComboBoxDef"
+         SubType="DCComboBox"
+         BindingClass="oracle.jbo.uicli.jui.JUComboBoxBinding"
+         IterBinding="SgamacView5Iter"
+         DTClass="oracle.adf.dt.objects.JUDTCtrlListLOV"
+         ApplyValidation="false"
+         isDynamic="false"
+         ListOperMode="0"
+         ListIter="SgatipomacSlolovView1Iter" >
+         <AttrNames>
+            <Item Value="Idtipmac" />
+         </AttrNames>
+         <ListAttrNames>
+            <Item Value="Idtipmac" />
+         </ListAttrNames>
+         <ListDisplayAttrNames>
+            <Item Value="Descrip" />
+         </ListDisplayAttrNames>
+      </DCControl>
+      <DCControl
+         id="Multiref"
+         DefClass="oracle.jbo.uicli.jui.JUButtonDef"
+         SubType="DCButton"
+         BindingClass="oracle.jbo.uicli.jui.JUButtonBinding"
+         IterBinding="SgamacView5Iter"
+         ApplyValidation="false"
+         isDynamic="false"
+         ListOperMode="0"
+         StaticList="true"
+         BoolVal="true" >
+         <AttrNames>
+            <Item Value="Multiref" />
+         </AttrNames>
+         <ValueList>
+            <Item Value="S" />
+            <Item Value="N" />
+         </ValueList>
+      </DCControl>
+      <DCControl
+         id="Idcabstr"
+         SubType="DCTextField"
+         IterBinding="SgaldocEntradesView3Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Idcabstr" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Idcabnum"
+         SubType="DCTextField"
+         IterBinding="SgaldocEntradesView3Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Idcabnum" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Pesini"
+         SubType="DCTextField"
+         IterBinding="SgaldocEntradesView3Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Pesini" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Pesfin"
+         SubType="DCTextField"
+         IterBinding="SgaldocEntradesView3Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Pesfin" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Difpes"
+         SubType="DCTextField"
+         IterBinding="SgaldocEntradesView3Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Difpes" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Integra"
+         DefClass="oracle.jbo.uicli.jui.JUButtonDef"
+         SubType="DCButton"
+         BindingClass="oracle.jbo.uicli.jui.JUButtonBinding"
+         IterBinding="SgaldocEntradesView3Iter"
+         ApplyValidation="false"
+         isDynamic="false"
+         ListOperMode="0"
+         StaticList="true"
+         BoolVal="true" >
+         <AttrNames>
+            <Item Value="Integra" />
+         </AttrNames>
+         <ValueList>
+            <Item Value="S" />
+            <Item Value="N" />
+         </ValueList>
+      </DCControl>
+   </Contents>
+</DCContainer>

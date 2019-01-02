@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE Association SYSTEM "jbo_03_01.dtd">
+
+<Association
+   Name="SysC0010667Assoc" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.2.17.96" />
+   </DesignTime>
+   <AssociationEnd
+      Name="Sgaarticulo"
+      Cardinality="1"
+      Source="true"
+      Owner="es.sysmap.interflex.model.bdc.Sgaarticulo" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaarticulo.Idart" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_minCardinality" Value="1" />
+         <Attr Name="_aggregation" Value="0" />
+         <Attr Name="_isUpdateable" Value="true" />
+         <Attr Name="_finderName" Value="Sgaarticulo" />
+         <Attr Name="_foreignKey" Value="es.sysmap.interflex.model.bdc.Sgaarticulo.SysC0010652" />
+      </DesignTime>
+   </AssociationEnd>
+   <AssociationEnd
+      Name="Sgaexistencia"
+      Cardinality="-1"
+      Owner="es.sysmap.interflex.model.bdc.Sgaexistencia" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaexistencia.Idart" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_aggregation" Value="0" />
+         <Attr Name="_isUpdateable" Value="true" />
+         <Attr Name="_finderName" Value="Sgaexistencia" />
+         <Attr Name="_foreignKey" Value="es.sysmap.interflex.model.bdc.Sgaexistencia.SysC0010667" />
+      </DesignTime>
+   </AssociationEnd>
+</Association>

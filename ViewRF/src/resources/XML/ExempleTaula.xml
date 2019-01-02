@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<Taula
+   nomTaula="PanelSgamacView1UIModel"
+   orderBy="http://xmlns.oracle.com/adfm/uimodel" >
+   <Contents>
+      <Columna
+         nom="SgaestadomacView1Iter"
+         posicio="AppModuleDataControl.SgaestadomacView1"
+         amplada="10" >
+      </Columna>
+      <Columna
+         nom="SgamacView1Iter"
+         posicio="AppModuleDataControl.SgamacView1"
+         amplada= "10" >
+      </Columna>
+   </Contents>
+</Taula>

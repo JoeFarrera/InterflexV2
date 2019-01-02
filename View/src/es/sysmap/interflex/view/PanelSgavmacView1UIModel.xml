@@ -1,0 +1,186 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<DCContainer
+   id="PanelSgavmacView1UIModel"
+   xmlns="http://xmlns.oracle.com/adfm/uimodel"
+   version="10.1.2.17.96"
+   Package="es.sysmap.interflex.view"
+   FindMode="true"
+   EnableTokenValidation="true" >
+   <Contents >
+      <DCIterator
+         id="SgaestadomacView1Iterator"
+         Binds="AppModuleDataControl.SgaestadomacView1"
+         RangeSize="10" >
+      </DCIterator>
+      <DCIterator
+         id="SgatipomaclovView1Iterator"
+         Binds="AppModuleDataControl.SgatipomaclovView1"
+         RangeSize="10" >
+      </DCIterator>
+      <DCIterator
+         id="SgavmacView1Iter"
+         Binds="AppModuleDataControl.SgavmacView1" >
+      </DCIterator>
+      <DCControl
+         id="Idmac"
+         SubType="DCTextField"
+         IterBinding="SgavmacView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Idmac" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Multiref"
+         SubType="DCTextField"
+         IterBinding="SgavmacView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Multiref" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Idtipmac"
+         SubType="DCTextField"
+         IterBinding="SgavmacView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Idtipmac" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Estado"
+         SubType="DCTextField"
+         IterBinding="SgavmacView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Estado" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Ubipos"
+         SubType="DCTextField"
+         IterBinding="SgavmacView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Ubipos" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Descvisualpos"
+         SubType="DCTextField"
+         IterBinding="SgavmacView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Descvisualpos" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Posubipos"
+         SubType="DCTextField"
+         IterBinding="SgavmacView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Posubipos" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Ubides"
+         SubType="DCTextField"
+         IterBinding="SgavmacView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Ubides" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Descvisualdes"
+         SubType="DCTextField"
+         IterBinding="SgavmacView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Descvisualdes" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Posubides"
+         SubType="DCTextField"
+         IterBinding="SgavmacView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Posubides" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Multiref1"
+         DefClass="oracle.jbo.uicli.jui.JUButtonDef"
+         SubType="DCButton"
+         BindingClass="oracle.jbo.uicli.jui.JUButtonBinding"
+         IterBinding="SgavmacView1Iter"
+         ApplyValidation="false"
+         isDynamic="false"
+         ListOperMode="0"
+         StaticList="true"
+         BoolVal="true" >
+         <AttrNames>
+            <Item Value="Multiref" />
+         </AttrNames>
+         <ValueList>
+            <Item Value="S" />
+            <Item Value="N" />
+         </ValueList>
+      </DCControl>
+      <DCControl
+         id="Desctipmac"
+         DefClass="oracle.jbo.uicli.jui.JUComboBoxDef"
+         SubType="DCComboBox"
+         BindingClass="oracle.jbo.uicli.jui.JUComboBoxBinding"
+         IterBinding="SgavmacView1Iter"
+         DTClass="oracle.adf.dt.objects.JUDTCtrlListLOV"
+         ApplyValidation="false"
+         isDynamic="false"
+         ListOperMode="0"
+         ListIter="SgatipomaclovView1Iterator" >
+         <AttrNames>
+            <Item Value="Idtipmac" />
+         </AttrNames>
+         <ListAttrNames>
+            <Item Value="Idtipmac" />
+         </ListAttrNames>
+         <ListDisplayAttrNames>
+            <Item Value="Descrip" />
+         </ListDisplayAttrNames>
+      </DCControl>
+      <DCControl
+         id="Descestado"
+         DefClass="oracle.jbo.uicli.jui.JUComboBoxDef"
+         SubType="DCComboBox"
+         BindingClass="oracle.jbo.uicli.jui.JUComboBoxBinding"
+         IterBinding="SgavmacView1Iter"
+         DTClass="oracle.adf.dt.objects.JUDTCtrlListLOV"
+         ApplyValidation="false"
+         isDynamic="false"
+         ListOperMode="0"
+         ListIter="SgaestadomacView1Iterator" >
+         <AttrNames>
+            <Item Value="Estado" />
+         </AttrNames>
+         <ListAttrNames>
+            <Item Value="Value" />
+         </ListAttrNames>
+         <ListDisplayAttrNames>
+            <Item Value="Abbreviation" />
+         </ListDisplayAttrNames>
+      </DCControl>
+   </Contents>
+</DCContainer>

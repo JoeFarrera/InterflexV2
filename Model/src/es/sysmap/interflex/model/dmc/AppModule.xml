@@ -1,0 +1,1651 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE AppModule SYSTEM "jbo_03_01.dtd">
+
+<AppModule
+   Name="AppModule"
+   ComponentClass="es.sysmap.interflex.model.dmc.AppModuleImpl"
+   ComponentInterface="es.sysmap.interflex.model.dmc.common.AppModule"
+   ClientProxyName="es.sysmap.interflex.model.dmc.client.AppModuleClient" >
+   <Properties>
+      <Property Name ="DATA_CONTROL_NAME" Value ="AppModuleDataControl11" />
+   </Properties>
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_deployType" Value="0" />
+      <Attr Name="_ejbAppModule" Value="false" />
+   </DesignTime>
+   <ViewUsage
+      Name="SgaarticuloView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaarticuloView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgabultoView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgabultoView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgacdocView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgacdocView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaexistenciaView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaexistenciaView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgalbultoView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgalbultoView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaldocView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaldocView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgamacView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgamacView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaposicionubicacionView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaposicionubicacionView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaresmatView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaresmatView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgatipdocView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgatipdocView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgatipmactipubiView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgatipmactipubiView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgatipoalmacenView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgatipoalmacenView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgatipomacView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgatipomacView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgatipoubicacionView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgatipoubicacionView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaexistenciaView2"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaexistenciaView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgalbultoView2"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgalbultoView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgalbultoView3"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgalbultoView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaldocView2"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaldocView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaldocView3"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaldocView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaexistenciaView3"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaexistenciaView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgamacView2"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgamacView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgamacView3"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgamacView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaresmatView2"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaresmatView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaresmatView4"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaresmatView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgatipmactipubiView2"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgatipmactipubiView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgamacView4"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgamacView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaarticuloView2"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaarticuloView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgatipmactipubiView3"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgatipmactipubiView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="TestTelegrama1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.TestTelegrama" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaTipMovView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaRefCodesView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgarotacionView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaRefCodesView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgatipomaclovView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgatipomaclovView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaestadomacView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaRefCodesView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgatipoubicacionlovView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgatipoubicacionlovView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaubicacionView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaubicacionView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaubicacionManualView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaubicacionManualView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaubicacionMiniLoadView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaubicacionMiniLoadView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaposicionubicacionView2"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaposicionubicacionView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaubicacionSiloView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaubicacionSiloView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaposicionubicacionView3"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaposicionubicacionView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaestadoubiView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaRefCodesView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaaccesoubiView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaRefCodesView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavexistenciaView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavexistenciaView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavubicacionView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavubicacionView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavsumexistenciaView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavsumexistenciaView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaPuestoPickingView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaPuestoPickingView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgacdocEntradesView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgacdocEntradesView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgapuestomanipView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgapuestomanipView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaubicacionPlcView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaubicacionPlcView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavcdocView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavcdocView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavldocView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavldocView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavcdocView2"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavcdocView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavbultoView2"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavbultoView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavldocEntradesView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavldocEntradesView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaedocView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaedocView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavedocView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavedocView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaestadopuestoView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaRefCodesView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgauserView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgauserView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaresmatView3"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaresmatView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaordtranView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaordtranView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaordtranView2"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaordtranView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgamacExistentView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgamacExistentView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaTestEntradaView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaTestEntradaView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgatrasloView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgatrasloView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgamacViewOrdtran"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgamacView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaldocEntradesView3"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaldocEntradesView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgamacView5"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgamacView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaTestMacView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaTestMacView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaubicacionView2"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaubicacionView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaubicacionView3"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaubicacionView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavmacView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavmacView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavexistenciaView3"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavexistenciaView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgamacEnPuestoView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgamacEnPuestoView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaresmatOpManView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaresmatOpManView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgamacView6"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgamacView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaresmatOpManView2"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaresmatOpManView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgacdocSortidesView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgacdocSortidesView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaldocView4"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaldocView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaresmatView5"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaresmatView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaresmatView6"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaresmatView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavocupaciominiloaddetallView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavocupaciominiloaddetallView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavocupaciosilodetallView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavocupaciosilodetallView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavldocView2"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavldocView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavhistexistView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavhistexistView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavbultoView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavbultoView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgatipomacSlolovView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgatipomacSlolovView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaarticulolovView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaarticulolovView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavtrasloEntSal1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavtrasloEntSal" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavordtranpasillotrasloView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavordtranpasillotrasloView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="Sgavordtransalidacurso1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.Sgavordtransalidacurso" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavpuestomanipView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavpuestomanipView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgamacSenseReservaView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgamacSenseReservaView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaventradasCandidateView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaventradasCandidateView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgalbultoView4"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgalbultoView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgamacView7"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgamacView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavexistenciaView2"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavexistenciaView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavsalidascandidateView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavsalidascandidateView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgamacView8"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgamacView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaldocView5"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaldocView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavordtranView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavordtranView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgahistordtranView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgahistordtranView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgabultoView4"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgabultoView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgalbultoView5"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgalbultoView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavhistordtranView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavhistordtranView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavmacpendpuestomldView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavmacpendpuestomldView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavubicacionlibreminiloadView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavubicacionlibreminiloadView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgamacView9"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgamacView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavmacpendpuestosloView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavmacpendpuestosloView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgamacView10"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgamacView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavestadoentradaslomacView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavestadoentradaslomacView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaubicacionView4"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaubicacionView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavposicionplcView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavposicionplcView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavordtranpendtraslosloView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavordtranpendtraslosloView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaordtranView3"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaordtranView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaarticuloExistView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaarticuloExistView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgabultoExistView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgabultoExistView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgacdocExistView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgacdocExistView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgatipmaclbultoView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgatipmaclbultoView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavubicacionlibresloView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavubicacionlibresloView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaposicionubicacionView4"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaposicionubicacionView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaposicionubicacionView5"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaposicionubicacionView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgastockView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgastockView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgamovimientoView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgamovimientoView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavordtranpendtrasloextraView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavordtranpendtrasloextraView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaordtranView4"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaordtranView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavpasillocandidateView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavpasillocandidateView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavbultoDispSortidaView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavbultoDispSortidaView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavsummacSenseExistenciesView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavsummacSenseExistenciesView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavmacSenseExistenciesView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavmacSenseExistenciesView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavdocsObertsView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavdocsObertsView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavsalidasinasignarpuestoView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavsalidasinasignarpuestoView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavsalidascandidateNoUpdateView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavsalidascandidateNoUpdateView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavldocunicalineaView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavldocunicalineaView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaldocView6"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaldocView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavsalidascandidatemacpuestoView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavsalidascandidatemacpuestoView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgamacView11"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgamacView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaldocView7"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaldocView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaventradaspendienteView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaventradaspendienteView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavpasillosintrasloView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavpasillosintrasloView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavubicacionInspeccionView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavubicacionInspeccionView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavmovsusuariView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavmovsusuariView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavmovscontenidorsView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavmovscontenidorsView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavordtranpendtraslosalextraView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavordtranpendtraslosalextraView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="Sgadifstockhost1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.Sgadifstockhost" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaubicacionmanlovView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaubicacionmanlovView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaresmatmanView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaresmatmanView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavsalidascandidateresmanView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavsalidascandidateresmanView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavsalidascandidatemanualView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavsalidascandidatemanualView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaldocView8"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaldocView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgacdocSortidesresmanLocator1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgacdocSortidesresmanLocator" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaresmatmanView2"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaresmatmanView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavmovsusuariresumView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavmovsusuariresumView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaliniestreballadesView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaliniestreballadesView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavresmanPendentsImprimirView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavresmanPendentsImprimirView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaestatpassadisView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaRefCodesView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgapasilloView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgapasilloView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavarticulomodpesView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavarticulomodpesView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgagrantuserView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgagrantuserView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaroleView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaroleView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaRoleNotGrantedView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaRoleNotGrantedView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgagrantuserView2"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgagrantuserView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaetiquetaExist1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaetiquetaExist" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgamacPos44PendPesoView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgamacPos44PendPesoView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavordtranMLDAgrup1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavordtranMLDAgrup" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavcompararmanautoView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavcompararmanautoView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaVTrasloTrasbordoView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaVTrasloTrasbordoView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaochoaView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaochoaView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgatipobultoView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgatipobultoView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaRefCodesControlPesView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaRefCodesControlPesView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgatipobultoParamView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgatipobultoParamView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaredurView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaredurView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaEntradaManualRF1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaEntradaManualRF" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaldocEntradesView4"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaldocEntradesView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaLiniaSalidaObert1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaLiniaSalidaObert" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavAgenciaTipoEnvio1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavAgenciaTipoEnvio" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavFormatosTipoEnvio1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavFormatosTipoEnvio" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavAgenciaTipoEnvio2"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavAgenciaTipoEnvio" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavFormatosTipoEnvio2"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavFormatosTipoEnvio" >
+   </ViewUsage>
+   <ViewUsage
+      Name="ProdembalajesView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.ProdembalajesView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="ProdembalajesreferenciaView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.ProdembalajesreferenciaView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="ZAgenciatipoenvioView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.ZAgenciatipoenvioView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="ZTipoenvioView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.ZTipoenvioView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="ProdembalajesreferenciaView2"
+      ViewObjectName="es.sysmap.interflex.model.dmc.ProdembalajesreferenciaView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaarticuloView3"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaarticuloView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavProdEmbalajesArticuloView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavProdEmbalajesArticuloView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="ZTipoenvioView2"
+      ViewObjectName="es.sysmap.interflex.model.dmc.ZTipoenvioView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaexpedView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaexpedView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaexpedbultoView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaexpedbultoView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaexpedlbultoView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaexpedlbultoView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaexpeddocView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaexpeddocView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaexpeddocView2"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaexpeddocView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavexpeddocView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavexpeddocView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavexpedbultoView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavexpedbultoView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavexpedlbultoView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavexpedlbultoView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavexpedbultoView2"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavexpedbultoView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavexpedlbultoView2"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavexpedlbultoView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaexpedbultoView2"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaexpedbultoView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgazonamanView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgazonamanView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgapasillomanualView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgapasillomanualView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgacdocTL1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgacdocTLView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgacdocTLExistView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgacdocTLExistView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgacdocTLView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgacdocTLView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavexistenciaTLView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavexistenciaTLView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaldocEntradesView5"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaldocEntradesView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgamacView12"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgamacView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaldocEntradesView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaldocEntradesView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgabultoView2"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgabultoView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgamacView13"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgamacView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaldocEntradesView2"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaldocEntradesView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgaRamonedaRutaView1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaRamonedaRutaView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SgavubicacionRF1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavubicacionRF" >
+   </ViewUsage>
+   <ViewUsage
+      Name="Sgavpasillomig1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.Sgavpasillomig" >
+   </ViewUsage>
+   <AttrArray Name="ViewImports">
+      <Item Value="es.sysmap.interflex.model.dmc.SgaubicacionManualView" />
+      <Item Value="es.sysmap.interflex.model.dmc.SgaubicacionMiniLoadView" />
+      <Item Value="es.sysmap.interflex.model.dmc.SgaubicacionSiloView" />
+   </AttrArray>
+   <ViewLinkUsage
+      Name="SysC0010954Link1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SysC0010954Link"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaarticuloView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaexistenciaView2" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SysC0010962Link1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SysC0010962Link"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgabultoView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgalbultoView2" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SysC0010961Link1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SysC0010961Link"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaldocView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgalbultoView3" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SysC0010965Link1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SysC0010965Link"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaarticuloView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaldocView2" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SysC0010966Link1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SysC0010966Link"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgacdocView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaldocView3" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SysC0010955Link1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SysC0010955Link"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgamacView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaexistenciaView3" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SysC0010956Link1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SysC0010956Link"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaposicionubicacionView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgamacView2" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SysC0010959Link1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SysC0010959Link"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaposicionubicacionView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgamacView3" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SysC0010951Link1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SysC0010951Link"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgalbultoView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaresmatView2" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SysC0010953Link1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SysC0010953Link"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaldocView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaresmatView4" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SysC0010971Link1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SysC0010971Link"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgatipomacView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgatipmactipubiView2" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SysC0010960Link1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SysC0010960Link"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgatipomacView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgamacView4" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SysC0010973Link1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SysC0010973Link"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgatipomacView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaarticuloView2" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SysC0010972Link1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SysC0010972Link"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgatipoubicacionView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgatipmactipubiView3" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgaubicacionMiniLoadPosicionUbicacionLink1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgaubicacionMiniLoadPosicionUbicacionLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaubicacionMiniLoadView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaposicionubicacionView2" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgaubicacionSiloPosicionUbicacionLink1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgaubicacionSiloPosicionUbicacionLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaubicacionSiloView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaposicionubicacionView3" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgavcdocvldocLink1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgavcdocvldocLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgavcdocView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgavldocView1" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgavcdocvbultoLink1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgavcdocvbultoLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgavcdocView2"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgavbultoView2" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgavbultovldocentradesLink1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgavbultovldocentradesLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgavbultoView2"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgavldocEntradesView1" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgacdocedocLink1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgacdocedocLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgacdocView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaedocView1" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgavcdocvedocLink1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgavcdocvedocLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgavcdocView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgavedocView1" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SysC0010952Link1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SysC0010952Link"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaexistenciaView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaresmatView3" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgaordtranSgaordtranFk1Link1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgaordtranSgaordtranFk1Link"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaordtranView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaordtranView2" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgaordtranSgamacViewLink1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgaordtranSgamacViewLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaordtranView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgamacViewOrdtran" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgaldocEntradesMacViewLink1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgaldocEntradesMacViewLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaldocEntradesView3"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgamacView5" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgamacubicacionposLink1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgamacubicacionposLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgamacView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaubicacionView2" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgamacubicaciondesLink1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgamacubicaciondesLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgamacView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaubicacionView3" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgavmacvexistenciaLink1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgavmacvexistenciaLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgavmacView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgavexistenciaView3" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgamacresmatOpManLink1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgamacresmatOpManLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgamacView6"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaresmatOpManView2" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgacdocSortidesldocLink1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgacdocSortidesldocLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgacdocSortidesView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaldocView4" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgacdocEntradesresmatLink1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgacdocEntradesresmatLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgacdocEntradesView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaresmatView5" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgacdocSortidesResmatLink1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgacdocSortidesResmatLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgacdocSortidesView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaresmatView6" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgaresmatOpManvldocLink1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgaresmatOpManvldocLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaresmatOpManView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgavldocView2" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgaventradascandidateLbultoLink1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgaventradascandidateLbultoLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaventradasCandidateView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgalbultoView4" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgaentradascandidateMacLink1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgaventradascandidateMacLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaventradasCandidateView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgamacView7" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgavsumexistenciaLink1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgavsumexistenciaLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgavsumexistenciaView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgavexistenciaView2" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgasalidascandidateSgamacViewLink1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgasalidascandidateSgamacViewLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgavsalidascandidateView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgamacView8" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgasalidascandidateSgaldocViewLink1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgasalidascandidateSgaldocViewLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgavsalidascandidateView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaldocView5" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgacdocSortidesBultoLink1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgacdocSortidesBultoLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgacdocSortidesView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgabultoView4" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SysC0010962Link2"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SysC0010962Link"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgabultoView4"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgalbultoView5" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgavmacpendpuestomldViewLink1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgavmacpendpuestomldViewLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgavmacpendpuestomldView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgamacView9" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgavmacpendpuestosloViewLink1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgavmacpendpuestosloViewLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgavmacpendpuestosloView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgamacView10" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgavestadoentradaslomacUbientViewLink1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgavestadoentradaslomacUbientViewLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgavestadoentradaslomacView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaubicacionView4" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgavordtranVPosicionplcViewLink1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgavordtranVPosicionplcViewLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgavordtranView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgavposicionplcView1" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgavordtranpendtraslosloOrdtranViewLink1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgavordtranpendtraslosloOrdtranViewLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgavordtranpendtraslosloView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaordtranView3" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgavubicacionlibresloUbicacionposicionLink1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgavubicacionlibresloUbicacionposicionLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgavubicacionlibresloView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaposicionubicacionView4" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgavubicacionlibreminiloadSgaposicionubicacionLink1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgavubicacionlibreminiloadSgaposicionubicacionLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgavubicacionlibreminiloadView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaposicionubicacionView5" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgavestadoentradaslomacMacViewLink1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgavestadoentradaslomacMacViewLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgavestadoentradaslomacView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaordtranView4" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgaresmatOpManvbultoDispSortidaLink1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgaresmatOpManvbultoDispSortidaLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaresmatOpManView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgavbultoDispSortidaView1" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgavsummacSenseExistenciesViewLink1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgavsummacSenseExistenciesViewLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgavsummacSenseExistenciesView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgavmacSenseExistenciesView1" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgavldocunicalineaLdocViewLink1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgavldocunicalineaLdocViewLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgavldocunicalineaView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaldocView6" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgavsalidascandidatemacpuestoSgamacViewLink1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgavsalidascandidatemacpuestoSgamacViewLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgavsalidascandidatemacpuestoView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgamacView11" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgavsalidascandidatemacpuestoSgaldocViewLink1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgavsalidascandidatemacpuestoSgaldocViewLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgavsalidascandidatemacpuestoView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaldocView7" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgacdocSortidesResmatmanLink1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgacdocSortidesResmatmanLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgacdocSortidesView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaresmatmanView1" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgavsaldiascandidatemanualLdocViewLink1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgavsaldiascandidatemanualLdocViewLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgavsalidascandidatemanualView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaldocView8" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgacdocSortidesresmanLocatorViewLink1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgacdocSortidesresmanLocatorViewLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgacdocSortidesresmanLocator1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaresmatmanView2" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgauserRoleGrantedViewLink1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgauserRoleGrantedViewLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgauserView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgagrantuserView1" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgaVAgenciaTipoEnvioFormatos1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgaVAgenciaTipoEnvioFormatos"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgavAgenciaTipoEnvio1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgavFormatosTipoEnvio1" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgacdocSortidesTipoEnvioViewLink1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgacdocSortidesTipoEnvioViewLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgacdocSortidesView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgavAgenciaTipoEnvio2" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgaVAgenciaTipoEnvioFormatos2"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgaVAgenciaTipoEnvioFormatos"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgavAgenciaTipoEnvio2"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgavFormatosTipoEnvio2" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="ProdembalajesReferenciaViewLink1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.ProdembalajesReferenciaViewLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.ProdembalajesView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.ProdembalajesreferenciaView1" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="AgenciaTipoEnvioViewLink1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.AgenciaTipoEnvioViewLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.ZAgenciatipoenvioView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.ZTipoenvioView1" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgaArticuloProdEmbalajesViewLink1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgaArticuloProdEmbalajesViewLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaarticuloView3"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgavProdEmbalajesArticuloView1" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgaexpedExpedbultoViewLink1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgaexpedExpedbultoViewLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaexpedView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaexpedbultoView1" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgaexpedbultoExpedlbultoViewLink1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgaexpedbultoExpedlbultoViewLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaexpedbultoView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaexpedlbultoView1" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgaexpedSgaexpeddocViewLink1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgaexpedSgaexpeddocViewLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaexpedView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaexpeddocView2" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgaexpedvexpeddocViewLink1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgaexpedvexpeddocViewLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaexpedView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgavexpeddocView1" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgaexpedvexpedbultoViewLink1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgaexpedvexpedbultoViewLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaexpedView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgavexpedbultoView1" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgavexpedbultovexpedlbultoViewLink1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgavexpedbultovexpedlbultoViewLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgavexpedbultoView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgavexpedlbultoView1" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgavexpedbultovexpedlbultoViewLink2"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgavexpedbultovexpedlbultoViewLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgavexpedbultoView2"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgavexpedlbultoView2" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgavexpedbultoexpedbultoViewLink1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgavexpedbultoexpedbultoViewLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgavexpedbultoView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaexpedbultoView2" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgacdocTLvexistenciasTLViewLink1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgacdocTLvexistenciasTLViewLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgacdocTLView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgavexistenciaTLView1" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgavbultoLdocViewLink1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgavbultoLdocViewLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgavbultoView2"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaldocEntradesView5" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgaldocEntradesMacViewLink2"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgaldocEntradesMacViewLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaldocEntradesView5"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgamacView12" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgacdocEntradesldocEntradesLink1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgacdocEntradesldocEntradesLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgacdocEntradesView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaldocEntradesView1" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgacdocEntradesbultoLink1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgacdocEntradesbultoLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgacdocEntradesView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgabultoView2" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgaldocEntradesMacViewLink3"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgaldocEntradesMacViewLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaldocEntradesView1"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgamacView13" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+   <ViewLinkUsage
+      Name="SgabultoldocEntradesLink1"
+      ViewLinkObjectName="es.sysmap.interflex.model.dmc.SgabultoldocEntradesLink"
+      SrcViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgabultoView2"
+      DstViewUsageName="es.sysmap.interflex.model.dmc.AppModule.SgaldocEntradesView2" >
+      <DesignTime>
+         <Attr Name="_isCodegen" Value="true" />
+         <Attr Name="_version" Value="10.1.2.17.96" />
+      </DesignTime>
+   </ViewLinkUsage>
+</AppModule>

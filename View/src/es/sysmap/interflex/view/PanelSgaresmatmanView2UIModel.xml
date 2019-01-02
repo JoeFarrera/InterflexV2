@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<DCContainer
+   id="PanelSgaresmatmanView2UIModel"
+   xmlns="http://xmlns.oracle.com/adfm/uimodel"
+   version="10.1.2.17.96"
+   Package="es.sysmap.interflex.view"
+   FindMode="false"
+   EnableTokenValidation="true" >
+   <Contents >
+      <DCIterator
+         id="SgacdocSortidesresmanLocator"
+         Binds="AppModuleDataControl.SgacdocSortidesresmanLocator1"
+         RangeSize="10" >
+      </DCIterator>
+      <DCIterator
+         id="SgaresmatmanView2Iter"
+         Binds="AppModuleDataControl.SgaresmatmanView2" >
+      </DCIterator>
+      <DCControl
+         id="SgaresmatmanView2"
+         DefClass="oracle.jbo.uicli.jui.JUTableDef"
+         SubType="DCTable"
+         IterBinding="SgaresmatmanView2Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Idartif" />
+            <Item Value="Descrip" />
+            <Item Value="Canres" />
+            <Item Value="Cancon" />
+            <Item Value="Idubi" />
+            <Item Value="Pasillo" />
+            <Item Value="Columna" />
+            <Item Value="Nivel" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Idcabstr"
+         SubType="DCTextField"
+         IterBinding="SgacdocSortidesresmanLocator"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Idcabstr" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Idcabnum"
+         SubType="DCTextField"
+         IterBinding="SgacdocSortidesresmanLocator"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Idcabnum" />
+         </AttrNames>
+      </DCControl>
+   </Contents>
+</DCContainer>

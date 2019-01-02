@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+
+<ViewObject
+   Name="ProdembalajesView"
+   SelectList="Prodembalajes.IDFORMATO, 
+       Prodembalajes.REFFORMATO, 
+       Prodembalajes.DESCRIPCION, 
+       Prodembalajes.EP, 
+       Prodembalajes.ALTO, 
+       Prodembalajes.ANCHO, 
+       Prodembalajes.LARGO"
+   FromList="PRODEMBALAJES Prodembalajes"
+   BindingStyle="Oracle"
+   CustomQuery="false"
+   RowClass="es.sysmap.interflex.model.dmc.ProdembalajesViewRowImpl"
+   ComponentClass="es.sysmap.interflex.model.dmc.ProdembalajesViewImpl"
+   MsgBundleClass="es.sysmap.interflex.model.dmc.common.ProdembalajesViewRowImplMsgBundle"
+   UseGlueCode="false" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_codeGenFlag2" Value="Access|Coll|Msg" />
+      <Attr Name="_isExpertMode" Value="false" />
+   </DesignTime>
+   <EntityUsage
+      Name="Prodembalajes"
+      Entity="es.sysmap.interflex.model.bdc.Prodembalajes" >
+      <DesignTime>
+         <Attr Name="_EntireObjectTable" Value="false" />
+         <Attr Name="_queryClause" Value="false" />
+      </DesignTime>
+   </EntityUsage>
+   <ViewAttribute
+      Name="Idformato"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Idformato"
+      EntityUsage="Prodembalajes"
+      AliasName="IDFORMATO" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Refformato"
+      PrecisionRule="true"
+      EntityAttrName="Refformato"
+      EntityUsage="Prodembalajes"
+      AliasName="REFFORMATO" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Descripcion"
+      PrecisionRule="true"
+      EntityAttrName="Descripcion"
+      EntityUsage="Prodembalajes"
+      AliasName="DESCRIPCION" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Ep"
+      PrecisionRule="true"
+      EntityAttrName="Ep"
+      EntityUsage="Prodembalajes"
+      AliasName="EP" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Alto"
+      PrecisionRule="true"
+      EntityAttrName="Alto"
+      EntityUsage="Prodembalajes"
+      AliasName="ALTO" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Ancho"
+      PrecisionRule="true"
+      EntityAttrName="Ancho"
+      EntityUsage="Prodembalajes"
+      AliasName="ANCHO" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Largo"
+      PrecisionRule="true"
+      EntityAttrName="Largo"
+      EntityUsage="Prodembalajes"
+      AliasName="LARGO" >
+   </ViewAttribute>
+   <ViewLinkAccessor
+      Name="ProdembalajesreferenciaView"
+      ViewLink="es.sysmap.interflex.model.dmc.ProdembalajesReferenciaViewLink"
+      Type="oracle.jbo.RowIterator"
+      IsUpdateable="false" >
+   </ViewLinkAccessor>
+</ViewObject>

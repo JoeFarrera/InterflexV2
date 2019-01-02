@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<DCContainer
+   id="PanelSgavexistenciaView4UIModel"
+   xmlns="http://xmlns.oracle.com/adfm/uimodel"
+   version="10.1.2.17.96"
+   Package="es.sysmap.interflex.view"
+   FindMode="false"
+   EnableTokenValidation="true" >
+   <Contents >
+      <DCIterator
+         id="SgavexistenciaView4Iter"
+         Binds="AppModuleDataControl.SgavexistenciaView4" >
+      </DCIterator>
+      <DCControl
+         id="Idartif"
+         SubType="DCTextField"
+         IterBinding="SgavexistenciaView4Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Idartif" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Descarticulo"
+         SubType="DCTextField"
+         IterBinding="SgavexistenciaView4Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Descarticulo" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Cantot"
+         SubType="DCTextField"
+         IterBinding="SgavexistenciaView4Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Cantot" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Canres"
+         SubType="DCTextField"
+         IterBinding="SgavexistenciaView4Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Canres" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Descestexist"
+         SubType="DCTextField"
+         IterBinding="SgavexistenciaView4Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Descestexist" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Descvisualpos"
+         SubType="DCTextField"
+         IterBinding="SgavexistenciaView4Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Descvisualpos" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Descvisualdes"
+         SubType="DCTextField"
+         IterBinding="SgavexistenciaView4Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Descvisualdes" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Createdon"
+         SubType="DCTextField"
+         IterBinding="SgavexistenciaView4Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Createdon" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Modifiedon"
+         SubType="DCTextField"
+         IterBinding="SgavexistenciaView4Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Modifiedon" />
+         </AttrNames>
+      </DCControl>
+   </Contents>
+</DCContainer>

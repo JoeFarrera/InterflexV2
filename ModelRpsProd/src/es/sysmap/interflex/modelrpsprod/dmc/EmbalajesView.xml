@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+
+<ViewObject
+   Name="EmbalajesView"
+   BindingStyle="JDBC"
+   CustomQuery="true"
+   RowClass="es.sysmap.interflex.modelrpsprod.dmc.EmbalajesViewRowImpl"
+   ComponentClass="es.sysmap.interflex.modelrpsprod.dmc.EmbalajesViewImpl"
+   MsgBundleClass="oracle.jbo.common.JboResourceBundle"
+   UseGlueCode="false" >
+   <SQLQuery><![CDATA[
+SELECT DboEmbalajes.idFormato,
+       DboEmbalajes.refFormato,
+       DboEmbalajes.descripcion,
+       DboEmbalajes.EP,
+       DboEmbalajes.alto,
+       DboEmbalajes.ancho,
+       DboEmbalajes.largo
+FROM dbo.Embalajes DboEmbalajes
+   ]]></SQLQuery>
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_codeGenFlag2" Value="Access|Coll" />
+      <Attr Name="_isExpertMode" Value="true" />
+   </DesignTime>
+   <ViewAttribute
+      Name="Idformato"
+      IsUpdateable="false"
+      IsPersistent="false"
+      PrecisionRule="true"
+      Precision="10"
+      Scale="0"
+      Type="java.lang.Integer"
+      ColumnType="int"
+      PrimaryKey="true"
+      AliasName="idFormato"
+      Expression="idFormato"
+      SQLType="INTEGER" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="11" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Refformato"
+      IsUpdateable="false"
+      IsPersistent="false"
+      PrecisionRule="true"
+      Precision="50"
+      Type="java.lang.String"
+      ColumnType="nvarchar"
+      AliasName="refFormato"
+      Expression="refFormato"
+      SQLType="VARCHAR" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="50" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Descripcion"
+      IsUpdateable="false"
+      IsPersistent="false"
+      PrecisionRule="true"
+      Precision="50"
+      Type="java.lang.String"
+      ColumnType="nvarchar"
+      AliasName="descripcion"
+      Expression="descripcion"
+      SQLType="VARCHAR" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="50" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Ep"
+      IsUpdateable="false"
+      IsPersistent="false"
+      PrecisionRule="true"
+      Precision="7"
+      Scale="0"
+      Type="java.math.BigDecimal"
+      ColumnType="real"
+      AliasName="EP"
+      Expression="EP"
+      SQLType="NUMERIC" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="14" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Alto"
+      IsUpdateable="false"
+      IsPersistent="false"
+      PrecisionRule="true"
+      Precision="7"
+      Scale="0"
+      Type="java.math.BigDecimal"
+      ColumnType="real"
+      AliasName="alto"
+      Expression="alto"
+      SQLType="NUMERIC" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="14" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Ancho"
+      IsUpdateable="false"
+      IsPersistent="false"
+      PrecisionRule="true"
+      Precision="7"
+      Scale="0"
+      Type="java.math.BigDecimal"
+      ColumnType="real"
+      AliasName="ancho"
+      Expression="ancho"
+      SQLType="NUMERIC" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="14" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Largo"
+      IsUpdateable="false"
+      IsPersistent="false"
+      PrecisionRule="true"
+      Precision="7"
+      Scale="0"
+      Type="java.math.BigDecimal"
+      ColumnType="real"
+      AliasName="largo"
+      Expression="largo"
+      SQLType="NUMERIC" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="14" />
+      </DesignTime>
+   </ViewAttribute>
+   <AttrArray Name="KeyAttributes">
+      <Item Value="Idformato" />
+   </AttrArray>
+</ViewObject>

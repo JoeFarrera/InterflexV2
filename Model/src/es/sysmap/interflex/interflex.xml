@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE JboPackage SYSTEM "jbo_03_01.dtd">
+
+<JboPackage
+   Name="interflex"
+   SeparateXMLFiles="true"
+   PackageName="es.sysmap.interflex" >
+   <Data>
+      <Property Name ="NAMESPACE_REFERENCE" Value ="4e27a8a8-0102-1000-800d-c0a80001e1a8::::BC4JPackage" />
+      <Property Name ="ID" Value ="4e27a8a8-0102-1000-800e-c0a80001e1a8::es.sysmap.interflex::BC4JPackage" />
+   </Data>
+   <DesignTime>
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_ejbPackage" Value="false" />
+   </DesignTime>
+</JboPackage>

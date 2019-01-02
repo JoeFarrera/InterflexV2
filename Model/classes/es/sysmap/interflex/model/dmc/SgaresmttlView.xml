@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+
+<ViewObject
+   Name="SgaresmttlView"
+   SelectList="Sgaresmttl.IDDOC, 
+       Sgaresmttl.IDMAC, 
+       Sgaresmttl.CREATEDBY, 
+       Sgaresmttl.MODIFIEDBY, 
+       Sgaresmttl.CREATEDON, 
+       Sgaresmttl.MODIFIEDON"
+   FromList="SGARESMATTL Sgaresmttl"
+   BindingStyle="Oracle"
+   CustomQuery="false"
+   RowClass="es.sysmap.interflex.model.dmc.SgaresmttlViewRowImpl"
+   ComponentClass="es.sysmap.interflex.model.dmc.SgaresmttlViewImpl"
+   MsgBundleClass="oracle.jbo.common.JboResourceBundle"
+   RowInterface="es.sysmap.interflex.model.dmc.common.SgaresmttlViewRow"
+   ClientRowProxyName="es.sysmap.interflex.model.dmc.client.SgaresmttlViewRowClient"
+   UseGlueCode="false" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_codeGenFlag2" Value="Access|Coll" />
+      <Attr Name="_isExpertMode" Value="false" />
+   </DesignTime>
+   <EntityUsage
+      Name="Sgaresmttl"
+      Entity="es.sysmap.interflex.model.bdc.Sgaresmttl" >
+      <DesignTime>
+         <Attr Name="_EntireObjectTable" Value="false" />
+         <Attr Name="_queryClause" Value="false" />
+      </DesignTime>
+   </EntityUsage>
+   <ViewAttribute
+      Name="Iddoc"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Iddoc"
+      EntityUsage="Sgaresmttl"
+      AliasName="IDDOC" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Idmac"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Idmac"
+      EntityUsage="Sgaresmttl"
+      AliasName="IDMAC" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Createdby"
+      IsUpdateable="false"
+      PrecisionRule="true"
+      EntityAttrName="Createdby"
+      EntityUsage="Sgaresmttl"
+      AliasName="CREATEDBY" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Modifiedby"
+      IsUpdateable="false"
+      PrecisionRule="true"
+      EntityAttrName="Modifiedby"
+      EntityUsage="Sgaresmttl"
+      AliasName="MODIFIEDBY" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Createdon"
+      IsUpdateable="false"
+      PrecisionRule="true"
+      EntityAttrName="Createdon"
+      EntityUsage="Sgaresmttl"
+      AliasName="CREATEDON" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Modifiedon"
+      IsUpdateable="false"
+      PrecisionRule="true"
+      EntityAttrName="Modifiedon"
+      EntityUsage="Sgaresmttl"
+      AliasName="MODIFIEDON" >
+   </ViewAttribute>
+   <ViewLinkAccessor
+      Name="SgacdocTL"
+      ViewLink="es.sysmap.interflex.model.dmc.SgacdocTLResmatTLViewLink"
+      Type="oracle.jbo.Row"
+      Reversed="true"
+      IsUpdateable="false" >
+   </ViewLinkAccessor>
+   <ViewLinkAccessor
+      Name="SgaexistenciaView"
+      ViewLink="es.sysmap.interflex.model.dmc.SgaresmattExistenciaViewLink"
+      Type="oracle.jbo.RowIterator"
+      IsUpdateable="false" >
+   </ViewLinkAccessor>
+</ViewObject>

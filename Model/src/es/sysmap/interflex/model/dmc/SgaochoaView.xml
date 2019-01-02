@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+
+<ViewObject
+   Name="SgaochoaView"
+   SelectList="Sgaochoa.COD_PAIS, 
+       Sgaochoa.COD_POSTAL, 
+       Sgaochoa.ZONA_REP, 
+       Sgaochoa.H24, 
+       Sgaochoa.COURIER, 
+       Sgaochoa.PLAZA_DESTINO, 
+       Sgaochoa.COD_PLAZA_DEST3, 
+       Sgaochoa.COD_PLAZA_DEST2"
+   FromList="SGAOCHOA Sgaochoa"
+   Where="Sgaochoa.COD_POSTAL like :1 and Sgaochoa.COD_PAIS = &#39;ES&#39;"
+   OrderBy="Sgaochoa.COD_POSTAL asc"
+   BindingStyle="Oracle"
+   CustomQuery="false"
+   RowClass="es.sysmap.interflex.model.dmc.SgaochoaViewRowImpl"
+   ComponentClass="es.sysmap.interflex.model.dmc.SgaochoaViewImpl"
+   MsgBundleClass="oracle.jbo.common.JboResourceBundle"
+   UseGlueCode="false" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_codeGenFlag2" Value="Access|Coll" />
+      <Attr Name="_isExpertMode" Value="false" />
+   </DesignTime>
+   <EntityUsage
+      Name="Sgaochoa"
+      Entity="es.sysmap.interflex.model.bdc.Sgaochoa" >
+      <DesignTime>
+         <Attr Name="_EntireObjectTable" Value="false" />
+         <Attr Name="_queryClause" Value="true" />
+         <Attr Name="_queryWhere" Value="Sgaochoa.COD_POSTAL like :1 and Sgaochoa.COD_PAIS = &#39;ES&#39;" />
+         <Attr Name="_queryOrderBy" Value="Sgaochoa.COD_POSTAL asc" />
+      </DesignTime>
+   </EntityUsage>
+   <ViewAttribute
+      Name="CodPais"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="CodPais"
+      EntityUsage="Sgaochoa"
+      AliasName="COD_PAIS" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CodPostal"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="CodPostal"
+      EntityUsage="Sgaochoa"
+      AliasName="COD_POSTAL" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ZonaRep"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="ZonaRep"
+      EntityUsage="Sgaochoa"
+      AliasName="ZONA_REP" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="H24"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="H24"
+      EntityUsage="Sgaochoa"
+      AliasName="H24" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Courier"
+      PrecisionRule="true"
+      EntityAttrName="Courier"
+      EntityUsage="Sgaochoa"
+      AliasName="COURIER" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="PlazaDestino"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="PlazaDestino"
+      EntityUsage="Sgaochoa"
+      AliasName="PLAZA_DESTINO" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CodPlazaDest3"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="CodPlazaDest3"
+      EntityUsage="Sgaochoa"
+      AliasName="COD_PLAZA_DEST3" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CodPlazaDest2"
+      PrecisionRule="true"
+      EntityAttrName="CodPlazaDest2"
+      EntityUsage="Sgaochoa"
+      AliasName="COD_PLAZA_DEST2" >
+   </ViewAttribute>
+</ViewObject>

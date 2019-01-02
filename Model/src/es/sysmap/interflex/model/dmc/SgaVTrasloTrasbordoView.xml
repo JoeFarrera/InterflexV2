@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+
+<ViewObject
+   Name="SgaVTrasloTrasbordoView"
+   SelectList="Sgatraslo.IDTRASLO, 
+       Sgatraslo.TRASBORDOENTRADA, 
+       Sgatraslo.TRASBORDOSALIDA"
+   FromList="SGATRASLO Sgatraslo"
+   Where="SgaTraslo.IDTRASLO in (1,2)"
+   OrderBy="SgaTraslo.IDTRASLO"
+   BindingStyle="Oracle"
+   CustomQuery="false"
+   ComponentClass="es.sysmap.interflex.model.dmc.SgaVTrasloTrasbordoViewImpl"
+   MsgBundleClass="es.sysmap.interflex.model.dmc.common.SgaVTrasloTrasbordoViewRowImplMsgBundle"
+   UseGlueCode="false" >
+   <DesignTime>
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_codeGenFlag2" Value="Access|Coll|Msg" />
+      <Attr Name="_isExpertMode" Value="false" />
+   </DesignTime>
+   <EntityUsage
+      Name="Sgatraslo"
+      Entity="es.sysmap.interflex.model.bdc.Sgatraslo" >
+      <DesignTime>
+         <Attr Name="_EntireObjectTable" Value="false" />
+         <Attr Name="_queryClause" Value="true" />
+         <Attr Name="_queryWhere" Value="SgaTraslo.IDTRASLO in (1,2)" />
+         <Attr Name="_queryOrderBy" Value="SgaTraslo.IDTRASLO" />
+      </DesignTime>
+   </EntityUsage>
+   <ViewAttribute
+      Name="Idtraslo"
+      IsUpdateable="false"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Idtraslo"
+      EntityUsage="Sgatraslo"
+      AliasName="IDTRASLO" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Trasbordoentrada"
+      PrecisionRule="true"
+      EntityAttrName="Trasbordoentrada"
+      EntityUsage="Sgatraslo"
+      AliasName="TRASBORDOENTRADA" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Trasbordosalida"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Trasbordosalida"
+      EntityUsage="Sgatraslo"
+      AliasName="TRASBORDOSALIDA" >
+   </ViewAttribute>
+</ViewObject>

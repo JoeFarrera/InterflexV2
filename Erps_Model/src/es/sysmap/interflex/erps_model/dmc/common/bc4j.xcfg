@@ -1,0 +1,41 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BC4JConfig>
+   <AppModuleConfigBag>
+      <AppModuleConfig name="AppModuleLocal">
+         <DeployPlatform>LOCAL</DeployPlatform>
+         <jbo.sql92.JdbcDriverClass>net.sourceforge.jtds.jdbc.Driver</jbo.sql92.JdbcDriverClass>
+         <JDBCName>ERPS</JDBCName>
+         <jbo.TypeMapEntries>Java</jbo.TypeMapEntries>
+         <jbo.project>Erps_Model</jbo.project>
+         <AppModuleJndiName>es.sysmap.interflex.erps_model.dmc.AppModule</AppModuleJndiName>
+         <jbo.security.enforce>Auto</jbo.security.enforce>
+         <java.naming.factory.initial>oracle.jbo.common.JboInitialContextFactory</java.naming.factory.initial>
+         <ApplicationName>es.sysmap.interflex.erps_model.dmc.AppModule</ApplicationName>
+         <jbo.SQLBuilder>SQL92</jbo.SQLBuilder>
+      </AppModuleConfig>
+   </AppModuleConfigBag>
+   <ConnectionDefinition name="ERPS_PRODUCCION">
+      <ENTRY name="URL" value="jdbc:jtds:sqlserver://srverps:1433/PRODUCCION;user=admusr;password=ADMUSR;"/>
+      <ENTRY name="ConnectionName" value="ERPS_PRODUCCION"/>
+      <ENTRY name="user" value="admusr"/>
+      <ENTRY name="ConnectionType" value="OTHER_JDBC"/>
+      <ENTRY name="password">
+         <![CDATA[{904}05C284610D515EF4748CC08A95CBF9E65D]]>
+      </ENTRY>
+      <ENTRY name="DeployPassword" value="true"/>
+      <ENTRY name="JdbcDriver" value="net.sourceforge.jtds.jdbc.Driver"/>
+      <ENTRY name="DeployPassword" value="true"/>
+   </ConnectionDefinition>
+   <ConnectionDefinition name="ERPS">
+      <ENTRY name="ConnectionName" value="ERPS"/>
+      <ENTRY name="URL" value="jdbc:jtds:sqlserver://srverps:1433/INTERFLEX;user=admusr;password=ADMUSR;"/>
+      <ENTRY name="ConnectionType" value="OTHER_JDBC"/>
+      <ENTRY name="user" value="admusr"/>
+      <ENTRY name="password">
+         <![CDATA[{904}05543EF3D6BECB2716B961FD1A3764107F]]>
+      </ENTRY>
+      <ENTRY name="DeployPassword" value="true"/>
+      <ENTRY name="JdbcDriver" value="net.sourceforge.jtds.jdbc.Driver"/>
+      <ENTRY name="DeployPassword" value="true"/>
+   </ConnectionDefinition>
+</BC4JConfig>

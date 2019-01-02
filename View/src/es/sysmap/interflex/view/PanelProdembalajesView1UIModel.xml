@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<DCContainer
+   id="PanelProdembalajesView1UIModel"
+   xmlns="http://xmlns.oracle.com/adfm/uimodel"
+   version="10.1.2.17.96"
+   Package="es.sysmap.interflex.view"
+   FindMode="false"
+   EnableTokenValidation="true" >
+   <Contents >
+      <DCIterator
+         id="ProdembalajesView1Iter"
+         Binds="AppModuleDataControl.ProdembalajesView1" >
+      </DCIterator>
+      <DCControl
+         id="Idformato"
+         SubType="DCTextField"
+         IterBinding="ProdembalajesView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Idformato" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Refformato"
+         SubType="DCTextField"
+         IterBinding="ProdembalajesView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Refformato" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Descripcion"
+         SubType="DCTextField"
+         IterBinding="ProdembalajesView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Descripcion" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Ep"
+         SubType="DCTextField"
+         IterBinding="ProdembalajesView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Ep" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Alto"
+         SubType="DCTextField"
+         IterBinding="ProdembalajesView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Alto" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Ancho"
+         SubType="DCTextField"
+         IterBinding="ProdembalajesView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Ancho" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Largo"
+         SubType="DCTextField"
+         IterBinding="ProdembalajesView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Largo" />
+         </AttrNames>
+      </DCControl>
+   </Contents>
+</DCContainer>

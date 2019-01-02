@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'windows-1252'?>
+<!DOCTYPE data-sources PUBLIC "Orion data-sources" "http://xmlns.oracle.com/ias/dtds/data-sources.dtd">
+<data-sources>
+  <data-source name="jdev-connection-nissan" class="com.evermind.sql.DriverManagerDataSource" location="jdbc/nissanCoreDS" xa-location="jdbc/xa/nissanXADS" ejb-location="jdbc/nissanDS" pooled-location="jdbc/nissanPooledDS" connection-driver="oracle.jdbc.driver.OracleDriver" username="nissan" password="nissan" url="jdbc:oracle:thin:@covil:1521:PROD" inactivity-timeout="30"/>
+  <data-source name="jdev-connection-balay" class="com.evermind.sql.DriverManagerDataSource" location="jdbc/balayCoreDS" xa-location="jdbc/xa/balayXADS" ejb-location="jdbc/balayDS" pooled-location="jdbc/balayPooledDS" connection-driver="oracle.jdbc.driver.OracleDriver" username="sgadba" password="sgadba" url="jdbc:oracle:thin:@kayak:1521:prod" inactivity-timeout="30"/>
+  <data-source name="jdev-connection-interflexSiemens" class="com.evermind.sql.DriverManagerDataSource" location="jdbc/interflexSiemensCoreDS" xa-location="jdbc/xa/interflexSiemensXADS" ejb-location="jdbc/interflexSiemensDS" pooled-location="jdbc/interflexSiemensPooledDS" connection-driver="oracle.jdbc.driver.OracleDriver" username="if" password="if" url="jdbc:oracle:thin:@covil:1521:PROD" inactivity-timeout="30"/>
+  <data-source name="jdev-connection-interflex" class="com.evermind.sql.DriverManagerDataSource" location="jdbc/interflexCoreDS" xa-location="jdbc/xa/interflexXADS" ejb-location="jdbc/interflexDS" pooled-location="jdbc/interflexPooledDS" connection-driver="oracle.jdbc.driver.OracleDriver" username="ifdba" password="ifdba" url="jdbc:oracle:thin:@covil:1521:PROD" inactivity-timeout="30"/>
+</data-sources>

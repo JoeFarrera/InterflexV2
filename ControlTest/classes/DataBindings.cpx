@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<JboProject
+   id="DataBindings"
+   xmlns="http://xmlns.oracle.com/adfm/application"
+   version="10.1.2.17.96"
+   SeparateXMLFiles="false"
+   Package=""
+   ClientType="JClient" >
+   <Contents >
+      <DataControl
+         id="AppModuleDataControl"
+         SubType="DCBC4J"
+         SupportsFindMode="true"
+         SupportsTransactions="true"
+         Package="es.sysmap.interflex.model.dmc"
+         FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl"
+         Configuration="AppModuleLocal" >
+      </DataControl>
+      <DataControl
+         id="TestAppModuleDataControl"
+         SubType="DCBC4J"
+         SupportsFindMode="true"
+         SupportsTransactions="true"
+         Package="es.sysmap.interflex.model.tst"
+         FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl"
+         Configuration="TestAppModuleLocal" >
+      </DataControl>
+      <Containee
+         id="PanelSgatipoubicacionView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.controltest.PanelSgatipoubicacionView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavexistenciaView2UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.controltest.PanelSgavexistenciaView2UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgaubicacionSiloView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.controltest.PanelSgaubicacionSiloView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgaposicionubicacionView3UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.controltest.PanelSgaposicionubicacionView3UIModel" >
+      </Containee>
+      <Containee
+         id="MDPanelSgaubicacionSiloView1SgaposicionubicacionView3UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.controltest.MDPanelSgaubicacionSiloView1SgaposicionubicacionView3UIModel" >
+      </Containee>
+      <Containee
+         id="MDPanelSgaubicacionManualView1SgaposicionubicacionView2UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.controltest.MDPanelSgaubicacionManualView1SgaposicionubicacionView2UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavexistenciaView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.controltest.PanelSgavexistenciaView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgatipoalmacenView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.controltest.PanelSgatipoalmacenView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavdisponibleentradaView2UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.controltest.PanelSgavdisponibleentradaView2UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgaposicionubicacionView4UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.controltest.PanelSgaposicionubicacionView4UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavsumexistenciaView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.controltest.PanelSgavsumexistenciaView1UIModel" >
+      </Containee>
+      <Containee
+         id="MDPanelSgavsumexistenciaView1SgavexistenciaView2UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.controltest.MDPanelSgavsumexistenciaView1SgavexistenciaView2UIModel" >
+      </Containee>
+      <Containee
+         id="MDPanelSgaUbicacionMiniLoadView1SgaposicionubicacionView4UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.controltest.MDPanelSgaUbicacionMiniLoadView1SgaposicionubicacionView4UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavubicacionView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.controltest.PanelSgavubicacionView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgaubicacionManualView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.controltest.PanelSgaubicacionManualView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavexistenciadisponiblemldView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.controltest.PanelSgavexistenciadisponiblemldView1UIModel" >
+      </Containee>
+      <Containee
+         id="MDPanelSgaventradaspendienteView1SgavdisponibleentradaView2UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.controltest.MDPanelSgaventradaspendienteView1SgavdisponibleentradaView2UIModel" >
+      </Containee>
+      <Containee
+         id="MDPanelTestReservarSalidaUIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.controltest.MDPanelTestReservarSalidaUIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavsalidaspendienteView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.controltest.PanelSgavsalidaspendienteView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgaUbicacionMiniLoadView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.controltest.PanelSgaUbicacionMiniLoadView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgamacView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.controltest.PanelSgamacView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgatipdocView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.controltest.PanelSgatipdocView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgaventradaspendienteView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.controltest.PanelSgaventradaspendienteView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgaarticuloView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.controltest.PanelSgaarticuloView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgaubicacionView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.controltest.PanelSgaubicacionView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgatipomacView1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.controltest.PanelSgatipomacView1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgaposicionubicacionView2UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.controltest.PanelSgaposicionubicacionView2UIModel" >
+      </Containee>
+   </Contents>
+</JboProject>

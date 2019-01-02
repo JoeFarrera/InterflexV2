@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE ViewLink SYSTEM "jbo_03_01.dtd">
+
+<ViewLink
+   Name="SgavestadoentradaslomacSgavubicacionlibresloViewLink" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.2.17.96" />
+   </DesignTime>
+   <ViewLinkDefEnd
+      Name="SgavestadoentradaslomacView"
+      Cardinality="1"
+      Owner="es.sysmap.interflex.model.dmc.SgavestadoentradaslomacView"
+      Source="true" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.dmc.SgavestadoentradaslomacView.Idtipmac" />
+         <Item Value="es.sysmap.interflex.model.dmc.SgavestadoentradaslomacView.Idpasillo" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_isUpdateable" Value="true" />
+         <Attr Name="_finderName" Value="SgavestadoentradaslomacView" />
+         <Attr Name="_accessor" Value="false" />
+      </DesignTime>
+   </ViewLinkDefEnd>
+   <ViewLinkDefEnd
+      Name="SgavubicacionlibresloView"
+      Cardinality="-1"
+      Owner="es.sysmap.interflex.model.dmc.SgavubicacionlibreslosinparamView" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.dmc.SgavubicacionlibreslosinparamView.Idtipmac" />
+         <Item Value="es.sysmap.interflex.model.dmc.SgavubicacionlibreslosinparamView.Pasillo" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_isUpdateable" Value="true" />
+         <Attr Name="_accessor" Value="true" />
+      </DesignTime>
+   </ViewLinkDefEnd>
+</ViewLink>

@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<DCContainer
+   id="PanelSgavocupaciominiloaddetallView1UIModel"
+   xmlns="http://xmlns.oracle.com/adfm/uimodel"
+   version="10.1.2.17.96"
+   Package="es.sysmap.interflex.view"
+   FindMode="false"
+   EnableTokenValidation="true" >
+   <Contents >
+      <DCIterator
+         id="SgavocupaciominiloaddetallView1Iter"
+         Binds="AppModuleDataControl.SgavocupaciominiloaddetallView1" >
+      </DCIterator>
+      <DCControl
+         id="SgavocupaciominiloaddetallView1"
+         DefClass="oracle.jbo.uicli.jui.JUTableDef"
+         SubType="DCTable"
+         IterBinding="SgavocupaciominiloaddetallView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Ubicaciones" />
+            <Item Value="Posicions" />
+            <Item Value="Cublibre" />
+            <Item Value="Cubocup" />
+            <Item Value="Cubres" />
+            <Item Value="Pocupacio" />
+         </AttrNames>
+      </DCControl>
+   </Contents>
+</DCContainer>

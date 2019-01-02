@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<workspace nselem="workspace" class="oracle.ide.model.Workspace" xmlns="http://xmlns.oracle.com/jdeveloper/10120/workspace">
+   <listOfChildren class="oracle.ide.model.DataList">
+      <Item class="oracle.ide.model.Reference">
+         <URL path="Bascula/Bascula.jpr"/>
+         <nodeClass>oracle.jdeveloper.model.JProject</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="Control/Control.jpr"/>
+         <nodeClass>oracle.jdeveloper.model.JProject</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="ControlTest/ControlTest.jpr"/>
+         <nodeClass>oracle.jdeveloper.model.JProject</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="ControlUTest/ControlUTest.jpr"/>
+         <nodeClass>oracle.jdeveloper.model.JProject</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="ControlView/ControlView.jpr"/>
+         <nodeClass>oracle.jdeveloper.model.JProject</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="Erps_Model/Erps_Model.jpr"/>
+         <nodeClass>oracle.jdeveloper.model.JProject</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="ErpsProduccion_Model/ErpsProduccion_Model.jpr"/>
+         <nodeClass>oracle.jdeveloper.model.JProject</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="Etiquetes/Etiquetes.jpr"/>
+         <nodeClass>oracle.jdeveloper.model.JProject</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="Informix/Informix.jpr"/>
+         <nodeClass>oracle.jdeveloper.model.JProject</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="Model/Model.jpr"/>
+         <nodeClass>oracle.jdeveloper.model.JProject</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="ModelRps/ModelRps.jpr"/>
+         <nodeClass>oracle.jdeveloper.model.JProject</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="ModelRpsProd/ModelRpsProd.jpr"/>
+         <nodeClass>oracle.jdeveloper.model.JProject</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="PlcDriver/PlcDriver.jpr"/>
+         <nodeClass>oracle.jdeveloper.model.JProject</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="PlcServer/PlcServer.jpr"/>
+         <nodeClass>oracle.jdeveloper.model.JProject</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="Report/Report.jpr"/>
+         <nodeClass>oracle.jdeveloper.model.JProject</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="RpsInterface/RpsInterface.jpr"/>
+         <nodeClass>oracle.jdeveloper.model.JProject</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="SgaLib/SgaLib.jpr"/>
+         <nodeClass>oracle.jdeveloper.model.JProject</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="TestThread/TestThread.jpr"/>
+         <nodeClass>oracle.jdeveloper.model.JProject</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="View/View.jpr"/>
+         <nodeClass>oracle.jdeveloper.model.JProject</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="ViewRF/ViewRF.jpr"/>
+         <nodeClass>oracle.jdeveloper.model.JProject</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="ViewRF2/ViewRF2.jpr"/>
+         <nodeClass>oracle.jdeveloper.model.JProject</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="ViewTest/ViewTest.jpr"/>
+         <nodeClass>oracle.jdeveloper.model.JProject</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="Xml/Xml.jpr"/>
+         <nodeClass>oracle.jdeveloper.model.JProject</nodeClass>
+      </Item>
+   </listOfChildren>
+   <properties class="java.util.HashMap">
+      <Item>
+         <Key>packageCounter</Key>
+         <Value>17</Value>
+      </Item>
+   </properties>
+</workspace>

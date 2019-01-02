@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+
+<ViewObject
+   Name="Sgaexped_1View"
+   SelectList="Sgaexped.IDEXPED, 
+       Sgaexped.CREATEDBY, 
+       Sgaexped.CREATEDON, 
+       Sgaexped.MODIFIEDBY, 
+       Sgaexped.MODIFIEDON"
+   FromList="SGAEXPED Sgaexped"
+   BindingStyle="Oracle"
+   CustomQuery="false"
+   ComponentClass="es.sysmap.interflex.model.dmc.Sgaexped_1ViewImpl"
+   MsgBundleClass="oracle.jbo.common.JboResourceBundle"
+   UseGlueCode="false" >
+   <DesignTime>
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_codeGenFlag2" Value="Access|Coll" />
+      <Attr Name="_isExpertMode" Value="false" />
+   </DesignTime>
+   <EntityUsage
+      Name="Sgaexped"
+      Entity="es.sysmap.interflex.model.bdc.Sgaexped" >
+      <DesignTime>
+         <Attr Name="_EntireObjectTable" Value="false" />
+         <Attr Name="_queryClause" Value="false" />
+      </DesignTime>
+   </EntityUsage>
+   <ViewAttribute
+      Name="Idexped"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Idexped"
+      EntityUsage="Sgaexped"
+      AliasName="IDEXPED" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Createdby"
+      IsUpdateable="false"
+      PrecisionRule="true"
+      EntityAttrName="Createdby"
+      EntityUsage="Sgaexped"
+      AliasName="CREATEDBY" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Createdon"
+      IsUpdateable="false"
+      PrecisionRule="true"
+      EntityAttrName="Createdon"
+      EntityUsage="Sgaexped"
+      AliasName="CREATEDON" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Modifiedby"
+      IsUpdateable="false"
+      PrecisionRule="true"
+      EntityAttrName="Modifiedby"
+      EntityUsage="Sgaexped"
+      AliasName="MODIFIEDBY" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Modifiedon"
+      IsUpdateable="false"
+      PrecisionRule="true"
+      EntityAttrName="Modifiedon"
+      EntityUsage="Sgaexped"
+      AliasName="MODIFIEDON" >
+   </ViewAttribute>
+</ViewObject>

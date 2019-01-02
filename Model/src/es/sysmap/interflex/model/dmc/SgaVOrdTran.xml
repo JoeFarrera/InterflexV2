@@ -1,0 +1,261 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+
+<ViewObject
+   Name="SgaVOrdTran"
+   OrderBy="CREATEDON"
+   BindingStyle="Oracle"
+   CustomQuery="true"
+   ComponentClass="es.sysmap.interflex.model.dmc.SgaVOrdTranImpl"
+   MsgBundleClass="oracle.jbo.common.JboResourceBundle"
+   UseGlueCode="false" >
+   <SQLQuery><![CDATA[
+SELECT Sgaordtran.IDORD, 
+       Sgaordtran.IDTIP, 
+       Sgaordtran.ESTADO, 
+       Sgaordtran.IDMAC, 
+       Sgaordtran.IDORDREUBIC, 
+       Sgaordtran.CREATEDON
+FROM SGAORDTRAN Sgaordtran, SGAMAC Sgamac, SGAUBICACION SgaubicacionPos, SGAUBICACION SgaubicacionDes
+WHERE ((Sgaordtran.IDMAC = Sgamac.IDMAC)AND (Sgamac.UBIPOS = SgaubicacionPos.IDUBI))AND (Sgamac.UBIDES = SgaubicacionDes.IDUBI)
+   ]]></SQLQuery>
+   <DesignTime>
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_codeGenFlag2" Value="Access|Coll" />
+      <Attr Name="_isExpertMode" Value="true" />
+   </DesignTime>
+   <EntityUsage
+      Name="Sgaordtran"
+      Entity="es.sysmap.interflex.model.bdc.Sgaordtran" >
+      <DesignTime>
+         <Attr Name="_EntireObjectTable" Value="false" />
+         <Attr Name="_queryClause" Value="false" />
+      </DesignTime>
+   </EntityUsage>
+   <EntityUsage
+      Name="Sgamac"
+      Entity="es.sysmap.interflex.model.bdc.Sgamac"
+      Association="es.sysmap.interflex.model.bdc.SgaordtranSgamacFk1Assoc"
+      AssociationEnd="es.sysmap.interflex.model.bdc.SgaordtranSgamacFk1Assoc.Sgamac"
+      SourceUsage="es.sysmap.interflex.model.dmc.SgaVOrdTran.Sgaordtran"
+      ReadOnly="true"
+      Reference="true" >
+      <DesignTime>
+         <Attr Name="_EntireObjectTable" Value="false" />
+         <Attr Name="_queryClause" Value="false" />
+         <AttrArray Name="_srcAttributes">
+            <Item Value="es.sysmap.interflex.model.bdc.Sgaordtran.Idmac" />
+         </AttrArray>
+         <AttrArray Name="_dstAttributes">
+            <Item Value="es.sysmap.interflex.model.bdc.Sgamac.Idmac" />
+         </AttrArray>
+      </DesignTime>
+   </EntityUsage>
+   <EntityUsage
+      Name="SgaubicacionPos"
+      Entity="es.sysmap.interflex.model.bdc.Sgaubicacion"
+      Association="es.sysmap.interflex.model.bdc.SysC0010957Assoc"
+      AssociationEnd="es.sysmap.interflex.model.bdc.SysC0010957Assoc.SgaUbicacionDestino"
+      SourceUsage="es.sysmap.interflex.model.dmc.SgaVOrdTran.Sgamac"
+      ReadOnly="true"
+      Reference="true" >
+      <DesignTime>
+         <Attr Name="_EntireObjectTable" Value="false" />
+         <Attr Name="_queryClause" Value="false" />
+         <AttrArray Name="_srcAttributes">
+            <Item Value="es.sysmap.interflex.model.bdc.Sgamac.Ubides" />
+         </AttrArray>
+         <AttrArray Name="_dstAttributes">
+            <Item Value="es.sysmap.interflex.model.bdc.Sgaubicacion.Idubi" />
+         </AttrArray>
+      </DesignTime>
+   </EntityUsage>
+   <EntityUsage
+      Name="SgaubicacionDes"
+      Entity="es.sysmap.interflex.model.bdc.Sgaubicacion"
+      Association="es.sysmap.interflex.model.bdc.SysC0010957Assoc"
+      AssociationEnd="es.sysmap.interflex.model.bdc.SysC0010957Assoc.SgaUbicacionDestino"
+      SourceUsage="es.sysmap.interflex.model.dmc.SgaVOrdTran.Sgamac"
+      ReadOnly="true"
+      Reference="true" >
+      <DesignTime>
+         <Attr Name="_EntireObjectTable" Value="false" />
+         <Attr Name="_queryClause" Value="false" />
+         <AttrArray Name="_srcAttributes">
+            <Item Value="es.sysmap.interflex.model.bdc.Sgamac.Ubides" />
+         </AttrArray>
+         <AttrArray Name="_dstAttributes">
+            <Item Value="es.sysmap.interflex.model.bdc.Sgaubicacion.Idubi" />
+         </AttrArray>
+      </DesignTime>
+   </EntityUsage>
+   <EntityUsage
+      Name="Sgaposicionubicacion"
+      Entity="es.sysmap.interflex.model.bdc.Sgaposicionubicacion"
+      Association="es.sysmap.interflex.model.bdc.SysC0010959Assoc"
+      AssociationEnd="es.sysmap.interflex.model.bdc.SysC0010959Assoc.Sgaposubipos"
+      SourceUsage="es.sysmap.interflex.model.dmc.SgaVOrdTran.Sgamac"
+      Reference="true" >
+      <DesignTime>
+         <Attr Name="_EntireObjectTable" Value="false" />
+         <Attr Name="_queryClause" Value="false" />
+         <AttrArray Name="_srcAttributes">
+            <Item Value="es.sysmap.interflex.model.bdc.Sgamac.Ubipos" />
+            <Item Value="es.sysmap.interflex.model.bdc.Sgamac.Posubipos" />
+         </AttrArray>
+         <AttrArray Name="_dstAttributes">
+            <Item Value="es.sysmap.interflex.model.bdc.Sgaposicionubicacion.Idubi" />
+            <Item Value="es.sysmap.interflex.model.bdc.Sgaposicionubicacion.Posicion" />
+         </AttrArray>
+      </DesignTime>
+   </EntityUsage>
+   <EntityUsage
+      Name="Sgaposicionubicacion1"
+      Entity="es.sysmap.interflex.model.bdc.Sgaposicionubicacion"
+      Association="es.sysmap.interflex.model.bdc.SysC0010956Assoc"
+      AssociationEnd="es.sysmap.interflex.model.bdc.SysC0010956Assoc.Sgaposubides"
+      SourceUsage="es.sysmap.interflex.model.dmc.SgaVOrdTran.Sgamac"
+      Reference="true" >
+      <DesignTime>
+         <Attr Name="_EntireObjectTable" Value="false" />
+         <Attr Name="_queryClause" Value="false" />
+         <AttrArray Name="_srcAttributes">
+            <Item Value="es.sysmap.interflex.model.bdc.Sgamac.Ubides" />
+            <Item Value="es.sysmap.interflex.model.bdc.Sgamac.Posubides" />
+         </AttrArray>
+         <AttrArray Name="_dstAttributes">
+            <Item Value="es.sysmap.interflex.model.bdc.Sgaposicionubicacion.Idubi" />
+            <Item Value="es.sysmap.interflex.model.bdc.Sgaposicionubicacion.Posicion" />
+         </AttrArray>
+      </DesignTime>
+   </EntityUsage>
+   <ViewAttribute
+      Name="Idord"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Idord"
+      EntityUsage="Sgaordtran"
+      AliasName="IDORD" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Idtip"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Idtip"
+      EntityUsage="Sgaordtran"
+      AliasName="IDTIP" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Estado"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Estado"
+      EntityUsage="Sgaordtran"
+      AliasName="ESTADO" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Idmac"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Idmac"
+      EntityUsage="Sgaordtran"
+      AliasName="IDMAC" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Idordreubic"
+      PrecisionRule="true"
+      EntityAttrName="Idordreubic"
+      EntityUsage="Sgaordtran"
+      AliasName="IDORDREUBIC" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Createdon"
+      IsUpdateable="false"
+      PrecisionRule="true"
+      EntityAttrName="Createdon"
+      EntityUsage="Sgaordtran"
+      AliasName="CREATEDON" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="EstadoPosubipos"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Estado"
+      EntityUsage="Sgaposicionubicacion1"
+      AliasName="ESTADO1" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="PosicionUbipos"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Posicion"
+      EntityUsage="Sgaposicionubicacion1"
+      AliasName="POSICION" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="IdubiUbipos"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Idubi"
+      EntityUsage="Sgaposicionubicacion1"
+      AliasName="IDUBI" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="EstadoPosubides"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Estado"
+      EntityUsage="Sgaposicionubicacion"
+      AliasName="ESTADO2" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="PosicionUbides"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Posicion"
+      EntityUsage="Sgaposicionubicacion"
+      AliasName="POSICION1" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="IdubiUbides"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Idubi"
+      EntityUsage="Sgaposicionubicacion"
+      AliasName="IDUBI1" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Idtipalm"
+      IsNotNull="true"
+      PrecisionRule="true"
+      DiscrColumn="true"
+      EntityAttrName="Idtipalm"
+      EntityUsage="SgaubicacionPos"
+      AliasName="IDTIPALM" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Idubi"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Idubi"
+      EntityUsage="SgaubicacionPos"
+      AliasName="IDUBI" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Idtipalm1"
+      IsNotNull="true"
+      PrecisionRule="true"
+      DiscrColumn="true"
+      EntityAttrName="Idtipalm"
+      EntityUsage="SgaubicacionDes"
+      AliasName="IDTIPALM1" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Idubi1"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Idubi"
+      EntityUsage="SgaubicacionDes"
+      AliasName="IDUBI1" >
+   </ViewAttribute>
+</ViewObject>

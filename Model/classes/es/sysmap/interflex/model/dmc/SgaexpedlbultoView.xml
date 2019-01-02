@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+
+<ViewObject
+   Name="SgaexpedlbultoView"
+   SelectList="Sgaexpedlbulto.IDEXPED, 
+       Sgaexpedlbulto.IDBULTO, 
+       Sgaexpedlbulto.IDDOC, 
+       Sgaexpedlbulto.IDLIN, 
+       Sgaexpedlbulto.CANTOT, 
+       Sgaexpedlbulto.PESO"
+   FromList="SGAEXPEDLBULTO Sgaexpedlbulto"
+   BindingStyle="Oracle"
+   CustomQuery="false"
+   RowClass="es.sysmap.interflex.model.dmc.SgaexpedlbultoViewRowImpl"
+   ComponentClass="es.sysmap.interflex.model.dmc.SgaexpedlbultoViewImpl"
+   MsgBundleClass="oracle.jbo.common.JboResourceBundle"
+   UseGlueCode="false" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_codeGenFlag2" Value="Access|Coll" />
+      <Attr Name="_isExpertMode" Value="false" />
+   </DesignTime>
+   <EntityUsage
+      Name="Sgaexpedlbulto"
+      Entity="es.sysmap.interflex.model.bdc.Sgaexpedlbulto" >
+      <DesignTime>
+         <Attr Name="_EntireObjectTable" Value="false" />
+         <Attr Name="_queryClause" Value="false" />
+      </DesignTime>
+   </EntityUsage>
+   <ViewAttribute
+      Name="Idexped"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Idexped"
+      EntityUsage="Sgaexpedlbulto"
+      AliasName="IDEXPED" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Idbulto"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Idbulto"
+      EntityUsage="Sgaexpedlbulto"
+      AliasName="IDBULTO" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Iddoc"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Iddoc"
+      EntityUsage="Sgaexpedlbulto"
+      AliasName="IDDOC" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Idlin"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Idlin"
+      EntityUsage="Sgaexpedlbulto"
+      AliasName="IDLIN" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Cantot"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Cantot"
+      EntityUsage="Sgaexpedlbulto"
+      AliasName="CANTOT" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Peso"
+      PrecisionRule="true"
+      EntityAttrName="Peso"
+      EntityUsage="Sgaexpedlbulto"
+      AliasName="PESO" >
+   </ViewAttribute>
+   <AttrArray Name="KeyAttributes">
+      <Item Value="Idexped" />
+      <Item Value="Idbulto" />
+      <Item Value="Idlin" />
+   </AttrArray>
+   <ViewLinkAccessor
+      Name="SgaldocView"
+      ViewLink="es.sysmap.interflex.model.dmc.SgaexpedlbultoSgaldocViewLink"
+      Type="oracle.jbo.Row"
+      IsUpdateable="false" >
+   </ViewLinkAccessor>
+</ViewObject>

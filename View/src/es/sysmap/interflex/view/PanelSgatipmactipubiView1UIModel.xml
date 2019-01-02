@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<DCContainer
+   id="PanelSgatipmactipubiView1UIModel"
+   xmlns="http://xmlns.oracle.com/adfm/uimodel"
+   version="10.1.2.17.96"
+   Package="es.sysmap.interflex.view"
+   FindMode="false"
+   EnableTokenValidation="true" >
+   <Contents >
+      <DCIterator
+         id="SgatipmactipubiView1Iter"
+         Binds="AppModuleDataControl.SgatipmactipubiView1" >
+      </DCIterator>
+      <DCIterator
+         id="SgatipomacView1Iterator"
+         Binds="AppModuleDataControl.SgatipomacView1"
+         RangeSize="10" >
+      </DCIterator>
+      <DCIterator
+         id="SgatipoubicacionView1Iterator"
+         Binds="AppModuleDataControl.SgatipoubicacionView1"
+         RangeSize="10" >
+      </DCIterator>
+      <DCControl
+         id="SgatipmactipubiView1"
+         DefClass="oracle.jbo.uicli.jui.JUTableDef"
+         SubType="DCTable"
+         IterBinding="SgatipmactipubiView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Idtipubi" />
+            <Item Value="Idtipmac" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Desctipubi"
+         DefClass="oracle.jbo.uicli.jui.JUComboBoxDef"
+         SubType="DCComboBox"
+         IterBinding="SgatipmactipubiView1Iter"
+         DTClass="oracle.adf.dt.objects.JUDTCtrlListLOV"
+         ApplyValidation="false"
+         isDynamic="false"
+         ListOperMode="0"
+         ListIter="SgatipoubicacionView1Iterator"
+         Editable="false" >
+         <AttrNames>
+            <Item Value="Idtipubi" />
+         </AttrNames>
+         <ListAttrNames>
+            <Item Value="Idtipubi" />
+         </ListAttrNames>
+         <ListDisplayAttrNames>
+            <Item Value="Descrip" />
+         </ListDisplayAttrNames>
+      </DCControl>
+      <DCControl
+         id="Desctipmac"
+         DefClass="oracle.jbo.uicli.jui.JUComboBoxDef"
+         SubType="DCComboBox"
+         IterBinding="SgatipmactipubiView1Iter"
+         DTClass="oracle.adf.dt.objects.JUDTCtrlListLOV"
+         ApplyValidation="false"
+         isDynamic="false"
+         ListOperMode="0"
+         ListIter="SgatipomacView1Iterator"
+         Editable="false" >
+         <AttrNames>
+            <Item Value="Idtipmac" />
+         </AttrNames>
+         <ListAttrNames>
+            <Item Value="Idtipmac" />
+         </ListAttrNames>
+         <ListDisplayAttrNames>
+            <Item Value="Descrip" />
+         </ListDisplayAttrNames>
+      </DCControl>
+   </Contents>
+</DCContainer>

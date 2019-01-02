@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+
+<ViewObject
+   Name="SgaetiquetaView"
+   SelectList="Sgaetiqueta.IDDOC, 
+       Sgaetiqueta.IDCABSTR, 
+       Sgaetiqueta.IDCABNUM, 
+
+       Sgaetiqueta.EXPEDICION, 
+       Sgaetiqueta.CLI_REDUR, 
+
+       Sgaetiqueta.TIPO_CB, 
+       Sgaetiqueta.COD_POSTAL, 
+
+       Sgaetiqueta.PAIS_DESTINO, 
+       Sgaetiqueta.PAIS_ORIGEN, 
+
+       Sgaetiqueta.PLAZA, 
+       Sgaetiqueta.CREATEDBY, 
+  
+     Sgaetiqueta.MODIFIEDBY, 
+       Sgaetiqueta.CREATEDON, 
+ 
+      Sgaetiqueta.MODIFIEDON"
+   FromList="SGAETIQUETA Sgaetiqueta"
+   BindingStyle="Oracle"
+   CustomQuery="false"
+   RowClass="es.sysmap.interflex.model.dmc.SgaetiquetaViewRowImpl"
+   ComponentClass="es.sysmap.interflex.model.dmc.SgaetiquetaViewImpl"
+   MsgBundleClass="oracle.jbo.common.JboResourceBundle"
+   UseGlueCode="false" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_codeGenFlag2" Value="Access|Coll" />
+      <Attr Name="_isExpertMode" Value="false" />
+   </DesignTime>
+   <EntityUsage
+      Name="Sgaetiqueta"
+      Entity="es.sysmap.interflex.model.bdc.Sgaetiqueta" >
+      <DesignTime>
+         <Attr Name="_EntireObjectTable" Value="false" />
+         <Attr Name="_queryClause" Value="false" />
+      </DesignTime>
+   </EntityUsage>
+   <ViewAttribute
+      Name="Iddoc"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Iddoc"
+      EntityUsage="Sgaetiqueta"
+      AliasName="IDDOC" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Idcabstr"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Idcabstr"
+      EntityUsage="Sgaetiqueta"
+      AliasName="IDCABSTR" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Idcabnum"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Idcabnum"
+      EntityUsage="Sgaetiqueta"
+      AliasName="IDCABNUM" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Expedicion"
+      PrecisionRule="true"
+      EntityAttrName="Expedicion"
+      EntityUsage="Sgaetiqueta"
+      AliasName="EXPEDICION" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CliRedur"
+      PrecisionRule="true"
+      EntityAttrName="CliRedur"
+      EntityUsage="Sgaetiqueta"
+      AliasName="CLI_REDUR" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="TipoCb"
+      PrecisionRule="true"
+      EntityAttrName="TipoCb"
+      EntityUsage="Sgaetiqueta"
+      AliasName="TIPO_CB" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CodPostal"
+      PrecisionRule="true"
+      EntityAttrName="CodPostal"
+      EntityUsage="Sgaetiqueta"
+      AliasName="COD_POSTAL" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="PaisDestino"
+      PrecisionRule="true"
+      EntityAttrName="PaisDestino"
+      EntityUsage="Sgaetiqueta"
+      AliasName="PAIS_DESTINO" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="PaisOrigen"
+      PrecisionRule="true"
+      EntityAttrName="PaisOrigen"
+      EntityUsage="Sgaetiqueta"
+      AliasName="PAIS_ORIGEN" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Plaza"
+      PrecisionRule="true"
+      EntityAttrName="Plaza"
+      EntityUsage="Sgaetiqueta"
+      AliasName="PLAZA" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Createdby"
+      PrecisionRule="true"
+      EntityAttrName="Createdby"
+      EntityUsage="Sgaetiqueta"
+      AliasName="CREATEDBY" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Modifiedby"
+      PrecisionRule="true"
+      EntityAttrName="Modifiedby"
+      EntityUsage="Sgaetiqueta"
+      AliasName="MODIFIEDBY" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Createdon"
+      PrecisionRule="true"
+      EntityAttrName="Createdon"
+      EntityUsage="Sgaetiqueta"
+      AliasName="CREATEDON" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Modifiedon"
+      PrecisionRule="true"
+      EntityAttrName="Modifiedon"
+      EntityUsage="Sgaetiqueta"
+      AliasName="MODIFIEDON" >
+   </ViewAttribute>
+</ViewObject>

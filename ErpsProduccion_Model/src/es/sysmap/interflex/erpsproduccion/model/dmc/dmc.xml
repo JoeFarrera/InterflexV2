@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE JboPackage SYSTEM "jbo_03_01.dtd">
+
+<JboPackage
+   Name="dmc"
+   SeparateXMLFiles="true"
+   PackageName="es.sysmap.interflex.erpsproduccion.model.dmc" >
+   <DesignTime>
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_ejbPackage" Value="false" />
+   </DesignTime>
+   <Containee
+      Name="AppModule"
+      FullName="es.sysmap.interflex.erpsproduccion.model.dmc.AppModule"
+      ObjectType="AppModule" >
+   </Containee>
+   <Containee
+      Name="Prod_EmbalajesView"
+      FullName="es.sysmap.interflex.erpsproduccion.model.dmc.Prod_EmbalajesView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="Prod_EmbalajesreferenciaView"
+      FullName="es.sysmap.interflex.erpsproduccion.model.dmc.Prod_EmbalajesreferenciaView"
+      ObjectType="ViewObject" >
+   </Containee>
+</JboPackage>

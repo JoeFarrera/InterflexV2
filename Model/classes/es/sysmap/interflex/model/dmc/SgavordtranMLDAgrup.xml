@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+
+<ViewObject
+   Name="SgavordtranMLDAgrup"
+   OrderBy="POSUBIPOS desc"
+   BindingStyle="Oracle"
+   CustomQuery="true"
+   RowClass="es.sysmap.interflex.model.dmc.SgavordtranMLDAgrupRowImpl"
+   ComponentClass="es.sysmap.interflex.model.dmc.SgavordtranMLDAgrupImpl"
+   MsgBundleClass="oracle.jbo.common.JboResourceBundle"
+   ComponentInterface="es.sysmap.interflex.model.dmc.common.SgavordtranMLDAgrup"
+   ClientProxyName="es.sysmap.interflex.model.dmc.client.SgavordtranMLDAgrupClient"
+   UseGlueCode="false" >
+   <SQLQuery><![CDATA[
+SELECT Sgaordtran.IDORD, 
+       Sgaordtran.ESTADO, 
+       Sgaordtran.IDMAC, 
+       Sgaordtran.IDORDREUBIC, 
+       Sgaordtran.SEQMLD, 
+       Sgamac.POSUBIPOS, 
+       Sgamac.IDMAC AS IDMAC1
+FROM SGAORDTRAN Sgaordtran, 
+     SGAMAC Sgamac, 
+     sgaubicacion ubiori, sgaubicacion ubides
+where Sgaordtran.idmac = Sgamac.idmac
+and Sgamac.ubipos = ubiori.idubi
+and Sgamac.ubides = ubides.idubi
+and ubiori.idtipalm = 'MLD'
+and ubides.idtipubi = 'PPK'
+and Sgaordtran.estado in ('N', 'T')
+   ]]></SQLQuery>
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_codeGenFlag2" Value="Access|Coll" />
+      <Attr Name="_isExpertMode" Value="true" />
+   </DesignTime>
+   <EntityUsage
+      Name="Sgaordtran"
+      Entity="es.sysmap.interflex.model.bdc.Sgaordtran" >
+      <DesignTime>
+         <Attr Name="_EntireObjectTable" Value="false" />
+         <Attr Name="_queryClause" Value="false" />
+      </DesignTime>
+   </EntityUsage>
+   <EntityUsage
+      Name="Sgamac"
+      Entity="es.sysmap.interflex.model.bdc.Sgamac"
+      Association="es.sysmap.interflex.model.bdc.SgaordtranSgamacFk1Assoc"
+      AssociationEnd="es.sysmap.interflex.model.bdc.SgaordtranSgamacFk1Assoc.Sgamac"
+      SourceUsage="es.sysmap.interflex.model.dmc.SgavordtranMLDAgrup.Sgaordtran"
+      ReadOnly="true"
+      Reference="true" >
+      <DesignTime>
+         <Attr Name="_EntireObjectTable" Value="false" />
+         <Attr Name="_queryClause" Value="false" />
+         <AttrArray Name="_srcAttributes">
+            <Item Value="es.sysmap.interflex.model.bdc.Sgaordtran.Idmac" />
+         </AttrArray>
+         <AttrArray Name="_dstAttributes">
+            <Item Value="es.sysmap.interflex.model.bdc.Sgamac.Idmac" />
+         </AttrArray>
+      </DesignTime>
+   </EntityUsage>
+   <ViewAttribute
+      Name="Idord"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Idord"
+      EntityUsage="Sgaordtran"
+      AliasName="IDORD" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Estado"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Estado"
+      EntityUsage="Sgaordtran"
+      AliasName="ESTADO" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Idmac"
+      IsUnique="true"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Idmac"
+      EntityUsage="Sgaordtran"
+      AliasName="IDMAC" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Idordreubic"
+      PrecisionRule="true"
+      EntityAttrName="Idordreubic"
+      EntityUsage="Sgaordtran"
+      AliasName="IDORDREUBIC" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Seqmld"
+      PrecisionRule="true"
+      EntityAttrName="Seqmld"
+      EntityUsage="Sgaordtran"
+      AliasName="SEQMLD" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Posubipos"
+      PrecisionRule="true"
+      EntityAttrName="Posubipos"
+      EntityUsage="Sgamac"
+      AliasName="POSUBIPOS" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Idmac1"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Idmac"
+      EntityUsage="Sgamac"
+      AliasName="IDMAC1" >
+   </ViewAttribute>
+</ViewObject>

@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<DCContainer
+   id="PanelSgamacPos44PendPesoView1UIModel"
+   xmlns="http://xmlns.oracle.com/adfm/uimodel"
+   version="10.1.2.17.96"
+   Package="es.sysmap.interflex.view"
+   FindMode="false"
+   EnableTokenValidation="true" >
+   <Contents >
+      <DCIterator
+         id="SgamacPos44PendPesoView1Iter"
+         Binds="AppModuleDataControl.SgamacPos44PendPesoView1" >
+      </DCIterator>
+      <DCControl
+         id="Idmac"
+         SubType="DCTextField"
+         IterBinding="SgamacPos44PendPesoView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Idmac" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Descriptipomac"
+         SubType="DCTextField"
+         IterBinding="SgamacPos44PendPesoView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Descriptipomac" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Tara"
+         SubType="DCTextField"
+         IterBinding="SgamacPos44PendPesoView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Tara" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Idartif"
+         SubType="DCTextField"
+         IterBinding="SgamacPos44PendPesoView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Idartif" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Descripart"
+         SubType="DCTextField"
+         IterBinding="SgamacPos44PendPesoView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Descripart" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Idord"
+         SubType="DCTextField"
+         IterBinding="SgamacPos44PendPesoView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Idord" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Uniemb"
+         SubType="DCTextField"
+         IterBinding="SgamacPos44PendPesoView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Uniemb" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Cantot"
+         SubType="DCTextField"
+         IterBinding="SgamacPos44PendPesoView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Cantot" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="PesReal"
+         SubType="DCTextField"
+         IterBinding="SgamacPos44PendPesoView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="PesReal" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="CanPesReal"
+         SubType="DCTextField"
+         IterBinding="SgamacPos44PendPesoView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="CanPesReal" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="CantotUsuari"
+         SubType="DCTextField"
+         IterBinding="SgamacPos44PendPesoView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="CantotUsuari" />
+         </AttrNames>
+      </DCControl>
+   </Contents>
+</DCContainer>

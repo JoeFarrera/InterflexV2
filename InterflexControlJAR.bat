@@ -1,0 +1,3 @@
+@echo off
+@echo engegant el Controlador del SGA...
+C:\"Archivos de programa"\Java\j2re1.4.2_08\bin\java.exe -jar C:\InterflexV2\ControlView\deploy\ControlView.jar

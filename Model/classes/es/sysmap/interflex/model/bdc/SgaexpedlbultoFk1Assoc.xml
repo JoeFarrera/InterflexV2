@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE Association SYSTEM "jbo_03_01.dtd">
+
+<Association
+   Name="SgaexpedlbultoFk1Assoc" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.2.17.96" />
+   </DesignTime>
+   <AssociationEnd
+      Name="Sgaexpedbulto1"
+      Cardinality="1"
+      Source="true"
+      Owner="es.sysmap.interflex.model.bdc.Sgaexpedbulto" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaexpedbulto.Idexped" />
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaexpedbulto.Idbulto" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_minCardinality" Value="1" />
+         <Attr Name="_aggregation" Value="0" />
+         <Attr Name="_isUpdateable" Value="true" />
+         <Attr Name="_finderName" Value="Sgaexpedbulto1" />
+         <Attr Name="_foreignKey" Value="es.sysmap.interflex.model.bdc.Sgaexpedbulto.SgaexpedbultoPk" />
+      </DesignTime>
+   </AssociationEnd>
+   <AssociationEnd
+      Name="Sgaexpedlbulto1"
+      Cardinality="-1"
+      Owner="es.sysmap.interflex.model.bdc.Sgaexpedlbulto" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaexpedlbulto.Idexped" />
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaexpedlbulto.Idbulto" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_aggregation" Value="0" />
+         <Attr Name="_isUpdateable" Value="true" />
+         <Attr Name="_finderName" Value="Sgaexpedlbulto1" />
+         <Attr Name="_foreignKey" Value="es.sysmap.interflex.model.bdc.Sgaexpedlbulto.SgaexpedlbultoFk1" />
+      </DesignTime>
+   </AssociationEnd>
+</Association>

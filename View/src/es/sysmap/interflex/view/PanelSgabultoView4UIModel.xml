@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<DCContainer
+   id="PanelSgabultoView4UIModel"
+   xmlns="http://xmlns.oracle.com/adfm/uimodel"
+   version="10.1.2.17.96"
+   Package="es.sysmap.interflex.view"
+   FindMode="false"
+   EnableTokenValidation="true" >
+   <Contents >
+      <DCIterator
+         id="SgabultoView4Iter"
+         Binds="AppModuleDataControl.SgabultoView4" >
+      </DCIterator>
+      <DCIterator
+         id="SgatipbultoViewIter"
+         Binds="AppModuleDataControl.SgatipobultoView1"
+         RangeSize="10" >
+      </DCIterator>
+      <DCControl
+         id="SgabultoView4"
+         DefClass="oracle.jbo.uicli.jui.JUTableDef"
+         SubType="DCTable"
+         BindingClass="oracle.jbo.uicli.jui.JUTableBinding"
+         IterBinding="SgabultoView4Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Idbulto" />
+            <Item Value="Peso" />
+            <Item Value="Detalles" />
+            <Item Value="Idtipobulto" />
+            <Item Value="Largo" />
+            <Item Value="Ancho" />
+            <Item Value="Alto" />
+            <Item Value="Pesocont" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="DCComboBox"
+         DefClass="oracle.jbo.uicli.jui.JUComboBoxDef"
+         SubType="DCComboBox"
+         BindingClass="oracle.jbo.uicli.jui.JUComboBoxBinding"
+         IterBinding="SgabultoView4Iter"
+         DTClass="oracle.adf.dt.objects.JUDTCtrlListLOV"
+         ApplyValidation="false"
+         isDynamic="false"
+         ListOperMode="0"
+         ListIter="SgatipbultoViewIter" >
+         <AttrNames>
+            <Item Value="Idtipobulto" />
+            <Item Value="Largo" />
+            <Item Value="Ancho" />
+            <Item Value="Alto" />
+            <Item Value="Pesocont" />
+         </AttrNames>
+         <ListAttrNames>
+            <Item Value="Idtip" />
+            <Item Value="Largo" />
+            <Item Value="Ancho" />
+            <Item Value="Alto" />
+            <Item Value="Peso" />
+         </ListAttrNames>
+         <ListDisplayAttrNames>
+            <Item Value="Idtip" />
+            <Item Value="Canlin" />
+         </ListDisplayAttrNames>
+      </DCControl>
+   </Contents>
+</DCContainer>

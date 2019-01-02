@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<DCContainer
+   id="PanelSgavmovscontenidorsView1UIModel"
+   xmlns="http://xmlns.oracle.com/adfm/uimodel"
+   version="10.1.2.17.96"
+   Package="es.sysmap.interflex.view"
+   FindMode="false"
+   EnableTokenValidation="true" >
+   <Contents >
+      <DCIterator
+         id="SgavmovscontenidorsView1Iter"
+         Binds="AppModuleDataControl.SgavmovscontenidorsView1" >
+      </DCIterator>
+      <DCControl
+         id="SgavmovscontenidorsView1"
+         DefClass="oracle.jbo.uicli.jui.JUTableDef"
+         SubType="DCTable"
+         IterBinding="SgavmovscontenidorsView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Data" />
+            <Item Value="Tipmov" />
+            <Item Value="Origen" />
+            <Item Value="Destino" />
+            <Item Value="Desfin" />
+            <Item Value="Coderror" />
+            <Item Value="Estado" />
+            <Item Value="Estadofintxt" />
+            <Item Value="Moviments" />
+         </AttrNames>
+      </DCControl>
+   </Contents>
+</DCContainer>

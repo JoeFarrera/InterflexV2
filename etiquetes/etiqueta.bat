@@ -1,0 +1,1 @@
+C:\jdev1012-1\jdk\bin\javaw.exe -ojvm -classpath h:\Etiquetes\classes;\jdk\lib\comm.jar;C:\jdev1012-1\jdev\lib\jdev-rt.jar;h:\SgaLib\classes;h:\sysmap\comm\comm.jar;h:\sysmap\ChainsawV2\log4j-1.3alpha.jar es.sysmap.interflex.etiquetes.EtiquetaPicking 

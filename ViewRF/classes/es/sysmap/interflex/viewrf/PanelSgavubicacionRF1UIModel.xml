@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<DCContainer
+   id="PanelSgavubicacionRF1UIModel"
+   xmlns="http://xmlns.oracle.com/adfm/uimodel"
+   version="10.1.2.17.96"
+   Package="es.sysmap.interflex.viewrf"
+   FindMode="false"
+   EnableTokenValidation="true" >
+   <Contents >
+      <DCIterator
+         id="Sgavpasillomig1Iterator"
+         Binds="AppModuleDataControl1.Sgavpasillomig1"
+         RangeSize="10" >
+      </DCIterator>
+      <DCIterator
+         id="Sgavpasillomig1Iterator1"
+         Binds="AppModuleDataControl1.Sgavpasillomig1"
+         RangeSize="10" >
+      </DCIterator>
+      <DCIterator
+         id="Sgavpasillomig1Iterator2"
+         Binds="AppModuleDataControl1.Sgavpasillomig1" >
+      </DCIterator>
+      <DCIterator
+         id="SgavubicacionRF1Iter"
+         Binds="AppModuleDataControl1.SgavubicacionRF1" >
+      </DCIterator>
+      <DCIterator
+         id="SgavubicacionRF1Iterator"
+         Binds="AppModuleDataControl1.SgavubicacionRF1" >
+      </DCIterator>
+      <DCControl
+         id="SgavubicacionRF1"
+         DefClass="oracle.jbo.uicli.jui.JUTableDef"
+         SubType="DCTable"
+         BindingClass="oracle.jbo.uicli.jui.JUTableBinding"
+         IterBinding="SgavubicacionRF1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Ubicació" />
+            <Item Value="Ocupació" />
+            <Item Value="Article" />
+            <Item Value="Passadis" />
+            <Item Value="Columna" />
+            <Item Value="Nivel" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Pasillo"
+         DefClass="oracle.jbo.uicli.jui.JUComboBoxDef"
+         SubType="DCComboBox"
+         BindingClass="oracle.jbo.uicli.jui.JUComboBoxBinding"
+         IterBinding="Sgavpasillomig1Iterator2"
+         ApplyValidation="false"
+         isDynamic="false"
+         ListOperMode="1"
+         StaticList="true"
+         Editable="false" >
+         <AttrNames>
+            <Item Value="Pasillo" />
+         </AttrNames>
+         <ValueList>
+            <Item Value="1" />
+            <Item Value="2" />
+            <Item Value="3" />
+            <Item Value="4" />
+            <Item Value="5" />
+            <Item Value="6" />
+            <Item Value="7" />
+            <Item Value="8" />
+            <Item Value="9" />
+         </ValueList>
+      </DCControl>
+   </Contents>
+</DCContainer>

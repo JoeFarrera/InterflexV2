@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE ViewLink SYSTEM "jbo_03_01.dtd">
+
+<ViewLink
+   Name="SgacdocSgaochoaViewLink"
+   Where="(:1 = Sgaochoa.COD_POSTAL)AND (331 = Sgaochoa.COD_POSTAL)
+AND (Sgaochoa.COD_PAIS = &#39;ES&#39;)" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.2.17.96" />
+   </DesignTime>
+   <ViewLinkDefEnd
+      Name="SgacdocView"
+      Cardinality="1"
+      Owner="es.sysmap.interflex.model.dmc.SgacdocView"
+      Source="true" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.dmc.SgacdocView.Codpostal" />
+         <Item Value="es.sysmap.interflex.model.dmc.SgacdocView.Transp" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_isUpdateable" Value="true" />
+         <Attr Name="_finderName" Value="SgacdocView" />
+         <Attr Name="_accessor" Value="false" />
+      </DesignTime>
+   </ViewLinkDefEnd>
+   <ViewLinkDefEnd
+      Name="SgaochoaView"
+      Cardinality="-1"
+      Owner="es.sysmap.interflex.model.dmc.SgaochoaView" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.dmc.SgaochoaView.CodPostal" />
+         <Item Value="es.sysmap.interflex.model.dmc.SgaochoaView.CodPostal" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_isUpdateable" Value="true" />
+         <Attr Name="_finderName" Value="SgaochoaView" />
+         <Attr Name="_accessor" Value="true" />
+      </DesignTime>
+   </ViewLinkDefEnd>
+</ViewLink>

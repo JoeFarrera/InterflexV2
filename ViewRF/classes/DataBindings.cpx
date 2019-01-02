@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<JboProject
+   id="DataBindings"
+   xmlns="http://xmlns.oracle.com/adfm/application"
+   version="10.1.2.17.96"
+   SeparateXMLFiles="false"
+   Package=""
+   ClientType="JClient" >
+   <Contents >
+      <DataControl
+         id="AppModuleDataControl1"
+         SubType="DCBC4J"
+         SupportsFindMode="true"
+         SupportsTransactions="true"
+         Package="es.sysmap.interflex.model.dmc"
+         FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl"
+         Configuration="AppModuleLocal" >
+      </DataControl>
+      <Containee
+         id="PanelSgavubicacionRF1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.viewrf.PanelSgavubicacionRF1UIModel" >
+      </Containee>
+      <Containee
+         id="MDPanelSgavubicacionRFFilter1SgavubicacionRF1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.viewrf.MDPanelSgavubicacionRFFilter1SgavubicacionRF1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavpasillomig1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.viewrf.PanelSgavpasillomig1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgaEntradaManualRF1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.viewrf.PanelSgaEntradaManualRF1UIModel" >
+      </Containee>
+      <Containee
+         id="PanelSgavubicacionRFFilter1UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.viewrf.PanelSgavubicacionRFFilter1UIModel" >
+      </Containee>
+   </Contents>
+</JboProject>

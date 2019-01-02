@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report Type="TabularSheet" MetaTemplate="Interflex Report" Prompting="true">
+  <Version>7.0</Version>
+  <onLoad>
+    <![CDATA[SubTitulo.text = "MOVIMENTS DE L'OPERARI " + parameter.CREATEDBY + " ENTRE " +
+	formatDate(parameter.FECINI, 'dd/MM/yyyy HH:mm') + " I " + formatDate(parameter.FECFIN, 'dd/MM/yyyy HH:mm');
+]]>
+  </onLoad>
+  <ReportProperty Name="singlePage">
+    <![CDATA[false]]>
+  </ReportProperty>
+  <ReportProperty Name="TextMode">
+    <![CDATA[false]]>
+  </ReportProperty>
+  <ReportProperty Name="date.format">
+    <![CDATA[dd/MM/yyyy HH]]>
+  </ReportProperty>
+  <ReportProperty Name="saveParameters">
+    <![CDATA[false]]>
+  </ReportProperty>
+  <ReportProperty Name="edit.layout">
+    <![CDATA[false]]>
+  </ReportProperty>
+  <ReportProperty Name="live.edit">
+    <![CDATA[false]]>
+  </ReportProperty>
+  <ReportProperty Name="report.title">
+    <![CDATA[Informe del SGA Interflex]]>
+  </ReportProperty>
+  <ReportProperty Name="sortOnHeader">
+    <![CDATA[false]]>
+  </ReportProperty>
+  <ReportProperty Name="report.modified">
+    <![CDATA[2005-10-18 12:01:42]]>
+  </ReportProperty>
+  <ReportProperty Name="report.created">
+    <![CDATA[2005-09-28 12:15:48]]>
+  </ReportProperty>
+  <Parameters>
+    <variable name="CREATEDBY" type="user" prompt="true" multipleSelection="false" customization="false" label="Usuari" source="user defined" xtype="string">
+      <CREATEDBY name="CREATEDBY" type="string" null="false"><![CDATA[jose]]></CREATEDBY>
+    </variable>
+    <variable name="FECINI" type="user" prompt="true" multipleSelection="false" customization="false" label="FECINI" source="user defined" xtype="timeInstant">
+      <FECINI name="FECINI" type="timeInstant" null="false"></FECINI>
+    </variable>
+    <variable name="FECFIN" type="user" prompt="true" multipleSelection="false" customization="false" label="FECFIN" source="user defined" xtype="timeInstant">
+      <FECFIN name="FECFIN" type="timeInstant" null="false"></FECFIN>
+    </variable>
+  </Parameters>
+  <ParameterSheets>
+  </ParameterSheets>
+  <RunningTotals>
+  </RunningTotals>
+  <dataViews>
+  </dataViews>
+  <DataFormat Class="class java.util.Date" FormatClass="java.text.SimpleDateFormat">
+    <![CDATA[dd/MM/yyyy HH]]>
+  </DataFormat>
+  <DataFormat Class="class java.sql.Date" FormatClass="java.text.SimpleDateFormat">
+    <![CDATA[dd/MM/yyyy HH]]>
+  </DataFormat>
+  <EditRegionElement ID="Title_Region" Visible="true">
+    <TextElement ID="MetaReport_Text4" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+      <![CDATA[Informe SGA Interflex]]>
+    </TextElement>
+  </EditRegionElement>
+  <EditRegionElement ID="MetaTemplate_EditableRegion6" Visible="true">
+    <TextElement ID="SubTitulo" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+      <![CDATA[<Sub Titulo del informe>]]>
+    </TextElement>
+  </EditRegionElement>
+  <EditRegionElement ID="MetaReport_EditRegion2" Visible="true">
+    <ImageElement ID="MetaTemplate_Image6" PathType="1" Embedded="true" Layout="0" Wrapping="3" Rotation="0" Anchor="0.5,0.02777778" Margin="1,1,1,1">
+      <![CDATA[W:\users\projects\Interflex\Reports\interflexlogo.png]]>
+      <Image Width="124" Height="60">
+        <![CDATA[GhVOj#BWs7)Wp_enlcBk!$\+-=?mu7U%]9I,/"1d3msi/UaSq=EIe5'/@b%u\@@c"4<,IXal+AHZA:gs
+C"*Cr67=%>J*3;f)=MotM.[?Tn&7BOI-9?J1O&9Bqp"#1jsAF&dIc_)Y>U]>?)VPjXt!$d3d:!c;l353
+Uma/V;Q3Qj<0V?Dm+@Hlh4R%9om?THd&gM2Q#Dq+'e8)j<5)A2I&g*>p0hVP1rY\p<5*c!)TC+CV8K=0
+C8"gGhFLFlCn[W&p')GhgIT54IO9Ab[#l+u._rt(Yk*P^N&5^>R>1Gn;Vs+nhNiJ&>ZX]98o%"rf=3t2
+jnj=Clh]I]]A8#V&el/ct(7I#.6?0?5oWOO'3jm4%)$peaI_nC8)G"t4*HQjhmY*@!l\E;E&(pD9bIc*
+km]uG26*BN8:80jOT#].VbOVhkA-^N<Dk*&UkbOEs*V@Z;)pK75iFD)J0HHPi)P>Rirl;L&!ps0+gXJJ
+u#8h1"4=_HOLQ*o+ZI>BE0J9[L7opS21#-0g[i%[p)6PZ("OaDNG"PE3e$1K*3k3!mT<AZ2j!'"3`E?p
+.Mu\a+C8@]T9GBSE7.\G<C!8gUN?2coQo;fLIuZ84Wcu^pG(G@]=DOad^Y@u-*\1eB[Suls)^XmZd@S,
+,GT2:09GCfcN<,73kQ'N&g\$O79QrB'f@,QT-JBGPV@*WGPRgp1bkSinNgC_<jKeBX%PGY[OrT^p07\6
+E`Bm4pR]0Xq'1LD,;O*+X$?g1+TR1k\e8%]Sq%+R#LDd%=Un66H""e'Wi,=NIZltb"Rb;j&+!!UPgR'C
+jWg3_1)O54O==lT!'PX;O(b;/6\'hsr:7!"+`toVs(YEjK4223\Sb2EaP>:QVUlEPK1bRM#m&Z?@qHL^
+iNfC)sAT_gj)<d%i7N1"$8425f;3t=0-Mr+p5%j;3M/S$\'Qo?kdde7k3qn?!fiu']%qdV'diJ'+KcQ@
+n0!6)4P]!D&j-fic@q,"I?t7,>r$It86e/7$.H1kaC(m;=-M7gIZ^R"-9^cc)-(SrpPn)Bo8EM<"HO&R
+i%CS4:-,](35:q]^;k1#gMa<lr>ipC8>80=C>8YFjdJ/,@&JD%=WhDJ"WOe57#&?j[h\rM";+E@9b`oE
+*a__OSE"J@MaDlZL!FVhaKB5'Aq1+*0NA`R3X=Kuc!?0C$8s4S6ihs(UT'&j*e"oIrCW:KD6ONInPFa$
+S^)>6mP$(qbSWA?*j6\B%2H,])X3Qk'&`6WiN[FeJ6E(7pIWZFd2a*8eCW:9B4&66+g$$XF?CmAETZP*
+qlop\Is5I6Mm@"sXpf8o/=!uVG>_\[8Kk(+-)jb>4KoNN<hDYpJ1"/Hh/*U#nr/C):jgDIAY*C%U]4@5
+J;!BT>N)C&/EQiIVl-EF7Gc\#fj'R2'$sFPdAYKQ&$KaX[&Ml4m/=l=$_2]<5$dN&L?<Kdg1q8<<jhss
+j2R?MkAKq;bDe>Z`#'t#b"Afle:f!eH<8F\%VlK5&^'t8KLWO()bUr*j^0Y1!7O&FTB![n4CUI>Kh]"*
+^9;1No!m`eDNDKKohO^jsB\_m/IfDY"Ld%Obgb85U]&.D75LoZ/)LP>J0S,CNP:8@HQ(K;)G4""*k0+^
+7&)b*Hp$2+>[VadIq=Ebu/M2s:%j+PAVj"jkl77=SP*.$X6^u.!2Jh$]lg<TET@ZY1:T)F\9ZkGtO?e9
+4L(3r73csRN#7_`H6\c0!dA'2l%Ndl.#mgpFDV[>\%hJ]ns'Qi5g9n!&G'E<*_<[(%4^.RFSTir\qE<i
+ticmQKZa(#_.k?O4%3*=_hRn+iD[U^FHga+Cs4FSdH%&L`%di)aQRZ%;kVITrr1UkL^%0;r4TGBSh^?a
+'hm/(82Jq.no4umV`P95BV)R:ZPQ,MeR=>)(7sat"+iiW`O6Oh@^Q`aDN^Q4e:I"g=G44+jB.4rG^hmG
+m[rqdk$iP]4.T5m#bmSr\C=T?3SND%+*G$1N*^-7QgfuH>W4RHQE`qk\WDbqJmC1u=Go1TsRl9pgIGV;
+C:YEL2qtBPBS'Asn^Lr-<Mf3Y-k"VE`+!30-)Du9Jq^9,0K*MpcGOOD\o#i\-5UK;L.6g%hU8+K_EokF
+V0>-cUQ[b]96p$KMZsTY%(#Jp#5Q&=gDr%uNlYkRg;>,)-o]a#k5h2l7\S]4PY=(^H6GG$*F66/!BB@:
+$DZ)pajia!WFka<>a2]>9^.3!U/:T=K'.6QEH[O(e6O/K*B[@lnf:thHa[ofFSh-KmD]UPR5CU8h_g#%
+e2e9u@q9I@!b-DpCC=(eKGBk(u?#fh31M;_q`de'lA3Tc%Hpc4IAj\pQl,J]%4R_"3CLjhV]s\7G/(.X
+?]iD!N2BFnHk_K$-li3\sKT>e#(ea(VYPDsY+1rC&qCQ5hkK]V\n&gnGZte,@q&\kRYNKqHr:k8\SWoB
+"p2/cT^kRb(Gjo+MkJ>/pK]ddUd7<j!`ufB<*_/Ud'[5T@V;?p>KO!M\F,LecEmm+R^]$9t%pc<eU!ol
+5j+*Z;+$mZ7+2g.LI/,O_.9!+jpHX'Lh7nH355F7Q\,P@\H_0u5?G5'PCZmF1"(1]HQRl8`qt]3++7_P
+hA3pJD&$WN=Siku`cim#^[W(1l\+X"6CamQ5Za2)/.*,,+cCI$uUi"..?@;93?5NMH*V$rN+1Uik"?d:
+k(GUM^N-V:1a,]\9P:'.lH#)!4nbPDWD;/*mrt-+dkrrarr/@a^\&r`=2qTB_N5ku%"1]s*_%1;/U^>A
+.M2@AnLL*LN1"MK&f4U_(->g)e^/L&7fKNja`f8mf3YThjXi,5Qm+Kmh="d_Ndn`2n4rX8tWDY$VbMgd
+tX&mVaN5:QA\pF$!f0PKe!9Ybc:4b]aKY$%<2#%GfSE!c!7EYT=*BM]P54laa4aRNqfm`nrq'=k%ZQ^D
+MEeO<BLhXU#mQ7Ba*=`>Kh4XedpD<ZJ^7E^0_>@TNF@l>9T!GS3b80odJHH,mfe<+g_A@lAJh-$hfFF^
+0#7nDr?b:K`Cj4I3=^Kj9:(fSpZ(SQe8m>5Yr!V#R;b)iiHk5blKMM/.^>W"H,fZuB<^Nl2jp_q:'+=%
+_V%3_Xj"\Koi(9/eKnW+o"IIB%2<2>9G6$"M@Qk$?=!Y^BU5eQp\+;`7@,-[Q$5G&;p$:5+9F?.)$,le
+Zs'2g<"ckYu*Wa2P+X&!a-H3KF5Ce,YVaZLZ]T.gF@&nt[maJ'E77BYe4sOB4qXD57GO*h^AcKLErd-,
+#\hs/&GOOB?o9F<jd,?0S]QfRn"6Ee.ace)`q1oV-gn*[HbJWMXGOM++A/9#)Q59JPmG#,+jscO3Lp8<
++p&Pfg"2);t`W2T-<.]N81M0=cFrOp*Z,OeH,Gh!I3!0tA#5CW:4ls^cpkB2C5JeHL^B]1Ar^7fLYB'U
+VnJCc2rUsHES2"MC+oQT\oP(J[nGP%iPWfQ16Q,=4;*!eDN#FR2f7e^7E]aGQRdq?cNFDS?[niGLM;&[
+<c_uc45KKM,GD/3!]AhKDmMBqoaG4)*[VV@Z561MR*-)Qs(-WtcE/jW\kl[S3Lc*N`J2kDMD#[`0NHbK
+4)1YtM=:4R8niZ)^_*.A.IGu:oVkQ?9*4_G88%Z:?-n'Lgd>lWrLi3W-!bI2>E%UpEr1`rL=CpC'!W<\
+XoN%!"]ROm>0TS/3X^#@4cBjH4!-N]`L!$lC"9&GSAEqaJbCO^\6lri<MUO@2hnBQpB37f2]Qg[alnT^
+/0jfXB1rOsI>.#i'I9#C`2hAIHhg"SE\[5b\!e,eu$fE#?3WeFZEC;o9@Pq/Xq[_W:[;"*Ea"EHZE%1Q
+^!c]CE)DR.jSknJ&560R[q^]H(oJG^`]^^r.PY[i2Pra'QoM!k)<5*j1+K!"7`4@Ah2Y=?&h+F89#'l!
+ZA&""D%B-)lNS)f<`\&]*b`4\]bgh;Tn0rIgi*+cG!;59.4`?pa-f=DLiIbO0$o*LG]o)dlbTGg4c!n?
+sF5qjbV&Tl'L$cn:/*Qe9_rp_^I1@-M%o]W93PMAAI3k8%`>k70a?KHW\T=ij5XpJ+KtjIkaWeHf5CYk
+hf7e(]HH`^a&+s$$%K?RscrfnZ4?(8Der6k'<Rh#Ak6^>qls[`CG2L#^q7[Wc.JO%d3!USXi"r\X\/B'
+$(_[b8hY%\bo4ou3&_pl5\U4)=eA$K_^8?ErlqtQG"a#CL5Pha;:4[;:*JL(Nqq)tsH,REGXJ(/?`(E@
+'$iLLl)YP%i.-N%m+)I7HaK[u*kMRHZo-!ek++.DY:tSA?qm"2$)oq\T?nE&_pY'DdEOc//pL:<^p:+K
+p.ujUS`1C)4Y@>asil$]/:W@hsn:u.gV+[0G[<e?qCV_U47uW-[0IH;&0M\3On%["hnRJ5.fs6!c)8Am
+rY9_*gp'D&=$GHN,jn/hB.H`O]Rpg*+MnqX/UbRl`c\4(U?Q+4qG32rl(7"?dq>3ZCDJS5.K+mU4KPlN
+/!<(9SEFUpmB;6I>YYPIH"SZAR&q5Hdg0Bn]'e8)j<5)A2I&hXqI/j3@<r`3PmfSrH5f.o7BC)@ej8j<
+1icbq`8j:13mf!IIOPAR
+]]>
+      </Image>
+    </ImageElement>
+  </EditRegionElement>
+  <EditRegionElement ID="Content_Region" Visible="true">
+    <TableElement ID="SgaTabla" TableWidth="0.0" AdhocEnabled="true" Layout="1" TableAdvance="1" MaxColWidth="0.0" OrphanControl="false" FillPage="false" KeepSpanTogether="false" Padding="0,1,0,1" Style="Grid8" EmbedWidth="false" Embedded="true">
+      <property>
+        <name><![CDATA[grow]]></name>
+        <value><![CDATA[true]]></value>
+      </property>
+      <Style RowBorderC="true" ColBorderC="true" RowBorder="true" ColBorder="true" Insets="false" Alignment="false" Font="true" LineWrap="false" Foreground="true" Background="true" FirstRow="true" FirstCol="true" LastRow="true" LastCol="true"/>
+      <tableDataAttr>
+        <tableFormatAttr>
+          <aTableFormat>
+            <tableDataPath>
+              <level>-1</level>
+              <index>0</index>
+              <col>true</col>
+              <row>false</row>
+              <type>8192</type>
+              <dtype>string</dtype>
+              <path>
+                <aPath><![CDATA[DATA/HORA]]></aPath>
+              </path>
+            </tableDataPath>
+            <tableFormat  format="DateFormat" format_spec="dd/MM/yy HH" suppressIfZero="false" suppressIfDuplicate="false"/>
+          </aTableFormat>
+        </tableFormatAttr>
+      </tableDataAttr>
+      <bindingAttr type="3" class="BindingAttr">
+        <filter class="SourceAttr" type="0" source="sgavmovsusuari" prefix="interflex">
+        </filter>
+        <filter class="ConditionAttr" >
+          <conditions>
+            <condition type="timeInstant" negated="false" operation="5" equal="false" level="0">
+              <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="CREATEDON" visible="true" dataType="timeInstant" order="0" ></dataRef>
+              <condition_data isvariable="true" name="FECINI"/>
+              <condition_data isvariable="true" name="FECFIN"/>
+            </condition>
+            <junction junction="0" level="0"/>
+            <condition type="string" negated="false" operation="1" equal="false" level="0">
+              <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="CREATEDBY" visible="true" dataType="string" order="0" ></dataRef>
+              <condition_data isvariable="true" name="CREATEDBY"/>
+            </condition>
+          </conditions>
+        </filter>
+        <filter class="GroupAttr" sorted="false" >
+          <aggregates>
+            <dataRef class="inetsoft.report.internal.binding.AggregateField" formula ="Count&lt;0&gt;" >
+              <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="QUANTITAT" visible="true" dataType="double" order="0" ></dataRef>
+            </dataRef>
+          </aggregates>
+          <groups>
+            <group summarize="true">
+              <dataRef class="inetsoft.report.internal.binding.CompositeField" attribute="" visible="true" dataType="string" order="0" >
+                <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="DATA/HORA" visible="true" dataType="timeInstant" order="0" ></dataRef>
+              </dataRef>
+              <groupSort sort="1" interval="1.0" option="8" others="1">
+                <otherLabel><![CDATA[Others]]></otherLabel>
+              </groupSort>
+              <topn class="TopNInfo" topN="0" topNReverse="false" summaryColumn="-1" >
+              </topn>
+            </group>
+            <group summarize="true">
+              <dataRef class="inetsoft.report.internal.binding.CompositeField" attribute="" visible="true" dataType="string" order="0" >
+                <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="QUART" visible="true" dataType="integer" order="0" ></dataRef>
+              </dataRef>
+              <groupSort sort="1" interval="1.0" option="1" others="1">
+                <otherLabel><![CDATA[Others]]></otherLabel>
+              </groupSort>
+              <topn class="TopNInfo" topN="0" topNReverse="false" summaryColumn="-1" >
+              </topn>
+            </group>
+          </groups>
+        </filter>
+        <filter class="ColumnSelectionAttr" >
+          <ColumnSelection>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="DATA/HORA" visible="true" dataType="timeInstant" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="QUART" visible="true" dataType="integer" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="ARTICLE" visible="true" dataType="string" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="QUANTITAT" visible="true" dataType="double" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="TIP.DOC." visible="true" dataType="string" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="NÚM.DOC." visible="true" dataType="double" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="TIP.MOV." visible="true" dataType="string" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="ORIGEN/DESTI" visible="true" dataType="string" order="0" ></dataRef>
+          </ColumnSelection>
+          <ColumnSelection>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="IDMOV" visible="true" dataType="double" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="TIPMOV" visible="true" dataType="string" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="IDMAC" visible="true" dataType="string" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="IDART" visible="true" dataType="string" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="CANINI" visible="true" dataType="double" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="CANFIN" visible="true" dataType="double" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="QUANTITAT" visible="true" dataType="double" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="IDBULTO" visible="true" dataType="double" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="IDDOC" visible="true" dataType="double" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="IDLIN" visible="true" dataType="double" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="IDTIPDOC" visible="true" dataType="string" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="TIP.DOC." visible="true" dataType="string" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="NÚM.DOC." visible="true" dataType="double" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="PESINI" visible="true" dataType="double" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="PESFIN" visible="true" dataType="double" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="PESMOV" visible="true" dataType="double" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="UBIPOS" visible="true" dataType="string" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="OBSERV" visible="true" dataType="string" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="CREATEDBY" visible="true" dataType="string" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="MODIFIEDBY" visible="true" dataType="string" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="CREATEDON" visible="true" dataType="timeInstant" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="MODIFIEDON" visible="true" dataType="date" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="TIP.MOV." visible="true" dataType="string" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="ARTICLE" visible="true" dataType="string" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="DESCRIP" visible="true" dataType="string" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="ORIGEN/DESTI" visible="true" dataType="string" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="INTEGRA" visible="true" dataType="string" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="TALBARAN" visible="true" dataType="string" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="NALBARAN" visible="true" dataType="double" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="DATA/HORA" visible="true" dataType="timeInstant" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="QUART" visible="true" dataType="integer" order="0" ></dataRef>
+          </ColumnSelection>
+          <allRows>
+          </allRows>
+        </filter>
+        <bindingOption class="TableOption" showHeader="true" showGroupCols="false" inplace="true" breakAfter="false" grandTotal="true" summaryOnly="false" mergeGroup="false" hierarchy="false" grandLabel="Total Moviments" summaryLabel="Moviments">
+        </bindingOption>
+      </bindingAttr>
+      <Table Rows="3" Cols="8" HeaderRow="1" HeaderCol="0" TrailerRow="0" TrailerCol="0">
+        <TR>
+          <TD Type="string"><![CDATA[DATA/HORA]]></TD>
+          <TD Type="string"><![CDATA[QUART]]></TD>
+          <TD Type="string"><![CDATA[ARTICLE]]></TD>
+          <TD Type="string"><![CDATA[QUANTITAT]]></TD>
+          <TD Type="string"><![CDATA[TIP.DOC.]]></TD>
+          <TD Type="string"><![CDATA[NÚM.DOC.]]></TD>
+          <TD Type="string"><![CDATA[TIP.MOV.]]></TD>
+          <TD Type="string"><![CDATA[ORIGEN/DESTI]]></TD>
+        </TR>
+        <TR>
+          <TD Type="timeInstant"><![CDATA[2005-10-18 12:01:42]]></TD>
+          <TD Type="integer"><![CDATA[99999]]></TD>
+          <TD Type="string"><![CDATA[XXXXXXX]]></TD>
+          <TD Type="double"><![CDATA[99999.99]]></TD>
+          <TD Type="string"><![CDATA[XXXXXXXX]]></TD>
+          <TD Type="double"><![CDATA[99999.99]]></TD>
+          <TD Type="string"><![CDATA[XXXXXXXX]]></TD>
+          <TD Type="string"><![CDATA[XXXXXXXX]]></TD>
+        </TR>
+        <TR>
+          <TD Type="timeInstant"><![CDATA[2005-10-18 12:01:42]]></TD>
+          <TD Type="integer"><![CDATA[99999]]></TD>
+          <TD Type="string"><![CDATA[XXXXXXX]]></TD>
+          <TD Type="double"><![CDATA[99999.99]]></TD>
+          <TD Type="string"><![CDATA[XXXXXXXX]]></TD>
+          <TD Type="double"><![CDATA[99999.99]]></TD>
+          <TD Type="string"><![CDATA[XXXXXXXX]]></TD>
+          <TD Type="string"><![CDATA[XXXXXXXX]]></TD>
+        </TR>
+      </Table>
+    </TableElement>
+    <SpaceElement ID="Space1" Alignment="0" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-PLAIN-10" Foreground="-16777216" Space="6">
+    </SpaceElement>
+    <ChartElement ID="Chart1" Alignment="65" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-PLAIN-10" Foreground="-16777216" cssClass="" AdhocEnabled="true" Embedded="true"
+     Layout="0" Wrapping="3" Rotation="0" Margin="1,1,1,1">
+      <ChartDescriptor XAxisFormatType="SimpleDateFMT" XAxisFormat="dd/MM/yy HH" PointStyle="900,901,902,903,904,905,906,907" UniquePointStyles="false" LineWidth="1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0" FirstDatasetOfSecondaryAxis="-1" VerticalGridStyle="0" VerticalGridColor="-16777216" LogarithmicXScale="false" LogarithmicYScale="false" LogarithmicZScale="false" SecondaryLogarithmicYScale="false" LegendBorder="4097" BackgroundPlotOnly="false" SecondaryYTitle="" Trendlines="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0" PointSize="6.0" LeaderLineUsed="false" PieExploded="42" XAxisTicked="true" HideXLabels="false" HideOverlappedXLabels="true" HideYLabels="false" HideSecondaryYLabels="false" YAxisTicked="true" XAxisLabelBottom="true" GroupBarGap="0" Y2AxisTicked="true" XLabelRotation="0.0" XTitleRotation="0.0" YLabelRotation="0.0" YTitleRotation="0.0" SecondaryYLabelRotation="0.0" SecondaryYTitleRotation="0.0" XAxisLeftGap="2.0" XAxisRightGap="0.0" PieBorderLineStyle="0" ShowPieLabels="true" PieBorderColor="-16777216" ValueLabelOffset="3" BarBorder="false" MaxBarWidth="50" PlotAreaBorder="false" ShowPercentage="false">
+      </ChartDescriptor>
+      <bindingAttr type="3" class="BindingAttr">
+        <filter class="SourceAttr" type="0" source="sgavmovsusuari" prefix="interflex">
+        </filter>
+        <filter class="ConditionAttr" >
+          <conditions>
+            <condition type="timeInstant" negated="false" operation="5" equal="false" level="0">
+              <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="CREATEDON" visible="true" dataType="timeInstant" order="0" ></dataRef>
+              <condition_data isvariable="true" name="FECINI"/>
+              <condition_data isvariable="true" name="FECFIN"/>
+            </condition>
+            <junction junction="0" level="0"/>
+            <condition type="string" negated="false" operation="1" equal="false" level="0">
+              <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="CREATEDBY" visible="true" dataType="string" order="0" ></dataRef>
+              <condition_data isvariable="true" name="CREATEDBY"/>
+            </condition>
+          </conditions>
+        </filter>
+        <filter class="CrosstabAttr" supRowGrandTotal="true" supColGrandTotal="true" supRowSubtotal="true" supColSubtotal="true">
+          <aggregates>
+            <dataRef class="inetsoft.report.internal.binding.AggregateField" formula ="Count&lt;0&gt;" >
+              <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="QUANTITAT" visible="true" dataType="double" order="0" ></dataRef>
+            </dataRef>
+          </aggregates>
+          <rows>
+            <header suppressGroupTotal="true">
+              <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="QUART" visible="true" dataType="integer" order="0" ></dataRef>
+              <groupSort sort="1" interval="1.0" option="1" others="1">
+                <otherLabel><![CDATA[Others]]></otherLabel>
+              </groupSort>
+              <topn class="TopNInfo" topN="0" topNReverse="false" summaryColumn="-1" >
+              </topn>
+            </header>
+          </rows>
+          <cols>
+            <header suppressGroupTotal="true">
+              <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="DATA/HORA" visible="true" dataType="timeInstant" order="0" ></dataRef>
+              <groupSort sort="1" interval="1.0" option="8" others="1">
+                <otherLabel><![CDATA[Others]]></otherLabel>
+              </groupSort>
+              <topn class="TopNInfo" topN="0" topNReverse="false" summaryColumn="-1" >
+              </topn>
+            </header>
+          </cols>
+        </filter>
+        <filter class="ColumnSelectionAttr" >
+          <ColumnSelection>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="QUART" visible="true" dataType="integer" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="DATA/HORA" visible="true" dataType="timeInstant" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="QUANTITAT" visible="true" dataType="double" order="0" ></dataRef>
+          </ColumnSelection>
+          <ColumnSelection>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="IDMOV" visible="true" dataType="double" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="TIPMOV" visible="true" dataType="string" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="IDMAC" visible="true" dataType="string" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="IDART" visible="true" dataType="string" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="CANINI" visible="true" dataType="double" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="CANFIN" visible="true" dataType="double" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="QUANTITAT" visible="true" dataType="double" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="IDBULTO" visible="true" dataType="double" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="IDDOC" visible="true" dataType="double" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="IDLIN" visible="true" dataType="double" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="IDTIPDOC" visible="true" dataType="string" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="TIP.DOC." visible="true" dataType="string" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="NÚM.DOC." visible="true" dataType="double" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="PESINI" visible="true" dataType="double" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="PESFIN" visible="true" dataType="double" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="PESMOV" visible="true" dataType="double" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="UBIPOS" visible="true" dataType="string" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="OBSERV" visible="true" dataType="string" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="CREATEDBY" visible="true" dataType="string" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="MODIFIEDBY" visible="true" dataType="string" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="CREATEDON" visible="true" dataType="timeInstant" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="MODIFIEDON" visible="true" dataType="date" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="TIP.MOV." visible="true" dataType="string" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="ARTICLE" visible="true" dataType="string" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="DESCRIP" visible="true" dataType="string" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="ORIGEN/DESTI" visible="true" dataType="string" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="INTEGRA" visible="true" dataType="string" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="TALBARAN" visible="true" dataType="string" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="NALBARAN" visible="true" dataType="double" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="DATA/HORA" visible="true" dataType="timeInstant" order="0" ></dataRef>
+            <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="QUART" visible="true" dataType="integer" order="0" ></dataRef>
+          </ColumnSelection>
+          <allRows>
+          </allRows>
+        </filter>
+        <bindingOption class="ChartOption" >
+        </bindingOption>
+      </bindingAttr>
+      <Chart Datasets="1" Size="1" Style="7" Gap="2" XTitle="MOVIMENT PER DATA I HORA" YTitle="" TitleFont="Serif-PLAIN-10" Styles="7,0,0,0,0,0,0,0" Colors="-16751436,-20561,-4615831,-5846288,-4955135,-13599948,-6250332,-7990252,-4137792,-12566464,-11370614,-16776961" GridStyle="4113" GridColor="-16777216" BorderStyle="0" ShowValue="false" ValueRotation="0.0" Precision="0" BorderColor="-16777216"
+       LegendPosition="32">
+        <![CDATA[99999|
+18/10/05 12|
+1
+]]>
+      </Chart>
+    </ChartElement>
+  </EditRegionElement>
+</Report>

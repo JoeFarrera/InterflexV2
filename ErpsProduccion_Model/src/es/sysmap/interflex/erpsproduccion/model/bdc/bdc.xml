@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE JboPackage SYSTEM "jbo_03_01.dtd">
+
+<JboPackage
+   Name="bdc"
+   SeparateXMLFiles="true"
+   PackageName="es.sysmap.interflex.erpsproduccion.model.bdc" >
+   <DesignTime>
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_ejbPackage" Value="false" />
+   </DesignTime>
+   <Containee
+      Name="Prod_Embalajes"
+      FullName="es.sysmap.interflex.erpsproduccion.model.bdc.Prod_Embalajes"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="Prod_Embalajesreferencia"
+      FullName="es.sysmap.interflex.erpsproduccion.model.bdc.Prod_Embalajesreferencia"
+      ObjectType="Entity" >
+   </Containee>
+</JboPackage>

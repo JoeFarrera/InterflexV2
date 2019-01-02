@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<DCContainer
+   id="PanelSgavhistexistView1UIModel"
+   xmlns="http://xmlns.oracle.com/adfm/uimodel"
+   version="10.1.2.17.96"
+   Package="es.sysmap.interflex.view"
+   FindMode="false"
+   EnableTokenValidation="true" >
+   <Contents >
+      <DCIterator
+         id="SgavhistexistView1Iter"
+         Binds="AppModuleDataControl.SgavhistexistView1" >
+      </DCIterator>
+      <DCControl
+         id="SgavhistexistView1"
+         DefClass="oracle.jbo.uicli.jui.JUTableDef"
+         SubType="DCTable"
+         BindingClass="oracle.jbo.uicli.jui.JUTableBinding"
+         IterBinding="SgavhistexistView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Createdon" />
+            <Item Value="Abbreviation" />
+            <Item Value="Idmac" />
+            <Item Value="Idartif" />
+            <Item Value="Descrip" />
+            <Item Value="Canini" />
+            <Item Value="Canfin" />
+            <Item Value="Canmov" />
+            <Item Value="Idbulto" />
+            <Item Value="Talbaran" />
+            <Item Value="Nalbaran" />
+            <Item Value="Idcabstr" />
+            <Item Value="Idcabnum" />
+            <Item Value="Idlin" />
+            <Item Value="Pesini" />
+            <Item Value="Pesfin" />
+            <Item Value="Pesmov" />
+            <Item Value="Descvisualpos" />
+            <Item Value="Observ" />
+            <Item Value="Createdby" />
+            <Item Value="Integra" />
+         </AttrNames>
+      </DCControl>
+   </Contents>
+</DCContainer>

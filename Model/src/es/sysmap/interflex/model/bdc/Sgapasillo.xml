@@ -1,0 +1,316 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+
+<Entity
+   Name="Sgapasillo"
+   DBObjectType="table"
+   DBObjectName="SGAPASILLO"
+   AliasName="Sgapasillo"
+   BindingStyle="Oracle"
+   UseGlueCode="false"
+   RowClass="es.sysmap.interflex.model.bdc.SgapasilloImpl"
+   MsgBundleClass="es.sysmap.interflex.model.bdc.common.SgapasilloImplMsgBundle" >
+   <Properties>
+      <Property Name ="PASSADIS_ATURAT" Value ="El passadís no esta en funcionament" />
+   </Properties>
+   <Data>
+      <Property Name ="IS_ABSTRACT" Value ="FALSE" />
+      <Property Name ="COMPLETE_LIBRARY" Value ="FALSE" />
+      <Property Name ="IS_LEAF" Value ="FALSE" />
+      <Property Name ="IS_ROOT" Value ="FALSE" />
+      <Property Name ="ID" Value ="4e274f9c-0102-1000-8002-c0a80001e1a8::bdc.SgaPasillo::EntityObject" />
+      <Property Name ="VISIBILITY" Value ="PUBLIC" />
+      <Property Name ="IS_ACTIVE" Value ="FALSE" />
+   </Data>
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_codeGenFlag2" Value="Access|Msg" />
+      <AttrArray Name="_publishEvents">
+      </AttrArray>
+   </DesignTime>
+   <Attribute
+      Name="idPasillo"
+      Precision="1"
+      ColumnName="IDPASILLO"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="VARCHAR"
+      TableName="SGAPASILLO"
+      PrimaryKey="true" >
+      <Data>
+         <Property Name ="ID" Value ="4e274fbb-0102-1000-8003-c0a80001e1a8::bdc.SgaPasillo::EntityObjectAttribute" />
+         <Property Name ="CHANGEABILITY" Value ="CHANGEABLE" />
+         <Property Name ="OWNER_SCOPE" Value ="INSTANCE" />
+         <Property Name ="MULTIPLICITY" Value ="1" />
+         <Property Name ="VISIBILITY" Value ="PACKAGE" />
+      </Data>
+   </Attribute>
+   <Attribute
+      Name="idUbi"
+      IsUnique="true"
+      IsNotNull="true"
+      Precision="6"
+      ColumnName="IDUBI"
+      Domain="es.sysmap.interflex.model.bdc.IdubiType"
+      Type="es.sysmap.interflex.model.bdc.common.IdubiType"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="SGAPASILLO" >
+      <Data>
+         <Property Name ="ID" Value ="4e3b61ea-0102-1000-8011-c0a80001e1a8::bdc.SgaPasillo::EntityObjectAttribute" />
+         <Property Name ="CHANGEABILITY" Value ="CHANGEABLE" />
+         <Property Name ="OWNER_SCOPE" Value ="INSTANCE" />
+         <Property Name ="MULTIPLICITY" Value ="1" />
+         <Property Name ="VISIBILITY" Value ="PACKAGE" />
+      </Data>
+   </Attribute>
+   <Attribute
+      Name="idUbiEntrada"
+      IsNotNull="true"
+      Precision="6"
+      ColumnName="IDUBIENTRADA"
+      Domain="es.sysmap.interflex.model.bdc.IdubiType"
+      Type="es.sysmap.interflex.model.bdc.common.IdubiType"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="SGAPASILLO" >
+      <Data>
+         <Property Name ="ID" Value ="4e274fbb-0102-1000-8004-c0a80001e1a8::bdc.SgaPasillo::EntityObjectAttribute" />
+         <Property Name ="CHANGEABILITY" Value ="CHANGEABLE" />
+         <Property Name ="OWNER_SCOPE" Value ="INSTANCE" />
+         <Property Name ="MULTIPLICITY" Value ="1" />
+         <Property Name ="VISIBILITY" Value ="PACKAGE" />
+      </Data>
+   </Attribute>
+   <Attribute
+      Name="idUbiSalida"
+      IsNotNull="true"
+      Precision="6"
+      ColumnName="IDUBISALIDA"
+      Domain="es.sysmap.interflex.model.bdc.IdubiType"
+      Type="es.sysmap.interflex.model.bdc.common.IdubiType"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="SGAPASILLO" >
+      <Data>
+         <Property Name ="ID" Value ="4e274fbb-0102-1000-8005-c0a80001e1a8::bdc.SgaPasillo::EntityObjectAttribute" />
+         <Property Name ="CHANGEABILITY" Value ="CHANGEABLE" />
+         <Property Name ="OWNER_SCOPE" Value ="INSTANCE" />
+         <Property Name ="MULTIPLICITY" Value ="1" />
+         <Property Name ="VISIBILITY" Value ="PACKAGE" />
+      </Data>
+   </Attribute>
+   <Attribute
+      Name="estado"
+      IsNotNull="true"
+      Precision="1"
+      ColumnName="ESTADO"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="SGAPASILLO" >
+      <Data>
+         <Property Name ="ID" Value ="4e274fbb-0102-1000-8006-c0a80001e1a8::bdc.SgaPasillo::EntityObjectAttribute" />
+         <Property Name ="CHANGEABILITY" Value ="CHANGEABLE" />
+         <Property Name ="OWNER_SCOPE" Value ="INSTANCE" />
+         <Property Name ="MULTIPLICITY" Value ="1" />
+         <Property Name ="VISIBILITY" Value ="PACKAGE" />
+      </Data>
+   </Attribute>
+   <Attribute
+      Name="Createdby"
+      IsUpdateable="while_insert"
+      Precision="10"
+      ColumnName="CREATEDBY"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="SGAPASILLO"
+      HistoryColumn="UserHistory" >
+      <Data>
+         <Property Name ="ID" Value ="c4b986ee-0102-1000-8087-c0a80001c613::::EntityObjectAttribute" />
+         <Property Name ="CHANGEABILITY" Value ="CHANGEABLE" />
+         <Property Name ="OWNER_SCOPE" Value ="INSTANCE" />
+         <Property Name ="MULTIPLICITY" Value ="1" />
+         <Property Name ="VISIBILITY" Value ="PACKAGE" />
+      </Data>
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="10" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Modifiedby"
+      Precision="10"
+      ColumnName="MODIFIEDBY"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="SGAPASILLO"
+      HistoryColumn="UserHistory" >
+      <Data>
+         <Property Name ="ID" Value ="c4b986ee-0102-1000-8088-c0a80001c613::::EntityObjectAttribute" />
+         <Property Name ="CHANGEABILITY" Value ="CHANGEABLE" />
+         <Property Name ="OWNER_SCOPE" Value ="INSTANCE" />
+         <Property Name ="MULTIPLICITY" Value ="1" />
+         <Property Name ="VISIBILITY" Value ="PACKAGE" />
+      </Data>
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="10" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Createdon"
+      ColumnName="CREATEDON"
+      Domain="es.sysmap.interflex.model.bdc.FlexiDate"
+      Type="es.sysmap.interflex.model.bdc.common.FlexiDate"
+      ColumnType="DATE"
+      SQLType="DATE"
+      TableName="SGAPASILLO"
+      HistoryColumn="DateHistory" >
+      <Data>
+         <Property Name ="ID" Value ="c4b986ee-0102-1000-8089-c0a80001c613::::EntityObjectAttribute" />
+         <Property Name ="CHANGEABILITY" Value ="CHANGEABLE" />
+         <Property Name ="OWNER_SCOPE" Value ="INSTANCE" />
+         <Property Name ="MULTIPLICITY" Value ="1" />
+         <Property Name ="VISIBILITY" Value ="PACKAGE" />
+      </Data>
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="7" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Modifiedon"
+      ColumnName="MODIFIEDON"
+      Domain="es.sysmap.interflex.model.bdc.FlexiDate"
+      Type="es.sysmap.interflex.model.bdc.common.FlexiDate"
+      ColumnType="DATE"
+      SQLType="DATE"
+      TableName="SGAPASILLO"
+      HistoryColumn="DateHistory" >
+      <Data>
+         <Property Name ="ID" Value ="c4b986ee-0102-1000-808a-c0a80001c613::::EntityObjectAttribute" />
+         <Property Name ="CHANGEABILITY" Value ="CHANGEABLE" />
+         <Property Name ="OWNER_SCOPE" Value ="INSTANCE" />
+         <Property Name ="MULTIPLICITY" Value ="1" />
+         <Property Name ="VISIBILITY" Value ="PACKAGE" />
+      </Data>
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="7" />
+      </DesignTime>
+   </Attribute>
+   <AccessorAttribute
+      Name="SgaubicacionPasillo"
+      Association="es.sysmap.interflex.model.bdc.SgapasilloUbicAssociation"
+      AssociationEnd="es.sysmap.interflex.model.bdc.SgapasilloUbicAssociation.SgaubicacionPasillo"
+      AssociationOtherEnd="es.sysmap.interflex.model.bdc.SgapasilloUbicAssociation.Sgapasillo"
+      Type="oracle.jbo.RowIterator"
+      IsUpdateable="false" >
+   </AccessorAttribute>
+   <AccessorAttribute
+      Name="SgaubicacionEntrada"
+      Association="es.sysmap.interflex.model.bdc.SgapasilloUbientradaAssociation"
+      AssociationEnd="es.sysmap.interflex.model.bdc.SgapasilloUbientradaAssociation.SgaubicacionEntrada"
+      AssociationOtherEnd="es.sysmap.interflex.model.bdc.SgapasilloUbientradaAssociation.Sgapasillo1"
+      Type="es.sysmap.interflex.model.bdc.SgaubicacionImpl" >
+   </AccessorAttribute>
+   <AccessorAttribute
+      Name="SgaubicacionSalida"
+      Association="es.sysmap.interflex.model.bdc.SgapasilloUbisalidaAssociation"
+      AssociationEnd="es.sysmap.interflex.model.bdc.SgapasilloUbisalidaAssociation.SgaubicacionSalida"
+      AssociationOtherEnd="es.sysmap.interflex.model.bdc.SgapasilloUbisalidaAssociation.Sgapasillo2"
+      Type="es.sysmap.interflex.model.bdc.SgaubicacionImpl" >
+   </AccessorAttribute>
+   <AccessorAttribute
+      Name="Sgatraslo"
+      Association="es.sysmap.interflex.model.bdc.SgapasilloTrasloPasilloDestinoAssociation"
+      AssociationEnd="es.sysmap.interflex.model.bdc.SgapasilloTrasloPasilloDestinoAssociation.Sgatraslo"
+      AssociationOtherEnd="es.sysmap.interflex.model.bdc.SgapasilloTrasloPasilloDestinoAssociation.SgapasilloDestino"
+      Type="oracle.jbo.RowIterator"
+      IsUpdateable="false" >
+   </AccessorAttribute>
+   <AccessorAttribute
+      Name="Sgatraslo1"
+      Association="es.sysmap.interflex.model.bdc.SgapasilloTraslopasilloActualAssociation"
+      AssociationEnd="es.sysmap.interflex.model.bdc.SgapasilloTraslopasilloActualAssociation.Sgatraslo1"
+      AssociationOtherEnd="es.sysmap.interflex.model.bdc.SgapasilloTraslopasilloActualAssociation.SgapasilloActual"
+      Type="oracle.jbo.RowIterator"
+      IsUpdateable="false" >
+   </AccessorAttribute>
+   <AccessorAttribute
+      Name="SgaubicacionSilo"
+      Association="es.sysmap.interflex.model.bdc.SgapasilloUbicacionSiloAssociation"
+      AssociationEnd="es.sysmap.interflex.model.bdc.SgapasilloUbicacionSiloAssociation.SgaubicacionSilo"
+      AssociationOtherEnd="es.sysmap.interflex.model.bdc.SgapasilloUbicacionSiloAssociation.SgapasilloEntSal"
+      Type="oracle.jbo.RowIterator"
+      IsUpdateable="false" >
+   </AccessorAttribute>
+   <Key
+      Name="SgapasilloEstadoCheck" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgapasillo.estado" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SGAPASILLO_ESTADO_CHECK" />
+         <Attr Name="_checkCondition" Value="&#34;ESTADO&#34; IS NOT NULL" />
+         <Attr Name="_isNotNull" Value="true" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SgapasilloIdubiCheck" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgapasillo.idUbi" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SGAPASILLO_IDUBI_CHECK" />
+         <Attr Name="_checkCondition" Value="&#34;IDUBI&#34; IS NOT NULL" />
+         <Attr Name="_isNotNull" Value="true" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SgapasilloIdubientradaCheck" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgapasillo.idUbiEntrada" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SGAPASILLO_IDUBIENTRADA_CHECK" />
+         <Attr Name="_checkCondition" Value="&#34;IDUBIENTRADA&#34; IS NOT NULL" />
+         <Attr Name="_isNotNull" Value="true" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SgapasilloIdubisalidaCheck" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgapasillo.idUbiSalida" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SGAPASILLO_IDUBISALIDA_CHECK" />
+         <Attr Name="_checkCondition" Value="&#34;IDUBISALIDA&#34; IS NOT NULL" />
+         <Attr Name="_isNotNull" Value="true" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SgapasilloPrimaryKey" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgapasillo.idPasillo" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SGAPASILLO_PRIMARY_KEY" />
+         <Attr Name="_isPrimary" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SgapasilloUniqueKey" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgapasillo.idUbi" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SGAPASILLO_UNIQUE_KEY" />
+         <Attr Name="_isUnique" Value="true" />
+      </DesignTime>
+   </Key>
+</Entity>

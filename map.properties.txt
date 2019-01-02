@@ -1,0 +1,11 @@
+#Propiedades Puesto
+#Sat Apr 09 15:47:21 CEST 2005
+XMLRoot=C\:\\Documents and Settings\\Administrador/.map
+LlocTreball=1
+BasculaParamsMld=COM4,9600,8,1,0
+BasculaParamsSlo=COM1,9600,7,1,2
+PickingPort=LPT1
+# Propietats StyleReportPro
+uql.home=
+query.registry.path=G:\\View\\src\\es\\sysmap\\interflex\\informes\\query.xml
+datasource.registry.path=G:\\View\\src\\es\\sysmap\\interflex\\informes\\datasource.xml

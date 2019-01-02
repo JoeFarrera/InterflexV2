@@ -1,0 +1,37 @@
+<Telegrama idTelegrama="1234" lenTelegrama="118" tipoTel="STAT">
+   <Detalles>
+      <valor id="26" index="0" len="1" tipo="byte">2</valor>
+      <valor id="31" index="1" len="1" tipo="byte">1</valor>
+      <valor id="36" index="2" len="1" tipo="byte">0</valor>
+      <valor id="41" index="3" len="1" tipo="byte">2</valor>
+      <valor id="51" index="4" len="1" tipo="byte">2</valor>
+      <valor id="61" index="5" len="1" tipo="byte">2</valor>
+      <valor id="Pasillo61" index="6" len="1" tipo="byte">2</valor>
+      <valor id="62" index="7" len="1" tipo="byte">2</valor>
+      <valor id="Pasillo62" index="8" len="1" tipo="byte">2</valor>
+      <valor id="50" index="9" len="1" tipo="byte">2</valor>
+      <valor id="Transbordo" index="17" len="1" tipo="byte">2</valor>
+      <valor id="PasilloTransbordo" index="18" len="1" tipo="byte">2</valor>
+      <valor id="MaybeTransfer" index="19" len="1" tipo="byte">2</valor>
+      <valor id="VerQueEsEsto" index="20" len="1" tipo="byte">2</valor>
+      <valor id="VerQueEsOtro" index="21" len="1" tipo="byte">2</valor>
+      <valor id="MOVI1" index="26" len="4" tipo="int">1</valor>
+      <valor id="MOVI14" index="30" len="4" tipo="int">2</valor>
+      <valor id="MOVI45" index="34" len="4" tipo="int">3</valor>
+      <valor id="MOVI54" index="38" len="4" tipo="int">4</valor>
+      <valor id="MOVI56" index="42" len="4" tipo="int">5</valor>
+      <valor id="MOVI25" index="46" len="4" tipo="int">6</valor>
+      <valor id="MOVIRELACIONPASILLO1" index="50" len="4" tipo="int">7</valor>
+      <valor id="MOVI30" index="54" len="4" tipo="int">8</valor>
+      <valor id="MOVIRELACIONPASILLO2" index="58" len="4" tipo="int">9</valor>
+      <valor id="MOVI35" index="62" len="4" tipo="int">10</valor>
+      <valor id="MOVIRELACIONPASILLO3" index="66" len="4" tipo="int">11</valor>
+      <valor id="MOVI40" index="70" len="4" tipo="int">12</valor>
+      <valor id="MOVIRELACIONPASILLO4" index="74" len="4" tipo="int">13</valor>
+      <valor id="MOVI50" index="78" len="4" tipo="int">14</valor>
+      <valor id="MOVIRELACIONPASILLOMINILOAD" index="82" len="4" tipo="int">15</valor>
+      <valor id="MOVI61" index="86" len="4" tipo="int">16</valor>
+      <valor id="NOUSADO" index="90" len="4" tipo="int">17</valor>
+      <valor id="MOVI62" index="94" len="4" tipo="int">18</valor>
+   </Detalles>
+</Telegrama>

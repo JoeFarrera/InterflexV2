@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE JboProject SYSTEM "jbo_03_01.dtd">
+
+<JboProject
+   Name="Model"
+   SeparateXMLFiles="true"
+   PackageName="" >
+   <DesignTime>
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_jprName" Value="../Model.jpr" />
+      <Attr Name="_ejbPackage" Value="false" />
+      <Attr Name="_NamedConnection" Value="servidorsga" />
+      <Attr Name="_appModuleNames0" Value="es.sysmap.interflex.model.dmc.AppModule" />
+      <Attr Name="_dataControlNames0" Value="AppModuleDataControl11" />
+      <Attr Name="_appModuleNames1" Value="es.sysmap.interflex.model.tst.TestAppModule" />
+   </DesignTime>
+   <Containee
+      Name="bdc"
+      FullName="es.sysmap.interflex.model.bdc.bdc"
+      ObjectType="JboPackage" >
+   </Containee>
+   <Containee
+      Name="dmc"
+      FullName="es.sysmap.interflex.model.dmc.dmc"
+      ObjectType="JboPackage" >
+   </Containee>
+   <Containee
+      Name="es"
+      FullName="es.es"
+      ObjectType="JboPackage" >
+   </Containee>
+   <Containee
+      Name="sysmap"
+      FullName="es.sysmap.sysmap"
+      ObjectType="JboPackage" >
+   </Containee>
+   <Containee
+      Name="interflex"
+      FullName="es.sysmap.interflex.interflex"
+      ObjectType="JboPackage" >
+   </Containee>
+   <Containee
+      Name="model"
+      FullName="es.sysmap.interflex.model.model"
+      ObjectType="JboPackage" >
+   </Containee>
+   <Containee
+      Name="tst"
+      FullName="es.sysmap.interflex.model.tst.tst"
+      ObjectType="JboPackage" >
+   </Containee>
+   <AttrArray Name="MessageBundles">
+      <Item Value="es.sysmap.interflex.model.bdc.InterflexMessageBundle" />
+   </AttrArray>
+</JboProject>

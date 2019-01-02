@@ -1,0 +1,1 @@
+net use g: \\servidormap\interflexv2 /user:interflex interflex

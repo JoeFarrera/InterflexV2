@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<simple-archive-deployment nselem="simple-archive-deployment" class="oracle.jdeveloper.deploy.jar.ArchiveProfile" xmlns="http://xmlns.oracle.com/jdeveloper/10120/deploy/jar">
+   <archiveOptions>
+      <additionalManifests/>
+      <compressed>false</compressed>
+      <hasManifest>true</hasManifest>
+      <mainClass>es.sysmap.interflex.view.Interflex</mainClass>
+   </archiveOptions>
+   <fileGroups>
+      <groups>
+         <Item class="oracle.jdeveloper.deploy.common.PackagingFileGroup" internalName="project-output">
+            <contributors>
+               <Item type="2"/>
+               <Item type="7"/>
+               <Item type="3"/>
+            </contributors>
+            <displayName>Project Output</displayName>
+            <filters>
+               <rules>
+                  <Item type="1" pattern="**/CVS/"/>
+                  <Item type="1" pattern="**.cdi"/>
+                  <Item type="1" pattern="**.contrib"/>
+                  <Item type="1" pattern="**.keep"/>
+                  <Item type="1" pattern="**.rvi"/>
+                  <Item type="1" pattern=".jsps/"/>
+                  <Item type="0" pattern="**"/>
+               </rules>
+            </filters>
+            <targetWithinJar/>
+         </Item>
+         <Item class="oracle.jdeveloper.deploy.common.ProjectFileGroup">
+            <contributors>
+               <autoInclude>true</autoInclude>
+               <deploySourceAs>0</deploySourceAs>
+               <files class="[Ljava.net.URL;"/>
+               <selectionFilters/>
+            </contributors>
+            <displayName>Dependencies</displayName>
+            <filters>
+               <additionalArchives/>
+               <afterFilters/>
+               <beforeFilters/>
+               <duringFilters/>
+               <selectedArchives>
+                  <archives>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/j2ee/home/jazn.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/j2ee/home/jazncore.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/BC4J/jlib/bc4jtester.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/jlib/jdev-cm.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/lib/xmlparserv2.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/jlib/help4.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/jlib/share.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/jlib/jewt4.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/jlib/oracle_ice.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/jlib/ojmisc.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/BC4J/lib/adfm.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/BC4J/jlib/adfjclient.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/jlib/bigraphbean.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/jlib/LW_PfjBean.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/BC4J/lib/bc4jimdomains.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/BC4J/jlib/bc4jimjui.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/ord/jlib/ordim.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/ord/jlib/ordhttp.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/ord/jlib/jmf.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/jlib/share.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/jlib/jewt4.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/jlib/inspect4.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/jlib/help4.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/BC4J/jlib/bc4jdatum.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/lib/xmlparserv2.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/lib/xmlcomp.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/jdev/lib/jdev-rt.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/sqlj/lib/runtime12.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/BC4J/lib/bc4jmt.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/BC4J/lib/collections.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/BC4J/lib/bc4jct.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/lib/xmlparserv2.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/jlib/jdev-cm.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/jlib/ojmisc.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/jdbc/lib/classes12.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/jdbc/lib/nls_charset12.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/jlib/jdev-cm.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/BC4J/lib/bc4jdomorcl.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/BC4J/lib/adfm.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/BC4J/lib/collections.jar!/"/>
+                     <Item path="../../sysmap/inetsoft/lib/xreport_pro.jar" jar-entry=""/>
+                     <Item path="../../sysmap/inetsoft/lib/xtools.jar" jar-entry=""/>
+                     <Item path="../../sysmap/inetsoft/lib/design_pro.jar" jar-entry=""/>
+                     <Item path="../../sysmap/ChainsawV2/log4j-1.3alpha-7.jar" jar-entry=""/>
+                     <Item path="../../sysmap/comm/comm.jar" jar-entry=""/>
+                  </archives>
+                  <selectionMode>0</selectionMode>
+               </selectedArchives>
+            </filters>
+            <targetWithinJar/>
+         </Item>
+      </groups>
+   </fileGroups>
+   <jarURL path="../../../SgaDeploy/view/deploy/viewNew_rps.jar"/>
+   <profileDeps/>
+</simple-archive-deployment>

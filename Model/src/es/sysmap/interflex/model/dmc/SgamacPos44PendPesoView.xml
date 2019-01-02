@@ -1,0 +1,297 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+
+<ViewObject
+   Name="SgamacPos44PendPesoView"
+   BindingStyle="Oracle"
+   CustomQuery="true"
+   RowClass="es.sysmap.interflex.model.dmc.SgamacPos44PendPesoViewRowImpl"
+   ComponentClass="es.sysmap.interflex.model.dmc.SgamacPos44PendPesoViewImpl"
+   MsgBundleClass="es.sysmap.interflex.model.dmc.common.SgamacPos44PendPesoViewRowImplMsgBundle"
+   RowInterface="es.sysmap.interflex.model.dmc.common.SgamacPos44PendPesoViewRow"
+   ClientRowProxyName="es.sysmap.interflex.model.dmc.client.SgamacPos44PendPesoViewRowClient"
+   UseGlueCode="false" >
+   <SQLQuery><![CDATA[
+SELECT Sgamac.IDMAC, 
+       Sgamac.MULTIREF, 
+       Sgamac.IDTIPMAC, 
+       Sgamac.ESTADO, 
+       Sgamac.TARA, 
+       Sgaordtran.ESTADO AS ESTADO1, 
+       Sgaordtran.IDORD,
+       nvl(Sgapuestomanip.Basculaslo, 'S') as BASCULASLO,
+       Sgatipomac.DESCRIP as DESCRIPTIPOMAC,
+       Sgaarticulo.IDARTIF as IDARTIF,
+       Sgaarticulo.DESCRIP as DESCRIPART,
+       Sgaarticulo.UNIEMB as UNIEMB,
+       Sgaexistencia.CANTOT as CANTOT,
+       Sgaubicacion.IDUBI,
+       Sgaubicacion.IDTIPUBI,
+       Sgaubicacion.IDTIPALM
+FROM SGAMAC Sgamac, SGAORDTRAN Sgaordtran, SGAUBICACION Sgaubicacion, SGAPUESTOMANIP Sgapuestomanip, SGAEXISTENCIA Sgaexistencia, 
+SGAARTICULO Sgaarticulo,
+SGATIPOMAC Sgatipomac,
+SGAUBICACION SgaUbicacionDestino
+WHERE (Sgamac.IDMAC = Sgaordtran.IDMAC) 
+AND Sgamac.UBIPOS = Sgaubicacion.IDUBI 
+AND Sgaubicacion.POSPLC = 44
+AND nvl(Sgaordtran.CODERROR, 0) = 0 
+AND Sgaordtran.ESTADO = 'C'
+AND Sgaordtran.IDTRASLO = 0
+AND Sgapuestomanip.IDUBISLO = 'PKEXTR'
+AND Sgamac.IDMAC = Sgaexistencia.IDMAC (+)
+AND Sgaexistencia.IDART = Sgaarticulo.IDART (+)
+AND Sgatipomac.IDTIPMAC = Sgamac.IDTIPMAC
+AND SgaUbicacionDestino.IDUBI = Sgamac.UBIDES
+AND SgaUbicacionDestino.POSPLC != 45
+   ]]></SQLQuery>
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_codeGenFlag2" Value="Access|Coll|Msg" />
+      <Attr Name="_isExpertMode" Value="true" />
+   </DesignTime>
+   <EntityUsage
+      Name="Sgamac"
+      Entity="es.sysmap.interflex.model.bdc.Sgamac" >
+      <DesignTime>
+         <Attr Name="_EntireObjectTable" Value="false" />
+         <Attr Name="_queryClause" Value="true" />
+         <Attr Name="_queryWhere" Value="(Sgamac.IDMAC = Sgaordtran.IDMAC) AND Sgamac.UBIPOS = Sgaubicacion.IDUBI AND Sgaubicacion.POSPLC = 44 AND nvl(Sgaordtran.CODERROR, 0) = 0 AND Sgaordtran.ESTADO = &#39;C&#39;" />
+      </DesignTime>
+   </EntityUsage>
+   <EntityUsage
+      Name="Sgaordtran"
+      Entity="es.sysmap.interflex.model.bdc.Sgaordtran"
+      Association="es.sysmap.interflex.model.bdc.SgaordtranSgamacFk1Assoc"
+      AssociationEnd="es.sysmap.interflex.model.bdc.SgaordtranSgamacFk1Assoc.Sgaordtran"
+      SourceUsage="es.sysmap.interflex.model.dmc.SgamacPos44PendPesoView.Sgamac" >
+      <DesignTime>
+         <Attr Name="_EntireObjectTable" Value="false" />
+         <Attr Name="_queryClause" Value="false" />
+         <AttrArray Name="_srcAttributes">
+            <Item Value="es.sysmap.interflex.model.bdc.Sgamac.Idmac" />
+         </AttrArray>
+         <AttrArray Name="_dstAttributes">
+            <Item Value="es.sysmap.interflex.model.bdc.Sgaordtran.Idmac" />
+         </AttrArray>
+      </DesignTime>
+   </EntityUsage>
+   <EntityUsage
+      Name="Sgaubicacion"
+      Entity="es.sysmap.interflex.model.bdc.Sgaubicacion"
+      Association="es.sysmap.interflex.model.bdc.SysC0010957Assoc"
+      AssociationEnd="es.sysmap.interflex.model.bdc.SysC0010957Assoc.SgaUbicacionDestino"
+      SourceUsage="es.sysmap.interflex.model.dmc.SgamacPos44PendPesoView.Sgamac"
+      ReadOnly="true"
+      Reference="true" >
+      <DesignTime>
+         <Attr Name="_EntireObjectTable" Value="false" />
+         <Attr Name="_queryClause" Value="false" />
+         <AttrArray Name="_srcAttributes">
+            <Item Value="es.sysmap.interflex.model.bdc.Sgamac.Ubides" />
+         </AttrArray>
+         <AttrArray Name="_dstAttributes">
+            <Item Value="es.sysmap.interflex.model.bdc.Sgaubicacion.Idubi" />
+         </AttrArray>
+      </DesignTime>
+   </EntityUsage>
+   <ViewAttribute
+      Name="Idmac"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Idmac"
+      EntityUsage="Sgamac"
+      AliasName="IDMAC" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Multiref"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Multiref"
+      EntityUsage="Sgamac"
+      AliasName="MULTIREF" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Idtipmac"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Idtipmac"
+      EntityUsage="Sgamac"
+      AliasName="IDTIPMAC" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Estado"
+      PrecisionRule="true"
+      EntityAttrName="Estado"
+      EntityUsage="Sgamac"
+      AliasName="ESTADO" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Tara"
+      PrecisionRule="true"
+      EntityAttrName="Tara"
+      EntityUsage="Sgamac"
+      AliasName="TARA" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Estado1"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Estado"
+      EntityUsage="Sgaordtran"
+      AliasName="ESTADO1" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Idord"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Idord"
+      EntityUsage="Sgaordtran"
+      AliasName="IDORD" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Basculaslo"
+      IsPersistent="false"
+      PrecisionRule="true"
+      Precision="1"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="BASCULASLO"
+      Expression="BASCULASLO"
+      SQLType="VARCHAR" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="1" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Descriptipomac"
+      IsPersistent="false"
+      PrecisionRule="true"
+      Precision="30"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="DESCRIPTIPOMAC"
+      Expression="DESCRIPTIPOMAC"
+      SQLType="VARCHAR" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="30" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Idartif"
+      IsPersistent="false"
+      PrecisionRule="true"
+      Precision="14"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="IDARTIF"
+      Expression="IDARTIF"
+      SQLType="VARCHAR" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="14" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Descripart"
+      IsPersistent="false"
+      PrecisionRule="true"
+      Precision="100"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="DESCRIPART"
+      Expression="DESCRIPART"
+      SQLType="VARCHAR" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="100" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Uniemb"
+      IsPersistent="false"
+      PrecisionRule="true"
+      Precision="11"
+      Scale="2"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      AliasName="UNIEMB"
+      Expression="UNIEMB"
+      SQLType="NUMERIC" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Cantot"
+      IsPersistent="false"
+      PrecisionRule="true"
+      Precision="11"
+      Scale="2"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      AliasName="CANTOT"
+      Expression="CANTOT"
+      SQLType="NUMERIC" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="PesReal"
+      IsQueriable="false"
+      IsPersistent="false"
+      PrecisionRule="true"
+      Precision="255"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="VARCHAR2"
+      AliasName="VIEW_ATTR"
+      SQLType="NUMERIC" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CanPesReal"
+      IsQueriable="false"
+      IsPersistent="false"
+      PrecisionRule="true"
+      Precision="255"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="VARCHAR2"
+      AliasName="VIEW_ATTR"
+      SQLType="NUMERIC" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CantotUsuari"
+      IsQueriable="false"
+      IsPersistent="false"
+      PrecisionRule="true"
+      Precision="255"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="VARCHAR2"
+      AliasName="VIEW_ATTR"
+      SQLType="NUMERIC" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Idubi"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Idubi"
+      EntityUsage="Sgaubicacion"
+      AliasName="IDUBI" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Idtipubi"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Idtipubi"
+      EntityUsage="Sgaubicacion"
+      AliasName="IDTIPUBI" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Idtipalm"
+      IsNotNull="true"
+      PrecisionRule="true"
+      DiscrColumn="true"
+      EntityAttrName="Idtipalm"
+      EntityUsage="Sgaubicacion"
+      AliasName="IDTIPALM" >
+   </ViewAttribute>
+</ViewObject>

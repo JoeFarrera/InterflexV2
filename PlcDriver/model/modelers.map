@@ -1,0 +1,51 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ModelersMap class="java.util.HashMap">
+   <Item>
+      <Key>ddf3a5ba-0101-1000-822c-c0a80001f0ec</Key>
+      <Value class="[Ljava.lang.String;">
+         <Item>es</Item>
+         <Item/>
+         <Item>UMLPackage</Item>
+      </Value>
+   </Item>
+   <Item>
+      <Key>ddf3a5ba-0101-1000-822d-c0a80001f0ec</Key>
+      <Value class="[Ljava.lang.String;">
+         <Item>es.sysmap</Item>
+         <Item/>
+         <Item>UMLPackage</Item>
+      </Value>
+   </Item>
+   <Item>
+      <Key>ddf3a5ba-0101-1000-822e-c0a80001f0ec</Key>
+      <Value class="[Ljava.lang.String;">
+         <Item>es.sysmap.interflex</Item>
+         <Item/>
+         <Item>UMLPackage</Item>
+      </Value>
+   </Item>
+   <Item>
+      <Key>ddf3a5ba-0101-1000-822f-c0a80001f0ec</Key>
+      <Value class="[Ljava.lang.String;">
+         <Item>es.sysmap.interflex.plcdriver</Item>
+         <Item/>
+         <Item>UMLPackage</Item>
+      </Value>
+   </Item>
+   <Item>
+      <Key>ddf3a656-0101-1000-8230-c0a80001f0ec</Key>
+      <Value class="[Ljava.lang.String;">
+         <Item>es.sysmap.interflex.plcdriver.UML Class Diagram1</Item>
+         <Item>oxd_ana</Item>
+         <Item>Diagram</Item>
+      </Value>
+   </Item>
+   <Item>
+      <Key>ddf49337-0101-1000-823b-c0a80001f0ec</Key>
+      <Value class="[Ljava.lang.String;">
+         <Item>es.sysmap.interflex.plcdriver.Java Class Diagram1</Item>
+         <Item>oxd_java</Item>
+         <Item>Diagram</Item>
+      </Value>
+   </Item>
+</ModelersMap>

@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<DCContainer
+   id="PanelSgaposicionubicacionView4UIModel"
+   xmlns="http://xmlns.oracle.com/adfm/uimodel"
+   version="10.1.2.17.96"
+   Package="es.sysmap.interflex.view"
+   FindMode="false"
+   EnableTokenValidation="true" >
+   <Contents >
+      <DCIterator
+         id="SgaaccesoubiView1Iter"
+         Binds="AppModuleDataControl.SgaaccesoubiView1"
+         RangeSize="10" >
+      </DCIterator>
+      <DCIterator
+         id="SgaestadoubiView1Iter"
+         Binds="AppModuleDataControl.SgaestadoubiView1"
+         RangeSize="10" >
+      </DCIterator>
+      <DCIterator
+         id="SgaposicionubicacionView2Iter"
+         Binds="AppModuleDataControl.SgaposicionubicacionView2" >
+      </DCIterator>
+      <DCControl
+         id="SgaposicionubicacionView2"
+         DefClass="oracle.jbo.uicli.jui.JUTableDef"
+         SubType="DCTable"
+         BindingClass="oracle.jbo.uicli.jui.JUTableBinding"
+         IterBinding="SgaposicionubicacionView2Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Posicion" />
+            <Item Value="Estado" />
+            <Item Value="Acceso" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Descestado"
+         DefClass="oracle.jbo.uicli.jui.JUComboBoxDef"
+         SubType="DCComboBox"
+         BindingClass="oracle.jbo.uicli.jui.JUComboBoxBinding"
+         IterBinding="SgaposicionubicacionView2Iter"
+         DTClass="oracle.adf.dt.objects.JUDTCtrlListLOV"
+         ApplyValidation="false"
+         isDynamic="false"
+         ListOperMode="0"
+         ListIter="SgaestadoubiView1Iter" >
+         <AttrNames>
+            <Item Value="Estado" />
+         </AttrNames>
+         <ListAttrNames>
+            <Item Value="Value" />
+         </ListAttrNames>
+         <ListDisplayAttrNames>
+            <Item Value="Abbreviation" />
+         </ListDisplayAttrNames>
+      </DCControl>
+      <DCControl
+         id="Descacceso"
+         DefClass="oracle.jbo.uicli.jui.JUComboBoxDef"
+         SubType="DCComboBox"
+         IterBinding="SgaposicionubicacionView2Iter"
+         DTClass="oracle.adf.dt.objects.JUDTCtrlListLOV"
+         ApplyValidation="false"
+         isDynamic="false"
+         ListOperMode="0"
+         ListIter="SgaaccesoubiView1Iter"
+         Editable="false" >
+         <AttrNames>
+            <Item Value="Acceso" />
+         </AttrNames>
+         <ListAttrNames>
+            <Item Value="Value" />
+         </ListAttrNames>
+         <ListDisplayAttrNames>
+            <Item Value="Abbreviation" />
+         </ListDisplayAttrNames>
+      </DCControl>
+   </Contents>
+</DCContainer>

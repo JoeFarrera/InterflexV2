@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+
+<Entity
+   Name="Prod_Embalajesreferencia"
+   DBObjectType="table"
+   DBObjectName="DBO.EMBALAJESREFERENCIA"
+   AliasName="Prod_Embalajesreferencia"
+   BindingStyle="JDBC"
+   UseGlueCode="false"
+   RowClass="es.sysmap.interflex.erpsproduccion.model.dmc.Prod_EmbalajesreferenciaImpl" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_codeGenFlag2" Value="Access" />
+      <AttrArray Name="_publishEvents">
+      </AttrArray>
+   </DesignTime>
+   <Attribute
+      Name="Codart"
+      Precision="50"
+      ColumnName="codart"
+      Type="java.lang.String"
+      ColumnType="nvarchar"
+      SQLType="VARCHAR"
+      TableName="DBO.EMBALAJESREFERENCIA"
+      PrimaryKey="true" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="50" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Idformato"
+      Precision="10"
+      Scale="0"
+      ColumnName="idFormato"
+      Type="java.lang.Integer"
+      ColumnType="int"
+      SQLType="INTEGER"
+      TableName="DBO.EMBALAJESREFERENCIA"
+      PrimaryKey="true" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="11" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Cantidad"
+      Precision="10"
+      Scale="0"
+      ColumnName="cantidad"
+      Type="java.lang.Integer"
+      ColumnType="int"
+      SQLType="INTEGER"
+      TableName="DBO.EMBALAJESREFERENCIA" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="11" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Predet"
+      Precision="1"
+      Scale="0"
+      ColumnName="predet"
+      Type="java.lang.Boolean"
+      ColumnType="bit"
+      SQLType="BIT"
+      TableName="DBO.EMBALAJESREFERENCIA" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="1" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Unidadmedida"
+      Precision="5"
+      ColumnName="unidadmedida"
+      Type="java.lang.String"
+      ColumnType="nvarchar"
+      SQLType="VARCHAR"
+      TableName="DBO.EMBALAJESREFERENCIA" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="5" />
+      </DesignTime>
+   </Attribute>
+   <Key
+      Name="EmbalajesreferenciaPrimaryKey" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.erpsproduccion.model.dmc.Prod_Embalajesreferencia.Codart" />
+         <Item Value="es.sysmap.interflex.erpsproduccion.model.dmc.Prod_Embalajesreferencia.Idformato" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="EMBALAJESREFERENCIA_PRIMARY_KE" />
+         <Attr Name="_isPrimary" Value="true" />
+      </DesignTime>
+   </Key>
+</Entity>

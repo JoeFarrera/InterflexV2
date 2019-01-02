@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ModelersMap class="java.util.HashMap">
+   <Item>
+      <Key>3086afb5-0136-1000-8007-81c809aaaa4a</Key>
+      <Value class="[Ljava.lang.String;">
+         <Item>es</Item>
+         <Item/>
+         <Item>UMLPackage</Item>
+      </Value>
+   </Item>
+   <Item>
+      <Key>3086afb5-0136-1000-8008-81c809aaaa4a</Key>
+      <Value class="[Ljava.lang.String;">
+         <Item>es.sysmap</Item>
+         <Item/>
+         <Item>UMLPackage</Item>
+      </Value>
+   </Item>
+   <Item>
+      <Key>3086afb5-0136-1000-8009-81c809aaaa4a</Key>
+      <Value class="[Ljava.lang.String;">
+         <Item>es.sysmap.interflex</Item>
+         <Item/>
+         <Item>UMLPackage</Item>
+      </Value>
+   </Item>
+   <Item>
+      <Key>3086afb5-0136-1000-800a-81c809aaaa4a</Key>
+      <Value class="[Ljava.lang.String;">
+         <Item>es.sysmap.interflex.model</Item>
+         <Item/>
+         <Item>UMLPackage</Item>
+      </Value>
+   </Item>
+   <Item>
+      <Key>3086afb5-0136-1000-800b-81c809aaaa4a</Key>
+      <Value class="[Ljava.lang.String;">
+         <Item>es.sysmap.interflex.model.dg</Item>
+         <Item/>
+         <Item>UMLPackage</Item>
+      </Value>
+   </Item>
+   <Item>
+      <Key>3086b080-0136-1000-800c-81c809aaaa4a</Key>
+      <Value class="[Ljava.lang.String;">
+         <Item>es.sysmap.interflex.model.dg.Estructura BC Diagram</Item>
+         <Item>oxd_bc4j</Item>
+         <Item>Diagram</Item>
+      </Value>
+   </Item>
+   <Item>
+      <Key>3096c7f2-0136-1000-80e1-81c809aaaa4a</Key>
+      <Value class="[Ljava.lang.String;">
+         <Item>es.sysmap.interflex.model.bdc</Item>
+         <Item/>
+         <Item>UMLPackage</Item>
+      </Value>
+   </Item>
+   <Item>
+      <Key>3096c7f2-0136-1000-80e2-81c809aaaa4a</Key>
+      <Value class="[Ljava.lang.String;">
+         <Item>es.sysmap.interflex.model.bdc.dg</Item>
+         <Item/>
+         <Item>UMLPackage</Item>
+      </Value>
+   </Item>
+   <Item>
+      <Key>3096c802-0136-1000-80e3-81c809aaaa4a</Key>
+      <Value class="[Ljava.lang.String;">
+         <Item>es.sysmap.interflex.model.bdc.dg.Business Components CDOC</Item>
+         <Item>oxd_bc4j</Item>
+         <Item>Diagram</Item>
+      </Value>
+   </Item>
+</ModelersMap>

@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE Association SYSTEM "jbo_03_01.dtd">
+
+<Association
+   Name="SysC0010655Assoc" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.2.17.96" />
+   </DesignTime>
+   <AssociationEnd
+      Name="Sgalbulto"
+      Cardinality="1"
+      Source="true"
+      Owner="es.sysmap.interflex.model.bdc.Sgalbulto" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgalbulto.Idbulto" />
+         <Item Value="es.sysmap.interflex.model.bdc.Sgalbulto.Iddoc" />
+         <Item Value="es.sysmap.interflex.model.bdc.Sgalbulto.Idlin" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_aggregation" Value="0" />
+         <Attr Name="_isUpdateable" Value="true" />
+         <Attr Name="_finderName" Value="Sgalbulto" />
+         <Attr Name="_foreignKey" Value="es.sysmap.interflex.model.bdc.Sgalbulto.SysC0010602" />
+      </DesignTime>
+   </AssociationEnd>
+   <AssociationEnd
+      Name="Sgaresmat"
+      Cardinality="-1"
+      Owner="es.sysmap.interflex.model.bdc.Sgaresmat" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaresmat.Idbulto" />
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaresmat.Iddoc" />
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaresmat.Idlin" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_aggregation" Value="0" />
+         <Attr Name="_isUpdateable" Value="true" />
+         <Attr Name="_finderName" Value="Sgaresmat" />
+         <Attr Name="_foreignKey" Value="es.sysmap.interflex.model.bdc.Sgaresmat.SysC0010655" />
+      </DesignTime>
+   </AssociationEnd>
+</Association>

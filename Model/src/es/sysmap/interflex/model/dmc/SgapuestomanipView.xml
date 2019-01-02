@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+
+<ViewObject
+   Name="SgapuestomanipView"
+   SelectList="Sgapuestomanip.IDPUESTO, 
+       Sgapuestomanip.IDUBIMLD, 
+  
+     Sgapuestomanip.IDUBISLO, 
+       Sgapuestomanip.ESTADO, 
+
+       Sgapuestomanip.AUTOSELORDSAL, 
+       Sgapuestomanip.NUMORDSAL, 
+
+       Sgapuestomanip.AUTORETIRARMAC, 
+       Sgapuestomanip.BASCULAMLD, 
+
+       Sgapuestomanip.BASCULASLO"
+   FromList="SGAPUESTOMANIP Sgapuestomanip"
+   OrderBy="Sgapuestomanip.IDPUESTO"
+   BindingStyle="Oracle"
+   CustomQuery="false"
+   RowClass="es.sysmap.interflex.model.dmc.SgapuestomanipViewRowImpl"
+   ComponentClass="es.sysmap.interflex.model.dmc.SgapuestomanipViewImpl"
+   MsgBundleClass="oracle.jbo.common.JboResourceBundle"
+   UseGlueCode="false" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_codeGenFlag2" Value="Access|Coll" />
+      <Attr Name="_isExpertMode" Value="false" />
+   </DesignTime>
+   <EntityUsage
+      Name="Sgapuestomanip"
+      Entity="es.sysmap.interflex.model.bdc.Sgapuestomanip" >
+      <DesignTime>
+         <Attr Name="_EntireObjectTable" Value="false" />
+         <Attr Name="_queryClause" Value="true" />
+         <Attr Name="_queryOrderBy" Value="Sgapuestomanip.IDPUESTO" />
+      </DesignTime>
+   </EntityUsage>
+   <ViewAttribute
+      Name="Idpuesto"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Idpuesto"
+      EntityUsage="Sgapuestomanip"
+      AliasName="IDPUESTO" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Idubimld"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Idubimld"
+      EntityUsage="Sgapuestomanip"
+      AliasName="IDUBIMLD" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Idubislo"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Idubislo"
+      EntityUsage="Sgapuestomanip"
+      AliasName="IDUBISLO" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Estado"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Estado"
+      EntityUsage="Sgapuestomanip"
+      AliasName="ESTADO" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Autoselordsal"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Autoselordsal"
+      EntityUsage="Sgapuestomanip"
+      AliasName="AUTOSELORDSAL" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Numordsal"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Numordsal"
+      EntityUsage="Sgapuestomanip"
+      AliasName="NUMORDSAL" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Autoretirarmac"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Autoretirarmac"
+      EntityUsage="Sgapuestomanip"
+      AliasName="AUTORETIRARMAC" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Basculamld"
+      PrecisionRule="true"
+      EntityAttrName="Basculamld"
+      EntityUsage="Sgapuestomanip"
+      AliasName="BASCULAMLD" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Basculaslo"
+      PrecisionRule="true"
+      EntityAttrName="Basculaslo"
+      EntityUsage="Sgapuestomanip"
+      AliasName="BASCULASLO" >
+   </ViewAttribute>
+   <ViewLinkAccessor
+      Name="SgaubicacionPpkSiloView"
+      ViewLink="es.sysmap.interflex.model.dmc.SgapuestomanipUbicacionPpkSiloLink"
+      Type="oracle.jbo.Row"
+      IsUpdateable="false" >
+   </ViewLinkAccessor>
+   <ViewLinkAccessor
+      Name="SgaubicacionPpkMiniLoadView"
+      ViewLink="es.sysmap.interflex.model.dmc.SgapuestomanipUbicacionPpkMiniload"
+      Type="oracle.jbo.Row"
+      IsUpdateable="false" >
+   </ViewLinkAccessor>
+</ViewObject>

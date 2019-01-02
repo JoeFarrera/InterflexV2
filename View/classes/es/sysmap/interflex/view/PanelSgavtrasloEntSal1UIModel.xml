@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<DCContainer
+   id="PanelSgavtrasloEntSal1UIModel"
+   xmlns="http://xmlns.oracle.com/adfm/uimodel"
+   version="10.1.2.17.96"
+   Package="es.sysmap.interflex.view"
+   FindMode="false"
+   EnableTokenValidation="true" >
+   <Contents >
+      <DCIterator
+         id="SgavtrasloEntSal1Iter"
+         Binds="AppModuleDataControl.SgavtrasloEntSal1" >
+      </DCIterator>
+      <DCControl
+         id="SgavtrasloEntSal1"
+         DefClass="oracle.jbo.uicli.jui.JUTableDef"
+         SubType="DCTable"
+         IterBinding="SgavtrasloEntSal1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Idtraslo" />
+            <Item Value="Descrip" />
+            <Item Value="Estadotraslotxt" />
+            <Item Value="Estadopasillotxt" />
+            <Item Value="Estadoprocesotraslotxt" />
+            <Item Value="DescripvisualEntrada" />
+            <Item Value="DescripvisualSalida" />
+            <Item Value="Pasilloactual" />
+            <Item Value="Pasillodestino" />
+            <Item Value="Posplc" />
+         </AttrNames>
+      </DCControl>
+   </Contents>
+</DCContainer>

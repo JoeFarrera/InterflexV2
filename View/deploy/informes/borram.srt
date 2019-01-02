@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report Type="TabularSheet" MetaTemplate="Standard Report"><Version>6.5</Version>
+<ReportProperty Name="report.author">
+<![CDATA[]]>
+</ReportProperty>
+<ReportProperty Name="singlePage">
+<![CDATA[false]]>
+</ReportProperty>
+<ReportProperty Name="TextMode">
+<![CDATA[false]]>
+</ReportProperty>
+<ReportProperty Name="report.subject">
+<![CDATA[]]>
+</ReportProperty>
+<ReportProperty Name="columnSelection">
+<![CDATA[false]]>
+</ReportProperty>
+<ReportProperty Name="date.format">
+<![CDATA[]]>
+</ReportProperty>
+<ReportProperty Name="saveParameters">
+<![CDATA[false]]>
+</ReportProperty>
+<ReportProperty Name="report.keywords">
+<![CDATA[]]>
+</ReportProperty>
+<ReportProperty Name="live.edit">
+<![CDATA[false]]>
+</ReportProperty>
+<ReportProperty Name="edit.layout">
+<![CDATA[false]]>
+</ReportProperty>
+<ReportProperty Name="report.comments">
+<![CDATA[]]>
+</ReportProperty>
+<ReportProperty Name="report.title">
+<![CDATA[Report Title]]>
+</ReportProperty>
+<ReportProperty Name="cacheTime">
+<![CDATA[0]]>
+</ReportProperty>
+<ReportProperty Name="sortOnHeader">
+<![CDATA[false]]>
+</ReportProperty>
+<ReportProperty Name="report.modified">
+<![CDATA[2005-05-19 17:25:04]]>
+</ReportProperty>
+<ReportProperty Name="report.created">
+<![CDATA[2005-05-19 17:15:13]]>
+</ReportProperty>
+<Parameters>
+</Parameters>
+<ParameterSheets>
+</ParameterSheets>
+<RunningTotals>
+</RunningTotals>
+<dataViews>
+</dataViews>
+<EditRegionElement ID="Title_Region" Visible="true">
+</EditRegionElement>
+<EditRegionElement ID="MetaReport_EditRegion2" Visible="true">
+</EditRegionElement>
+<EditRegionElement ID="Content_Region" Visible="true">
+<SectionElement ID="MetaReport_Section4" Block="true" Continuation="false" AdhocEnabled="true">
+<property><name><![CDATA[gen.table]]></name><value><![CDATA[false]]></value></property>
+<property><name><![CDATA[grow]]></name><value><![CDATA[true]]></value></property>
+<property><name><![CDATA[suppress.blank]]></name><value><![CDATA[false]]></value></property>
+<property><name><![CDATA[gen.textbox]]></name><value><![CDATA[false]]></value></property>
+<property><name><![CDATA[gen.hgap]]></name><value><![CDATA[4]]></value></property>
+<property><name><![CDATA[field.name]]></name><value><![CDATA[false]]></value></property>
+<property><name><![CDATA[gen.notGen]]></name><value><![CDATA[false]]></value></property>
+<property><name><![CDATA[gen.layout]]></name><value><![CDATA[1]]></value></property>
+<property><name><![CDATA[gen.removeAll]]></name><value><![CDATA[false]]></value></property>
+<property><name><![CDATA[gen.vgap]]></name><value><![CDATA[2]]></value></property>
+<bindingAttr type="3" class="BindingAttr">
+<filter class="SourceAttr" type="0" source="sgavmovsusuariresum" prefix="Interflex">
+</filter>
+<filter class="ConditionAttr" >
+<conditions >
+</conditions>
+</filter>
+<filter class="GroupAttr" sorted="false" >
+<aggregates>
+</aggregates>
+<groups>
+</groups>
+</filter>
+<filter class="ColumnSelectionAttr" >
+<ColumnSelection>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="OPERARI" visible="true" dataType="string" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="DATA" visible="true" dataType="date" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="ORIDES" visible="true" dataType="string" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="ENTRADES" visible="true" dataType="double" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="SORTIDES" visible="true" dataType="double" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="REGULAR" visible="true" dataType="double" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="MOVIMENTS" visible="true" dataType="double" order="0" ></dataRef>
+</ColumnSelection>
+<ColumnSelection>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="OPERARI" visible="true" dataType="string" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="DATA" visible="true" dataType="date" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="ORIDES" visible="true" dataType="string" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="ENTRADES" visible="true" dataType="double" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="SORTIDES" visible="true" dataType="double" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="REGULAR" visible="true" dataType="double" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="MOVIMENTS" visible="true" dataType="double" order="0" ></dataRef>
+</ColumnSelection>
+<allRows>
+</allRows>
+</filter>
+<bindingOption class="SectionOption" grandTotal="true" >
+</bindingOption>
+</bindingAttr>
+<Section>
+<SectionHeader>
+<SectionBand Height="0.19444445" Visible="true" ShrinkToFit="false" PageBefore="false" PageAfter="false" SuppressBlank="false" TopBorder="0" LeftBorder="0" Breakable="true" RepeatHeader="true" Underlay="false" AtBottom="false" KeepTogether="false" BottomBorder="0" RightBorder="0" OrphanControl="false" Elements="7">
+<TextElement ID="Text2" Alignment="1" Indent="0.0" Hindent="0" Spacing="0" Block="false" Continuation="false" Visible="true" KeepWithNext="false" Font="Verdana-PLAIN-10" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<property><name><![CDATA[__column__]]></name><value><![CDATA[OPERARI]]></value></property>
+<![CDATA[OPERARI]]>
+</TextElement>
+<FieldProperty X="2" Y="0" Width="77" Height="14" VLine="0" VLineColor="-16777216"/>
+<TextElement ID="Text3" Alignment="1" Indent="0.0" Hindent="0" Spacing="0" Block="false" Continuation="false" Visible="true" KeepWithNext="false" Font="Verdana-PLAIN-10" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<property><name><![CDATA[__column__]]></name><value><![CDATA[DATA]]></value></property>
+<![CDATA[DATA]]>
+</TextElement>
+<FieldProperty X="83" Y="0" Width="109" Height="14" VLine="0" VLineColor="-16777216"/>
+<TextElement ID="Text4" Alignment="1" Indent="0.0" Hindent="0" Spacing="0" Block="false" Continuation="false" Visible="true" KeepWithNext="false" Font="Verdana-PLAIN-10" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<property><name><![CDATA[__column__]]></name><value><![CDATA[ORIDES]]></value></property>
+<![CDATA[ORIDES]]>
+</TextElement>
+<FieldProperty X="196" Y="0" Width="66" Height="14" VLine="0" VLineColor="-16777216"/>
+<TextElement ID="Text5" Alignment="1" Indent="0.0" Hindent="0" Spacing="0" Block="false" Continuation="false" Visible="true" KeepWithNext="false" Font="Verdana-PLAIN-10" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<property><name><![CDATA[__column__]]></name><value><![CDATA[ENTRADES]]></value></property>
+<![CDATA[ENTRADES]]>
+</TextElement>
+<FieldProperty X="266" Y="0" Width="87" Height="14" VLine="0" VLineColor="-16777216"/>
+<TextElement ID="Text6" Alignment="1" Indent="0.0" Hindent="0" Spacing="0" Block="false" Continuation="false" Visible="true" KeepWithNext="false" Font="Verdana-PLAIN-10" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<property><name><![CDATA[__column__]]></name><value><![CDATA[SORTIDES]]></value></property>
+<![CDATA[SORTIDES]]>
+</TextElement>
+<FieldProperty X="357" Y="0" Width="88" Height="14" VLine="0" VLineColor="-16777216"/>
+<TextElement ID="Text7" Alignment="1" Indent="0.0" Hindent="0" Spacing="0" Block="false" Continuation="false" Visible="true" KeepWithNext="false" Font="Verdana-PLAIN-10" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<property><name><![CDATA[__column__]]></name><value><![CDATA[REGULAR]]></value></property>
+<![CDATA[REGULAR]]>
+</TextElement>
+<FieldProperty X="449" Y="0" Width="87" Height="14" VLine="0" VLineColor="-16777216"/>
+<TextElement ID="Text8" Alignment="1" Indent="0.0" Hindent="0" Spacing="0" Block="false" Continuation="false" Visible="true" KeepWithNext="false" Font="Verdana-PLAIN-10" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<property><name><![CDATA[__column__]]></name><value><![CDATA[MOVIMENTS]]></value></property>
+<![CDATA[MOVIMENTS]]>
+</TextElement>
+<FieldProperty X="540" Y="0" Width="102" Height="14" VLine="0" VLineColor="-16777216"/>
+<Shapes>
+</Shapes>
+</SectionBand>
+</SectionHeader>
+<SectionContent>
+<SectionBand Height="0.19444445" Visible="true" ShrinkToFit="false" PageBefore="false" PageAfter="false" SuppressBlank="false" TopBorder="0" LeftBorder="0" Breakable="true" RepeatHeader="false" Underlay="false" AtBottom="false" KeepTogether="false" BottomBorder="0" RightBorder="0" OrphanControl="false" Elements="7">
+<TextElement ID="Text9" Alignment="1" Indent="0.0" Hindent="0" Spacing="0" Block="false" Continuation="false" Visible="true" KeepWithNext="false" Font="Verdana-PLAIN-10" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<![CDATA[XXXXXXX]]>
+</TextElement>
+<FieldProperty X="2" Y="0" Width="77" Height="14" VLine="0" VLineColor="-16777216" Binding="OPERARI"/>
+<TextElement ID="Text10" Alignment="1" Indent="0.0" Hindent="0" Spacing="0" Block="false" Continuation="false" Visible="true" KeepWithNext="false" Font="Verdana-PLAIN-10" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<![CDATA[2005-05-19]]>
+</TextElement>
+<FieldProperty X="83" Y="0" Width="109" Height="14" VLine="0" VLineColor="-16777216" Binding="DATA"/>
+<TextElement ID="Text11" Alignment="1" Indent="0.0" Hindent="0" Spacing="0" Block="false" Continuation="false" Visible="true" KeepWithNext="false" Font="Verdana-PLAIN-10" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<![CDATA[XXXXXX]]>
+</TextElement>
+<FieldProperty X="196" Y="0" Width="66" Height="14" VLine="0" VLineColor="-16777216" Binding="ORIDES"/>
+<TextElement ID="Text12" Alignment="1" Indent="0.0" Hindent="0" Spacing="0" Block="false" Continuation="false" Visible="true" KeepWithNext="false" Font="Verdana-PLAIN-10" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<![CDATA[99999.99]]>
+</TextElement>
+<FieldProperty X="266" Y="0" Width="87" Height="14" VLine="0" VLineColor="-16777216" Binding="ENTRADES"/>
+<TextElement ID="Text13" Alignment="1" Indent="0.0" Hindent="0" Spacing="0" Block="false" Continuation="false" Visible="true" KeepWithNext="false" Font="Verdana-PLAIN-10" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<![CDATA[99999.99]]>
+</TextElement>
+<FieldProperty X="357" Y="0" Width="88" Height="14" VLine="0" VLineColor="-16777216" Binding="SORTIDES"/>
+<TextElement ID="Text14" Alignment="1" Indent="0.0" Hindent="0" Spacing="0" Block="false" Continuation="false" Visible="true" KeepWithNext="false" Font="Verdana-PLAIN-10" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<![CDATA[99999.99]]>
+</TextElement>
+<FieldProperty X="449" Y="0" Width="87" Height="14" VLine="0" VLineColor="-16777216" Binding="REGULAR"/>
+<TextElement ID="Text15" Alignment="1" Indent="0.0" Hindent="0" Spacing="0" Block="false" Continuation="false" Visible="true" KeepWithNext="false" Font="Verdana-PLAIN-10" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
+<![CDATA[99999.99]]>
+</TextElement>
+<FieldProperty X="540" Y="0" Width="102" Height="14" VLine="0" VLineColor="-16777216" Binding="MOVIMENTS"/>
+<Shapes>
+</Shapes>
+</SectionBand>
+</SectionContent>
+<SectionFooter>
+<SectionBand Height="0.3" Visible="false" ShrinkToFit="false" PageBefore="false" PageAfter="false" SuppressBlank="false" TopBorder="0" LeftBorder="0" Breakable="true" RepeatHeader="false" Underlay="false" AtBottom="false" KeepTogether="false" BottomBorder="0" RightBorder="0" OrphanControl="false" Elements="0">
+<Shapes>
+</Shapes>
+</SectionBand>
+</SectionFooter>
+</Section>
+<Table Rows="2" Cols="7" HeaderRow="1" HeaderCol="0" TrailerRow="0" TrailerCol="0">
+<TR>
+<TD Type="string"><![CDATA[OPERARI]]></TD><TD Type="string"><![CDATA[DATA]]></TD><TD Type="string"><![CDATA[ORIDES]]></TD><TD Type="string"><![CDATA[ENTRADES]]></TD><TD Type="string"><![CDATA[SORTIDES]]></TD><TD Type="string"><![CDATA[REGULAR]]></TD><TD Type="string"><![CDATA[MOVIMENTS]]></TD></TR>
+<TR>
+<TD Type="string"><![CDATA[XXXXXXX]]></TD><TD Type="date"><![CDATA[2005-05-19]]></TD><TD Type="string"><![CDATA[XXXXXX]]></TD><TD Type="double"><![CDATA[99999.99]]></TD><TD Type="double"><![CDATA[99999.99]]></TD><TD Type="double"><![CDATA[99999.99]]></TD><TD Type="double"><![CDATA[99999.99]]></TD></TR>
+</Table>
+</SectionElement>
+</EditRegionElement>
+</Report>

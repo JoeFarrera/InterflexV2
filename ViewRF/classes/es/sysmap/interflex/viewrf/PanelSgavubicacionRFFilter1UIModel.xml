@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<DCContainer
+   id="PanelSgavubicacionRFFilter1UIModel"
+   xmlns="http://xmlns.oracle.com/adfm/uimodel"
+   version="10.1.2.17.96"
+   Package="es.sysmap.interflex.viewrf"
+   FindMode="false"
+   EnableTokenValidation="true" >
+   <Contents >
+      <DCIterator
+         id="SgavubicacionRFFilter1Iter"
+         Binds="AppModuleDataControl1.SgavubicacionRFFilter1" >
+      </DCIterator>
+      <DCControl
+         id="Pasillo"
+         SubType="DCTextField"
+         IterBinding="SgavubicacionRFFilter1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Pasillo" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="IdartIF"
+         SubType="DCTextField"
+         IterBinding="SgavubicacionRFFilter1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="IdartIF" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Ocupacion"
+         SubType="DCTextField"
+         IterBinding="SgavubicacionRFFilter1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Ocupacion" />
+         </AttrNames>
+      </DCControl>
+   </Contents>
+</DCContainer>

@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+
+<ViewObject
+   Name="ZTipoenvioView"
+   SelectList="ZTipoenvio.id, 
+       ZTipoenvio.TipoEnvio, 
+       ZTipoenvio.idFormato"
+   FromList="DBO.Z_TIPOENVIO ZTipoenvio"
+   BindingStyle="JDBC"
+   CustomQuery="false"
+   ComponentClass="es.sysmap.interflex.erps_model.dmc.ZTipoenvioViewImpl"
+   MsgBundleClass="oracle.jbo.common.JboResourceBundle"
+   UseGlueCode="false" >
+   <DesignTime>
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_codeGenFlag2" Value="Access|Coll" />
+      <Attr Name="_isExpertMode" Value="false" />
+   </DesignTime>
+   <EntityUsage
+      Name="ZTipoenvio"
+      Entity="es.sysmap.interflex.erps_model.bdc.ZTipoenvio" >
+      <DesignTime>
+         <Attr Name="_EntireObjectTable" Value="false" />
+         <Attr Name="_queryClause" Value="false" />
+      </DesignTime>
+   </EntityUsage>
+   <ViewAttribute
+      Name="Id"
+      IsUpdateable="false"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Id"
+      EntityUsage="ZTipoenvio"
+      AliasName="id" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Tipoenvio"
+      PrecisionRule="true"
+      EntityAttrName="Tipoenvio"
+      EntityUsage="ZTipoenvio"
+      AliasName="TipoEnvio" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Idformato"
+      PrecisionRule="true"
+      EntityAttrName="Idformato"
+      EntityUsage="ZTipoenvio"
+      AliasName="idFormato" >
+   </ViewAttribute>
+   <ViewLinkAccessor
+      Name="ZAgenciatipoenvioView"
+      ViewLink="es.sysmap.interflex.erps_model.dmc.ZTipoenvioZAgenciatipoenvioViewLink"
+      Type="oracle.jbo.RowIterator"
+      IsUpdateable="false" >
+   </ViewLinkAccessor>
+</ViewObject>

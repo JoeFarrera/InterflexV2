@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<DCContainer
+   id="PanelSgavcdocView2UIModel"
+   xmlns="http://xmlns.oracle.com/adfm/uimodel"
+   version="10.1.2.17.96"
+   Package="es.sysmap.interflex.view"
+   FindMode="false"
+   EnableTokenValidation="true" >
+   <Contents >
+      <DCIterator
+         id="SgavcdocView2Iter"
+         Binds="AppModuleDataControl.SgavcdocView2" >
+      </DCIterator>
+      <DCControl
+         id="SgavcdocView2"
+         DefClass="oracle.jbo.uicli.jui.JUTableDef"
+         SubType="DCTable"
+         BindingClass="oracle.jbo.uicli.jui.JUTableBinding"
+         IterBinding="SgavcdocView2Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Idcabstr" />
+            <Item Value="Idcabnum" />
+            <Item Value="Numlineas" />
+            <Item Value="Falbaran" />
+            <Item Value="Descestado" />
+            <Item Value="Descestadolineas" />
+            <Item Value="Ccliente" />
+            <Item Value="Transporte" />
+            <Item Value="Numbultos" />
+            <Item Value="Operario" />
+            <Item Value="Pestotal" />
+            <Item Value="Motivo" />
+            <Item Value="Nombre" />
+            <Item Value="Direccion" />
+            <Item Value="Codpostal" />
+            <Item Value="Poblacion" />
+            <Item Value="Provincia" />
+            <Item Value="Telefono" />
+            <Item Value="Portes" />
+            <Item Value="Spedido" />
+            <Item Value="Pais" />
+            <Item Value="Reembolso" />
+            <Item Value="Talbaran" />
+            <Item Value="Nalbaran" />
+            <Item Value="Codempresa" />
+            <Item Value="Transp" />
+            <Item Value="Tportes" />
+            <Item Value="Feccre" />
+            <Item Value="Idultbulto" />
+            <Item Value="Idtipdoc" />
+            <Item Value="Iddoc" />
+         </AttrNames>
+      </DCControl>
+   </Contents>
+</DCContainer>

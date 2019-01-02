@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<DCContainer
+   id="PanelSgavtrasloUIModel"
+   xmlns="http://xmlns.oracle.com/adfm/uimodel"
+   version="10.1.2.17.96"
+   Package="es.sysmap.interflex.controlview"
+   FindMode="false"
+   EnableTokenValidation="true" >
+   <Contents >
+      <DCIterator
+         id="SgavtrasloEntSal1Iter"
+         Binds="AppModuleDataControl.SgavtrasloEntSal1" >
+      </DCIterator>
+      <DCIterator
+         id="SgavtrasloEntSal1Iterator"
+         Binds="AppModuleDataControl.SgavtrasloEntSal1"
+         RangeSize="10" >
+      </DCIterator>
+      <DCIterator
+         id="SgavtrasloEntSal1Iterator1"
+         Binds="AppModuleDataControl.SgavtrasloEntSal1"
+         RangeSize="10" >
+      </DCIterator>
+      <DCControl
+         id="Idtraslo"
+         SubType="DCTextField"
+         IterBinding="SgavtrasloEntSal1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Idtraslo" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Descrip"
+         SubType="DCTextField"
+         IterBinding="SgavtrasloEntSal1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Descrip" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Estadotraslotxt"
+         SubType="DCTextField"
+         IterBinding="SgavtrasloEntSal1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Estadotraslotxt" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Estadopasillotxt"
+         SubType="DCTextField"
+         IterBinding="SgavtrasloEntSal1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Estadopasillotxt" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Estadoprocesotraslotxt"
+         SubType="DCTextField"
+         IterBinding="SgavtrasloEntSal1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Estadoprocesotraslotxt" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="DescripvisualEntrada"
+         SubType="DCTextField"
+         IterBinding="SgavtrasloEntSal1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="DescripvisualEntrada" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="DescripvisualSalida"
+         SubType="DCTextField"
+         IterBinding="SgavtrasloEntSal1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="DescripvisualSalida" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Pasilloactual"
+         SubType="DCTextField"
+         IterBinding="SgavtrasloEntSal1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Pasilloactual" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Pasillodestino"
+         SubType="DCTextField"
+         IterBinding="SgavtrasloEntSal1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Pasillodestino" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Posplc"
+         SubType="DCTextField"
+         IterBinding="SgavtrasloEntSal1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Posplc" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Trasbordoentrada"
+         DefClass="oracle.jbo.uicli.jui.JUButtonDef"
+         SubType="DCButton"
+         IterBinding="SgavtrasloEntSal1Iter"
+         ApplyValidation="false"
+         isDynamic="false"
+         ListOperMode="0"
+         StaticList="true"
+         BoolVal="true" >
+         <AttrNames>
+            <Item Value="Trasbordoentrada" />
+         </AttrNames>
+         <ValueList>
+            <Item Value="S" />
+            <Item Value="N" />
+         </ValueList>
+      </DCControl>
+   </Contents>
+</DCContainer>

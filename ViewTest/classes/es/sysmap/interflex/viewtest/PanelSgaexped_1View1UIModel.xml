@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<DCContainer
+   id="PanelSgaexped_1View1UIModel"
+   xmlns="http://xmlns.oracle.com/adfm/uimodel"
+   version="10.1.2.17.96"
+   Package="es.sysmap.interflex.viewtest"
+   FindMode="false"
+   EnableTokenValidation="true" >
+   <Contents >
+      <DCIterator
+         id="Sgaexped_1View1Iter"
+         Binds="AppModuleDataControl11.Sgaexped_1View1" >
+      </DCIterator>
+      <DCControl
+         id="Idexped"
+         SubType="DCTextField"
+         IterBinding="Sgaexped_1View1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Idexped" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Createdby"
+         SubType="DCTextField"
+         IterBinding="Sgaexped_1View1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Createdby" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Createdon"
+         SubType="DCTextField"
+         IterBinding="Sgaexped_1View1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Createdon" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Modifiedby"
+         SubType="DCTextField"
+         IterBinding="Sgaexped_1View1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Modifiedby" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Modifiedon"
+         SubType="DCTextField"
+         IterBinding="Sgaexped_1View1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Modifiedon" />
+         </AttrNames>
+      </DCControl>
+   </Contents>
+</DCContainer>

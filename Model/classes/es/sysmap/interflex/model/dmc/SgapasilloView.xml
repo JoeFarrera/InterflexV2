@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+
+<ViewObject
+   Name="SgapasilloView"
+   SelectList="Sgapasillo.IDPASILLO, 
+       Sgapasillo.IDUBI, 
+       Sgapasillo.IDUBIENTRADA, 
+
+       Sgapasillo.IDUBISALIDA, 
+       Sgapasillo.ESTADO, 
+ 
+      Sgapasillo.CREATEDBY, 
+       Sgapasillo.MODIFIEDBY, 
+ 
+      Sgapasillo.CREATEDON, 
+       Sgapasillo.MODIFIEDON"
+   FromList="SGAPASILLO Sgapasillo"
+   BindingStyle="Oracle"
+   CustomQuery="false"
+   ComponentClass="es.sysmap.interflex.model.dmc.SgapasilloViewImpl"
+   MsgBundleClass="oracle.jbo.common.JboResourceBundle"
+   UseGlueCode="false" >
+   <DesignTime>
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_codeGenFlag2" Value="Access|Coll" />
+      <Attr Name="_isExpertMode" Value="false" />
+   </DesignTime>
+   <EntityUsage
+      Name="Sgapasillo"
+      Entity="es.sysmap.interflex.model.bdc.Sgapasillo" >
+      <DesignTime>
+         <Attr Name="_EntireObjectTable" Value="false" />
+         <Attr Name="_queryClause" Value="false" />
+      </DesignTime>
+   </EntityUsage>
+   <ViewAttribute
+      Name="idPasillo"
+      PrecisionRule="true"
+      EntityAttrName="idPasillo"
+      EntityUsage="Sgapasillo"
+      AliasName="IDPASILLO" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="idUbi"
+      IsUnique="true"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="idUbi"
+      EntityUsage="Sgapasillo"
+      AliasName="IDUBI" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="idUbiEntrada"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="idUbiEntrada"
+      EntityUsage="Sgapasillo"
+      AliasName="IDUBIENTRADA" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="idUbiSalida"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="idUbiSalida"
+      EntityUsage="Sgapasillo"
+      AliasName="IDUBISALIDA" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="estado"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="estado"
+      EntityUsage="Sgapasillo"
+      AliasName="ESTADO" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Createdby"
+      IsUpdateable="false"
+      PrecisionRule="true"
+      EntityAttrName="Createdby"
+      EntityUsage="Sgapasillo"
+      AliasName="CREATEDBY" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Modifiedby"
+      IsUpdateable="false"
+      PrecisionRule="true"
+      EntityAttrName="Modifiedby"
+      EntityUsage="Sgapasillo"
+      AliasName="MODIFIEDBY" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Createdon"
+      IsUpdateable="false"
+      PrecisionRule="true"
+      EntityAttrName="Createdon"
+      EntityUsage="Sgapasillo"
+      AliasName="CREATEDON" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Modifiedon"
+      IsUpdateable="false"
+      PrecisionRule="true"
+      EntityAttrName="Modifiedon"
+      EntityUsage="Sgapasillo"
+      AliasName="MODIFIEDON" >
+   </ViewAttribute>
+</ViewObject>

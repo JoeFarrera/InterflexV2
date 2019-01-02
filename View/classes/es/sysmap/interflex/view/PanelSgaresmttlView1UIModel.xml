@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<DCContainer
+   id="PanelSgaresmttlView1UIModel"
+   xmlns="http://xmlns.oracle.com/adfm/uimodel"
+   version="10.1.2.17.96"
+   Package="es.sysmap.interflex.view"
+   FindMode="false"
+   EnableTokenValidation="true" >
+   <Contents >
+      <DCIterator
+         id="SgaresmttlView1Iter"
+         Binds="AppModuleDataControl.SgaresmttlView1" >
+      </DCIterator>
+      <DCControl
+         id="SgaresmttlView1"
+         DefClass="oracle.jbo.uicli.jui.JUTableDef"
+         SubType="DCTable"
+         IterBinding="SgaresmttlView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Iddoc" />
+            <Item Value="Idmac" />
+            <Item Value="Createdby" />
+            <Item Value="Modifiedby" />
+            <Item Value="Createdon" />
+            <Item Value="Modifiedon" />
+         </AttrNames>
+      </DCControl>
+   </Contents>
+</DCContainer>

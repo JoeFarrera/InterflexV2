@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<DCContainer
+   id="PanelZAgenciatipoenvioView1UIModel"
+   xmlns="http://xmlns.oracle.com/adfm/uimodel"
+   version="10.1.2.17.96"
+   Package="es.sysmap.interflex.view"
+   FindMode="false"
+   EnableTokenValidation="true" >
+   <Contents >
+      <DCIterator
+         id="ZAgenciatipoenvioView1Iter"
+         Binds="AppModuleDataControl.ZAgenciatipoenvioView1" >
+      </DCIterator>
+      <DCControl
+         id="ZAgenciatipoenvioView1"
+         DefClass="oracle.jbo.uicli.jui.JUTableDef"
+         SubType="DCTable"
+         IterBinding="ZAgenciatipoenvioView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Id" />
+            <Item Value="Codtra" />
+            <Item Value="Tipoenvio" />
+         </AttrNames>
+      </DCControl>
+   </Contents>
+</DCContainer>

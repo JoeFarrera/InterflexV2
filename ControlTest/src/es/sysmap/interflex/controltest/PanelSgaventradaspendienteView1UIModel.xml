@@ -1,0 +1,205 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<DCContainer
+   id="PanelSgaventradaspendienteView1UIModel"
+   xmlns="http://xmlns.oracle.com/adfm/uimodel"
+   version="10.1.2.17.96"
+   Package="es.sysmap.interflex.controltest"
+   FindMode="false"
+   EnableTokenValidation="true" >
+   <Contents >
+      <DCIterator
+         id="SgaventradaspendienteView1Iter"
+         Binds="TestAppModuleDataControl.SgaventradaspendienteView1" >
+      </DCIterator>
+      <DCControl
+         id="Iddoc"
+         SubType="DCTextField"
+         IterBinding="SgaventradaspendienteView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Iddoc" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Prioridad"
+         SubType="DCTextField"
+         IterBinding="SgaventradaspendienteView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Prioridad" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Estadocab"
+         SubType="DCTextField"
+         IterBinding="SgaventradaspendienteView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Estadocab" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Idlin"
+         SubType="DCTextField"
+         IterBinding="SgaventradaspendienteView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Idlin" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Idbulto"
+         SubType="DCTextField"
+         IterBinding="SgaventradaspendienteView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Idbulto" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Cantot"
+         SubType="DCTextField"
+         IterBinding="SgaventradaspendienteView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Cantot" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Canpen"
+         SubType="DCTextField"
+         IterBinding="SgaventradaspendienteView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Canpen" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Canres"
+         SubType="DCTextField"
+         IterBinding="SgaventradaspendienteView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Canres" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Estadolinea"
+         SubType="DCTextField"
+         IterBinding="SgaventradaspendienteView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Estadolinea" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Idpuesto"
+         SubType="DCTextField"
+         IterBinding="SgaventradaspendienteView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Idpuesto" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Idart"
+         SubType="DCTextField"
+         IterBinding="SgaventradaspendienteView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Idart" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Idartif"
+         SubType="DCTextField"
+         IterBinding="SgaventradaspendienteView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Idartif" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Idtipmac"
+         SubType="DCTextField"
+         IterBinding="SgaventradaspendienteView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Idtipmac" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Relleno"
+         SubType="DCTextField"
+         IterBinding="SgaventradaspendienteView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Relleno" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Tolfifo"
+         SubType="DCTextField"
+         IterBinding="SgaventradaspendienteView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Tolfifo" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Controlpes"
+         SubType="DCTextField"
+         IterBinding="SgaventradaspendienteView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Controlpes" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Pesunit"
+         SubType="DCTextField"
+         IterBinding="SgaventradaspendienteView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Pesunit" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Unimac"
+         SubType="DCTextField"
+         IterBinding="SgaventradaspendienteView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Unimac" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Rotacion"
+         SubType="DCTextField"
+         IterBinding="SgaventradaspendienteView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Rotacion" />
+         </AttrNames>
+      </DCControl>
+   </Contents>
+</DCContainer>

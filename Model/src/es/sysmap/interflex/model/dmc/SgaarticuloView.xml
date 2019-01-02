@@ -1,0 +1,254 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+
+<ViewObject
+   Name="SgaarticuloView"
+   SelectList="Sgaarticulo.IDART, 
+       Sgaarticulo.IDARTANT, 
+       Sgaarticulo.DESCRIP, 
+
+       Sgaarticulo.PESUNIT, 
+       Sgaarticulo.CONTROLPES, 
+
+       Sgaarticulo.FECULTMOV, 
+       Sgaarticulo.CODEAN, 
+ 
+      Sgaarticulo.UNIEMB, 
+       Sgaarticulo.UNIEMBESP, 
+   
+    Sgaarticulo.IDTIPMAC, 
+       Sgaarticulo.UNIMAC, 
+      
+ Sgaarticulo.RELLENO, 
+       Sgaarticulo.MULTIREF, 
+       Sgaarticulo.ROTACION, 
+
+       Sgaarticulo.PICKING1, 
+       Sgaarticulo.IDARTIF, 
+ 
+      Sgaarticulo.TOLFIFO, 
+       Sgaarticulo.CREATEDON, 
+  
+     Sgaarticulo.MODIFIEDON, 
+       Sgaarticulo.FECULTMODPES, 
+
+       Sgaarticulo.MODPESBY, 
+       Sgaarticulo.PESUNIVEN, 
+
+       Sgaarticulo.TIPPREP"
+   FromList="SGAARTICULO Sgaarticulo"
+   OrderBy="Sgaarticulo.IDARTIF"
+   BindingStyle="Oracle"
+   CustomQuery="false"
+   RowClass="es.sysmap.interflex.model.dmc.SgaarticuloViewRowImpl"
+   ComponentClass="es.sysmap.interflex.model.dmc.SgaarticuloViewImpl"
+   MsgBundleClass="es.sysmap.interflex.model.dmc.common.SgaarticuloViewRowImplMsgBundle"
+   RowInterface="es.sysmap.interflex.model.dmc.common.SgaarticuloViewRow"
+   ClientRowProxyName="es.sysmap.interflex.model.dmc.client.SgaarticuloViewRowClient"
+   UseGlueCode="false" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_codeGenFlag2" Value="Access|Coll|Msg" />
+      <Attr Name="_isExpertMode" Value="false" />
+   </DesignTime>
+   <EntityUsage
+      Name="Sgaarticulo"
+      Entity="es.sysmap.interflex.model.bdc.Sgaarticulo" >
+      <DesignTime>
+         <Attr Name="_EntireObjectTable" Value="false" />
+         <Attr Name="_queryClause" Value="true" />
+         <Attr Name="_queryOrderBy" Value="Sgaarticulo.IDARTIF" />
+      </DesignTime>
+   </EntityUsage>
+   <ViewAttribute
+      Name="Idart"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Idart"
+      EntityUsage="Sgaarticulo"
+      AliasName="IDART" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Idartant"
+      PrecisionRule="true"
+      EntityAttrName="Idartant"
+      EntityUsage="Sgaarticulo"
+      AliasName="IDARTANT" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Descrip"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Descrip"
+      EntityUsage="Sgaarticulo"
+      AliasName="DESCRIP" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Pesunit"
+      PrecisionRule="true"
+      EntityAttrName="Pesunit"
+      EntityUsage="Sgaarticulo"
+      AliasName="PESUNIT" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Controlpes"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Controlpes"
+      EntityUsage="Sgaarticulo"
+      AliasName="CONTROLPES" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Fecultmov"
+      PrecisionRule="true"
+      EntityAttrName="Fecultmov"
+      EntityUsage="Sgaarticulo"
+      AliasName="FECULTMOV" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Codean"
+      PrecisionRule="true"
+      EntityAttrName="Codean"
+      EntityUsage="Sgaarticulo"
+      AliasName="CODEAN" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Uniemb"
+      PrecisionRule="true"
+      EntityAttrName="Uniemb"
+      EntityUsage="Sgaarticulo"
+      AliasName="UNIEMB" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Uniembesp"
+      PrecisionRule="true"
+      EntityAttrName="Uniembesp"
+      EntityUsage="Sgaarticulo"
+      AliasName="UNIEMBESP" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Idtipmac"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Idtipmac"
+      EntityUsage="Sgaarticulo"
+      AliasName="IDTIPMAC" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Unimac"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Unimac"
+      EntityUsage="Sgaarticulo"
+      AliasName="UNIMAC" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Relleno"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Relleno"
+      EntityUsage="Sgaarticulo"
+      AliasName="RELLENO" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Multiref"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Multiref"
+      EntityUsage="Sgaarticulo"
+      AliasName="MULTIREF" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Rotacion"
+      PrecisionRule="true"
+      EntityAttrName="Rotacion"
+      EntityUsage="Sgaarticulo"
+      AliasName="ROTACION" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Picking1"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Picking1"
+      EntityUsage="Sgaarticulo"
+      AliasName="PICKING1" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Idartif"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Idartif"
+      EntityUsage="Sgaarticulo"
+      AliasName="IDARTIF" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Tolfifo"
+      PrecisionRule="true"
+      EntityAttrName="Tolfifo"
+      EntityUsage="Sgaarticulo"
+      AliasName="TOLFIFO" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Createdon"
+      IsUpdateable="false"
+      PrecisionRule="true"
+      EntityAttrName="Createdon"
+      EntityUsage="Sgaarticulo"
+      AliasName="CREATEDON" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Modifiedon"
+      IsUpdateable="false"
+      PrecisionRule="true"
+      EntityAttrName="Modifiedon"
+      EntityUsage="Sgaarticulo"
+      AliasName="MODIFIEDON" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Fecultmodpes"
+      PrecisionRule="true"
+      EntityAttrName="Fecultmodpes"
+      EntityUsage="Sgaarticulo"
+      AliasName="FECULTMODPES" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Modpesby"
+      PrecisionRule="true"
+      EntityAttrName="Modpesby"
+      EntityUsage="Sgaarticulo"
+      AliasName="MODPESBY" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Pesuniven"
+      PrecisionRule="true"
+      EntityAttrName="Pesuniven"
+      EntityUsage="Sgaarticulo"
+      AliasName="PESUNIVEN" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Tipprep"
+      PrecisionRule="true"
+      EntityAttrName="Tipprep"
+      EntityUsage="Sgaarticulo"
+      AliasName="TIPPREP" >
+   </ViewAttribute>
+   <ViewLinkAccessor
+      Name="SgaexistenciaView"
+      ViewLink="es.sysmap.interflex.model.dmc.SysC0010954Link"
+      Type="oracle.jbo.RowIterator"
+      IsUpdateable="false" >
+   </ViewLinkAccessor>
+   <ViewLinkAccessor
+      Name="SgaldocView"
+      ViewLink="es.sysmap.interflex.model.dmc.SysC0010965Link"
+      Type="oracle.jbo.RowIterator"
+      IsUpdateable="false" >
+   </ViewLinkAccessor>
+   <ViewLinkAccessor
+      Name="SgavProdEmbalajesArticuloView"
+      ViewLink="es.sysmap.interflex.model.dmc.SgaArticuloProdEmbalajesViewLink"
+      Type="oracle.jbo.RowIterator"
+      IsUpdateable="false" >
+   </ViewLinkAccessor>
+</ViewObject>

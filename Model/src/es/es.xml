@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE JboPackage SYSTEM "jbo_03_01.dtd">
+
+<JboPackage
+   Name="es"
+   SeparateXMLFiles="true"
+   PackageName="es" >
+   <Data>
+      <Property Name ="NAMESPACE_REFERENCE" Value ="1001::::BC4JContainer" />
+      <Property Name ="ID" Value ="4e27a8a8-0102-1000-800c-c0a80001e1a8::es::BC4JPackage" />
+   </Data>
+   <DesignTime>
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_ejbPackage" Value="false" />
+   </DesignTime>
+</JboPackage>

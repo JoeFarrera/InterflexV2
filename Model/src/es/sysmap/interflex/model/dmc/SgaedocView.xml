@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+
+<ViewObject
+   Name="SgaedocView"
+   SelectList="Sgaedoc.IDDOC, 
+       Sgaedoc.IDEMBALAJE, 
+       Sgaedoc.CANTOT, 
+       Sgaedoc.PESO"
+   FromList="SGAEDOC Sgaedoc"
+   OrderBy="Sgaedoc.IDDOC,Sgaedoc.IDEMBALAJE"
+   BindingStyle="Oracle"
+   CustomQuery="false"
+   ComponentClass="es.sysmap.interflex.model.dmc.SgaedocViewImpl"
+   MsgBundleClass="oracle.jbo.common.JboResourceBundle"
+   UseGlueCode="false" >
+   <DesignTime>
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_codeGenFlag2" Value="Access|Coll" />
+      <Attr Name="_isExpertMode" Value="false" />
+   </DesignTime>
+   <EntityUsage
+      Name="Sgaedoc"
+      Entity="es.sysmap.interflex.model.bdc.Sgaedoc" >
+      <DesignTime>
+         <Attr Name="_EntireObjectTable" Value="false" />
+         <Attr Name="_queryClause" Value="true" />
+         <Attr Name="_queryOrderBy" Value="Sgaedoc.IDDOC,Sgaedoc.IDEMBALAJE" />
+      </DesignTime>
+   </EntityUsage>
+   <ViewAttribute
+      Name="Iddoc"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Iddoc"
+      EntityUsage="Sgaedoc"
+      AliasName="IDDOC" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Idembalaje"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Idembalaje"
+      EntityUsage="Sgaedoc"
+      AliasName="IDEMBALAJE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Cantot"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Cantot"
+      EntityUsage="Sgaedoc"
+      AliasName="CANTOT" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Peso"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Peso"
+      EntityUsage="Sgaedoc"
+      AliasName="PESO" >
+   </ViewAttribute>
+</ViewObject>

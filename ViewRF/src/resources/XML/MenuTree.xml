@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<Menu nomMenu="Menú d'usuari">
+   <Seccio nomMenu="Operacions" tooltip="Operacions en llocs de treball" icona="16x16/plain/scroll.png" acces="MNUOPERACIONS">
+   	<Item nomMenu="Entrades" tooltip="Entrades magatzems" icona="16x16/plain/document_zoom_in.png" panel="es.sysmap.interflex.view.MDPanelSgacdocEntradesView1SgavbultoView1" topicId="entrades" acces="MNUOPERACIONS"/>
+   	<Item nomMenu="Sortides" tooltip="Sortides magatzems" icona="16x16/plain/document_zoom_out.png" panel="es.sysmap.interflex.view.MDPanelSgacdocSortidesView2SgaldocView5" topicId="sortides" acces="MNUOPERACIONS"/>
+   	<Item nomMenu="Operacions Puesto" tooltip="Operacions en el puesto de treball" icona="16x16/plain/gears.png" panel="es.sysmap.interflex.view.MDPanelOperacionsManuals" topicId="operacions" acces="MNUOPERACIONS"/>
+    <Item nomMenu="Operacions Manuals" tooltip="Operacions en ubicacions manuals" icona="16x16/plain/gears.png" panel="es.sysmap.interflex.view.MDPanelEntradesManuals" topicId="operacions" acces="MNUOPERACIONS"/>
+    <Item nomMenu="Documents oberts" tooltip="Documents oberts en el puesto de treball" icona="16x16/plain/document_zoom_out.png" panel="es.sysmap.interflex.view.PanelSgavdocsObertsView1" topicId="docsoberts" acces="MNUOPERACIONS"/>
+    <Item nomMenu="Documents nous" tooltip="Documents nous" icona="16x16/plain/document_zoom_out.png" panel="es.sysmap.interflex.view.PanelSgacdocSortidesView1" topicId="docsoberts" acces="MNUOPERACIONS"/>
+   </Seccio>
+   <Seccio nomMenu="Manteniment" tooltip="Manteniment de fitxers mestres" icona="16x16/plain/toolbox.png" acces="MNUMANTENIMENT">
+   	<Item nomMenu="Articles" tooltip="Manteniment d'articles" icona="16x16/plain/nut_and_bolt.png" panel="es.sysmap.interflex.view.PanelSgaarticuloView1" topicId="articles" acces="MNUMANTENIMENT"/>
+    <Item nomMenu="Contenidors" tooltip="Manteniment de contenidors" icona="contenidors.gif" panel="es.sysmap.interflex.view.PanelSgamacView1" topicId="contenidors" acces="MNUMANTENIMENT"/>
+    <Item nomMenu="Ubicacions / Posicions" tooltip="Manteniment d'ubicacions i posicions d'ubicacions" icona="ubicacion.gif" panel="es.sysmap.interflex.view.PanelSgaubicacionView1" topicId="ubicacions" acces="MNUMANTENIMENT"/>
+    <Item nomMenu="Tipus d'ubicacions" tooltip="Manteniment de tipus d'ubicacions" icona="tipubic.gif" panel="es.sysmap.interflex.view.PanelSgatipoubicacionView1" topicId="tipubic" acces="MNUMANTENIMENT"/>
+    <Item nomMenu="Tipus de contenidors" tooltip="Manteniment de tipus de contenidors" icona="tipcont.gif" panel="es.sysmap.interflex.view.PanelSgatipomacView1" topicId="tipcont" acces="MNUMANTENIMENT"/>
+    <Item nomMenu="Tipus de contenidors segons tipus d'ubicació" tooltip="Manteniment de tipus de contenidors segons el tipus d'ubicació" icona="tipcont.gif" panel="es.sysmap.interflex.view.PanelSgatipmactipubiView1" topicId="tipconttipubic" acces="MNUMANTENIMENT"/>
+    <Item nomMenu="Tipus de magatzems" tooltip="Manteniment de tipus de magatzems" icona="tipmag.gif" panel="es.sysmap.interflex.view.PanelSgatipoalmacenView1" topicId="tipmag" acces="MNUMANTENIMENT"/>
+    <Item nomMenu="Tipus de documents" tooltip="Manteniment de tipus de documents" icona="tipdoc.gif" panel="es.sysmap.interflex.view.PanelSgatipdocView1" topicId="tipdoc" acces="MNUMANTENIMENT"/>
+    <Item nomMenu="Tipus d'embalatges" tooltip="Manteniment de tipus d'embalatges" icona="tipdoc.gif" panel="es.sysmap.interflex.view.PanelSgaembalajeView1" topicId="tipemb" acces="MNUMANTENIMENT"/>
+    <Item nomMenu="Llocs de treball" tooltip="Manteniment de llocs de treball" icona="lloctreball.gif" panel="es.sysmap.interflex.view.PanelSgapuestomanipView1" topicId="lloctreball" acces="MNUMANTENIMENT"/>
+    <Item nomMenu="Posicions PLC" tooltip="Manteniment de posicions de PLC" icona="lloctreball.gif" panel="es.sysmap.interflex.view.PanelSgaubicacionPlcView1" topicId="lloctreball" acces="MNUMANTENIMENT"/>
+    <Item nomMenu="Passadissos" tooltip="Manteniment de passadissos" icona="lloctreball.gif" panel="es.sysmap.interflex.view.PanelSgapasilloView1" topicId="lloctreball" acces="MNUMANTENIMENT"/>
+    <Item nomMenu="Trasbordo traslos" tooltip="Consulta/Modificació Bloqueig del canvi de passadis" icona="16x16/plain/gears_run.png" panel="es.sysmap.interflex.view.PanelSgaVTrasloTrasbordoView1" topicId="estattraslos" acces="MNUMANTENIMENT"/>   
+   	<Item nomMenu="Tipus embalum" tooltip="Tipus estandar d'embalum" icona="16x16/plain/nut_and_bolt.png" panel="es.sysmap.interflex.view.PanelSgatipobultoView1" topicId="bulto" acces="MNUMANTENIMENT"/>
+   </Seccio>   
+   <Seccio nomMenu="Consultes" tooltip="Consultes" icona="consultes.gif" acces="MNUCONSULTES">
+    <Seccio nomMenu="Existencies" tooltip="Existencies" icona="consultes.gif" acces="MNUCONSULTES">
+      <Item nomMenu="Existències" tooltip="Consulta d'existències" icona="exist.gif" panel="es.sysmap.interflex.view.PanelSgavexistenciaView1" topicId="existències" acces="MNUCONSULTES"/>
+      <Item nomMenu="Per article" tooltip="Consulta d'existències per article" icona="exist.gif" panel="es.sysmap.interflex.view.MDPanelSgavsumexistenciaView1SgavexistenciaView2" topicId="existart" acces="MNUCONSULTES"/>
+      <Item nomMenu="Per contenidor" tooltip="Consulta d'existències per contenidor" icona="exist.gif" panel="es.sysmap.interflex.view.MDPanelSgavmacView1SgavexistenciaView3" topicId="existmac" acces="MNUCONSULTES"/>
+      <Item nomMenu="Diferències Host" tooltip="Consulta de possibles diferències amb el HOST" icona="exist.gif" panel="es.sysmap.interflex.view.PanelSgadifstockhost1" topicId="difhost" acces="MNUCONSULTES"/>
+      <Item nomMenu="Contenidors buits" tooltip="Consulta de contenidors buits" icona="ubicacion.gif" panel="es.sysmap.interflex.view.MDPanelSgavsummacSenseExistenciesView1SgavmacSenseExistenciesView2" topicId="macsbuits" acces="MNUCONSULTES"/>
+      <Item nomMenu="Manual / Auto" tooltip="Consulta de existencias amb pocs contenidors en el automàtic" icona="exist.gif" panel="es.sysmap.interflex.view.PanelSgavcompararmanautoView1" topicId="macsbuits" acces="MNUCONSULTES"/>
+    </Seccio>
+    <Seccio nomMenu="Ubicacions" tooltip="Existencies" icona="consultes.gif" acces="MNUCONSULTES">
+      <Item nomMenu="Ubicacions" tooltip="Consulta d'ubicacions i posicions d'ubicacions" icona="ubicacion.gif" panel="es.sysmap.interflex.view.PanelSgavubicacionView1" topicId="ubicacions" acces="MNUCONSULTES"/>
+      <Item nomMenu="Ubics. en Inspecció" tooltip="Consulta d'ubicacions i posicions d'ubicacions pendents d'inspecció" icona="ubicacion.gif" panel="es.sysmap.interflex.view.PanelSgavubicacionInspeccionView1" topicId="ubicacions" acces="MNUCONSULTES"/>
+    </Seccio>
+    <Item nomMenu="Ocupació Magatzems" tooltip="Consulta d'ocupació de magatzems" icona="ubicacion.gif" panel="es.sysmap.interflex.view.MDPanelSgavocupacio" topicId="ocupacio" acces="MNUCONSULTES"/>
+    <Item nomMenu="Ordres" tooltip="Consulta d'ordres d'entrada i sortida" icona="tipubic.gif" panel="es.sysmap.interflex.view.PanelSgavdocs" topicId="tipubic" acces="MNUCONSULTES"/>
+   </Seccio>   
+   <Seccio nomMenu="Històrics" tooltip="Històrics" icona="16x16/plain/cabinet.png" acces="MNUHISTORIC">
+   	<Item nomMenu="Moviments d'existències" tooltip="Moviments d'existències" icona="existencies.gif" panel="es.sysmap.interflex.view.PanelSgavhistexistView1" topicId="existències" acces="MNUHISTORIC"/>
+    <Item nomMenu="Históric Ordres de transport" tooltip="Históric d'ordres de transport" icona="existart.gif" panel="es.sysmap.interflex.view.PanelSgavhistordtranView1" topicId="histordtran" acces="MNUHISTORIC"/>
+   </Seccio>   
+   <Seccio nomMenu="Estadístiques" tooltip="Estadístiques" icona="16x16/plain/cabinet.png" acces="MNUHISTORIC">
+   	<Item nomMenu="Movs. per usuari" tooltip="Moviments d'existències per usuari" icona="existencies.gif" panel="es.sysmap.interflex.view.PanelSgavmovsusuariresumView1" topicId="movsusuari" acces="MNUHISTORIC"/>
+    <Item nomMenu="Movs. contenidors" tooltip="Moviments de contenidors" icona="existart.gif" panel="es.sysmap.interflex.view.PanelSgavmovscontenidorsView1" topicId="histordtran" acces="MNUHISTORIC"/>
+    <Item nomMenu="Línies treballades" tooltip="Línies treballades entre dues dates" icona="existart.gif" panel="es.sysmap.interflex.view.PanelSgaliniestreballadesView1" topicId="histordtran" acces="MNUHISTORIC"/>
+   </Seccio>   
+   <Seccio nomMenu="Configuració" tooltip="Configuració" icona="16x16/plain/businessmen.png" acces="MNUADMIN">
+    <Item nomMenu="Usuarios" tooltip="Mantenimiento de Usuarios" icona="16x16/plain/businessman_preferences.png" panel="es.sysmap.interflex.view.MDPanelSgauserView1SgagrantuserView1" topicId="usuario" acces="MNUADMIN"/>
+    <Item nomMenu="Roles" tooltip="Mantenimiento de Roles y Accesos" icona="16x16/plain/hat_green.png" panel="es.sysmap.interflex.view.PanelSgaroleView1" topicId="rol" acces="MNUADMIN"/>
+   </Seccio>   
+   <Seccio nomMenu="Control" tooltip="Configuració" icona="16x16/plain/toolbox.png" acces="MNUCONTROL">
+    <Item nomMenu="Ordres transport" tooltip="Consulta i actualizació d'ordres de transport" icona="24x24/plain/forklifter.png" panel="es.sysmap.interflex.view.PanelSgavordtranView1" topicId="lloctreball" acces="MNUCONTROL"/>
+    <Item nomMenu="Estat traslos" tooltip="Consulta de l'estat dels transelevadors" icona="16x16/plain/gears_run.png" panel="es.sysmap.interflex.view.PanelSgavtrasloEntSal1" topicId="estattraslos" acces="MNUCONTROL"/>   
+ 
+   </Seccio>   
+</Menu>

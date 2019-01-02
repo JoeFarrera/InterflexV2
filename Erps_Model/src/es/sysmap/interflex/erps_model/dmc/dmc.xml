@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE JboPackage SYSTEM "jbo_03_01.dtd">
+
+<JboPackage
+   Name="dmc"
+   SeparateXMLFiles="true"
+   PackageName="es.sysmap.interflex.erps_model.dmc" >
+   <DesignTime>
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_ejbPackage" Value="false" />
+   </DesignTime>
+   <Containee
+      Name="ZTipoenvioView"
+      FullName="es.sysmap.interflex.erps_model.dmc.ZTipoenvioView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="ZAgenciatipoenvioView"
+      FullName="es.sysmap.interflex.erps_model.dmc.ZAgenciatipoenvioView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="AppModule"
+      FullName="es.sysmap.interflex.erps_model.dmc.AppModule"
+      ObjectType="AppModule" >
+   </Containee>
+   <Containee
+      Name="ZTipoenvioZAgenciatipoenvioViewLink"
+      FullName="es.sysmap.interflex.erps_model.dmc.ZTipoenvioZAgenciatipoenvioViewLink"
+      ObjectType="ViewLink" >
+   </Containee>
+</JboPackage>

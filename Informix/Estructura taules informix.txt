@@ -1,0 +1,167 @@
+CABECERAS
+
+Column name: cab_tid type: char java type: 1
+
+Column name: cab_id type: decimal java type: 3
+
+Column name: cab_tipo_orden type: decimal java type: 3
+
+Column name: cab_num_lineas type: decimal java type: 3
+
+Column name: cab_num_bultos type: decimal java type: 3
+
+Column name: cab_fcreacion type: char java type: 1
+
+Column name: cab_fult_act type: char java type: 1
+
+Column name: cab_prioridad type: decimal java type: 3
+
+Column name: cab_operario type: decimal java type: 3
+
+Column name: cab_motivo type: char java type: 1
+
+Column name: cab_peso_total type: decimal java type: 3
+
+Column name: cab_id_estado type: decimal java type: 3
+
+Column name: cab_nombre type: char java type: 1
+
+Column name: cab_direccion type: char java type: 1
+
+Column name: cab_cos_postal type: char java type: 1
+
+Column name: cab_poblacion type: char java type: 1
+
+Column name: cab_provincia type: char java type: 1
+
+Column name: cab_telefono type: char java type: 1
+
+Column name: cab_portes type: char java type: 1
+
+Column name: cab_f_albaran type: char java type: 1
+
+Column name: cab_s_pedido type: char java type: 1
+
+Column name: cab_pais type: char java type: 1
+
+Column name: cab_transporte type: char java type: 1
+
+Column name: cab_reembolso type: decimal java type: 3
+
+Column name: cab_t_albaran type: char java type: 1
+
+Column name: cab_n_albaran type: decimal java type: 3
+
+Column name: cab_cod_empresa type: decimal java type: 3
+
+Column name: cab_c_transp type: decimal java type: 3
+
+Column name: cab_t_portes type: char java type: 1
+
+Column name: cab_c_cliente type: decimal java type: 3
+
+
+DETALLE
+
+Column name: det_id type: decimal java type: 3
+
+Column name: det_tid_orden type: char java type: 1
+
+Column name: det_id_orden type: decimal java type: 3
+
+Column name: det_referencia type: char java type: 1
+
+Column name: det_unidades type: decimal java type: 3
+
+Column name: det_servidas type: decimal java type: 3
+
+Column name: det_peso type: decimal java type: 3
+
+Column name: det_fcreacion type: char java type: 1
+
+Column name: det_fult_act type: char java type: 1
+
+Column name: det_motivo type: char java type: 1
+
+Column name: det_estado type: decimal java type: 3
+
+BULTO
+
+Column name: bul_id type: decimal java type: 3
+
+Column name: bul_tid_orden type: char java type: 1
+
+Column name: bul_id_orden type: decimal java type: 3
+
+Column name: bul_id_detalle type: decimal java type: 3
+
+Column name: bul_peso type: decimal java type: 3
+
+Column name: bul_fcreacion type: char java type: 1
+
+Column name: bul_fult_act type: char java type: 1
+
+Column name: bul_unidades type: decimal java type: 3
+
+REFERENCIAS
+
+Column name: ref_id type: char java type: 1
+
+Column name: ref_id_anterior type: char java type: 1
+
+Column name: ref_desc_ref type: char java type: 1
+
+Column name: ref_peso_unitario type: decimal java type: 3
+
+Column name: ref_control_peso type: decimal java type: 3
+
+Column name: ref_accion type: decimal java type: 3
+
+Column name: ref_fcreacion type: char java type: 1
+
+Column name: ref_fult_act type: char java type: 1
+
+Column name: ref_motivo type: char java type: 1
+
+Column name: ref_estado type: decimal java type: 3
+
+Column name: ref_c_barra type: decimal java type: 3
+
+Column name: ref_u_emb type: decimal java type: 3
+
+STOCKS
+
+Column name: sto_id type: char java type: 1
+
+Column name: sto_stock type: decimal java type: 3
+
+Column name: sto_fcreacion type: char java type: 1
+
+Column name: sto_fult_act type: char java type: 1
+
+Column name: sto_desc_ref type: char java type: 1
+
+Column name: sto_peso_unitario type: decimal java type: 3
+
+Column name: sto_c_barra type: decimal java type: 3
+
+Column name: sto_u_emb type: decimal java type: 3
+
+MOVIMIENTOS
+
+
+Column name: mov_id type: char java type: 1
+Column name: mov_fecha type: date java type: 91
+Column name: mov_hora type: char java type: 1
+Column name: mov_unidades type: decimal java type: 3
+Column name: mov_tid_orden type: char java type: 1
+Column name: mov_id_orden type: decimal java type: 3
+Column name: mov_id_det type: decimal java type: 3
+Column name: mov_tipo_orden type: decimal java type: 3
+Column name: mov_operario type: decimal java type: 3
+Column name: mov_objeto type: decimal java type: 3
+Column name: mov_t_albaran type: char java type: 1
+Column name: mov_n_albaran type: decimal java type: 3
+
+
+

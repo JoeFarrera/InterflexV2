@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE Association SYSTEM "jbo_03_01.dtd">
+
+<Association
+   Name="SysC0010664Assoc" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.2.17.96" />
+   </DesignTime>
+   <AssociationEnd
+      Name="Sgatipdoc"
+      Cardinality="1"
+      Source="true"
+      Owner="es.sysmap.interflex.model.bdc.Sgatipdoc" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgatipdoc.Idtip" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_aggregation" Value="0" />
+         <Attr Name="_isUpdateable" Value="true" />
+         <Attr Name="_finderName" Value="Sgatipdoc" />
+         <Attr Name="_foreignKey" Value="es.sysmap.interflex.model.bdc.Sgatipdoc.SysC0010615" />
+      </DesignTime>
+   </AssociationEnd>
+   <AssociationEnd
+      Name="Sgacdoc"
+      Cardinality="-1"
+      Owner="es.sysmap.interflex.model.bdc.Sgacdoc" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgacdoc.Idtip" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_aggregation" Value="0" />
+         <Attr Name="_isUpdateable" Value="true" />
+         <Attr Name="_finderName" Value="Sgacdoc" />
+         <Attr Name="_foreignKey" Value="es.sysmap.interflex.model.bdc.Sgacdoc.SysC0010664" />
+      </DesignTime>
+   </AssociationEnd>
+</Association>

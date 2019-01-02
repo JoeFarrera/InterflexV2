@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report Type="TabularSheet" ScriptLanguage="1" Top="0.984251968503937" Left="0.984251968503937" Bottom="0.984251968503937" Right="0.984251968503937" HeaderFromEdge="0.5118110236220472" FooterFromEdge="0.7480314960629921" PageNumbering="0" HorizontalWrap="true" PaperSize="8.267716x11.692913" Orientation="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0"
+ Prompting="true"><Version>7.0</Version>
+<ReportProperty Name="singlePage">
+<![CDATA[false]]>
+</ReportProperty>
+<ReportProperty Name="TextMode">
+<![CDATA[false]]>
+</ReportProperty>
+<ReportProperty Name="date.format">
+<![CDATA[dd/MM/yyyy]]>
+</ReportProperty>
+<ReportProperty Name="saveParameters">
+<![CDATA[false]]>
+</ReportProperty>
+<ReportProperty Name="edit.layout">
+<![CDATA[false]]>
+</ReportProperty>
+<ReportProperty Name="live.edit">
+<![CDATA[false]]>
+</ReportProperty>
+<ReportProperty Name="report.title">
+<![CDATA[Distribuició de contenidors per passadis]]>
+</ReportProperty>
+<ReportProperty Name="sortOnHeader">
+<![CDATA[false]]>
+</ReportProperty>
+<ReportProperty Name="report.modified">
+<![CDATA[2005-10-06 19:30:12]]>
+</ReportProperty>
+<ReportProperty Name="report.created">
+<![CDATA[2005-10-03 14:33:44]]>
+</ReportProperty>
+<Parameters>
+</Parameters>
+<ParameterSheets>
+</ParameterSheets>
+<RunningTotals>
+</RunningTotals>
+<dataViews>
+</dataViews>
+<DataFormat Class="class java.sql.Date" FormatClass="java.text.SimpleDateFormat">
+<![CDATA[dd/MM/yyyy]]>
+</DataFormat>
+<DataFormat Class="class java.util.Date" FormatClass="java.text.SimpleDateFormat">
+<![CDATA[dd/MM/yyyy]]>
+</DataFormat>
+<Shapes>
+</Shapes>
+<Grid Rows="1" Cols="1">
+<GR Height="300">
+<GD Width="1*" Repeat="false">
+<ChartElement ID="Chart3" Alignment="65" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-PLAIN-10" Foreground="-16777216" AdhocEnabled="true" Embedded="true"
+ Layout="1" Wrapping="3" Rotation="0" Anchor="0.013888889,0.0" Size="9.6850395x5.8267717" Margin="1,1,1,1">
+<property><name><![CDATA[alias]]></name><value><![CDATA[Distribució de existencias per passadis del Maxi Load]]></value></property>
+<ChartDescriptor ValueFormatType="DecimalFMT" ValueFormat="#000" PointStyle="900,901,902,903,904,905,906,907" UniquePointStyles="false" LineWidth="1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0" FirstDatasetOfSecondaryAxis="1" VerticalGridStyle="0" VerticalGridColor="-16777216" LogarithmicXScale="false" LogarithmicYScale="false" LogarithmicZScale="false" SecondaryLogarithmicYScale="false" LegendBorder="4097" BackgroundPlotOnly="false" SecondaryYTitle="Passadis" Trendlines="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0" PointSize="6.0" LeaderLineUsed="false" PieExploded="42" XAxisTicked="true" HideXLabels="false" HideOverlappedXLabels="true" HideYLabels="false" HideSecondaryYLabels="false" YAxisTicked="true" XAxisLabelBottom="true" GroupBarGap="0" Y2AxisTicked="true" XLabelRotation="0.5235987755982988" XTitleRotation="0.0" YLabelRotation="0.0" YTitleRotation="0.0" SecondaryYLabelRotation="0.0" SecondaryYTitleRotation="0.7853981633974483" XAxisLeftGap="2.0" XAxisRightGap="0.0" PieBorderLineStyle="0" ShowPieLabels="true" PieBorderColor="-16777216" ValueLabelOffset="3" BarBorder="false" MaxBarWidth="50" PlotAreaBorder="false" ShowPercentage="false">
+</ChartDescriptor>
+<bindingAttr type="3" class="BindingAttr">
+<filter class="SourceAttr" type="0" source="existPasillo" prefix="interflex">
+</filter>
+<filter class="ConditionAttr" >
+<conditions>
+</conditions>
+</filter>
+<filter class="CrosstabAttr" supRowGrandTotal="true" supColGrandTotal="true" supRowSubtotal="true" supColSubtotal="true">
+<aggregates>
+<dataRef class="inetsoft.report.internal.binding.AggregateField" formula ="Count&lt;0&gt;" ><dataRef class="inetsoft.report.internal.binding.BaseField" attribute="contenidor" visible="true" dataType="string" order="0" ></dataRef>
+</dataRef>
+</aggregates>
+<rows>
+<header suppressGroupTotal="true">
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="passadis" visible="true" dataType="double" order="0" ></dataRef>
+<groupSort sort="2" interval="1.0" option="1" others="1"><otherLabel><![CDATA[Others]]></otherLabel>
+</groupSort>
+<topn class="TopNInfo" topN="0" topNReverse="false" summaryColumn="-1" >
+</topn>
+</header>
+</rows>
+<cols>
+<header suppressGroupTotal="true">
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="article" visible="true" dataType="string" order="0" ></dataRef>
+<groupSort sort="1" interval="1.0" option="1" others="1"><otherLabel><![CDATA[Others]]></otherLabel>
+</groupSort>
+<topn class="TopNInfo" topN="0" topNReverse="false" summaryColumn="-1" >
+</topn>
+</header>
+</cols>
+</filter>
+<filter class="ColumnSelectionAttr" >
+<ColumnSelection>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="passadis" visible="true" dataType="double" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="article" visible="true" dataType="string" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.FormulaField" name="artDesc" visible="true" dataType="string" order="0" type="Script" ><![CDATA[field['article'] + " " + field['descripcio']]]>
+</dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="descripcio" visible="true" dataType="string" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="contenidor" visible="true" dataType="string" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="costat" visible="true" dataType="string" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="profunditat" visible="true" dataType="double" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="alcada" visible="true" dataType="double" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="cantot" visible="true" dataType="double" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.FormulaField" name="contPerPassadis" visible="true" dataType="integer" order="0" type="Script" ><![CDATA[count(field['contenidor'])]]>
+</dataRef>
+</ColumnSelection>
+<ColumnSelection>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="article" visible="true" dataType="string" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="descripcio" visible="true" dataType="string" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="contenidor" visible="true" dataType="string" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="passadis" visible="true" dataType="double" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="costat" visible="true" dataType="string" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="profunditat" visible="true" dataType="double" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="alcada" visible="true" dataType="double" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="cantot" visible="true" dataType="double" order="0" ></dataRef>
+</ColumnSelection>
+<allRows>
+</allRows>
+</filter>
+<bindingOption class="ChartOption" >
+</bindingOption>
+</bindingAttr>
+<Chart Datasets="1" Size="1" Style="7" Gap="2" XTitle="Article amb més de 2 existencies en el maxiload" YTitle="Contenedors per passadis" TitleFont="Serif-PLAIN-10" Styles="7,0,0,0,0,0,0,0" Colors="-16751436,-20561,-4615831,-5846288,-4955135,-13599948,-6250332,-7990252,-4137792,-12566464,-11370614,-16776961" GridStyle="4113" GridColor="-16777216" BorderStyle="0" ShowValue="false" ValueRotation="0.0" Precision="0" BorderColor="-16777216"
+ LegendPosition="32">
+<![CDATA[99999.99|
+XXXXXXX|
+1
+]]></Chart>
+</ChartElement>
+</GD>
+</GR>
+</Grid>
+</Report>

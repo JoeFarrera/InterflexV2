@@ -1,0 +1,7 @@
+<Telegrama lenTelegrama="30" tipoTel="APET">
+   <Detalles>
+      <numMovimiento index="0" len="4" tipo="int">8765</numMovimiento>
+      <posAct index="4" len="2" tipo="int">02</posAct>
+      <codError index="6" len="1" tipo="byte">0</codError>
+   </Detalles>
+</Telegrama>

@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE Association SYSTEM "jbo_03_01.dtd">
+
+<Association
+   Name="SgaldocFk1Assoc" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.2.17.96" />
+   </DesignTime>
+   <AssociationEnd
+      Name="Sgapuestomanip"
+      Cardinality="1"
+      Source="true"
+      Owner="es.sysmap.interflex.model.bdc.Sgapuestomanip" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgapuestomanip.Idpuesto" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_aggregation" Value="0" />
+         <Attr Name="_isUpdateable" Value="true" />
+         <Attr Name="_finderName" Value="Sgapuestomanip" />
+         <Attr Name="_foreignKey" Value="es.sysmap.interflex.model.bdc.Sgapuestomanip.SgapuestomanipPk1" />
+      </DesignTime>
+   </AssociationEnd>
+   <AssociationEnd
+      Name="Sgaldoc"
+      Cardinality="-1"
+      Owner="es.sysmap.interflex.model.bdc.Sgaldoc" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaldoc.Idubi" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_aggregation" Value="0" />
+         <Attr Name="_isUpdateable" Value="true" />
+         <Attr Name="_finderName" Value="Sgaldoc" />
+         <Attr Name="_foreignKey" Value="es.sysmap.interflex.model.bdc.Sgaldoc.SgaldocFk1" />
+      </DesignTime>
+   </AssociationEnd>
+</Association>

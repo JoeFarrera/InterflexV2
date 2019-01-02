@@ -1,0 +1,636 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+
+<Entity
+   Name="Sgabulto"
+   DBObjectType="table"
+   DBObjectName="SGABULTO"
+   AliasName="Sgabulto"
+   BindingStyle="Oracle"
+   UseGlueCode="false"
+   RowClass="es.sysmap.interflex.model.bdc.SgabultoImpl"
+   DefClass="es.sysmap.interflex.model.bdc.SgabultoDefImpl"
+   MsgBundleClass="es.sysmap.interflex.model.bdc.common.SgabultoImplMsgBundle" >
+   <Data>
+      <Property Name ="IS_ABSTRACT" Value ="FALSE" />
+      <Property Name ="COMPLETE_LIBRARY" Value ="FALSE" />
+      <Property Name ="IS_LEAF" Value ="FALSE" />
+      <Property Name ="IS_ROOT" Value ="FALSE" />
+      <Property Name ="ID" Value ="3e8ec3ef-0102-1000-8098-c0a800020368::bdc.Sgabulto::EntityObject" />
+      <Property Name ="VISIBILITY" Value ="PUBLIC" />
+      <Property Name ="IS_ACTIVE" Value ="FALSE" />
+   </Data>
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_codeGenFlag2" Value="Init|Access|Def|Msg" />
+      <AttrArray Name="_publishEvents">
+      </AttrArray>
+   </DesignTime>
+   <Attribute
+      Name="Iddoc"
+      IsNotNull="true"
+      Precision="9"
+      Scale="0"
+      ColumnName="IDDOC"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      TableName="SGABULTO"
+      PrimaryKey="true" >
+      <Data>
+         <Property Name ="ID" Value ="81e533af-013d-1000-8048-81c809aada84::::EntityObjectAttribute" />
+         <Property Name ="CHANGEABILITY" Value ="CHANGEABLE" />
+         <Property Name ="OWNER_SCOPE" Value ="INSTANCE" />
+         <Property Name ="MULTIPLICITY" Value ="1" />
+         <Property Name ="VISIBILITY" Value ="PACKAGE" />
+      </Data>
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Idbulto"
+      IsNotNull="true"
+      Precision="6"
+      Scale="0"
+      ColumnName="IDBULTO"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      TableName="SGABULTO"
+      PrimaryKey="true"
+      RetrievedOnUpdate="true"
+      RetrievedOnInsert="true" >
+      <Data>
+         <Property Name ="ID" Value ="3e8ec3ef-0102-1000-8099-c0a800020368::::EntityObjectAttribute" />
+         <Property Name ="CHANGEABILITY" Value ="CHANGEABLE" />
+         <Property Name ="OWNER_SCOPE" Value ="INSTANCE" />
+         <Property Name ="MULTIPLICITY" Value ="1" />
+         <Property Name ="VISIBILITY" Value ="PACKAGE" />
+      </Data>
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Peso"
+      IsUpdateable="false"
+      IsPersistent="false"
+      Precision="9"
+      Scale="0"
+      ColumnName="PESO"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      Expression="(select sum(sgalbulto.peso) from sgalbulto where sgalbulto.idbulto = sgabulto.idbulto and sgalbulto.iddoc = sgabulto.iddoc)" >
+      <Data>
+         <Property Name ="ID" Value ="81e533af-013d-1000-804a-81c809aada84::::EntityObjectAttribute" />
+         <Property Name ="CHANGEABILITY" Value ="CHANGEABLE" />
+         <Property Name ="OWNER_SCOPE" Value ="INSTANCE" />
+         <Property Name ="MULTIPLICITY" Value ="1" />
+         <Property Name ="VISIBILITY" Value ="PACKAGE" />
+      </Data>
+   </Attribute>
+   <Attribute
+      Name="Createdby"
+      IsUpdateable="while_insert"
+      Precision="10"
+      ColumnName="CREATEDBY"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="SGABULTO"
+      HistoryColumn="UserHistory" >
+      <Data>
+         <Property Name ="ID" Value ="48b930c2-0102-1000-803b-c0a8000143fb::::EntityObjectAttribute" />
+         <Property Name ="CHANGEABILITY" Value ="CHANGEABLE" />
+         <Property Name ="OWNER_SCOPE" Value ="INSTANCE" />
+         <Property Name ="MULTIPLICITY" Value ="1" />
+         <Property Name ="VISIBILITY" Value ="PACKAGE" />
+      </Data>
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="10" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Modifiedby"
+      Precision="10"
+      ColumnName="MODIFIEDBY"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="SGABULTO"
+      HistoryColumn="UserHistory" >
+      <Data>
+         <Property Name ="ID" Value ="48b930c2-0102-1000-803c-c0a8000143fb::::EntityObjectAttribute" />
+         <Property Name ="CHANGEABILITY" Value ="CHANGEABLE" />
+         <Property Name ="OWNER_SCOPE" Value ="INSTANCE" />
+         <Property Name ="MULTIPLICITY" Value ="1" />
+         <Property Name ="VISIBILITY" Value ="PACKAGE" />
+      </Data>
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="10" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Createdon"
+      IsUpdateable="while_insert"
+      ColumnName="CREATEDON"
+      Domain="es.sysmap.interflex.model.bdc.FlexiDate"
+      Type="es.sysmap.interflex.model.bdc.common.FlexiDate"
+      ColumnType="DATE"
+      SQLType="DATE"
+      TableName="SGABULTO"
+      HistoryColumn="DateHistory" >
+      <Data>
+         <Property Name ="ID" Value ="48b930c2-0102-1000-803d-c0a8000143fb::::EntityObjectAttribute" />
+         <Property Name ="CHANGEABILITY" Value ="CHANGEABLE" />
+         <Property Name ="OWNER_SCOPE" Value ="INSTANCE" />
+         <Property Name ="MULTIPLICITY" Value ="1" />
+         <Property Name ="VISIBILITY" Value ="PACKAGE" />
+      </Data>
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="7" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Modifiedon"
+      ColumnName="MODIFIEDON"
+      Domain="es.sysmap.interflex.model.bdc.FlexiDate"
+      Type="es.sysmap.interflex.model.bdc.common.FlexiDate"
+      ColumnType="DATE"
+      SQLType="DATE"
+      TableName="SGABULTO"
+      HistoryColumn="DateHistory" >
+      <Data>
+         <Property Name ="ID" Value ="48b930c2-0102-1000-803e-c0a8000143fb::::EntityObjectAttribute" />
+         <Property Name ="CHANGEABILITY" Value ="CHANGEABLE" />
+         <Property Name ="OWNER_SCOPE" Value ="INSTANCE" />
+         <Property Name ="MULTIPLICITY" Value ="1" />
+         <Property Name ="VISIBILITY" Value ="PACKAGE" />
+      </Data>
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="7" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Idpuesto"
+      Precision="2"
+      ColumnName="IDPUESTO"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="SGABULTO" >
+      <Data>
+         <Property Name ="ID" Value ="4a128472-0102-1000-8069-c0a8000143fb::bdc.Sgabulto::EntityObjectAttribute" />
+         <Property Name ="CHANGEABILITY" Value ="CHANGEABLE" />
+         <Property Name ="OWNER_SCOPE" Value ="INSTANCE" />
+         <Property Name ="MULTIPLICITY" Value ="1" />
+         <Property Name ="VISIBILITY" Value ="PACKAGE" />
+      </Data>
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="2" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Detalles"
+      IsUpdateable="false"
+      IsPersistent="false"
+      Precision="3"
+      Scale="0"
+      ColumnName="DETALLES"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      Expression="(select count(*) from sgalbulto where sgabulto.iddoc = sgalbulto.iddoc and sgabulto.idbulto = sgalbulto.idbulto)" >
+      <Data>
+         <Property Name ="ID" Value ="81e533af-013d-1000-8050-81c809aada84::::EntityObjectAttribute" />
+         <Property Name ="CHANGEABILITY" Value ="CHANGEABLE" />
+         <Property Name ="OWNER_SCOPE" Value ="INSTANCE" />
+         <Property Name ="MULTIPLICITY" Value ="1" />
+         <Property Name ="VISIBILITY" Value ="PACKAGE" />
+      </Data>
+   </Attribute>
+   <Attribute
+      Name="Imprimir"
+      IsNotNull="true"
+      DefaultValue="N"
+      Precision="1"
+      ColumnName="IMPRIMIR"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="SGABULTO" >
+      <Data>
+         <Property Name ="ID" Value ="81e533af-013d-1000-8051-81c809aada84::::EntityObjectAttribute" />
+         <Property Name ="CHANGEABILITY" Value ="CHANGEABLE" />
+         <Property Name ="OWNER_SCOPE" Value ="INSTANCE" />
+         <Property Name ="MULTIPLICITY" Value ="1" />
+         <Property Name ="VISIBILITY" Value ="PACKAGE" />
+      </Data>
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="1" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Alto"
+      Precision="6"
+      Scale="0"
+      ColumnName="ALTO"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      TableName="SGABULTO" >
+      <Data>
+         <Property Name ="ID" Value ="81e533af-013d-1000-8052-81c809aada84::::EntityObjectAttribute" />
+         <Property Name ="CHANGEABILITY" Value ="CHANGEABLE" />
+         <Property Name ="OWNER_SCOPE" Value ="INSTANCE" />
+         <Property Name ="MULTIPLICITY" Value ="1" />
+         <Property Name ="VISIBILITY" Value ="PACKAGE" />
+      </Data>
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Ancho"
+      Precision="6"
+      Scale="0"
+      ColumnName="ANCHO"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      TableName="SGABULTO" >
+      <Data>
+         <Property Name ="ID" Value ="81e533af-013d-1000-8053-81c809aada84::::EntityObjectAttribute" />
+         <Property Name ="CHANGEABILITY" Value ="CHANGEABLE" />
+         <Property Name ="OWNER_SCOPE" Value ="INSTANCE" />
+         <Property Name ="MULTIPLICITY" Value ="1" />
+         <Property Name ="VISIBILITY" Value ="PACKAGE" />
+      </Data>
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Idtipobulto"
+      Precision="18"
+      ColumnName="IDTIPOBULTO"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="SGABULTO" >
+      <Data>
+         <Property Name ="ID" Value ="81e533af-013d-1000-8054-81c809aada84::::EntityObjectAttribute" />
+         <Property Name ="CHANGEABILITY" Value ="CHANGEABLE" />
+         <Property Name ="OWNER_SCOPE" Value ="INSTANCE" />
+         <Property Name ="MULTIPLICITY" Value ="1" />
+         <Property Name ="VISIBILITY" Value ="PACKAGE" />
+      </Data>
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="10" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Largo"
+      Precision="6"
+      Scale="0"
+      ColumnName="LARGO"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      TableName="SGABULTO" >
+      <Data>
+         <Property Name ="ID" Value ="81e533af-013d-1000-8055-81c809aada84::::EntityObjectAttribute" />
+         <Property Name ="CHANGEABILITY" Value ="CHANGEABLE" />
+         <Property Name ="OWNER_SCOPE" Value ="INSTANCE" />
+         <Property Name ="MULTIPLICITY" Value ="1" />
+         <Property Name ="VISIBILITY" Value ="PACKAGE" />
+      </Data>
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Pesocont"
+      Precision="10"
+      Scale="2"
+      ColumnName="PESOCONT"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      TableName="SGABULTO" >
+      <Data>
+         <Property Name ="ID" Value ="81e533af-013d-1000-8056-81c809aada84::::EntityObjectAttribute" />
+         <Property Name ="CHANGEABILITY" Value ="CHANGEABLE" />
+         <Property Name ="OWNER_SCOPE" Value ="INSTANCE" />
+         <Property Name ="MULTIPLICITY" Value ="1" />
+         <Property Name ="VISIBILITY" Value ="PACKAGE" />
+      </Data>
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Ramonedacb"
+      Precision="20"
+      ColumnName="RAMONEDACB"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="SGABULTO" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="20" />
+      </DesignTime>
+   </Attribute>
+   <AccessorAttribute
+      Name="Sgapuestomanip"
+      Association="es.sysmap.interflex.model.bdc.SgapuestomanipBultoAssociation"
+      AssociationEnd="es.sysmap.interflex.model.bdc.SgapuestomanipBultoAssociation.Sgapuestomanip"
+      AssociationOtherEnd="es.sysmap.interflex.model.bdc.SgapuestomanipBultoAssociation.Sgabulto"
+      Type="es.sysmap.interflex.model.bdc.SgapuestomanipImpl" >
+   </AccessorAttribute>
+   <AccessorAttribute
+      Name="Sgacdoc"
+      Association="es.sysmap.interflex.model.bdc.SgacdocbultoAssoc"
+      AssociationEnd="es.sysmap.interflex.model.bdc.SgacdocbultoAssoc.Sgacdoc"
+      AssociationOtherEnd="es.sysmap.interflex.model.bdc.SgacdocbultoAssoc.Sgabulto"
+      Type="es.sysmap.interflex.model.bdc.SgacdocImpl" >
+   </AccessorAttribute>
+   <AccessorAttribute
+      Name="Sgacdoc1"
+      Association="es.sysmap.interflex.model.bdc.SgacdocbultoSloAssoc"
+      AssociationEnd="es.sysmap.interflex.model.bdc.SgacdocbultoSloAssoc.Sgacdoc1"
+      AssociationOtherEnd="es.sysmap.interflex.model.bdc.SgacdocbultoSloAssoc.SgabultoSlo"
+      Type="es.sysmap.interflex.model.bdc.SgacdocImpl" >
+   </AccessorAttribute>
+   <AccessorAttribute
+      Name="Sgacdoc2"
+      Association="es.sysmap.interflex.model.bdc.SgacdocbultoMldAssoc"
+      AssociationEnd="es.sysmap.interflex.model.bdc.SgacdocbultoMldAssoc.Sgacdoc2"
+      AssociationOtherEnd="es.sysmap.interflex.model.bdc.SgacdocbultoMldAssoc.SgabultoMld"
+      Type="es.sysmap.interflex.model.bdc.SgacdocImpl" >
+   </AccessorAttribute>
+   <AccessorAttribute
+      Name="Sgatipobulto"
+      Association="es.sysmap.interflex.model.bdc.SgabultoFk51274951815495Assoc"
+      AssociationEnd="es.sysmap.interflex.model.bdc.SgabultoFk51274951815495Assoc.Sgatipobulto"
+      AssociationOtherEnd="es.sysmap.interflex.model.bdc.SgabultoFk51274951815495Assoc.Sgabulto"
+      Type="es.sysmap.interflex.model.bdc.SgatipobultoImpl" >
+   </AccessorAttribute>
+   <AccessorAttribute
+      Name="Sgacdoc3"
+      Association="es.sysmap.interflex.model.bdc.SgacdocbultoManAssoc"
+      AssociationEnd="es.sysmap.interflex.model.bdc.SgacdocbultoManAssoc.Sgacdoc3"
+      AssociationOtherEnd="es.sysmap.interflex.model.bdc.SgacdocbultoManAssoc.SgabultoMan"
+      Type="es.sysmap.interflex.model.bdc.SgacdocImpl" >
+   </AccessorAttribute>
+   <AccessorAttribute
+      Name="Sgatipobulto1"
+      Association="es.sysmap.interflex.model.bdc.SgabultoFk51274951815495Assoc1"
+      AssociationEnd="es.sysmap.interflex.model.bdc.SgabultoFk51274951815495Assoc1.Sgatipobulto1"
+      AssociationOtherEnd="es.sysmap.interflex.model.bdc.SgabultoFk51274951815495Assoc1.Sgabulto1"
+      Type="es.sysmap.interflex.model.bdc.SgatipobultoImpl" >
+   </AccessorAttribute>
+   <AccessorAttribute
+      Name="Sgalbulto"
+      Association="es.sysmap.interflex.model.bdc.SysC0010962Assoc"
+      AssociationEnd="es.sysmap.interflex.model.bdc.SysC0010962Assoc.Sgalbulto"
+      AssociationOtherEnd="es.sysmap.interflex.model.bdc.SysC0010962Assoc.Sgabulto"
+      Type="oracle.jbo.RowIterator"
+      IsUpdateable="false" >
+   </AccessorAttribute>
+   <Key
+      Name="SgabultoPk51110360423671" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgabulto.Iddoc" />
+         <Item Value="es.sysmap.interflex.model.bdc.Sgabulto.Idbulto" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SGABULTO_PK51110360423671" />
+         <Attr Name="_isPrimary" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0010924" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgabulto.Idbulto" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0010924" />
+         <Attr Name="_checkCondition" Value="&#34;IDBULTO&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0011557" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgabulto.Iddoc" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0011557" />
+         <Attr Name="_checkCondition" Value="&#34;IDDOC&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0011667" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgabulto.Idbulto" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0011667" />
+         <Attr Name="_checkCondition" Value="&#34;IDBULTO&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0011668" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgabulto.Iddoc" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0011668" />
+         <Attr Name="_checkCondition" Value="&#34;IDDOC&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0011888" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgabulto.Imprimir" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0011888" />
+         <Attr Name="_checkCondition" Value="&#34;IMPRIMIR&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0024125" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgabulto.Idbulto" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0024125" />
+         <Attr Name="_checkCondition" Value="&#34;IDBULTO&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0024126" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgabulto.Iddoc" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0024126" />
+         <Attr Name="_checkCondition" Value="&#34;IDDOC&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0024127" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgabulto.Imprimir" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0024127" />
+         <Attr Name="_checkCondition" Value="&#34;IMPRIMIR&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC003503" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgabulto.Idbulto" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C003503" />
+         <Attr Name="_checkCondition" Value="&#34;IDBULTO&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC003504" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgabulto.Iddoc" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C003504" />
+         <Attr Name="_checkCondition" Value="&#34;IDDOC&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC003505" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgabulto.Imprimir" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C003505" />
+         <Attr Name="_checkCondition" Value="&#34;IMPRIMIR&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC003747" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgabulto.Idbulto" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C003747" />
+         <Attr Name="_checkCondition" Value="&#34;IDBULTO&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC003748" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgabulto.Iddoc" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C003748" />
+         <Attr Name="_checkCondition" Value="&#34;IDDOC&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC003749" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgabulto.Imprimir" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C003749" />
+         <Attr Name="_checkCondition" Value="&#34;IMPRIMIR&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC009666" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgabulto.Idbulto" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C009666" />
+         <Attr Name="_checkCondition" Value="&#34;IDBULTO&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC009667" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgabulto.Iddoc" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C009667" />
+         <Attr Name="_checkCondition" Value="&#34;IDDOC&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC009668" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgabulto.Imprimir" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C009668" />
+         <Attr Name="_checkCondition" Value="&#34;IMPRIMIR&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SgabultoFk21109344179078" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgabulto.Idpuesto" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SGABULTO_FK21109344179078" />
+         <Attr Name="_referencedKey" Value="SGAPUESTOMANIP_PK1" />
+         <Attr Name="_isForeign" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SgabultoFk31110360497500" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgabulto.Iddoc" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SGABULTO_FK31110360497500" />
+         <Attr Name="_referencedKey" Value="SYS_C0010931" />
+         <Attr Name="_isForeign" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SgabultoFk51274951815495" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgabulto.Idtipobulto" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SGABULTO_FK51274951815495" />
+         <Attr Name="_referencedKey" Value="SGATIPOBULTO_PK" />
+         <Attr Name="_isForeign" Value="true" />
+         <Attr Name="_isDisabledConstraint" Value="true" />
+      </DesignTime>
+   </Key>
+</Entity>

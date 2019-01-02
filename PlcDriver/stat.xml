@@ -1,0 +1,36 @@
+<Telegrama idTelegrama="1234" lenTelegrama="220" tipoTel="STAT">
+   <Detalles>
+      <P26 index="0" len="1" tipo="byte">2</P26>
+      <P31 index="1" len="1" tipo="byte">1</P31>
+      <P36 index="2" len="1" tipo="byte">0</P36>
+      <P41 index="3" len="1" tipo="byte">2</P41>
+      <P51 index="4" len="1" tipo="byte">2</P51>
+      <P61 index="5" len="1" tipo="byte">2</P61>
+      <Pasillo61 index="6" len="1" tipo="byte">2</Pasillo61>
+      <P62 index="7" len="1" tipo="byte">2</P62>
+      <Pasillo62 index="8" len="1" tipo="byte">4</Pasillo62>
+      <P50 index="9" len="1" tipo="byte">2</P50>
+      <Transfer index="17" len="1" tipo="byte">2</Transfer>
+      <PasilloTransbordo index="18" len="1" tipo="byte">2</PasilloTransbordo>
+      <Transbordo index="19" len="1" tipo="byte">2</Transbordo>
+      <VerQueEsEsto index="20" len="1" tipo="byte">2</VerQueEsEsto>
+      <VerQueEsOtro index="21" len="1" tipo="byte">2</VerQueEsOtro>
+      <MOVI1 index="26" len="4" tipo="int">1</MOVI1>
+      <MOVI14 index="30" len="4" tipo="int">2</MOVI14>
+      <MOVI45 index="34" len="4" tipo="int">3</MOVI45>
+      <MOVI54 index="38" len="4" tipo="int">4</MOVI54>
+      <MOVI56 index="42" len="4" tipo="int">5</MOVI56>
+      <MOVI25 index="46" len="4" tipo="int">6</MOVI25>
+      <MOVIRELACIONPASILLO1 index="50" len="4" tipo="int">7</MOVIRELACIONPASILLO1>
+      <MOVI30 index="54" len="4" tipo="int">8</MOVI30>
+      <MOVIRELACIONPASILLO2 index="58" len="4" tipo="int">9</MOVIRELACIONPASILLO2>
+      <MOVI35 index="62" len="4" tipo="int">10</MOVI35>
+      <MOVIRELACIONPASILLO3 index="66" len="4" tipo="int">11</MOVIRELACIONPASILLO3>
+      <MOVI40 index="70" len="4" tipo="int">12</MOVI40>
+      <MOVIRELACIONPASILLO4 index="74" len="4" tipo="int">13</MOVIRELACIONPASILLO4>
+      <MOVI50 index="78" len="4" tipo="int">14</MOVI50>
+      <MOVIRELACIONPASILLOMINILOAD index="82" len="4" tipo="int">15</MOVIRELACIONPASILLOMINILOAD>
+      <MOVI61 index="86" len="4" tipo="int">16</MOVI61>
+      <NOUSADO index="90" len="4" tipo="int">17</NOUSADO>
+   </Detalles>
+</Telegrama>

@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE AppModule SYSTEM "jbo_03_01.dtd">
+
+<AppModule
+   Name="AppModule"
+   ComponentClass="es.sysmap.interflex.erps_model.dmc.AppModuleImpl" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_deployType" Value="0" />
+      <Attr Name="_ejbAppModule" Value="false" />
+   </DesignTime>
+   <ViewUsage
+      Name="ZTipoenvioView1"
+      ViewObjectName="es.sysmap.interflex.erps_model.dmc.ZTipoenvioView" >
+   </ViewUsage>
+   <ViewUsage
+      Name="ZAgenciatipoenvioView1"
+      ViewObjectName="es.sysmap.interflex.erps_model.dmc.ZAgenciatipoenvioView" >
+   </ViewUsage>
+</AppModule>

@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+
+<ViewObject
+   Name="SgaposicionubicacionView"
+   SelectList="Sgaposicionubicacion.POSICION, 
+       Sgaposicionubicacion.ESTADO, 
+       Sgaposicionubicacion.IDUBI, 
+       Sgaposicionubicacion.ACCESO"
+   FromList="SGAPOSICIONUBICACION Sgaposicionubicacion"
+   OrderBy="Sgaposicionubicacion.IDUBI,Sgaposicionubicacion.POSICION"
+   BindingStyle="Oracle"
+   CustomQuery="false"
+   RowClass="es.sysmap.interflex.model.dmc.SgaposicionubicacionViewRowImpl"
+   ComponentClass="es.sysmap.interflex.model.dmc.SgaposicionubicacionViewImpl"
+   MsgBundleClass="oracle.jbo.common.JboResourceBundle"
+   UseGlueCode="false" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_codeGenFlag2" Value="Access|Coll" />
+      <Attr Name="_isExpertMode" Value="false" />
+   </DesignTime>
+   <EntityUsage
+      Name="Sgaposicionubicacion"
+      Entity="es.sysmap.interflex.model.bdc.Sgaposicionubicacion" >
+      <DesignTime>
+         <Attr Name="_EntireObjectTable" Value="false" />
+         <Attr Name="_queryClause" Value="true" />
+         <Attr Name="_queryOrderBy" Value="Sgaposicionubicacion.IDUBI,Sgaposicionubicacion.POSICION" />
+      </DesignTime>
+   </EntityUsage>
+   <ViewAttribute
+      Name="Posicion"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Posicion"
+      EntityUsage="Sgaposicionubicacion"
+      AliasName="POSICION" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Estado"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Estado"
+      EntityUsage="Sgaposicionubicacion"
+      AliasName="ESTADO" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Idubi"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Idubi"
+      EntityUsage="Sgaposicionubicacion"
+      AliasName="IDUBI" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Acceso"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Acceso"
+      EntityUsage="Sgaposicionubicacion"
+      AliasName="ACCESO" >
+   </ViewAttribute>
+   <ViewLinkAccessor
+      Name="SgamacView"
+      ViewLink="es.sysmap.interflex.model.dmc.SysC0010956Link"
+      Type="oracle.jbo.RowIterator"
+      IsUpdateable="false" >
+   </ViewLinkAccessor>
+   <ViewLinkAccessor
+      Name="SgamacView1"
+      ViewLink="es.sysmap.interflex.model.dmc.SysC0010959Link"
+      Type="oracle.jbo.RowIterator"
+      IsUpdateable="false" >
+   </ViewLinkAccessor>
+</ViewObject>

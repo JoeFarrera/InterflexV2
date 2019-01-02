@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+
+<Entity
+   Name="Bultos"
+   DBObjectType="table"
+   DBObjectName="BULTOS"
+   AliasName="Bultos"
+   BindingStyle="JDBC"
+   UseGlueCode="false"
+   RowClass="es.sysmap.interflex.informix.BultosImpl" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_codeGenFlag2" Value="Access" />
+      <AttrArray Name="_publishEvents">
+      </AttrArray>
+   </DesignTime>
+   <Attribute
+      Name="RowID"
+      IsUpdateable="false"
+      ColumnName="ROWID"
+      Type="java.lang.String"
+      ColumnType="ROWID"
+      SQLType="VARCHAR"
+      TableName="BULTOS"
+      PrimaryKey="true" >
+   </Attribute>
+   <Attribute
+      Name="BulFcreacion"
+      Precision="19"
+      ColumnName="bul_fcreacion"
+      Type="java.lang.String"
+      ColumnType="char"
+      SQLType="VARCHAR"
+      TableName="BULTOS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="19" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="BulFultAct"
+      Precision="19"
+      ColumnName="bul_fult_act"
+      Type="java.lang.String"
+      ColumnType="char"
+      SQLType="VARCHAR"
+      TableName="BULTOS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="19" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="BulId"
+      Precision="6"
+      Scale="0"
+      ColumnName="bul_id"
+      Type="java.math.BigDecimal"
+      ColumnType="decimal"
+      SQLType="DECIMAL"
+      TableName="BULTOS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="8" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="BulIdDetalle"
+      Precision="4"
+      Scale="0"
+      ColumnName="bul_id_detalle"
+      Type="java.math.BigDecimal"
+      ColumnType="decimal"
+      SQLType="DECIMAL"
+      TableName="BULTOS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="6" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="BulIdOrden"
+      Precision="10"
+      Scale="0"
+      ColumnName="bul_id_orden"
+      Type="java.math.BigDecimal"
+      ColumnType="decimal"
+      SQLType="DECIMAL"
+      TableName="BULTOS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="12" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="BulPeso"
+      Precision="9"
+      Scale="0"
+      ColumnName="bul_peso"
+      Type="java.math.BigDecimal"
+      ColumnType="decimal"
+      SQLType="DECIMAL"
+      TableName="BULTOS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="11" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="BulTidOrden"
+      Precision="4"
+      ColumnName="bul_tid_orden"
+      Type="java.lang.String"
+      ColumnType="char"
+      SQLType="VARCHAR"
+      TableName="BULTOS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="4" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="BulUnidades"
+      Precision="11"
+      Scale="2"
+      ColumnName="bul_unidades"
+      Type="java.math.BigDecimal"
+      ColumnType="decimal"
+      SQLType="DECIMAL"
+      TableName="BULTOS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="13" />
+      </DesignTime>
+   </Attribute>
+   <Key
+      Name="BultosPrimaryKey" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.informix.Bultos.RowID" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="BULTOS_PRIMARY_KEY" />
+         <Attr Name="_isPrimary" Value="true" />
+      </DesignTime>
+   </Key>
+</Entity>

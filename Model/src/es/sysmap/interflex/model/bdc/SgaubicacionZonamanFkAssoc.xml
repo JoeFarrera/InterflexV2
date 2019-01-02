@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE Association SYSTEM "jbo_03_01.dtd">
+
+<Association
+   Name="SgaubicacionZonamanFkAssoc" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.2.17.96" />
+   </DesignTime>
+   <AssociationEnd
+      Name="Sgazonaman"
+      Cardinality="1"
+      Source="true"
+      Owner="es.sysmap.interflex.model.bdc.Sgazonaman"
+      LockTopContainer="false" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgazonaman.Zona" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_aggregation" Value="0" />
+         <Attr Name="_isUpdateable" Value="true" />
+         <Attr Name="_finderName" Value="Sgazonaman" />
+         <Attr Name="_foreignKey" Value="es.sysmap.interflex.model.bdc.Sgazonaman.SgazonamanPk" />
+      </DesignTime>
+   </AssociationEnd>
+   <AssociationEnd
+      Name="Sgaubicacion"
+      Cardinality="-1"
+      Owner="es.sysmap.interflex.model.bdc.Sgaubicacion" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaubicacion.Zonaman" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_aggregation" Value="0" />
+         <Attr Name="_isUpdateable" Value="true" />
+         <Attr Name="_finderName" Value="Sgaubicacion" />
+         <Attr Name="_foreignKey" Value="es.sysmap.interflex.model.bdc.Sgaubicacion.SgaubicacionZonamanFk" />
+      </DesignTime>
+   </AssociationEnd>
+</Association>

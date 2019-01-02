@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE JboProject SYSTEM "jbo_03_01.dtd">
+
+<JboProject
+   Name="Informix"
+   SeparateXMLFiles="true"
+   PackageName="" >
+   <DesignTime>
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_jprName" Value="../Informix.jpr" />
+      <Attr Name="_ejbPackage" Value="false" />
+      <Attr Name="_jbo.SQLBuilder" Value="SQL92" />
+      <Attr Name="_jbo.TypeMapEntries" Value="Java" />
+      <Attr Name="_NamedConnection" Value="Interflex_informix" />
+      <Attr Name="_appModuleNames0" Value="es.sysmap.interflex.informix.AppModule" />
+   </DesignTime>
+   <Containee
+      Name="informix"
+      FullName="es.sysmap.interflex.informix.informix"
+      ObjectType="JboPackage" >
+   </Containee>
+</JboProject>

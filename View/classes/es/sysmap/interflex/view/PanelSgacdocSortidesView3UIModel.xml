@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<DCContainer
+   id="PanelSgacdocSortidesView3UIModel"
+   xmlns="http://xmlns.oracle.com/adfm/uimodel"
+   version="10.1.2.17.96"
+   Package="es.sysmap.interflex.view"
+   FindMode="false"
+   EnableTokenValidation="true" >
+   <Contents >
+      <DCIterator
+         id="SgacdocSortidesView1Iter"
+         Binds="AppModuleDataControl.SgacdocSortidesView1" >
+      </DCIterator>
+      <DCIterator
+         id="SgacdocSortidesView1Iterator"
+         Binds="AppModuleDataControl.SgacdocSortidesView1" >
+      </DCIterator>
+      <DCControl
+         id="SgacdocSortidesView1"
+         DefClass="oracle.jbo.uicli.jui.JUTableDef"
+         SubType="DCTable"
+         BindingClass="oracle.jbo.uicli.jui.JUTableBinding"
+         IterBinding="SgacdocSortidesView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Idcabnum" />
+            <Item Value="Numlineas" />
+            <Item Value="Prioridad" />
+            <Item Value="Fpedido" />
+            <Item Value="Descestadolineas" />
+            <Item Value="Nombre" />
+            <Item Value="Transporte" />
+            <Item Value="Motivo" />
+            <Item Value="Numbultos" />
+            <Item Value="Descestado" />
+            <Item Value="Ccliente" />
+            <Item Value="Pestotal" />
+            <Item Value="Direccion" />
+            <Item Value="Codpostal" />
+            <Item Value="Transp" />
+            <Item Value="Poblacion" />
+            <Item Value="Provincia" />
+            <Item Value="Telefono" />
+            <Item Value="Portes" />
+            <Item Value="Falbaran" />
+            <Item Value="Spedido" />
+            <Item Value="Pais" />
+            <Item Value="Reembolso" />
+            <Item Value="Talbaran" />
+            <Item Value="Nalbaran" />
+            <Item Value="Codempresa" />
+            <Item Value="Tportes" />
+            <Item Value="Idultbulto" />
+            <Item Value="Idtipdoc" />
+            <Item Value="TipoEnvio" />
+            <Item Value="Iddoc" />
+            <Item Value="Operario" />
+            <Item Value="Estado" />
+         </AttrNames>
+      </DCControl>
+   </Contents>
+</DCContainer>

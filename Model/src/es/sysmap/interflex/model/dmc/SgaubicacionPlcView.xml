@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+
+<ViewObject
+   Name="SgaubicacionPlcView"
+   Extends="es.sysmap.interflex.model.dmc.SgaubicacionView"
+   SelectList="Sgaubicacion.IDUBI, 
+       Sgaubicacion.DESCRIP, 
+       Sgaubicacion.IDTIPALM, 
+       Sgaubicacion.IDTIPUBI, 
+       Sgaubicacion.POSPLC, 
+       Sgaubicacion.CAPPUL"
+   OrderBy="Sgaubicacion.POSPLC asc"
+   BindingStyle="Oracle"
+   CustomQuery="false"
+   RowClass="es.sysmap.interflex.model.dmc.SgaubicacionPlcViewRowImpl"
+   ComponentClass="es.sysmap.interflex.model.dmc.SgaubicacionPlcViewImpl"
+   MsgBundleClass="es.sysmap.interflex.model.dmc.common.SgaubicacionPlcViewRowImplMsgBundle"
+   ComponentInterface="es.sysmap.interflex.model.dmc.common.SgaubicacionPlcView"
+   ClientProxyName="es.sysmap.interflex.model.dmc.client.SgaubicacionPlcViewClient"
+   RowInterface="es.sysmap.interflex.model.dmc.common.SgaubicacionPlcViewRow"
+   ClientRowProxyName="es.sysmap.interflex.model.dmc.client.SgaubicacionPlcViewRowClient"
+   FetchMode="FETCH_AS_NEEDED"
+   FetchSize="10"
+   UseGlueCode="false" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_codeGenFlag2" Value="Access|Coll|Msg" />
+      <Attr Name="_isExpertMode" Value="false" />
+   </DesignTime>
+   <EntityUsage
+      Name="Sgaubicacion"
+      Entity="es.sysmap.interflex.model.bdc.SgaubicacionPlc" >
+      <DesignTime>
+         <Attr Name="_EntireObjectTable" Value="false" />
+         <Attr Name="_queryClause" Value="false" />
+      </DesignTime>
+   </EntityUsage>
+   <ViewAttribute
+      Name="Idtipalm"
+      IsNotNull="true"
+      PrecisionRule="true"
+      DiscrColumn="true"
+      EntityAttrName="Idtipalm"
+      EntityUsage="Sgaubicacion"
+      AliasName="IDTIPALM" >
+      <DesignTime>
+         <Attr Name="_OverrideAttr" Value="true" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Idubi"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Idubi"
+      EntityUsage="Sgaubicacion"
+      AliasName="IDUBI" >
+      <DesignTime>
+         <Attr Name="_OverrideAttr" Value="true" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Idtipubi"
+      IsNotNull="true"
+      PrecisionRule="true"
+      EntityAttrName="Idtipubi"
+      EntityUsage="Sgaubicacion"
+      AliasName="IDTIPUBI" >
+      <DesignTime>
+         <Attr Name="_OverrideAttr" Value="true" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Descrip"
+      PrecisionRule="true"
+      EntityAttrName="Descrip"
+      EntityUsage="Sgaubicacion"
+      AliasName="DESCRIP" >
+      <DesignTime>
+         <Attr Name="_OverrideAttr" Value="true" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Posplc"
+      IsUpdateable="false"
+      PrecisionRule="true"
+      EntityAttrName="Posplc"
+      EntityUsage="Sgaubicacion"
+      AliasName="POSPLC" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Cappul"
+      PrecisionRule="true"
+      EntityAttrName="Cappul"
+      EntityUsage="Sgaubicacion"
+      AliasName="CAPPUL" >
+   </ViewAttribute>
+</ViewObject>

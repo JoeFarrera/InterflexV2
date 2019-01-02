@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<DCContainer
+   id="PanelSgavexistenciaView1UIModel"
+   xmlns="http://xmlns.oracle.com/adfm/uimodel"
+   version="10.1.2.17.96"
+   Package="es.sysmap.interflex.view"
+   FindMode="true"
+   EnableTokenValidation="true" >
+   <Contents >
+      <DCIterator
+         id="SgavexistenciaView1Iter"
+         Binds="AppModuleDataControl.SgavexistenciaView1" >
+      </DCIterator>
+      <DCControl
+         id="SgavexistenciaView1"
+         DefClass="oracle.jbo.uicli.jui.JUTableDef"
+         SubType="DCTable"
+         BindingClass="oracle.jbo.uicli.jui.JUTableBinding"
+         IterBinding="SgavexistenciaView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Idartif" />
+            <Item Value="Descarticulo" />
+            <Item Value="Cantot" />
+            <Item Value="Canres" />
+            <Item Value="Descestexist" />
+            <Item Value="Idmac" />
+            <Item Value="Desctipmac" />
+            <Item Value="Multiref" />
+            <Item Value="Ubipos" />
+            <Item Value="Descvisualpos" />
+            <Item Value="Posubipos" />
+            <Item Value="Ubides" />
+            <Item Value="Descvisualdes" />
+            <Item Value="Posubides" />
+            <Item Value="Createdon" />
+            <Item Value="Modifiedon" />
+            <Item Value="Integra" />
+            <Item Value="Bloqueo" />
+            <Item Value="Estado" />
+            <Item Value="MotivoBloqueo" />
+            <Item Value="Refformato" />
+         </AttrNames>
+      </DCControl>
+   </Contents>
+</DCContainer>

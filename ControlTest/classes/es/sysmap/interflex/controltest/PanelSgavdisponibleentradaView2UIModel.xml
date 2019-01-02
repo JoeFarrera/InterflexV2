@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<DCContainer
+   id="PanelSgavdisponibleentradaView2UIModel"
+   xmlns="http://xmlns.oracle.com/adfm/uimodel"
+   version="10.1.2.17.96"
+   Package="es.sysmap.interflex.controltest"
+   FindMode="false"
+   EnableTokenValidation="true" >
+   <Contents >
+      <DCIterator
+         id="SgavdisponibleentradaView2Iter"
+         Binds="TestAppModuleDataControl.SgavdisponibleentradaView2" >
+      </DCIterator>
+      <DCControl
+         id="SgavdisponibleentradaView2"
+         DefClass="oracle.jbo.uicli.jui.JUTableDef"
+         SubType="DCTable"
+         IterBinding="SgavdisponibleentradaView2Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Iddoc" />
+            <Item Value="Idlin" />
+            <Item Value="Idbulto" />
+            <Item Value="Idmac" />
+            <Item Value="Idart" />
+            <Item Value="Cantot" />
+            <Item Value="Canres" />
+            <Item Value="Unimac" />
+            <Item Value="Ubipos" />
+            <Item Value="Posubipos" />
+            <Item Value="Idtipmac" />
+            <Item Value="Idpuesto" />
+         </AttrNames>
+      </DCControl>
+   </Contents>
+</DCContainer>

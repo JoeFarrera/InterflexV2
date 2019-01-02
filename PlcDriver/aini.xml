@@ -1,0 +1,7 @@
+<Telegrama idTelegrama="1234" lenTelegrama="30" tipoTel="AINI">
+   <Detalles>
+      <valor id="algo" index="0" len="4" tipo="int">0000</valor>
+      <valor id="algo1" index="4" len="2" tipo="int">00</valor>
+      <valor id="algo2" index="6" len="2" tipo="int">00</valor>
+   </Detalles>
+</Telegrama>

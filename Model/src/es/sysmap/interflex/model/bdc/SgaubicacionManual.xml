@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+
+<Entity
+   Name="SgaubicacionManual"
+   Extends="es.sysmap.interflex.model.bdc.Sgaubicacion"
+   DBObjectType="table"
+   DBObjectName="SGAUBICACION"
+   AliasName="SgaubicacionManual"
+   BindingStyle="JDBC"
+   UseGlueCode="false"
+   RowClass="es.sysmap.interflex.model.bdc.SgaubicacionManualImpl"
+   DefClass="es.sysmap.interflex.model.bdc.SgaubicacionDefImpl"
+   MsgBundleClass="es.sysmap.interflex.model.bdc.common.SgaubicacionManualImplMsgBundle" >
+   <Properties>
+      <Property Name ="UBICACIO_LLIURE" Value ="La ubicació no esta ocupada" />
+   </Properties>
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_codeGenFlag2" Value="Init|Access|Msg" />
+      <AttrArray Name="_publishEvents">
+      </AttrArray>
+   </DesignTime>
+   <Attribute
+      Name="Pasillo"
+      Precision="2"
+      Scale="0"
+      ColumnName="PASILLO"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      TableName="SGAUBICACION" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Columna"
+      Precision="3"
+      Scale="0"
+      ColumnName="COLUMNA"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      TableName="SGAUBICACION" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Nivel"
+      Precision="2"
+      Scale="0"
+      ColumnName="NIVEL"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      TableName="SGAUBICACION" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Idtipalm"
+      IsUpdateable="false"
+      IsNotNull="true"
+      DiscrColumn="true"
+      DefaultValue="MAN"
+      Precision="3"
+      ColumnName="IDTIPALM"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="SGAUBICACION" >
+      <DesignTime>
+         <Attr Name="_OverrideAttr" Value="true" />
+         <Attr Name="_DisplaySize" Value="3" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Estado"
+      Precision="1"
+      ColumnName="ESTADO"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="SGAUBICACION" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="1" />
+      </DesignTime>
+   </Attribute>
+   <Key
+      Name="SysC0010920" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.SgaubicacionManual.Idtipalm" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0010920" />
+         <Attr Name="_checkCondition" Value="&#34;IDTIPALM&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0012513" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.SgaubicacionManual.Idtipalm" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0012513" />
+         <Attr Name="_checkCondition" Value="&#34;IDTIPALM&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0024052" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.SgaubicacionManual.Idtipalm" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0024052" />
+         <Attr Name="_checkCondition" Value="&#34;IDTIPALM&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SgaubicacionIdtipalm" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.SgaubicacionManual.Idtipalm" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SGAUBICACION_IDTIPALM" />
+         <Attr Name="_referencedKey" Value="SYS_C0012494" />
+         <Attr Name="_isForeign" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0010968" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.SgaubicacionManual.Idtipalm" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0010968" />
+         <Attr Name="_referencedKey" Value="SYS_C0010923" />
+         <Attr Name="_isForeign" Value="true" />
+      </DesignTime>
+   </Key>
+</Entity>

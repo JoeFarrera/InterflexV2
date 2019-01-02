@@ -1,0 +1,11 @@
+<?xml version = '1.0' encoding = 'windows-1252'?>
+<DCContainer xmlns="http://xmlns.oracle.com/adfm/uimodel" FindMode="false" EnableTokenValidation="true" version="10.1.2.17.96" id="PanelSgagrantuserView1UIModel" Package="es.sysmap.interflex.view" >
+  <Contents xmlns="http://xmlns.oracle.com/adfm/uimodel">
+    <DCIterator xmlns="http://xmlns.oracle.com/adfm/uimodel" Binds="AppModuleDataControl.SgagrantuserView1" id="SgagrantuserView1Iter" />
+    <DCControl xmlns="http://xmlns.oracle.com/adfm/uimodel" DefClass="oracle.jbo.uicli.jui.JUTableDef" IterBinding="SgagrantuserView1Iter" id="SgagrantuserView1" SubType="DCTable" isDynamic="false" ApplyValidation="false" >
+      <AttrNames xmlns="http://xmlns.oracle.com/adfm/uimodel">
+        <Item xmlns="http://xmlns.oracle.com/adfm/uimodel" Value="Descrip" />
+      </AttrNames>
+    </DCControl>
+  </Contents>
+</DCContainer>

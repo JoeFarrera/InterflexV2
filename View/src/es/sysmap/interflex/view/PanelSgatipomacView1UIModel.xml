@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<DCContainer
+   id="PanelSgatipomacView1UIModel"
+   xmlns="http://xmlns.oracle.com/adfm/uimodel"
+   version="10.1.2.17.96"
+   Package="es.sysmap.interflex.view"
+   FindMode="true"
+   EnableTokenValidation="true" >
+   <Contents >
+      <DCIterator
+         id="SgatipomacView1Iter"
+         Binds="AppModuleDataControl.SgatipomacView1" >
+      </DCIterator>
+      <DCControl
+         id="Idtipmac"
+         SubType="DCTextField"
+         IterBinding="SgatipomacView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Idtipmac" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Descrip"
+         SubType="DCTextField"
+         IterBinding="SgatipomacView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Descrip" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Numpos"
+         SubType="DCTextField"
+         IterBinding="SgatipomacView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Numpos" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Tara"
+         SubType="DCTextField"
+         IterBinding="SgatipomacView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Tara" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Tipplc"
+         SubType="DCTextField"
+         IterBinding="SgatipomacView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Tipplc" />
+         </AttrNames>
+      </DCControl>
+   </Contents>
+</DCContainer>

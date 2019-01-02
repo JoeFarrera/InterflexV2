@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+
+<ViewObject
+   Name="ZTipoenvioView"
+   BindingStyle="JDBC"
+   CustomQuery="true"
+   RowClass="es.sysmap.interflex.modelrps.dmc.ZTipoenvioViewRowImpl"
+   ComponentClass="es.sysmap.interflex.modelrps.dmc.ZTipoenvioViewImpl"
+   MsgBundleClass="oracle.jbo.common.JboResourceBundle"
+   RowInterface="es.sysmap.interflex.modelrps.dmc.common.ZTipoenvioViewRow"
+   ClientRowProxyName="es.sysmap.interflex.modelrps.dmc.client.ZTipoenvioViewRowClient"
+   UseGlueCode="false" >
+   <SQLQuery><![CDATA[
+SELECT DboZTipoenvio.id,
+       DboZTipoenvio.TipoEnvio,
+       DboZTipoenvio.idFormato
+FROM dbo.z_TipoEnvio DboZTipoenvio
+   ]]></SQLQuery>
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_codeGenFlag2" Value="Access|Coll" />
+      <Attr Name="_isExpertMode" Value="true" />
+   </DesignTime>
+   <ViewAttribute
+      Name="Id"
+      IsUpdateable="false"
+      IsPersistent="false"
+      IsNotNull="true"
+      PrecisionRule="true"
+      Precision="10"
+      Scale="0"
+      Type="java.lang.Integer"
+      ColumnType="int identity"
+      PrimaryKey="true"
+      AliasName="id"
+      Expression="id"
+      SQLType="INTEGER" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="11" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Tipoenvio"
+      IsUpdateable="false"
+      IsPersistent="false"
+      PrecisionRule="true"
+      Precision="50"
+      Type="java.lang.String"
+      ColumnType="nvarchar"
+      AliasName="TipoEnvio"
+      Expression="TipoEnvio"
+      SQLType="VARCHAR" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="50" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Idformato"
+      IsUpdateable="false"
+      IsPersistent="false"
+      PrecisionRule="true"
+      Precision="10"
+      Scale="0"
+      Type="java.lang.Integer"
+      ColumnType="int"
+      AliasName="idFormato"
+      Expression="idFormato"
+      SQLType="INTEGER" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="11" />
+      </DesignTime>
+   </ViewAttribute>
+   <AttrArray Name="KeyAttributes">
+      <Item Value="Id" />
+   </AttrArray>
+</ViewObject>

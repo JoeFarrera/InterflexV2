@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE Association SYSTEM "jbo_03_01.dtd">
+
+<Association
+   Name="SysC0010656Assoc" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.2.17.96" />
+   </DesignTime>
+   <AssociationEnd
+      Name="Sgaexistencia"
+      Cardinality="1"
+      Source="true"
+      Owner="es.sysmap.interflex.model.bdc.Sgaexistencia" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaexistencia.Idmac" />
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaexistencia.Item" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_minCardinality" Value="1" />
+         <Attr Name="_aggregation" Value="0" />
+         <Attr Name="_isUpdateable" Value="true" />
+         <Attr Name="_finderName" Value="Sgaexistencia" />
+         <Attr Name="_foreignKey" Value="es.sysmap.interflex.model.bdc.Sgaexistencia.SysC0010627" />
+      </DesignTime>
+   </AssociationEnd>
+   <AssociationEnd
+      Name="Sgaresmat"
+      Cardinality="-1"
+      Owner="es.sysmap.interflex.model.bdc.Sgaresmat" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaresmat.Idmac" />
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaresmat.Item" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_aggregation" Value="0" />
+         <Attr Name="_isUpdateable" Value="true" />
+         <Attr Name="_finderName" Value="Sgaresmat" />
+         <Attr Name="_foreignKey" Value="es.sysmap.interflex.model.bdc.Sgaresmat.SysC0010656" />
+      </DesignTime>
+   </AssociationEnd>
+</Association>

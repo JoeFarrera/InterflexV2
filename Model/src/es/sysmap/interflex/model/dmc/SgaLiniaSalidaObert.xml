@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+
+<ViewObject
+   Name="SgaLiniaSalidaObert"
+   BindingStyle="Oracle"
+   CustomQuery="true"
+   RowClass="es.sysmap.interflex.model.dmc.SgaLiniaSalidaObertRowImpl"
+   ComponentClass="es.sysmap.interflex.model.dmc.SgaLiniaSalidaObertImpl"
+   MsgBundleClass="oracle.jbo.common.JboResourceBundle"
+   UseGlueCode="false" >
+   <SQLQuery><![CDATA[
+SELECT 
+  LDOC.IDPUESTO,
+  count(*) OBERTS
+FROM SGALDOC LDOC,
+  SGACDOC CDOC,
+  SGAVSCLINIADOCPENDALM LDOCALM
+WHERE CDOC.IDDOC = LDOC.IDDOC
+AND LDOCALM.iddoc = cdoc.iddoc
+AND LDOCALM.idlin = ldoc.idlin
+and cdoc.idtipdoc in (select idtipdoc 
+  from sgatipdoc 
+  where tipmov ='S' 
+  and host ='S')
+and ldoc.estado = 'P'
+and cdoc.estado = 'D'
+and LDOCALM.IDTIPALM = 'SLO'
+group by LDOC.IDPUESTO
+   ]]></SQLQuery>
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_codeGenFlag2" Value="Access|Coll" />
+      <Attr Name="_isExpertMode" Value="true" />
+   </DesignTime>
+   <ViewAttribute
+      Name="Idpuesto"
+      IsPersistent="false"
+      PrecisionRule="true"
+      Precision="2"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="IDPUESTO"
+      Expression="NULL"
+      SQLType="VARCHAR" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="2" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Oberts"
+      IsPersistent="false"
+      PrecisionRule="true"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      AliasName="OBERTS"
+      Expression="NULL"
+      SQLType="NUMERIC" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </ViewAttribute>
+</ViewObject>

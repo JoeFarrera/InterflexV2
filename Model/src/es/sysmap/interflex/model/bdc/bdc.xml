@@ -1,0 +1,566 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE JboPackage SYSTEM "jbo_03_01.dtd">
+
+<JboPackage
+   Name="bdc"
+   SeparateXMLFiles="true"
+   PackageName="es.sysmap.interflex.model.bdc" >
+   <Data>
+      <Property Name ="NAMESPACE_REFERENCE" Value ="1001::::BC4JContainer" />
+      <Property Name ="ID" Value ="d4162069-0101-1000-8285-c0a80001f49d::::BC4JPackage" />
+   </Data>
+   <DesignTime>
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_ejbPackage" Value="false" />
+   </DesignTime>
+   <Containee
+      Name="Sgaarticulo"
+      FullName="es.sysmap.interflex.model.bdc.Sgaarticulo"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="Sgabulto"
+      FullName="es.sysmap.interflex.model.bdc.Sgabulto"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="Sgacdoc"
+      FullName="es.sysmap.interflex.model.bdc.Sgacdoc"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="Sgaexistencia"
+      FullName="es.sysmap.interflex.model.bdc.Sgaexistencia"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="SysC0010954Assoc"
+      FullName="es.sysmap.interflex.model.bdc.SysC0010954Assoc"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="Sgalbulto"
+      FullName="es.sysmap.interflex.model.bdc.Sgalbulto"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="SysC0010962Assoc"
+      FullName="es.sysmap.interflex.model.bdc.SysC0010962Assoc"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="Sgaldoc"
+      FullName="es.sysmap.interflex.model.bdc.Sgaldoc"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="SysC0010961Assoc"
+      FullName="es.sysmap.interflex.model.bdc.SysC0010961Assoc"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="SysC0010965Assoc"
+      FullName="es.sysmap.interflex.model.bdc.SysC0010965Assoc"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="SysC0010966Assoc"
+      FullName="es.sysmap.interflex.model.bdc.SysC0010966Assoc"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="Sgamac"
+      FullName="es.sysmap.interflex.model.bdc.Sgamac"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="SysC0010955Assoc"
+      FullName="es.sysmap.interflex.model.bdc.SysC0010955Assoc"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="Sgaposicionubicacion"
+      FullName="es.sysmap.interflex.model.bdc.Sgaposicionubicacion"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="SysC0010956Assoc"
+      FullName="es.sysmap.interflex.model.bdc.SysC0010956Assoc"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="SysC0010959Assoc"
+      FullName="es.sysmap.interflex.model.bdc.SysC0010959Assoc"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="Sgaresmat"
+      FullName="es.sysmap.interflex.model.bdc.Sgaresmat"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="SysC0010951Assoc"
+      FullName="es.sysmap.interflex.model.bdc.SysC0010951Assoc"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="SgaresmatExistenciaAssociation"
+      FullName="es.sysmap.interflex.model.bdc.SgaresmatExistenciaAssociation"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="SysC0010953Assoc"
+      FullName="es.sysmap.interflex.model.bdc.SysC0010953Assoc"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="Sgatipdoc"
+      FullName="es.sysmap.interflex.model.bdc.Sgatipdoc"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="SysC0010970Assoc"
+      FullName="es.sysmap.interflex.model.bdc.SysC0010970Assoc"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="Sgatipmactipubi"
+      FullName="es.sysmap.interflex.model.bdc.Sgatipmactipubi"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="Sgatipoalmacen"
+      FullName="es.sysmap.interflex.model.bdc.Sgatipoalmacen"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="Sgatipomac"
+      FullName="es.sysmap.interflex.model.bdc.Sgatipomac"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="SysC0010971Assoc"
+      FullName="es.sysmap.interflex.model.bdc.SysC0010971Assoc"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="SysC0010960Assoc"
+      FullName="es.sysmap.interflex.model.bdc.SysC0010960Assoc"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="SysC0010973Assoc"
+      FullName="es.sysmap.interflex.model.bdc.SysC0010973Assoc"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="Sgatipoubicacion"
+      FullName="es.sysmap.interflex.model.bdc.Sgatipoubicacion"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="SysC0010972Assoc"
+      FullName="es.sysmap.interflex.model.bdc.SysC0010972Assoc"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="Sgaubicacion"
+      FullName="es.sysmap.interflex.model.bdc.Sgaubicacion"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="SgaubicacionPosicionubicacionAssociation"
+      FullName="es.sysmap.interflex.model.bdc.SgaubicacionPosicionubicacionAssociation"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="SysC0010957Assoc"
+      FullName="es.sysmap.interflex.model.bdc.SysC0010957Assoc"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="SysC0010958Assoc"
+      FullName="es.sysmap.interflex.model.bdc.SysC0010958Assoc"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="SysC0010968Assoc"
+      FullName="es.sysmap.interflex.model.bdc.SysC0010968Assoc"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="SgapuestoPicking"
+      FullName="es.sysmap.interflex.model.bdc.SgapuestoPicking"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="FlexiDate"
+      FullName="es.sysmap.interflex.model.bdc.FlexiDate"
+      ObjectType="Domain" >
+   </Containee>
+   <Containee
+      Name="SgaubicacionSilo"
+      FullName="es.sysmap.interflex.model.bdc.SgaubicacionSilo"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="SgaubicacionMiniLoad"
+      FullName="es.sysmap.interflex.model.bdc.SgaubicacionMiniLoad"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="SgaubicacionManual"
+      FullName="es.sysmap.interflex.model.bdc.SgaubicacionManual"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="SysC0010969Assoc"
+      FullName="es.sysmap.interflex.model.bdc.SysC0010969Assoc"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="Sgaordtran"
+      FullName="es.sysmap.interflex.model.bdc.Sgaordtran"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="SgaordtranSgaordtranFk1Assoc"
+      FullName="es.sysmap.interflex.model.bdc.SgaordtranSgaordtranFk1Assoc"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="SgaordtranSgamacFk1Assoc"
+      FullName="es.sysmap.interflex.model.bdc.SgaordtranSgamacFk1Assoc"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="Sgapuestomanip"
+      FullName="es.sysmap.interflex.model.bdc.Sgapuestomanip"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="SgapuestomanipSgaubicaciFk1Assoc"
+      FullName="es.sysmap.interflex.model.bdc.SgapuestomanipSgaubicaciFk1Assoc"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="SgapuestomanipSgaubicaciFk2Assoc"
+      FullName="es.sysmap.interflex.model.bdc.SgapuestomanipSgaubicaciFk2Assoc"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="SgapuestomanipLdocAssociation"
+      FullName="es.sysmap.interflex.model.bdc.SgapuestomanipLdocAssociation"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="SgapuestomanipBultoAssociation"
+      FullName="es.sysmap.interflex.model.bdc.SgapuestomanipBultoAssociation"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="IdubiType"
+      FullName="es.sysmap.interflex.model.bdc.IdubiType"
+      ObjectType="Domain" >
+   </Containee>
+   <Containee
+      Name="Sgapasillo"
+      FullName="es.sysmap.interflex.model.bdc.Sgapasillo"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="SgapasilloUbicAssociation"
+      FullName="es.sysmap.interflex.model.bdc.SgapasilloUbicAssociation"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="SgapasilloUbientradaAssociation"
+      FullName="es.sysmap.interflex.model.bdc.SgapasilloUbientradaAssociation"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="SgapasilloUbisalidaAssociation"
+      FullName="es.sysmap.interflex.model.bdc.SgapasilloUbisalidaAssociation"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="SgaubicacionPlc"
+      FullName="es.sysmap.interflex.model.bdc.SgaubicacionPlc"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="Sgaedoc"
+      FullName="es.sysmap.interflex.model.bdc.Sgaedoc"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="SgacdocedocAssoc"
+      FullName="es.sysmap.interflex.model.bdc.SgacdocedocAssoc"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="Sgauser"
+      FullName="es.sysmap.interflex.model.bdc.Sgauser"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="SgacdocbultoAssoc"
+      FullName="es.sysmap.interflex.model.bdc.SgacdocbultoAssoc"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="Sgatraslo"
+      FullName="es.sysmap.interflex.model.bdc.Sgatraslo"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="SgapasilloTrasloPasilloDestinoAssociation"
+      FullName="es.sysmap.interflex.model.bdc.SgapasilloTrasloPasilloDestinoAssociation"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="SgapasilloTraslopasilloActualAssociation"
+      FullName="es.sysmap.interflex.model.bdc.SgapasilloTraslopasilloActualAssociation"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="SgaresmatmacAssoc"
+      FullName="es.sysmap.interflex.model.bdc.SgaresmatmacAssoc"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="SgamacresmatAssoc"
+      FullName="es.sysmap.interflex.model.bdc.SgamacresmatAssoc"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="Sgahistexist"
+      FullName="es.sysmap.interflex.model.bdc.Sgahistexist"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="SgapasilloUbicacionSiloAssociation"
+      FullName="es.sysmap.interflex.model.bdc.SgapasilloUbicacionSiloAssociation"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="Sgahistordtran"
+      FullName="es.sysmap.interflex.model.bdc.Sgahistordtran"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="SgaordtranHistordTranAssociation"
+      FullName="es.sysmap.interflex.model.bdc.SgaordtranHistordTranAssociation"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="SgaordtranFkreubicAssoc"
+      FullName="es.sysmap.interflex.model.bdc.SgaordtranFkreubicAssoc"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="SgahistordtranUbiOriAssociation"
+      FullName="es.sysmap.interflex.model.bdc.SgahistordtranUbiOriAssociation"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="SgahistordtranUbiDesAssociation"
+      FullName="es.sysmap.interflex.model.bdc.SgahistordtranUbiDesAssociation"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="SgahistordtranUbiDesfinAssociation"
+      FullName="es.sysmap.interflex.model.bdc.SgahistordtranUbiDesfinAssociation"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="SgacdocbultoSloAssoc"
+      FullName="es.sysmap.interflex.model.bdc.SgacdocbultoSloAssoc"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="SgacdocbultoMldAssoc"
+      FullName="es.sysmap.interflex.model.bdc.SgacdocbultoMldAssoc"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="SysC0010952Assoc"
+      FullName="es.sysmap.interflex.model.bdc.SysC0010952Assoc"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="Sgamovimiento"
+      FullName="es.sysmap.interflex.model.bdc.Sgamovimiento"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="Sgastock"
+      FullName="es.sysmap.interflex.model.bdc.Sgastock"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="SgamovimientoStockAssoc"
+      FullName="es.sysmap.interflex.model.bdc.SgamovimientoStockAssoc"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="SysC0012520Assoc"
+      FullName="es.sysmap.interflex.model.bdc.SysC0012520Assoc"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="Sgahistaveria"
+      FullName="es.sysmap.interflex.model.bdc.Sgahistaveria"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="Sgagrantuser"
+      FullName="es.sysmap.interflex.model.bdc.Sgagrantuser"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="Sgarole"
+      FullName="es.sysmap.interflex.model.bdc.Sgarole"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="Sgaetiqueta"
+      FullName="es.sysmap.interflex.model.bdc.Sgaetiqueta"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="SgacdocEtiqueta"
+      FullName="es.sysmap.interflex.model.bdc.SgacdocEtiqueta"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="Sgamactara"
+      FullName="es.sysmap.interflex.model.bdc.Sgamactara"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="SgamacMactaraAssociation"
+      FullName="es.sysmap.interflex.model.bdc.SgamacMactaraAssociation"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="Sgaochoa"
+      FullName="es.sysmap.interflex.model.bdc.Sgaochoa"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="Sgatipobulto"
+      FullName="es.sysmap.interflex.model.bdc.Sgatipobulto"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="SgabultoFk51274951815495Assoc"
+      FullName="es.sysmap.interflex.model.bdc.SgabultoFk51274951815495Assoc"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="SgacdocbultoManAssoc"
+      FullName="es.sysmap.interflex.model.bdc.SgacdocbultoManAssoc"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="SgabultoFk51274951815495Assoc1"
+      FullName="es.sysmap.interflex.model.bdc.SgabultoFk51274951815495Assoc1"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="Prodembalajes"
+      FullName="es.sysmap.interflex.model.bdc.Prodembalajes"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="Prodembalajesreferencia"
+      FullName="es.sysmap.interflex.model.bdc.Prodembalajesreferencia"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="FkProdembalajesIdformatoAssoc"
+      FullName="es.sysmap.interflex.model.bdc.FkProdembalajesIdformatoAssoc"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="ZTipoenvio"
+      FullName="es.sysmap.interflex.model.bdc.ZTipoenvio"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="ZAgenciatipoenvio"
+      FullName="es.sysmap.interflex.model.bdc.ZAgenciatipoenvio"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="Sgaexped"
+      FullName="es.sysmap.interflex.model.bdc.Sgaexped"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="Sgaexpedbulto"
+      FullName="es.sysmap.interflex.model.bdc.Sgaexpedbulto"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="Sgaexpedlbulto"
+      FullName="es.sysmap.interflex.model.bdc.Sgaexpedlbulto"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="SgaexpedExpedbultoAssociation"
+      FullName="es.sysmap.interflex.model.bdc.SgaexpedExpedbultoAssociation"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="SgaexpedbultoLbultoAssociation"
+      FullName="es.sysmap.interflex.model.bdc.SgaexpedbultoLbultoAssociation"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="Sgadocexped"
+      FullName="es.sysmap.interflex.model.bdc.Sgadocexped"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="Sgaexpeddoc"
+      FullName="es.sysmap.interflex.model.bdc.Sgaexpeddoc"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="SgaexpedexpeddocAssociation"
+      FullName="es.sysmap.interflex.model.bdc.SgaexpedexpeddocAssociation"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="SgaexpedlbultoFk1Assoc"
+      FullName="es.sysmap.interflex.model.bdc.SgaexpedlbultoFk1Assoc"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="Sgaexped_1"
+      FullName="es.sysmap.interflex.model.bdc.Sgaexped_1"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="SgaldocExpedlbultoAssoc"
+      FullName="es.sysmap.interflex.model.bdc.SgaldocExpedlbultoAssoc"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="Sgazonaman"
+      FullName="es.sysmap.interflex.model.bdc.Sgazonaman"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="SgaubicacionZonamanFkAssoc"
+      FullName="es.sysmap.interflex.model.bdc.SgaubicacionZonamanFkAssoc"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="Sgapasillomanual"
+      FullName="es.sysmap.interflex.model.bdc.Sgapasillomanual"
+      ObjectType="Entity" >
+   </Containee>
+</JboPackage>

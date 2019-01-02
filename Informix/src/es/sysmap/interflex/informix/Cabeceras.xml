@@ -1,0 +1,413 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+
+<Entity
+   Name="Cabeceras"
+   DBObjectType="table"
+   DBObjectName="CABECERAS"
+   AliasName="Cabeceras"
+   BindingStyle="JDBC"
+   UseGlueCode="false"
+   RowClass="es.sysmap.interflex.informix.CabecerasImpl" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_panelSchema" Value="table|view" />
+      <Attr Name="_codeGenFlag2" Value="Access" />
+      <AttrArray Name="_publishEvents">
+      </AttrArray>
+   </DesignTime>
+   <Attribute
+      Name="RowID"
+      IsUpdateable="false"
+      ColumnName="ROWID"
+      Type="java.lang.String"
+      ColumnType="ROWID"
+      SQLType="VARCHAR"
+      TableName="CABECERAS"
+      PrimaryKey="true" >
+   </Attribute>
+   <Attribute
+      Name="CabCCliente"
+      Precision="6"
+      Scale="0"
+      ColumnName="cab_c_cliente"
+      Type="java.math.BigDecimal"
+      ColumnType="decimal"
+      SQLType="DECIMAL"
+      TableName="CABECERAS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="8" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="CabCTransp"
+      Precision="6"
+      Scale="0"
+      ColumnName="cab_c_transp"
+      Type="java.math.BigDecimal"
+      ColumnType="decimal"
+      SQLType="DECIMAL"
+      TableName="CABECERAS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="8" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="CabCodEmpresa"
+      Precision="6"
+      Scale="0"
+      ColumnName="cab_cod_empresa"
+      Type="java.math.BigDecimal"
+      ColumnType="decimal"
+      SQLType="DECIMAL"
+      TableName="CABECERAS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="8" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="CabCosPostal"
+      Precision="5"
+      ColumnName="cab_cos_postal"
+      Type="java.lang.String"
+      ColumnType="char"
+      SQLType="VARCHAR"
+      TableName="CABECERAS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="5" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="CabDireccion"
+      Precision="50"
+      ColumnName="cab_direccion"
+      Type="java.lang.String"
+      ColumnType="char"
+      SQLType="VARCHAR"
+      TableName="CABECERAS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="50" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="CabFAlbaran"
+      Precision="15"
+      ColumnName="cab_f_albaran"
+      Type="java.lang.String"
+      ColumnType="char"
+      SQLType="VARCHAR"
+      TableName="CABECERAS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="15" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="CabFcreacion"
+      Precision="19"
+      ColumnName="cab_fcreacion"
+      Type="java.lang.String"
+      ColumnType="char"
+      SQLType="VARCHAR"
+      TableName="CABECERAS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="19" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="CabFultAct"
+      Precision="19"
+      ColumnName="cab_fult_act"
+      Type="java.lang.String"
+      ColumnType="char"
+      SQLType="VARCHAR"
+      TableName="CABECERAS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="19" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="CabId"
+      Precision="10"
+      Scale="0"
+      ColumnName="cab_id"
+      Type="java.math.BigDecimal"
+      ColumnType="decimal"
+      SQLType="DECIMAL"
+      TableName="CABECERAS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="12" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="CabIdEstado"
+      Precision="2"
+      Scale="0"
+      ColumnName="cab_id_estado"
+      Type="java.math.BigDecimal"
+      ColumnType="decimal"
+      SQLType="DECIMAL"
+      TableName="CABECERAS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="4" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="CabMotivo"
+      Precision="128"
+      ColumnName="cab_motivo"
+      Type="java.lang.String"
+      ColumnType="char"
+      SQLType="VARCHAR"
+      TableName="CABECERAS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="128" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="CabNAlbaran"
+      Precision="9"
+      Scale="0"
+      ColumnName="cab_n_albaran"
+      Type="java.math.BigDecimal"
+      ColumnType="decimal"
+      SQLType="DECIMAL"
+      TableName="CABECERAS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="11" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="CabNombre"
+      Precision="50"
+      ColumnName="cab_nombre"
+      Type="java.lang.String"
+      ColumnType="char"
+      SQLType="VARCHAR"
+      TableName="CABECERAS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="50" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="CabNumBultos"
+      Precision="6"
+      Scale="0"
+      ColumnName="cab_num_bultos"
+      Type="java.math.BigDecimal"
+      ColumnType="decimal"
+      SQLType="DECIMAL"
+      TableName="CABECERAS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="8" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="CabNumLineas"
+      Precision="4"
+      Scale="0"
+      ColumnName="cab_num_lineas"
+      Type="java.math.BigDecimal"
+      ColumnType="decimal"
+      SQLType="DECIMAL"
+      TableName="CABECERAS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="6" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="CabOperario"
+      Precision="6"
+      Scale="0"
+      ColumnName="cab_operario"
+      Type="java.math.BigDecimal"
+      ColumnType="decimal"
+      SQLType="DECIMAL"
+      TableName="CABECERAS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="8" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="CabPais"
+      Precision="30"
+      ColumnName="cab_pais"
+      Type="java.lang.String"
+      ColumnType="char"
+      SQLType="VARCHAR"
+      TableName="CABECERAS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="30" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="CabPesoTotal"
+      Precision="9"
+      Scale="0"
+      ColumnName="cab_peso_total"
+      Type="java.math.BigDecimal"
+      ColumnType="decimal"
+      SQLType="DECIMAL"
+      TableName="CABECERAS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="11" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="CabPoblacion"
+      Precision="30"
+      ColumnName="cab_poblacion"
+      Type="java.lang.String"
+      ColumnType="char"
+      SQLType="VARCHAR"
+      TableName="CABECERAS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="30" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="CabPortes"
+      Precision="20"
+      ColumnName="cab_portes"
+      Type="java.lang.String"
+      ColumnType="char"
+      SQLType="VARCHAR"
+      TableName="CABECERAS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="20" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="CabPrioridad"
+      Precision="2"
+      Scale="0"
+      ColumnName="cab_prioridad"
+      Type="java.math.BigDecimal"
+      ColumnType="decimal"
+      SQLType="DECIMAL"
+      TableName="CABECERAS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="4" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="CabProvincia"
+      Precision="30"
+      ColumnName="cab_provincia"
+      Type="java.lang.String"
+      ColumnType="char"
+      SQLType="VARCHAR"
+      TableName="CABECERAS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="30" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="CabReembolso"
+      Precision="9"
+      Scale="2"
+      ColumnName="cab_reembolso"
+      Type="java.math.BigDecimal"
+      ColumnType="decimal"
+      SQLType="DECIMAL"
+      TableName="CABECERAS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="11" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="CabSPedido"
+      Precision="40"
+      ColumnName="cab_s_pedido"
+      Type="java.lang.String"
+      ColumnType="char"
+      SQLType="VARCHAR"
+      TableName="CABECERAS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="40" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="CabTAlbaran"
+      Precision="4"
+      ColumnName="cab_t_albaran"
+      Type="java.lang.String"
+      ColumnType="char"
+      SQLType="VARCHAR"
+      TableName="CABECERAS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="4" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="CabTPortes"
+      Precision="4"
+      ColumnName="cab_t_portes"
+      Type="java.lang.String"
+      ColumnType="char"
+      SQLType="VARCHAR"
+      TableName="CABECERAS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="4" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="CabTelefono"
+      Precision="15"
+      ColumnName="cab_telefono"
+      Type="java.lang.String"
+      ColumnType="char"
+      SQLType="VARCHAR"
+      TableName="CABECERAS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="15" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="CabTid"
+      Precision="4"
+      ColumnName="cab_tid"
+      Type="java.lang.String"
+      ColumnType="char"
+      SQLType="VARCHAR"
+      TableName="CABECERAS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="4" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="CabTipoOrden"
+      Precision="2"
+      Scale="0"
+      ColumnName="cab_tipo_orden"
+      Type="java.math.BigDecimal"
+      ColumnType="decimal"
+      SQLType="DECIMAL"
+      TableName="CABECERAS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="4" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="CabTransporte"
+      Precision="40"
+      ColumnName="cab_transporte"
+      Type="java.lang.String"
+      ColumnType="char"
+      SQLType="VARCHAR"
+      TableName="CABECERAS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="40" />
+      </DesignTime>
+   </Attribute>
+   <Key
+      Name="CabecerasPrimaryKey" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.informix.Cabeceras.RowID" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="CABECERAS_PRIMARY_KEY" />
+         <Attr Name="_isPrimary" Value="true" />
+      </DesignTime>
+   </Key>
+</Entity>

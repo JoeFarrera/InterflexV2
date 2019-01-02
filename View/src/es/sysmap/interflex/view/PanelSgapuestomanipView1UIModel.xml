@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<DCContainer
+   id="PanelSgapuestomanipView1UIModel"
+   xmlns="http://xmlns.oracle.com/adfm/uimodel"
+   version="10.1.2.17.96"
+   Package="es.sysmap.interflex.view"
+   FindMode="true"
+   EnableTokenValidation="true" >
+   <Contents >
+      <DCIterator
+         id="SgaestadopuestoView1Iterator"
+         Binds="AppModuleDataControl.SgaestadopuestoView1" >
+      </DCIterator>
+      <DCIterator
+         id="SgapuestomanipView1Iter"
+         Binds="AppModuleDataControl.SgapuestomanipView1" >
+      </DCIterator>
+      <DCIterator
+         id="SgapuestomanipView1Iterator"
+         Binds="AppModuleDataControl.SgapuestomanipView1"
+         RangeSize="10" >
+      </DCIterator>
+      <DCIterator
+         id="SgapuestomanipView1Iterator1"
+         Binds="AppModuleDataControl.SgapuestomanipView1"
+         RangeSize="10" >
+      </DCIterator>
+      <DCControl
+         id="Idpuesto"
+         SubType="DCTextField"
+         IterBinding="SgapuestomanipView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Idpuesto" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Idubimld"
+         SubType="DCTextField"
+         IterBinding="SgapuestomanipView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Idubimld" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Idubislo"
+         SubType="DCTextField"
+         IterBinding="SgapuestomanipView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Idubislo" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Estado"
+         SubType="DCTextField"
+         IterBinding="SgapuestomanipView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Estado" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Autoselordsal"
+         SubType="DCTextField"
+         IterBinding="SgapuestomanipView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Autoselordsal" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Numordsal"
+         SubType="DCTextField"
+         IterBinding="SgapuestomanipView1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Numordsal" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Descestado"
+         DefClass="oracle.jbo.uicli.jui.JUComboBoxDef"
+         SubType="DCComboBox"
+         BindingClass="oracle.jbo.uicli.jui.JUComboBoxBinding"
+         IterBinding="SgapuestomanipView1Iter"
+         DTClass="oracle.adf.dt.objects.JUDTCtrlListLOV"
+         ApplyValidation="false"
+         isDynamic="false"
+         ListOperMode="0"
+         ListIter="SgaestadopuestoView1Iterator" >
+         <AttrNames>
+            <Item Value="Estado" />
+         </AttrNames>
+         <ListAttrNames>
+            <Item Value="Value" />
+         </ListAttrNames>
+         <ListDisplayAttrNames>
+            <Item Value="Abbreviation" />
+         </ListDisplayAttrNames>
+      </DCControl>
+      <DCControl
+         id="Autoselordsal1"
+         DefClass="oracle.jbo.uicli.jui.JUButtonDef"
+         SubType="DCButton"
+         BindingClass="oracle.jbo.uicli.jui.JUButtonBinding"
+         IterBinding="SgapuestomanipView1Iter"
+         ApplyValidation="false"
+         isDynamic="false"
+         ListOperMode="0"
+         StaticList="true"
+         BoolVal="true" >
+         <AttrNames>
+            <Item Value="Autoselordsal" />
+         </AttrNames>
+         <ValueList>
+            <Item Value="S" />
+            <Item Value="N" />
+         </ValueList>
+      </DCControl>
+      <DCControl
+         id="Basculamld"
+         DefClass="oracle.jbo.uicli.jui.JUButtonDef"
+         SubType="DCButton"
+         IterBinding="SgapuestomanipView1Iterator"
+         ApplyValidation="false"
+         isDynamic="false"
+         ListOperMode="0"
+         StaticList="true"
+         BoolVal="true" >
+         <AttrNames>
+            <Item Value="Basculamld" />
+         </AttrNames>
+         <ValueList>
+            <Item Value="S" />
+            <Item Value="N" />
+         </ValueList>
+      </DCControl>
+      <DCControl
+         id="Basculaslo"
+         DefClass="oracle.jbo.uicli.jui.JUButtonDef"
+         SubType="DCButton"
+         IterBinding="SgapuestomanipView1Iterator1"
+         ApplyValidation="false"
+         isDynamic="false"
+         ListOperMode="0"
+         StaticList="true"
+         BoolVal="true" >
+         <AttrNames>
+            <Item Value="Basculaslo" />
+         </AttrNames>
+         <ValueList>
+            <Item Value="S" />
+            <Item Value="N" />
+         </ValueList>
+      </DCControl>
+   </Contents>
+</DCContainer>

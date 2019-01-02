@@ -1,0 +1,340 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+
+<Entity
+   Name="Sgaposicionubicacion"
+   DBObjectType="table"
+   DBObjectName="SGAPOSICIONUBICACION"
+   AliasName="Sgaposicionubicacion"
+   BindingStyle="Oracle"
+   UseGlueCode="false"
+   RowClass="es.sysmap.interflex.model.bdc.SgaposicionubicacionImpl"
+   MsgBundleClass="es.sysmap.interflex.model.bdc.common.SgaposicionubicacionImplMsgBundle" >
+   <Properties>
+      <Property Name ="ACCES_BLOQUEJAT" Value ="L'accés a la posició no es lliure" />
+      <Property Name ="POSICIO_LLIURE" Value ="La posició no esta ocupada" />
+   </Properties>
+   <Data>
+      <Property Name ="IS_ABSTRACT" Value ="FALSE" />
+      <Property Name ="COMPLETE_LIBRARY" Value ="FALSE" />
+      <Property Name ="IS_LEAF" Value ="FALSE" />
+      <Property Name ="IS_ROOT" Value ="FALSE" />
+      <Property Name ="ID" Value ="d4162d98-0101-1000-82e4-c0a80001f49d::::EntityObject" />
+      <Property Name ="VISIBILITY" Value ="PUBLIC" />
+      <Property Name ="IS_ACTIVE" Value ="FALSE" />
+   </Data>
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_codeGenFlag2" Value="Access|Msg" />
+      <AttrArray Name="_publishEvents">
+      </AttrArray>
+   </DesignTime>
+   <Attribute
+      Name="Posicion"
+      IsNotNull="true"
+      Precision="1"
+      Scale="0"
+      ColumnName="POSICION"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      TableName="SGAPOSICIONUBICACION"
+      PrimaryKey="true" >
+      <Data>
+         <Property Name ="ID" Value ="d4162d98-0101-1000-82e5-c0a80001f49d::::EntityObjectAttribute" />
+         <Property Name ="CHANGEABILITY" Value ="CHANGEABLE" />
+         <Property Name ="OWNER_SCOPE" Value ="INSTANCE" />
+         <Property Name ="MULTIPLICITY" Value ="1" />
+         <Property Name ="VISIBILITY" Value ="PACKAGE" />
+      </Data>
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Estado"
+      IsNotNull="true"
+      Precision="1"
+      ColumnName="ESTADO"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="SGAPOSICIONUBICACION" >
+      <Data>
+         <Property Name ="ID" Value ="d4162d98-0101-1000-82e6-c0a80001f49d::::EntityObjectAttribute" />
+         <Property Name ="CHANGEABILITY" Value ="CHANGEABLE" />
+         <Property Name ="OWNER_SCOPE" Value ="INSTANCE" />
+         <Property Name ="MULTIPLICITY" Value ="1" />
+         <Property Name ="VISIBILITY" Value ="PACKAGE" />
+      </Data>
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="1" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Idubi"
+      IsNotNull="true"
+      Precision="8"
+      ColumnName="IDUBI"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="SGAPOSICIONUBICACION"
+      PrimaryKey="true" >
+      <Data>
+         <Property Name ="ID" Value ="d4162d98-0101-1000-82e7-c0a80001f49d::::EntityObjectAttribute" />
+         <Property Name ="CHANGEABILITY" Value ="CHANGEABLE" />
+         <Property Name ="OWNER_SCOPE" Value ="INSTANCE" />
+         <Property Name ="MULTIPLICITY" Value ="1" />
+         <Property Name ="VISIBILITY" Value ="PACKAGE" />
+      </Data>
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="8" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Acceso"
+      IsNotNull="true"
+      Precision="1"
+      ColumnName="ACCESO"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="SGAPOSICIONUBICACION" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="1" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Createdby"
+      IsUpdateable="while_insert"
+      Precision="10"
+      ColumnName="CREATEDBY"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="SGAPOSICIONUBICACION"
+      HistoryColumn="UserHistory" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="10" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Modifiedby"
+      Precision="10"
+      ColumnName="MODIFIEDBY"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="SGAPOSICIONUBICACION"
+      HistoryColumn="UserHistory" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="10" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Createdon"
+      IsUpdateable="while_insert"
+      ColumnName="CREATEDON"
+      Domain="es.sysmap.interflex.model.bdc.FlexiDate"
+      Type="es.sysmap.interflex.model.bdc.common.FlexiDate"
+      ColumnType="DATE"
+      SQLType="DATE"
+      TableName="SGAPOSICIONUBICACION"
+      HistoryColumn="DateHistory" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="7" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Modifiedon"
+      ColumnName="MODIFIEDON"
+      Domain="es.sysmap.interflex.model.bdc.FlexiDate"
+      Type="es.sysmap.interflex.model.bdc.common.FlexiDate"
+      ColumnType="DATE"
+      SQLType="DATE"
+      TableName="SGAPOSICIONUBICACION"
+      HistoryColumn="DateHistory" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="7" />
+      </DesignTime>
+   </Attribute>
+   <AccessorAttribute
+      Name="Sgaubicacion"
+      Association="es.sysmap.interflex.model.bdc.SgaubicacionPosicionubicacionAssociation"
+      AssociationEnd="es.sysmap.interflex.model.bdc.SgaubicacionPosicionubicacionAssociation.Sgaubicacion"
+      AssociationOtherEnd="es.sysmap.interflex.model.bdc.SgaubicacionPosicionubicacionAssociation.Sgaposicionubicacion"
+      Type="es.sysmap.interflex.model.bdc.SgaubicacionImpl" >
+   </AccessorAttribute>
+   <AccessorAttribute
+      Name="SgamacDes"
+      Association="es.sysmap.interflex.model.bdc.SysC0010956Assoc"
+      AssociationEnd="es.sysmap.interflex.model.bdc.SysC0010956Assoc.SgamacDes"
+      AssociationOtherEnd="es.sysmap.interflex.model.bdc.SysC0010956Assoc.Sgaposubides"
+      Type="oracle.jbo.RowIterator"
+      IsUpdateable="false" >
+   </AccessorAttribute>
+   <AccessorAttribute
+      Name="SgamacPos"
+      Association="es.sysmap.interflex.model.bdc.SysC0010959Assoc"
+      AssociationEnd="es.sysmap.interflex.model.bdc.SysC0010959Assoc.SgamacPos"
+      AssociationOtherEnd="es.sysmap.interflex.model.bdc.SysC0010959Assoc.Sgaposubipos"
+      Type="oracle.jbo.RowIterator"
+      IsUpdateable="false" >
+   </AccessorAttribute>
+   <Key
+      Name="SgaposicionubCk81107511791591" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaposicionubicacion.Acceso" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SGAPOSICIONUB_CK81107511791591" />
+         <Attr Name="_checkCondition" Value="acceso in (&#39;L&#39;, &#39;B&#39;, &#39;I&#39;)" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SgaposicionubCkacceso" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaposicionubicacion.Acceso" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SGAPOSICIONUB_CKACCESO" />
+         <Attr Name="_checkCondition" Value="acceso in (&#39;L&#39;, &#39;B&#39;, &#39;I&#39;)" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SgaposubiCkestado" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaposicionubicacion.Estado" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SGAPOSUBI_CKESTADO" />
+         <Attr Name="_checkCondition" Value="estado IN (&#39;L&#39;, &#39;R&#39;, &#39;O&#39;)" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0010913" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaposicionubicacion.Posicion" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0010913" />
+         <Attr Name="_checkCondition" Value="&#34;POSICION&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0010914" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaposicionubicacion.Estado" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0010914" />
+         <Attr Name="_checkCondition" Value="&#34;ESTADO&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0010915" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaposicionubicacion.Idubi" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0010915" />
+         <Attr Name="_checkCondition" Value="&#34;IDUBI&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0010916" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaposicionubicacion.Estado" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0010916" />
+         <Attr Name="_checkCondition" Value="estado IN (&#39;L&#39;, &#39;R&#39;, &#39;O&#39;)" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0010917" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaposicionubicacion.Idubi" />
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaposicionubicacion.Posicion" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0010917" />
+         <Attr Name="_isPrimary" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0010978" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaposicionubicacion.Acceso" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0010978" />
+         <Attr Name="_checkCondition" Value="&#34;ACCESO&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0012452" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaposicionubicacion.Posicion" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0012452" />
+         <Attr Name="_checkCondition" Value="&#34;POSICION&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0012453" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaposicionubicacion.Estado" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0012453" />
+         <Attr Name="_checkCondition" Value="&#34;ESTADO&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0012454" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaposicionubicacion.Idubi" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0012454" />
+         <Attr Name="_checkCondition" Value="&#34;IDUBI&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0012455" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaposicionubicacion.Acceso" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0012455" />
+         <Attr Name="_checkCondition" Value="&#34;ACCESO&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0010967" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgaposicionubicacion.Idubi" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0010967" />
+         <Attr Name="_referencedKey" Value="SYS_C0010921" />
+         <Attr Name="_isForeign" Value="true" />
+      </DesignTime>
+   </Key>
+</Entity>

@@ -1,0 +1,288 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+
+<ViewObject
+   Name="CabecerasView"
+   SelectList="Cabeceras.ROWID, 
+       Cabeceras.cab_c_cliente, 
+       Cabeceras.cab_c_transp, 
+
+       Cabeceras.cab_cod_empresa, 
+       Cabeceras.cab_cos_postal, 
+
+       Cabeceras.cab_direccion, 
+       Cabeceras.cab_f_albaran, 
+
+       Cabeceras.cab_fcreacion, 
+       Cabeceras.cab_fult_act, 
+
+       Cabeceras.cab_id, 
+       Cabeceras.cab_id_estado, 
+ 
+      Cabeceras.cab_motivo, 
+       Cabeceras.cab_n_albaran, 
+
+       Cabeceras.cab_nombre, 
+       Cabeceras.cab_num_bultos, 
+
+       Cabeceras.cab_num_lineas, 
+       Cabeceras.cab_operario, 
+
+       Cabeceras.cab_pais, 
+       Cabeceras.cab_peso_total, 
+
+       Cabeceras.cab_poblacion, 
+       Cabeceras.cab_portes, 
+
+       Cabeceras.cab_prioridad, 
+       Cabeceras.cab_provincia, 
+
+       Cabeceras.cab_reembolso, 
+       Cabeceras.cab_s_pedido, 
+
+       Cabeceras.cab_t_albaran, 
+       Cabeceras.cab_t_portes, 
+
+       Cabeceras.cab_telefono, 
+       Cabeceras.cab_tid, 
+ 
+      Cabeceras.cab_tipo_orden, 
+       Cabeceras.cab_transporte"
+   FromList="CABECERAS Cabeceras"
+   BindingStyle="JDBC"
+   CustomQuery="false"
+   ComponentClass="es.sysmap.interflex.informix.CabecerasViewImpl"
+   MsgBundleClass="oracle.jbo.common.JboResourceBundle"
+   UseGlueCode="false" >
+   <DesignTime>
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_codeGenFlag2" Value="Access|Coll" />
+      <Attr Name="_isExpertMode" Value="false" />
+   </DesignTime>
+   <EntityUsage
+      Name="Cabeceras"
+      Entity="es.sysmap.interflex.informix.Cabeceras" >
+      <DesignTime>
+         <Attr Name="_EntireObjectTable" Value="false" />
+         <Attr Name="_queryClause" Value="false" />
+      </DesignTime>
+   </EntityUsage>
+   <ViewAttribute
+      Name="RowID"
+      IsUpdateable="false"
+      PrecisionRule="true"
+      EntityAttrName="RowID"
+      EntityUsage="Cabeceras"
+      AliasName="ROWID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CabCCliente"
+      PrecisionRule="true"
+      EntityAttrName="CabCCliente"
+      EntityUsage="Cabeceras"
+      AliasName="cab_c_cliente" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CabCTransp"
+      PrecisionRule="true"
+      EntityAttrName="CabCTransp"
+      EntityUsage="Cabeceras"
+      AliasName="cab_c_transp" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CabCodEmpresa"
+      PrecisionRule="true"
+      EntityAttrName="CabCodEmpresa"
+      EntityUsage="Cabeceras"
+      AliasName="cab_cod_empresa" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CabCosPostal"
+      PrecisionRule="true"
+      EntityAttrName="CabCosPostal"
+      EntityUsage="Cabeceras"
+      AliasName="cab_cos_postal" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CabDireccion"
+      PrecisionRule="true"
+      EntityAttrName="CabDireccion"
+      EntityUsage="Cabeceras"
+      AliasName="cab_direccion" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CabFAlbaran"
+      PrecisionRule="true"
+      EntityAttrName="CabFAlbaran"
+      EntityUsage="Cabeceras"
+      AliasName="cab_f_albaran" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CabFcreacion"
+      PrecisionRule="true"
+      EntityAttrName="CabFcreacion"
+      EntityUsage="Cabeceras"
+      AliasName="cab_fcreacion" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CabFultAct"
+      PrecisionRule="true"
+      EntityAttrName="CabFultAct"
+      EntityUsage="Cabeceras"
+      AliasName="cab_fult_act" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CabId"
+      PrecisionRule="true"
+      EntityAttrName="CabId"
+      EntityUsage="Cabeceras"
+      AliasName="cab_id" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CabIdEstado"
+      PrecisionRule="true"
+      EntityAttrName="CabIdEstado"
+      EntityUsage="Cabeceras"
+      AliasName="cab_id_estado" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CabMotivo"
+      PrecisionRule="true"
+      EntityAttrName="CabMotivo"
+      EntityUsage="Cabeceras"
+      AliasName="cab_motivo" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CabNAlbaran"
+      PrecisionRule="true"
+      EntityAttrName="CabNAlbaran"
+      EntityUsage="Cabeceras"
+      AliasName="cab_n_albaran" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CabNombre"
+      PrecisionRule="true"
+      EntityAttrName="CabNombre"
+      EntityUsage="Cabeceras"
+      AliasName="cab_nombre" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CabNumBultos"
+      PrecisionRule="true"
+      EntityAttrName="CabNumBultos"
+      EntityUsage="Cabeceras"
+      AliasName="cab_num_bultos" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CabNumLineas"
+      PrecisionRule="true"
+      EntityAttrName="CabNumLineas"
+      EntityUsage="Cabeceras"
+      AliasName="cab_num_lineas" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CabOperario"
+      PrecisionRule="true"
+      EntityAttrName="CabOperario"
+      EntityUsage="Cabeceras"
+      AliasName="cab_operario" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CabPais"
+      PrecisionRule="true"
+      EntityAttrName="CabPais"
+      EntityUsage="Cabeceras"
+      AliasName="cab_pais" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CabPesoTotal"
+      PrecisionRule="true"
+      EntityAttrName="CabPesoTotal"
+      EntityUsage="Cabeceras"
+      AliasName="cab_peso_total" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CabPoblacion"
+      PrecisionRule="true"
+      EntityAttrName="CabPoblacion"
+      EntityUsage="Cabeceras"
+      AliasName="cab_poblacion" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CabPortes"
+      PrecisionRule="true"
+      EntityAttrName="CabPortes"
+      EntityUsage="Cabeceras"
+      AliasName="cab_portes" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CabPrioridad"
+      PrecisionRule="true"
+      EntityAttrName="CabPrioridad"
+      EntityUsage="Cabeceras"
+      AliasName="cab_prioridad" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CabProvincia"
+      PrecisionRule="true"
+      EntityAttrName="CabProvincia"
+      EntityUsage="Cabeceras"
+      AliasName="cab_provincia" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CabReembolso"
+      PrecisionRule="true"
+      EntityAttrName="CabReembolso"
+      EntityUsage="Cabeceras"
+      AliasName="cab_reembolso" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CabSPedido"
+      PrecisionRule="true"
+      EntityAttrName="CabSPedido"
+      EntityUsage="Cabeceras"
+      AliasName="cab_s_pedido" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CabTAlbaran"
+      PrecisionRule="true"
+      EntityAttrName="CabTAlbaran"
+      EntityUsage="Cabeceras"
+      AliasName="cab_t_albaran" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CabTPortes"
+      PrecisionRule="true"
+      EntityAttrName="CabTPortes"
+      EntityUsage="Cabeceras"
+      AliasName="cab_t_portes" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CabTelefono"
+      PrecisionRule="true"
+      EntityAttrName="CabTelefono"
+      EntityUsage="Cabeceras"
+      AliasName="cab_telefono" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CabTid"
+      PrecisionRule="true"
+      EntityAttrName="CabTid"
+      EntityUsage="Cabeceras"
+      AliasName="cab_tid" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CabTipoOrden"
+      PrecisionRule="true"
+      EntityAttrName="CabTipoOrden"
+      EntityUsage="Cabeceras"
+      AliasName="cab_tipo_orden" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CabTransporte"
+      PrecisionRule="true"
+      EntityAttrName="CabTransporte"
+      EntityUsage="Cabeceras"
+      AliasName="cab_transporte" >
+   </ViewAttribute>
+</ViewObject>

@@ -1,0 +1,189 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+
+<Entity
+   Name="Movimientos"
+   DBObjectType="table"
+   DBObjectName="MOVIMIENTOS"
+   AliasName="Movimientos"
+   BindingStyle="JDBC"
+   UseGlueCode="false"
+   RowClass="es.sysmap.interflex.informix.MovimientosImpl" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_codeGenFlag2" Value="Access" />
+      <AttrArray Name="_publishEvents">
+      </AttrArray>
+   </DesignTime>
+   <Attribute
+      Name="RowID"
+      IsUpdateable="false"
+      ColumnName="ROWID"
+      Type="java.lang.String"
+      ColumnType="ROWID"
+      SQLType="VARCHAR"
+      TableName="MOVIMIENTOS"
+      PrimaryKey="true" >
+   </Attribute>
+   <Attribute
+      Name="MovFecha"
+      ColumnName="mov_fecha"
+      Type="java.sql.Date"
+      ColumnType="date"
+      SQLType="DATE"
+      TableName="MOVIMIENTOS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="23" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="MovHora"
+      Precision="10"
+      ColumnName="mov_hora"
+      Type="java.lang.String"
+      ColumnType="char"
+      SQLType="VARCHAR"
+      TableName="MOVIMIENTOS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="10" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="MovId"
+      Precision="14"
+      ColumnName="mov_id"
+      Type="java.lang.String"
+      ColumnType="char"
+      SQLType="VARCHAR"
+      TableName="MOVIMIENTOS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="14" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="MovIdDet"
+      Precision="4"
+      Scale="0"
+      ColumnName="mov_id_det"
+      Type="java.math.BigDecimal"
+      ColumnType="decimal"
+      SQLType="DECIMAL"
+      TableName="MOVIMIENTOS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="6" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="MovIdOrden"
+      Precision="10"
+      Scale="0"
+      ColumnName="mov_id_orden"
+      Type="java.math.BigDecimal"
+      ColumnType="decimal"
+      SQLType="DECIMAL"
+      TableName="MOVIMIENTOS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="12" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="MovNAlbaran"
+      Precision="9"
+      Scale="0"
+      ColumnName="mov_n_albaran"
+      Type="java.math.BigDecimal"
+      ColumnType="decimal"
+      SQLType="DECIMAL"
+      TableName="MOVIMIENTOS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="11" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="MovObjeto"
+      Precision="6"
+      Scale="0"
+      ColumnName="mov_objeto"
+      Type="java.math.BigDecimal"
+      ColumnType="decimal"
+      SQLType="DECIMAL"
+      TableName="MOVIMIENTOS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="8" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="MovOperario"
+      Precision="6"
+      Scale="0"
+      ColumnName="mov_operario"
+      Type="java.math.BigDecimal"
+      ColumnType="decimal"
+      SQLType="DECIMAL"
+      TableName="MOVIMIENTOS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="8" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="MovTAlbaran"
+      Precision="4"
+      ColumnName="mov_t_albaran"
+      Type="java.lang.String"
+      ColumnType="char"
+      SQLType="VARCHAR"
+      TableName="MOVIMIENTOS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="4" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="MovTidOrden"
+      Precision="4"
+      ColumnName="mov_tid_orden"
+      Type="java.lang.String"
+      ColumnType="char"
+      SQLType="VARCHAR"
+      TableName="MOVIMIENTOS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="4" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="MovTipoOrden"
+      Precision="2"
+      Scale="0"
+      ColumnName="mov_tipo_orden"
+      Type="java.math.BigDecimal"
+      ColumnType="decimal"
+      SQLType="DECIMAL"
+      TableName="MOVIMIENTOS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="4" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="MovUnidades"
+      Precision="11"
+      Scale="2"
+      ColumnName="mov_unidades"
+      Type="java.math.BigDecimal"
+      ColumnType="decimal"
+      SQLType="DECIMAL"
+      TableName="MOVIMIENTOS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="13" />
+      </DesignTime>
+   </Attribute>
+   <Key
+      Name="MovimientosPrimaryKey" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.informix.Movimientos.RowID" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="MOVIMIENTOS_PRIMARY_KEY" />
+         <Attr Name="_isPrimary" Value="true" />
+      </DesignTime>
+   </Key>
+</Entity>

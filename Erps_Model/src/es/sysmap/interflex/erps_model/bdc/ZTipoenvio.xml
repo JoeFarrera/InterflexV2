@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+
+<Entity
+   Name="ZTipoenvio"
+   DBObjectType="table"
+   DBObjectName="INTERFLEX.DBO.Z_TIPOENVIO"
+   AliasName="ZTipoenvio"
+   BindingStyle="JDBC"
+   UseGlueCode="false"
+   RowClass="es.sysmap.interflex.erps_model.bdc.ZTipoenvioImpl" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_codeGenFlag2" Value="Access" />
+      <AttrArray Name="_publishEvents">
+      </AttrArray>
+   </DesignTime>
+   <Attribute
+      Name="Id"
+      IsUpdateable="false"
+      IsNotNull="true"
+      Precision="10"
+      Scale="0"
+      ColumnName="id"
+      Type="java.lang.Integer"
+      ColumnType="int identity"
+      SQLType="INTEGER"
+      TableName="INTERFLEX.DBO.Z_TIPOENVIO"
+      PrimaryKey="true" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="11" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Tipoenvio"
+      Precision="50"
+      ColumnName="TipoEnvio"
+      Type="java.lang.String"
+      ColumnType="nvarchar"
+      SQLType="VARCHAR"
+      TableName="INTERFLEX.DBO.Z_TIPOENVIO" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="50" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Idformato"
+      Precision="10"
+      Scale="0"
+      ColumnName="idFormato"
+      Type="java.lang.Integer"
+      ColumnType="int"
+      SQLType="INTEGER"
+      TableName="INTERFLEX.DBO.Z_TIPOENVIO" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="11" />
+      </DesignTime>
+   </Attribute>
+   <AccessorAttribute
+      Name="ZAgenciatipoenvio"
+      Association="es.sysmap.interflex.erps_model.bdc.ZTipoenvioZAgenciatipoenvio"
+      AssociationEnd="es.sysmap.interflex.erps_model.bdc.ZTipoenvioZAgenciatipoenvio.ZAgenciatipoenvio"
+      AssociationOtherEnd="es.sysmap.interflex.erps_model.bdc.ZTipoenvioZAgenciatipoenvio.ZTipoenvio"
+      Type="oracle.jbo.RowIterator"
+      IsUpdateable="false" >
+   </AccessorAttribute>
+   <Key
+      Name="ZtipoenvioPrimaryKey" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.erps_model.bdc.ZTipoenvio.Id" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="ZTIPOENVIO_PRIMARY_KEY" />
+         <Attr Name="_isPrimary" Value="true" />
+      </DesignTime>
+   </Key>
+</Entity>

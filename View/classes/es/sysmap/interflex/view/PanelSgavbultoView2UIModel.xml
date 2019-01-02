@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<DCContainer
+   id="PanelSgavbultoView2UIModel"
+   xmlns="http://xmlns.oracle.com/adfm/uimodel"
+   version="10.1.2.17.96"
+   Package="es.sysmap.interflex.view"
+   FindMode="false"
+   EnableTokenValidation="true" >
+   <Contents >
+      <DCIterator
+         id="SgavbultoView2Iter"
+         Binds="AppModuleDataControl.SgavbultoView2" >
+      </DCIterator>
+      <DCControl
+         id="SgavbultoView2"
+         DefClass="oracle.jbo.uicli.jui.JUTableDef"
+         SubType="DCTable"
+         BindingClass="oracle.jbo.uicli.jui.JUTableBinding"
+         IterBinding="SgavbultoView2Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Idbulto" />
+            <Item Value="Detalles" />
+            <Item Value="Descestado" />
+            <Item Value="Idpuesto" />
+         </AttrNames>
+      </DCControl>
+   </Contents>
+</DCContainer>

@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<DCContainer
+   id="PanelSgavexpedbultoView2UIModel"
+   xmlns="http://xmlns.oracle.com/adfm/uimodel"
+   version="10.1.2.17.96"
+   Package="es.sysmap.interflex.view"
+   FindMode="false"
+   EnableTokenValidation="true" >
+   <Contents >
+      <DCIterator
+         id="SgavexpedbultoView1Iterator"
+         Binds="AppModuleDataControl.SgavexpedbultoView1" >
+      </DCIterator>
+      <DCIterator
+         id="SgatipobultoView1Iterator"
+         Binds="AppModuleDataControl.SgatipobultoView1" >
+      </DCIterator>
+      <DCControl
+         id="SgavexpedbultoView1"
+         DefClass="oracle.jbo.uicli.jui.JUTableDef"
+         SubType="DCTable"
+         IterBinding="SgavexpedbultoView1Iterator"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Idbulto" />
+            <Item Value="IdbultoOri" />
+            <Item Value="Idtipobulto" />
+            <Item Value="Largo" />
+            <Item Value="Ancho" />
+            <Item Value="Alto" />
+            <Item Value="Pesocont" />
+            <Item Value="Numlineas" />
+         </AttrNames>
+      </DCControl>
+      <DCControl
+         id="DCComboBox"
+         DefClass="oracle.jbo.uicli.jui.JUComboBoxDef"
+         SubType="DCComboBox"
+         IterBinding="SgavexpedbultoView1Iterator"
+         DTClass="oracle.adf.dt.objects.JUDTCtrlListLOV"
+         ApplyValidation="false"
+         isDynamic="false"
+         ListOperMode="0"
+         ListIter="SgatipobultoView1Iterator"
+         Editable="false" >
+         <AttrNames>
+            <Item Value="Idtipobulto" />
+            <Item Value="Largo" />
+            <Item Value="Ancho" />
+            <Item Value="Alto" />
+            <Item Value="Pesocont" />
+         </AttrNames>
+         <ListAttrNames>
+            <Item Value="Idtip" />
+            <Item Value="Largo" />
+            <Item Value="Ancho" />
+            <Item Value="Alto" />
+            <Item Value="Peso" />
+         </ListAttrNames>
+         <ListDisplayAttrNames>
+            <Item Value="Idtip" />
+            <Item Value="Largo" />
+            <Item Value="Ancho" />
+            <Item Value="Alto" />
+            <Item Value="Peso" />
+         </ListDisplayAttrNames>
+      </DCControl>
+   </Contents>
+</DCContainer>

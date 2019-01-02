@@ -1,0 +1,28 @@
+<Telegrama lenTelegrama="68" tipoTel="MOVI">
+   <Detalles>
+      <numMovimiento index="0" len="4" tipo="int">5004</numMovimiento>
+      <origen index="4" len="2" tipo="int">1<lado index="6" len="1" tipo="byte">0</lado>
+        <columna index="7" len="1" tipo="byte">0</columna>
+        <nivel index="8" len="1" tipo="byte">0</nivel>
+        <posUbicacion index="9" len="1" tipo="byte">0</posUbicacion>
+      </origen>
+      <destino index="10" len="2" tipo="int">24<lado index="12" len="1" tipo="byte">0</lado>
+        <columna index="13" len="1" tipo="byte">1</columna>
+        <nivel index="14" len="1" tipo="byte">6</nivel>
+        <posUbicacion index="15" len="1" tipo="byte">1</posUbicacion>
+      </destino>
+      <tipCarga index="16" len="1" tipo="byte">02</tipCarga>
+      <tipMov index="17" len="1" tipo="byte">0</tipMov>
+      <pesTeorico index="18" len="2" tipo="int">0</pesTeorico>
+      <pesReal index="20" len="2" tipo="int">0</pesReal>
+      <tolPeso index="22" len="1" tipo="byte">0</tolPeso>
+      <numCargas index="23" len="1" tipo="byte">0</numCargas>
+      <numLote index="24" len="2" tipo="int">0</numLote>
+      <posAct index="26" len="2" tipo="int">0</posAct>
+      <codError index="28" len="2" tipo="int">00</codError>
+      <estadoOrden index="30" len="1" tipo="byte">0</estadoOrden>
+      <transelevador index="31" len="1" tipo="byte">2</transelevador>
+      <matricula index="32" len="10" tipo="str">0000000247</matricula>
+      <seqmld index="42" len="1" tipo="byte">0</seqmld>
+   </Detalles>
+</Telegrama>

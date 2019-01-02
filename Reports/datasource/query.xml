@@ -1,0 +1,1551 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<registry>
+<Version>4.4</Version>
+<query name="sgavhistexist" type="jdbc" datasource="balay">
+<query_jdbc>
+<uniform_sql parse="true">
+<table>
+<alias><![CDATA[SGAVHISTEXIST_10G]]></alias>
+<name><![CDATA[SGAVHISTEXIST_10G]]></name>
+<issql><![CDATA[false]]></issql>
+<xlocation><![CDATA[15]]></xlocation>
+<ylocation><![CDATA[15]]></ylocation>
+<xScroll><![CDATA[0]]></xScroll>
+<yScroll><![CDATA[0]]></yScroll>
+</table>
+<column>
+<![CDATA[SGAVHISTEXIST_10G.IDMOV]]>
+<alias><![CDATA[idMovimiento]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[SGAVHISTEXIST_10G]]></table>
+</column>
+<column>
+<![CDATA[SGAVHISTEXIST_10G.TIPMOV]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[SGAVHISTEXIST_10G]]></table>
+</column>
+<column>
+<![CDATA[SGAVHISTEXIST_10G.IDEXIST]]>
+<alias><![CDATA[Id. Exist]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[SGAVHISTEXIST_10G]]></table>
+</column>
+<column>
+<![CDATA[SGAVHISTEXIST_10G.IDART]]>
+<alias><![CDATA[Artículo]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[SGAVHISTEXIST_10G]]></table>
+</column>
+<column>
+<![CDATA[SGAVHISTEXIST_10G.IDMAC]]>
+<alias><![CDATA[Id. MAC]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[SGAVHISTEXIST_10G]]></table>
+</column>
+<column>
+<![CDATA[SGAVHISTEXIST_10G.IDPROV]]>
+<alias><![CDATA[Id. Proveedor]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[SGAVHISTEXIST_10G]]></table>
+</column>
+<column>
+<![CDATA[SGAVHISTEXIST_10G.LOTEPROV]]>
+<alias><![CDATA[Lote Proveedor]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[SGAVHISTEXIST_10G]]></table>
+</column>
+<column>
+<![CDATA[SGAVHISTEXIST_10G.LOTEINSP]]>
+<alias><![CDATA[Lote Inspección]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[SGAVHISTEXIST_10G]]></table>
+</column>
+<column>
+<![CDATA[SGAVHISTEXIST_10G.FECCAD]]>
+<alias><![CDATA[Fec. Caducidad]]></alias>
+<type><![CDATA[date]]></type>
+<table><![CDATA[SGAVHISTEXIST_10G]]></table>
+</column>
+<column>
+<![CDATA[SGAVHISTEXIST_10G.OBSERV]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[SGAVHISTEXIST_10G]]></table>
+</column>
+<column>
+<![CDATA[SGAVHISTEXIST_10G.ESTINI]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[SGAVHISTEXIST_10G]]></table>
+</column>
+<column>
+<![CDATA[SGAVHISTEXIST_10G.ESTFIN]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[SGAVHISTEXIST_10G]]></table>
+</column>
+<column>
+<![CDATA[SGAVHISTEXIST_10G.CANINI]]>
+<alias><![CDATA[Cant. Inicial]]></alias>
+<type><![CDATA[double]]></type>
+<table><![CDATA[SGAVHISTEXIST_10G]]></table>
+</column>
+<column>
+<![CDATA[SGAVHISTEXIST_10G.CANFIN]]>
+<alias><![CDATA[Cant. Final]]></alias>
+<type><![CDATA[double]]></type>
+<table><![CDATA[SGAVHISTEXIST_10G]]></table>
+</column>
+<column>
+<![CDATA[DECODE(SGAVHISTEXIST_10G.TIPMOV,'A',SGAVHISTEXIST_10G.CANINI,'B',SGAVHISTEXIST_10G.CANINI*- 1,'D',SGAVHISTEXIST_10G.CANINI,'E',SGAVHISTEXIST_10G.CANINI,'F',0,'G',0,'H',0,'I',SGAVHISTEXIST_10G.CANINI-SGAVHISTEXIST_10G.CANFIN,'L',0,'M',SGAVHISTEXIST_10G.CANINI-SGAVHISTEXIST_10G.CANFIN,'O',0,'P',SGAVHISTEXIST_10G.CANINI-SGAVHISTEXIST_10G.CANFIN,'Q',SGAVHISTEXIST_10G.CANINI-SGAVHISTEXIST_10G.CANFIN,'R',SGAVHISTEXIST_10G.CANINI-SGAVHISTEXIST_10G.CANFIN,'S',SGAVHISTEXIST_10G.CANINI-SGAVHISTEXIST_10G.CANFIN,'T',SGAVHISTEXIST_10G.CANINI-SGAVHISTEXIST_10G.CANFIN,'U',SGAVHISTEXIST_10G.CANINI-SGAVHISTEXIST_10G.CANFIN,'V',0,'X',SGAVHISTEXIST_10G.CANINI*- 1,0)]]>
+<alias><![CDATA[Cant. Movto.]]></alias>
+<type><![CDATA[]]></type>
+<table><![CDATA[]]></table>
+</column>
+<column>
+<![CDATA[SGAVHISTEXIST_10G.ORIGEN]]>
+<alias><![CDATA[Origen]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[SGAVHISTEXIST_10G]]></table>
+</column>
+<column>
+<![CDATA[SGAVHISTEXIST_10G.DESTINO]]>
+<alias><![CDATA[Destino]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[SGAVHISTEXIST_10G]]></table>
+</column>
+<column>
+<![CDATA[SGAVHISTEXIST_10G.IDMUESTRAINI]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[SGAVHISTEXIST_10G]]></table>
+</column>
+<column>
+<![CDATA[SGAVHISTEXIST_10G.IDMUESTRAFIN]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[SGAVHISTEXIST_10G]]></table>
+</column>
+<column>
+<![CDATA[SGAVHISTEXIST_10G.IDDOC]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[SGAVHISTEXIST_10G]]></table>
+</column>
+<column>
+<![CDATA[SGAVHISTEXIST_10G.IDLIN]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[SGAVHISTEXIST_10G]]></table>
+</column>
+<column>
+<![CDATA[SGAVHISTEXIST_10G.TIPDOC]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[SGAVHISTEXIST_10G]]></table>
+</column>
+<column>
+<![CDATA[SGAVHISTEXIST_10G.ERP]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[SGAVHISTEXIST_10G]]></table>
+</column>
+<column>
+<![CDATA[SGAVHISTEXIST_10G.DESCTIPMOV]]>
+<alias><![CDATA[Tip. Movto.]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[SGAVHISTEXIST_10G]]></table>
+</column>
+<column>
+<![CDATA[SGAVHISTEXIST_10G.DESCRIP]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[SGAVHISTEXIST_10G]]></table>
+</column>
+<column>
+<![CDATA[SGAVHISTEXIST_10G.DESCPROV]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[SGAVHISTEXIST_10G]]></table>
+</column>
+<column>
+<![CDATA[SGAVHISTEXIST_10G.DESCESTINI]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[SGAVHISTEXIST_10G]]></table>
+</column>
+<column>
+<![CDATA[SGAVHISTEXIST_10G.DESCESTFIN]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[SGAVHISTEXIST_10G]]></table>
+</column>
+<column>
+<![CDATA[SGAVHISTEXIST_10G.DESCMUESTRAINI]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[SGAVHISTEXIST_10G]]></table>
+</column>
+<column>
+<![CDATA[SGAVHISTEXIST_10G.DESCMUESTRAFIN]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[SGAVHISTEXIST_10G]]></table>
+</column>
+<column>
+<![CDATA[SGAVHISTEXIST_10G.USUARIO]]>
+<alias><![CDATA[Usuario]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[SGAVHISTEXIST_10G]]></table>
+</column>
+<column>
+<![CDATA[SGAVHISTEXIST_10G.UBICORI]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[SGAVHISTEXIST_10G]]></table>
+</column>
+<column>
+<![CDATA[SGAVHISTEXIST_10G.UBICDES]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[SGAVHISTEXIST_10G]]></table>
+</column>
+<column>
+<![CDATA[SGAVHISTEXIST_10G.FECMOV]]>
+<alias><![CDATA[Fec. Movto.]]></alias>
+<type><![CDATA[date]]></type>
+<table><![CDATA[SGAVHISTEXIST_10G]]></table>
+</column>
+<where>
+</where>
+<sortby></sortby>
+<groupby></groupby>
+<having>
+</having>
+<sqlstring parseResult="0"><![CDATA[select SGAVHISTEXIST_10G.IDMOV as "idMovimiento", SGAVHISTEXIST_10G.TIPMOV, SGAVHISTEXIST_10G.IDEXIST as "Id. Exist", SGAVHISTEXIST_10G.IDART as "Artículo", SGAVHISTEXIST_10G.IDMAC as "Id. MAC", SGAVHISTEXIST_10G.IDPROV as "Id. Proveedor", SGAVHISTEXIST_10G.LOTEPROV as "Lote Proveedor", SGAVHISTEXIST_10G.LOTEINSP as "Lote Inspección", SGAVHISTEXIST_10G.FECCAD as "Fec. Caducidad", SGAVHISTEXIST_10G.OBSERV, SGAVHISTEXIST_10G.ESTINI, SGAVHISTEXIST_10G.ESTFIN, SGAVHISTEXIST_10G.CANINI as "Cant. Inicial", SGAVHISTEXIST_10G.CANFIN as "Cant. Final", 
+       DECODE (SGAVHISTEXIST_10G.TIPMOV, 'A',SGAVHISTEXIST_10G.CANINI, 
+                                         'B',SGAVHISTEXIST_10G.CANINI * -1,
+                                         'D',SGAVHISTEXIST_10G.CANINI,
+                                         'E',SGAVHISTEXIST_10G.CANINI,  -- No se usa ?
+                                         'F',0,  -- Centro de coste
+                                        'G',0,
+                                        'H',0,
+                                        'I',SGAVHISTEXIST_10G.CANINI - SGAVHISTEXIST_10G.CANFIN,
+                                        'L',0,
+                                        'M',SGAVHISTEXIST_10G.CANINI - SGAVHISTEXIST_10G.CANFIN,
+                                        'O',0,
+                                        'P',SGAVHISTEXIST_10G.CANINI - SGAVHISTEXIST_10G.CANFIN,
+                                        'Q',SGAVHISTEXIST_10G.CANINI - SGAVHISTEXIST_10G.CANFIN,
+                                        'R',SGAVHISTEXIST_10G.CANINI - SGAVHISTEXIST_10G.CANFIN,
+                                        'S',SGAVHISTEXIST_10G.CANINI - SGAVHISTEXIST_10G.CANFIN,
+                                        'T',SGAVHISTEXIST_10G.CANINI - SGAVHISTEXIST_10G.CANFIN, -- Traslado 999 ??
+                                        'U',SGAVHISTEXIST_10G.CANINI - SGAVHISTEXIST_10G.CANFIN,
+                                        'V',0,
+                                        'X',SGAVHISTEXIST_10G.CANINI * -1,
+                                        0) as "Cant. Movto.", 
+SGAVHISTEXIST_10G.ORIGEN as "Origen", SGAVHISTEXIST_10G.DESTINO as "Destino", SGAVHISTEXIST_10G.IDMUESTRAINI, SGAVHISTEXIST_10G.IDMUESTRAFIN, SGAVHISTEXIST_10G.IDDOC, SGAVHISTEXIST_10G.IDLIN, SGAVHISTEXIST_10G.TIPDOC, SGAVHISTEXIST_10G.ERP, SGAVHISTEXIST_10G.DESCTIPMOV as "Tip. Movto.", SGAVHISTEXIST_10G.DESCRIP, SGAVHISTEXIST_10G.DESCPROV, SGAVHISTEXIST_10G.DESCESTINI, SGAVHISTEXIST_10G.DESCESTFIN, SGAVHISTEXIST_10G.DESCMUESTRAINI, SGAVHISTEXIST_10G.DESCMUESTRAFIN, SGAVHISTEXIST_10G.USUARIO as "Usuario", SGAVHISTEXIST_10G.UBICORI, SGAVHISTEXIST_10G.UBICDES, SGAVHISTEXIST_10G.FECMOV as "Fec. Movto." from SGAVHISTEXIST_10G]]></sqlstring>
+</uniform_sql>
+<description>No está ordenado, ordenar una vez aplicado el filtro</description>
+<maxrows>0</maxrows>
+<timeout>0</timeout>
+<visible>true</visible>
+</query_jdbc>
+</query>
+<query name="PDAs" type="ejb" datasource="Product">
+<query_ejb>
+<path><pathnode><name>Product</name></pathnode>
+</path>
+<select><![CDATA[select Name,Description,Category,Inventory,Price,SKU]]></select>
+<variable name="category" type="user" prompt="false" multipleSelection="false" customization="false" label="category" xtype="string">
+<value name="value" type="string" null="false"><![CDATA[PDA]]></value>
+</variable>
+<description>PDA products</description>
+<maxrows>0</maxrows>
+<timeout>0</timeout>
+<visible>true</visible>
+<method><![CDATA[findByCategory]]></method>
+</query_ejb>
+</query>
+<query name="sgavmovsusuari" type="jdbc" datasource="interflex">
+<query_jdbc>
+<uniform_sql parse="true">
+<table>
+<alias><![CDATA[sgavhistexist]]></alias>
+<name><![CDATA[SGAVHISTEXIST]]></name>
+<issql><![CDATA[false]]></issql>
+<xlocation><![CDATA[15]]></xlocation>
+<ylocation><![CDATA[15]]></ylocation>
+<xScroll><![CDATA[0]]></xScroll>
+<yScroll><![CDATA[0]]></yScroll>
+</table>
+<column>
+<![CDATA[sgavhistexist.IDMOV]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[double]]></type>
+<table><![CDATA[sgavhistexist]]></table>
+</column>
+<column>
+<![CDATA[sgavhistexist.TIPMOV]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[sgavhistexist]]></table>
+</column>
+<column>
+<![CDATA[sgavhistexist.IDMAC]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[sgavhistexist]]></table>
+</column>
+<column>
+<![CDATA[sgavhistexist.IDART]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[sgavhistexist]]></table>
+</column>
+<column>
+<![CDATA[sgavhistexist.CANINI]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[double]]></type>
+<table><![CDATA[sgavhistexist]]></table>
+</column>
+<column>
+<![CDATA[sgavhistexist.CANFIN]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[double]]></type>
+<table><![CDATA[sgavhistexist]]></table>
+</column>
+<column>
+<![CDATA[sgavhistexist.CANMOV]]>
+<alias><![CDATA[QUANTITAT]]></alias>
+<type><![CDATA[double]]></type>
+<table><![CDATA[sgavhistexist]]></table>
+</column>
+<column>
+<![CDATA[sgavhistexist.IDBULTO]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[double]]></type>
+<table><![CDATA[sgavhistexist]]></table>
+</column>
+<column>
+<![CDATA[sgavhistexist.IDDOC]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[double]]></type>
+<table><![CDATA[sgavhistexist]]></table>
+</column>
+<column>
+<![CDATA[sgavhistexist.IDLIN]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[double]]></type>
+<table><![CDATA[sgavhistexist]]></table>
+</column>
+<column>
+<![CDATA[sgavhistexist.IDTIPDOC]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[sgavhistexist]]></table>
+</column>
+<column>
+<![CDATA[sgavhistexist.IDCABSTR]]>
+<alias><![CDATA[TIP.DOC.]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[sgavhistexist]]></table>
+</column>
+<column>
+<![CDATA[sgavhistexist.IDCABNUM]]>
+<alias><![CDATA[NÚM.DOC.]]></alias>
+<type><![CDATA[double]]></type>
+<table><![CDATA[sgavhistexist]]></table>
+</column>
+<column>
+<![CDATA[sgavhistexist.PESINI]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[double]]></type>
+<table><![CDATA[sgavhistexist]]></table>
+</column>
+<column>
+<![CDATA[sgavhistexist.PESFIN]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[double]]></type>
+<table><![CDATA[sgavhistexist]]></table>
+</column>
+<column>
+<![CDATA[sgavhistexist.PESMOV]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[double]]></type>
+<table><![CDATA[sgavhistexist]]></table>
+</column>
+<column>
+<![CDATA[sgavhistexist.UBIPOS]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[sgavhistexist]]></table>
+</column>
+<column>
+<![CDATA[sgavhistexist.OBSERV]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[sgavhistexist]]></table>
+</column>
+<column>
+<![CDATA[sgavhistexist.CREATEDBY]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[sgavhistexist]]></table>
+</column>
+<column>
+<![CDATA[sgavhistexist.MODIFIEDBY]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[sgavhistexist]]></table>
+</column>
+<column>
+<![CDATA[sgavhistexist.CREATEDON]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[timeInstant]]></type>
+<table><![CDATA[sgavhistexist]]></table>
+</column>
+<column>
+<![CDATA[sgavhistexist.MODIFIEDON]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[date]]></type>
+<table><![CDATA[sgavhistexist]]></table>
+</column>
+<column>
+<![CDATA[sgavhistexist.ABBREVIATION]]>
+<alias><![CDATA[TIP.MOV.]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[sgavhistexist]]></table>
+</column>
+<column>
+<![CDATA[sgavhistexist.IDARTIF]]>
+<alias><![CDATA[ARTICLE]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[sgavhistexist]]></table>
+</column>
+<column>
+<![CDATA[sgavhistexist.DESCRIP]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[sgavhistexist]]></table>
+</column>
+<column>
+<![CDATA[sgavhistexist.DESCVISUALPOS]]>
+<alias><![CDATA[ORIGEN/DESTI]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[sgavhistexist]]></table>
+</column>
+<column>
+<![CDATA[sgavhistexist.INTEGRA]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[sgavhistexist]]></table>
+</column>
+<column>
+<![CDATA[sgavhistexist.TALBARAN]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[sgavhistexist]]></table>
+</column>
+<column>
+<![CDATA[sgavhistexist.NALBARAN]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[double]]></type>
+<table><![CDATA[sgavhistexist]]></table>
+</column>
+<column>
+<![CDATA[trunc(createdon,'HH24')]]>
+<alias><![CDATA[DATA/HORA]]></alias>
+<type><![CDATA[timeInstant]]></type>
+<table><![CDATA[]]></table>
+</column>
+<column>
+<![CDATA[ceil(decode(to_number(to_char(createdon,'MI')),0,60/15,to_number(to_char(createdon,'MI'))/15))]]>
+<alias><![CDATA[QUART]]></alias>
+<type><![CDATA[integer]]></type>
+<table><![CDATA[]]></table>
+</column>
+<where>
+</where>
+<sortby><field order="asc">sgavhistexist.CREATEDON</field></sortby>
+<groupby></groupby>
+<having>
+</having>
+</uniform_sql>
+<maxrows>0</maxrows>
+<timeout>0</timeout>
+<visible>true</visible>
+</query_jdbc>
+</query>
+<query name="NJ accounts" type="corba" datasource="Bank">
+<query_corba>
+<path><pathnode><name>_output_</name></pathnode>
+<pathnode><name>_return_</name></pathnode>
+</path>
+<select><![CDATA[select account_no,type,balance]]></select>
+<maxrows>0</maxrows>
+<timeout>0</timeout>
+<visible>true</visible>
+<method><![CDATA[getAllAccounts]]></method>
+</query_corba>
+</query>
+<query name="Employee" type="object" datasource="object">
+<query_object>
+<path><pathnode><name>_output_</name></pathnode>
+</path>
+<select><![CDATA[select expanded Name to string,Salary to double,StartDate to timeInstant,Address.City to string,Address.State to string]]></select>
+<maxrows>0</maxrows>
+<timeout>0</timeout>
+<visible>true</visible>
+<method><![CDATA[getEmployee]]></method>
+</query_object>
+</query>
+<query name="Plant Revenue" type="xml" datasource="Manufacturer">
+<query_xml>
+<path><pathnode><name>plants</name></pathnode>
+<pathnode><name>plant</name></pathnode>
+</path>
+<select><![CDATA[select location as "Location" to string,revenue as "Revenue" to integer,rating as "Rating" to integer]]></select>
+<maxrows>0</maxrows>
+<timeout>0</timeout>
+<visible>true</visible>
+<request><![CDATA[default]]></request>
+</query_xml>
+</query>
+<query name="All Programmers" type="xml" datasource="Personnel">
+<query_xml collapse="true">
+<path><pathnode><name>personnel</name></pathnode>
+<pathnode><name>employee</name><condition><![CDATA[(ANY skill match '.*programming')]]></condition></pathnode>
+</path>
+<select><![CDATA[select skill,name.lastname,name.firstname,location.city,location.state]]></select>
+<description>All employees with programming skill</description>
+<maxrows>0</maxrows>
+<timeout>0</timeout>
+<visible>true</visible>
+<request><![CDATA[default]]></request>
+</query_xml>
+</query>
+<query name="sgaaveries" type="jdbc" datasource="interflex">
+<query_jdbc>
+<uniform_sql parse="true">
+<table>
+<alias><![CDATA[SGAHISTAVERIA]]></alias>
+<name><![CDATA[SGAHISTAVERIA]]></name>
+<issql><![CDATA[false]]></issql>
+<xlocation><![CDATA[-1]]></xlocation>
+<ylocation><![CDATA[-1]]></ylocation>
+<xScroll><![CDATA[0]]></xScroll>
+<yScroll><![CDATA[0]]></yScroll>
+</table>
+<column>
+<![CDATA['TRASLO ' || IDTRASLO]]>
+<alias><![CDATA[TRASLO]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[]]></table>
+</column>
+<column>
+<![CDATA[TRUNC(CREATEDON,'HH24')]]>
+<alias><![CDATA[DATA]]></alias>
+<type><![CDATA[timeInstant]]></type>
+<table><![CDATA[]]></table>
+</column>
+<column>
+<![CDATA[SUM(TEMPS)]]>
+<alias><![CDATA[AVERIAT]]></alias>
+<type><![CDATA[integer]]></type>
+<table><![CDATA[]]></table>
+</column>
+<column>
+<![CDATA[(3600-SUM(TEMPS))]]>
+<alias><![CDATA[OPERATIU]]></alias>
+<type><![CDATA[integer]]></type>
+<table><![CDATA[]]></table>
+</column>
+<where>
+<XBinaryCondition isnot="false" clause= "">
+<expression1>
+<expression type="Field">
+<![CDATA[SGAHISTAVERIA.ESTADO]]>
+</expression>
+</expression1>
+<expression2>
+<expression type="Expression">
+<![CDATA['A']]>
+</expression>
+</expression2>
+<op><![CDATA[=]]></op>
+</XBinaryCondition>
+</where>
+<sortby></sortby>
+<groupby><field>TRASLO</field><field>DATA</field></groupby>
+<having>
+</having>
+</uniform_sql>
+<maxrows>0</maxrows>
+<timeout>0</timeout>
+<visible>true</visible>
+</query_jdbc>
+</query>
+<query name="sgatipmov" type="jdbc" datasource="balay">
+<query_jdbc>
+<uniform_sql parse="true">
+<table>
+<alias><![CDATA[SGA_REF_CODES]]></alias>
+<name><![CDATA[SGA_REF_CODES]]></name>
+<issql><![CDATA[false]]></issql>
+<xlocation><![CDATA[15]]></xlocation>
+<ylocation><![CDATA[15]]></ylocation>
+<xScroll><![CDATA[0]]></xScroll>
+<yScroll><![CDATA[0]]></yScroll>
+</table>
+<column>
+<![CDATA[SGA_REF_CODES.RV_LOW_VALUE]]>
+<alias><![CDATA[Valor]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[SGA_REF_CODES]]></table>
+</column>
+<column>
+<![CDATA[SGA_REF_CODES.RV_MEANING]]>
+<alias><![CDATA[Descripción]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[SGA_REF_CODES]]></table>
+</column>
+<where>
+<XBinaryCondition isnot="false" clause= "">
+<expression1>
+<expression type="Field">
+<![CDATA[SGA_REF_CODES.RV_DOMAIN]]>
+</expression>
+</expression1>
+<expression2>
+<expression type="Value">
+<![CDATA['TIPMOV']]>
+</expression>
+</expression2>
+<op><![CDATA[=]]></op>
+</XBinaryCondition>
+</where>
+<sortby><field order="asc">SGA_REF_CODES.RV_LOW_VALUE</field></sortby>
+<groupby></groupby>
+<having>
+</having>
+<sqlstring parseResult="0"><![CDATA[select SGA_REF_CODES.RV_LOW_VALUE as "Valor", SGA_REF_CODES.RV_MEANING as "Descripción" from SGA_REF_CODES where SGA_REF_CODES.RV_DOMAIN = 'TIPMOV'
+order by SGA_REF_CODES.RV_LOW_VALUE asc]]></sqlstring>
+</uniform_sql>
+<maxrows>0</maxrows>
+<timeout>0</timeout>
+<visible>true</visible>
+</query_jdbc>
+</query>
+<query name="Scores" type="xml" datasource="Personnel">
+<query_xml attributes="true" children="false">
+<path><pathnode><name>evaluation</name></pathnode>
+<pathnode><name>employee</name><condition><![CDATA[(score >= $(score))]]></condition></pathnode>
+</path>
+<select><![CDATA[select @id]]></select>
+<variable name="score" type="user" prompt="true" multipleSelection="false" customization="false" label="score" xtype="string">
+</variable>
+<description>Get employee evaluation scores</description>
+<maxrows>0</maxrows>
+<timeout>0</timeout>
+<visible>true</visible>
+<request><![CDATA[default]]></request>
+</query_xml>
+</query>
+<query name="Accounts by customer" type="corba" datasource="Bank">
+<query_corba collapse="true">
+<path><pathnode><name>_output_</name></pathnode>
+<pathnode><name>_return_</name></pathnode>
+</path>
+<select><![CDATA[select account_no,type,balance,customer.ssn]]></select>
+<variable name="ssn" type="user" prompt="true" multipleSelection="false" customization="false" label="ssn" source="Accounts by customer" xtype="string">
+<parameter0 name="parameter0" type="string" null="false"><![CDATA[]]></parameter0>
+</variable>
+<description>accounts by a single customer</description>
+<maxrows>0</maxrows>
+<timeout>0</timeout>
+<visible>true</visible>
+<method><![CDATA[getAccounts]]></method>
+</query_corba>
+</query>
+<query name="Saving accounts" type="corba" datasource="Bank">
+<query_corba>
+<path><pathnode><name>_output_</name></pathnode>
+<pathnode><name>_return_</name><condition><![CDATA[(type = 'SAVING')]]></condition></pathnode>
+</path>
+<select><![CDATA[select account_no,type,balance]]></select>
+<maxrows>0</maxrows>
+<timeout>0</timeout>
+<visible>true</visible>
+<method><![CDATA[getAllAccounts]]></method>
+</query_corba>
+</query>
+<query name="sgavmovsusuariresum" type="jdbc" datasource="interflex">
+<query_jdbc>
+<uniform_sql parse="true">
+<table>
+<alias><![CDATA[SGAVMOVSUSUARIRESUM]]></alias>
+<name><![CDATA[SGAVMOVSUSUARIRESUM]]></name>
+<issql><![CDATA[false]]></issql>
+<xlocation><![CDATA[-1]]></xlocation>
+<ylocation><![CDATA[-1]]></ylocation>
+<xScroll><![CDATA[0]]></xScroll>
+<yScroll><![CDATA[0]]></yScroll>
+</table>
+<column>
+<![CDATA[SGAVMOVSUSUARIRESUM.OPERARI]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[SGAVMOVSUSUARIRESUM]]></table>
+</column>
+<column>
+<![CDATA[SGAVMOVSUSUARIRESUM.DATA]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[date]]></type>
+<table><![CDATA[SGAVMOVSUSUARIRESUM]]></table>
+</column>
+<column>
+<![CDATA[SGAVMOVSUSUARIRESUM.QUART]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[double]]></type>
+<table><![CDATA[SGAVMOVSUSUARIRESUM]]></table>
+</column>
+<column>
+<![CDATA[decode(substr(SGAVMOVSUSUARIRESUM.ORIDES,1,7),'Picking',substr(sgavmovsusuariresum.orides,11),'Puesto ',substr(sgavmovsusuariresum.orides,8),sgavmovsusuariresum.orides)]]>
+<alias><![CDATA[ORIGEN/DESTI]]></alias>
+<type><![CDATA[]]></type>
+<table><![CDATA[]]></table>
+</column>
+<column>
+<![CDATA[sum(SGAVMOVSUSUARIRESUM.MOVIMENTS)]]>
+<alias><![CDATA[MOVIMENTS]]></alias>
+<type><![CDATA[]]></type>
+<table><![CDATA[]]></table>
+</column>
+<column>
+<![CDATA[sum(SGAVMOVSUSUARIRESUM.ENTRADES)]]>
+<alias><![CDATA[ENTRADES]]></alias>
+<type><![CDATA[]]></type>
+<table><![CDATA[]]></table>
+</column>
+<column>
+<![CDATA[sum(SGAVMOVSUSUARIRESUM.SORTIDES)]]>
+<alias><![CDATA[SORTIDES]]></alias>
+<type><![CDATA[]]></type>
+<table><![CDATA[]]></table>
+</column>
+<column>
+<![CDATA[sum(SGAVMOVSUSUARIRESUM.REGULAR)]]>
+<alias><![CDATA[REGULAR]]></alias>
+<type><![CDATA[]]></type>
+<table><![CDATA[]]></table>
+</column>
+<where>
+</where>
+<sortby></sortby>
+<groupby><field>SGAVMOVSUSUARIRESUM.OPERARI</field><field>SGAVMOVSUSUARIRESUM.DATA</field><field>SGAVMOVSUSUARIRESUM.QUART</field><field>decode(substr(SGAVMOVSUSUARIRESUM.ORIDES,1,7),'Picking',substr(sgavmovsusuariresum.orides,11),'Puesto ',substr(sgavmovsusuariresum.orides,8),sgavmovsusuariresum.orides)</field></groupby>
+<having>
+</having>
+<sqlstring parseResult="0"><![CDATA[select SGAVMOVSUSUARIRESUM.OPERARI, 
+       SGAVMOVSUSUARIRESUM.DATA, 
+       SGAVMOVSUSUARIRESUM.QUART, 
+       decode(substr(SGAVMOVSUSUARIRESUM.ORIDES, 1, 7),'Picking', substr(sgavmovsusuariresum.orides, 11), 'Puesto ', substr(sgavmovsusuariresum.orides, 8), sgavmovsusuariresum.orides) as "ORIGEN/DESTI", 
+       sum(SGAVMOVSUSUARIRESUM.MOVIMENTS) as MOVIMENTS, 
+       sum(SGAVMOVSUSUARIRESUM.ENTRADES) AS ENTRADES, 
+       sum(SGAVMOVSUSUARIRESUM.SORTIDES) AS SORTIDES, 
+       sum(SGAVMOVSUSUARIRESUM.REGULAR) AS REGULAR
+from SGAVMOVSUSUARIRESUM
+group by sgavmovsusuariresum.operari,
+         sgavmovsusuariresum.data,
+         sgavmovsusuariresum.quart,
+         decode(substr(SGAVMOVSUSUARIRESUM.ORIDES, 1, 7),'Picking', substr(sgavmovsusuariresum.orides, 11), 'Puesto ', substr(sgavmovsusuariresum.orides, 8), sgavmovsusuariresum.orides)]]></sqlstring>
+</uniform_sql>
+<maxrows>0</maxrows>
+<timeout>0</timeout>
+<visible>true</visible>
+</query_jdbc>
+</query>
+<query name="sgahistaveria" type="jdbc" datasource="interflex">
+<query_jdbc>
+<uniform_sql parse="true">
+<table>
+<alias><![CDATA[SGAHISTAVERIA]]></alias>
+<name><![CDATA[SGAHISTAVERIA]]></name>
+<issql><![CDATA[false]]></issql>
+<xlocation><![CDATA[15]]></xlocation>
+<ylocation><![CDATA[15]]></ylocation>
+<xScroll><![CDATA[0]]></xScroll>
+<yScroll><![CDATA[0]]></yScroll>
+</table>
+<column>
+<![CDATA[SGAHISTAVERIA.IDTRASLO]]>
+<alias><![CDATA[TRASLO]]></alias>
+<type><![CDATA[double]]></type>
+<table><![CDATA[SGAHISTAVERIA]]></table>
+</column>
+<column>
+<![CDATA[SGAHISTAVERIA.CREATEDON]]>
+<alias><![CDATA[DATA]]></alias>
+<type><![CDATA[date]]></type>
+<table><![CDATA[SGAHISTAVERIA]]></table>
+</column>
+<column>
+<![CDATA[SGAHISTAVERIA.TEMPS]]>
+<alias><![CDATA[DURACIÓ]]></alias>
+<type><![CDATA[double]]></type>
+<table><![CDATA[SGAHISTAVERIA]]></table>
+</column>
+<column>
+<![CDATA[SGAHISTAVERIA.ESTADO]]>
+<alias><![CDATA[ESTAT]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[SGAHISTAVERIA]]></table>
+</column>
+<column>
+<![CDATA[SGAHISTAVERIA.UBIORI]]>
+<alias><![CDATA[UBI.ORIGEN]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[SGAHISTAVERIA]]></table>
+</column>
+<column>
+<![CDATA[SGAHISTAVERIA.UBIDES]]>
+<alias><![CDATA[UBI.DESTÍ]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[SGAHISTAVERIA]]></table>
+</column>
+<column>
+<![CDATA[SGAHISTAVERIA.IDORD]]>
+<alias><![CDATA[ORDRE]]></alias>
+<type><![CDATA[double]]></type>
+<table><![CDATA[SGAHISTAVERIA]]></table>
+</column>
+<column>
+<![CDATA[SGAHISTAVERIA.PASILLOACTUAL]]>
+<alias><![CDATA[PAS.ORIGEN]]></alias>
+<type><![CDATA[double]]></type>
+<table><![CDATA[SGAHISTAVERIA]]></table>
+</column>
+<column>
+<![CDATA[SGAHISTAVERIA.PASILLODESTINO]]>
+<alias><![CDATA[PAS.DESTÍ]]></alias>
+<type><![CDATA[double]]></type>
+<table><![CDATA[SGAHISTAVERIA]]></table>
+</column>
+<column>
+<![CDATA[SGAHISTAVERIA.POSUBIORI]]>
+<alias><![CDATA[POS.UBI.ORIGEN]]></alias>
+<type><![CDATA[double]]></type>
+<table><![CDATA[SGAHISTAVERIA]]></table>
+</column>
+<column>
+<![CDATA[SGAHISTAVERIA.POSUBIDES]]>
+<alias><![CDATA[POS.UBI.DESTÍ]]></alias>
+<type><![CDATA[double]]></type>
+<table><![CDATA[SGAHISTAVERIA]]></table>
+</column>
+<column>
+<![CDATA['TRASLO ' || SGAHISTAVERIA.IDTRASLO]]>
+<alias><![CDATA[DESCTRASLO]]></alias>
+<type><![CDATA[]]></type>
+<table><![CDATA[]]></table>
+</column>
+<column>
+<![CDATA[DECODE(SGAHISTAVERIA.ESTADO,'A','AVERIA','FUNCIONAMENT')]]>
+<alias><![CDATA[DESCESTAT]]></alias>
+<type><![CDATA[]]></type>
+<table><![CDATA[]]></table>
+</column>
+<where>
+</where>
+<sortby></sortby>
+<groupby></groupby>
+<having>
+</having>
+<sqlstring parseResult="0"><![CDATA[select SGAHISTAVERIA.IDTRASLO as "TRASLO", SGAHISTAVERIA.CREATEDON as "DATA", SGAHISTAVERIA.TEMPS as "DURACIÓ", SGAHISTAVERIA.ESTADO as "ESTAT", SGAHISTAVERIA.UBIORI as "UBI.ORIGEN", SGAHISTAVERIA.UBIDES as "UBI.DESTÍ", SGAHISTAVERIA.IDORD as "ORDRE", SGAHISTAVERIA.PASILLOACTUAL as "PAS.ORIGEN", SGAHISTAVERIA.PASILLODESTINO as "PAS.DESTÍ", SGAHISTAVERIA.POSUBIORI as "POS.UBI.ORIGEN", SGAHISTAVERIA.POSUBIDES as "POS.UBI.DESTÍ",  'TRASLO '||SGAHISTAVERIA.IDTRASLO AS "DESCTRASLO", DECODE(SGAHISTAVERIA.ESTADO, 'A', 'AVERIA', 'FUNCIONAMENT') as "DESCESTAT" from SGAHISTAVERIA]]></sqlstring>
+</uniform_sql>
+<maxrows>0</maxrows>
+<timeout>0</timeout>
+<visible>true</visible>
+</query_jdbc>
+</query>
+<query name="BenefitId4Emp" type="derived" datasource="Personnel">
+<query_derived base="EmployeeDetail">
+<path><pathnode><name>employee</name></pathnode>
+</path>
+<select><![CDATA[select benefit_plan_id]]></select>
+<variable name="empChoice" type="user" prompt="true" multipleSelection="false" customization="true" label="empChoice" source="EmployeeDetail" xtype="string">
+<value name="value" type="string" null="true"></value>
+</variable>
+<maxrows>0</maxrows>
+<timeout>0</timeout>
+<visible>true</visible>
+</query_derived>
+</query>
+<query name="All prices" type="ejb" datasource="Product">
+<query_ejb>
+<path><pathnode><name>Product</name></pathnode>
+</path>
+<select><![CDATA[select Price to double]]></select>
+<description>get a list of all prices</description>
+<maxrows>0</maxrows>
+<timeout>0</timeout>
+<visible>true</visible>
+<method><![CDATA[findAll]]></method>
+</query_ejb>
+</query>
+<query name="histOrdTranTraslo" type="jdbc" datasource="interflex">
+<query_jdbc>
+<uniform_sql parse="true">
+<column>
+<![CDATA[IDTRASLO]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[]]></type>
+<table><![CDATA[]]></table>
+</column>
+<column>
+<![CDATA[OPERACIO]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[]]></type>
+<table><![CDATA[]]></table>
+</column>
+<column>
+<![CDATA[PASSADIS]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[]]></type>
+<table><![CDATA[]]></table>
+</column>
+<column>
+<![CDATA[COSTAT]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[]]></type>
+<table><![CDATA[]]></table>
+</column>
+<column>
+<![CDATA[PROFUNDITAT]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[]]></type>
+<table><![CDATA[]]></table>
+</column>
+<column>
+<![CDATA[ALCADA]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[]]></type>
+<table><![CDATA[]]></table>
+</column>
+<column>
+<![CDATA[POSUBI]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[]]></type>
+<table><![CDATA[]]></table>
+</column>
+<column>
+<![CDATA[PICKING]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[]]></type>
+<table><![CDATA[]]></table>
+</column>
+<column>
+<![CDATA[FECFIN]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[]]></type>
+<table><![CDATA[]]></table>
+</column>
+<column>
+<![CDATA[TEMPS]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[]]></type>
+<table><![CDATA[]]></table>
+</column>
+<column>
+<![CDATA[ESTADO]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[]]></type>
+<table><![CDATA[]]></table>
+</column>
+<where>
+</where>
+<sortby></sortby>
+<groupby></groupby>
+<having>
+</having>
+<sqlstring parseResult="1"><![CDATA[select       idtraslo,
+      operacio,
+       passadis,
+       costat,
+       profunditat,
+       alcada,
+       posubi,
+       picking,
+       fecfin,
+       temps,
+       estado
+  from (select  t.idtrasloini idtraslo,
+               'Extracció' operacio,
+               u.pasillo passadis,
+               u.lado costat,
+               u.columna profunditat,
+               u.nivel alcada,
+               t.posubiori posubi,
+               udes.descrip picking,
+               t.fecfin fecfin,
+               round((t.fecfin - t.createdon) * 60 * 24,2) temps,
+               t.estado
+          from sgahistordtran t, sgaubicacion u, sgaubicacion udes
+         where t.ubiori = u.idubi
+           and udes.idubi = t.ubidesfin
+           and u.pasillo in (1, 2, 3, 4)
+           and t.idtrasloini != 0
+        union
+        select  t.idtraslofin,
+               'Depósit',
+               u.pasillo passadis,
+               u.lado costat,
+               u.columna profunditat,
+               u.nivel alcada,
+               t.posubidesfin,
+               uori.descrip,
+               t.fecfin,
+               round((t.fecfin - t.createdon) * 60 * 24,2) temps,
+               t.estado
+          from sgahistordtran t, sgaubicacion u, sgaubicacion uori
+         where t.ubidesfin = u.idubi
+           and uori.idubi = t.ubiori
+           and u.pasillo in (1, 2, 3, 4)
+           and t.idtraslofin != 0)
+ order by idtraslo,fecfin asc]]></sqlstring>
+</uniform_sql>
+<maxrows>0</maxrows>
+<timeout>0</timeout>
+<visible>true</visible>
+</query_jdbc>
+</query>
+<query name="all employees" type="xml" datasource="Personnel">
+<query_xml>
+<path><pathnode><name>personnel</name></pathnode>
+<pathnode><name>employee</name></pathnode>
+</path>
+<select><![CDATA[select @id,name.firstname to string,name.lastname to string]]></select>
+<maxrows>0</maxrows>
+<timeout>0</timeout>
+<visible>true</visible>
+<request><![CDATA[default]]></request>
+</query_xml>
+</query>
+<query name="Above avg employees" type="xml" datasource="Personnel">
+<query_xml collapse="true">
+<path><pathnode><name>personnel</name></pathnode>
+<pathnode><name>employee</name><condition><![CDATA[@id in (query('Scores',score=5))]]></condition></pathnode>
+</path>
+<select><![CDATA[select name.lastname as 'Last Name',name.firstname as 'First Name',location.city as 'City',location.state as 'State',location.zip as 'Zip']]></select>
+<description>Find all employees with above average scores</description>
+<maxrows>0</maxrows>
+<timeout>0</timeout>
+<visible>true</visible>
+<request><![CDATA[default]]></request>
+</query_xml>
+</query>
+<query name="All accounts" type="corba" datasource="Bank">
+<query_corba collapse="true">
+<path><pathnode><name>_output_</name></pathnode>
+<pathnode><name>_return_</name></pathnode>
+</path>
+<select><![CDATA[select account_no as 'Account',type as 'Type',balance as 'Balance',customer.ssn as 'SS#',customer.first_name as 'First Name',customer.last_name as 'Last Name',customer.city as 'City',customer.state as 'State',customer.phone as 'Phone']]></select>
+<description>all bank accounts</description>
+<maxrows>0</maxrows>
+<timeout>0</timeout>
+<visible>true</visible>
+<method><![CDATA[getAllAccounts]]></method>
+</query_corba>
+</query>
+<query name="existPasillo" type="jdbc" datasource="interflex">
+<query_jdbc>
+<uniform_sql parse="true">
+<table>
+<alias><![CDATA[e]]></alias>
+<name><![CDATA[SGAEXISTENCIA]]></name>
+<issql><![CDATA[false]]></issql>
+<xlocation><![CDATA[15]]></xlocation>
+<ylocation><![CDATA[15]]></ylocation>
+<xScroll><![CDATA[0]]></xScroll>
+<yScroll><![CDATA[0]]></yScroll>
+</table>
+<table>
+<alias><![CDATA[a]]></alias>
+<name><![CDATA[SGAARTICULO]]></name>
+<issql><![CDATA[false]]></issql>
+<xlocation><![CDATA[151]]></xlocation>
+<ylocation><![CDATA[15]]></ylocation>
+<xScroll><![CDATA[0]]></xScroll>
+<yScroll><![CDATA[0]]></yScroll>
+</table>
+<table>
+<alias><![CDATA[m]]></alias>
+<name><![CDATA[SGAMAC]]></name>
+<issql><![CDATA[false]]></issql>
+<xlocation><![CDATA[295]]></xlocation>
+<ylocation><![CDATA[15]]></ylocation>
+<xScroll><![CDATA[0]]></xScroll>
+<yScroll><![CDATA[0]]></yScroll>
+</table>
+<table>
+<alias><![CDATA[u]]></alias>
+<name><![CDATA[SGAUBICACION]]></name>
+<issql><![CDATA[false]]></issql>
+<xlocation><![CDATA[431]]></xlocation>
+<ylocation><![CDATA[15]]></ylocation>
+<xScroll><![CDATA[0]]></xScroll>
+<yScroll><![CDATA[0]]></yScroll>
+</table>
+<column>
+<![CDATA[a.IDARTIF]]>
+<alias><![CDATA[article]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[a]]></table>
+</column>
+<column>
+<![CDATA[a.DESCRIP]]>
+<alias><![CDATA[descripcio]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[a]]></table>
+</column>
+<column>
+<![CDATA[m.IDMAC]]>
+<alias><![CDATA[contenidor]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[m]]></table>
+</column>
+<column>
+<![CDATA[u.PASILLO]]>
+<alias><![CDATA[passadis]]></alias>
+<type><![CDATA[double]]></type>
+<table><![CDATA[u]]></table>
+</column>
+<column>
+<![CDATA[u.LADO]]>
+<alias><![CDATA[costat]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[u]]></table>
+</column>
+<column>
+<![CDATA[u.COLUMNA]]>
+<alias><![CDATA[profunditat]]></alias>
+<type><![CDATA[double]]></type>
+<table><![CDATA[u]]></table>
+</column>
+<column>
+<![CDATA[u.NIVEL]]>
+<alias><![CDATA[alcada]]></alias>
+<type><![CDATA[double]]></type>
+<table><![CDATA[u]]></table>
+</column>
+<column>
+<![CDATA[e.CANTOT]]>
+<alias><![CDATA[cantot]]></alias>
+<type><![CDATA[double]]></type>
+<table><![CDATA[e]]></table>
+</column>
+<where>
+</where>
+<sortby></sortby>
+<groupby></groupby>
+<having>
+</having>
+<sqlstring parseResult="1"><![CDATA[select a.idartif article, a.descrip descripcio, m.idmac contenidor, u.pasillo passadis, u.lado costat, u.columna profunditat, u.nivel alcada, e.cantot cantot
+from sgaexistencia e, sgaarticulo a, sgamac m, sgaubicacion u
+where e.idart = a.idart
+and e.idmac = m.idmac
+and u.idubi = m.ubipos
+and a.idtipmac != 'CUB'
+and a.idart in (select idart from sgaexistencia having count(*) >2 group by idart)
+order by idartif, u.pasillo]]></sqlstring>
+</uniform_sql>
+<description>Existencies per passadis del MAXILOAD</description>
+<maxrows>0</maxrows>
+<timeout>0</timeout>
+<visible>true</visible>
+</query_jdbc>
+</query>
+<query name="AttendanceDetail" type="xml" datasource="Attendance">
+<query_xml>
+<path><pathnode><name>attend_list</name></pathnode>
+<pathnode><name>employee</name><condition><![CDATA[(@id = $(empChoice))]]></condition></pathnode>
+</path>
+<select><![CDATA[select vacation_accrued to string,vacation_used to string,personal_days_allowed,personal_days_used,comp_days_issued to string,comp_days_used to string,@id to string]]></select>
+<variable name="empChoice" type="user" prompt="true" multipleSelection="false" customization="false" label="empChoice" source="AttendanceDetail" xtype="string">
+</variable>
+<maxrows>0</maxrows>
+<timeout>0</timeout>
+<visible>true</visible>
+<request><![CDATA[default]]></request>
+</query_xml>
+</query>
+<query name="NJ programmers" type="derived" datasource="Personnel">
+<query_derived base="All Programmers">
+<path><pathnode><name>employee</name><condition><![CDATA[(location.state = 'NJ')]]></condition></pathnode>
+</path>
+<select><![CDATA[select skill,name.lastname,name.firstname,location.city,location.state]]></select>
+<description>All programmers located in NJ</description>
+<maxrows>0</maxrows>
+<timeout>0</timeout>
+<visible>true</visible>
+</query_derived>
+</query>
+<query name="EmployeeDetail" type="xml" datasource="Personnel">
+<query_xml>
+<path><pathnode><name>personnel</name></pathnode>
+<pathnode><name>employee</name><condition><![CDATA[(@id = $(empChoice))]]></condition></pathnode>
+</path>
+<select><![CDATA[select expanded fullname,name.lastname,name.firstname,birthday,salary,location.city,location.state,@id,location,benefit_plan_id]]></select>
+<variable name="empChoice" type="user" prompt="true" multipleSelection="false" customization="true" label="empChoice" source="EmployeeDetail" xtype="string">
+<value name="value" type="string" null="true"></value>
+</variable>
+<maxrows>0</maxrows>
+<timeout>0</timeout>
+<visible>true</visible>
+<request><![CDATA[default]]></request>
+</query_xml>
+</query>
+<query name="Expensive products" type="ejb" datasource="Product">
+<query_ejb>
+<path><pathnode><name>Product</name></pathnode>
+</path>
+<select><![CDATA[select Name,Description,Category,Inventory,Price,SKU]]></select>
+<variable name="low" type="user" prompt="true" multipleSelection="false" customization="false" label="low" source="Expensive products" xtype="double">
+<parameter0 name="parameter0" type="double" null="false" variable="low"><![CDATA[0.0]]></parameter0>
+</variable>
+<variable name="high" type="user" prompt="true" multipleSelection="false" customization="false" label="high" source="Expensive products" xtype="double">
+<parameter1 name="parameter1" type="double" null="false" variable="high"><![CDATA[0.0]]></parameter1>
+</variable>
+<description>find all products above the average price</description>
+<maxrows>0</maxrows>
+<timeout>0</timeout>
+<visible>true</visible>
+<method><![CDATA[findByPriceRange]]></method>
+</query_ejb>
+</query>
+<query name="all contacts" type="soap" datasource="Contacts">
+<query_soap>
+<path><pathnode><name>_output_</name></pathnode>
+<pathnode><name>_return_</name></pathnode>
+</path>
+<select><![CDATA[select expanded contact as "Name" to string,address as "Address" to string,city as "City" to string,state as "State" to string]]></select>
+<maxrows>0</maxrows>
+<timeout>0</timeout>
+<visible>true</visible>
+<method><![CDATA[getAllPeople]]></method>
+</query_soap>
+</query>
+<query name="C++ Programmers" type="xml" datasource="Personnel">
+<query_xml collapse="true">
+<path><pathnode><name>personnel</name></pathnode>
+<pathnode><name>employee</name><condition><![CDATA[('C++ programming' = ANY skill)]]></condition></pathnode>
+</path>
+<select><![CDATA[select name.lastname,name.firstname,location.city,location.state]]></select>
+<description>find all C++ programmers</description>
+<maxrows>0</maxrows>
+<timeout>0</timeout>
+<visible>true</visible>
+<request><![CDATA[default]]></request>
+</query_xml>
+</query>
+<query name="sgavmovsusuarisimple" type="jdbc" datasource="interflex">
+<query_jdbc>
+<uniform_sql parse="true">
+<table>
+<alias><![CDATA[SGAVMOVSUSUARIRESUM]]></alias>
+<name><![CDATA[SGAVMOVSUSUARIRESUM]]></name>
+<issql><![CDATA[false]]></issql>
+<xlocation><![CDATA[-1]]></xlocation>
+<ylocation><![CDATA[-1]]></ylocation>
+<xScroll><![CDATA[0]]></xScroll>
+<yScroll><![CDATA[0]]></yScroll>
+</table>
+<column>
+<![CDATA[SGAVMOVSUSUARIRESUM.OPERARI]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[SGAVMOVSUSUARIRESUM]]></table>
+</column>
+<column>
+<![CDATA[SGAVMOVSUSUARIRESUM.DATA]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[date]]></type>
+<table><![CDATA[SGAVMOVSUSUARIRESUM]]></table>
+</column>
+<column>
+<![CDATA[substr(SGAVMOVSUSUARIRESUM.ORIDES,11)]]>
+<alias><![CDATA[ORIGEN/DESTI]]></alias>
+<type><![CDATA[]]></type>
+<table><![CDATA[]]></table>
+</column>
+<column>
+<![CDATA[sum(SGAVMOVSUSUARIRESUM.MOVIMENTS)]]>
+<alias><![CDATA[MOVIMENTS]]></alias>
+<type><![CDATA[]]></type>
+<table><![CDATA[]]></table>
+</column>
+<column>
+<![CDATA[SUM(SGAVMOVSUSUARIRESUM.ENTRADES)]]>
+<alias><![CDATA[ENTRADES]]></alias>
+<type><![CDATA[]]></type>
+<table><![CDATA[]]></table>
+</column>
+<column>
+<![CDATA[SUM(SGAVMOVSUSUARIRESUM.SORTIDES)]]>
+<alias><![CDATA[SORTIDES]]></alias>
+<type><![CDATA[]]></type>
+<table><![CDATA[]]></table>
+</column>
+<column>
+<![CDATA[SUM(SGAVMOVSUSUARIRESUM.REGULAR)]]>
+<alias><![CDATA[REGULAR]]></alias>
+<type><![CDATA[]]></type>
+<table><![CDATA[]]></table>
+</column>
+<where>
+</where>
+<sortby></sortby>
+<groupby><field>SGAVMOVSUSUARIRESUM.OPERARI</field><field>SGAVMOVSUSUARIRESUM.DATA</field><field>substr(SGAVMOVSUSUARIRESUM.ORIDES,11)</field></groupby>
+<having>
+</having>
+<sqlstring parseResult="0"><![CDATA[select SGAVMOVSUSUARIRESUM.OPERARI, 
+       SGAVMOVSUSUARIRESUM.DATA, 
+       substr(SGAVMOVSUSUARIRESUM.ORIDES, 11) as "ORIGEN/DESTI", 
+       sum(SGAVMOVSUSUARIRESUM.MOVIMENTS) as "MOVIMENTS", 
+       SUM(SGAVMOVSUSUARIRESUM.ENTRADES) as "ENTRADES", 
+       SUM(SGAVMOVSUSUARIRESUM.SORTIDES) as "SORTIDES", 
+       SUM(SGAVMOVSUSUARIRESUM.REGULAR) as "REGULAR" 
+from SGAVMOVSUSUARIRESUM 
+group by SGAVMOVSUSUARIRESUM.OPERARI, SGAVMOVSUSUARIRESUM.DATA, substr(SGAVMOVSUSUARIRESUM.ORIDES, 11)]]></sqlstring>
+</uniform_sql>
+<maxrows>0</maxrows>
+<timeout>0</timeout>
+<visible>true</visible>
+</query_jdbc>
+</query>
+<query name="PlantList" type="xml" datasource="Manufacturer">
+<query_xml>
+<path><pathnode><name>plants</name></pathnode>
+<pathnode><name>plant</name></pathnode>
+</path>
+<select><![CDATA[select location as "Location",employees as "Employees" to string,onsite_mfr as "Onsite Manufacturing" to string,square_footage as "Square Footage"]]></select>
+<maxrows>0</maxrows>
+<timeout>0</timeout>
+<visible>true</visible>
+<request><![CDATA[default]]></request>
+</query_xml>
+</query>
+<query name="NY employees" type="xml" datasource="Personnel">
+<query_xml collapse="true">
+<path><pathnode><name>personnel</name></pathnode>
+<pathnode><name>employee</name><condition><![CDATA[(location.state = 'NY')]]></condition></pathnode>
+</path>
+<select><![CDATA[select name.lastname as 'Last Name',name.firstname as 'First Name',location.city as 'City',location.state as 'State']]></select>
+<maxrows>0</maxrows>
+<timeout>0</timeout>
+<visible>true</visible>
+<request><![CDATA[default]]></request>
+</query_xml>
+</query>
+<query name="sgavpiemld" type="jdbc" datasource="interflex">
+<query_jdbc>
+<uniform_sql parse="true">
+<table>
+<alias><![CDATA[sgavestadomld]]></alias>
+<name><![CDATA[SGAVESTADOMLD]]></name>
+<issql><![CDATA[false]]></issql>
+<xlocation><![CDATA[15]]></xlocation>
+<ylocation><![CDATA[15]]></ylocation>
+<xScroll><![CDATA[0]]></xScroll>
+<yScroll><![CDATA[0]]></yScroll>
+</table>
+<column>
+<![CDATA['Lliure']]>
+<alias><![CDATA[Estat]]></alias>
+<type><![CDATA[]]></type>
+<table><![CDATA[]]></table>
+</column>
+<column>
+<![CDATA[sgavestadomld.POSLIBRE]]>
+<alias><![CDATA[Total]]></alias>
+<type><![CDATA[double]]></type>
+<table><![CDATA[sgavestadomld]]></table>
+</column>
+<where>
+</where>
+<sortby></sortby>
+<groupby></groupby>
+<having>
+</having>
+<sqlstring parseResult="1"><![CDATA[select 'Lliure' Estat, poslibre Total from sgavestadomld
+union select 'Ocupats', posocup from sgavestadomld
+union select 'Reservats', posres from sgavestadomld]]></sqlstring>
+</uniform_sql>
+<maxrows>0</maxrows>
+<timeout>0</timeout>
+<visible>true</visible>
+</query_jdbc>
+</query>
+<query name="DeptList" type="xml" datasource="Depts">
+<query_xml>
+<path><pathnode><name>deptlist</name></pathnode>
+<pathnode><name>dept</name></pathnode>
+</path>
+<select><![CDATA[select @id,name]]></select>
+<maxrows>0</maxrows>
+<timeout>0</timeout>
+<visible>true</visible>
+<request><![CDATA[default]]></request>
+</query_xml>
+</query>
+<query name="BenefitDetail" type="xml" datasource="Benefits">
+<query_xml>
+<path><pathnode><name>benefitlist</name></pathnode>
+<pathnode><name>benefit</name></pathnode>
+</path>
+<select><![CDATA[select name,company,premium to string,office_visit to string,deductible,out_of_pocket_limit,presc_drugs,dental to string,vision,emerg_room to string,outpatient_surgery to string,physical_therapy to string,home_health_care to string,@id to string]]></select>
+<maxrows>0</maxrows>
+<timeout>0</timeout>
+<visible>true</visible>
+<request><![CDATA[default]]></request>
+</query_xml>
+</query>
+<query name="sgavestadomld" type="jdbc" datasource="interflex">
+<query_jdbc>
+<uniform_sql parse="true">
+<table>
+<alias><![CDATA[sgavestadomld]]></alias>
+<name><![CDATA[SGAVESTADOMLD]]></name>
+<issql><![CDATA[false]]></issql>
+<xlocation><![CDATA[15]]></xlocation>
+<ylocation><![CDATA[15]]></ylocation>
+<xScroll><![CDATA[0]]></xScroll>
+<yScroll><![CDATA[0]]></yScroll>
+</table>
+<column>
+<![CDATA[sgavestadomld.POSICIONS]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[double]]></type>
+<table><![CDATA[sgavestadomld]]></table>
+</column>
+<column>
+<![CDATA[sgavestadomld.POSLIBRE]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[double]]></type>
+<table><![CDATA[sgavestadomld]]></table>
+</column>
+<column>
+<![CDATA[sgavestadomld.POSLIBRENOMES1]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[double]]></type>
+<table><![CDATA[sgavestadomld]]></table>
+</column>
+<column>
+<![CDATA[sgavestadomld.POSOCUP]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[double]]></type>
+<table><![CDATA[sgavestadomld]]></table>
+</column>
+<column>
+<![CDATA[sgavestadomld.POSRES]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[double]]></type>
+<table><![CDATA[sgavestadomld]]></table>
+</column>
+<column>
+<![CDATA[sgavestadomld.POCUPACIO]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[double]]></type>
+<table><![CDATA[sgavestadomld]]></table>
+</column>
+<column>
+<![CDATA[sgavestadomld.CUBVACPOS1]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[double]]></type>
+<table><![CDATA[sgavestadomld]]></table>
+</column>
+<column>
+<![CDATA[sgavestadomld.CUBVACPOS2LLUIRE]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[double]]></type>
+<table><![CDATA[sgavestadomld]]></table>
+</column>
+<column>
+<![CDATA[sgavestadomld.CUBVACPOS2TAPAT]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[double]]></type>
+<table><![CDATA[sgavestadomld]]></table>
+</column>
+<where>
+</where>
+<sortby></sortby>
+<groupby></groupby>
+<having>
+</having>
+<sqlstring parseResult="0"><![CDATA[select posicions, poslibre, poslibrenomes1, posocup, posres, pocupacio, cubvacpos1, cubvacpos2lluire, cubvacpos2tapat
+from sgavestadomld]]></sqlstring>
+</uniform_sql>
+<maxrows>0</maxrows>
+<timeout>0</timeout>
+<visible>true</visible>
+</query_jdbc>
+</query>
+<query name="DeptId2Name" type="xml" datasource="Depts">
+<query_xml>
+<path><pathnode><name>deptlist</name></pathnode>
+<pathnode><name>dept</name><condition><![CDATA[(@id = $(deptChoice))]]></condition></pathnode>
+</path>
+<select><![CDATA[select name]]></select>
+<variable name="deptChoice" type="user" prompt="true" multipleSelection="false" customization="true" label="deptChoice" source="DeptId2Name" xtype="string">
+<value name="value" type="string" null="true"></value>
+</variable>
+<maxrows>0</maxrows>
+<timeout>0</timeout>
+<visible>true</visible>
+<request><![CDATA[default]]></request>
+</query_xml>
+</query>
+<query name="VariablePlants" type="xml" datasource="Manufacturer">
+<query_xml>
+<path><pathnode><name>plants</name></pathnode>
+<pathnode><name>plant</name><condition><![CDATA[(rating >= $(rating))]]></condition></pathnode>
+</path>
+<select><![CDATA[select location as "Location" to string,revenue as "Revenue" to integer,rating as "Rating" to integer]]></select>
+<variable name="rating" type="user" prompt="false" multipleSelection="false" customization="false" label="rating" source="VariablePlants" xtype="string">
+<value name="value" type="string" null="false"><![CDATA[1]]></value>
+</variable>
+<maxrows>0</maxrows>
+<timeout>0</timeout>
+<visible>true</visible>
+<request><![CDATA[default]]></request>
+</query_xml>
+</query>
+<query name="all employees table" type="xml" datasource="Personnel">
+<query_xml collapse="true">
+<path><pathnode><name>personnel</name></pathnode>
+<pathnode><name>employee</name></pathnode>
+</path>
+<select><![CDATA[select name.firstname as 'First Name',name.lastname as 'Last Name',birthday as 'Birthday',salary as 'Salary',location.city as 'City',location.state as 'State']]></select>
+<description>all employees with results converted to a table</description>
+<maxrows>0</maxrows>
+<timeout>0</timeout>
+<visible>true</visible>
+<request><![CDATA[default]]></request>
+</query_xml>
+</query>
+<query name="EmployeeByDept" type="xml" datasource="Personnel">
+<query_xml>
+<path><pathnode><name>personnel</name></pathnode>
+<pathnode><name>employee</name><condition><![CDATA[(dept_id = $(deptChoice))]]></condition></pathnode>
+</path>
+<select><![CDATA[select @id to string,fullname to string]]></select>
+<variable name="deptChoice" type="user" prompt="true" multipleSelection="false" customization="true" label="deptChoice" source="EmployeeByDept" xtype="string">
+<value name="value" type="string" null="true"></value>
+</variable>
+<maxrows>0</maxrows>
+<timeout>0</timeout>
+<visible>true</visible>
+<request><![CDATA[default]]></request>
+</query_xml>
+</query>
+</registry>

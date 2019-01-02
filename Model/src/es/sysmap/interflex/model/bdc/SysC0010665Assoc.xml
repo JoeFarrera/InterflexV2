@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE Association SYSTEM "jbo_03_01.dtd">
+
+<Association
+   Name="SysC0010665Assoc" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.2.17.96" />
+   </DesignTime>
+   <AssociationEnd
+      Name="Sgatipomac"
+      Cardinality="1"
+      Source="true"
+      Owner="es.sysmap.interflex.model.bdc.Sgatipomac" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgatipomac.Idtipmac" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_minCardinality" Value="1" />
+         <Attr Name="_aggregation" Value="0" />
+         <Attr Name="_isUpdateable" Value="true" />
+         <Attr Name="_finderName" Value="Sgatipomac" />
+         <Attr Name="_foreignKey" Value="es.sysmap.interflex.model.bdc.Sgatipomac.SysC0010654" />
+      </DesignTime>
+   </AssociationEnd>
+   <AssociationEnd
+      Name="Sgatipmactipubi"
+      Cardinality="-1"
+      Owner="es.sysmap.interflex.model.bdc.Sgatipmactipubi" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgatipmactipubi.Idtipmac" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_aggregation" Value="0" />
+         <Attr Name="_isUpdateable" Value="true" />
+         <Attr Name="_finderName" Value="Sgatipmactipubi" />
+         <Attr Name="_foreignKey" Value="es.sysmap.interflex.model.bdc.Sgatipmactipubi.SysC0010665" />
+      </DesignTime>
+   </AssociationEnd>
+</Association>

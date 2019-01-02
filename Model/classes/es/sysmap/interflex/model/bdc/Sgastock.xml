@@ -1,0 +1,255 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+
+<Entity
+   Name="Sgastock"
+   DBObjectType="table"
+   DBObjectName="SGASTOCK"
+   AliasName="Sgastock"
+   BindingStyle="Oracle"
+   UseGlueCode="false"
+   RowClass="es.sysmap.interflex.model.bdc.SgastockImpl"
+   DefClass="es.sysmap.interflex.model.bdc.SgastockDefImpl" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_codeGenFlag2" Value="Access|Def" />
+      <AttrArray Name="_publishEvents">
+      </AttrArray>
+   </DesignTime>
+   <Attribute
+      Name="Idart"
+      IsNotNull="true"
+      Precision="14"
+      ColumnName="IDART"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="SGASTOCK"
+      PrimaryKey="true" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="14" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Stock"
+      IsNotNull="true"
+      Precision="11"
+      Scale="2"
+      ColumnName="STOCK"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      TableName="SGASTOCK" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Createdon"
+      IsUpdateable="while_insert"
+      ColumnName="CREATEDON"
+      Domain="es.sysmap.interflex.model.bdc.FlexiDate"
+      Type="es.sysmap.interflex.model.bdc.common.FlexiDate"
+      ColumnType="DATE"
+      SQLType="DATE"
+      TableName="SGASTOCK"
+      HistoryColumn="DateHistory" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="7" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Modifiedon"
+      ColumnName="MODIFIEDON"
+      Domain="es.sysmap.interflex.model.bdc.FlexiDate"
+      Type="es.sysmap.interflex.model.bdc.common.FlexiDate"
+      ColumnType="DATE"
+      SQLType="DATE"
+      TableName="SGASTOCK"
+      HistoryColumn="DateHistory" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="7" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Createdby"
+      IsUpdateable="while_insert"
+      Precision="10"
+      ColumnName="CREATEDBY"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="SGASTOCK"
+      HistoryColumn="UserHistory" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="10" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Modifiedby"
+      Precision="10"
+      ColumnName="MODIFIEDBY"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="SGASTOCK"
+      HistoryColumn="UserHistory" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="10" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Estado"
+      Precision="1"
+      ColumnName="ESTADO"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="SGASTOCK" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="1" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Idartif"
+      IsQueriable="false"
+      IsPersistent="false"
+      Precision="14"
+      ColumnName="IDARTIF"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      Expression="(select a.idartif from sgaarticulo a where a.idart = sgastock.idart)" >
+   </Attribute>
+   <Attribute
+      Name="Descrip"
+      IsQueriable="false"
+      IsPersistent="false"
+      Precision="100"
+      ColumnName="DESCRIP"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      Expression="(select a.descrip from sgaarticulo a where a.idart = sgastock.idart)" >
+   </Attribute>
+   <Attribute
+      Name="Pesunit"
+      IsQueriable="false"
+      IsPersistent="false"
+      Precision="9"
+      Scale="0"
+      ColumnName="PESUNIT"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      Expression="(select a.pesunit from sgaarticulo a where a.idart = sgastock.idart)" >
+   </Attribute>
+   <Attribute
+      Name="Codean"
+      IsQueriable="false"
+      IsPersistent="false"
+      Precision="13"
+      ColumnName="CODEAN"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      Expression="(select a.codean from sgaarticulo a where a.idart = sgastock.idart)" >
+   </Attribute>
+   <Attribute
+      Name="Uniemb"
+      IsQueriable="false"
+      IsPersistent="false"
+      Precision="11"
+      Scale="2"
+      ColumnName="UNIEMB"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      Expression="(select a.uniemb from sgaarticulo a where a.idart = sgastock.idart)" >
+   </Attribute>
+   <Attribute
+      Name="Idartant"
+      IsQueriable="false"
+      IsPersistent="false"
+      Precision="14"
+      ColumnName="IDARTANT"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      Expression="(select a.idartant from sgaarticulo a where a.idart = sgastock.idart)" >
+   </Attribute>
+   <Attribute
+      Name="Idartifb"
+      Precision="14"
+      ColumnName="IDARTIFB"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="SGASTOCK" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="14" />
+      </DesignTime>
+   </Attribute>
+   <AccessorAttribute
+      Name="Sgamovimiento"
+      Association="es.sysmap.interflex.model.bdc.SgamovimientoStockAssoc"
+      AssociationEnd="es.sysmap.interflex.model.bdc.SgamovimientoStockAssoc.Sgamovimiento"
+      AssociationOtherEnd="es.sysmap.interflex.model.bdc.SgamovimientoStockAssoc.Sgastock"
+      Type="es.sysmap.interflex.model.bdc.SgamovimientoImpl" >
+   </AccessorAttribute>
+   <Key
+      Name="SgastockPk11113387421765" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgastock.Idart" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SGASTOCK_PK11113387421765" />
+         <Attr Name="_isPrimary" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0012094" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgastock.Idart" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0012094" />
+         <Attr Name="_checkCondition" Value="&#34;IDART&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0012095" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgastock.Stock" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0012095" />
+         <Attr Name="_checkCondition" Value="&#34;STOCK&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC006015" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgastock.Idart" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C006015" />
+         <Attr Name="_checkCondition" Value="&#34;IDART&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC006016" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgastock.Stock" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C006016" />
+         <Attr Name="_checkCondition" Value="&#34;STOCK&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+</Entity>

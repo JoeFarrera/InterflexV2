@@ -53,7 +53,8 @@ public class PanelSgaEntradaManualRF1 extends JPanel implements JUPanel
   private JButton cancelar = new JButton("Can.");
   private Icon confirmIcon = SgaRecursos.createImageIcon(getClass(), "48x48/plain/check.png", null);
   private Icon cancelIcon = SgaRecursos.createImageIcon(getClass(), "48x48/plain/delete.png", null);
-  private JCheckBox Bloquejada = new JCheckBox();
+  private JCheckBox bloquejada = new JCheckBox();
+  private JCheckBox trasllat = new JCheckBox();
   /**
    * 
    *  The default constructor for panel
@@ -70,26 +71,32 @@ public class PanelSgaEntradaManualRF1 extends JPanel implements JUPanel
   {
     dataPanel.setLayout(xYLayout1);
     dataPanel.setMinimumSize(new Dimension(100, 100));
+    trasllat.setFont(new Font("Tahoma", 1, 13));
     this.setLayout(borderLayout);
     this.setSize(new Dimension(300, 180));
 
     labelEtiqueta.setLabelFor(mEtiqueta);
     labelEtiqueta.setFont(new Font("Tahoma", 0, 16));
     labelEtiqueta.setText("Etiqueta");
-    Bloquejada.setText("Bloquejada");
-    Bloquejada.setToolTipText("Deixar la existència bloquejada");
-    Bloquejada.setActionCommand("Bloquejar");
-    Bloquejada.setFont(new Font("Tahoma", 1, 13));
-    dataPanel.add(Bloquejada, new XYConstraints(75, 10, 115, 25));
-    dataPanel.add(labelEtiqueta, new XYConstraints(15, 45, 155, 15));
-    dataPanel.add(mEtiqueta, new XYConstraints(80, 40, 135, 30));
+    bloquejada.setText("Bloquejada");
+    bloquejada.setToolTipText("Deixar la existència bloquejada");
+    bloquejada.setActionCommand("Bloquejar");
+    bloquejada.setFont(new Font("Tahoma", 1, 13));
+    dataPanel.add(bloquejada, new XYConstraints(75, 10, 115, 25));
+    trasllat.setText("Trasllat");
+    trasllat.setToolTipText("Trasllat de material");
+    trasllat.setActionCommand("Trasllat");
+    trasllat.setFont(new Font("Tahoma", 1, 13));
+    dataPanel.add(trasllat, new XYConstraints(75, 30, 115, 25));
+    dataPanel.add(labelEtiqueta, new XYConstraints(15, 65, 155, 20));
+    dataPanel.add(mEtiqueta, new XYConstraints(80, 60, 135, 30));
 
     mEtiqueta.setFont(new Font("Calibri", 0, 18));
     mEtiqueta.setColumns(12);
     mEtiqueta.setToolTipText(panelBinding.findCtrlValueBinding("Etiqueta").getTooltip());
     mEtiqueta.setDocument((Document)panelBinding.bindUIControl("Etiqueta", mEtiqueta));
-    dataPanel.add(labelPasCol, new XYConstraints(15, 90, 140, 15));
-    dataPanel.add(mPasCol, new XYConstraints(80, 85, 75, 30));
+    dataPanel.add(labelPasCol, new XYConstraints(15, 100, 140, 20));
+    dataPanel.add(mPasCol, new XYConstraints(80, 95, 75, 30));
 
     mEtiqueta.addFocusListener(new FocusListener() 
     {
@@ -102,7 +109,7 @@ public class PanelSgaEntradaManualRF1 extends JPanel implements JUPanel
         {
           SgaEntradaManualRFRow row = (SgaEntradaManualRFRow)panelBinding.findIteratorBinding("SgaEntradaManualRF1Iter").getRowSetIterator().getCurrentRow();
           try {
-              row.validateEtiqueta();
+              row.validateEtiqueta();  // TODO: Trasllat??
           }
           catch (oracle.jbo.JboException ex) 
           {
@@ -168,7 +175,9 @@ public class PanelSgaEntradaManualRF1 extends JPanel implements JUPanel
       });
 
     this.add(dataPanel, BorderLayout.CENTER);
-    Bloquejada.setModel((ButtonModel)panelBinding.bindUIControl("Bloqueo", Bloquejada));
+    bloquejada.setModel((ButtonModel)panelBinding.bindUIControl("Bloqueo", bloquejada));
+    trasllat.setModel((ButtonModel)panelBinding.bindUIControl("Trasllat", trasllat));
+    
   }
 
   private static void setUIFont(javax.swing.plaf.FontUIResource f)

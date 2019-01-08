@@ -37,6 +37,11 @@ import javax.swing.JLabel;
 import javax.swing.text.DefaultStyledDocument;
 import javax.swing.text.PlainDocument;
 import javax.swing.JTabbedPane;
+import javax.swing.BorderFactory;
+import javax.swing.border.EtchedBorder;
+import javax.swing.JToggleButton.ToggleButtonModel;
+import javax.swing.JCheckBox;
+import javax.swing.ButtonModel;
 
 public class PanelSgaEntradaManualRF1 extends JPanel implements JUPanel
 {
@@ -106,6 +111,10 @@ public class PanelSgaEntradaManualRF1 extends JPanel implements JUPanel
 
   private JButton confirmar = new JButton("Desar", confirmIcon);
   private JButton cancelar = new JButton("Cancel", cancelIcon);
+  
+  private JCheckBox trasllat = new JCheckBox("Trasllat");
+  
+
 
   private XYLayout xYLayout1 = new XYLayout();
   private JScrollPane jScrollPane1 = new JScrollPane();
@@ -114,6 +123,7 @@ public class PanelSgaEntradaManualRF1 extends JPanel implements JUPanel
   private int[] sizeHeaders = new int[] {20, 300};
   private DefaultTableModel dataModel = new DefaultTableModel(headers, 0);
   private JTabbedPane jTabbedPane1 = new JTabbedPane();
+
   // private JTabbedPane jTabbedPane2 = new JTabbedPane();
 
   /**
@@ -136,6 +146,7 @@ public class PanelSgaEntradaManualRF1 extends JPanel implements JUPanel
     this.setLayout(borderLayout);
     this.setSize(new Dimension(628, 409));
 
+    
     mEtiqueta.setDocument((Document)panelBinding.bindUIControl("Etiqueta", mEtiqueta));
     mEtiqueta.setFont(new Font("Calibri", 0, 18));
     mEtiqueta.addFocusListener(new FocusListener() 
@@ -165,6 +176,7 @@ public class PanelSgaEntradaManualRF1 extends JPanel implements JUPanel
 //  }
     }
     );
+ 
 
     mPasCol.setFont(new Font("Calibri", 0, 18));
     mNivell.setFont(new Font("Calibri", 0, 18));
@@ -189,18 +201,22 @@ public class PanelSgaEntradaManualRF1 extends JPanel implements JUPanel
         }
       });
 
-    dataPanel.add(labelEtiqueta, new XYConstraints(20, 25, 155, 15));
-    dataPanel.add(mEtiqueta, new XYConstraints(205, 20, 135, 30));
-    dataPanel.add(labelPasCol, new XYConstraints(35, 60, 140, 15));
-    dataPanel.add(mPasCol, new XYConstraints(205, 60, 75, 30));
-    dataPanel.add(labelNivell, new XYConstraints(135, 100, 40, 15));
-    dataPanel.add(mNivell, new XYConstraints(205, 100, 40, 30));
+    dataPanel.add(trasllat, new XYConstraints(205, 5, 115, 15));
+ 
+    dataPanel.add(labelEtiqueta, new XYConstraints(20, 35, 155, 15));
+    dataPanel.add(mEtiqueta, new XYConstraints(205, 30, 135, 30));
+    
+    
+    dataPanel.add(labelPasCol, new XYConstraints(35, 70, 140, 15));
+    dataPanel.add(mPasCol, new XYConstraints(205, 70, 75, 30));
+    dataPanel.add(labelNivell, new XYConstraints(135, 110, 40, 15));
+    dataPanel.add(mNivell, new XYConstraints(205, 110, 40, 30));
 // Jaume 02/04/2016 >>>
-    dataPanel.add(mPosicio, new XYConstraints(300, 100, 40, 30));
-    dataPanel.add(labelPosicio, new XYConstraints(370, 100, 50, 15));
+    dataPanel.add(mPosicio, new XYConstraints(300, 110, 40, 30));
+    dataPanel.add(labelPosicio, new XYConstraints(370, 110, 50, 15));
 // <<< Jaume 02/04/2016
-    dataPanel.add(cancelar, new XYConstraints(20, 140, 155, 50));
-    dataPanel.add(confirmar, new XYConstraints(205, 140, 175, 50));
+    dataPanel.add(cancelar, new XYConstraints(20, 150, 155, 50));
+    dataPanel.add(confirmar, new XYConstraints(205, 150, 175, 50));
 
     scrollerDescrip.getViewport().add(mDescrip, null);
     dataPanel.add(scrollerDescrip, new XYConstraints(20, 215, 515, 40));
@@ -270,6 +286,12 @@ public class PanelSgaEntradaManualRF1 extends JPanel implements JUPanel
     mIdbulto.setToolTipText(panelBinding.findCtrlValueBinding("Idbulto").getTooltip());
     
     messageTable = new JTable(dataModel);
+    trasllat.setToolTipText("Seleccionar per confirmar un trasllat de material");
+ 
+    trasllat.setBorder(BorderFactory.createEtchedBorder(EtchedBorder.RAISED));
+    trasllat.setFont(new Font("Tahoma", 0, 16));
+    xYLayout1.setHeight(300);
+    xYLayout1.setWidth(473);
     this.setBounds(new Rectangle(0, 0, 628, 409));
     jTabbedPane1.setPreferredSize(new Dimension(540, 409));
     jTabbedPane1.setBounds(new Rectangle(10, 10, 628, 409));
@@ -292,7 +314,8 @@ public class PanelSgaEntradaManualRF1 extends JPanel implements JUPanel
     }
     
     
-   
+      trasllat.setModel((ButtonModel)panelBinding.bindUIControl("Trasllat", trasllat));
+ 
   }
   
 

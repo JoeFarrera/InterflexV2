@@ -31,8 +31,8 @@ public class SgaEntradaManualRFRowImplMsgBundle extends JboResourceBundle
     {"Iddoc_DISPLAYWIDTH", "9"},
     {"Iddoc_LABEL", "Iddoc"},
     {"Etiqueta_LABEL", "Referencia - Quantitat"},
-    {"Posicio_LABEL", "Posicio"},
     {"Idcabnum_LABEL", "Document"},
+    {"Posicio_LABEL", "Posicio"},
     {"Descrip_DISPLAYWIDTH", "60"},
     {"Etiqueta_DISPLAYWIDTH", "12"},
     {"Idartif_DISPLAYWIDTH", "7"},
@@ -40,6 +40,11 @@ public class SgaEntradaManualRFRowImplMsgBundle extends JboResourceBundle
     {"Etiqueta_TOOLTIP", "Llegeix el codí de barras de la etiqueta"},
     {"Descrip_LABEL", "Descripció"},
     {"PasCol_LABEL", "Passadís - Columna"}};
+
+
+
+
+
 
 
 

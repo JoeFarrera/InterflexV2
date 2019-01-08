@@ -8,7 +8,6 @@ import oracle.jbo.Row;
 
 public interface SgaEntradaManualRFRow extends Row 
 {
-  void validateEtiqueta();
 
   void validateNivell(String nivell);
 
@@ -20,6 +19,15 @@ public interface SgaEntradaManualRFRow extends Row
   void confirmarEntrada2();
 
   void confirmarEntrada(String nivell, String posicio);
+
+  void validateEtiqueta();
+
+
+
+
+
+
+
 
 
 

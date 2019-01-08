@@ -31,6 +31,7 @@ public class SgaEntradaManualRFRowImpl extends ViewRowImpl implements es.sysmap.
   public static final int IDBULTO = 12;
   public static final int POSICIO = 13;
   public static final int BLOQUEO = 14;
+  public static final int TRASLLAT = 15;
 
 
   
@@ -108,6 +109,8 @@ public class SgaEntradaManualRFRowImpl extends ViewRowImpl implements es.sysmap.
         return getPosicio();
       case BLOQUEO:
         return getBloqueo();
+      case TRASLLAT:
+        return getTrasllat();
       default:
         return super.getAttrInvokeAccessor(index, attrDef);
       }
@@ -166,6 +169,9 @@ public class SgaEntradaManualRFRowImpl extends ViewRowImpl implements es.sysmap.
       case BLOQUEO:
         setBloqueo((String)value);
         return;
+      case TRASLLAT:
+        setTrasllat((String)value);
+        return;
       default:
         super.setAttrInvokeAccessor(index, value, attrDef);
         return;
@@ -191,6 +197,12 @@ public class SgaEntradaManualRFRowImpl extends ViewRowImpl implements es.sysmap.
   {
     return ("Ubicació: " + getPasillo() + " " + getColumna() + " " + getNivell() + " -> " + toStringEtiqueta());
   }
+  
+  private boolean isTrasllat()
+   {
+    return (getTrasllat() != null && getTrasllat().equals("S"));
+  }
+ 
   
   public void validateEtiqueta () 
   {
@@ -246,13 +258,29 @@ public class SgaEntradaManualRFRowImpl extends ViewRowImpl implements es.sysmap.
      
       SgaldocEntradesViewImpl vldocEntrades = (SgaldocEntradesViewImpl)getApplicationModule().findViewObject("SgaldocEntradesView4");
       // Open document, or new document, with canpen > 0 
-      vldocEntrades.setWhereClause("idart = '" + idart + 
-       "' and estado in ('N', 'P') and canpen >= " + getCantot() +
-        " and iddoc in (select iddoc from sgacdoc, sgatipdoc " + 
-        "where sgacdoc.idtipdoc = sgatipdoc.idtipdoc and sgatipdoc.tipmov ='E' and sgatipdoc.host ='S')" 
-          );
-      // Order by canpen ascending, to finish oldest...
-      vldocEntrades.setOrderByClause("abs (canpen - " + getCantot() + ") asc");
+     if (isTrasllat())
+     {
+        // If trasllat, quantity asked for should be same as what the user enters (from label read)
+         vldocEntrades.setWhereClause("idart = '" + idart + 
+         "' and estado in ('N', 'P') and canpen = " + getCantot() +
+          " and iddoc in (select iddoc from sgacdoc, sgatipdoc " + 
+          "where sgacdoc.idtipdoc = sgatipdoc.idtipdoc and sgatipdoc.idtipdoc = 'TL')" 
+            );
+            
+        // TODO: Should be total amount - how to set??
+        // vldocEntrades.setOrderByClause("abs (canpen - " + getCantot() + ") asc");    
+        }
+     else
+      {
+        vldocEntrades.setWhereClause("idart = '" + idart + 
+         "' and estado in ('N', 'P') and canpen >= " + getCantot() +
+          " and iddoc in (select iddoc from sgacdoc, sgatipdoc " + 
+          "where sgacdoc.idtipdoc = sgatipdoc.idtipdoc and sgatipdoc.tipmov ='E' and sgatipdoc.host ='S')" 
+            );
+            
+        // Order by canpen ascending, to finish oldest...
+        vldocEntrades.setOrderByClause("abs (canpen - " + getCantot() + ") asc");
+       }
       vldocEntrades.executeQuery();
       if (vldocEntrades.hasNext()) 
       {
@@ -263,7 +291,13 @@ public class SgaEntradaManualRFRowImpl extends ViewRowImpl implements es.sysmap.
         setIdlin(vldocEntradesRow.getIdlin()); // TODO: Hay 2 !!
         setIddoc(vldocEntradesRow.getIddoc());
         setCanpen(vldocEntradesRow.getCanpenbulto());
+        if (isTrasllat())
+        {
+          // Si es una operació de trasllat, s'ha de traslladar la totalitat
+          setCantot(vldocEntradesRow.getCanpenbulto());
+        }    
         setIdbulto(vldocEntradesRow.getIdbulto());
+          
       }
       else
       {
@@ -831,6 +865,7 @@ public class SgaEntradaManualRFRowImpl extends ViewRowImpl implements es.sysmap.
 
   public void confirmarEntrada2()
   {
+    // TODO Michael 02.01.2019 Adjust this in the case of putaway with pistola..
     String idubi = calculaUbicacio2();
     if (idubi.length() == 0)
       throw new JboException(InterflexMessageBundle.class,
@@ -876,6 +911,24 @@ public class SgaEntradaManualRFRowImpl extends ViewRowImpl implements es.sysmap.
   public void setBloqueo(String value)
   {
     setAttributeInternal(BLOQUEO, value);
+  }
+
+  /**
+   * 
+   *  Gets the attribute value for the calculated attribute Trasllat
+   */
+  public String getTrasllat()
+  {
+    return (String)getAttributeInternal(TRASLLAT);
+  }
+
+  /**
+   * 
+   *  Sets <code>value</code> as the attribute value for the calculated attribute Trasllat
+   */
+  public void setTrasllat(String value)
+  {
+    setAttributeInternal(TRASLLAT, value);
   }
 
 }

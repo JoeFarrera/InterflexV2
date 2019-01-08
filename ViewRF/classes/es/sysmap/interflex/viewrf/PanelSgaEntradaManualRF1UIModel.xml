@@ -11,6 +11,11 @@
          id="SgaEntradaManualRF1Iter"
          Binds="AppModuleDataControl1.SgaEntradaManualRF1" >
       </DCIterator>
+      <DCIterator
+         id="SgaEntradaManualRF1Iterator"
+         Binds="AppModuleDataControl1.SgaEntradaManualRF1"
+         RangeSize="10" >
+      </DCIterator>
       <DCControl
          id="Etiqueta"
          SubType="DCTextField"
@@ -130,6 +135,25 @@
          <AttrNames>
             <Item Value="Idbulto" />
          </AttrNames>
+      </DCControl>
+      <DCControl
+         id="Trasllat"
+         DefClass="oracle.jbo.uicli.jui.JUButtonDef"
+         SubType="DCButton"
+         BindingClass="oracle.jbo.uicli.jui.JUButtonBinding"
+         IterBinding="SgaEntradaManualRF1Iterator"
+         ApplyValidation="false"
+         isDynamic="false"
+         ListOperMode="0"
+         StaticList="true"
+         BoolVal="true" >
+         <AttrNames>
+            <Item Value="Trasllat" />
+         </AttrNames>
+         <ValueList>
+            <Item Value="S" />
+            <Item Value="N" />
+         </ValueList>
       </DCControl>
    </Contents>
 </DCContainer>

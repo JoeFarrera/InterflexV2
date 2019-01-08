@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <BC4JConfig>
    <AppModuleConfigBag>
-      <AppModuleConfig name="15FFF0D06AE">
+      <AppModuleConfig name="1682DEC4F41">
          <DeployPlatform>LOCAL</DeployPlatform>
          <DBconnection>jdbc:oracle:thin:@servidormap2:1521:PROD</DBconnection>
          <password>ifdba</password>
@@ -22,10 +22,10 @@
       <ENTRY name="user" value="ifdba"/>
       <ENTRY name="ConnectionName" value="interflex"/>
       <ENTRY name="SID" value="PROD"/>
-      <ENTRY name="JdbcDriver" value="oracle.jdbc.driver.OracleDriver"/>
       <ENTRY name="password">
-         <![CDATA[{904}05AA3ACCA976C5DC194FE83579515B2882]]>
+         <![CDATA[{904}052FFD5AAFD749AC8A0021067F5FCDE93E]]>
       </ENTRY>
+      <ENTRY name="JdbcDriver" value="oracle.jdbc.driver.OracleDriver"/>
       <ENTRY name="ORACLE_JDBC_TYPE" value="thin"/>
       <ENTRY name="DeployPassword" value="true"/>
    </ConnectionDefinition>

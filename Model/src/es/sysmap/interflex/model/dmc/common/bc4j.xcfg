@@ -46,7 +46,7 @@
       <ENTRY name="ConnectionName" value="servidorsga"/>
       <ENTRY name="SID" value="PROD"/>
       <ENTRY name="password">
-         <![CDATA[{904}052D8EB8F3B1267827146E0191C78D2479]]>
+         <![CDATA[{904}0582EF77AE37EDEA1964720A1EAA6B4DEF]]>
       </ENTRY>
       <ENTRY name="JdbcDriver" value="oracle.jdbc.driver.OracleDriver"/>
       <ENTRY name="ORACLE_JDBC_TYPE" value="thin"/>

@@ -16,6 +16,11 @@
          Binds="AppModuleDataControl1.SgaEntradaManualRF1"
          RangeSize="10" >
       </DCIterator>
+      <DCIterator
+         id="SgaEntradaManualRF1Iterator1"
+         Binds="AppModuleDataControl1.SgaEntradaManualRF1"
+         RangeSize="10" >
+      </DCIterator>
       <DCControl
          id="Etiqueta"
          SubType="DCTextField"
@@ -140,6 +145,7 @@
          id="Bloqueo"
          DefClass="oracle.jbo.uicli.jui.JUButtonDef"
          SubType="DCButton"
+         BindingClass="oracle.jbo.uicli.jui.JUButtonBinding"
          IterBinding="SgaEntradaManualRF1Iterator"
          ApplyValidation="false"
          isDynamic="false"
@@ -148,6 +154,24 @@
          BoolVal="true" >
          <AttrNames>
             <Item Value="Bloqueo" />
+         </AttrNames>
+         <ValueList>
+            <Item Value="S" />
+            <Item Value="N" />
+         </ValueList>
+      </DCControl>
+      <DCControl
+         id="Trasllat"
+         DefClass="oracle.jbo.uicli.jui.JUButtonDef"
+         SubType="DCButton"
+         IterBinding="SgaEntradaManualRF1Iterator1"
+         ApplyValidation="false"
+         isDynamic="false"
+         ListOperMode="0"
+         StaticList="true"
+         BoolVal="true" >
+         <AttrNames>
+            <Item Value="Trasllat" />
          </AttrNames>
          <ValueList>
             <Item Value="S" />

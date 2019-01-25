@@ -14,10 +14,11 @@ public class SgavcompararmanautoViewRowImpl extends ViewRowImpl implements es.sy
 
   public static final int IDARTIF = 0;
   public static final int DESCRIP = 1;
-  public static final int CONTENIDORS_AUTO = 2;
-  public static final int CANAUTO = 3;
-  public static final int CONTENIDORS_MAN = 4;
-  public static final int CANMAN = 5;
+  public static final int IDART = 2;
+  public static final int CONTENIDORSAUTO = 3;
+  public static final int CANAUTO = 4;
+  public static final int CONTENIDORSMAN = 5;
+  public static final int CANMAN = 6;
   /**
    * 
    *  This is the default constructor (do not remove)
@@ -62,23 +63,7 @@ public class SgavcompararmanautoViewRowImpl extends ViewRowImpl implements es.sy
     setAttributeInternal(DESCRIP, value);
   }
 
-  /**
-   * 
-   *  Gets the attribute value for the calculated attribute Contenidors_Auto
-   */
-  public Number getContenidors_Auto()
-  {
-    return (Number)getAttributeInternal(CONTENIDORS_AUTO);
-  }
 
-  /**
-   * 
-   *  Sets <code>value</code> as the attribute value for the calculated attribute Contenidors_Auto
-   */
-  public void setContenidors_Auto(Number value)
-  {
-    setAttributeInternal(CONTENIDORS_AUTO, value);
-  }
 
   /**
    * 
@@ -98,23 +83,7 @@ public class SgavcompararmanautoViewRowImpl extends ViewRowImpl implements es.sy
     setAttributeInternal(CANAUTO, value);
   }
 
-  /**
-   * 
-   *  Gets the attribute value for the calculated attribute Contenidors_Man
-   */
-  public Number getContenidors_Man()
-  {
-    return (Number)getAttributeInternal(CONTENIDORS_MAN);
-  }
 
-  /**
-   * 
-   *  Sets <code>value</code> as the attribute value for the calculated attribute Contenidors_Man
-   */
-  public void setContenidors_Man(Number value)
-  {
-    setAttributeInternal(CONTENIDORS_MAN, value);
-  }
 
   /**
    * 
@@ -143,17 +112,19 @@ public class SgavcompararmanautoViewRowImpl extends ViewRowImpl implements es.sy
     switch (index)
       {
       case IDARTIF:
-        return getidartif();
+        return getIdartif();
       case DESCRIP:
         return getDescrip();
-      case CONTENIDORS_AUTO:
-        return getContenidors_Auto();
+      case IDART:
+        return getIdart();
+      case CONTENIDORSAUTO:
+        return getContenidorsAuto();
       case CANAUTO:
-        return getcanauto();
-      case CONTENIDORS_MAN:
-        return getContenidors_Man();
+        return getCanauto();
+      case CONTENIDORSMAN:
+        return getContenidorsMan();
       case CANMAN:
-        return getcanman();
+        return getCanman();
       default:
         return super.getAttrInvokeAccessor(index, attrDef);
       }
@@ -168,26 +139,144 @@ public class SgavcompararmanautoViewRowImpl extends ViewRowImpl implements es.sy
     switch (index)
       {
       case IDARTIF:
-        setidartif((String)value);
+        setIdartif((String)value);
         return;
       case DESCRIP:
         setDescrip((String)value);
         return;
-      case CONTENIDORS_AUTO:
-        setContenidors_Auto((Number)value);
+      case IDART:
+        setIdart((String)value);
+        return;
+      case CONTENIDORSAUTO:
+        setContenidorsAuto((Number)value);
         return;
       case CANAUTO:
-        setcanauto((Number)value);
+        setCanauto((Number)value);
         return;
-      case CONTENIDORS_MAN:
-        setContenidors_Man((Number)value);
+      case CONTENIDORSMAN:
+        setContenidorsMan((Number)value);
         return;
       case CANMAN:
-        setcanman((Number)value);
+        setCanman((Number)value);
         return;
       default:
         super.setAttrInvokeAccessor(index, value, attrDef);
         return;
       }
   }
+
+  /**
+   * 
+   *  Gets the attribute value for the calculated attribute Idartif
+   */
+  public String getIdartif()
+  {
+    return (String)getAttributeInternal(IDARTIF);
+  }
+
+  /**
+   * 
+   *  Sets <code>value</code> as the attribute value for the calculated attribute Idartif
+   */
+  public void setIdartif(String value)
+  {
+    setAttributeInternal(IDARTIF, value);
+  }
+
+  /**
+   * 
+   *  Gets the attribute value for the calculated attribute Idart
+   */
+  public String getIdart()
+  {
+    return (String)getAttributeInternal(IDART);
+  }
+
+  /**
+   * 
+   *  Sets <code>value</code> as the attribute value for the calculated attribute Idart
+   */
+  public void setIdart(String value)
+  {
+    setAttributeInternal(IDART, value);
+  }
+
+  /**
+   * 
+   *  Gets the attribute value for the calculated attribute ContenidorsAuto
+   */
+  public Number getContenidorsAuto()
+  {
+    return (Number)getAttributeInternal(CONTENIDORSAUTO);
+  }
+
+  /**
+   * 
+   *  Sets <code>value</code> as the attribute value for the calculated attribute ContenidorsAuto
+   */
+  public void setContenidorsAuto(Number value)
+  {
+    setAttributeInternal(CONTENIDORSAUTO, value);
+  }
+
+  /**
+   * 
+   *  Gets the attribute value for the calculated attribute Canauto
+   */
+  public Number getCanauto()
+  {
+    return (Number)getAttributeInternal(CANAUTO);
+  }
+
+  /**
+   * 
+   *  Sets <code>value</code> as the attribute value for the calculated attribute Canauto
+   */
+  public void setCanauto(Number value)
+  {
+    setAttributeInternal(CANAUTO, value);
+  }
+
+  /**
+   * 
+   *  Gets the attribute value for the calculated attribute ContenidorsMan
+   */
+  public Number getContenidorsMan()
+  {
+    return (Number)getAttributeInternal(CONTENIDORSMAN);
+  }
+
+  /**
+   * 
+   *  Sets <code>value</code> as the attribute value for the calculated attribute ContenidorsMan
+   */
+  public void setContenidorsMan(Number value)
+  {
+    setAttributeInternal(CONTENIDORSMAN, value);
+  }
+
+  /**
+   * 
+   *  Gets the attribute value for the calculated attribute Canman
+   */
+  public Number getCanman()
+  {
+    return (Number)getAttributeInternal(CANMAN);
+  }
+
+  /**
+   * 
+   *  Sets <code>value</code> as the attribute value for the calculated attribute Canman
+   */
+  public void setCanman(Number value)
+  {
+    setAttributeInternal(CANMAN, value);
+  }
+
+
+
+
+
+
+
 }

@@ -150,11 +150,12 @@ public class Interflex extends SgaMainFrame implements PuestoListener, PuestoExt
       // TODO: Establim el tractament de les excepcions de l'appModule
       //appModule.setExceptionHandler();
       interflex.setAppModule(appModule);
+      ConnectionMetadata data = appModule.getTransaction().getConnectionMetadata();
       
-     ConnectionMetadata data = appModule.getTransaction().getConnectionMetadata();
- 
+      interflex.setDatabaseUser(data.getUserName());
+      
       // Verifiquem l'usuari
-      SgaJCLoginDialog loginDialog = new SgaJCLoginDialog("SGA (" + data.getJdbcURL() + " -> " + data.getUserName() + ")");
+      SgaJCLoginDialog loginDialog = new SgaJCLoginDialog("SGA (" + data.getJdbcURL() + " -> " + interflex.getDatabaseUser() + ")");
       
       if (!loginDialog.popupDialog())
         System.exit(1);
@@ -179,6 +180,10 @@ public class Interflex extends SgaMainFrame implements PuestoListener, PuestoExt
 
   }
   
+  
+ 
+  
+  
   /**
    * Cercar el puesto en el fitxer de propietats.
    * Si hi ha una definició de puesto de proves: fem servir aquest. 
@@ -188,10 +193,16 @@ public class Interflex extends SgaMainFrame implements PuestoListener, PuestoExt
   {
     if (puesto == null)
     {
-      puesto = SgaUtilPuesto.getInstance().getProperty("LlocTreballPruebas");
-      if (puesto == null)
-        puesto = SgaUtilPuesto.getInstance().getProperty("LlocTreball");
-    }
+      if (getDatabaseUser().equals("ifdbatest"))
+      {  
+        puesto = SgaUtilPuesto.getInstance().getProperty("LlocTreballPruebas");
+        if (puesto == null)
+          puesto = "0";
+      }
+      else
+        if (puesto == null)
+          puesto = SgaUtilPuesto.getInstance().getProperty("LlocTreball");
+      }
     
     return puesto;
 

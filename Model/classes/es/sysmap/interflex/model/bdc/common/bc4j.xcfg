@@ -3,7 +3,7 @@
    <AppModuleConfigBag>
       <AppModuleConfig name="AppModuleLocal">
          <DeployPlatform>LOCAL</DeployPlatform>
-         <JDBCName>interflex</JDBCName>
+         <JDBCName>servidorsga</JDBCName>
          <jbo.project>Model</jbo.project>
          <AppModuleJndiName>es.sysmap.interflex.model.dmc.AppModule</AppModuleJndiName>
          <jbo.security.enforce>None</jbo.security.enforce>
@@ -24,21 +24,6 @@
       <ENTRY name="ORACLE_JDBC_TYPE" value="thin"/>
       <ENTRY name="DeployPassword" value="true"/>
    </ConnectionDefinition>
-   <ConnectionDefinition name="servidorsga">
-      <ENTRY name="JDBC_PORT" value="1521"/>
-      <ENTRY name="ConnectionType" value="JDBC"/>
-      <ENTRY name="HOSTNAME" value="servidorsga"/>
-      <ENTRY name="DeployPassword" value="true"/>
-      <ENTRY name="user" value="ifdba"/>
-      <ENTRY name="ConnectionName" value="servidorsga"/>
-      <ENTRY name="SID" value="PROD"/>
-      <ENTRY name="password">
-         <![CDATA[{904}05AB75F6F2C244E052AA1BBBB88188F29E]]>
-      </ENTRY>
-      <ENTRY name="JdbcDriver" value="oracle.jdbc.driver.OracleDriver"/>
-      <ENTRY name="ORACLE_JDBC_TYPE" value="thin"/>
-      <ENTRY name="DeployPassword" value="true"/>
-   </ConnectionDefinition>
    <ConnectionDefinition name="interflex">
       <ENTRY name="JDBC_PORT" value="1521"/>
       <ENTRY name="ConnectionType" value="JDBC"/>
@@ -47,10 +32,37 @@
       <ENTRY name="user" value="ifdba"/>
       <ENTRY name="ConnectionName" value="interflex"/>
       <ENTRY name="SID" value="PROD"/>
-      <ENTRY name="password">
-         <![CDATA[{904}053B538452541A9521A478A3EC35F659AA]]>
-      </ENTRY>
+      <ENTRY name="password">{904}056B9475E0B8157F003BFE99DB377F6EFC</ENTRY>
       <ENTRY name="JdbcDriver" value="oracle.jdbc.driver.OracleDriver"/>
+      <ENTRY name="ORACLE_JDBC_TYPE" value="thin"/>
+      <ENTRY name="DeployPassword" value="true"/>
+   </ConnectionDefinition>
+   <ConnectionDefinition name="ifdbatest">
+      <ENTRY name="JDBC_PORT" value="1521"/>
+      <ENTRY name="ConnectionType" value="JDBC"/>
+      <ENTRY name="HOSTNAME" value="servidorsga"/>
+      <ENTRY name="user" value="ifdbatest"/>
+      <ENTRY name="ConnectionName" value="ifdbatest"/>
+      <ENTRY name="SID" value="prod"/>
+      <ENTRY name="JdbcDriver" value="oracle.jdbc.driver.OracleDriver"/>
+      <ENTRY name="password">
+         <![CDATA[{904}05CE23E5F05045D76CFC2C33BCA0CCC5F885182FD97CADFD4D]]>
+      </ENTRY>
+      <ENTRY name="ORACLE_JDBC_TYPE" value="thin"/>
+      <ENTRY name="DeployPassword" value="true"/>
+   </ConnectionDefinition>
+   <ConnectionDefinition name="servidorsga">
+      <ENTRY name="JDBC_PORT" value="1521"/>
+      <ENTRY name="ConnectionType" value="JDBC"/>
+      <ENTRY name="HOSTNAME" value="servidorsga"/>
+      <ENTRY name="DeployPassword" value="true"/>
+      <ENTRY name="user" value="ifdba"/>
+      <ENTRY name="ConnectionName" value="servidorsga"/>
+      <ENTRY name="SID" value="PROD"/>
+      <ENTRY name="JdbcDriver" value="oracle.jdbc.driver.OracleDriver"/>
+      <ENTRY name="password">
+         <![CDATA[{904}05BC089F5202EF37407255B03CB8B3AD19]]>
+      </ENTRY>
       <ENTRY name="ORACLE_JDBC_TYPE" value="thin"/>
       <ENTRY name="DeployPassword" value="true"/>
    </ConnectionDefinition>

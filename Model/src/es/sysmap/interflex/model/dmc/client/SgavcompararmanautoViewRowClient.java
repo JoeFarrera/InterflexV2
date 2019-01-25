@@ -22,4 +22,7 @@ public class SgavcompararmanautoViewRowClient extends RowImpl
   }
 
 
+
+
+
 }

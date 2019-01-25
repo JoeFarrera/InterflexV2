@@ -42,35 +42,37 @@
                <duringFilters/>
                <selectedArchives>
                   <archives>
-                     <Item protocol="jar" path="file:/C:/jdev1012-1/BC4J/lib/adfm.jar!/"/>
-                     <Item protocol="jar" path="file:/C:/jdev1012-1/BC4J/jlib/adfjclient.jar!/"/>
-                     <Item protocol="jar" path="file:/C:/jdev1012-1/jlib/bigraphbean.jar!/"/>
-                     <Item protocol="jar" path="file:/C:/jdev1012-1/jlib/LW_PfjBean.jar!/"/>
-                     <Item protocol="jar" path="file:/C:/jdev1012-1/BC4J/lib/bc4jimdomains.jar!/"/>
-                     <Item protocol="jar" path="file:/C:/jdev1012-1/BC4J/jlib/bc4jimjui.jar!/"/>
-                     <Item protocol="jar" path="file:/C:/jdev1012-1/ord/jlib/ordim.jar!/"/>
-                     <Item protocol="jar" path="file:/C:/jdev1012-1/ord/jlib/ordhttp.jar!/"/>
-                     <Item protocol="jar" path="file:/C:/jdev1012-1/ord/jlib/jmf.jar!/"/>
-                     <Item protocol="jar" path="file:/C:/jdev1012-1/jlib/share.jar!/"/>
-                     <Item protocol="jar" path="file:/C:/jdev1012-1/jlib/jewt4.jar!/"/>
-                     <Item protocol="jar" path="file:/C:/jdev1012-1/jlib/inspect4.jar!/"/>
-                     <Item protocol="jar" path="file:/C:/jdev1012-1/jlib/help4.jar!/"/>
-                     <Item protocol="jar" path="file:/C:/jdev1012-1/BC4J/jlib/bc4jdatum.jar!/"/>
-                     <Item protocol="jar" path="file:/C:/jdev1012-1/lib/xmlparserv2.jar!/"/>
-                     <Item protocol="jar" path="file:/C:/jdev1012-1/lib/xmlcomp.jar!/"/>
-                     <Item protocol="jar" path="file:/C:/jdev1012-1/jdev/lib/jdev-rt.jar!/"/>
-                     <Item protocol="jar" path="file:/C:/jdev1012-1/sqlj/lib/runtime12.jar!/"/>
-                     <Item protocol="jar" path="file:/C:/jdev1012-1/BC4J/lib/bc4jmt.jar!/"/>
-                     <Item protocol="jar" path="file:/C:/jdev1012-1/BC4J/lib/collections.jar!/"/>
-                     <Item protocol="jar" path="file:/C:/jdev1012-1/BC4J/lib/bc4jct.jar!/"/>
-                     <Item protocol="jar" path="file:/C:/jdev1012-1/lib/xmlparserv2.jar!/"/>
-                     <Item protocol="jar" path="file:/C:/jdev1012-1/jlib/jdev-cm.jar!/"/>
-                     <Item protocol="jar" path="file:/C:/jdev1012-1/jlib/ojmisc.jar!/"/>
-                     <Item protocol="jar" path="file:/C:/jdev1012-1/jdbc/lib/classes12.jar!/"/>
-                     <Item protocol="jar" path="file:/C:/jdev1012-1/jdbc/lib/nls_charset12.jar!/"/>
-                     <Item protocol="jar" path="file:/C:/jdev1012-1/jlib/jdev-cm.jar!/"/>
-                     <Item protocol="jar" path="file:/C:/jdev1012-1/BC4J/lib/bc4jdomorcl.jar!/"/>
-                     <Item path="../sysmap/ChainsawV2/log4j-1.3alpha.jar" jar-entry=""/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/BC4J/lib/adfm.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/BC4J/jlib/adfjclient.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/jlib/bigraphbean.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/jlib/LW_PfjBean.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/BC4J/lib/bc4jimdomains.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/BC4J/jlib/bc4jimjui.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/ord/jlib/ordim.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/ord/jlib/ordhttp.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/ord/jlib/jmf.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/jlib/share.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/jlib/jewt4.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/jlib/inspect4.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/jlib/help4.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/BC4J/jlib/bc4jdatum.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/lib/xmlparserv2.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/lib/xmlcomp.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/jdev/lib/jdev-rt.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/sqlj/lib/runtime12.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/BC4J/lib/bc4jmt.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/BC4J/lib/collections.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/BC4J/lib/bc4jct.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/lib/xmlparserv2.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/jlib/jdev-cm.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/jlib/ojmisc.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/jdbc/lib/classes12.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/jdbc/lib/nls_charset12.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/jlib/jdev-cm.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/BC4J/lib/bc4jdomorcl.jar!/"/>
+                     <Item path="../sysmap/ChainsawV2/log4j-1.3alpha-7.jar" jar-entry=""/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/BC4J/lib/adfm.jar!/"/>
+                     <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/BC4J/lib/collections.jar!/"/>
                   </archives>
                   <selectionMode>0</selectionMode>
                </selectedArchives>

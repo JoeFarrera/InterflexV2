@@ -71,9 +71,9 @@
                      <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/jdbc/lib/nls_charset12.jar!/"/>
                      <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/jlib/jdev-cm.jar!/"/>
                      <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/BC4J/lib/bc4jdomorcl.jar!/"/>
-                     <Item path="../../sysmap/ChainsawV2/log4j-1.3alpha-7.jar" jar-entry=""/>
                      <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/BC4J/lib/adfm.jar!/"/>
                      <Item protocol="jar" path="file:/C:/Program Files (x86)/jdev1012-1/BC4J/lib/collections.jar!/"/>
+                     <Item path="../../sysmap/ChainsawV2/log4j-1.3alpha.jar" jar-entry=""/>
                   </archives>
                   <selectionMode>0</selectionMode>
                </selectedArchives>
@@ -82,6 +82,6 @@
          </Item>
       </groups>
    </fileGroups>
-   <jarURL path="../../../SgaDeploy/ControlView/ControlView.jar"/>
+   <jarURL path="../../../SgaDeploy/ControlView/ControlView2019.jar"/>
    <profileDeps/>
 </simple-archive-deployment>

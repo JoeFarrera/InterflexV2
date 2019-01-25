@@ -9,17 +9,12 @@
       <Item class="oracle.jdeveloper.library.ProjectLibrary">
          <locked>true</locked>
          <sourceOwnerURL path="../InterflexV2.jws"/>
-         <sourceURL path="../ModelRpsProd/ModelRpsProd.jpr"/>
-      </Item>
-      <Item class="oracle.jdeveloper.library.ProjectLibrary">
-         <locked>true</locked>
-         <sourceOwnerURL path="../InterflexV2.jws"/>
-         <sourceURL path="../ModelRps/ModelRps.jpr"/>
+         <sourceURL path="../RpsInterface/RpsInterface.jpr"/>
       </Item>
       <Item class="oracle.jdeveloper.library.ProjectLibrary">
          <locked>true</locked>
          <sourceOwnerURL path="../Interflex.jws"/>
-         <sourceURL path="../Model/Model.jpr"/>
+         <sourceURL path="../PlcDriver/PlcDriver.jpr"/>
       </Item>
       <Item class="oracle.jdeveloper.library.ProjectLibrary">
          <locked>true</locked>
@@ -29,12 +24,17 @@
       <Item class="oracle.jdeveloper.library.ProjectLibrary">
          <locked>true</locked>
          <sourceOwnerURL path="../Interflex.jws"/>
-         <sourceURL path="../PlcDriver/PlcDriver.jpr"/>
+         <sourceURL path="../Model/Model.jpr"/>
       </Item>
       <Item class="oracle.jdeveloper.library.ProjectLibrary">
          <locked>true</locked>
          <sourceOwnerURL path="../InterflexV2.jws"/>
-         <sourceURL path="../RpsInterface/RpsInterface.jpr"/>
+         <sourceURL path="../ModelRps/ModelRps.jpr"/>
+      </Item>
+      <Item class="oracle.jdeveloper.library.ProjectLibrary">
+         <locked>true</locked>
+         <sourceOwnerURL path="../InterflexV2.jws"/>
+         <sourceURL path="../ModelRpsProd/ModelRpsProd.jpr"/>
       </Item>
    </dependencyList>
    <htmlRootDirectory path="public_html/"/>
@@ -134,10 +134,6 @@
          <nodeClass>oracle.bali.xml.addin.XMLSourceNode</nodeClass>
       </Item>
       <Item class="oracle.ide.model.Reference">
-         <URL protocol="file" path="/Documents and Settings/Michael Loughlin/map.properties"/>
-         <nodeClass>oracle.ide.model.DeployableTextNode</nodeClass>
-      </Item>
-      <Item class="oracle.ide.model.Reference">
          <URL path="../PlcDriver/movi56alpasillo.xml"/>
          <nodeClass>oracle.bali.xml.addin.XMLSourceNode</nodeClass>
       </Item>
@@ -176,10 +172,6 @@
       <Item class="oracle.ide.model.Reference">
          <URL path="src/es/sysmap/interflex/control/SalidaPuesto.java"/>
          <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
-      </Item>
-      <Item class="oracle.ide.model.Reference">
-         <URL path="../../logs/interflex/SGA_log4j.log"/>
-         <nodeClass>oracle.ide.model.DeployableTextNode</nodeClass>
       </Item>
       <Item class="oracle.ide.model.Reference">
          <URL path="src/es/sysmap/interflex/control/SgaProceso.java"/>

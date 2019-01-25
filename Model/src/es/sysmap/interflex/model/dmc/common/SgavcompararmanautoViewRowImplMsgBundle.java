@@ -26,18 +26,15 @@ public class SgavcompararmanautoViewRowImplMsgBundle extends JboResourceBundle
   }
 
   static final Object[][] sMessageStrings = {
-    {"Contenidors_Auto_LABEL", "Contenidors Auto"},
-    {"Contenidors_Man_DISPLAYWIDTH", "30"},
     {"idartif_LABEL", "Article"},
     {"canauto_LABEL", "Cant. Auto"},
     {"Descrip_DISPLAYWIDTH", "30"},
-    {"Contenidors_Man_LABEL", "Contenidors Manual"},
     {"canauto_DISPLAYWIDTH", "5"},
     {"canman_LABEL", "Cant. Manual"},
     {"idartif_DISPLAYWIDTH", "6"},
     {"Descrip_LABEL", "Descrip"},
-    {"canman_DISPLAYWIDTH", "5"},
-    {"Contenidors_Auto_DISPLAYWIDTH", "30"}};
+    {"canman_DISPLAYWIDTH", "5"}};
+
 
 
 

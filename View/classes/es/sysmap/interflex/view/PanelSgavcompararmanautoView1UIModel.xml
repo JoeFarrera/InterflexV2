@@ -19,16 +19,17 @@
          id="SgavcompararmanautoView1"
          DefClass="oracle.jbo.uicli.jui.JUTableDef"
          SubType="DCTable"
+         BindingClass="oracle.jbo.uicli.jui.JUTableBinding"
          IterBinding="SgavcompararmanautoView1Iter"
          ApplyValidation="false"
          isDynamic="false" >
          <AttrNames>
-            <Item Value="idartif" />
             <Item Value="Descrip" />
-            <Item Value="Contenidors_Auto" />
-            <Item Value="canauto" />
-            <Item Value="Contenidors_Man" />
-            <Item Value="canman" />
+            <Item Value="Canauto" />
+            <Item Value="Canman" />
+            <Item Value="ContenidorsAuto" />
+            <Item Value="ContenidorsMan" />
+            <Item Value="Idartif" />
          </AttrNames>
       </DCControl>
    </Contents>

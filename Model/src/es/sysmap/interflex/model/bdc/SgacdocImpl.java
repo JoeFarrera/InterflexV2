@@ -1481,7 +1481,7 @@ public class SgacdocImpl extends EntityImpl
   {
     boolean result;
     String cabnum = getIdcabnum();
-    result = cabnum.startsWith("VX/");
+    result = cabnum.startsWith("VX");
     return result;
   }
 

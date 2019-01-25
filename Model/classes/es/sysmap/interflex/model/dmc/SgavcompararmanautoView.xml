@@ -13,7 +13,7 @@
    ClientRowProxyName="es.sysmap.interflex.model.dmc.client.SgavcompararmanautoViewRowClient"
    UseGlueCode="false" >
    <SQLQuery><![CDATA[
-select idartif, descrip, contenidors_auto, canauto , contenidors_man , canman from sgavcompararmanauto
+select idartif, descrip, idart, contenidors_auto, canauto , contenidors_man , canman from sgavcompararmanauto
    ]]></SQLQuery>
    <DesignTime>
       <Attr Name="_isCodegen" Value="true" />
@@ -22,15 +22,15 @@ select idartif, descrip, contenidors_auto, canauto , contenidors_man , canman fr
       <Attr Name="_isExpertMode" Value="true" />
    </DesignTime>
    <ViewAttribute
-      Name="idartif"
+      Name="Idartif"
       IsPersistent="false"
       IsNotNull="true"
       PrecisionRule="true"
       Precision="14"
       Type="java.lang.String"
       ColumnType="VARCHAR2"
-      AliasName="idartif"
-      Expression="Article"
+      AliasName="IDARTIF"
+      Expression="IDARTIF"
       SQLType="VARCHAR" >
       <DesignTime>
          <Attr Name="_DisplaySize" Value="14" />
@@ -52,52 +52,67 @@ select idartif, descrip, contenidors_auto, canauto , contenidors_man , canman fr
       </DesignTime>
    </ViewAttribute>
    <ViewAttribute
-      Name="Contenidors_Auto"
+      Name="Idart"
+      IsPersistent="false"
+      IsNotNull="true"
+      PrecisionRule="true"
+      Precision="14"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="IDART"
+      Expression="IDART"
+      SQLType="VARCHAR" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="14" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ContenidorsAuto"
       IsPersistent="false"
       PrecisionRule="true"
       Type="oracle.jbo.domain.Number"
       ColumnType="NUMBER"
-      AliasName="contenidors_auto"
-      Expression="Cont. Auto"
+      AliasName="CONTENIDORS_AUTO"
+      Expression="CONTENIDORS_AUTO"
       SQLType="NUMERIC" >
       <DesignTime>
          <Attr Name="_DisplaySize" Value="22" />
       </DesignTime>
    </ViewAttribute>
    <ViewAttribute
-      Name="canauto"
+      Name="Canauto"
       IsPersistent="false"
       PrecisionRule="true"
       Type="oracle.jbo.domain.Number"
       ColumnType="NUMBER"
-      AliasName="canauto"
-      Expression="Cant. Auto."
+      AliasName="CANAUTO"
+      Expression="CANAUTO"
       SQLType="NUMERIC" >
       <DesignTime>
          <Attr Name="_DisplaySize" Value="22" />
       </DesignTime>
    </ViewAttribute>
    <ViewAttribute
-      Name="Contenidors_Man"
+      Name="ContenidorsMan"
       IsPersistent="false"
       PrecisionRule="true"
       Type="oracle.jbo.domain.Number"
       ColumnType="NUMBER"
-      AliasName="contenidors_man"
-      Expression="Cont. Man."
+      AliasName="CONTENIDORS_MAN"
+      Expression="CONTENIDORS_MAN"
       SQLType="NUMERIC" >
       <DesignTime>
          <Attr Name="_DisplaySize" Value="22" />
       </DesignTime>
    </ViewAttribute>
    <ViewAttribute
-      Name="canman"
+      Name="Canman"
       IsPersistent="false"
       PrecisionRule="true"
       Type="oracle.jbo.domain.Number"
       ColumnType="NUMBER"
-      AliasName="canman"
-      Expression="Cant. Manual"
+      AliasName="CANMAN"
+      Expression="CANMAN"
       SQLType="NUMERIC" >
       <DesignTime>
          <Attr Name="_DisplaySize" Value="22" />

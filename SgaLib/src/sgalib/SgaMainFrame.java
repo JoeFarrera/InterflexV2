@@ -25,6 +25,8 @@ public abstract class SgaMainFrame extends JFrame implements SgaMainFrameInterfa
   // form layout
   private BorderLayout borderLayoutContentPane = new BorderLayout();
   
+  private String dataBaseUser = null;
+  
   // Subpanels de l'splitpane
   private JSplitPane jSplitPane = new JSplitPane();
   private SgaMenuTree jScrollPane = null;
@@ -145,7 +147,7 @@ public abstract class SgaMainFrame extends JFrame implements SgaMainFrameInterfa
     jSplitPane.setRightComponent(jDesktopPane);
     jSplitPane.setLeftComponent(jScrollPane);
     
-    this.setTitle("[" + getCurrentUser () + "] - " + SgaRecursos.getInstance().getString("Frame.title"));
+    this.setTitle("[" + getCurrentUser () + "] - " + SgaRecursos.getInstance().getString("Frame.title") + " [DB:" + getDatabaseUser() + "]" );
 
     
     jSplitPane.add(jScrollPane, JSplitPane.LEFT);
@@ -510,6 +512,16 @@ public abstract class SgaMainFrame extends JFrame implements SgaMainFrameInterfa
     h.put(JboContext.SECURITY_PRINCIPAL, user);
   }
 
+
+  public void setDatabaseUser (String name)
+  {
+    dataBaseUser = name;
+  }
+  
+  public String getDatabaseUser ()
+  {
+    return dataBaseUser;
+  }
   /**
    * Retorna el password de l'usuari
    * @return 

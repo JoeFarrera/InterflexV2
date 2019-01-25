@@ -9,12 +9,7 @@
    <dependencyList class="java.util.ArrayList">
       <Item class="oracle.jdeveloper.library.ProjectLibrary">
          <locked>true</locked>
-         <sourceOwnerURL path="../InterflexV2.jws"/>
-         <sourceURL path="../Bascula/Bascula.jpr"/>
-      </Item>
-      <Item class="oracle.jdeveloper.library.ProjectLibrary">
-         <locked>true</locked>
-         <sourceOwnerURL path="../InterflexV2.jws"/>
+         <sourceOwnerURL path="../Interflex.jws"/>
          <sourceURL path="../Model/Model.jpr"/>
       </Item>
       <Item class="oracle.jdeveloper.library.ProjectLibrary">
@@ -24,8 +19,13 @@
       </Item>
       <Item class="oracle.jdeveloper.library.ProjectLibrary">
          <locked>true</locked>
-         <sourceOwnerURL path="../Interflex.jws"/>
+         <sourceOwnerURL path="../InterflexV2.jws"/>
          <sourceURL path="../Model/Model.jpr"/>
+      </Item>
+      <Item class="oracle.jdeveloper.library.ProjectLibrary">
+         <locked>true</locked>
+         <sourceOwnerURL path="../InterflexV2.jws"/>
+         <sourceURL path="../Bascula/Bascula.jpr"/>
       </Item>
    </dependencyList>
    <htmlRootDirectory path="public_html/"/>
@@ -1281,6 +1281,10 @@
          <nodeClass>oracle.ide.model.DeployableTextNode</nodeClass>
       </Item>
       <Item class="oracle.ide.model.Reference">
+         <URL protocol="file" path="/C:/logs/rolling.31-12-2018.7.log"/>
+         <nodeClass>oracle.ide.model.DeployableTextNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
          <URL path="src/resources/images/run.gif"/>
          <nodeClass>oracle.jdeveloper.model.GifImageNode</nodeClass>
       </Item>
@@ -1667,11 +1671,11 @@
          <Key>technologyScope</Key>
          <Value class="oracle.ide.model.TechnologyScope">
             <technologyKeys>
-               <Item>Java</Item>
-               <Item>JClient</Item>
-               <Item>JavaBeans</Item>
-               <Item>General</Item>
                <Item>Swing/AWT</Item>
+               <Item>General</Item>
+               <Item>JavaBeans</Item>
+               <Item>JClient</Item>
+               <Item>Java</Item>
             </technologyKeys>
          </Value>
       </Item>

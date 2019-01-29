@@ -37,9 +37,11 @@ import sgalib.SgaJUErrorHandler;
 import sgalib.SgaJUPanel;
 import sgalib.SgaRecursos;
 import sgalib.SgaUtilPuesto;
+import java.awt.BorderLayout;
+import javax.swing.JLabel;
 
 public class PanelSgaldocEntradesView4 extends SgaJUPanel implements Observer
-// public class PanelSgaldocEntradesView4 extends JPanel implements Observer, JUPanel
+//public class PanelSgaldocEntradesView4 extends JPanel implements Observer, JUPanel
 {
   PanelSgavarticulomodpesView panelModPes;
   // Panel binding definition used by design time
@@ -163,6 +165,8 @@ public class PanelSgaldocEntradesView4 extends SgaJUPanel implements Observer
   private Key [] rowsSelected;
   private int rowIndex = 0; 
   private JTextField liniesPendents = new JTextField();
+  private JLabel labelEspecial = new JLabel();
+  private JComboBox mIdEspecial = new JComboBox();
   
   
   
@@ -284,8 +288,8 @@ public class PanelSgaldocEntradesView4 extends SgaJUPanel implements Observer
     mDescrip.setFocusable(false);
 
     mIdmac.setDocument((Document)panelBinding.bindUIControl("Idmac", mIdmac));
-    macPanel.add(labelIdmac, new GridBagConstraints(0, 3, 1, 1, 0.0, 0.0, GridBagConstraints.WEST, GridBagConstraints.RELATIVE, new Insets(0, 0, 0, 5), 1, 1));
-    macPanel.add(mIdmac, new GridBagConstraints(1, 3, 1, 1, 0.0, 0.0, GridBagConstraints.WEST, GridBagConstraints.RELATIVE, new Insets(0, 0, 0, 5), 1, 1));
+    macPanel.add(labelIdmac, new GridBagConstraints(0, 0, 1, 1, 0.0, 0.0, GridBagConstraints.WEST, GridBagConstraints.NONE, new Insets(0, 0, 0, 5), 1, 1));
+    macPanel.add(mIdmac, new GridBagConstraints(1, 0, 1, 1, 0.0, 0.0, GridBagConstraints.WEST, GridBagConstraints.NONE, new Insets(0, 0, 0, 5), 1, 1));
     labelIdmac.setLabelFor(mIdmac);
     labelIdmac.setFont(new Font("Tahoma", 1, 14));
     mIdmac.setColumns(8);
@@ -294,8 +298,8 @@ public class PanelSgaldocEntradesView4 extends SgaJUPanel implements Observer
     mIdmac.setToolTipText(panelBinding.findCtrlValueBinding("Idmac").getTooltip());
 
     mCancon.setDocument((Document)panelBinding.bindUIControl("Cancon", mCancon));
-    macPanel.add(labelCancon, new GridBagConstraints(2, 3, 1, 1, 0.0, 0.0, GridBagConstraints.WEST, GridBagConstraints.RELATIVE, new Insets(0, 0, 0, 5), 1, 1));
-    macPanel.add(mCancon, new GridBagConstraints(3, 3, 1, 1, 0.0, 0.0, GridBagConstraints.WEST, GridBagConstraints.RELATIVE, new Insets(0, 0, 0, 5), 1, 1));
+    macPanel.add(labelCancon, new GridBagConstraints(2, 0, 1, 1, 0.0, 0.0, GridBagConstraints.WEST, GridBagConstraints.NONE, new Insets(0, 0, 0, 5), 1, 1));
+    macPanel.add(mCancon, new GridBagConstraints(3, 0, 1, 1, 0.0, 0.0, GridBagConstraints.WEST, GridBagConstraints.NONE, new Insets(0, 0, 0, 5), 1, 1));
     labelCancon.setLabelFor(mCancon);
     labelCancon.setFont(new Font("Tahoma", 1, 14));
     mCancon.setColumns(6);
@@ -311,8 +315,8 @@ public class PanelSgaldocEntradesView4 extends SgaJUPanel implements Observer
       });
 
     mIdtipmac.setModel((ComboBoxModel)panelBinding.bindUIControl("Idtipmac1", mIdtipmac));
-    macPanel.add(labelIdtipmac, new GridBagConstraints(4, 3, 1, 1, 0.0, 0.0, GridBagConstraints.WEST, GridBagConstraints.RELATIVE, new Insets(0, 0, 0, 5), 1, 1));
-    macPanel.add(mIdtipmac, new GridBagConstraints(5, 3, 1, 1, 0.0, 0.0, GridBagConstraints.WEST, GridBagConstraints.RELATIVE, new Insets(0, 0, 0, 5), 1, 1));
+    macPanel.add(labelIdtipmac, new GridBagConstraints(4, 0, 1, 1, 0.0, 0.0, GridBagConstraints.WEST, GridBagConstraints.NONE, new Insets(0, 0, 0, 5), 1, 1));
+    macPanel.add(mIdtipmac, new GridBagConstraints(5, 0, 1, 1, 0.0, 0.0, GridBagConstraints.WEST, GridBagConstraints.NONE, new Insets(0, 0, 0, 5), 1, 1));
     labelIdtipmac.setLabelFor(mIdtipmac);
     mIdtipmac.setEditable(false);
     labelIdtipmac.setText(panelBinding.findCtrlValueBinding("Idtipmac").getLabel());
@@ -324,23 +328,23 @@ public class PanelSgaldocEntradesView4 extends SgaJUPanel implements Observer
     }
 
     mMultiref.setModel((ButtonModel)panelBinding.bindUIControl("Multiref", mMultiref));
-    macPanel.add(labelMultiref, new GridBagConstraints(0, 4, 1, 1, 0.0, 0.0, GridBagConstraints.WEST, GridBagConstraints.RELATIVE, new Insets(0, 0, 0, 5), 1, 1));
-    macPanel.add(mMultiref, new GridBagConstraints(1, 4, 1, 1, 0.0, 0.0, GridBagConstraints.WEST, GridBagConstraints.RELATIVE, new Insets(0, 0, 0, 5), 1, 1));
+    macPanel.add(labelMultiref, new GridBagConstraints(0, 1, 1, 1, 0.0, 0.0, GridBagConstraints.WEST, GridBagConstraints.NONE, new Insets(0, 0, 0, 5), 1, 1));
+    macPanel.add(mMultiref, new GridBagConstraints(1, 1, 1, 1, 0.0, 0.0, GridBagConstraints.WEST, GridBagConstraints.NONE, new Insets(0, 0, 0, 5), 1, 1));
     labelMultiref.setLabelFor(mMultiref);
     labelMultiref.setText(panelBinding.findCtrlValueBinding("Multiref").getLabel());
     mMultiref.setToolTipText(panelBinding.findCtrlValueBinding("Multiref").getTooltip());
 
     mIntegra.setModel((ButtonModel)panelBinding.bindUIControl("Integra", mIntegra));
-    macPanel.add(labelIntegra, new GridBagConstraints(0, 5, 1, 1, 0.0, 0.0, GridBagConstraints.WEST, GridBagConstraints.RELATIVE, new Insets(0, 0, 0, 5), 1, 1));
-    macPanel.add(mIntegra, new GridBagConstraints(1, 5, 1, 1, 0.0, 0.0, GridBagConstraints.WEST, GridBagConstraints.RELATIVE, new Insets(0, 0, 0, 5), 1, 1));
+    macPanel.add(labelIntegra, new GridBagConstraints(0, 2, 1, 1, 0.0, 0.0, GridBagConstraints.WEST, GridBagConstraints.NONE, new Insets(0, 0, 0, 5), 1, 1));
+    macPanel.add(mIntegra, new GridBagConstraints(1, 2, 1, 1, 0.0, 0.0, GridBagConstraints.WEST, GridBagConstraints.NONE, new Insets(0, 0, 0, 5), 1, 1));
     labelIntegra.setLabelFor(mIntegra);
     labelIntegra.setText(panelBinding.findCtrlValueBinding("Integra").getLabel());
     mIntegra.setToolTipText(panelBinding.findCtrlValueBinding("Integra").getTooltip());
     
 
     mDifpes.setDocument((Document)panelBinding.bindUIControl("Difpes", mDifpes));
-    macPanel.add(labelDifpes, new GridBagConstraints(2, 4, 1, 1, 0.0, 0.0, GridBagConstraints.WEST, GridBagConstraints.RELATIVE, new Insets(0, 0, 0, 5), 1, 1));
-    macPanel.add(mDifpes, new GridBagConstraints(3, 4, 1, 1, 0.0, 0.0, GridBagConstraints.WEST, GridBagConstraints.RELATIVE, new Insets(0, 0, 0, 5), 1, 1));
+    macPanel.add(labelDifpes, new GridBagConstraints(2, 1, 1, 1, 0.0, 0.0, GridBagConstraints.WEST, GridBagConstraints.NONE, new Insets(0, 0, 0, 5), 1, 1));
+    macPanel.add(mDifpes, new GridBagConstraints(3, 1, 1, 1, 0.0, 0.0, GridBagConstraints.WEST, GridBagConstraints.NONE, new Insets(0, 0, 0, 5), 1, 1));
     labelDifpes.setLabelFor(mDifpes);
     mDifpes.setColumns(6);
     mDifpes.setEditable(false);
@@ -348,8 +352,8 @@ public class PanelSgaldocEntradesView4 extends SgaJUPanel implements Observer
     mDifpes.setToolTipText(panelBinding.findCtrlValueBinding("Difpes").getTooltip());
 
     mPesini.setDocument((Document)panelBinding.bindUIControl("Pesini", mPesini));
-    macPanel.add(labelPesini, new GridBagConstraints(2, 5, 1, 1, 0.0, 0.0, GridBagConstraints.WEST, GridBagConstraints.RELATIVE, new Insets(0, 0, 0, 5), 1, 1));
-    macPanel.add(mPesini, new GridBagConstraints(3, 5, 1, 1, 0.0, 0.0, GridBagConstraints.WEST, GridBagConstraints.RELATIVE, new Insets(0, 0, 0, 5), 1, 1));
+    macPanel.add(labelPesini, new GridBagConstraints(2, 2, 1, 1, 0.0, 0.0, GridBagConstraints.WEST, GridBagConstraints.NONE, new Insets(0, 0, 0, 5), 1, 1));
+    macPanel.add(mPesini, new GridBagConstraints(3, 2, 1, 1, 0.0, 0.0, GridBagConstraints.WEST, GridBagConstraints.NONE, new Insets(0, 0, 0, 5), 1, 1));
     labelPesini.setLabelFor(mPesini);
     mPesini.setColumns(6);
     mPesini.setEditable(false);
@@ -357,8 +361,10 @@ public class PanelSgaldocEntradesView4 extends SgaJUPanel implements Observer
     mPesini.setToolTipText(panelBinding.findCtrlValueBinding("Pesini").getTooltip());
 
     mPesfin.setDocument((Document)panelBinding.bindUIControl("Pesfin", mPesfin));
-    macPanel.add(labelPesfin, new GridBagConstraints(2, 6, 1, 1, 0.0, 0.0, GridBagConstraints.WEST, GridBagConstraints.RELATIVE, new Insets(0, 0, 0, 5), 1, 1));
-    macPanel.add(mPesfin, new GridBagConstraints(3, 6, 1, 1, 0.0, 0.0, GridBagConstraints.WEST, GridBagConstraints.RELATIVE, new Insets(0, 0, 0, 5), 1, 1));
+    macPanel.add(labelPesfin, new GridBagConstraints(2, 3, 1, 1, 0.0, 0.0, GridBagConstraints.WEST, GridBagConstraints.NONE, new Insets(0, 0, 0, 5), 1, 1));
+    macPanel.add(mPesfin, new GridBagConstraints(3, 3, 1, 1, 0.0, 0.0, GridBagConstraints.WEST, GridBagConstraints.NONE, new Insets(0, 0, 0, 5), 1, 1));
+    macPanel.add(labelEspecial, new GridBagConstraints(0, 3, 1, 1, 0.0, 0.0, GridBagConstraints.WEST, GridBagConstraints.NONE, new Insets(0, 0, 0, 0), 0, 0));
+    macPanel.add(mIdEspecial, new GridBagConstraints(1, 3, 1, 1, 0.0, 0.0, GridBagConstraints.CENTER, GridBagConstraints.NONE, new Insets(0, 0, 0, 0), 0, 0));
     labelPesfin.setLabelFor(mPesfin);
     mPesfin.setColumns(6);
     mPesfin.setEditable(false);
@@ -405,7 +411,11 @@ public class PanelSgaldocEntradesView4 extends SgaJUPanel implements Observer
     
     // Michael 09.03.2006 Just get first row for speed
     ViewObject vo = panelBinding.findIteratorBinding("SgaldocEntradesView3Iter").getViewObject();
+    labelEspecial.setToolTipText("null");
+    labelEspecial.setText("Especial");
     vo.setMaxFetchSize(1);
+    
+    mIdEspecial.setModel((ComboBoxModel)panelBinding.bindUIControl("DCComboBox", mIdEspecial));
     
   }
 
@@ -457,7 +467,7 @@ public class PanelSgaldocEntradesView4 extends SgaJUPanel implements Observer
       if (verificarDades())
       {
         
-        String idubi = appModule.getUbicacionPuesto(SgaUtilPuesto.getInstance().getProperty("LlocTreball"), tipoCarga);
+        String idubi = appModule.getUbicacionPuesto(Interflex.getInterflexInstance().getPuesto(), tipoCarga);
         
         if (idubi != null)
         {

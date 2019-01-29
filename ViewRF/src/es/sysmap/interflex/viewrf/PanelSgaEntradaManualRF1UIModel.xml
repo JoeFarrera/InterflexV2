@@ -16,6 +16,16 @@
          Binds="AppModuleDataControl1.SgaEntradaManualRF1"
          RangeSize="10" >
       </DCIterator>
+      <DCIterator
+         id="SgaEntradaManualRF1Iterator1"
+         Binds="AppModuleDataControl1.SgaEntradaManualRF1"
+         RangeSize="10" >
+      </DCIterator>
+      <DCIterator
+         id="SgaRefCodesEspecialExistViewIterator"
+         Binds="AppModuleDataControl1.SgaRefCodesEspecialExistView"
+         RangeSize="10" >
+      </DCIterator>
       <DCControl
          id="Etiqueta"
          SubType="DCTextField"
@@ -154,6 +164,27 @@
             <Item Value="S" />
             <Item Value="N" />
          </ValueList>
+      </DCControl>
+      <DCControl
+         id="Especial"
+         DefClass="oracle.jbo.uicli.jui.JUComboBoxDef"
+         SubType="DCComboBox"
+         IterBinding="SgaEntradaManualRF1Iterator"
+         DTClass="oracle.adf.dt.objects.JUDTCtrlListLOV"
+         ApplyValidation="false"
+         isDynamic="false"
+         ListOperMode="0"
+         ListIter="SgaRefCodesEspecialExistViewIterator"
+         Editable="false" >
+         <AttrNames>
+            <Item Value="Especial" />
+         </AttrNames>
+         <ListAttrNames>
+            <Item Value="Value" />
+         </ListAttrNames>
+         <ListDisplayAttrNames>
+            <Item Value="Abbreviation" />
+         </ListDisplayAttrNames>
       </DCControl>
    </Contents>
 </DCContainer>

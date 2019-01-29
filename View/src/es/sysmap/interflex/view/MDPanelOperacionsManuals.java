@@ -118,6 +118,11 @@ public class MDPanelOperacionsManuals extends JPanel implements JUPanel, SgaClos
     return _instance;
   }
   
+  private String getPuesto()
+  {
+    return Interflex.getInterflexInstance().getPuesto();
+  }
+  
   
   /**
    * 
@@ -139,7 +144,7 @@ public class MDPanelOperacionsManuals extends JPanel implements JUPanel, SgaClos
     //Verifiquem les posisicions del puesto de manipulació
     AppModule appModule  = (AppModule)getPanelBinding().getApplication().getApplicationModule();   
     if (puesto == null)
-      puesto = SgaUtilPuesto.getInstance().getProperty("LlocTreball");
+      puesto = getPuesto();
     if (puesto != null && appModule.esPuestoManipulacion(puesto))
     {
       Set ubics = appModule.getUbicsPuestoManipulacion(puesto);
@@ -350,10 +355,10 @@ public class MDPanelOperacionsManuals extends JPanel implements JUPanel, SgaClos
                     removeCurrentPanel(tipoCarga);
                     if (result.getResult() == 1)
                        key = ((AppModule)getPanelBinding(tipoCarga).getApplication().getApplicationModule()).crearLiniaDetall(result.getKeys()[0], 
-                                SgaUtilPuesto.getInstance().getProperty("LlocTreball"), idart, cantot);
+                                getPuesto(), idart, cantot);
                     else 
                        key = ((AppModule)getPanelBinding(tipoCarga).getApplication().getApplicationModule()).crearDocumentEntrada(
-                                SgaUtilPuesto.getInstance().getProperty("LlocTreball"), idart, cantot);
+                                getPuesto(), idart, cantot);
                     
                     // TODO Michael 21.11.2011            
                     Key [] keys = new Key [] {key};
@@ -612,7 +617,7 @@ public class MDPanelOperacionsManuals extends JPanel implements JUPanel, SgaClos
         else
         {
           if (puesto == null)
-            puesto = SgaUtilPuesto.getInstance().getProperty("LlocTreball");
+            puesto = getPuesto();
           // Intentem retirar el contenidor
           appModule.quizasRetirarMac(puesto, macEnPuesto);
           esperarCarga(tipoCarga); 
@@ -848,7 +853,7 @@ public class MDPanelOperacionsManuals extends JPanel implements JUPanel, SgaClos
   private void quizasArrancarBasculas()
   {
     if (puesto == null)
-      puesto = SgaUtilPuesto.getInstance().getProperty("LlocTreball");
+      puesto = getPuesto();
     AppModule appModule  = (AppModule)getPanelBinding().getApplication().getApplicationModule();      
     if (puesto != null  && appModule.esPuestoManipulacion(puesto))
     {
@@ -887,7 +892,7 @@ public class MDPanelOperacionsManuals extends JPanel implements JUPanel, SgaClos
     String ubicsWhereClause = "";
     AppModule appModule  = (AppModule)getPanelBinding().getApplication().getApplicationModule();   
     if (puesto == null)
-      puesto = SgaUtilPuesto.getInstance().getProperty("LlocTreball");
+      puesto = getPuesto();
     if (puesto != null && appModule.esPuestoManipulacion(puesto))
     {
       Set ubics = appModule.getUbicsPuestoManipulacion(puesto);
@@ -948,7 +953,7 @@ public class MDPanelOperacionsManuals extends JPanel implements JUPanel, SgaClos
 
       // Verifiquem que existeixi la propietat 'LlocTreball' definida en el fitxer
       // de propietats del pc. Si no, no deixem instanciar el panel
-      String puesto = SgaUtilPuesto.getInstance().getProperty("LlocTreball");
+      String puesto = Interflex.getInterflexInstance().getPuesto();
       if (puesto != null)
       {
         MDPanelOperacionsManuals panel = new MDPanelOperacionsManuals();

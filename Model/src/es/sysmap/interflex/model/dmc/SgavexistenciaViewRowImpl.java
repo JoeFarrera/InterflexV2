@@ -41,6 +41,7 @@ public class SgavexistenciaViewRowImpl extends ViewRowImpl implements es.sysmap.
   public static final int MOTIVOBLOQUEO = 21;
   public static final int IDFORMATO = 22;
   public static final int REFFORMATO = 23;
+  public static final int ESPECIAL = 24;
   /**
    * 
    *  This is the default constructor (do not remove)
@@ -411,6 +412,8 @@ public class SgavexistenciaViewRowImpl extends ViewRowImpl implements es.sysmap.
         return getIdformato();
       case REFFORMATO:
         return getRefformato();
+      case ESPECIAL:
+        return getEspecial();
       default:
         return super.getAttrInvokeAccessor(index, attrDef);
       }
@@ -489,6 +492,9 @@ public class SgavexistenciaViewRowImpl extends ViewRowImpl implements es.sysmap.
         return;
       case MOTIVOBLOQUEO:
         setMotivoBloqueo((String)value);
+        return;
+      case ESPECIAL:
+        setEspecial((String)value);
         return;
       default:
         super.setAttrInvokeAccessor(index, value, attrDef);
@@ -678,5 +684,23 @@ public class SgavexistenciaViewRowImpl extends ViewRowImpl implements es.sysmap.
   public boolean isOKReservarTrasllat()
   {
     return getEstado().equals("L");
+  }
+
+  /**
+   * 
+   *  Gets the attribute value for the calculated attribute Especial
+   */
+  public String getEspecial()
+  {
+    return (String)getAttributeInternal(ESPECIAL);
+  }
+
+  /**
+   * 
+   *  Sets <code>value</code> as the attribute value for the calculated attribute Especial
+   */
+  public void setEspecial(String value)
+  {
+    setAttributeInternal(ESPECIAL, value);
   }
 }

@@ -28,7 +28,7 @@ import javax.swing.text.Document;
 import oracle.jbo.uicli.controls.JULabel;
 
 public class PanelSgaarticuloView1 extends SgaJUPanel 
-// public class PanelSgaarticuloView1 extends JUPanel 
+//public class PanelSgaarticuloView1 extends JUPanel 
 {
   // Panel binding definition used by design time
   private JUPanelBinding panelBinding = new JUPanelBinding("PanelSgaarticuloView1UIModel");

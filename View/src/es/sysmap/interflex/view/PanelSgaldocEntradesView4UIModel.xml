@@ -17,6 +17,11 @@
          RangeSize="10" >
       </DCIterator>
       <DCIterator
+         id="SgaRefCodesEspecialExistViewIterator"
+         Binds="AppModuleDataControl.SgaRefCodesEspecialExistView"
+         RangeSize="10" >
+      </DCIterator>
+      <DCIterator
          id="SgatipomacSlolovView1Iter"
          Binds="AppModuleDataControl.SgatipomacSlolovView1"
          RangeSize="10" >
@@ -206,7 +211,7 @@
          DefClass="oracle.jbo.uicli.jui.JUComboBoxDef"
          SubType="DCComboBox"
          BindingClass="oracle.jbo.uicli.jui.JUComboBoxBinding"
-         IterBinding="SgamacView5Iter"
+         IterBinding="SgaldocEntradesView3Iter"
          DTClass="oracle.adf.dt.objects.JUDTCtrlListLOV"
          ApplyValidation="false"
          isDynamic="false"
@@ -309,6 +314,27 @@
             <Item Value="S" />
             <Item Value="N" />
          </ValueList>
+      </DCControl>
+      <DCControl
+         id="DCComboBox"
+         DefClass="oracle.jbo.uicli.jui.JUComboBoxDef"
+         SubType="DCComboBox"
+         IterBinding="SgaldocEntradesView3Iter"
+         DTClass="oracle.adf.dt.objects.JUDTCtrlListLOV"
+         ApplyValidation="false"
+         isDynamic="false"
+         ListOperMode="0"
+         ListIter="SgaRefCodesEspecialExistViewIterator"
+         Editable="false" >
+         <AttrNames>
+            <Item Value="Especial" />
+         </AttrNames>
+         <ListAttrNames>
+            <Item Value="Value" />
+         </ListAttrNames>
+         <ListDisplayAttrNames>
+            <Item Value="Abbreviation" />
+         </ListDisplayAttrNames>
       </DCControl>
    </Contents>
 </DCContainer>

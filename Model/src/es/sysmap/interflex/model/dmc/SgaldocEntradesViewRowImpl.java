@@ -58,9 +58,10 @@ public class SgaldocEntradesViewRowImpl extends ViewRowImpl implements es.sysmap
   public static final int MODIFIEDBY = 33;
   public static final int IDUBI = 34;
   public static final int DESCUBI = 35;
-  public static final int SGACDOCENTRADESVIEW = 36;
-  public static final int SGABULTOVIEW1 = 37;
-  public static final int SGAMACVIEW = 38;
+  public static final int ESPECIAL = 36;
+  public static final int SGACDOCENTRADESVIEW = 37;
+  public static final int SGABULTOVIEW1 = 38;
+  public static final int SGAMACVIEW = 39;
   
   protected Logger LOG = Logger.getLogger(getClass());
   
@@ -469,6 +470,8 @@ public class SgaldocEntradesViewRowImpl extends ViewRowImpl implements es.sysmap
         return getIdubi();
       case DESCUBI:
         return getDescubi();
+      case ESPECIAL:
+        return getEspecial();
       case SGAMACVIEW:
         return getSgamacView();
       case SGACDOCENTRADESVIEW:
@@ -592,6 +595,9 @@ public class SgaldocEntradesViewRowImpl extends ViewRowImpl implements es.sysmap
         return;
       case DESCUBI:
         setDescubi((String)value);
+        return;
+      case ESPECIAL:
+        setEspecial((String)value);
         return;
       default:
         super.setAttrInvokeAccessor(index, value, attrDef);
@@ -764,6 +770,9 @@ public class SgaldocEntradesViewRowImpl extends ViewRowImpl implements es.sysmap
     
     movexist.setBloqueoExist(bloqueo);
     movexist.setMotivoBloqueo(motivoBloqueo);
+    
+    movexist.setExistenciaEspecial(getEspecial());
+    
     
 
     RowIterator macs = getSgamacView();
@@ -1251,6 +1260,24 @@ public class SgaldocEntradesViewRowImpl extends ViewRowImpl implements es.sysmap
       }
     }
   }  
+
+  /**
+   * 
+   *  Gets the attribute value for the calculated attribute Especial
+   */
+  public String getEspecial()
+  {
+    return (String)getAttributeInternal(ESPECIAL);
+  }
+
+  /**
+   * 
+   *  Sets <code>value</code> as the attribute value for the calculated attribute Especial
+   */
+  public void setEspecial(String value)
+  {
+    setAttributeInternal(ESPECIAL, value);
+  }
 
 
 

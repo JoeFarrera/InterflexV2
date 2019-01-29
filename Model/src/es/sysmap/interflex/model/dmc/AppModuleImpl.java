@@ -75,6 +75,8 @@ public class AppModuleImpl extends ApplicationModuleImpl implements es.sysmap.in
     getSgaaccesoubiView1().setWhereClauseParam(0, "ACCESOUBI");
     getSgaestadopuestoView1().setWhereClauseParam(0, "ESTPUESTO");
     getSgaestatpassadisView1().setWhereClauseParam(0, "ESTPASILLO");
+    getSgaRefCodesEspecialExistView().setWhereClauseParam(0, "ESPECIALEX");
+    
     // Filtrem sortides
     getSgavcdocView1().setWhereClauseParam(0, "S");
     //Filtrem entrades
@@ -4032,6 +4034,17 @@ public class AppModuleImpl extends ApplicationModuleImpl implements es.sysmap.in
   {
     return (SgavpasillomigImpl)findViewObject("Sgavpasillomig1");
   }
+
+  /**
+   * 
+   *  Container's getter for SgaRefCodesEspecialExistView
+   */
+  public SgaRefCodesViewImpl getSgaRefCodesEspecialExistView()
+  {
+    return (SgaRefCodesViewImpl)findViewObject("SgaRefCodesEspecialExistView");
+  }
+
+
 
 
 

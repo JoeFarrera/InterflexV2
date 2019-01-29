@@ -16,15 +16,9 @@ public class SgaEntradaManualRFRowClient extends RowImpl implements es.sysmap.in
   {
   }
 
-  public void confirmarEntrada(String nivell, String posicio)
+  public void validateNivell(String nivell)
   {
-    Object _ret = getApplicationModuleProxy().riInvokeExportedMethod(this, "confirmarEntrada", new String[] {"java.lang.String", "java.lang.String"}, new Object[] {nivell, posicio});
-    return;
-  }
-
-  public void confirmarEntrada2()
-  {
-    Object _ret = getApplicationModuleProxy().riInvokeExportedMethod(this, "confirmarEntrada2", null, null);
+    Object _ret = getApplicationModuleProxy().riInvokeExportedMethod(this, "validateNivell", new String[] {"java.lang.String"}, new Object[] {nivell});
     return;
   }
 
@@ -40,17 +34,35 @@ public class SgaEntradaManualRFRowClient extends RowImpl implements es.sysmap.in
     return (String)_ret;
   }
 
+  public void confirmarEntrada2()
+  {
+    Object _ret = getApplicationModuleProxy().riInvokeExportedMethod(this, "confirmarEntrada2", null, null);
+    return;
+  }
+
+  public void confirmarEntrada(String nivell, String posicio)
+  {
+    Object _ret = getApplicationModuleProxy().riInvokeExportedMethod(this, "confirmarEntrada", new String[] {"java.lang.String", "java.lang.String"}, new Object[] {nivell, posicio});
+    return;
+  }
+
   public void validateEtiqueta()
   {
     Object _ret = getApplicationModuleProxy().riInvokeExportedMethod(this, "validateEtiqueta", null, null);
     return;
   }
 
-  public void validateNivell(String nivell)
-  {
-    Object _ret = getApplicationModuleProxy().riInvokeExportedMethod(this, "validateNivell", new String[] {"java.lang.String"}, new Object[] {nivell});
-    return;
-  }
+
+
+
+
+
+
+
+
+
+
+
 
 
 

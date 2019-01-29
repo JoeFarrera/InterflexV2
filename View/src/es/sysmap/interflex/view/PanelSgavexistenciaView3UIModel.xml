@@ -29,8 +29,9 @@
             <Item Value="Descestexist" />
             <Item Value="Integra" />
             <Item Value="Bloqueo" />
-            <Item Value="Estado" />
             <Item Value="MotivoBloqueo" />
+            <Item Value="Especial" />
+            <Item Value="Estado" />
             <Item Value="Idformato" />
             <Item Value="Refformato" />
          </AttrNames>

@@ -26,28 +26,29 @@ public class SgavexistenciaViewRowImplMsgBundle extends JboResourceBundle
   }
 
   static final Object[][] sMessageStrings = {
-    {"Ubipos_LABEL", "Ubicació actual"},
     {"Idart_TOOLTIP", "Identificador de l'article de l'existència"},
+    {"Ubipos_LABEL", "Ubicació actual"},
     {"Idartif_LABEL", "Article"},
-    {"Desctipmac_LABEL", "Tipus Contenidor"},
     {"Canres_DISPLAYWIDTH", "14"},
+    {"Desctipmac_LABEL", "Tipus Contenidor"},
     {"Ubides_LABEL", "Ubicació destí"},
-    {"Posubipos_LABEL", "Posició actual"},
     {"Idartif_TOOLTIP", "Identificador de l'article de l'existència"},
-    {"Refformato_LABEL", "Formato"},
+    {"Posubipos_LABEL", "Posició actual"},
     {"Idmac_LABEL", "Contenidor"},
+    {"Refformato_LABEL", "Formato"},
     {"Descarticulo_LABEL", "Descripcio"},
     {"Canres_LABEL", "Quant. Reserv."},
-    {"Descvisualdes_LABEL", "Descrip. Destí"},
     {"Descestexist_LABEL", "Estat"},
-    {"Posubides_LABEL", "Posició destí"},
-    {"Cantot_LABEL", "Quant. Total"},
+    {"Descvisualdes_LABEL", "Descrip. Destí"},
     {"Idart_LABEL", "Article"},
+    {"Cantot_LABEL", "Quant. Total"},
+    {"Posubides_LABEL", "Posició destí"},
     {"Descvisualpos_LABEL", "Descip. Posició"},
-    {"Modifiedon_LABEL", "Modificada"},
     {"Createdon_LABEL", "Creada"},
-    {"Multiref_LABEL", "Multireferencia"},
-    {"Cantot_DISPLAYWIDTH", "14"}};
+    {"Modifiedon_LABEL", "Modificada"},
+    {"Cantot_DISPLAYWIDTH", "14"},
+    {"Multiref_LABEL", "Multireferencia"}};
+
 
 
 

@@ -26,6 +26,7 @@ public class Sgamovexist
   public String nalbaran = null;
   private String bloqueoExist = null;
   private String motivoBloqueo;
+  private String existenciaEspecial = null;
   
 
 
@@ -38,6 +39,26 @@ public class Sgamovexist
   }
 
 
+
+  /**
+   * 
+   *  Gets the attribute value for existenciaEspecial, using the alias name existenciaEspecial
+   */
+  public String getExistenciaEspecial()
+  {
+    return existenciaEspecial;
+  }
+
+  /**
+   * 
+   *  Sets <code>value</code> as the attribute value for existenciaEspecial
+   */
+  public void setExistenciaEspecial(String value)
+  {
+    existenciaEspecial = value;
+  }
+  
+  
   /**
    * 
    *  Gets the attribute value for Tipmov, using the alias name Tipmov

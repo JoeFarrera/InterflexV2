@@ -407,6 +407,16 @@ and sgarefcodes_lbulto.domain = 'ESTORD' and sgarefcodes_lbulto.value = sgalbult
       AliasName="DESCUBI"
       SQLType="VARCHAR" >
    </ViewAttribute>
+   <ViewAttribute
+      Name="Especial"
+      IsPersistent="false"
+      PrecisionRule="true"
+      Precision="255"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="VIEW_ATTR"
+      SQLType="VARCHAR" >
+   </ViewAttribute>
    <ViewLinkAccessor
       Name="SgacdocEntradesView"
       ViewLink="es.sysmap.interflex.model.dmc.SgacdocEntradesldocEntradesLink"

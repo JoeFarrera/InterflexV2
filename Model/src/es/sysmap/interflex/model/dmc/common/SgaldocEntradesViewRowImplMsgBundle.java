@@ -28,17 +28,21 @@ public class SgaldocEntradesViewRowImplMsgBundle extends JboResourceBundle
   static final Object[][] sMessageStrings = {
     {"Idubi_LABEL", "Id. Ubicació"},
     {"Desctipmac_LABEL", "Tipus Contenidor"},
-    {"Idmac_LABEL", "Contenidor"},
+    {"Especial_LABEL", "Especial"},
     {"Cancon_LABEL", "Quantitat"},
-    {"Pesini_LABEL", "Pes Inicial"},
+    {"Idmac_LABEL", "Contenidor"},
     {"Pesfin_LABEL", "Pes Final"},
+    {"Pesini_LABEL", "Pes Inicial"},
     {"Integra_TOOLTIP", "En cas de sortida de l'existència, s'ha de fer per la quantitat total"},
     {"Idubi_TOOLTIP", "Identificador de la ubicació manual"},
     {"Integra_LABEL", "Integra"},
-    {"Difpes_LABEL", "Afegit / Pes"},
     {"Descestadobulto_LABEL", "Estat embalum"},
-    {"Difpes_TOOLTIP", "Quantitat afegida segons pes"},
-    {"Descestado_LABEL", "Estat"}};
+    {"Difpes_LABEL", "Afegit / Pes"},
+    {"Especial_TOOLTIP", "Indicar si el material es especial (p.ex: Galvanitzat)"},
+    {"Descestado_LABEL", "Estat"},
+    {"Difpes_TOOLTIP", "Quantitat afegida segons pes"}};
+
+
 
 
 

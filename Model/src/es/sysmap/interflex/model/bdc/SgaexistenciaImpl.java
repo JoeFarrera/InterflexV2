@@ -38,11 +38,14 @@ public class SgaexistenciaImpl extends EntityImpl
   public static final int FECENT = 13;
   public static final int MOTIVOBLOQUEO = 14;
   public static final int IDFORMATO = 15;
-  public static final int SGAARTICULO = 16;
-  public static final int SGAMAC = 17;
-  public static final int SGALBULTO = 18;
-  public static final int SGARESMAT = 19;
-  public static final int SGARESMAT1 = 20;
+  public static final int ESPECIAL = 16;
+  public static final int SGAARTICULO = 17;
+  public static final int SGAMAC = 18;
+  public static final int SGALBULTO = 19;
+  public static final int SGARESMAT = 20;
+  public static final int SGARESMAT1 = 21;
+
+
 
 
 
@@ -139,6 +142,8 @@ public class SgaexistenciaImpl extends EntityImpl
     }
     return mDefinitionObject;
   }
+
+
 
 
 
@@ -317,6 +322,8 @@ public class SgaexistenciaImpl extends EntityImpl
         return getMotivoBloqueo();
       case IDFORMATO:
         return getIdformato();
+      case ESPECIAL:
+        return getEspecial();
       case SGARESMAT:
         return getSgaresmat();
       case SGARESMAT1:
@@ -375,6 +382,9 @@ public class SgaexistenciaImpl extends EntityImpl
         return;
       case IDFORMATO:
         setIdformato((Number)value);
+        return;
+      case ESPECIAL:
+        setEspecial((String)value);
         return;
       default:
         super.setAttrInvokeAccessor(index, value, attrDef);
@@ -571,6 +581,8 @@ public class SgaexistenciaImpl extends EntityImpl
     
     // Xavi, 17/04/05: Afegim l'atribut integra
     setIntegra(movexist.getIntegra());
+    
+    setEspecial(movexist.getExistenciaEspecial());
     // Si la quantitat que s'ha mogut es 0, no fem res
     // Insertem el registre corresponent a l'històric    
     SgahistexistDefImpl histexist = (SgahistexistDefImpl)SgahistexistImpl.getDefinitionObject();
@@ -930,6 +942,25 @@ public class SgaexistenciaImpl extends EntityImpl
     setAttributeInternal(IDFORMATO, value);
   }
 
+
+  /**
+   * 
+   *  Gets the attribute value for Especial, using the alias name Especial
+   */
+  public String getEspecial()
+  {
+    return (String)getAttributeInternal(ESPECIAL);
+  }
+
+  /**
+   * 
+   *  Sets <code>value</code> as the attribute value for Especial
+   */
+  public void setEspecial(String value)
+  {
+    setAttributeInternal(ESPECIAL, value);
+  }
+
   /**
    * 
    *  Creates a Key object based on given key constituents
@@ -938,6 +969,7 @@ public class SgaexistenciaImpl extends EntityImpl
   {
     return new Key(new Object[] {idmac, idart});
   }
+
 
 
 

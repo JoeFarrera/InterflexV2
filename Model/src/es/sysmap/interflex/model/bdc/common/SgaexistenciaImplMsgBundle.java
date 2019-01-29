@@ -31,9 +31,10 @@ public class SgaexistenciaImplMsgBundle extends JboResourceBundle
     {"Idartif_TOOLTIP", "Article de l'existencia"},
     {"Cantot_LABEL", "Quantitat"},
     {"Descrip_TOOLTIP", "Descripció de l'article"},
-    {"Descrip_LABEL", "Descripció"},
     {"Fecent_LABEL", "Data Entrada"},
+    {"Descrip_LABEL", "Descripció"},
     {"Fecent_TOOLTIP", "Antiguitat de l'existència"}};
+
 
 
 

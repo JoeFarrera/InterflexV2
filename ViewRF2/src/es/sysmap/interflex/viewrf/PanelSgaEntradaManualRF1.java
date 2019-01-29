@@ -38,6 +38,8 @@ import javax.swing.text.DefaultStyledDocument;
 import javax.swing.text.PlainDocument;
 import javax.swing.JCheckBox;
 import javax.swing.ButtonModel;
+import javax.swing.JComboBox;
+import javax.swing.ComboBoxModel;
 
 public class PanelSgaEntradaManualRF1 extends JPanel implements JUPanel
 {
@@ -55,6 +57,8 @@ public class PanelSgaEntradaManualRF1 extends JPanel implements JUPanel
   private Icon cancelIcon = SgaRecursos.createImageIcon(getClass(), "48x48/plain/delete.png", null);
   private JCheckBox bloquejada = new JCheckBox();
   private JCheckBox trasllat = new JCheckBox();
+  private JLabel labelEspecial = new JLabel();
+  private JComboBox jComboBox1 = new JComboBox();
   /**
    * 
    *  The default constructor for panel
@@ -72,8 +76,11 @@ public class PanelSgaEntradaManualRF1 extends JPanel implements JUPanel
     dataPanel.setLayout(xYLayout1);
     dataPanel.setMinimumSize(new Dimension(100, 100));
     trasllat.setFont(new Font("Tahoma", 1, 13));
+    labelEspecial.setText("Especial");
+    labelEspecial.setToolTipText("Especia (Galvanitzat etc.)");
+    labelEspecial.setFont(new Font("Tahoma", 1, 13));
     this.setLayout(borderLayout);
-    this.setSize(new Dimension(300, 180));
+    this.setSize(new Dimension(232, 188));
 
     labelEtiqueta.setLabelFor(mEtiqueta);
     labelEtiqueta.setFont(new Font("Tahoma", 0, 16));
@@ -82,21 +89,23 @@ public class PanelSgaEntradaManualRF1 extends JPanel implements JUPanel
     bloquejada.setToolTipText("Deixar la existència bloquejada");
     bloquejada.setActionCommand("Bloquejar");
     bloquejada.setFont(new Font("Tahoma", 1, 13));
-    dataPanel.add(bloquejada, new XYConstraints(75, 10, 115, 25));
+    dataPanel.add(jComboBox1, new XYConstraints(150, 40, 60, 25));
+    dataPanel.add(labelEspecial, new XYConstraints(150, 20, 75, 15));
+    dataPanel.add(bloquejada, new XYConstraints(15, 15, 115, 25));
+    dataPanel.add(trasllat, new XYConstraints(15, 40, 115, 25));
     trasllat.setText("Trasllat");
     trasllat.setToolTipText("Trasllat de material");
     trasllat.setActionCommand("Trasllat");
     trasllat.setFont(new Font("Tahoma", 1, 13));
-    dataPanel.add(trasllat, new XYConstraints(75, 30, 115, 25));
-    dataPanel.add(labelEtiqueta, new XYConstraints(15, 65, 155, 20));
-    dataPanel.add(mEtiqueta, new XYConstraints(80, 60, 135, 30));
+    dataPanel.add(labelEtiqueta, new XYConstraints(15, 75, 155, 20));
+    dataPanel.add(mEtiqueta, new XYConstraints(80, 70, 135, 30));
+    dataPanel.add(labelPasCol, new XYConstraints(15, 110, 75, 20));
+    dataPanel.add(mPasCol, new XYConstraints(80, 105, 75, 30));
 
     mEtiqueta.setFont(new Font("Calibri", 0, 18));
     mEtiqueta.setColumns(12);
     mEtiqueta.setToolTipText(panelBinding.findCtrlValueBinding("Etiqueta").getTooltip());
     mEtiqueta.setDocument((Document)panelBinding.bindUIControl("Etiqueta", mEtiqueta));
-    dataPanel.add(labelPasCol, new XYConstraints(15, 100, 140, 20));
-    dataPanel.add(mPasCol, new XYConstraints(80, 95, 75, 30));
 
     mEtiqueta.addFocusListener(new FocusListener() 
     {
@@ -177,6 +186,7 @@ public class PanelSgaEntradaManualRF1 extends JPanel implements JUPanel
     this.add(dataPanel, BorderLayout.CENTER);
     bloquejada.setModel((ButtonModel)panelBinding.bindUIControl("Bloqueo", bloquejada));
     trasllat.setModel((ButtonModel)panelBinding.bindUIControl("Trasllat", trasllat));
+    jComboBox1.setModel((ComboBoxModel)panelBinding.bindUIControl("Especial", jComboBox1));
     
   }
 

@@ -58,9 +58,14 @@ public class Interflex extends SgaMainFrame implements PuestoListener, PuestoExt
   public Interflex (String [] args)
   {
     super(args);
+    interflex = this;
   }
   
 
+   public static Interflex getInterflexInstance()
+   {
+      return interflex;
+   }
   
   public void jbInit() throws Exception
   {
@@ -189,7 +194,7 @@ public class Interflex extends SgaMainFrame implements PuestoListener, PuestoExt
    * Si hi ha una definició de puesto de proves: fem servir aquest. 
    * Si no, fem servir la definitiva 
    */
-  private String getPuesto () 
+  public String getPuesto () 
   {
     if (puesto == null)
     {

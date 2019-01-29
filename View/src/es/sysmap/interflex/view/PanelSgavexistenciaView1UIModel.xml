@@ -37,9 +37,10 @@
             <Item Value="Createdon" />
             <Item Value="Modifiedon" />
             <Item Value="Integra" />
+            <Item Value="Especial" />
             <Item Value="Bloqueo" />
-            <Item Value="Estado" />
             <Item Value="MotivoBloqueo" />
+            <Item Value="Estado" />
             <Item Value="Refformato" />
          </AttrNames>
       </DCControl>

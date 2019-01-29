@@ -28,6 +28,7 @@
             <Item Value="Idmac" />
             <Item Value="Desctipmac" />
             <Item Value="Multiref" />
+            <Item Value="Especial" />
             <Item Value="Ubipos" />
             <Item Value="Descvisualpos" />
             <Item Value="Posubipos" />

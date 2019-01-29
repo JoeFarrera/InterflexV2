@@ -180,4 +180,14 @@
       AliasName="VIEW_ATTR"
       SQLType="VARCHAR" >
    </ViewAttribute>
+   <ViewAttribute
+      Name="Especial"
+      IsPersistent="false"
+      PrecisionRule="true"
+      Precision="255"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="VIEW_ATTR"
+      SQLType="VARCHAR" >
+   </ViewAttribute>
 </ViewObject>

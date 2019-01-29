@@ -863,6 +863,10 @@
       Name="Sgavpasillomig1"
       ViewObjectName="es.sysmap.interflex.model.dmc.Sgavpasillomig" >
    </ViewUsage>
+   <ViewUsage
+      Name="SgaRefCodesEspecialExistView"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgaRefCodesView" >
+   </ViewUsage>
    <AttrArray Name="ViewImports">
       <Item Value="es.sysmap.interflex.model.dmc.SgaubicacionManualView" />
       <Item Value="es.sysmap.interflex.model.dmc.SgaubicacionMiniLoadView" />

@@ -5689,21 +5689,179 @@ public class SgaldocEntradesViewRowClient extends RowImpl implements es.sysmap.i
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   public oracle.jbo.Key crearLineaDetall(String idpuesto, String idart, oracle.jbo.domain.Number cantot)
   {
     Object _ret = getApplicationModuleProxy().riInvokeExportedMethod(this, "crearLineaDetall", new String[] {"java.lang.String", "java.lang.String", "oracle.jbo.domain.Number"}, new Object[] {idpuesto, idart, cantot});
     return (oracle.jbo.Key)_ret;
   }
 
+  public boolean verificarPes()
+  {
+    Object _ret = getApplicationModuleProxy().riInvokeExportedMethod(this, "verificarPes", null, null);
+    return ((Boolean)_ret).booleanValue();
+  }
+
   public oracle.jbo.Row getSgabultoView1()
   {
     Object _ret = getApplicationModuleProxy().riInvokeExportedMethod(this, "getSgabultoView1", null, null);
-    return (oracle.jbo.Row)_ret;
-  }
-
-  public oracle.jbo.Row getSgacdocEntradesView()
-  {
-    Object _ret = getApplicationModuleProxy().riInvokeExportedMethod(this, "getSgacdocEntradesView", null, null);
     return (oracle.jbo.Row)_ret;
   }
 
@@ -5713,34 +5871,22 @@ public class SgaldocEntradesViewRowClient extends RowImpl implements es.sysmap.i
     return (oracle.jbo.RowIterator)_ret;
   }
 
-  public void introduirCargaNova(String idubi, String tipoCarga)
+  public void quizasCalcularDifpes()
   {
-    Object _ret = getApplicationModuleProxy().riInvokeExportedMethod(this, "introduirCargaNova", new String[] {"java.lang.String", "java.lang.String"}, new Object[] {idubi, tipoCarga});
+    Object _ret = getApplicationModuleProxy().riInvokeExportedMethod(this, "quizasCalcularDifpes", null, null);
     return;
   }
 
-  public void introduirCargaNova(String idubi, String tipoCarga, String bloqueo, String motivoBloqueo)
+  public oracle.jbo.Row getSgacdocEntradesView()
   {
-    Object _ret = getApplicationModuleProxy().riInvokeExportedMethod(this, "introduirCargaNova", new String[] {"java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String"}, new Object[] {idubi, tipoCarga, bloqueo, motivoBloqueo});
+    Object _ret = getApplicationModuleProxy().riInvokeExportedMethod(this, "getSgacdocEntradesView", null, null);
+    return (oracle.jbo.Row)_ret;
+  }
+
+  public void quizasEstablirPesini()
+  {
+    Object _ret = getApplicationModuleProxy().riInvokeExportedMethod(this, "quizasEstablirPesini", null, null);
     return;
-  }
-
-  public boolean isOKAnular(String idPuesto)
-  {
-    Object _ret = getApplicationModuleProxy().riInvokeExportedMethod(this, "isOKAnular", new String[] {"java.lang.String"}, new Object[] {idPuesto});
-    return ((Boolean)_ret).booleanValue();
-  }
-
-  public boolean isOKObrir(String idPuesto)
-  {
-    Object _ret = getApplicationModuleProxy().riInvokeExportedMethod(this, "isOKObrir", new String[] {"java.lang.String"}, new Object[] {idPuesto});
-    return ((Boolean)_ret).booleanValue();
-  }
-
-  public boolean isOKSuspender(String idPuesto)
-  {
-    Object _ret = getApplicationModuleProxy().riInvokeExportedMethod(this, "isOKSuspender", new String[] {"java.lang.String"}, new Object[] {idPuesto});
-    return ((Boolean)_ret).booleanValue();
   }
 
   public void obrirLiniaBulto(String idPuesto)
@@ -5749,16 +5895,22 @@ public class SgaldocEntradesViewRowClient extends RowImpl implements es.sysmap.i
     return;
   }
 
-  public void quizasCalcularDifpes()
+  public boolean isOKObrir(String idPuesto)
   {
-    Object _ret = getApplicationModuleProxy().riInvokeExportedMethod(this, "quizasCalcularDifpes", null, null);
-    return;
+    Object _ret = getApplicationModuleProxy().riInvokeExportedMethod(this, "isOKObrir", new String[] {"java.lang.String"}, new Object[] {idPuesto});
+    return ((Boolean)_ret).booleanValue();
   }
 
-  public void quizasEstablirPesini()
+  public boolean isOKAnular(String idPuesto)
   {
-    Object _ret = getApplicationModuleProxy().riInvokeExportedMethod(this, "quizasEstablirPesini", null, null);
-    return;
+    Object _ret = getApplicationModuleProxy().riInvokeExportedMethod(this, "isOKAnular", new String[] {"java.lang.String"}, new Object[] {idPuesto});
+    return ((Boolean)_ret).booleanValue();
+  }
+
+  public boolean isOKSuspender(String idPuesto)
+  {
+    Object _ret = getApplicationModuleProxy().riInvokeExportedMethod(this, "isOKSuspender", new String[] {"java.lang.String"}, new Object[] {idPuesto});
+    return ((Boolean)_ret).booleanValue();
   }
 
   public void suspenderLiniaBulto()
@@ -5773,10 +5925,21 @@ public class SgaldocEntradesViewRowClient extends RowImpl implements es.sysmap.i
     return;
   }
 
-  public boolean verificarPes()
+  public void introduirCargaNova(String idubi, String tipoCarga)
   {
-    Object _ret = getApplicationModuleProxy().riInvokeExportedMethod(this, "verificarPes", null, null);
-    return ((Boolean)_ret).booleanValue();
+    Object _ret = getApplicationModuleProxy().riInvokeExportedMethod(this, "introduirCargaNova", new String[] {"java.lang.String", "java.lang.String"}, new Object[] {idubi, tipoCarga});
+    return;
+  }
+
+  public void introduirCargaNova(String idubi, String tipoCarga, String bloqueo, String motivoBloqueo)
+  {
+    Object _ret = getApplicationModuleProxy().riInvokeExportedMethod(this, "introduirCargaNova", new String[] {"java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String"}, new Object[] {idubi, tipoCarga, bloqueo, motivoBloqueo});
+    return;
+  }
+
+  public oracle.jbo.domain.Number getIdlin()
+  {
+    return (oracle.jbo.domain.Number)getAttribute("Idlin");
   }
 
   public oracle.jbo.domain.Number getCancon()
@@ -5844,11 +6007,6 @@ public class SgaldocEntradesViewRowClient extends RowImpl implements es.sysmap.i
     return (oracle.jbo.domain.Number)getAttribute("Difpes");
   }
 
-  public String getEstado()
-  {
-    return (String)getAttribute("Estado");
-  }
-
   public String getEstadobulto()
   {
     return (String)getAttribute("Estadobulto");
@@ -5869,11 +6027,6 @@ public class SgaldocEntradesViewRowClient extends RowImpl implements es.sysmap.i
     return (oracle.jbo.domain.Number)getAttribute("Idbulto");
   }
 
-  public String getIdcabnum()
-  {
-    return (String)getAttribute("Idcabnum");
-  }
-
   public String getIdcabstr()
   {
     return (String)getAttribute("Idcabstr");
@@ -5887,11 +6040,6 @@ public class SgaldocEntradesViewRowClient extends RowImpl implements es.sysmap.i
   public oracle.jbo.domain.Number getIddoc1()
   {
     return (oracle.jbo.domain.Number)getAttribute("Iddoc1");
-  }
-
-  public oracle.jbo.domain.Number getIdlin()
-  {
-    return (oracle.jbo.domain.Number)getAttribute("Idlin");
   }
 
   public oracle.jbo.domain.Number getIdlin1()
@@ -5909,11 +6057,6 @@ public class SgaldocEntradesViewRowClient extends RowImpl implements es.sysmap.i
     return (String)getAttribute("Idtipmac");
   }
 
-  public String getModifiedby()
-  {
-    return (String)getAttribute("Modifiedby");
-  }
-
   public String getObserv()
   {
     return (String)getAttribute("Observ");
@@ -5927,11 +6070,6 @@ public class SgaldocEntradesViewRowClient extends RowImpl implements es.sysmap.i
   public oracle.jbo.domain.Number getPesini()
   {
     return (oracle.jbo.domain.Number)getAttribute("Pesini");
-  }
-
-  public oracle.jbo.domain.Number getPeso()
-  {
-    return (oracle.jbo.domain.Number)getAttribute("Peso");
   }
 
   public String getRelleno()
@@ -6004,11 +6142,6 @@ public class SgaldocEntradesViewRowClient extends RowImpl implements es.sysmap.i
     setAttribute("Difpes", value);
   }
 
-  public void setEstado(String value)
-  {
-    setAttribute("Estado", value);
-  }
-
   public void setEstadobulto(String value)
   {
     setAttribute("Estadobulto", value);
@@ -6027,11 +6160,6 @@ public class SgaldocEntradesViewRowClient extends RowImpl implements es.sysmap.i
   public void setIdbulto(oracle.jbo.domain.Number value)
   {
     setAttribute("Idbulto", value);
-  }
-
-  public void setIdcabnum(String value)
-  {
-    setAttribute("Idcabnum", value);
   }
 
   public void setIdcabstr(String value)
@@ -6084,11 +6212,6 @@ public class SgaldocEntradesViewRowClient extends RowImpl implements es.sysmap.i
     setAttribute("Pesini", value);
   }
 
-  public void setPeso(oracle.jbo.domain.Number value)
-  {
-    setAttribute("Peso", value);
-  }
-
   public void setRelleno(String value)
   {
     setAttribute("Relleno", value);
@@ -6097,6 +6220,41 @@ public class SgaldocEntradesViewRowClient extends RowImpl implements es.sysmap.i
   public void setUnimac(oracle.jbo.domain.Number value)
   {
     setAttribute("Unimac", value);
+  }
+
+  public oracle.jbo.domain.Number getPeso()
+  {
+    return (oracle.jbo.domain.Number)getAttribute("Peso");
+  }
+
+  public void setPeso(oracle.jbo.domain.Number value)
+  {
+    setAttribute("Peso", value);
+  }
+
+  public String getEstado()
+  {
+    return (String)getAttribute("Estado");
+  }
+
+  public void setEstado(String value)
+  {
+    setAttribute("Estado", value);
+  }
+
+  public String getModifiedby()
+  {
+    return (String)getAttribute("Modifiedby");
+  }
+
+  public String getIdcabnum()
+  {
+    return (String)getAttribute("Idcabnum");
+  }
+
+  public void setIdcabnum(String value)
+  {
+    setAttribute("Idcabnum", value);
   }
 
 

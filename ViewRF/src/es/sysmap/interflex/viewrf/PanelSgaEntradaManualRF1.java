@@ -42,6 +42,8 @@ import javax.swing.border.EtchedBorder;
 import javax.swing.JToggleButton.ToggleButtonModel;
 import javax.swing.JCheckBox;
 import javax.swing.ButtonModel;
+import javax.swing.JComboBox;
+import javax.swing.ComboBoxModel;
 
 public class PanelSgaEntradaManualRF1 extends JPanel implements JUPanel
 {
@@ -123,6 +125,8 @@ public class PanelSgaEntradaManualRF1 extends JPanel implements JUPanel
   private int[] sizeHeaders = new int[] {20, 300};
   private DefaultTableModel dataModel = new DefaultTableModel(headers, 0);
   private JTabbedPane jTabbedPane1 = new JTabbedPane();
+  private JComboBox jComboBox1 = new JComboBox();
+  private JLabel jLabel1 = new JLabel();
 
   // private JTabbedPane jTabbedPane2 = new JTabbedPane();
 
@@ -201,22 +205,24 @@ public class PanelSgaEntradaManualRF1 extends JPanel implements JUPanel
         }
       });
 
-    dataPanel.add(trasllat, new XYConstraints(205, 5, 115, 15));
+    dataPanel.add(jLabel1, new XYConstraints(185, 10, 125, 20));
+    dataPanel.add(jComboBox1, new XYConstraints(250, 5, 90, 25));
+    dataPanel.add(trasllat, new XYConstraints(75, 10, 115, 15));
+    dataPanel.add(labelEtiqueta, new XYConstraints(20, 45, 155, 15));
  
-    dataPanel.add(labelEtiqueta, new XYConstraints(20, 35, 155, 15));
-    dataPanel.add(mEtiqueta, new XYConstraints(205, 30, 135, 30));
+    dataPanel.add(mEtiqueta, new XYConstraints(205, 40, 135, 30));
+    dataPanel.add(labelPasCol, new XYConstraints(35, 80, 140, 15));
+    dataPanel.add(mPasCol, new XYConstraints(205, 80, 75, 30));
     
     
-    dataPanel.add(labelPasCol, new XYConstraints(35, 70, 140, 15));
-    dataPanel.add(mPasCol, new XYConstraints(205, 70, 75, 30));
-    dataPanel.add(labelNivell, new XYConstraints(135, 110, 40, 15));
-    dataPanel.add(mNivell, new XYConstraints(205, 110, 40, 30));
+    dataPanel.add(labelNivell, new XYConstraints(135, 120, 40, 15));
+    dataPanel.add(mNivell, new XYConstraints(205, 120, 40, 30));
+    dataPanel.add(mPosicio, new XYConstraints(300, 120, 40, 30));
 // Jaume 02/04/2016 >>>
-    dataPanel.add(mPosicio, new XYConstraints(300, 110, 40, 30));
-    dataPanel.add(labelPosicio, new XYConstraints(370, 110, 50, 15));
+    dataPanel.add(labelPosicio, new XYConstraints(370, 120, 50, 15));
+    dataPanel.add(cancelar, new XYConstraints(20, 160, 155, 50));
+    dataPanel.add(confirmar, new XYConstraints(205, 160, 175, 50));
 // <<< Jaume 02/04/2016
-    dataPanel.add(cancelar, new XYConstraints(20, 150, 155, 50));
-    dataPanel.add(confirmar, new XYConstraints(205, 150, 175, 50));
 
     scrollerDescrip.getViewport().add(mDescrip, null);
     dataPanel.add(scrollerDescrip, new XYConstraints(20, 215, 515, 40));
@@ -286,6 +292,10 @@ public class PanelSgaEntradaManualRF1 extends JPanel implements JUPanel
     mIdbulto.setToolTipText(panelBinding.findCtrlValueBinding("Idbulto").getTooltip());
     
     messageTable = new JTable(dataModel);
+    jLabel1.setFont(new Font("Tahoma", 0, 16));
+    jComboBox1.setFont(new Font("Tahoma", 0, 16));
+    jLabel1.setToolTipText("Entrada especial (Galvanitzat etc.)");
+    jLabel1.setText("Especial");
     trasllat.setToolTipText("Seleccionar per confirmar un trasllat de material");
  
     trasllat.setBorder(BorderFactory.createEtchedBorder(EtchedBorder.RAISED));
@@ -315,6 +325,7 @@ public class PanelSgaEntradaManualRF1 extends JPanel implements JUPanel
     
     
       trasllat.setModel((ButtonModel)panelBinding.bindUIControl("Trasllat", trasllat));
+    jComboBox1.setModel((ComboBoxModel)panelBinding.bindUIControl("Especial", jComboBox1));
  
   }
   

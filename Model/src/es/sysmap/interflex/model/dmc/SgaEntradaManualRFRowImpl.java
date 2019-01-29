@@ -32,6 +32,7 @@ public class SgaEntradaManualRFRowImpl extends ViewRowImpl implements es.sysmap.
   public static final int POSICIO = 13;
   public static final int BLOQUEO = 14;
   public static final int TRASLLAT = 15;
+  public static final int ESPECIAL = 16;
 
 
   
@@ -111,6 +112,8 @@ public class SgaEntradaManualRFRowImpl extends ViewRowImpl implements es.sysmap.
         return getBloqueo();
       case TRASLLAT:
         return getTrasllat();
+      case ESPECIAL:
+        return getEspecial();
       default:
         return super.getAttrInvokeAccessor(index, attrDef);
       }
@@ -171,6 +174,9 @@ public class SgaEntradaManualRFRowImpl extends ViewRowImpl implements es.sysmap.
         return;
       case TRASLLAT:
         setTrasllat((String)value);
+        return;
+      case ESPECIAL:
+        setEspecial((String)value);
         return;
       default:
         super.setAttrInvokeAccessor(index, value, attrDef);
@@ -827,6 +833,7 @@ public class SgaEntradaManualRFRowImpl extends ViewRowImpl implements es.sysmap.
             // TODO: This must be AFTER setIdmac, which initializes the cancon to the qty. pend for the bulto for screen use
             vldocEntradesRow.setCancon(getCantot());
             vldocEntradesRow.setIntegra("S");
+            vldocEntradesRow.setEspecial(getEspecial());
             vldocEntradesRow.introduirCargaNova(idubi, "MAN");
             vldocEntradesRow.getApplicationModule().getTransaction().commit();
             vldocEntradesRow = null;
@@ -882,12 +889,16 @@ public class SgaEntradaManualRFRowImpl extends ViewRowImpl implements es.sysmap.
         vldocEntradesRow.setIdmac(getIdmacNouAmbPosicio(pasillo, columna, niv, pos));
         vldocEntradesRow.setCancon(getCantot());
         vldocEntradesRow.setIntegra("S");
+        vldocEntradesRow.setEspecial(getEspecial());
+     
         String bloqueo = getBloqueo();
         String motivo = null;
         if (bloqueo != null && bloqueo.equals("S"))
           motivo = "ENTRADA R/F";
         vldocEntradesRow.introduirCargaNova(idubi, "MAN", bloqueo, motivo);
+        
         vldocEntradesRow.getApplicationModule().getTransaction().commit();
+        
 //        vldocEntradesRow.getApplicationModule().getTransaction().rollback();
         vldocEntradesRow = null;
       }
@@ -929,6 +940,24 @@ public class SgaEntradaManualRFRowImpl extends ViewRowImpl implements es.sysmap.
   public void setTrasllat(String value)
   {
     setAttributeInternal(TRASLLAT, value);
+  }
+
+  /**
+   * 
+   *  Gets the attribute value for the calculated attribute Especial
+   */
+  public String getEspecial()
+  {
+    return (String)getAttributeInternal(ESPECIAL);
+  }
+
+  /**
+   * 
+   *  Sets <code>value</code> as the attribute value for the calculated attribute Especial
+   */
+  public void setEspecial(String value)
+  {
+    setAttributeInternal(ESPECIAL, value);
   }
 
 }

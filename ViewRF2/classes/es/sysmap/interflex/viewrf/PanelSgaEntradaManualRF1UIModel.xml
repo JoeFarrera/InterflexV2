@@ -21,6 +21,26 @@
          Binds="AppModuleDataControl1.SgaEntradaManualRF1"
          RangeSize="10" >
       </DCIterator>
+      <DCIterator
+         id="SgaEntradaManualRF1Iterator2"
+         Binds="AppModuleDataControl1.SgaEntradaManualRF1"
+         RangeSize="10" >
+      </DCIterator>
+      <DCIterator
+         id="SgaEntradaManualRF1Iterator3"
+         Binds="AppModuleDataControl1.SgaEntradaManualRF1"
+         RangeSize="10" >
+      </DCIterator>
+      <DCIterator
+         id="SgaEntradaManualRF1Iterator4"
+         Binds="AppModuleDataControl1.SgaEntradaManualRF1"
+         RangeSize="10" >
+      </DCIterator>
+      <DCIterator
+         id="SgaRefCodesEspecialExistViewIterator"
+         Binds="AppModuleDataControl1.SgaRefCodesEspecialExistView"
+         RangeSize="10" >
+      </DCIterator>
       <DCControl
          id="Etiqueta"
          SubType="DCTextField"
@@ -164,6 +184,7 @@
          id="Trasllat"
          DefClass="oracle.jbo.uicli.jui.JUButtonDef"
          SubType="DCButton"
+         BindingClass="oracle.jbo.uicli.jui.JUButtonBinding"
          IterBinding="SgaEntradaManualRF1Iterator1"
          ApplyValidation="false"
          isDynamic="false"
@@ -177,6 +198,27 @@
             <Item Value="S" />
             <Item Value="N" />
          </ValueList>
+      </DCControl>
+      <DCControl
+         id="Especial"
+         DefClass="oracle.jbo.uicli.jui.JUComboBoxDef"
+         SubType="DCComboBox"
+         IterBinding="SgaEntradaManualRF1Iterator4"
+         DTClass="oracle.adf.dt.objects.JUDTCtrlListLOV"
+         ApplyValidation="false"
+         isDynamic="false"
+         ListOperMode="0"
+         ListIter="SgaRefCodesEspecialExistViewIterator"
+         Editable="false" >
+         <AttrNames>
+            <Item Value="Especial" />
+         </AttrNames>
+         <ListAttrNames>
+            <Item Value="Value" />
+         </ListAttrNames>
+         <ListDisplayAttrNames>
+            <Item Value="Abbreviation" />
+         </ListDisplayAttrNames>
       </DCControl>
    </Contents>
 </DCContainer>

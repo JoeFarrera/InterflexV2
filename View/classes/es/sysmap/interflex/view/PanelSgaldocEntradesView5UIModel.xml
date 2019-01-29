@@ -26,6 +26,11 @@
          Binds="AppModuleDataControl.SgaubicacionmanlovView1"
          RangeSize="10" >
       </DCIterator>
+     <DCIterator
+   id="SgaRefCodesEspecialExistViewIterator"
+   Binds="AppModuleDataControl.SgaRefCodesEspecialExistView"
+   RangeSize="10" >
+     </DCIterator>
       <DCControl
          id="Idbulto"
          SubType="DCTextField"
@@ -358,5 +363,26 @@
             <Item Value="Descrip" />
          </ListDisplayAttrNames>
       </DCControl>
+     <DCControl
+           id="DCComboBox"
+           DefClass="oracle.jbo.uicli.jui.JUComboBoxDef"
+           SubType="DCComboBox"
+           IterBinding="SgaldocEntradesView3Iter"
+           DTClass="oracle.adf.dt.objects.JUDTCtrlListLOV"
+           ApplyValidation="false"
+           isDynamic="false"
+           ListOperMode="0"
+           ListIter="SgaRefCodesEspecialExistViewIterator"
+           Editable="false" >
+       <AttrNames>
+         <Item Value="Especial" />
+       </AttrNames>
+       <ListAttrNames>
+         <Item Value="Value" />
+       </ListAttrNames>
+       <ListDisplayAttrNames>
+         <Item Value="Abbreviation" />
+       </ListDisplayAttrNames>
+     </DCControl>
    </Contents>
 </DCContainer>

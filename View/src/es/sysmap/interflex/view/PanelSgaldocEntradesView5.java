@@ -154,6 +154,8 @@ public class PanelSgaldocEntradesView5 extends SgaJUPanel
   
   private JTextField liniesPendents = new JTextField();
   
+    private JLabel labelEspecial = new JLabel();
+  private JComboBox mIdEspecial = new JComboBox();
   
   /**
    * 
@@ -281,6 +283,9 @@ public class PanelSgaldocEntradesView5 extends SgaJUPanel
     macPanel.add(labelIdubi, new GridBagConstraints(2, 4, 1, 1, 0.0, 0.0, GridBagConstraints.WEST, GridBagConstraints.NONE, new Insets(0, 0, 0, 5), 1, 1));
     macPanel.add(mIdubi, new GridBagConstraints(3, 4, 1, 1, 0.0, 0.0, GridBagConstraints.WEST, GridBagConstraints.NONE, new Insets(0, 0, 0, 5), 1, 1));
     macPanel.add(buttonLov, new GridBagConstraints(4, 4, 1, 1, 0.0, 0.0, GridBagConstraints.WEST, GridBagConstraints.NONE, new Insets(0, 0, 0, 5), 1, 1));
+     macPanel.add(labelEspecial, new GridBagConstraints(0, 9, 1, 1, 0.0, 0.0, GridBagConstraints.WEST, GridBagConstraints.NONE, new Insets(0, 0, 0, 0), 0, 0));
+    macPanel.add(mIdEspecial, new GridBagConstraints(1, 9, 1, 1, 0.0, 0.0, GridBagConstraints.WEST, GridBagConstraints.HORIZONTAL, new Insets(0, 0, 0, 0), 0, 0));
+
     labelIdmac.setLabelFor(mIdmac);
     labelIdmac.setFont(new Font("Tahoma", 1, 14));
     mIdmac.setColumns(8);
@@ -377,8 +382,13 @@ public class PanelSgaldocEntradesView5 extends SgaJUPanel
 
     // Michael 09.03.2006 Just get first row for speed
     ViewObject vo = panelBinding.findIteratorBinding("SgaldocEntradesView3Iter").getViewObject();
+    mIdEspecial.setToolTipText("Material especial (P.Ex: Galvanitzat)");
+    labelEspecial.setToolTipText("Material especial (P.Ej.: Galvanitzat)");
+    labelEspecial.setText("Especial");
     vo.setMaxFetchSize(1);
-
+ 
+  mIdEspecial.setModel((ComboBoxModel)panelBinding.bindUIControl("DCComboBox", mIdEspecial));
+ 
     if (rowsSelected != null)
     {
       buttonsPanel.add(liniesPendents);

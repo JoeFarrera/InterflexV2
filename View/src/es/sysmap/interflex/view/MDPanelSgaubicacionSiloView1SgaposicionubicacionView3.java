@@ -13,6 +13,7 @@ import oracle.jdeveloper.layout.*;
 import java.awt.Dimension;
 import sgalib.SgaJUPanel;
 
+
 public class MDPanelSgaubicacionSiloView1SgaposicionubicacionView3 extends SgaJUPanel
 {
 // Panel layout

@@ -1,147 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <registry>
 <Version>4.4</Version>
-<query name="sgavubicacioninpsec" type="jdbc" datasource="Interflex">
-<query_jdbc>
-<uniform_sql parse="true">
-<table>
-<alias><![CDATA[sgavubicacion]]></alias>
-<name><![CDATA[SGAVUBICACION]]></name>
-<issql><![CDATA[false]]></issql>
-<xlocation><![CDATA[15]]></xlocation>
-<ylocation><![CDATA[15]]></ylocation>
-<xScroll><![CDATA[0]]></xScroll>
-<yScroll><![CDATA[0]]></yScroll>
-</table>
-<column>
-<![CDATA[sgavubicacion.IDUBI]]>
-<alias><![CDATA[]]></alias>
-<type><![CDATA[string]]></type>
-<table><![CDATA[sgavubicacion]]></table>
-</column>
-<column>
-<![CDATA[sgavubicacion.DESCUBI]]>
-<alias><![CDATA[]]></alias>
-<type><![CDATA[string]]></type>
-<table><![CDATA[sgavubicacion]]></table>
-</column>
-<column>
-<![CDATA[sgavubicacion.PASILLO]]>
-<alias><![CDATA[]]></alias>
-<type><![CDATA[double]]></type>
-<table><![CDATA[sgavubicacion]]></table>
-</column>
-<column>
-<![CDATA[sgavubicacion.COLUMNA]]>
-<alias><![CDATA[]]></alias>
-<type><![CDATA[double]]></type>
-<table><![CDATA[sgavubicacion]]></table>
-</column>
-<column>
-<![CDATA[sgavubicacion.NIVEL]]>
-<alias><![CDATA[]]></alias>
-<type><![CDATA[double]]></type>
-<table><![CDATA[sgavubicacion]]></table>
-</column>
-<column>
-<![CDATA[sgavubicacion.LADO]]>
-<alias><![CDATA[]]></alias>
-<type><![CDATA[string]]></type>
-<table><![CDATA[sgavubicacion]]></table>
-</column>
-<column>
-<![CDATA[sgavubicacion.DESCTIPUBI]]>
-<alias><![CDATA[]]></alias>
-<type><![CDATA[string]]></type>
-<table><![CDATA[sgavubicacion]]></table>
-</column>
-<column>
-<![CDATA[sgavubicacion.DESCTIPALM]]>
-<alias><![CDATA[]]></alias>
-<type><![CDATA[string]]></type>
-<table><![CDATA[sgavubicacion]]></table>
-</column>
-<column>
-<![CDATA[sgavubicacion.ROTACION]]>
-<alias><![CDATA[]]></alias>
-<type><![CDATA[string]]></type>
-<table><![CDATA[sgavubicacion]]></table>
-</column>
-<column>
-<![CDATA[sgavubicacion.DESCESTADO]]>
-<alias><![CDATA[]]></alias>
-<type><![CDATA[string]]></type>
-<table><![CDATA[sgavubicacion]]></table>
-</column>
-<column>
-<![CDATA[sgavubicacion.POSICION]]>
-<alias><![CDATA[]]></alias>
-<type><![CDATA[double]]></type>
-<table><![CDATA[sgavubicacion]]></table>
-</column>
-<column>
-<![CDATA[sgavubicacion.DESCESTADOPOS]]>
-<alias><![CDATA[]]></alias>
-<type><![CDATA[string]]></type>
-<table><![CDATA[sgavubicacion]]></table>
-</column>
-<column>
-<![CDATA[sgavubicacion.DESCACCESOPOS]]>
-<alias><![CDATA[]]></alias>
-<type><![CDATA[string]]></type>
-<table><![CDATA[sgavubicacion]]></table>
-</column>
-<column>
-<![CDATA[sgavubicacion.IDMAC]]>
-<alias><![CDATA[]]></alias>
-<type><![CDATA[string]]></type>
-<table><![CDATA[sgavubicacion]]></table>
-</column>
-<column>
-<![CDATA[sgavubicacion.NUMPOS]]>
-<alias><![CDATA[]]></alias>
-<type><![CDATA[double]]></type>
-<table><![CDATA[sgavubicacion]]></table>
-</column>
-<column>
-<![CDATA[sgavubicacion.IDTIPMAC]]>
-<alias><![CDATA[]]></alias>
-<type><![CDATA[string]]></type>
-<table><![CDATA[sgavubicacion]]></table>
-</column>
-<column>
-<![CDATA[sgavubicacion.IDTIPALM]]>
-<alias><![CDATA[]]></alias>
-<type><![CDATA[string]]></type>
-<table><![CDATA[sgavubicacion]]></table>
-</column>
-<where>
-<XBinaryCondition isnot="false" clause= "">
-<expression1>
-<expression type="Field">
-<![CDATA[sgavubicacion.ACCESOPOS]]>
-</expression>
-</expression1>
-<expression2>
-<expression type="Value">
-<![CDATA[ 'I']]>
-</expression>
-</expression2>
-<op><![CDATA[=]]></op>
-</XBinaryCondition>
-</where>
-<sortby></sortby>
-<groupby></groupby>
-<having>
-</having>
-<sqlstring parseResult="0"><![CDATA[select IDUBI, DESCUBI, PASILLO, COLUMNA, NIVEL, LADO, DESCTIPUBI, DESCTIPALM, ROTACION, DESCESTADO, POSICION, DESCESTADOPOS, DESCACCESOPOS, IDMAC, NUMPOS, IDTIPMAC, IDTIPALM from sgavubicacion where accesopos = 'I'    ]]></sqlstring>
-</uniform_sql>
-<description>Ubicacions en inspecció</description>
-<maxrows>0</maxrows>
-<timeout>0</timeout>
-<visible>true</visible>
-</query_jdbc>
-</query>
 <query name="sgavpackinglist_exp" type="jdbc" datasource="Interflex">
 <query_jdbc>
 <uniform_sql parse="true">
@@ -322,6 +181,272 @@ from SGAVPACKINGLIST where IDDOC = $(ParamIddoc)]]></sqlstring>
 <visible>true</visible>
 </query_jdbc>
 </query>
+<query name="sgavubicacioninpsec" type="jdbc" datasource="Interflex">
+<query_jdbc>
+<uniform_sql parse="true">
+<table>
+<alias><![CDATA[sgavubicacion]]></alias>
+<name><![CDATA[SGAVUBICACION]]></name>
+<issql><![CDATA[false]]></issql>
+<xlocation><![CDATA[15]]></xlocation>
+<ylocation><![CDATA[15]]></ylocation>
+<xScroll><![CDATA[0]]></xScroll>
+<yScroll><![CDATA[0]]></yScroll>
+</table>
+<column>
+<![CDATA[sgavubicacion.IDUBI]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[sgavubicacion]]></table>
+</column>
+<column>
+<![CDATA[sgavubicacion.DESCUBI]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[sgavubicacion]]></table>
+</column>
+<column>
+<![CDATA[sgavubicacion.PASILLO]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[double]]></type>
+<table><![CDATA[sgavubicacion]]></table>
+</column>
+<column>
+<![CDATA[sgavubicacion.COLUMNA]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[double]]></type>
+<table><![CDATA[sgavubicacion]]></table>
+</column>
+<column>
+<![CDATA[sgavubicacion.NIVEL]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[double]]></type>
+<table><![CDATA[sgavubicacion]]></table>
+</column>
+<column>
+<![CDATA[sgavubicacion.LADO]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[sgavubicacion]]></table>
+</column>
+<column>
+<![CDATA[sgavubicacion.DESCTIPUBI]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[sgavubicacion]]></table>
+</column>
+<column>
+<![CDATA[sgavubicacion.DESCTIPALM]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[sgavubicacion]]></table>
+</column>
+<column>
+<![CDATA[sgavubicacion.ROTACION]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[sgavubicacion]]></table>
+</column>
+<column>
+<![CDATA[sgavubicacion.DESCESTADO]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[sgavubicacion]]></table>
+</column>
+<column>
+<![CDATA[sgavubicacion.POSICION]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[double]]></type>
+<table><![CDATA[sgavubicacion]]></table>
+</column>
+<column>
+<![CDATA[sgavubicacion.DESCESTADOPOS]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[sgavubicacion]]></table>
+</column>
+<column>
+<![CDATA[sgavubicacion.DESCACCESOPOS]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[sgavubicacion]]></table>
+</column>
+<column>
+<![CDATA[sgavubicacion.IDMAC]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[sgavubicacion]]></table>
+</column>
+<column>
+<![CDATA[sgavubicacion.NUMPOS]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[double]]></type>
+<table><![CDATA[sgavubicacion]]></table>
+</column>
+<column>
+<![CDATA[sgavubicacion.IDTIPMAC]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[sgavubicacion]]></table>
+</column>
+<column>
+<![CDATA[sgavubicacion.IDTIPALM]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[sgavubicacion]]></table>
+</column>
+<where>
+<XBinaryCondition isnot="false" clause= "">
+<expression1>
+<expression type="Field">
+<![CDATA[sgavubicacion.ACCESOPOS]]>
+</expression>
+</expression1>
+<expression2>
+<expression type="Value">
+<![CDATA[ 'I']]>
+</expression>
+</expression2>
+<op><![CDATA[=]]></op>
+</XBinaryCondition>
+</where>
+<sortby></sortby>
+<groupby></groupby>
+<having>
+</having>
+<sqlstring parseResult="0"><![CDATA[select IDUBI, DESCUBI, PASILLO, COLUMNA, NIVEL, LADO, DESCTIPUBI, DESCTIPALM, ROTACION, DESCESTADO, POSICION, DESCESTADOPOS, DESCACCESOPOS, IDMAC, NUMPOS, IDTIPMAC, IDTIPALM from sgavubicacion where accesopos = 'I'    ]]></sqlstring>
+</uniform_sql>
+<description>Ubicacions en inspecció</description>
+<maxrows>0</maxrows>
+<timeout>0</timeout>
+<visible>true</visible>
+</query_jdbc>
+</query>
+<query name="sgavpackinglist" type="jdbc" datasource="Interflex">
+<query_jdbc>
+<uniform_sql parse="true">
+<column>
+<![CDATA[SGAVPACKINGLIST.IDDOC]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[]]></type>
+<table><![CDATA[]]></table>
+</column>
+<column>
+<![CDATA[SGAVPACKINGLIST.IDCABSTR]]>
+<alias><![CDATA[Nº Albarán]]></alias>
+<type><![CDATA[]]></type>
+<table><![CDATA[]]></table>
+</column>
+<column>
+<![CDATA[SGAVPACKINGLIST.IDCABNUM]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[]]></type>
+<table><![CDATA[]]></table>
+</column>
+<column>
+<![CDATA[SGAVPACKINGLIST.FALBARAN]]>
+<alias><![CDATA[Fecha]]></alias>
+<type><![CDATA[]]></type>
+<table><![CDATA[]]></table>
+</column>
+<column>
+<![CDATA[SGAVPACKINGLIST.IDBULTO]]>
+<alias><![CDATA[Nº de Bulto]]></alias>
+<type><![CDATA[]]></type>
+<table><![CDATA[]]></table>
+</column>
+<column>
+<![CDATA[SGAVPACKINGLIST.LARGO || ' x ' || SGAVPACKINGLIST.ANCHO || ' x ' || SGAVPACKINGLIST.ALTO]]>
+<alias><![CDATA[Medidas]]></alias>
+<type><![CDATA[]]></type>
+<table><![CDATA[]]></table>
+</column>
+<column>
+<![CDATA[SGAVPACKINGLIST.LARGO*SGAVPACKINGLIST.ANCHO*SGAVPACKINGLIST.ALTO/1000]]>
+<alias><![CDATA[Volúmen ]]></alias>
+<type><![CDATA[]]></type>
+<table><![CDATA[]]></table>
+</column>
+<column>
+<![CDATA[SGAVPACKINGLIST.PESOCONT]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[]]></type>
+<table><![CDATA[]]></table>
+</column>
+<column>
+<![CDATA[SGAVPACKINGLIST.PESO_TOTAL]]>
+<alias><![CDATA[Peso Total]]></alias>
+<type><![CDATA[]]></type>
+<table><![CDATA[]]></table>
+</column>
+<column>
+<![CDATA[SGAVPACKINGLIST.IDARTIF]]>
+<alias><![CDATA[Referencia]]></alias>
+<type><![CDATA[]]></type>
+<table><![CDATA[]]></table>
+</column>
+<column>
+<![CDATA[SGAVPACKINGLIST.DESCRIP]]>
+<alias><![CDATA[Descripción]]></alias>
+<type><![CDATA[]]></type>
+<table><![CDATA[]]></table>
+</column>
+<column>
+<![CDATA[SGAVPACKINGLIST.CANTOT]]>
+<alias><![CDATA[Cantidad]]></alias>
+<type><![CDATA[]]></type>
+<table><![CDATA[]]></table>
+</column>
+<column>
+<![CDATA[SGAVPACKINGLIST.PESO]]>
+<alias><![CDATA[Peso]]></alias>
+<type><![CDATA[]]></type>
+<table><![CDATA[]]></table>
+</column>
+<column>
+<![CDATA[SGAVPACKINGLIST.NOM]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[]]></type>
+<table><![CDATA[]]></table>
+</column>
+<column>
+<![CDATA[SGAVPACKINGLIST.ADRE]]>
+<alias><![CDATA[A1]]></alias>
+<type><![CDATA[]]></type>
+<table><![CDATA[]]></table>
+</column>
+<where>
+</where>
+<sortby></sortby>
+<groupby></groupby>
+<having>
+</having>
+<sqlstring parseResult="1"><![CDATA[select  SGAVPACKINGLIST.IDDOC, 
+SGAVPACKINGLIST.IDCABSTR as "Nº Albarán", 
+SGAVPACKINGLIST.IDCABNUM, 
+SGAVPACKINGLIST.FALBARAN as "Fecha", 
+SGAVPACKINGLIST.IDBULTO as "Nº de Bulto",
+SGAVPACKINGLIST.LARGO || ' x ' || SGAVPACKINGLIST.ANCHO || ' x ' || SGAVPACKINGLIST.ALTO as "Medidas",
+SGAVPACKINGLIST.LARGO * SGAVPACKINGLIST.ANCHO * SGAVPACKINGLIST.ALTO / 1000 as "Volúmen ",
+SGAVPACKINGLIST.PESOCONT, 
+SGAVPACKINGLIST.PESO_TOTAL as "Peso Total",
+SGAVPACKINGLIST.IDARTIF as "Referencia", 
+SGAVPACKINGLIST.DESCRIP as "Descripción", 
+SGAVPACKINGLIST.CANTOT as "Cantidad", 
+SGAVPACKINGLIST.PESO as "Peso", 
+SGAVPACKINGLIST.NOM, 
+SGAVPACKINGLIST.ADREÇA1 as "adreça1", 
+SGAVPACKINGLIST.ADREÇA2 as "adreça2", 
+SGAVPACKINGLIST.ADREÇA3 as "adreça3" 
+from SGAVPACKINGLIST  where SGAVPACKINGLIST.IDDOC = $(ParamIddoc)]]></sqlstring>
+</uniform_sql>
+<variable name="ParamIddoc" type="user" prompt="true" multipleSelection="false" customization="false" label="ParamIddoc" source="sgavpackinglist_l18n" xtype="string">
+</variable>
+<maxrows>0</maxrows>
+<timeout>0</timeout>
+<visible>true</visible>
+</query_jdbc>
+</query>
 <query name="xxx" type="jdbc" datasource="Interflex">
 <query_jdbc>
 <uniform_sql parse="true">
@@ -469,131 +594,6 @@ from SGAVPACKINGLIST where SGAVPACKINGLIST.IDDOC = $(ParamIddoc)]]></sqlstring>
 <visible>true</visible>
 </query_jdbc>
 </query>
-<query name="sgavpackinglist" type="jdbc" datasource="Interflex">
-<query_jdbc>
-<uniform_sql parse="true">
-<column>
-<![CDATA[SGAVPACKINGLIST.IDDOC]]>
-<alias><![CDATA[]]></alias>
-<type><![CDATA[]]></type>
-<table><![CDATA[]]></table>
-</column>
-<column>
-<![CDATA[SGAVPACKINGLIST.IDCABSTR]]>
-<alias><![CDATA[Nº Albarán]]></alias>
-<type><![CDATA[]]></type>
-<table><![CDATA[]]></table>
-</column>
-<column>
-<![CDATA[SGAVPACKINGLIST.IDCABNUM]]>
-<alias><![CDATA[]]></alias>
-<type><![CDATA[]]></type>
-<table><![CDATA[]]></table>
-</column>
-<column>
-<![CDATA[SGAVPACKINGLIST.FALBARAN]]>
-<alias><![CDATA[Fecha]]></alias>
-<type><![CDATA[]]></type>
-<table><![CDATA[]]></table>
-</column>
-<column>
-<![CDATA[SGAVPACKINGLIST.IDBULTO]]>
-<alias><![CDATA[Nº de Bulto]]></alias>
-<type><![CDATA[]]></type>
-<table><![CDATA[]]></table>
-</column>
-<column>
-<![CDATA[SGAVPACKINGLIST.LARGO || ' x ' || SGAVPACKINGLIST.ANCHO || ' x ' || SGAVPACKINGLIST.ALTO]]>
-<alias><![CDATA[Medidas]]></alias>
-<type><![CDATA[]]></type>
-<table><![CDATA[]]></table>
-</column>
-<column>
-<![CDATA[SGAVPACKINGLIST.LARGO*SGAVPACKINGLIST.ANCHO*SGAVPACKINGLIST.ALTO/1000]]>
-<alias><![CDATA[Volúmen ]]></alias>
-<type><![CDATA[]]></type>
-<table><![CDATA[]]></table>
-</column>
-<column>
-<![CDATA[SGAVPACKINGLIST.PESOCONT]]>
-<alias><![CDATA[]]></alias>
-<type><![CDATA[]]></type>
-<table><![CDATA[]]></table>
-</column>
-<column>
-<![CDATA[SGAVPACKINGLIST.PESO_TOTAL]]>
-<alias><![CDATA[Peso Total]]></alias>
-<type><![CDATA[]]></type>
-<table><![CDATA[]]></table>
-</column>
-<column>
-<![CDATA[SGAVPACKINGLIST.IDARTIF]]>
-<alias><![CDATA[Referencia]]></alias>
-<type><![CDATA[]]></type>
-<table><![CDATA[]]></table>
-</column>
-<column>
-<![CDATA[SGAVPACKINGLIST.DESCRIP]]>
-<alias><![CDATA[Descripción]]></alias>
-<type><![CDATA[]]></type>
-<table><![CDATA[]]></table>
-</column>
-<column>
-<![CDATA[SGAVPACKINGLIST.CANTOT]]>
-<alias><![CDATA[Cantidad]]></alias>
-<type><![CDATA[]]></type>
-<table><![CDATA[]]></table>
-</column>
-<column>
-<![CDATA[SGAVPACKINGLIST.PESO]]>
-<alias><![CDATA[Peso]]></alias>
-<type><![CDATA[]]></type>
-<table><![CDATA[]]></table>
-</column>
-<column>
-<![CDATA[SGAVPACKINGLIST.NOM]]>
-<alias><![CDATA[]]></alias>
-<type><![CDATA[]]></type>
-<table><![CDATA[]]></table>
-</column>
-<column>
-<![CDATA[SGAVPACKINGLIST.ADRE]]>
-<alias><![CDATA[A1]]></alias>
-<type><![CDATA[]]></type>
-<table><![CDATA[]]></table>
-</column>
-<where>
-</where>
-<sortby></sortby>
-<groupby></groupby>
-<having>
-</having>
-<sqlstring parseResult="1"><![CDATA[select  SGAVPACKINGLIST.IDDOC, 
-SGAVPACKINGLIST.IDCABSTR as "Nº Albarán", 
-SGAVPACKINGLIST.IDCABNUM, 
-SGAVPACKINGLIST.FALBARAN as "Fecha", 
-SGAVPACKINGLIST.IDBULTO as "Nº de Bulto",
-SGAVPACKINGLIST.LARGO || ' x ' || SGAVPACKINGLIST.ANCHO || ' x ' || SGAVPACKINGLIST.ALTO as "Medidas",
-SGAVPACKINGLIST.LARGO * SGAVPACKINGLIST.ANCHO * SGAVPACKINGLIST.ALTO / 1000 as "Volúmen ",
-SGAVPACKINGLIST.PESOCONT, 
-SGAVPACKINGLIST.PESO_TOTAL as "Peso Total",
-SGAVPACKINGLIST.IDARTIF as "Referencia", 
-SGAVPACKINGLIST.DESCRIP as "Descripción", 
-SGAVPACKINGLIST.CANTOT as "Cantidad", 
-SGAVPACKINGLIST.PESO as "Peso", 
-SGAVPACKINGLIST.NOM, 
-SGAVPACKINGLIST.ADREÇA1 as "adreça1", 
-SGAVPACKINGLIST.ADREÇA2 as "adreça2", 
-SGAVPACKINGLIST.ADREÇA3 as "adreça3" 
-from SGAVPACKINGLIST  where SGAVPACKINGLIST.IDDOC = $(ParamIddoc)]]></sqlstring>
-</uniform_sql>
-<variable name="ParamIddoc" type="user" prompt="true" multipleSelection="false" customization="false" label="ParamIddoc" source="sgavpackinglist_l18n" xtype="string">
-</variable>
-<maxrows>0</maxrows>
-<timeout>0</timeout>
-<visible>true</visible>
-</query_jdbc>
-</query>
 <query name="SGAVPACKINGLISTTOTAL" type="jdbc" datasource="Interflex">
 <query_jdbc>
 <uniform_sql parse="true">
@@ -665,7 +665,7 @@ group by iddoc]]></sqlstring>
 <xlocation><![CDATA[15]]></xlocation>
 <ylocation><![CDATA[15]]></ylocation>
 <xScroll><![CDATA[0]]></xScroll>
-<yScroll><![CDATA[203]]></yScroll>
+<yScroll><![CDATA[239]]></yScroll>
 </table>
 <column>
 <![CDATA[IFDBA.SGAVRESMAN.IDDOC]]>
@@ -754,7 +754,7 @@ group by iddoc]]></sqlstring>
 <column>
 <![CDATA[IFDBA.SGAVRESMAN.IDCABNUM]]>
 <alias><![CDATA[]]></alias>
-<type><![CDATA[double]]></type>
+<type><![CDATA[string]]></type>
 <table><![CDATA[IFDBA.SGAVRESMAN]]></table>
 </column>
 <column>
@@ -771,6 +771,18 @@ group by iddoc]]></sqlstring>
 </column>
 <column>
 <![CDATA[IFDBA.SGAVRESMAN.IDENT]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[IFDBA.SGAVRESMAN]]></table>
+</column>
+<column>
+<![CDATA[IFDBA.SGAVRESMAN.NALBARAN]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[string]]></type>
+<table><![CDATA[IFDBA.SGAVRESMAN]]></table>
+</column>
+<column>
+<![CDATA[IFDBA.SGAVRESMAN.TRANSPORTE]]>
 <alias><![CDATA[]]></alias>
 <type><![CDATA[string]]></type>
 <table><![CDATA[IFDBA.SGAVRESMAN]]></table>

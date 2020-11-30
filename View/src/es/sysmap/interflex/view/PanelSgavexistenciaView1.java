@@ -1,18 +1,24 @@
 package es.sysmap.interflex.view;
 import es.sysmap.interflex.model.dmc.common.AppModule;
+import es.sysmap.interflex.model.dmc.common.SgaRefCodesViewRow;
 import es.sysmap.interflex.model.dmc.common.SgavexistenciaViewRow;
 
 import java.awt.*;
 import java.awt.Dimension;
 import java.awt.event.*;
 
+
+import java.util.Iterator;
+import java.util.Set;
 import java.util.Vector;
 import javax.swing.*;
 import javax.swing.table.*;
 
 import oracle.adf.model.*;
 
+import oracle.adf.model.binding.DCIteratorBinding;
 import oracle.jbo.RangeRefreshEvent;
+import oracle.jbo.ViewObject;
 import oracle.jbo.uicli.binding.*;
 import oracle.jbo.uicli.controls.*;
 import oracle.jbo.uicli.jui.*;
@@ -218,6 +224,27 @@ public class PanelSgavexistenciaView1 extends SgaJUPanel
       });      
       tableSgavexistenciaView1.addPopupMenuItem(menuItem);
       
+      
+      menuItem.addActionListener(new ActionListener()
+      {
+        public void actionPerformed(ActionEvent e)
+        {
+          setEspecial();
+        }
+      });      
+      tableSgavexistenciaView1.addPopupMenuItem(menuItem);
+ 
+       menuItem = new JMenuItem(SgaRecursos.getInstance().getString("Existencies.assignarEspecial_label"));
+      menuItem.setIcon(SgaRecursos.createImageIcon(getClass(), "16x16/plain/bookmark.png", null));
+     menuItem.addActionListener(new ActionListener()
+      {
+        public void actionPerformed(ActionEvent e)
+        {
+          setEspecial();
+        }
+      });      
+      tableSgavexistenciaView1.addPopupMenuItem(menuItem);
+      
       tableSgavexistenciaView1.addPopupSeparator();
     }
 
@@ -232,6 +259,10 @@ public class PanelSgavexistenciaView1 extends SgaJUPanel
         }
       });      
       tableSgavexistenciaView1.addPopupMenuItem(menuItem);
+      
+
+
+
       
 //
 // 
@@ -343,7 +374,6 @@ public class PanelSgavexistenciaView1 extends SgaJUPanel
     
   }
 
-
   
   /**
    * Solicita la extracció del contenidor de l'existencia
@@ -405,6 +435,21 @@ public class PanelSgavexistenciaView1 extends SgaJUPanel
     {
       JUMetaObjectManager.reportException(null, ex);
     }
+  }
+  
+  private void setEspecial()
+  {
+      SgavexistenciaViewRow existRow = (SgavexistenciaViewRow)panelBinding.findIteratorBinding("SgavexistenciaView1Iter").getCurrentRow(); 
+      AppModule appModule = (AppModule)panelBinding.getApplication().getApplicationModule();
+      if (ExistenciaEspecialSetter.set(appModule, existRow))
+     
+     {
+       
+        appModule.getTransaction().commit();
+        panelBinding.findIteratorBinding("SgavexistenciaView1Iter").executeQuery();
+
+     }
+
   }
   
   

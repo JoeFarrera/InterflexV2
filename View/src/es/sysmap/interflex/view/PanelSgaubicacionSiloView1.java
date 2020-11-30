@@ -1,4 +1,5 @@
 package es.sysmap.interflex.view;
+import es.sysmap.interflex.model.dmc.common.AppModule;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
@@ -23,6 +24,7 @@ import javax.swing.ComboBoxModel;
 import sgalib.SgaJUPanel;
 
 public class PanelSgaubicacionSiloView1 extends SgaJUPanel
+// public class PanelSgaubicacionSiloView1 extends JPanel implements JUPanel
 {
   // Panel binding definition used by design time
   private JUPanelBinding panelBinding = new JUPanelBinding("PanelSgaubicacionSiloView1UIModel");
@@ -102,6 +104,7 @@ public class PanelSgaubicacionSiloView1 extends SgaJUPanel
     navBar.setPreferredSize(new Dimension(400, 26));
     navBar.setMinimumSize(new Dimension(400, 26));
     navBar.setMaximumSize(new Dimension(400, 26));
+    mIdtipubi.setEnabled(false);
 
     this.setLayout(borderLayout);
     this.setPreferredSize(new Dimension(400, 300));
@@ -112,13 +115,17 @@ public class PanelSgaubicacionSiloView1 extends SgaJUPanel
       {
         public void navigated(JUIteratorBinding iter, NavigationEvent event)
         {
+          System.out.println("navigated!");
           panelBinding_navigated(iter, event);
         }
 
         public void rangeRefreshed(JUIteratorBinding iter, RangeRefreshEvent event)
         {
+          System.out.println("refreshed");
           panelBinding_rangeRefreshed(iter, event);
         }
+        
+    
       });
 
     mDescripvisual.setDocument((Document)panelBinding.bindUIControl("Descripvisual", mDescripvisual));
@@ -226,14 +233,17 @@ public class PanelSgaubicacionSiloView1 extends SgaJUPanel
   
   private void panelBinding_navigated(JUIteratorBinding iter, NavigationEvent event)
   {
-    if (iter.getName().equals("SgaubicacionSiloView1Iter"))
+  System.out.println("navigated iter: " + iter.getName());
+   if (iter.getName().equals("SgaubicacionSiloView1Iter"))
     {
       refresh(iter.isFindMode());
     }
+    
   }
 
   private void panelBinding_rangeRefreshed(JUIteratorBinding iter, RangeRefreshEvent event)
   {
+  System.out.println("refreshed iter: " + iter.getName());
     if (iter.getName().equals("SgaubicacionSiloView1Iter"))
     {
       refresh(iter.isFindMode());
@@ -243,11 +253,32 @@ public class PanelSgaubicacionSiloView1 extends SgaJUPanel
 
   private void refresh(boolean isFindMode)
   {
+  
     mIdubi.setEditable(isFindMode);
     navBar.setHasInsertButton(isFindMode);
     navBar.setHasDeleteButton(isFindMode);
-      
-  }
-  
-
+    
+    System.out.println("refresh: isFindMode: " + isFindMode);
+    
+    // Don't allow field modification
+    if (!isFindMode)
+    {
+      AppModule appModule = (AppModule)panelBinding.getApplication().getApplicationModule();
+      boolean admin = appModule.isAdministrador();
+      if (!admin)
+      {
+        mPasillo.setEditable(false);
+        mColumna.setEditable(false);
+        mNivel.setEditable(false);
+        mRotacion.setEditable(false);
+        mLado.setEditable(false);
+        mIdtipubi.setEnabled(false);
+        mIdtipubi.setEditable(false);
+        mIdtipubi.setFocusable(false);
+        
+        
+        
+      }
+      }
+    }
 }

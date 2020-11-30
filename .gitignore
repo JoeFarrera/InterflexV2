@@ -6,3 +6,5 @@ TEC B-472/*
 *.jar
 *.rar
 *.bak
+Model/classes/*
+Vieww/classes/*

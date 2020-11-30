@@ -38,7 +38,8 @@ select IDART,
 	MOTIVO_BLOQUEO,
 	IDFORMATO,
 	REFFORMATO,
-	ESPECIAL
+	ESPECIAL,
+	ESPECIALABBREVIATION
 from sgavexistencia
    ]]></SQLQuery>
    <DesignTime>
@@ -397,6 +398,18 @@ from sgavexistencia
       <DesignTime>
          <Attr Name="_DisplaySize" Value="10" />
       </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="EspecialAbbreviation"
+      IsUpdateable="false"
+      IsPersistent="false"
+      PrecisionRule="true"
+      Precision="10"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="ESPECIALABBREVIATION"
+      Expression="ESPECIALABBREVIATION"
+      SQLType="VARCHAR" >
    </ViewAttribute>
    <AttrArray Name="KeyAttributes">
       <Item Value="Idart" />

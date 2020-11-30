@@ -26,6 +26,11 @@
          Binds="AppModuleDataControl.SgaVTrasloTrasbordoView1"
          RangeSize="10" >
       </DCIterator>
+      <DCIterator
+         id="SgaVTrasloTrasbordoView1Iterator3"
+         Binds="AppModuleDataControl.SgaVTrasloTrasbordoView1"
+         RangeSize="10" >
+      </DCIterator>
       <DCControl
          id="Idtraslo"
          SubType="DCTextField"
@@ -40,6 +45,7 @@
          id="Trasbordoentrada1"
          DefClass="oracle.jbo.uicli.jui.JUButtonDef"
          SubType="DCButton"
+         BindingClass="oracle.jbo.uicli.jui.JUButtonBinding"
          IterBinding="SgaVTrasloTrasbordoView1Iterator1"
          ApplyValidation="false"
          isDynamic="false"
@@ -58,6 +64,7 @@
          id="Trasbordosalida1"
          DefClass="oracle.jbo.uicli.jui.JUButtonDef"
          SubType="DCButton"
+         BindingClass="oracle.jbo.uicli.jui.JUButtonBinding"
          IterBinding="SgaVTrasloTrasbordoView1Iterator2"
          ApplyValidation="false"
          isDynamic="false"
@@ -66,6 +73,24 @@
          BoolVal="true" >
          <AttrNames>
             <Item Value="Trasbordosalida" />
+         </AttrNames>
+         <ValueList>
+            <Item Value="S" />
+            <Item Value="N" />
+         </ValueList>
+      </DCControl>
+      <DCControl
+         id="PermisTrasbordo"
+         DefClass="oracle.jbo.uicli.jui.JUButtonDef"
+         SubType="DCButton"
+         IterBinding="SgaVTrasloTrasbordoView1Iterator3"
+         ApplyValidation="false"
+         isDynamic="false"
+         ListOperMode="0"
+         StaticList="true"
+         BoolVal="true" >
+         <AttrNames>
+            <Item Value="PermisTrasbordo" />
          </AttrNames>
          <ValueList>
             <Item Value="S" />

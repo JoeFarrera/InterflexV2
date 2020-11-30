@@ -382,6 +382,7 @@ public class PanelSgaresmatmanView2 extends SgaJUPanel
     try
     {
       AppModule appModule = (AppModule)panelBinding.getApplication().getApplicationModule();
+      
       PackingList.imprimirPackingList(this.getClass(), appModule, iddoc, false, appModule.isExport(iddoc) ? PackingList.EXPORT : PackingList.NACIONAL, nAlbaran);
     }
     catch (Exception ex)

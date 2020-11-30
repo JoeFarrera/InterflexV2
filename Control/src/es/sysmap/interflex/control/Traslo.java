@@ -217,6 +217,12 @@ public class Traslo extends ADFTraslo implements Observer, TimeOutListener
     if (cambioCounterPasillo++ < 10)
       return false;
       
+    if (isTrasloBloqueadoEnPasillo())
+    {
+      LOG.warn("El traslo: " + idTraslo + " no surt del passadis: " + getPasillo() + " per bloqueig manual");
+      return false;
+    }
+      
     cambioCounterPasillo = 0;
  
     if (isCambioPasilloEnCurso())
@@ -254,6 +260,9 @@ public class Traslo extends ADFTraslo implements Observer, TimeOutListener
   {
     boolean retval = false;
     boolean asignado = false;
+    
+    
+    
     if (okTrasbordoEntrada)
     {
       retval = buscarEntradaContainer(null, true);

@@ -1,9 +1,13 @@
 package es.sysmap.interflex.view;
+import es.sysmap.interflex.model.dmc.common.AppModule;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.table.*;
 import javax.swing.text.*;
+import oracle.jbo.NavigatableRowIterator;
+import oracle.jbo.NavigationEvent;
+import oracle.jbo.RangeRefreshEvent;
 import oracle.jbo.uicli.jui.*;
 import oracle.jbo.uicli.controls.*;
 import oracle.jbo.uicli.binding.*;
@@ -25,6 +29,9 @@ import javax.swing.BorderFactory;
 import java.awt.BorderLayout;
 import javax.swing.JPanel;
 import javax.swing.JLabel;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class PanelSgaVTrasloTrasbordoView1 extends SgaJUPanel 
 // public class PanelSgaVTrasloTrasbordoView1 extends JPanel implements JUPanel 
@@ -52,6 +59,10 @@ public class PanelSgaVTrasloTrasbordoView1 extends SgaJUPanel
   private JPanel panelTrasbordoentrada = new JPanel();
   private GridLayout layoutTrasbordoentrada = new GridLayout();
 
+  private JPanel panelPermitTrasbordo = new JPanel();
+  private GridLayout layoutpermitTrasbordo = new GridLayout();
+
+
 // Fields for attribute:  Trasbord Sortides
 
   private JPanel panelTrasbordosalida = new JPanel();
@@ -59,6 +70,9 @@ public class PanelSgaVTrasloTrasbordoView1 extends SgaJUPanel
   private JUNavigationBar jUNavigationBar1 = new JUNavigationBar();
   private JCheckBox jCheckBoxTEntrada = new JCheckBox();
   private JCheckBox jCheckBoxTSalida = new JCheckBox();
+  private JCheckBox jCheckBoxPermisTrasbordo = new JCheckBox();
+
+  
 
 
   /**
@@ -89,6 +103,9 @@ public class PanelSgaVTrasloTrasbordoView1 extends SgaJUPanel
     jCheckBoxTEntrada.setToolTipText("Permetre trasbord del passadis actual per fer entrades");
     jCheckBoxTSalida.setText("Trasbordo Sortides");
     jCheckBoxTSalida.setToolTipText("Permetre trasbord del passadis actual per fer sortides");
+    jCheckBoxPermisTrasbordo.setText("Permis Trasbordo");
+    jCheckBoxPermisTrasbordo.setToolTipText("Permetre el traslo canviar de passadis (del actual a un altre)");
+
     dataPanel.add(panelIdtraslo, new GridBagConstraints(0, 0, 1, 1, 0.0, 0.0, GridBagConstraints.WEST, GridBagConstraints.HORIZONTAL, new Insets(0, 0, 0, 5), 1, 1));
     panelIdtraslo.setLayout(layoutIdtraslo);
     panelIdtraslo.setBorder(new TitledBorder(panelBinding.getLabel("SgaVTrasloTrasbordoView1", "Idtraslo", null)));
@@ -100,18 +117,70 @@ public class PanelSgaVTrasloTrasbordoView1 extends SgaJUPanel
     panelTrasbordoentrada.setBorder(BorderFactory.createTitledBorder("Entrada"));
     panelTrasbordoentrada.add(jCheckBoxTEntrada, null);
     dataPanel.add(panelTrasbordosalida, new GridBagConstraints(0, 2, 1, 1, 0.0, 0.0, GridBagConstraints.WEST, GridBagConstraints.HORIZONTAL, new Insets(0, 0, 0, 5), 1, 1));
-    dataPanel.add(jUNavigationBar1, new GridBagConstraints(0, 3, 1, 1, 0.0, 0.0, GridBagConstraints.CENTER, GridBagConstraints.NONE, new Insets(0, 0, 0, 0), 0, 0));
     panelTrasbordosalida.setLayout(layoutTrasbordosalida);
     panelTrasbordosalida.setBorder(BorderFactory.createTitledBorder("Sortida"));
     panelTrasbordosalida.add(jCheckBoxTSalida, null);
 
+    panelPermitTrasbordo.add(jCheckBoxPermisTrasbordo, null);
+    dataPanel.add(panelPermitTrasbordo, new GridBagConstraints(0, 3, 1, 1, 0.0, 0.0, GridBagConstraints.WEST, GridBagConstraints.HORIZONTAL, new Insets(0, 0, 0, 5), 1, 1));
+    panelPermitTrasbordo.setLayout(layoutpermitTrasbordo);
+    panelPermitTrasbordo.setBorder(BorderFactory.createTitledBorder("Permís Trasbordo"));
+   // panelPermitTrasbordo.add(jCheckBoxTEntrada, null);
+
+
+
     // Layout the datapanel and the navigation bar
+    dataPanel.add(jUNavigationBar1, new GridBagConstraints(0, 4, 1, 1, 0.0, 0.0, GridBagConstraints.CENTER, GridBagConstraints.NONE, new Insets(0, 0, 0, 0), 0, 0));
     add(dataPanel, BorderLayout.NORTH);
     jUNavigationBar1.setModel(JUNavigationBar.createViewBinding(panelBinding, jUNavigationBar1, "SgaVTrasloTrasbordoView1", null, "SgaVTrasloTrasbordoView1Iterator"));
     jCheckBoxTEntrada.setModel((ButtonModel)panelBinding.bindUIControl("Trasbordoentrada1", jCheckBoxTEntrada));
     jCheckBoxTSalida.setModel((ButtonModel)panelBinding.bindUIControl("Trasbordosalida1", jCheckBoxTSalida));
+    jCheckBoxPermisTrasbordo.setModel((ButtonModel)panelBinding.bindUIControl("PermisTrasbordo", jCheckBoxPermisTrasbordo));
+    
+    panelBinding.addIteratorChangedListener( new JUIteratorChangedListener()
+    {
+      public void iteratorChanged(String string, NavigatableRowIterator it)
+      {
+        setUpdatePermissions();
+      }
+    });
+    
+    panelBinding.addRowSetListener(new JUPanelRowSetAdapter()
+      {
+        public void navigated(JUIteratorBinding iter, NavigationEvent event)
+        {
+          setUpdatePermissions();
+        }
+
+        public void rangeRefreshed(JUIteratorBinding iter, RangeRefreshEvent event)
+        {
+          setUpdatePermissions();
+        }
+        
+      });
+
+    
 
 
+
+  }
+  
+  private void setUpdatePermissions()
+  {
+  
+          SwingUtilities.invokeLater(new Runnable() {
+            public void run() {
+             AppModule am = (AppModule)panelBinding.getApplication().getApplicationModule();
+    boolean enabled = am.isUserModPermisTraslo();
+    {
+      jCheckBoxPermisTrasbordo.setEnabled(enabled);
+      // 24.03.2019 For all jCheckBoxTEntrada.setEnabled(enabled);
+      // 24.03.2019 For all jCheckBoxTSalida.setEnabled(enabled);
+    }   
+            }
+        });
+
+    
   }
 
   public static void main(String [] args)
@@ -156,10 +225,12 @@ public class PanelSgaVTrasloTrasbordoView1 extends SgaJUPanel
       panelBinding = panelBinding.setup(bindCtx, this);
       registerProjectGlobalVariables(bindCtx);
       panelBinding.refreshControl();
+//      setUpdatePermissions();
       try
       {
         jbInit();
         panelBinding.refreshControl();
+        setUpdatePermissions();
       }
       catch(Exception ex)
       {
@@ -173,5 +244,6 @@ public class PanelSgaVTrasloTrasbordoView1 extends SgaJUPanel
   {
     this.panelBinding = panelBinding;
   }
+
 
 }

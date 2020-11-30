@@ -457,7 +457,11 @@ public class SgavestadoentradaslomacViewRowImpl extends ViewRowImpl implements e
   private String getRotacionMac()
   {
     SgaordtranViewRowImpl row = (SgaordtranViewRowImpl)getSgaordtranView();
-    return row.getRotacionMac();
+    // Michael 08.09.2020 Una entrada de la extra, no tiene orden generada
+    if (row != null)
+      return row.getRotacionMac();
+    else
+      return "C";
   }
   
   private String getSiguienteRotacion(String rotacion, String original)

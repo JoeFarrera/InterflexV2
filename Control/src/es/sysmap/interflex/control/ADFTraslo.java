@@ -137,6 +137,7 @@ public abstract class ADFTraslo extends SgaProceso
     return view.first();
   }
   
+  
   protected void queryTraslo()
   {
     trasloRow = (SgavtrasloEntSalRow)queryAndGetFirstRow(trasloEntSal);
@@ -498,6 +499,11 @@ public abstract class ADFTraslo extends SgaProceso
     
   }
   
+  protected int getPasillo()
+  {
+    return trasloRow.getPasilloactual().intValue();
+  }
+  
   /**
    * Si hay un mac pendiente en la entrada extra, buscale un pasillo destino
    * Si el pasillo destino es el 1, dadle ya sus coordenadas
@@ -682,6 +688,11 @@ public abstract class ADFTraslo extends SgaProceso
     am.getTransaction().rollback();
   }
   
+  public boolean isTrasloBloqueadoEnPasillo()
+  {
+    return (am.IsTrasloBloqueadoEnPasillo(idTraslo));
+  }
+  
   /**
    * Ver si el traslo tiene una orden de salida en curso en este momento
    * Si es el miniload y sólo tiene una, devuelve false
@@ -714,7 +725,9 @@ public abstract class ADFTraslo extends SgaProceso
    */
  protected boolean getNextPasillo(Traslo traslo, boolean mesaSalidaOcupada)
  {
-
+  // 20.03.2019 Query traslo ya que puede haber sido cambiado por el usuario
+  queryTraslo();
+  
   if (cambioPasillo.getNextPasillo(traslo, trasloRow, am, mesaSalidaOcupada, hasPendientePasillo()))
    {
      queryTraslo();

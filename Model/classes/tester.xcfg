@@ -1,31 +1,30 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <BC4JConfig>
    <AppModuleConfigBag>
-      <AppModuleConfig name="1682DEC4F41">
+      <AppModuleConfig name="16B99514F0F">
          <DeployPlatform>LOCAL</DeployPlatform>
-         <DBconnection>jdbc:oracle:thin:@servidormap2:1521:PROD</DBconnection>
-         <password>ifdba</password>
-         <JDBCName>interflex</JDBCName>
+         <DBconnection>jdbc:oracle:thin:@servidorsga:1521:prod</DBconnection>
+         <password>ifdbatest</password>
+         <JDBCName>ifdbatest</JDBCName>
          <jbo.TypeMapEntries>Oracle</jbo.TypeMapEntries>
          <jbo.project>Model</jbo.project>
-         <user>ifdba</user>
+         <user>ifdbatest</user>
          <java.naming.factory.initial>oracle.jbo.common.JboInitialContextFactory</java.naming.factory.initial>
          <ApplicationName>es.sysmap.interflex.model.dmc.AppModule</ApplicationName>
          <jbo.SQLBuilder>Oracle</jbo.SQLBuilder>
       </AppModuleConfig>
    </AppModuleConfigBag>
-   <ConnectionDefinition name="interflex">
+   <ConnectionDefinition name="ifdbatest">
       <ENTRY name="JDBC_PORT" value="1521"/>
       <ENTRY name="ConnectionType" value="JDBC"/>
-      <ENTRY name="HOSTNAME" value="servidormap2"/>
-      <ENTRY name="DeployPassword" value="true"/>
-      <ENTRY name="user" value="ifdba"/>
-      <ENTRY name="ConnectionName" value="interflex"/>
-      <ENTRY name="SID" value="PROD"/>
-      <ENTRY name="password">
-         <![CDATA[{904}052FFD5AAFD749AC8A0021067F5FCDE93E]]>
-      </ENTRY>
+      <ENTRY name="HOSTNAME" value="servidorsga"/>
+      <ENTRY name="user" value="ifdbatest"/>
+      <ENTRY name="ConnectionName" value="ifdbatest"/>
+      <ENTRY name="SID" value="prod"/>
       <ENTRY name="JdbcDriver" value="oracle.jdbc.driver.OracleDriver"/>
+      <ENTRY name="password">
+         <![CDATA[{904}05DB2E82979FC1D02B57491278AB100CF9B1E3C1875F4DA4B1]]>
+      </ENTRY>
       <ENTRY name="ORACLE_JDBC_TYPE" value="thin"/>
       <ENTRY name="DeployPassword" value="true"/>
    </ConnectionDefinition>

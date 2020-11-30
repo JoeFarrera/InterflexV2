@@ -30,7 +30,7 @@
             <Item Value="Integra" />
             <Item Value="Bloqueo" />
             <Item Value="MotivoBloqueo" />
-            <Item Value="Especial" />
+            <Item Value="EspecialAbbreviation" />
             <Item Value="Estado" />
             <Item Value="Idformato" />
             <Item Value="Refformato" />

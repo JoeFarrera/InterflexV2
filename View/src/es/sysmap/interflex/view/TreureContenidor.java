@@ -39,7 +39,7 @@ public class TreureContenidor extends JTextField
       message [0] = SgaRecursos.getInstance().getString("Contenidors.triarDestiContenidor_label") + idMac;
       message [1] = " ";  // Para que haya un hueco
       
-      JComboBox cb = new JComboBox();
+    JComboBox cb = new JComboBox();
       if (!silo)
       {
         cb.addItem("PK1MLD"); 

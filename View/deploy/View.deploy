@@ -86,7 +86,7 @@
                      <Item path="../../sysmap/inetsoft/lib/xreport_pro.jar" jar-entry=""/>
                      <Item path="../../sysmap/inetsoft/lib/xtools.jar" jar-entry=""/>
                      <Item path="../../sysmap/inetsoft/lib/design_pro.jar" jar-entry=""/>
-                     <Item path="../../sysmap/ChainsawV2/log4j-1.3alpha-7.jar" jar-entry=""/>
+                     <Item path="../../sysmap/ChainsawV2/log4j-1.3alpha.jar" jar-entry=""/>
                      <Item path="../../sysmap/comm/comm.jar" jar-entry=""/>
                   </archives>
                   <selectionMode>0</selectionMode>

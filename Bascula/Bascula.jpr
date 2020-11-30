@@ -9,12 +9,12 @@
       <Item class="oracle.jdeveloper.library.ProjectLibrary">
          <locked>true</locked>
          <sourceOwnerURL path="../InterflexV2.jws"/>
-         <sourceURL path="../PlcDriver/PlcDriver.jpr"/>
+         <sourceURL path="../SgaLib/SgaLib.jpr"/>
       </Item>
       <Item class="oracle.jdeveloper.library.ProjectLibrary">
          <locked>true</locked>
          <sourceOwnerURL path="../InterflexV2.jws"/>
-         <sourceURL path="../SgaLib/SgaLib.jpr"/>
+         <sourceURL path="../PlcDriver/PlcDriver.jpr"/>
       </Item>
    </dependencyList>
    <htmlRootDirectory path="public_html/"/>
@@ -40,10 +40,6 @@
       <Item class="oracle.ide.model.Reference">
          <URL path="src/es/sysmap/interflex/bascula/BasculaSlo.java"/>
          <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
-      </Item>
-      <Item class="oracle.ide.model.Reference">
-         <URL path="src/log4j.properties"/>
-         <nodeClass>oracle.ide.model.DeployableTextNode</nodeClass>
       </Item>
       <Item class="oracle.ide.model.Reference">
          <URL path="src/es/sysmap/interflex/bascula/SerialPortDriver.java"/>

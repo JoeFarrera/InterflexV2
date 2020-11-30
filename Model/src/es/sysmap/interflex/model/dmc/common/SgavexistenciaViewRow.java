@@ -37,6 +37,8 @@ public interface SgavexistenciaViewRow extends Row
 
   boolean isReservaNegativa();
 
+  void setUserEspecial(String value);
+
 
 
 }

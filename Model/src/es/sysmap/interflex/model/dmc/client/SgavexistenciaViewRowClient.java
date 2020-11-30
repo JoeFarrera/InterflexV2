@@ -262,10 +262,94 @@ public class SgavexistenciaViewRowClient extends RowImpl implements es.sysmap.in
 
 
 
-  public void setSortidaIntegra(boolean bIntegra)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  public boolean isOKReservarTrasllat()
   {
-    Object _ret = getApplicationModuleProxy().riInvokeExportedMethod(this, "setSortidaIntegra", new String[] {"boolean"}, new Object[] {new Boolean(bIntegra)});
-    return;
+    Object _ret = getApplicationModuleProxy().riInvokeExportedMethod(this, "isOKReservarTrasllat", null, null);
+    return ((Boolean)_ret).booleanValue();
+  }
+
+  public boolean isReservaNegativa()
+  {
+    Object _ret = getApplicationModuleProxy().riInvokeExportedMethod(this, "isReservaNegativa", null, null);
+    return ((Boolean)_ret).booleanValue();
+  }
+
+  public boolean isUbicacionManual()
+  {
+    Object _ret = getApplicationModuleProxy().riInvokeExportedMethod(this, "isUbicacionManual", null, null);
+    return ((Boolean)_ret).booleanValue();
   }
 
   public void regularitzarExistencia(oracle.jbo.domain.Number cancon, String observ)
@@ -280,16 +364,16 @@ public class SgavexistenciaViewRowClient extends RowImpl implements es.sysmap.in
     return;
   }
 
-  public boolean isUbicacionManual()
+  public void setSortidaIntegra(boolean bIntegra)
   {
-    Object _ret = getApplicationModuleProxy().riInvokeExportedMethod(this, "isUbicacionManual", null, null);
-    return ((Boolean)_ret).booleanValue();
+    Object _ret = getApplicationModuleProxy().riInvokeExportedMethod(this, "setSortidaIntegra", new String[] {"boolean"}, new Object[] {new Boolean(bIntegra)});
+    return;
   }
 
-  public boolean isOKReservarTrasllat()
+  public void setUserEspecial(String value)
   {
-    Object _ret = getApplicationModuleProxy().riInvokeExportedMethod(this, "isOKReservarTrasllat", null, null);
-    return ((Boolean)_ret).booleanValue();
+    Object _ret = getApplicationModuleProxy().riInvokeExportedMethod(this, "setUserEspecial", new String[] {"java.lang.String"}, new Object[] {value});
+    return;
   }
 
   public void treureReservaNegativa()
@@ -298,20 +382,9 @@ public class SgavexistenciaViewRowClient extends RowImpl implements es.sysmap.in
     return;
   }
 
-  public boolean isReservaNegativa()
+  public oracle.jbo.domain.Number getCantot()
   {
-    Object _ret = getApplicationModuleProxy().riInvokeExportedMethod(this, "isReservaNegativa", null, null);
-    return ((Boolean)_ret).booleanValue();
-  }
-
-  public String getIdtipmac()
-  {
-    return (String)getAttribute("Idtipmac");
-  }
-
-  public String getIdmac()
-  {
-    return (String)getAttribute("Idmac");
+    return (oracle.jbo.domain.Number)getAttribute("Cantot");
   }
 
   public String getIdart()
@@ -319,9 +392,14 @@ public class SgavexistenciaViewRowClient extends RowImpl implements es.sysmap.in
     return (String)getAttribute("Idart");
   }
 
-  public oracle.jbo.domain.Number getCantot()
+  public String getIdmac()
   {
-    return (oracle.jbo.domain.Number)getAttribute("Cantot");
+    return (String)getAttribute("Idmac");
+  }
+
+  public String getIdtipmac()
+  {
+    return (String)getAttribute("Idtipmac");
   }
 
   public String getMotivoBloqueo()

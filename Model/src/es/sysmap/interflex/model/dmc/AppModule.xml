@@ -867,6 +867,10 @@
       Name="SgaRefCodesEspecialExistView"
       ViewObjectName="es.sysmap.interflex.model.dmc.SgaRefCodesView" >
    </ViewUsage>
+   <ViewUsage
+      Name="SgavBultoCantErroneo1"
+      ViewObjectName="es.sysmap.interflex.model.dmc.SgavBultoCantErroneo" >
+   </ViewUsage>
    <AttrArray Name="ViewImports">
       <Item Value="es.sysmap.interflex.model.dmc.SgaubicacionManualView" />
       <Item Value="es.sysmap.interflex.model.dmc.SgaubicacionMiniLoadView" />

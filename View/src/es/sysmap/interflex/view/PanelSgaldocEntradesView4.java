@@ -41,7 +41,7 @@ import java.awt.BorderLayout;
 import javax.swing.JLabel;
 
 public class PanelSgaldocEntradesView4 extends SgaJUPanel implements Observer
-//public class PanelSgaldocEntradesView4 extends JPanel implements Observer, JUPanel
+// public class PanelSgaldocEntradesView4 extends JPanel implements Observer, JUPanel
 {
   PanelSgavarticulomodpesView panelModPes;
   // Panel binding definition used by design time
@@ -411,6 +411,7 @@ public class PanelSgaldocEntradesView4 extends SgaJUPanel implements Observer
     
     // Michael 09.03.2006 Just get first row for speed
     ViewObject vo = panelBinding.findIteratorBinding("SgaldocEntradesView3Iter").getViewObject();
+
     labelEspecial.setToolTipText("null");
     labelEspecial.setText("Especial");
     vo.setMaxFetchSize(1);

@@ -1,5 +1,6 @@
 package es.sysmap.interflex.view;
 import es.sysmap.interflex.model.dmc.common.AppModule;
+import es.sysmap.interflex.model.dmc.common.SgavBultoCantErroneoRow;
 import inetsoft.report.PreviewView;
 import inetsoft.report.Previewer;
 import inetsoft.report.ReportSheet;
@@ -48,6 +49,19 @@ public class PackingList
     {
       if (appModule.imprimirPackingList(iddoc))
       {
+        // TODO Michael 27.06.2019 Detectar órdenes con bultos erroneos
+          SgavBultoCantErroneoRow row = appModule.getBultoCantErroneo(iddoc);
+          if (row != null)
+          {
+              int result = JOptionPane.showConfirmDialog(null, "El document té una cantitat d'embalum erroni: " + row.toString() + " : <aceptar> per imprimir el PL, <cancelar> per corretjir embalums ", "Embalums erroneos en comanda", JOptionPane.OK_CANCEL_OPTION, JOptionPane.ERROR_MESSAGE);
+              switch (result) {
+                case 2:
+                  // cancel
+                  return;
+              };
+          } 
+        
+        // TODO Fin
         //URL url = ClassLoader.getSystemResource("/es/sysmap/interflex/informes/PackingList.srt");
         //URL url = clase.getResource("/es/sysmap/interflex/informes/PackingList.srt");
         

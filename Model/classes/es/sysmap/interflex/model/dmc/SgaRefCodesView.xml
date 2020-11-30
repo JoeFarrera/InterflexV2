@@ -5,8 +5,11 @@
    Name="SgaRefCodesView"
    BindingStyle="Oracle"
    CustomQuery="true"
+   RowClass="es.sysmap.interflex.model.dmc.SgaRefCodesViewRowImpl"
    ComponentClass="es.sysmap.interflex.model.dmc.SgaRefCodesViewImpl"
    MsgBundleClass="oracle.jbo.common.JboResourceBundle"
+   RowInterface="es.sysmap.interflex.model.dmc.common.SgaRefCodesViewRow"
+   ClientRowProxyName="es.sysmap.interflex.model.dmc.client.SgaRefCodesViewRowClient"
    UseGlueCode="false" >
    <SQLQuery><![CDATA[
 SELECT SgaRefCodes.VALUE,
@@ -17,6 +20,7 @@ union
 select null, ' 'from dual
    ]]></SQLQuery>
    <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
       <Attr Name="_version" Value="10.1.2.17.96" />
       <Attr Name="_codeGenFlag2" Value="Access|Coll" />
       <Attr Name="_isExpertMode" Value="true" />

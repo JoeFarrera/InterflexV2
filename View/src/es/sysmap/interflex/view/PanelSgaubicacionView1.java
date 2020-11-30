@@ -14,6 +14,7 @@ import oracle.jbo.uicli.mom.JUMetaObjectManager;
 import sgalib.SgaJUPanel;
 import sgalib.SgaRecursos;
 
+// public class PanelSgaubicacionView1 extends JPanel implements JUPanel
 public class PanelSgaubicacionView1 extends SgaJUPanel 
 {
 // Panel layout

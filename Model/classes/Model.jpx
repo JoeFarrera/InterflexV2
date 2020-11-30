@@ -9,7 +9,7 @@
       <Attr Name="_version" Value="10.1.2.17.96" />
       <Attr Name="_jprName" Value="../Model.jpr" />
       <Attr Name="_ejbPackage" Value="false" />
-      <Attr Name="_NamedConnection" Value="ifdbatest" />
+      <Attr Name="_NamedConnection" Value="servidorsga" />
       <Attr Name="_appModuleNames0" Value="es.sysmap.interflex.model.dmc.AppModule" />
       <Attr Name="_dataControlNames0" Value="AppModuleDataControl11" />
       <Attr Name="_appModuleNames1" Value="es.sysmap.interflex.model.tst.TestAppModule" />

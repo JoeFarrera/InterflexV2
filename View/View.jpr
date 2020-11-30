@@ -33,6 +33,10 @@
    <j2eeWebContextRoot>Interflex-View-context-root</j2eeWebContextRoot>
    <listOfChildren class="oracle.ide.model.DataList">
       <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/16x16/plain/bookmark.png"/>
+         <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
          <URL path="src/resources/images/16x16/plain/bullet_ball_blue.png"/>
          <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
       </Item>
@@ -49,11 +53,19 @@
          <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
       </Item>
       <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/16x16/plain/calendar.png"/>
+         <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
          <URL path="src/es/sysmap/interflex/view/CDocSgaJUNavigationBar.java"/>
          <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
       </Item>
       <Item class="oracle.ide.model.Reference">
          <URL path="src/resources/images/16x16/plain/checks.png"/>
+         <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/16x16/plain/column.png"/>
          <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
       </Item>
       <Item class="oracle.ide.model.Reference">
@@ -89,6 +101,10 @@
          <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
       </Item>
       <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/16x16/plain/cubes.png"/>
+         <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
          <URL path="src/DataBindings.cpx"/>
          <nodeClass>oracle.adf.dt.navigator.nodes.CpxNode</nodeClass>
       </Item>
@@ -98,6 +114,10 @@
       </Item>
       <Item class="oracle.ide.model.Reference">
          <URL path="src/resources/images/16x16/plain/delete.png"/>
+         <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/16x16/plain/document_info.png"/>
          <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
       </Item>
       <Item class="oracle.ide.model.Reference">
@@ -133,8 +153,16 @@
          <nodeClass>oracle.jdeveloper.model.GifImageNode</nodeClass>
       </Item>
       <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/ExistenciaEspecialSetter.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
          <URL path="src/resources/images/findcancel.gif"/>
          <nodeClass>oracle.jdeveloper.model.GifImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/16x16/plain/folder_time.png"/>
+         <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
       </Item>
       <Item class="oracle.ide.model.Reference">
          <URL path="src/resources/images/fondo.jpg"/>
@@ -189,6 +217,14 @@
          <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
       </Item>
       <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/16x16/plain/import1.png"/>
+         <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/16x16/plain/import2.png"/>
+         <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
          <URL path="src/es/sysmap/interflex/view/Interflex.java"/>
          <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
       </Item>
@@ -197,7 +233,7 @@
          <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
       </Item>
       <Item class="oracle.ide.model.Reference">
-         <URL path="src/resources/log4j.properties"/>
+         <URL path="src/log4j.properties"/>
          <nodeClass>oracle.ide.model.DeployableTextNode</nodeClass>
       </Item>
       <Item class="oracle.ide.model.Reference">
@@ -205,7 +241,7 @@
          <nodeClass>oracle.jdeveloper.model.JpegImageNode</nodeClass>
       </Item>
       <Item class="oracle.ide.model.Reference">
-         <URL protocol="file" path="/C:/Documents and Settings/Administrador/map.properties"/>
+         <URL protocol="file" path="/C:/Users/Administrador.WIN-6IIGNBEU97I/map.properties"/>
          <nodeClass>oracle.ide.model.DeployableTextNode</nodeClass>
       </Item>
       <Item class="oracle.ide.model.Reference">
@@ -1017,6 +1053,14 @@
          <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
       </Item>
       <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavexistenciaView4.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavexistenciaView4UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
          <URL path="src/es/sysmap/interflex/view/PanelSgavexpedbultoView2.java"/>
          <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
       </Item>
@@ -1265,11 +1309,19 @@
          <nodeClass>oracle.bali.xml.addin.XMLSourceNode</nodeClass>
       </Item>
       <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/16x16/plain/recycle.png"/>
+         <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
          <URL path="src/resources/images/16x16/plain/redo.png"/>
          <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
       </Item>
       <Item class="oracle.ide.model.Reference">
          <URL path="src/resources/images/24x24/plain/redo.png"/>
+         <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/16x16/plain/remotecontrol3.png"/>
          <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
       </Item>
       <Item class="oracle.ide.model.Reference">
@@ -1281,8 +1333,8 @@
          <nodeClass>oracle.ide.model.DeployableTextNode</nodeClass>
       </Item>
       <Item class="oracle.ide.model.Reference">
-         <URL protocol="file" path="/C:/logs/rolling.31-12-2018.7.log"/>
-         <nodeClass>oracle.ide.model.DeployableTextNode</nodeClass>
+         <URL path="src/resources/images/16x16/plain/row.png"/>
+         <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
       </Item>
       <Item class="oracle.ide.model.Reference">
          <URL path="src/resources/images/run.gif"/>
@@ -1299,6 +1351,10 @@
       <Item class="oracle.ide.model.Reference">
          <URL path="src/es/sysmap/interflex/view/SgaJUPanelUIModel.xml"/>
          <nodeClass>oracle.adf.dt.navigator.nodes.BindingContainerXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/16x16/plain/shoppingcart_full.png"/>
+         <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
       </Item>
       <Item class="oracle.ide.model.Reference">
          <URL path="src/resources/images/sortidesauto.gif"/>
@@ -1378,6 +1434,10 @@
       </Item>
       <Item class="oracle.ide.model.Reference">
          <URL path="src/resources/images/48x48/plain/weight2.png"/>
+         <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/resources/images/16x16/plain/workplace2.png"/>
          <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
       </Item>
       <Item class="oracle.ide.model.Reference">

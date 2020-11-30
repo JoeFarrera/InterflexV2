@@ -42,6 +42,7 @@ public class SgavexistenciaViewRowImpl extends ViewRowImpl implements es.sysmap.
   public static final int IDFORMATO = 22;
   public static final int REFFORMATO = 23;
   public static final int ESPECIAL = 24;
+  public static final int ESPECIALABBREVIATION = 25;
   /**
    * 
    *  This is the default constructor (do not remove)
@@ -414,6 +415,8 @@ public class SgavexistenciaViewRowImpl extends ViewRowImpl implements es.sysmap.
         return getRefformato();
       case ESPECIAL:
         return getEspecial();
+      case ESPECIALABBREVIATION:
+        return getEspecialAbbreviation();
       default:
         return super.getAttrInvokeAccessor(index, attrDef);
       }
@@ -566,6 +569,12 @@ public class SgavexistenciaViewRowImpl extends ViewRowImpl implements es.sysmap.
       exist.setBloqueo((bloqueo ? "S" : "N"), motivo);
     
   }
+  
+  public void setUserEspecial(String value)
+  {
+    SgaexistenciaViewRowImpl exist = getExistencia();
+    exist.setEspecial(value);
+  }
 
   private SgaexistenciaViewRowImpl getExistencia()
   {
@@ -683,7 +692,7 @@ public class SgavexistenciaViewRowImpl extends ViewRowImpl implements es.sysmap.
 
   public boolean isOKReservarTrasllat()
   {
-    return getEstado().equals("L");
+    return getEstado().equals("L") && getCanres().equals(new Number(0));
   }
 
   /**
@@ -702,5 +711,23 @@ public class SgavexistenciaViewRowImpl extends ViewRowImpl implements es.sysmap.
   public void setEspecial(String value)
   {
     setAttributeInternal(ESPECIAL, value);
+  }
+
+  /**
+   * 
+   *  Gets the attribute value for the calculated attribute EspecialAbbreviation
+   */
+  public String getEspecialAbbreviation()
+  {
+    return (String)getAttributeInternal(ESPECIALABBREVIATION);
+  }
+
+  /**
+   * 
+   *  Sets <code>value</code> as the attribute value for the calculated attribute EspecialAbbreviation
+   */
+  public void setEspecialAbbreviation(String value)
+  {
+    setAttributeInternal(ESPECIALABBREVIATION, value);
   }
 }

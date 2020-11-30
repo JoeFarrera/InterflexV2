@@ -255,6 +255,18 @@
          <Attr Name="_DisplaySize" Value="1" />
       </DesignTime>
    </Attribute>
+   <Attribute
+      Name="PermisTrasbordo"
+      Precision="1"
+      ColumnName="PERMIS_TRASBORDO"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="SGATRASLO" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="1" />
+      </DesignTime>
+   </Attribute>
    <AccessorAttribute
       Name="SgapasilloDestino"
       Association="es.sysmap.interflex.model.bdc.SgapasilloTrasloPasilloDestinoAssociation"
@@ -525,6 +537,116 @@
       <DesignTime>
          <Attr Name="_DBObjectName" Value="SYS_C0011801" />
          <Attr Name="_isUnique" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0015255" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgatraslo.Idtraslo" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0015255" />
+         <Attr Name="_checkCondition" Value="&#34;IDTRASLO&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0015256" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgatraslo.Descrip" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0015256" />
+         <Attr Name="_checkCondition" Value="&#34;DESCRIP&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0015257" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgatraslo.Estadoproceso" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0015257" />
+         <Attr Name="_checkCondition" Value="&#34;ESTADOPROCESO&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0015258" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgatraslo.Estadotraslo" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0015258" />
+         <Attr Name="_checkCondition" Value="&#34;ESTADOTRASLO&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0015259" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgatraslo.Pasilloactual" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0015259" />
+         <Attr Name="_checkCondition" Value="&#34;PASILLOACTUAL&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0015260" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgatraslo.Pasillodestino" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0015260" />
+         <Attr Name="_checkCondition" Value="&#34;PASILLODESTINO&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0015261" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgatraslo.Trasbordoentrada" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0015261" />
+         <Attr Name="_checkCondition" Value="&#34;TRASBORDOENTRADA&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0015262" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgatraslo.Trasbordosalida" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0015262" />
+         <Attr Name="_checkCondition" Value="&#34;TRASBORDOSALIDA&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0015263" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgatraslo.Estadoproceso" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0015263" />
+         <Attr Name="_checkCondition" Value="estadoproceso in (&#39;N&#39;, &#39;F&#39;, &#39;O&#39;)" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0015264" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgatraslo.Estadotraslo" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0015264" />
+         <Attr Name="_checkCondition" Value="estadotraslo in (&#39;F&#39;, &#39;A&#39;)" />
+         <Attr Name="_isCheck" Value="true" />
       </DesignTime>
    </Key>
    <Key

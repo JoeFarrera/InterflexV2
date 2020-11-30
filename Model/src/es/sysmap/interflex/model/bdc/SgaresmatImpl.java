@@ -616,8 +616,13 @@ public class SgaresmatImpl extends EntityImpl
     // Michael 20.12.2016 The resmat may reference the "salida"
     if (lbulto != null)
     {
-      // Actualitzem l'existencia
-      getSgamac().anularAfegirMaterial(getIdart(), getCanres());
+      SgamacImpl mac = getSgamac();
+      if (mac != null)
+      {
+        // Actualitzem l'existencia
+        getSgamac().anularAfegirMaterial(getIdart(), getCanres());
+      }
+      
       lbulto.anularEntrada(getCanres(), bAnularPendent);
     
       // Eliminem la reserva    
@@ -675,11 +680,14 @@ public class SgaresmatImpl extends EntityImpl
   private void anularSortida()
   {
     // Actualitzem l'existencia
-    getSgamac().anularTreureMaterial(getIdart(), getCanres());
+    SgamacImpl mac = getSgamac();
+    if (mac != null)
+      getSgamac().anularTreureMaterial(getIdart(), getCanres());
     
     // Actualitzem ldoc
     SgaldocImpl ldoc = getSgaldoc();
-    ldoc.anularSortida(getCanres());
+    if (ldoc != null)
+      ldoc.anularSortida(getCanres());
     
     // Eliminem la reserva    
     remove();

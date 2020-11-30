@@ -239,6 +239,19 @@ public class PanelSgavexistenciaView3 extends SgaJUPanel
       });      
       tableSgavexistenciaView3.addPopupMenuItem(menuItem);
       
+           menuItem = new JMenuItem(SgaRecursos.getInstance().getString("Existencies.assignarEspecial_label"));
+      menuItem.setIcon(SgaRecursos.createImageIcon(getClass(), "16x16/plain/bookmark.png", null));
+     menuItem.addActionListener(new ActionListener()
+      {
+        public void actionPerformed(ActionEvent e)
+        {
+          setEspecial();
+        }
+      });      
+      tableSgavexistenciaView3.addPopupMenuItem(menuItem);
+    
+  
+      
       tableSgavexistenciaView3.addPopupSeparator();
     }
       
@@ -297,6 +310,21 @@ public class PanelSgavexistenciaView3 extends SgaJUPanel
     }
   }
 
+    
+      private void setEspecial()
+  {
+      SgavexistenciaViewRow existRow = (SgavexistenciaViewRow)panelBinding.findIteratorBinding("SgavexistenciaView3Iter").getCurrentRow(); 
+      AppModule appModule = (AppModule)panelBinding.getApplication().getApplicationModule();
+      if (ExistenciaEspecialSetter.set(appModule, existRow))
+     
+     {
+       
+        appModule.getTransaction().commit();
+        panelBinding.findIteratorBinding("SgavexistenciaView3Iter").executeQuery();
+
+     }
+
+  }
 
   /**
    * Regularitza la quantitat de l'existència
@@ -410,6 +438,7 @@ public class PanelSgavexistenciaView3 extends SgaJUPanel
 			return cell;
 		}
     
+
     
 	}
 

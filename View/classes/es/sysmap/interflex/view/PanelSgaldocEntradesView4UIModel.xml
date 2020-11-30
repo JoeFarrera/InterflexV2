@@ -211,7 +211,7 @@
          DefClass="oracle.jbo.uicli.jui.JUComboBoxDef"
          SubType="DCComboBox"
          BindingClass="oracle.jbo.uicli.jui.JUComboBoxBinding"
-         IterBinding="SgaldocEntradesView3Iter"
+         IterBinding="SgamacView5Iter"
          DTClass="oracle.adf.dt.objects.JUDTCtrlListLOV"
          ApplyValidation="false"
          isDynamic="false"

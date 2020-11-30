@@ -1233,4 +1233,9 @@
       FullName="es.sysmap.interflex.model.dmc.Sgavpasillomig"
       ObjectType="ViewObject" >
    </Containee>
+   <Containee
+      Name="SgavBultoCantErroneo"
+      FullName="es.sysmap.interflex.model.dmc.SgavBultoCantErroneo"
+      ObjectType="ViewObject" >
+   </Containee>
 </JboPackage>

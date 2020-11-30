@@ -4,6 +4,7 @@ import es.sysmap.interflex.model.dmc.common.AppModule;
 import es.sysmap.interflex.model.dmc.common.SgacdocSortidesViewRow;
 
 import es.sysmap.interflex.model.dmc.common.SgacdocViewRow;
+import es.sysmap.interflex.model.dmc.common.SgavBultoCantErroneoRow;
 import java.awt.*;
 import java.awt.event.*;
 
@@ -89,6 +90,7 @@ public class PanelSgacdocSortidesView2 extends SgaJUPanel
   JComboBox filtroMagatzem = new JComboBox(new Object[] {"TOT", "SLO/MLD", "MLD", "SLO", "MAN"});   
   
   JButton filtroGrupatgeButton = new JButton("Grupatge");
+  JButton bultosCantErroneo = new JButton("(Provisional) Bultos erroneos ");
   
   String currFiltroGrupatge = "P";  
   
@@ -261,15 +263,27 @@ public class PanelSgacdocSortidesView2 extends SgaJUPanel
       
     navBar.afegirFiltreMagatzem(filtroMagatzem, "Filtrar per magatzem");
     
-    
+    navBar.afegirBoto(bultosCantErroneo);    
+    navBar.addSeparator();
+   
     navBar.afegirBoto(filtroGrupatgeButton);
+
+    
     navBar.afegirBotoFiltrarLegacy(); // Just to get right position!!
+    
     
     
     
     filtroMagatzem.addItemListener(new FiltroMagatzemComboChangeListener()); 
     
  
+    bultosCantErroneo.addActionListener(new ActionListener()
+    {
+      public void actionPerformed(ActionEvent e)
+      {
+        showBultosErroneos();
+      }
+    });
     
     filtroGrupatgeButton.addActionListener(new ActionListener()
       {
@@ -289,6 +303,8 @@ public class PanelSgacdocSortidesView2 extends SgaJUPanel
           setFiltroPreparacion(currFiltroGrupatge); 
         }
       });
+      
+      
   
     setFiltroPreparacion(currFiltroGrupatge);
 
@@ -1354,6 +1370,17 @@ public class PanelSgacdocSortidesView2 extends SgaJUPanel
     {
       JUMetaObjectManager.reportException(null, ex);
     }
+  }
+  
+  public void showBultosErroneos()
+  {
+   AppModule appModule = (AppModule)panelBinding.getApplication().getApplicationModule();
+   SgavBultoCantErroneoRow row = appModule.getBultoCantErroneo(null);
+   if (row != null)
+    JOptionPane.showMessageDialog(null, "1er Bulto amb error: " + row.toString(), "Bultos erroneos", JOptionPane.WARNING_MESSAGE);
+  else
+    JOptionPane.showMessageDialog(null, "No hi ha bultos en error", "Bultos erroneos", JOptionPane.INFORMATION_MESSAGE);
+    
   }
   
   }

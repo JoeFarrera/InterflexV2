@@ -26,28 +26,36 @@ public class SgavexistenciaViewRowImplMsgBundle extends JboResourceBundle
   }
 
   static final Object[][] sMessageStrings = {
-    {"Idart_TOOLTIP", "Identificador de l'article de l'existència"},
     {"Ubipos_LABEL", "Ubicació actual"},
-    {"Idartif_LABEL", "Article"},
+    {"EspecialAbbreviation_TOOLTIP", "Especial (P.Ex: Galvanizado)"},
     {"Canres_DISPLAYWIDTH", "14"},
-    {"Desctipmac_LABEL", "Tipus Contenidor"},
     {"Ubides_LABEL", "Ubicació destí"},
+    {"Idmac_LABEL", "Contenidor"},
+    {"Descarticulo_LABEL", "Descripcio"},
+    {"Descvisualdes_LABEL", "Descrip. Destí"},
+    {"Descvisualpos_LABEL", "Descip. Posició"},
+    {"Createdon_LABEL", "Creada"},
+    {"Cantot_DISPLAYWIDTH", "14"},
+    {"EspecialAbbreviation_LABEL", "Especial"},
+    {"Idart_TOOLTIP", "Identificador de l'article de l'existència"},
+    {"Idartif_LABEL", "Article"},
+    {"Desctipmac_LABEL", "Tipus Contenidor"},
     {"Idartif_TOOLTIP", "Identificador de l'article de l'existència"},
     {"Posubipos_LABEL", "Posició actual"},
-    {"Idmac_LABEL", "Contenidor"},
     {"Refformato_LABEL", "Formato"},
-    {"Descarticulo_LABEL", "Descripcio"},
     {"Canres_LABEL", "Quant. Reserv."},
     {"Descestexist_LABEL", "Estat"},
-    {"Descvisualdes_LABEL", "Descrip. Destí"},
     {"Idart_LABEL", "Article"},
     {"Cantot_LABEL", "Quant. Total"},
     {"Posubides_LABEL", "Posició destí"},
-    {"Descvisualpos_LABEL", "Descip. Posició"},
-    {"Createdon_LABEL", "Creada"},
     {"Modifiedon_LABEL", "Modificada"},
-    {"Cantot_DISPLAYWIDTH", "14"},
     {"Multiref_LABEL", "Multireferencia"}};
+
+
+
+
+
+
 
 
 

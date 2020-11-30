@@ -26,8 +26,10 @@ public class SgatrasloImpl extends EntityImpl
   public static final int MODIFIEDON = 9;
   public static final int TRASBORDOENTRADA = 10;
   public static final int TRASBORDOSALIDA = 11;
-  public static final int SGAPASILLODESTINO = 12;
-  public static final int SGAPASILLOACTUAL = 13;
+  public static final int PERMISTRASBORDO = 12;
+  public static final int SGAPASILLODESTINO = 13;
+  public static final int SGAPASILLOACTUAL = 14;
+
 
 
 
@@ -76,6 +78,7 @@ public class SgatrasloImpl extends EntityImpl
     }
     return mDefinitionObject;
   }
+
 
 
 
@@ -234,6 +237,8 @@ public class SgatrasloImpl extends EntityImpl
         return getTrasbordoentrada();
       case TRASBORDOSALIDA:
         return getTrasbordosalida();
+      case PERMISTRASBORDO:
+        return getPermisTrasbordo();
       case SGAPASILLODESTINO:
         return getSgapasilloDestino();
       case SGAPASILLOACTUAL:
@@ -271,6 +276,9 @@ public class SgatrasloImpl extends EntityImpl
         return;
       case TRASBORDOSALIDA:
         setTrasbordosalida((String)value);
+        return;
+      case PERMISTRASBORDO:
+        setPermisTrasbordo((String)value);
         return;
       default:
         super.setAttrInvokeAccessor(index, value, attrDef);
@@ -429,6 +437,25 @@ public class SgatrasloImpl extends EntityImpl
   public void setTrasbordosalida(String value)
   {
     setAttributeInternal(TRASBORDOSALIDA, value);
+  }
+
+
+  /**
+   * 
+   *  Gets the attribute value for PermisTrasbordo, using the alias name PermisTrasbordo
+   */
+  public String getPermisTrasbordo()
+  {
+    return (String)getAttributeInternal(PERMISTRASBORDO);
+  }
+
+  /**
+   * 
+   *  Sets <code>value</code> as the attribute value for PermisTrasbordo
+   */
+  public void setPermisTrasbordo(String value)
+  {
+    setAttributeInternal(PERMISTRASBORDO, value);
   }
 
   /**

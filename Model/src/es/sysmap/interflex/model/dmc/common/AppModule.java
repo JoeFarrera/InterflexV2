@@ -138,5 +138,15 @@ public interface AppModule extends ApplicationModule
 
   boolean assignarTrasllatManual(String idArt, String idMac);
 
+  java.util.Set getEspecialExistencia();
+
+  String getEspecialValue(String abbreviation);
+
+  boolean isUserModPermisTraslo();
+
+  boolean IsTrasloBloqueadoEnPasillo(int traslo);
+
+  SgavBultoCantErroneoRow getBultoCantErroneo(String iddoc);
+
 
 }

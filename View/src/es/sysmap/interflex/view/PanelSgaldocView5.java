@@ -25,6 +25,7 @@ import sgalib.SgaJUPanel;
 import sgalib.SgaRecursos;
 import sgalib.SgaUtilPuesto;
 
+// public class PanelSgaldocView5 extends JUPanel
 public class PanelSgaldocView5 extends SgaJUPanel
 {
   // Panel binding definition used by design time

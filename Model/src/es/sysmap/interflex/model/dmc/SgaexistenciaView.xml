@@ -19,7 +19,9 @@
 sgaarticulo  where sgaarticulo.idart = sgaexistencia.idart) AS 
 DESCRIP, 
        Sgaexistencia.FECENT, 
-       Sgaexistencia.MOTIVO_BLOQUEO"
+       Sgaexistencia.MOTIVO_BLOQUEO, 
+
+       Sgaexistencia.ESPECIAL"
    FromList="SGAEXISTENCIA Sgaexistencia"
    OrderBy="&#34;IDARTIF&#34;,Sgaexistencia.CANTOT"
    BindingStyle="Oracle"
@@ -130,6 +132,13 @@ DESCRIP,
       EntityAttrName="MotivoBloqueo"
       EntityUsage="Sgaexistencia"
       AliasName="MOTIVO_BLOQUEO" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Especial"
+      PrecisionRule="true"
+      EntityAttrName="Especial"
+      EntityUsage="Sgaexistencia"
+      AliasName="ESPECIAL" >
    </ViewAttribute>
    <ViewLinkAccessor
       Name="SgaresmatView"

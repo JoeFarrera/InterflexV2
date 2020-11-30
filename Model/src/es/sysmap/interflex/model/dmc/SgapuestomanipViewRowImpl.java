@@ -8,6 +8,7 @@ import oracle.jbo.domain.Number;
 //  ---    Warning: Do not modify method signatures of generated methods.
 //  ---------------------------------------------------------------------
 
+
 public class SgapuestomanipViewRowImpl extends ViewRowImpl 
 {
 

@@ -28,7 +28,7 @@
             <Item Value="Idmac" />
             <Item Value="Desctipmac" />
             <Item Value="Multiref" />
-            <Item Value="Especial" />
+            <Item Value="EspecialAbbreviation" />
             <Item Value="Ubipos" />
             <Item Value="Descvisualpos" />
             <Item Value="Posubipos" />

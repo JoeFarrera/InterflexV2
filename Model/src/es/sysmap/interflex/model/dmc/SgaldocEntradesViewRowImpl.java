@@ -786,7 +786,16 @@ public class SgaldocEntradesViewRowImpl extends ViewRowImpl implements es.sysmap
         if (tipoCarga.equals("MAN"))
           mac.setIdtipmac("PAK"); // TODO: Make sure ok for all entrada manual
         else
-          ; // Michael 04.02.2014 ya lo tiene mac.setIdtipmac(tipoCarga);
+           // Michael 04.02.2014 ya lo tiene mac.setIdtipmac(tipoCarga);
+           // Michael 31.01.2019 parece que no esta...
+           {
+             String smac = mac.getIdtipmac();
+             if (mac.getIdtipmac() == null)
+             {
+               mac.setIdtipmac(getIdtipmac());
+             }
+            }
+          
       mac.setUbipos(idubi);
       mac.setPosubipos(null);
       mac.setUbides(idubi);

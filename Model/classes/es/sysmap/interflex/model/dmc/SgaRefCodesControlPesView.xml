@@ -6,6 +6,7 @@
    Extends="es.sysmap.interflex.model.dmc.SgaRefCodesView"
    BindingStyle="Oracle"
    CustomQuery="true"
+   RowClass="es.sysmap.interflex.model.dmc.SgaRefCodesViewRowImpl"
    ComponentClass="es.sysmap.interflex.model.dmc.SgaRefCodesControlPesViewImpl"
    MsgBundleClass="oracle.jbo.common.JboResourceBundle"
    UseGlueCode="false" >
@@ -28,7 +29,6 @@ WHERE DOMAIN='CONTROLPES'
       Precision="1"
       Type="java.lang.String"
       ColumnType="VARCHAR2"
-      PrimaryKey="true"
       AliasName="VALUE"
       Expression="NULL"
       SQLType="VARCHAR" >

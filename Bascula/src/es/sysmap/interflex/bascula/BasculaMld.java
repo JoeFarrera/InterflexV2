@@ -58,20 +58,20 @@ public class BasculaMld extends MapObservable implements Observer
   {
      byte [] inBytes = (byte [])arg;
      addIncomingBytesMld (inBytes);
-     //LOG.debug("Recibido " + lenReceivedMld + " caracteres");
+//     LOG.debug("Recibido: " + inBytes + " length: " + lenReceivedMld + " caracteres");
      if (validateCurrentReceiveStrMld())
      {
        if (lenReceivedMld == MAX_LEN_MLD)  // S'ha rebut tot el telegrama
        {
          setPesMld(new String(ByteHelper.getSubBytes(receiveStrMld, 4, 11)));
-         //LOG.debug("Rebut pes MLD: " + pesMld);
+         LOG.debug("Rebut pes MLD: " + pesMld);
          lenReceivedMld = 0;
        }
      }
-     //else
-     //{
-     //   LOG.error("Recibido telegrama desconocido en Mld");
-     //}
+     else
+     {
+        LOG.error("Recibido telegrama desconocido en Mld");
+     }
   }
   
 
@@ -97,9 +97,26 @@ public class BasculaMld extends MapObservable implements Observer
   {
     boolean retVal = true;
     
+    // Michael 08.04.2019 Simplify mld reading...
     // Si la longitud es superior a l'esperada, descartem el missatge
-    if (lenReceivedMld > MAX_LEN_MLD)
+    if (lenReceivedMld >= MAX_LEN_MLD)
     {  
+      if (((char)receiveStrMld [0] == 'S') && ((char)receiveStrMld [2] == 'S' || (char)receiveStrMld [2] == 'D'))
+      {
+              // LOG.info("Recibido peso mld: " + receiveStrMld);
+              lenReceivedMld = MAX_LEN_MLD;
+              if (true)
+              return true;
+      }
+      else
+      {
+        LOG.error("Recibido datos no esperados en telegrama. Desechando " + lenReceivedMld + " caracteres");
+        lenReceivedMld = 0;
+        if (true)
+          return false;
+
+        
+      }
       boolean trobat = false;
       for (int i = 0; (i < receiveStrMld.length && !trobat); i ++)
       {
@@ -119,10 +136,10 @@ public class BasculaMld extends MapObservable implements Observer
               // asculaMld.java:113)
               // BasculoaMld.validateCurrentReceiveStrMld i: 1 receiveStrMld: [B@385715 lenReceiv
               // edMld: 39 receiveStrMld.length: 19
-              System.out.println("BasculoaMld.validateCurrentReceiveStrMld i: " 
-                + i + " receiveStrMld: " + receiveStrMld 
-                + " lenReceivedMld: " + lenReceivedMld 
-                + " receiveStrMld.length: " + receiveStrMld.length);  
+//          System.out.println("BasculoaMld.validateCurrentReceiveStrMld i: " 
+//                + i + " receiveStrMld: " + receiveStrMld 
+//                + " lenReceivedMld: " + lenReceivedMld 
+//                + " receiveStrMld.length: " + receiveStrMld.length);  
               System.arraycopy(receiveStrMld, i, receiveStrMld, 0, MAX_LEN_MLD);
               lenReceivedMld = MAX_LEN_MLD;
             }
@@ -144,7 +161,7 @@ public class BasculaMld extends MapObservable implements Observer
     
     if(!retVal)
     {
-        //LOG.error("Recibido datos no esperados en telegrama. Desechando " + lenReceivedMld + " caracteres");
+        LOG.error("Recibido datos no esperados en telegrama. Desechando " + lenReceivedMld + " caracteres");
         lenReceivedMld = 0;
     }
     return retVal;

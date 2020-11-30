@@ -234,7 +234,17 @@ public class PanelSgavexistenciaView2 extends SgaJUPanel
 
       tableSgavexistenciaView2.addPopupMenuItem(menuItem);
       
-
+     menuItem = new JMenuItem(SgaRecursos.getInstance().getString("Existencies.assignarEspecial_label"));
+      menuItem.setIcon(SgaRecursos.createImageIcon(getClass(), "16x16/plain/bookmark.png", null));
+     menuItem.addActionListener(new ActionListener()
+      {
+        public void actionPerformed(ActionEvent e)
+        {
+          setEspecial();
+        }
+      });      
+      tableSgavexistenciaView2.addPopupMenuItem(menuItem);
+ 
 
       
       tableSgavexistenciaView2.addPopupSeparator();
@@ -535,7 +545,7 @@ public class PanelSgavexistenciaView2 extends SgaJUPanel
         }
         if (!existRow.isOKReservarTrasllat())
         {
-          JOptionPane.showMessageDialog(null, "Només es poden traslladar existencies en estat lliure", "Trasllat manual", JOptionPane.WARNING_MESSAGE);
+          JOptionPane.showMessageDialog(null, "Només es poden traslladar existencies en estat lliure i sense reserves", "Trasllat manual", JOptionPane.WARNING_MESSAGE);
           return;
         }
 
@@ -690,6 +700,21 @@ public class PanelSgavexistenciaView2 extends SgaJUPanel
  {
    idDocTL = iddoc;
  }
+ 
+   private void setEspecial()
+  {
+      SgavexistenciaViewRow existRow = (SgavexistenciaViewRow)panelBinding.findIteratorBinding("SgavexistenciaView2Iter").getCurrentRow(); 
+      AppModule appModule = (AppModule)panelBinding.getApplication().getApplicationModule();
+      if (ExistenciaEspecialSetter.set(appModule, existRow))
+     
+     {
+       
+        appModule.getTransaction().commit();
+        panelBinding.findIteratorBinding("SgavexistenciaView2Iter").executeQuery();
+
+     }
+
+  }
  
 
 }

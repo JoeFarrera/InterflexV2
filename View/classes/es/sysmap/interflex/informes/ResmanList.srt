@@ -14,10 +14,10 @@
 <![CDATA[false]]>
 </ReportProperty>
 <ReportProperty Name="edit.layout">
-<![CDATA[false]]>
+<![CDATA[true]]>
 </ReportProperty>
 <ReportProperty Name="live.edit">
-<![CDATA[true]]>
+<![CDATA[false]]>
 </ReportProperty>
 <ReportProperty Name="cacheTime">
 <![CDATA[0]]>
@@ -29,7 +29,7 @@
 <![CDATA[2005-05-23 19:12:43]]>
 </ReportProperty>
 <ReportProperty Name="report.modified">
-<![CDATA[2016-05-06 18:47:25]]>
+<![CDATA[2019-02-12 08:14:27]]>
 </ReportProperty>
 <Parameters>
 </Parameters>
@@ -51,8 +51,8 @@
 ]]>
 </TextElement>
 <TextElement ID="Text44" Alignment="1" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-PLAIN-10" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
-<script><![CDATA[text = text + " " + report.Section2.data[1]['IDCABSTR'] + " " + report.Section2.data[1]['IDCABNUM']]]></script>
-<![CDATA[Document:]]>
+<script><![CDATA[text = text + " " + report.Section2.data[1]['NALBARAN'] + " Transp: " + report.Section2.data[1]['TRANSPORTE']]]></script>
+<![CDATA[Albarán:]]>
 </TextElement>
 </Header>
 <Header Type="512">
@@ -68,8 +68,8 @@
 <property><name><![CDATA[field.name]]></name><value><![CDATA[false]]></value></property>
 <property><name><![CDATA[gen.hgap]]></name><value><![CDATA[4]]></value></property>
 <property><name><![CDATA[gen.notGen]]></name><value><![CDATA[false]]></value></property>
-<property><name><![CDATA[gen.removeAll]]></name><value><![CDATA[false]]></value></property>
 <property><name><![CDATA[gen.layout]]></name><value><![CDATA[1]]></value></property>
+<property><name><![CDATA[gen.removeAll]]></name><value><![CDATA[false]]></value></property>
 <property><name><![CDATA[gen.vgap]]></name><value><![CDATA[2]]></value></property>
 <bindingAttr type="3" class="BindingAttr">
 <filter class="SourceAttr" type="0" source="sgavresman" prefix="Interflex">
@@ -95,8 +95,10 @@
 <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="NIVEL" visible="true" dataType="double" order="0" ></dataRef>
 <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="IDMAC" visible="true" dataType="string" order="0" ></dataRef>
 <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="IDCABSTR" visible="false" dataType="string" order="0" ></dataRef>
-<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="IDCABNUM" visible="false" dataType="double" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="IDCABNUM" visible="false" dataType="string" order="0" ></dataRef>
 <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="IDENT" visible="true" dataType="string" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="NALBARAN" visible="true" dataType="string" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="TRANSPORTE" visible="true" dataType="string" order="0" ></dataRef>
 </ColumnSelection>
 <ColumnSelection>
 <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="IDDOC" visible="true" dataType="double" order="0" ></dataRef>
@@ -113,10 +115,12 @@
 <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="COLUMNA" visible="true" dataType="double" order="0" ></dataRef>
 <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="NIVEL" visible="true" dataType="double" order="0" ></dataRef>
 <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="IDCABSTR" visible="true" dataType="string" order="0" ></dataRef>
-<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="IDCABNUM" visible="true" dataType="double" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="IDCABNUM" visible="true" dataType="string" order="0" ></dataRef>
 <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="IDTIPDOC" visible="true" dataType="string" order="0" ></dataRef>
 <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="INTEGRA" visible="true" dataType="string" order="0" ></dataRef>
 <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="IDENT" visible="true" dataType="string" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="NALBARAN" visible="true" dataType="string" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="TRANSPORTE" visible="true" dataType="string" order="0" ></dataRef>
 </ColumnSelection>
 <allRows>
 </allRows>
@@ -190,39 +194,39 @@
 <SectionContent>
 <SectionBand Height="0.19444445" Visible="true" ShrinkToFit="false" PageBefore="false" PageAfter="false" SuppressBlank="false" TopBorder="0" LeftBorder="0" Breakable="true" RepeatHeader="false" Underlay="false" AtBottom="false" KeepTogether="false" BottomBorder="0" RightBorder="0" OrphanControl="false" Elements="9">
 <TextElement ID="Text26" Alignment="1" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-PLAIN-10" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
-<![CDATA[45021]]>
+<![CDATA[XXXXXXX]]>
 </TextElement>
 <FieldProperty X="0" Y="0" Width="55" Height="14" VLine="0" VLineColor="-16777216" Binding="IDARTIF"/>
 <TextElement ID="Text27" Alignment="1" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-PLAIN-10" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
-<![CDATA[TUBO ECOPLAST NUM. 21                                                                               ]]>
+<![CDATA[XXXXXXX]]>
 </TextElement>
 <FieldProperty X="50" Y="0" Width="97" Height="14" VLine="0" VLineColor="-16777216" Binding="DESCRIP"/>
 <TextElement ID="Text28" Alignment="1" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-PLAIN-10" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
-<![CDATA[750]]>
+<![CDATA[99999.99]]>
 </TextElement>
 <FieldProperty X="175" Y="0" Width="47" Height="14" VLine="0" VLineColor="-16777216" Binding="CANRES"/>
 <TextElement ID="Text29" Alignment="1" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-PLAIN-10" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
-<![CDATA[050807]]>
+<![CDATA[XXXXX]]>
 </TextElement>
 <FieldProperty X="224" Y="0" Width="39" Height="14" VLine="0" VLineColor="-16777216" Binding="IDUBI"/>
 <TextElement ID="Text30" Alignment="1" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-PLAIN-10" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
-<![CDATA[5]]>
+<![CDATA[99999.99]]>
 </TextElement>
 <FieldProperty X="265" Y="0" Width="25" Height="14" VLine="0" VLineColor="-16777216" Binding="PASILLO"/>
 <TextElement ID="Text31" Alignment="1" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-PLAIN-10" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
-<![CDATA[8]]>
+<![CDATA[99999.99]]>
 </TextElement>
 <FieldProperty X="285" Y="0" Width="30" Height="14" VLine="0" VLineColor="-16777216" Binding="COLUMNA"/>
 <TextElement ID="Text32" Alignment="1" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-PLAIN-10" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
-<![CDATA[7]]>
+<![CDATA[99999.99]]>
 </TextElement>
 <FieldProperty X="317" Y="0" Width="34" Height="14" VLine="0" VLineColor="-16777216" Binding="NIVEL"/>
 <TextElement ID="Text33" Alignment="1" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-PLAIN-10" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
-<![CDATA[050807000002]]>
+<![CDATA[XXXXX]]>
 </TextElement>
 <FieldProperty X="330" Y="0" Width="82" Height="14" VLine="0" VLineColor="-16777216" Binding="IDMAC"/>
 <TextElement ID="Text75" Alignment="1" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-PLAIN-10" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
-<![CDATA[MIG]]>
+<![CDATA[XXXXX]]>
 </TextElement>
 <FieldProperty X="418" Y="0" Width="34" Height="14" VLine="0" VLineColor="-16777216" Binding="IDENT"/>
 <Shapes>
@@ -236,11 +240,11 @@
 </SectionBand>
 </SectionFooter>
 </Section>
-<Table Rows="2" Cols="11" HeaderRow="1" HeaderCol="0" TrailerRow="0" TrailerCol="0">
+<Table Rows="2" Cols="13" HeaderRow="1" HeaderCol="0" TrailerRow="0" TrailerCol="0">
 <TR>
-<TD Type="string"><![CDATA[IDARTIF]]></TD><TD Type="string"><![CDATA[DESCRIP]]></TD><TD Type="string"><![CDATA[CANRES]]></TD><TD Type="string"><![CDATA[IDUBI]]></TD><TD Type="string"><![CDATA[PASILLO]]></TD><TD Type="string"><![CDATA[COLUMNA]]></TD><TD Type="string"><![CDATA[NIVEL]]></TD><TD Type="string"><![CDATA[IDMAC]]></TD><TD Type="string"><![CDATA[IDCABSTR]]></TD><TD Type="string"><![CDATA[IDCABNUM]]></TD><TD Type="string"><![CDATA[IDENT]]></TD></TR>
+<TD Type="string"><![CDATA[IDARTIF]]></TD><TD Type="string"><![CDATA[DESCRIP]]></TD><TD Type="string"><![CDATA[CANRES]]></TD><TD Type="string"><![CDATA[IDUBI]]></TD><TD Type="string"><![CDATA[PASILLO]]></TD><TD Type="string"><![CDATA[COLUMNA]]></TD><TD Type="string"><![CDATA[NIVEL]]></TD><TD Type="string"><![CDATA[IDMAC]]></TD><TD Type="string"><![CDATA[IDCABSTR]]></TD><TD Type="string"><![CDATA[IDCABNUM]]></TD><TD Type="string"><![CDATA[IDENT]]></TD><TD Type="string"><![CDATA[NALBARAN]]></TD><TD Type="string"><![CDATA[TRANSPORTE]]></TD></TR>
 <TR>
-<TD Type="string"><![CDATA[XXXXXXX]]></TD><TD Type="string"><![CDATA[XXXXXXX]]></TD><TD Type="double"><![CDATA[99999.99]]></TD><TD Type="string"><![CDATA[XXXXX]]></TD><TD Type="double"><![CDATA[99999.99]]></TD><TD Type="double"><![CDATA[99999.99]]></TD><TD Type="double"><![CDATA[99999.99]]></TD><TD Type="string"><![CDATA[XXXXX]]></TD><TD Type="string"><![CDATA[XXXXXXXX]]></TD><TD Type="double"><![CDATA[99999.99]]></TD><TD Type="string"><![CDATA[XXXXX]]></TD></TR>
+<TD Type="string"><![CDATA[XXXXXXX]]></TD><TD Type="string"><![CDATA[XXXXXXX]]></TD><TD Type="double"><![CDATA[99999.99]]></TD><TD Type="string"><![CDATA[XXXXX]]></TD><TD Type="double"><![CDATA[99999.99]]></TD><TD Type="double"><![CDATA[99999.99]]></TD><TD Type="double"><![CDATA[99999.99]]></TD><TD Type="string"><![CDATA[XXXXX]]></TD><TD Type="string"><![CDATA[XXXXXXXX]]></TD><TD Type="string"><![CDATA[XXXXXXXX]]></TD><TD Type="string"><![CDATA[XXXXX]]></TD><TD Type="string"><![CDATA[XXXXXXXX]]></TD><TD Type="string"><![CDATA[XXXXXXXX]]></TD></TR>
 </Table>
 </SectionElement>
 </Report>

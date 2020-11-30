@@ -27,7 +27,8 @@ public class SgaexistenciaViewRowImpl extends ViewRowImpl
   public static final int DESCRIP = 8;
   public static final int FECENT = 9;
   public static final int MOTIVOBLOQUEO = 10;
-  public static final int SGARESMATVIEW = 11;
+  public static final int ESPECIAL = 11;
+  public static final int SGARESMATVIEW = 12;
   /**
    * 
    *  This is the default constructor (do not remove)
@@ -227,6 +228,8 @@ public class SgaexistenciaViewRowImpl extends ViewRowImpl
         return getFecent();
       case MOTIVOBLOQUEO:
         return getMotivoBloqueo();
+      case ESPECIAL:
+        return getEspecial();
       case SGARESMATVIEW:
         return getSgaresmatView();
       default:
@@ -268,6 +271,9 @@ public class SgaexistenciaViewRowImpl extends ViewRowImpl
         return;
       case MOTIVOBLOQUEO:
         setMotivoBloqueo((String)value);
+        return;
+      case ESPECIAL:
+        setEspecial((String)value);
         return;
       default:
         super.setAttrInvokeAccessor(index, value, attrDef);
@@ -399,6 +405,24 @@ public class SgaexistenciaViewRowImpl extends ViewRowImpl
       setCanres(new Number(0));
       getSgaexistencia().quizasBorrarExistencia();
     }
+  }
+
+  /**
+   * 
+   *  Gets the attribute value for ESPECIAL using the alias name Especial
+   */
+  public String getEspecial()
+  {
+    return (String)getAttributeInternal(ESPECIAL);
+  }
+
+  /**
+   * 
+   *  Sets <code>value</code> as attribute value for ESPECIAL using the alias name Especial
+   */
+  public void setEspecial(String value)
+  {
+    setAttributeInternal(ESPECIAL, value);
   }
 
 

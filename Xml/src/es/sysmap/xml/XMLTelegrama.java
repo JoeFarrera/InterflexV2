@@ -5,8 +5,9 @@ import oracle.xml.parser.v2.XMLNode;
 import oracle.xml.parser.v2.XSLException;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
-import sgalib.SgaUtilPuesto;
-import org.apache.log4j.Logger;;
+// import sgalib.SgaUtilPuesto;
+import org.apache.log4j.Logger;
+import sgalib.SgaUtilPuesto;;
 
 public class XMLTelegrama
 {

@@ -31,6 +31,9 @@ public class SgacdocTLViewRowImpl extends SgacdocViewRowImpl implements es.sysma
 
 ;
 ;
+;
+;
+;
   public static final int MAXATTRCONST = oracle.jbo.server.ViewDefImpl.getMaxAttrConst("es.sysmap.interflex.model.dmc.SgacdocView");;
   public static final int SGAVEXISTENCIATLVIEW = MAXATTRCONST;
   /**

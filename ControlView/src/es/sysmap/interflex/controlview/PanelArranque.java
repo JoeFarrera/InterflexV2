@@ -1,5 +1,5 @@
 package es.sysmap.interflex.controlview;
-import es.sysmap.interflex.control.ComHost;
+// import es.sysmap.interflex.control.ComHost;
 import es.sysmap.interflex.control.GestorDocSalida;
 import es.sysmap.interflex.control.GestorOrdTran;
 import es.sysmap.interflex.control.PlcStatus;

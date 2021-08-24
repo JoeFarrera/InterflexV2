@@ -36,30 +36,18 @@
       <ENTRY name="ORACLE_JDBC_TYPE" value="thin"/>
       <ENTRY name="DeployPassword" value="true"/>
    </ConnectionDefinition>
-   <ConnectionDefinition name="ifdbatest">
-      <ENTRY name="JDBC_PORT" value="1521"/>
-      <ENTRY name="ConnectionType" value="JDBC"/>
-      <ENTRY name="HOSTNAME" value="servidorsga"/>
-      <ENTRY name="user" value="ifdbatest"/>
-      <ENTRY name="ConnectionName" value="ifdbatest"/>
-      <ENTRY name="SID" value="prod"/>
-      <ENTRY name="JdbcDriver" value="oracle.jdbc.driver.OracleDriver"/>
-      <ENTRY name="password">{904}05FD72E74745D4758E761C95A363193063CF547AE9B5E9C147</ENTRY>
-      <ENTRY name="ORACLE_JDBC_TYPE" value="thin"/>
-      <ENTRY name="DeployPassword" value="true"/>
-   </ConnectionDefinition>
    <ConnectionDefinition name="servidorsga">
       <ENTRY name="JDBC_PORT" value="1521"/>
       <ENTRY name="ConnectionType" value="JDBC"/>
-      <ENTRY name="HOSTNAME" value="servidorsga"/>
+      <ENTRY name="HOSTNAME" value="servidorsganew"/>
       <ENTRY name="DeployPassword" value="true"/>
       <ENTRY name="user" value="ifdba"/>
       <ENTRY name="ConnectionName" value="servidorsga"/>
       <ENTRY name="SID" value="PROD"/>
-      <ENTRY name="JdbcDriver" value="oracle.jdbc.driver.OracleDriver"/>
       <ENTRY name="password">
-         <![CDATA[{904}05F848504585C974F690E3512D292F19B3]]>
+         <![CDATA[{904}059A95F04DB3FB4F146740CA87ABA9C846]]>
       </ENTRY>
+      <ENTRY name="JdbcDriver" value="oracle.jdbc.driver.OracleDriver"/>
       <ENTRY name="ORACLE_JDBC_TYPE" value="thin"/>
       <ENTRY name="DeployPassword" value="true"/>
    </ConnectionDefinition>

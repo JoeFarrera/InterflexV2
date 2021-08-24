@@ -1,6 +1,6 @@
 package es.sysmap.interflex.gestortelegrama;
 
-import es.sysmap.interflex.gestortelegrama.MapMonitor;
+// import es.sysmap.interflex.gestortelegrama.MapMonitor;
 import es.sysmap.interflex.plcdriver.Movi;
 import es.sysmap.interflex.plcdriver.PlcDriver;
 import es.sysmap.interflex.plcdriver.Posicion;

@@ -3,7 +3,6 @@
 
 <ViewObject
    Name="SgavcompararmanautoView"
-   OrderBy="idartif"
    BindingStyle="Oracle"
    CustomQuery="true"
    RowClass="es.sysmap.interflex.model.dmc.SgavcompararmanautoViewRowImpl"
@@ -11,9 +10,12 @@
    MsgBundleClass="es.sysmap.interflex.model.dmc.common.SgavcompararmanautoViewRowImplMsgBundle"
    RowInterface="es.sysmap.interflex.model.dmc.common.SgavcompararmanautoViewRow"
    ClientRowProxyName="es.sysmap.interflex.model.dmc.client.SgavcompararmanautoViewRowClient"
+   FetchMode="FETCH_AS_NEEDED"
    UseGlueCode="false" >
    <SQLQuery><![CDATA[
-select idartif, descrip, idart, contenidors_auto, canauto , contenidors_man , canman from sgavcompararmanauto
+select idartif, descrip, idart, sum(contenidors_auto) contenidors_auto, sum(canauto) canauto , sum(contenidors_man) contenidors_man , sum(canman) canman
+from sgavcompararmanauto
+group by idartif, descrip, idart
    ]]></SQLQuery>
    <DesignTime>
       <Attr Name="_isCodegen" Value="true" />

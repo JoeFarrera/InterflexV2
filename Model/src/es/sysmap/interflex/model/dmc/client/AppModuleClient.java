@@ -28,52 +28,10 @@ public class AppModuleClient extends ApplicationModuleImpl implements es.sysmap.
     return ((Boolean)_ret).booleanValue();
   }
 
-  public boolean IsTrasloBloqueadoEnPasillo(int traslo)
+  public String findIdUbi(oracle.jbo.Key k)
   {
-    Object _ret = this.riInvokeExportedMethod(this, "IsTrasloBloqueadoEnPasillo", new String[] {"int"}, new Object[] {new Integer(traslo)});
-    return ((Boolean)_ret).booleanValue();
-  }
-
-  public String actualitzarReferencia(java.sql.ResultSet referencia)
-  {
-    Object _ret = this.riInvokeExportedMethod(this, "actualitzarReferencia", new String[] {"java.sql.ResultSet"}, new Object[] {referencia});
+    Object _ret = this.riInvokeExportedMethod(this, "findIdUbi", new String[] {"oracle.jbo.Key"}, new Object[] {k});
     return (String)_ret;
-  }
-
-  public boolean assignarReservaManual(oracle.jbo.domain.Number idDoc, oracle.jbo.domain.Number idLin, String idArt, String idMac, oracle.jbo.domain.Number canRes)
-  {
-    Object _ret = this.riInvokeExportedMethod(this, "assignarReservaManual", new String[] {"oracle.jbo.domain.Number", "oracle.jbo.domain.Number", "java.lang.String", "java.lang.String", "oracle.jbo.domain.Number"}, new Object[] {idDoc, idLin, idArt, idMac, canRes});
-    return ((Boolean)_ret).booleanValue();
-  }
-
-  public boolean assignarTrasllatManual(String idArt, String idMac)
-  {
-    Object _ret = this.riInvokeExportedMethod(this, "assignarTrasllatManual", new String[] {"java.lang.String", "java.lang.String"}, new Object[] {idArt, idMac});
-    return ((Boolean)_ret).booleanValue();
-  }
-
-  public boolean checkUser(String user, String password)
-  {
-    Object _ret = this.riInvokeExportedMethod(this, "checkUser", new String[] {"java.lang.String", "java.lang.String"}, new Object[] {user, password});
-    return ((Boolean)_ret).booleanValue();
-  }
-
-  public boolean checkUsername(String user)
-  {
-    Object _ret = this.riInvokeExportedMethod(this, "checkUsername", new String[] {"java.lang.String"}, new Object[] {user});
-    return ((Boolean)_ret).booleanValue();
-  }
-
-  public int contenidorAmbExistencies(String idmac)
-  {
-    Object _ret = this.riInvokeExportedMethod(this, "contenidorAmbExistencies", new String[] {"java.lang.String"}, new Object[] {idmac});
-    return ((Integer)_ret).intValue();
-  }
-
-  public oracle.jbo.Key crearDocumentEntrada(String idpuesto, String idart, oracle.jbo.domain.Number cantot)
-  {
-    Object _ret = this.riInvokeExportedMethod(this, "crearDocumentEntrada", new String[] {"java.lang.String", "java.lang.String", "oracle.jbo.domain.Number"}, new Object[] {idpuesto, idart, cantot});
-    return (oracle.jbo.Key)_ret;
   }
 
   public oracle.jbo.Key crearLiniaDetall(oracle.jbo.Key key, String idpuesto, String idart, oracle.jbo.domain.Number cantot)
@@ -82,39 +40,21 @@ public class AppModuleClient extends ApplicationModuleImpl implements es.sysmap.
     return (oracle.jbo.Key)_ret;
   }
 
-  public String createSgaExped(es.sysmap.interflex.model.dmc.common.SgacdocViewRow cdocRow)
+  public oracle.jbo.Key crearDocumentEntrada(String idpuesto, String idart, oracle.jbo.domain.Number cantot)
   {
-    Object _ret = this.riInvokeExportedMethod(this, "createSgaExped", new String[] {"es.sysmap.interflex.model.dmc.common.SgacdocViewRow"}, new Object[] {cdocRow});
+    Object _ret = this.riInvokeExportedMethod(this, "crearDocumentEntrada", new String[] {"java.lang.String", "java.lang.String", "oracle.jbo.domain.Number"}, new Object[] {idpuesto, idart, cantot});
+    return (oracle.jbo.Key)_ret;
+  }
+
+  public String getRetirarMac(String puesto)
+  {
+    Object _ret = this.riInvokeExportedMethod(this, "getRetirarMac", new String[] {"java.lang.String"}, new Object[] {puesto});
     return (String)_ret;
   }
 
-  public String eliminarReferencia(java.sql.ResultSet referencia)
+  public String setRetirarMac(String puesto, String value)
   {
-    Object _ret = this.riInvokeExportedMethod(this, "eliminarReferencia", new String[] {"java.sql.ResultSet"}, new Object[] {referencia});
-    return (String)_ret;
-  }
-
-  public boolean esPuestoExtraPicking(String puesto)
-  {
-    Object _ret = this.riInvokeExportedMethod(this, "esPuestoExtraPicking", new String[] {"java.lang.String"}, new Object[] {puesto});
-    return ((Boolean)_ret).booleanValue();
-  }
-
-  public boolean esPuestoManipulacion(String puesto)
-  {
-    Object _ret = this.riInvokeExportedMethod(this, "esPuestoManipulacion", new String[] {"java.lang.String"}, new Object[] {puesto});
-    return ((Boolean)_ret).booleanValue();
-  }
-
-  public boolean existsMac(String idMac)
-  {
-    Object _ret = this.riInvokeExportedMethod(this, "existsMac", new String[] {"java.lang.String"}, new Object[] {idMac});
-    return ((Boolean)_ret).booleanValue();
-  }
-
-  public String findIdUbi(oracle.jbo.Key k)
-  {
-    Object _ret = this.riInvokeExportedMethod(this, "findIdUbi", new String[] {"oracle.jbo.Key"}, new Object[] {k});
+    Object _ret = this.riInvokeExportedMethod(this, "setRetirarMac", new String[] {"java.lang.String", "java.lang.String"}, new Object[] {puesto, value});
     return (String)_ret;
   }
 
@@ -124,100 +64,10 @@ public class AppModuleClient extends ApplicationModuleImpl implements es.sysmap.
     return (String)_ret;
   }
 
-  public es.sysmap.interflex.model.dmc.common.SgavBultoCantErroneoRow getBultoCantErroneo(String iddoc)
+  public String setAutoSortides(String puesto, String value)
   {
-    Object _ret = this.riInvokeExportedMethod(this, "getBultoCantErroneo", new String[] {"java.lang.String"}, new Object[] {iddoc});
-    return (es.sysmap.interflex.model.dmc.common.SgavBultoCantErroneoRow)_ret;
-  }
-
-  public String getCapacitatPulmoPuesto(String puesto, boolean isSlo)
-  {
-    Object _ret = this.riInvokeExportedMethod(this, "getCapacitatPulmoPuesto", new String[] {"java.lang.String", "boolean"}, new Object[] {puesto, new Boolean(isSlo)});
+    Object _ret = this.riInvokeExportedMethod(this, "setAutoSortides", new String[] {"java.lang.String", "java.lang.String"}, new Object[] {puesto, value});
     return (String)_ret;
-  }
-
-  public java.util.Vector getDisponibilitat(String idmac, String idart)
-  {
-    Object _ret = this.riInvokeExportedMethod(this, "getDisponibilitat", new String[] {"java.lang.String", "java.lang.String"}, new Object[] {idmac, idart});
-    return (java.util.Vector)_ret;
-  }
-
-  public java.util.Set getEspecialExistencia()
-  {
-    Object _ret = this.riInvokeExportedMethod(this, "getEspecialExistencia", null, null);
-    return (java.util.Set)_ret;
-  }
-
-  public String getEspecialValue(String abbreviation)
-  {
-    Object _ret = this.riInvokeExportedMethod(this, "getEspecialValue", new String[] {"java.lang.String"}, new Object[] {abbreviation});
-    return (String)_ret;
-  }
-
-  public String getEstatPuesto(String puesto)
-  {
-    Object _ret = this.riInvokeExportedMethod(this, "getEstatPuesto", new String[] {"java.lang.String"}, new Object[] {puesto});
-    return (String)_ret;
-  }
-
-  public oracle.jbo.RowIterator getLiniesDocActual()
-  {
-    Object _ret = this.riInvokeExportedMethod(this, "getLiniesDocActual", null, null);
-    return (oracle.jbo.RowIterator)_ret;
-  }
-
-  public int getLiniesSortidaObertes(String idPuesto)
-  {
-    Object _ret = this.riInvokeExportedMethod(this, "getLiniesSortidaObertes", new String[] {"java.lang.String"}, new Object[] {idPuesto});
-    return ((Integer)_ret).intValue();
-  }
-
-  public String getRetirarMac(String puesto)
-  {
-    Object _ret = this.riInvokeExportedMethod(this, "getRetirarMac", new String[] {"java.lang.String"}, new Object[] {puesto});
-    return (String)_ret;
-  }
-
-  public String getSeqExped()
-  {
-    Object _ret = this.riInvokeExportedMethod(this, "getSeqExped", null, null);
-    return (String)_ret;
-  }
-
-  public es.sysmap.interflex.model.dmc.common.SgavubicacionlibreminiloadViewRow getUbiLibre(String rotacion)
-  {
-    Object _ret = this.riInvokeExportedMethod(this, "getUbiLibre", new String[] {"java.lang.String"}, new Object[] {rotacion});
-    return (es.sysmap.interflex.model.dmc.common.SgavubicacionlibreminiloadViewRow)_ret;
-  }
-
-  public String getUbicacionPuesto(String idpuesto, String magatzem)
-  {
-    Object _ret = this.riInvokeExportedMethod(this, "getUbicacionPuesto", new String[] {"java.lang.String", "java.lang.String"}, new Object[] {idpuesto, magatzem});
-    return (String)_ret;
-  }
-
-  public java.util.Set getUbicsPuestoManipulacion(String puesto)
-  {
-    Object _ret = this.riInvokeExportedMethod(this, "getUbicsPuestoManipulacion", new String[] {"java.lang.String"}, new Object[] {puesto});
-    return (java.util.Set)_ret;
-  }
-
-  public boolean hasMoreSortidesAuto(String iddoc)
-  {
-    Object _ret = this.riInvokeExportedMethod(this, "hasMoreSortidesAuto", new String[] {"java.lang.String"}, new Object[] {iddoc});
-    return ((Boolean)_ret).booleanValue();
-  }
-
-  public boolean hasResmanPendentsImprimir()
-  {
-    Object _ret = this.riInvokeExportedMethod(this, "hasResmanPendentsImprimir", null, null);
-    return ((Boolean)_ret).booleanValue();
-  }
-
-  public boolean hasRole(String role)
-  {
-    Object _ret = this.riInvokeExportedMethod(this, "hasRole", new String[] {"java.lang.String"}, new Object[] {role});
-    return ((Boolean)_ret).booleanValue();
   }
 
   public es.sysmap.interflex.model.dmc.common.SgaresmatOpManViewRow identificarOperacioMacEnPuesto(String idmac)
@@ -226,15 +76,51 @@ public class AppModuleClient extends ApplicationModuleImpl implements es.sysmap.
     return (es.sysmap.interflex.model.dmc.common.SgaresmatOpManViewRow)_ret;
   }
 
-  public boolean imprimirPackingList(String iddoc)
+  public String getEstatPuesto(String puesto)
   {
-    Object _ret = this.riInvokeExportedMethod(this, "imprimirPackingList", new String[] {"java.lang.String"}, new Object[] {iddoc});
+    Object _ret = this.riInvokeExportedMethod(this, "getEstatPuesto", new String[] {"java.lang.String"}, new Object[] {puesto});
+    return (String)_ret;
+  }
+
+  public String setEstatPuesto(String puesto, String value)
+  {
+    Object _ret = this.riInvokeExportedMethod(this, "setEstatPuesto", new String[] {"java.lang.String", "java.lang.String"}, new Object[] {puesto, value});
+    return (String)_ret;
+  }
+
+  public void quizasRetirarMac(String puesto, String macEnPuesto)
+  {
+    Object _ret = this.riInvokeExportedMethod(this, "quizasRetirarMac", new String[] {"java.lang.String", "java.lang.String"}, new Object[] {puesto, macEnPuesto});
+    return;
+  }
+
+  public boolean esPuestoManipulacion(String puesto)
+  {
+    Object _ret = this.riInvokeExportedMethod(this, "esPuestoManipulacion", new String[] {"java.lang.String"}, new Object[] {puesto});
     return ((Boolean)_ret).booleanValue();
   }
 
-  public boolean insertarBulto(oracle.jbo.domain.Number iddoc, java.sql.ResultSet bulto)
+  public java.util.Set getUbicsPuestoManipulacion(String puesto)
   {
-    Object _ret = this.riInvokeExportedMethod(this, "insertarBulto", new String[] {"oracle.jbo.domain.Number", "java.sql.ResultSet"}, new Object[] {iddoc, bulto});
+    Object _ret = this.riInvokeExportedMethod(this, "getUbicsPuestoManipulacion", new String[] {"java.lang.String"}, new Object[] {puesto});
+    return (java.util.Set)_ret;
+  }
+
+  public String getUbicacionPuesto(String idpuesto, String magatzem)
+  {
+    Object _ret = this.riInvokeExportedMethod(this, "getUbicacionPuesto", new String[] {"java.lang.String", "java.lang.String"}, new Object[] {idpuesto, magatzem});
+    return (String)_ret;
+  }
+
+  public oracle.jbo.RowSet macsEnPuesto(String ubics, String estado)
+  {
+    Object _ret = this.riInvokeExportedMethod(this, "macsEnPuesto", new String[] {"java.lang.String", "java.lang.String"}, new Object[] {ubics, estado});
+    return (oracle.jbo.RowSet)_ret;
+  }
+
+  public boolean imprimirPackingList(String iddoc)
+  {
+    Object _ret = this.riInvokeExportedMethod(this, "imprimirPackingList", new String[] {"java.lang.String"}, new Object[] {iddoc});
     return ((Boolean)_ret).booleanValue();
   }
 
@@ -250,46 +136,28 @@ public class AppModuleClient extends ApplicationModuleImpl implements es.sysmap.
     return ((Boolean)_ret).booleanValue();
   }
 
-  public boolean insertarEtiqueta(oracle.jbo.domain.Number iddoc, java.sql.ResultSet etiqueta)
+  public boolean insertarBulto(oracle.jbo.domain.Number iddoc, java.sql.ResultSet bulto)
   {
-    Object _ret = this.riInvokeExportedMethod(this, "insertarEtiqueta", new String[] {"oracle.jbo.domain.Number", "java.sql.ResultSet"}, new Object[] {iddoc, etiqueta});
+    Object _ret = this.riInvokeExportedMethod(this, "insertarBulto", new String[] {"oracle.jbo.domain.Number", "java.sql.ResultSet"}, new Object[] {iddoc, bulto});
     return ((Boolean)_ret).booleanValue();
+  }
+
+  public String actualitzarReferencia(java.sql.ResultSet referencia)
+  {
+    Object _ret = this.riInvokeExportedMethod(this, "actualitzarReferencia", new String[] {"java.sql.ResultSet"}, new Object[] {referencia});
+    return (String)_ret;
+  }
+
+  public String eliminarReferencia(java.sql.ResultSet referencia)
+  {
+    Object _ret = this.riInvokeExportedMethod(this, "eliminarReferencia", new String[] {"java.sql.ResultSet"}, new Object[] {referencia});
+    return (String)_ret;
   }
 
   public String insertarReferencia(java.sql.ResultSet referencia)
   {
     Object _ret = this.riInvokeExportedMethod(this, "insertarReferencia", new String[] {"java.sql.ResultSet"}, new Object[] {referencia});
     return (String)_ret;
-  }
-
-  public boolean isAdministrador()
-  {
-    Object _ret = this.riInvokeExportedMethod(this, "isAdministrador", null, null);
-    return ((Boolean)_ret).booleanValue();
-  }
-
-  public boolean isExport(String iddoc)
-  {
-    Object _ret = this.riInvokeExportedMethod(this, "isExport", new String[] {"java.lang.String"}, new Object[] {iddoc});
-    return ((Boolean)_ret).booleanValue();
-  }
-
-  public boolean isUserModPermisTraslo()
-  {
-    Object _ret = this.riInvokeExportedMethod(this, "isUserModPermisTraslo", null, null);
-    return ((Boolean)_ret).booleanValue();
-  }
-
-  public boolean isUserModPes()
-  {
-    Object _ret = this.riInvokeExportedMethod(this, "isUserModPes", null, null);
-    return ((Boolean)_ret).booleanValue();
-  }
-
-  public boolean isUserModTransportista()
-  {
-    Object _ret = this.riInvokeExportedMethod(this, "isUserModTransportista", null, null);
-    return ((Boolean)_ret).booleanValue();
   }
 
   public oracle.jbo.RowIterator llistaBultosPendentsImprimir(String iddoc, String idlin)
@@ -304,15 +172,15 @@ public class AppModuleClient extends ApplicationModuleImpl implements es.sysmap.
     return (oracle.jbo.RowIterator)_ret;
   }
 
-  public oracle.jbo.RowIterator llistaMovimentsPendentsComunicar()
-  {
-    Object _ret = this.riInvokeExportedMethod(this, "llistaMovimentsPendentsComunicar", null, null);
-    return (oracle.jbo.RowIterator)_ret;
-  }
-
   public oracle.jbo.RowIterator llistaSortidesPendentsComunicar()
   {
     Object _ret = this.riInvokeExportedMethod(this, "llistaSortidesPendentsComunicar", null, null);
+    return (oracle.jbo.RowIterator)_ret;
+  }
+
+  public oracle.jbo.RowIterator llistaMovimentsPendentsComunicar()
+  {
+    Object _ret = this.riInvokeExportedMethod(this, "llistaMovimentsPendentsComunicar", null, null);
     return (oracle.jbo.RowIterator)_ret;
   }
 
@@ -322,21 +190,21 @@ public class AppModuleClient extends ApplicationModuleImpl implements es.sysmap.
     return (oracle.jbo.RowIterator)_ret;
   }
 
-  public oracle.jbo.RowSet macsEnPuesto(String ubics, String estado)
+  public boolean treureContenidorMagatzem(String idmac, String desti, String puesto)
   {
-    Object _ret = this.riInvokeExportedMethod(this, "macsEnPuesto", new String[] {"java.lang.String", "java.lang.String"}, new Object[] {ubics, estado});
-    return (oracle.jbo.RowSet)_ret;
+    Object _ret = this.riInvokeExportedMethod(this, "treureContenidorMagatzem", new String[] {"java.lang.String", "java.lang.String", "java.lang.String"}, new Object[] {idmac, desti, puesto});
+    return ((Boolean)_ret).booleanValue();
   }
 
-  public void netejarBD()
+  public int contenidorAmbExistencies(String idmac)
   {
-    Object _ret = this.riInvokeExportedMethod(this, "netejarBD", null, null);
-    return;
+    Object _ret = this.riInvokeExportedMethod(this, "contenidorAmbExistencies", new String[] {"java.lang.String"}, new Object[] {idmac});
+    return ((Integer)_ret).intValue();
   }
 
-  public boolean ordreAmbReservesManuals(oracle.jbo.domain.Number iddoc)
+  public boolean quizasManipular(String puesto)
   {
-    Object _ret = this.riInvokeExportedMethod(this, "ordreAmbReservesManuals", new String[] {"oracle.jbo.domain.Number"}, new Object[] {iddoc});
+    Object _ret = this.riInvokeExportedMethod(this, "quizasManipular", new String[] {"java.lang.String"}, new Object[] {puesto});
     return ((Boolean)_ret).booleanValue();
   }
 
@@ -346,27 +214,15 @@ public class AppModuleClient extends ApplicationModuleImpl implements es.sysmap.
     return ((Boolean)_ret).booleanValue();
   }
 
-  public boolean quizasManipular(String puesto)
+  public java.util.Vector getDisponibilitat(String idmac, String idart)
   {
-    Object _ret = this.riInvokeExportedMethod(this, "quizasManipular", new String[] {"java.lang.String"}, new Object[] {puesto});
-    return ((Boolean)_ret).booleanValue();
+    Object _ret = this.riInvokeExportedMethod(this, "getDisponibilitat", new String[] {"java.lang.String", "java.lang.String"}, new Object[] {idmac, idart});
+    return (java.util.Vector)_ret;
   }
 
-  public void quizasRetirarMac(String puesto, String macEnPuesto)
+  public String getCapacitatPulmoPuesto(String puesto, boolean isSlo)
   {
-    Object _ret = this.riInvokeExportedMethod(this, "quizasRetirarMac", new String[] {"java.lang.String", "java.lang.String"}, new Object[] {puesto, macEnPuesto});
-    return;
-  }
-
-  public void regularizarTablaStock(String idArt, oracle.jbo.domain.Number cantot)
-  {
-    Object _ret = this.riInvokeExportedMethod(this, "regularizarTablaStock", new String[] {"java.lang.String", "oracle.jbo.domain.Number"}, new Object[] {idArt, cantot});
-    return;
-  }
-
-  public String setAutoSortides(String puesto, String value)
-  {
-    Object _ret = this.riInvokeExportedMethod(this, "setAutoSortides", new String[] {"java.lang.String", "java.lang.String"}, new Object[] {puesto, value});
+    Object _ret = this.riInvokeExportedMethod(this, "getCapacitatPulmoPuesto", new String[] {"java.lang.String", "boolean"}, new Object[] {puesto, new Boolean(isSlo)});
     return (String)_ret;
   }
 
@@ -382,10 +238,28 @@ public class AppModuleClient extends ApplicationModuleImpl implements es.sysmap.
     return;
   }
 
-  public String setEstatPuesto(String puesto, String value)
+  public boolean checkUser(String user, String password)
   {
-    Object _ret = this.riInvokeExportedMethod(this, "setEstatPuesto", new String[] {"java.lang.String", "java.lang.String"}, new Object[] {puesto, value});
-    return (String)_ret;
+    Object _ret = this.riInvokeExportedMethod(this, "checkUser", new String[] {"java.lang.String", "java.lang.String"}, new Object[] {user, password});
+    return ((Boolean)_ret).booleanValue();
+  }
+
+  public void netejarBD()
+  {
+    Object _ret = this.riInvokeExportedMethod(this, "netejarBD", null, null);
+    return;
+  }
+
+  public boolean hasMoreSortidesAuto(String iddoc)
+  {
+    Object _ret = this.riInvokeExportedMethod(this, "hasMoreSortidesAuto", new String[] {"java.lang.String"}, new Object[] {iddoc});
+    return ((Boolean)_ret).booleanValue();
+  }
+
+  public boolean ordreAmbReservesManuals(oracle.jbo.domain.Number iddoc)
+  {
+    Object _ret = this.riInvokeExportedMethod(this, "ordreAmbReservesManuals", new String[] {"oracle.jbo.domain.Number"}, new Object[] {iddoc});
+    return ((Boolean)_ret).booleanValue();
   }
 
   public void setResmanListImpres(String iddoc)
@@ -394,17 +268,332 @@ public class AppModuleClient extends ApplicationModuleImpl implements es.sysmap.
     return;
   }
 
-  public String setRetirarMac(String puesto, String value)
+  public boolean hasResmanPendentsImprimir()
   {
-    Object _ret = this.riInvokeExportedMethod(this, "setRetirarMac", new String[] {"java.lang.String", "java.lang.String"}, new Object[] {puesto, value});
+    Object _ret = this.riInvokeExportedMethod(this, "hasResmanPendentsImprimir", null, null);
+    return ((Boolean)_ret).booleanValue();
+  }
+
+  public boolean hasRole(String role)
+  {
+    Object _ret = this.riInvokeExportedMethod(this, "hasRole", new String[] {"java.lang.String"}, new Object[] {role});
+    return ((Boolean)_ret).booleanValue();
+  }
+
+  public boolean isUserModPes()
+  {
+    Object _ret = this.riInvokeExportedMethod(this, "isUserModPes", null, null);
+    return ((Boolean)_ret).booleanValue();
+  }
+
+  public void regularizarTablaStock(String idArt, oracle.jbo.domain.Number cantot)
+  {
+    Object _ret = this.riInvokeExportedMethod(this, "regularizarTablaStock", new String[] {"java.lang.String", "oracle.jbo.domain.Number"}, new Object[] {idArt, cantot});
+    return;
+  }
+
+  public boolean insertarEtiqueta(oracle.jbo.domain.Number iddoc, java.sql.ResultSet etiqueta)
+  {
+    Object _ret = this.riInvokeExportedMethod(this, "insertarEtiqueta", new String[] {"oracle.jbo.domain.Number", "java.sql.ResultSet"}, new Object[] {iddoc, etiqueta});
+    return ((Boolean)_ret).booleanValue();
+  }
+
+  public boolean esPuestoExtraPicking(String puesto)
+  {
+    Object _ret = this.riInvokeExportedMethod(this, "esPuestoExtraPicking", new String[] {"java.lang.String"}, new Object[] {puesto});
+    return ((Boolean)_ret).booleanValue();
+  }
+
+  public es.sysmap.interflex.model.dmc.common.SgavubicacionlibreminiloadViewRow getUbiLibre(String rotacion)
+  {
+    Object _ret = this.riInvokeExportedMethod(this, "getUbiLibre", new String[] {"java.lang.String"}, new Object[] {rotacion});
+    return (es.sysmap.interflex.model.dmc.common.SgavubicacionlibreminiloadViewRow)_ret;
+  }
+
+  public boolean isExport(String iddoc)
+  {
+    Object _ret = this.riInvokeExportedMethod(this, "isExport", new String[] {"java.lang.String"}, new Object[] {iddoc});
+    return ((Boolean)_ret).booleanValue();
+  }
+
+  public boolean isAdministrador()
+  {
+    Object _ret = this.riInvokeExportedMethod(this, "isAdministrador", null, null);
+    return ((Boolean)_ret).booleanValue();
+  }
+
+  public oracle.jbo.RowIterator getLiniesDocActual()
+  {
+    Object _ret = this.riInvokeExportedMethod(this, "getLiniesDocActual", null, null);
+    return (oracle.jbo.RowIterator)_ret;
+  }
+
+  public int getLiniesSortidaObertes(String idPuesto)
+  {
+    Object _ret = this.riInvokeExportedMethod(this, "getLiniesSortidaObertes", new String[] {"java.lang.String"}, new Object[] {idPuesto});
+    return ((Integer)_ret).intValue();
+  }
+
+  public boolean existsMac(String idMac)
+  {
+    Object _ret = this.riInvokeExportedMethod(this, "existsMac", new String[] {"java.lang.String"}, new Object[] {idMac});
+    return ((Boolean)_ret).booleanValue();
+  }
+
+  public boolean isUserModTransportista()
+  {
+    Object _ret = this.riInvokeExportedMethod(this, "isUserModTransportista", null, null);
+    return ((Boolean)_ret).booleanValue();
+  }
+
+  public boolean assignarReservaManual(oracle.jbo.domain.Number idDoc, oracle.jbo.domain.Number idLin, String idArt, String idMac, oracle.jbo.domain.Number canRes)
+  {
+    Object _ret = this.riInvokeExportedMethod(this, "assignarReservaManual", new String[] {"oracle.jbo.domain.Number", "oracle.jbo.domain.Number", "java.lang.String", "java.lang.String", "oracle.jbo.domain.Number"}, new Object[] {idDoc, idLin, idArt, idMac, canRes});
+    return ((Boolean)_ret).booleanValue();
+  }
+
+  public String getSeqExped()
+  {
+    Object _ret = this.riInvokeExportedMethod(this, "getSeqExped", null, null);
     return (String)_ret;
   }
 
-  public boolean treureContenidorMagatzem(String idmac, String desti, String puesto)
+  public String createSgaExped(es.sysmap.interflex.model.dmc.common.SgacdocViewRow cdocRow)
   {
-    Object _ret = this.riInvokeExportedMethod(this, "treureContenidorMagatzem", new String[] {"java.lang.String", "java.lang.String", "java.lang.String"}, new Object[] {idmac, desti, puesto});
+    Object _ret = this.riInvokeExportedMethod(this, "createSgaExped", new String[] {"es.sysmap.interflex.model.dmc.common.SgacdocViewRow"}, new Object[] {cdocRow});
+    return (String)_ret;
+  }
+
+  public boolean checkUsername(String user)
+  {
+    Object _ret = this.riInvokeExportedMethod(this, "checkUsername", new String[] {"java.lang.String"}, new Object[] {user});
     return ((Boolean)_ret).booleanValue();
   }
+
+  public boolean assignarTrasllatManual(String idArt, String idMac)
+  {
+    Object _ret = this.riInvokeExportedMethod(this, "assignarTrasllatManual", new String[] {"java.lang.String", "java.lang.String"}, new Object[] {idArt, idMac});
+    return ((Boolean)_ret).booleanValue();
+  }
+
+  public java.util.Set getEspecialExistencia()
+  {
+    Object _ret = this.riInvokeExportedMethod(this, "getEspecialExistencia", null, null);
+    return (java.util.Set)_ret;
+  }
+
+  public String getEspecialValue(String abbreviation)
+  {
+    Object _ret = this.riInvokeExportedMethod(this, "getEspecialValue", new String[] {"java.lang.String"}, new Object[] {abbreviation});
+    return (String)_ret;
+  }
+
+  public boolean isUserModPermisTraslo()
+  {
+    Object _ret = this.riInvokeExportedMethod(this, "isUserModPermisTraslo", null, null);
+    return ((Boolean)_ret).booleanValue();
+  }
+
+  public boolean IsTrasloBloqueadoEnPasillo(int traslo)
+  {
+    Object _ret = this.riInvokeExportedMethod(this, "IsTrasloBloqueadoEnPasillo", new String[] {"int"}, new Object[] {new Integer(traslo)});
+    return ((Boolean)_ret).booleanValue();
+  }
+
+  public es.sysmap.interflex.model.dmc.common.SgavBultoCantErroneoRow getBultoCantErroneo(String iddoc)
+  {
+    Object _ret = this.riInvokeExportedMethod(this, "getBultoCantErroneo", new String[] {"java.lang.String"}, new Object[] {iddoc});
+    return (es.sysmap.interflex.model.dmc.common.SgavBultoCantErroneoRow)_ret;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

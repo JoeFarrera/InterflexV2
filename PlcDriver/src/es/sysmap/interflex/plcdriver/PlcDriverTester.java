@@ -1,6 +1,6 @@
 package es.sysmap.interflex.plcdriver;
 import es.sysmap.interflex.gestortelegrama.ByteHelper;
-import es.sysmap.interflex.gestortelegrama.GeneralMessageListener;
+// import es.sysmap.interflex.gestortelegrama.GeneralMessageListener;
 import java.awt.Frame;
 import java.awt.Dimension;
 import java.util.Observable;

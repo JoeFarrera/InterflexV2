@@ -2,10 +2,10 @@
 <!DOCTYPE connections>
 <connections>
    <connection>
-      <ConnectionName>Interflex_informix</ConnectionName>
       <URL>jdbc:informix-sqli://129.200.9.1:1526/sga:INFORMIXSERVER=se_interflex;</URL>
-      <ConnectionType>OTHER_JDBC</ConnectionType>
+      <ConnectionName>Interflex_informix</ConnectionName>
       <user>biosca</user>
+      <ConnectionType>OTHER_JDBC</ConnectionType>
       <password>5465</password>
       <DeployPassword>true</DeployPassword>
       <JdbcDriver>com.informix.jdbc.IfxDriver</JdbcDriver>
@@ -13,54 +13,32 @@
    <connection>
       <JDBC_PORT>1521</JDBC_PORT>
       <ConnectionType>JDBC</ConnectionType>
-      <HOSTNAME>servidorsga</HOSTNAME>
-      <DeployPassword>true</DeployPassword>
-      <user>ifdba</user>
-      <ConnectionName>servidorsga</ConnectionName>
-      <SID>PROD</SID>
-      <JdbcDriver>oracle.jdbc.driver.OracleDriver</JdbcDriver>
-      <password>ifdba</password>
-      <ORACLE_JDBC_TYPE>thin</ORACLE_JDBC_TYPE>
-   </connection>
-   <connection>
-      <JDBC_PORT>1521</JDBC_PORT>
-      <ConnectionType>JDBC</ConnectionType>
-      <HOSTNAME>servidormap2</HOSTNAME>
+      <HOSTNAME>servidormap</HOSTNAME>
       <DeployPassword>true</DeployPassword>
       <user>ifdbatest</user>
       <ConnectionName>interflex_test</ConnectionName>
       <SID>prod</SID>
+      <JdbcDriver>oracle.jdbc.driver.OracleDriver</JdbcDriver>
       <password>ifdbatest</password>
-      <JdbcDriver>oracle.jdbc.driver.OracleDriver</JdbcDriver>
       <ORACLE_JDBC_TYPE>thin</ORACLE_JDBC_TYPE>
    </connection>
    <connection>
       <JDBC_PORT>1521</JDBC_PORT>
       <ConnectionType>JDBC</ConnectionType>
-      <HOSTNAME>servidorsga</HOSTNAME>
-      <user>ifdbatest</user>
-      <ConnectionName>ifdbatest</ConnectionName>
-      <SID>prod</SID>
-      <JdbcDriver>oracle.jdbc.driver.OracleDriver</JdbcDriver>
-      <ORACLE_JDBC_TYPE>thin</ORACLE_JDBC_TYPE>
-   </connection>
-   <connection>
-      <JDBC_PORT>1521</JDBC_PORT>
-      <ConnectionType>JDBC</ConnectionType>
-      <HOSTNAME>servidormap2</HOSTNAME>
+      <HOSTNAME>servidorsganew</HOSTNAME>
       <DeployPassword>true</DeployPassword>
       <user>ifdba</user>
       <ConnectionName>interflex</ConnectionName>
       <SID>PROD</SID>
-      <JdbcDriver>oracle.jdbc.driver.OracleDriver</JdbcDriver>
       <password>ifdba</password>
+      <JdbcDriver>oracle.jdbc.driver.OracleDriver</JdbcDriver>
       <ORACLE_JDBC_TYPE>thin</ORACLE_JDBC_TYPE>
    </connection>
    <connection>
-      <URL>"jdbc:sqlserver://srverps:1433;user=sa;password=interpc;";</URL>
       <ConnectionName>SQLServerConnection</ConnectionName>
-      <user>sa</user>
+      <URL>"jdbc:sqlserver://srverps:1433;user=sa;password=interpc;";</URL>
       <ConnectionType>OTHER_JDBC</ConnectionType>
+      <user>sa</user>
       <JdbcDriver>com.microsoft.sqlserver.jdbc.SQLServerDriver</JdbcDriver>
    </connection>
 </connections>

@@ -165,7 +165,7 @@
                      <Value class="oracle.jdevimpl.config.JProjectLibraries">
                         <jdkName>1.4.2_04</jdkName>
                         <jdkVersionNumber>1.4.2_04</jdkVersionNumber>
-                        <libraries>Oracle XML Parser v2;AQJMS;Oracle JDBC;log4j;SgaLib;JUnit Runtime</libraries>
+                        <libraries>Oracle XML Parser v2;AQJMS;Oracle JDBC;SgaLib;JUnit Runtime;log4j-1.3alpha</libraries>
                      </Value>
                   </Item>
                   <Item>

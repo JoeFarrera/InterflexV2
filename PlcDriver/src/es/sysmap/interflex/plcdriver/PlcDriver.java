@@ -1,5 +1,5 @@
 package es.sysmap.interflex.plcdriver;
-import es.sysmap.interflex.gestortelegrama.GeneralMessageListener;
+// import es.sysmap.interflex.gestortelegrama.GeneralMessageListener;
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;
 import java.io.DataInputStream;

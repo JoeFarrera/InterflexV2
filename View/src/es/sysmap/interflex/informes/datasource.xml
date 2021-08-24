@@ -2,7 +2,7 @@
 <registry>
 <Version>6.0</Version>
 <datasource name="Interflex" type="jdbc">
-<ds_jdbc url="jdbc:oracle:thin:@servidorsga:1521:prod" driver="oracle.jdbc.driver.OracleDriver" requireLogin="true" transactionIsolation="-1" ansiJoin="false" user="ifdba" password="\pwd0327170d2f" tableTypes="TABLE,VIEW">
+<ds_jdbc url="jdbc:oracle:thin:@servidorsganew:1521:prod" driver="oracle.jdbc.driver.OracleDriver" requireLogin="true" transactionIsolation="-1" ansiJoin="false" user="ifdba" password="\pwd0327170d2f" tableTypes="TABLE,VIEW">
 <description>Connexió a Interflex</description>
 </ds_jdbc>
 </datasource>

@@ -1115,6 +1115,11 @@ public class SgacdocViewRowImpl extends ViewRowImpl implements es.sysmap.interfl
     else
       return null;
   }
+  
+  public String getTdnNrExped()
+  {
+    return getSgacdoc().getTdnExped();
+  }
 
   /*
    * Comprovar si es pot afegir a una expedició
@@ -1137,6 +1142,11 @@ public class SgacdocViewRowImpl extends ViewRowImpl implements es.sysmap.interfl
   public boolean isRamoneda()
   {
     return (getSgacdoc().isRamoneda());
+  }
+  
+  public boolean isTdn()
+  {
+    return (getSgacdoc().isTdn());
   }
 
   public String getNalbaranNumeric ()

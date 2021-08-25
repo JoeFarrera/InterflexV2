@@ -3242,6 +3242,16 @@ public class AppModuleImpl extends ApplicationModuleImpl implements es.sysmap.in
   }
   
 
+  public SgatdnpobViewRowImpl getTdnpobViewRow (String codPostal)
+  {
+    SgatdnpobViewImpl vi = getSgatdnpobView1();
+    String codPostal7 = ("0000000" + codPostal).substring(codPostal.length());
+    vi.setWhereClauseParam(0, codPostal7);
+    vi.executeQuery();
+    SgatdnpobViewRowImpl row = (SgatdnpobViewRowImpl)vi.first();
+    return row;
+  }
+
   public String getRamonedaNombreRuta (String codPostal)
   {
     SgaRamonedaRutaViewImpl vi = getSgaRamonedaRutaView1();
@@ -3254,6 +3264,7 @@ public class AppModuleImpl extends ApplicationModuleImpl implements es.sysmap.in
     return (null);
     
   }
+  
 
   public SgaochoaViewRowImpl getSgaochoaViewRowImpl(String codPostal)
   {
@@ -4121,6 +4132,15 @@ public class AppModuleImpl extends ApplicationModuleImpl implements es.sysmap.in
     }
     v.executeQuery();
     return (SgavBultoCantErroneoRow)v.first();
+  }
+
+  /**
+   * 
+   *  Container's getter for SgatdnpobView1
+   */
+  public SgatdnpobViewImpl getSgatdnpobView1()
+  {
+    return (SgatdnpobViewImpl)findViewObject("SgatdnpobView1");
   }
 
 

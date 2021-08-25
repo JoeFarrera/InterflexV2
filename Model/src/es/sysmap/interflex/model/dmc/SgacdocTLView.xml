@@ -4,103 +4,6 @@
 <ViewObject
    Name="SgacdocTLView"
    Extends="es.sysmap.interflex.model.dmc.SgacdocView"
-   SelectList="Sgacdoc.IDDOC, 
-       Sgacdoc.IDCABSTR, 
-       Sgacdoc.IDCABNUM, 
-
-       Sgacdoc.NUMLINEAS, 
-       Sgacdoc.NUMBULTOS, 
-      
- Sgacdoc.ESTADO, 
-       Sgacdoc.PESTOTAL, 
-       Sgacdoc.MOTIVO, 
-
-       Sgacdoc.NOMBRE, 
-       Sgacdoc.DIRECCION, 
-       Sgacdoc.CODPOSTAL, 
-
-       Sgacdoc.POBLACION, 
-       Sgacdoc.PROVINCIA, 
-      
- Sgacdoc.TELEFONO, 
-       Sgacdoc.PORTES, 
-       Sgacdoc.FALBARAN, 
-
-       Sgacdoc.SPEDIDO, 
-       Sgacdoc.PAIS, 
-       Sgacdoc.TRANSPORTE, 
-
-       Sgacdoc.REEMBOLSO, 
-       Sgacdoc.TALBARAN, 
-       
-Sgacdoc.NALBARAN, 
-       Sgacdoc.CODEMPRESA, 
-       Sgacdoc.TRANSP, 
-
-       Sgacdoc.TPORTES, 
-       Sgacdoc.CCLIENTE, 
-       Sgacdoc.IDULTBULTO, 
-
-       Sgacdoc.IDTIPDOC, 
-       Sgacdoc.PRIORIDAD, 
-       
-(select abbreviation from sgarefcodes where sgarefcodes.domain 
-=&#39;ESTORD&#39; and sgarefcodes.value = sgacdoc.estado) AS DESCESTADO, 
-
-       (select abbreviation from sgarefcodes where sgarefcodes.domain 
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                  =&#39;ESTORD&#39;  
-                                                         and 
-                        sgarefcodes.value                    
-                                                             
-                                                         =   
-      (select                                                
-                                           decode            
-                                                             
-     (sgacdoc.estado,                                        
-                                                             
-                                                             
-                                             &#39;D&#39;,            
-               decode                                        
-          ((select                                           
-                     sum(numlineas)                          
-                                                             
-                                                             
-                          from                               
-sgavcdocldoclbultoenproceso                                  
-                                                             
-                                                             
-                                                             
-                                                           v 
- where                              v.iddoc                  
-                                                             
-              =            sgacdoc.iddoc),                   
-                                                             
-                                       0,                    
-sgacdoc.estado,                                              
-                                                             
-                            &#39;P&#39;),                            
-                                                  sgacdoc.estado) 
-                                                             
-                                                             
-                                                             
-from                        dual)) AS Descestadolineas, 
-    
-   Sgacdoc.IMPRIMIR, 
-       Sgacdoc.ESTCOM, 
-       Sgacdoc.IDPUESTOFIN, 
-
-       Sgacdoc.FPEDIDO, 
-       Sgacdoc.TIPDOCSGA, 
-       (select 
-z_agenciatipoenvio.tipoenvio from z_agenciatipoenvio where z_agenciatipoenvio.codtra 
-= sgacdoc.transp) AS TIPOENVIO, 
-       (select idexped from 
-sgaexpeddoc where sgaexpeddoc.iddoc = sgacdoc.iddoc) AS idExped"
    Where="idtipdoc = &#39;TL&#39; and estado not in (&#39;F&#39;, &#39;A&#39;)"
    OrderBy="Sgacdoc.PRIORIDAD asc, Sgacdoc.IDDOC"
    BindingStyle="Oracle"
@@ -108,8 +11,6 @@ sgaexpeddoc where sgaexpeddoc.iddoc = sgacdoc.iddoc) AS idExped"
    RowClass="es.sysmap.interflex.model.dmc.SgacdocViewRowImpl"
    ComponentClass="es.sysmap.interflex.model.dmc.SgacdocTLViewImpl"
    MsgBundleClass="es.sysmap.interflex.model.dmc.common.SgacdocViewRowImplMsgBundle"
-   ComponentInterface="es.sysmap.interflex.model.dmc.common.SgacdocTLView"
-   ClientProxyName="es.sysmap.interflex.model.dmc.client.SgacdocTLViewClient"
    FetchMode="FETCH_AS_NEEDED"
    UseGlueCode="false" >
    <DesignTime>

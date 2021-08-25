@@ -97,7 +97,12 @@ public class EtiquetaPicking
   private boolean etiquetaRamoneda = false;
   String ramonedaBarcodeString;
   
+  private String tdnZonaReparto = null;
+  private String tdnCodDelegacion = null;
+  private String tdnNumExped = null;
+  private boolean tdnEtiqueta = false;
   
+            
   
   
   
@@ -792,7 +797,26 @@ public class EtiquetaPicking
     this.ramonedaBarcodeString = ramonedaBarcodeString;
   }
 
-
+  public void setTdnZonaReparto(String tdnZonaReparto)
+  {
+    this.tdnZonaReparto = tdnZonaReparto;
+  }
+  
+  public void setTdnCodDelegacion(String tdnCoddelegacion)
+  {
+    this.tdnCodDelegacion = tdnCoddelegacion;
+  }
+  
+  public void setTdnNumExped(String tdnNumExped)
+  {
+    this.tdnNumExped = tdnNumExped;
+  }
+  
+  public void setEtiquetaTdn(boolean tdnEtiqueta)
+  {
+    tdnEtiqueta = tdnEtiqueta;
+  }
+           
 
 
 

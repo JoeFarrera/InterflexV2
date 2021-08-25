@@ -5,7 +5,7 @@ package es.sysmap.interflex.model.dmc;
 //  ---    Warning: Do not modify method signatures of generated methods.
 //  ---------------------------------------------------------------------
 
-public class SgacdocTLViewImpl extends SgacdocViewImpl implements es.sysmap.interflex.model.dmc.common.SgacdocTLView 
+public class SgacdocTLViewImpl extends SgacdocViewImpl  
 {
   /**
    * 

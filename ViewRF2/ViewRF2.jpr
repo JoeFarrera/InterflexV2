@@ -9,12 +9,12 @@
       <Item class="oracle.jdeveloper.library.ProjectLibrary">
          <locked>true</locked>
          <sourceOwnerURL path="../InterflexV2.jws"/>
-         <sourceURL path="../SgaLib/SgaLib.jpr"/>
+         <sourceURL path="../Model/Model.jpr"/>
       </Item>
       <Item class="oracle.jdeveloper.library.ProjectLibrary">
          <locked>true</locked>
          <sourceOwnerURL path="../InterflexV2.jws"/>
-         <sourceURL path="../Model/Model.jpr"/>
+         <sourceURL path="../SgaLib/SgaLib.jpr"/>
       </Item>
    </dependencyList>
    <htmlRootDirectory path="public_html/"/>
@@ -170,9 +170,9 @@
                   <Item>
                      <Key>oracle.jdevimpl.config.JProjectLibraries</Key>
                      <Value class="oracle.jdevimpl.config.JProjectLibraries">
-                        <jdkName>1.4.2_11</jdkName>
-                        <jdkVersionNumber>1.4.2_11</jdkVersionNumber>
-                        <libraries>JClient Runtime;Oracle Intermedia JClient;Oracle JEWT;BC4J Datum;Oracle XML Parser v2;JDeveloper Runtime;SQLJ Runtime;BC4J Runtime;Oracle JDBC;Connection Manager;BC4J Oracle Domains;log4j;ADF Model Runtime</libraries>
+                        <jdkName>1.4.2_04</jdkName>
+                        <jdkVersionNumber>1.4.2_04</jdkVersionNumber>
+                        <libraries>JClient Runtime;Oracle Intermedia JClient;Oracle JEWT;BC4J Datum;Oracle XML Parser v2;JDeveloper Runtime;SQLJ Runtime;BC4J Runtime;Oracle JDBC;Connection Manager;BC4J Oracle Domains;ADF Model Runtime;log4j-1.3alpha</libraries>
                      </Value>
                   </Item>
                   <Item>
@@ -311,11 +311,11 @@
          <Key>technologyScope</Key>
          <Value class="oracle.ide.model.TechnologyScope">
             <technologyKeys>
-               <Item>JavaBeans</Item>
-               <Item>Swing/AWT</Item>
-               <Item>Java</Item>
                <Item>General</Item>
+               <Item>Swing/AWT</Item>
                <Item>JClient</Item>
+               <Item>JavaBeans</Item>
+               <Item>Java</Item>
             </technologyKeys>
          </Value>
       </Item>

@@ -1238,4 +1238,9 @@
       FullName="es.sysmap.interflex.model.dmc.SgavBultoCantErroneo"
       ObjectType="ViewObject" >
    </Containee>
+   <Containee
+      Name="SgatdnpobView"
+      FullName="es.sysmap.interflex.model.dmc.SgatdnpobView"
+      ObjectType="ViewObject" >
+   </Containee>
 </JboPackage>

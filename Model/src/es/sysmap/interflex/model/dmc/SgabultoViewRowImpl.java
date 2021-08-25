@@ -559,7 +559,26 @@ public class SgabultoViewRowImpl extends ViewRowImpl implements es.sysmap.interf
           // TODO - store this with the bulto as it will be used...
           etiqueta.setEtiquetaRamoneda(true);
         }
+        else if (cdoc.isTdn())
+        {
+          AppModuleImpl appModule = (AppModuleImpl)getApplicationModule();
+          SgatdnpobViewRowImpl row = appModule.getTdnpobViewRow(cdoc.getCodpostal());
+          if (row != null)
+          {
+            etiqueta.setTdnZonaReparto(row.getZonareparto());
+            etiqueta.setTdnCodDelegacion(row.getCoddelegacion());
+            etiqueta.setTdnNumExped(cdoc.getTdnNrExped());
+            etiqueta.setEtiquetaTdn(true);
+          }
+          else
+          {
+            // Do what? TODO
+          }
+          
+        }
       }
+      
+  
     }
 //    catch(Exception ex)
 //    {

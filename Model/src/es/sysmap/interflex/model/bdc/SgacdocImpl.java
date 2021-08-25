@@ -1476,6 +1476,11 @@ public class SgacdocImpl extends EntityImpl
     return (getTransp() != null && getTransp().equals(new Number(351)));
   }
   
+    public boolean isTdn()
+  {
+    return (getTransp() != null && getTransp().equals(new Number(141)));
+  }
+  
   
   public boolean isExport() 
   {
@@ -1628,7 +1633,34 @@ public class SgacdocImpl extends EntityImpl
           }
 
       }
+      else if (isTdn())
+      {
+          if (getReembolso() == null || getReembolso().intValue() == 0)
+          {
+            try {
+              setReembolso(new Number(getTdnExped()));
+            }
+            catch (SQLException ex) 
+          {
+            ex.printStackTrace();
+          } 
+          }
+      }
 
+  }
+  
+  public String getTdnExped()
+  {
+    String nalbaran = getNalbaran();
+    if (nalbaran != null && nalbaran.length() > 3)
+    {
+      nalbaran =  nalbaran.substring(3);
+      // Works as long as nalbaran is not longer than 8
+      nalbaran = ("00000000" + nalbaran).substring(nalbaran.length());   
+      return nalbaran;
+    }
+    else
+      return null;
   }
   
   public String getExpedRamoneda()

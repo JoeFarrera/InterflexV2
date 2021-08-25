@@ -13,19 +13,7 @@
    <connection>
       <JDBC_PORT>1521</JDBC_PORT>
       <ConnectionType>JDBC</ConnectionType>
-      <HOSTNAME>servidorsga</HOSTNAME>
-      <DeployPassword>true</DeployPassword>
-      <user>ifdba</user>
-      <ConnectionName>servidorsga</ConnectionName>
-      <SID>PROD</SID>
-      <JdbcDriver>oracle.jdbc.driver.OracleDriver</JdbcDriver>
-      <password>ifdba</password>
-      <ORACLE_JDBC_TYPE>thin</ORACLE_JDBC_TYPE>
-   </connection>
-   <connection>
-      <JDBC_PORT>1521</JDBC_PORT>
-      <ConnectionType>JDBC</ConnectionType>
-      <HOSTNAME>servidormap2</HOSTNAME>
+      <HOSTNAME>servidormap</HOSTNAME>
       <DeployPassword>true</DeployPassword>
       <user>ifdbatest</user>
       <ConnectionName>interflex_test</ConnectionName>
@@ -37,23 +25,13 @@
    <connection>
       <JDBC_PORT>1521</JDBC_PORT>
       <ConnectionType>JDBC</ConnectionType>
-      <HOSTNAME>servidorsga</HOSTNAME>
-      <user>ifdbatest</user>
-      <ConnectionName>ifdbatest</ConnectionName>
-      <SID>prod</SID>
-      <JdbcDriver>oracle.jdbc.driver.OracleDriver</JdbcDriver>
-      <ORACLE_JDBC_TYPE>thin</ORACLE_JDBC_TYPE>
-   </connection>
-   <connection>
-      <JDBC_PORT>1521</JDBC_PORT>
-      <ConnectionType>JDBC</ConnectionType>
-      <HOSTNAME>servidormap2</HOSTNAME>
+      <HOSTNAME>servidorsganew</HOSTNAME>
       <DeployPassword>true</DeployPassword>
       <user>ifdba</user>
-      <ConnectionName>interflex</ConnectionName>
+      <ConnectionName>servidorsga</ConnectionName>
       <SID>PROD</SID>
-      <JdbcDriver>oracle.jdbc.driver.OracleDriver</JdbcDriver>
       <password>ifdba</password>
+      <JdbcDriver>oracle.jdbc.driver.OracleDriver</JdbcDriver>
       <ORACLE_JDBC_TYPE>thin</ORACLE_JDBC_TYPE>
    </connection>
    <connection>
@@ -62,5 +40,17 @@
       <user>sa</user>
       <ConnectionType>OTHER_JDBC</ConnectionType>
       <JdbcDriver>com.microsoft.sqlserver.jdbc.SQLServerDriver</JdbcDriver>
+   </connection>
+   <connection>
+      <JDBC_PORT>1521</JDBC_PORT>
+      <ConnectionType>JDBC</ConnectionType>
+      <HOSTNAME>servidorsganew</HOSTNAME>
+      <DeployPassword>true</DeployPassword>
+      <user>ifdba</user>
+      <ConnectionName>interflex</ConnectionName>
+      <SID>PROD</SID>
+      <JdbcDriver>oracle.jdbc.driver.OracleDriver</JdbcDriver>
+      <password>ifdba</password>
+      <ORACLE_JDBC_TYPE>thin</ORACLE_JDBC_TYPE>
    </connection>
 </connections>

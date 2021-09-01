@@ -1293,6 +1293,10 @@
          <nodeClass>oracle.bali.xml.addin.XMLSourceNode</nodeClass>
       </Item>
       <Item class="oracle.ide.model.Reference">
+         <URL path="../../SgaDeploy/view/deploy/informes/picking/query.xml"/>
+         <nodeClass>oracle.bali.xml.addin.XMLSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
          <URL path="src/resources/images/16x16/plain/recycle.png"/>
          <nodeClass>oracle.jdeveloper.model.PngImageNode</nodeClass>
       </Item>
@@ -1715,11 +1719,11 @@
          <Key>technologyScope</Key>
          <Value class="oracle.ide.model.TechnologyScope">
             <technologyKeys>
-               <Item>JClient</Item>
-               <Item>JavaBeans</Item>
-               <Item>Swing/AWT</Item>
                <Item>General</Item>
                <Item>Java</Item>
+               <Item>JavaBeans</Item>
+               <Item>Swing/AWT</Item>
+               <Item>JClient</Item>
             </technologyKeys>
          </Value>
       </Item>

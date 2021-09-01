@@ -325,6 +325,15 @@ from SGAVPACKINGLIST where IDDOC = $(ParamIddoc)]]></sqlstring>
 <query name="sgavpackinglist" type="jdbc" datasource="Interflex">
 <query_jdbc>
 <uniform_sql parse="true">
+<table>
+<alias><![CDATA[SGAVPACKINGLIST]]></alias>
+<name><![CDATA[P_SGAVPACKINGLIST]]></name>
+<issql><![CDATA[false]]></issql>
+<xlocation><![CDATA[15]]></xlocation>
+<ylocation><![CDATA[15]]></ylocation>
+<xScroll><![CDATA[0]]></xScroll>
+<yScroll><![CDATA[0]]></yScroll>
+</table>
 <column>
 <![CDATA[SGAVPACKINGLIST.IDDOC]]>
 <alias><![CDATA[]]></alias>
@@ -333,12 +342,30 @@ from SGAVPACKINGLIST where IDDOC = $(ParamIddoc)]]></sqlstring>
 </column>
 <column>
 <![CDATA[SGAVPACKINGLIST.IDCABSTR]]>
-<alias><![CDATA[Nº Albarán]]></alias>
+<alias><![CDATA[Nota]]></alias>
 <type><![CDATA[]]></type>
 <table><![CDATA[]]></table>
 </column>
 <column>
 <![CDATA[SGAVPACKINGLIST.IDCABNUM]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[]]></type>
+<table><![CDATA[]]></table>
+</column>
+<column>
+<![CDATA[SGAVPACKINGLIST.NALBARAN]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[]]></type>
+<table><![CDATA[]]></table>
+</column>
+<column>
+<![CDATA[SGAVPACKINGLIST.NOMBRE]]>
+<alias><![CDATA[]]></alias>
+<type><![CDATA[]]></type>
+<table><![CDATA[]]></table>
+</column>
+<column>
+<![CDATA[SGAVPACKINGLIST.CCLIENTE]]>
 <alias><![CDATA[]]></alias>
 <type><![CDATA[]]></type>
 <table><![CDATA[]]></table>
@@ -351,7 +378,7 @@ from SGAVPACKINGLIST where IDDOC = $(ParamIddoc)]]></sqlstring>
 </column>
 <column>
 <![CDATA[SGAVPACKINGLIST.IDBULTO]]>
-<alias><![CDATA[Nº de Bulto]]></alias>
+<alias><![CDATA[]]></alias>
 <type><![CDATA[]]></type>
 <table><![CDATA[]]></table>
 </column>
@@ -410,22 +437,50 @@ from SGAVPACKINGLIST where IDDOC = $(ParamIddoc)]]></sqlstring>
 <table><![CDATA[]]></table>
 </column>
 <column>
-<![CDATA[SGAVPACKINGLIST.ADRE]]>
+<![CDATA[SGAVPACKINGLIST.A1]]>
 <alias><![CDATA[A1]]></alias>
 <type><![CDATA[]]></type>
 <table><![CDATA[]]></table>
 </column>
+<column>
+<![CDATA[SGAVPACKINGLIST.A2]]>
+<alias><![CDATA[A2]]></alias>
+<type><![CDATA[]]></type>
+<table><![CDATA[]]></table>
+</column>
+<column>
+<![CDATA[SGAVPACKINGLIST.A3]]>
+<alias><![CDATA[A3]]></alias>
+<type><![CDATA[]]></type>
+<table><![CDATA[]]></table>
+</column>
 <where>
+<XBinaryCondition isnot="false" clause= "where">
+<expression1>
+<expression type="Field">
+<![CDATA[SGAVPACKINGLIST.IDDOC]]>
+</expression>
+</expression1>
+<expression2>
+<expression type="Expression">
+<![CDATA[$(ParamIddoc)]]>
+</expression>
+</expression2>
+<op><![CDATA[=]]></op>
+</XBinaryCondition>
 </where>
 <sortby></sortby>
 <groupby></groupby>
 <having>
 </having>
-<sqlstring parseResult="1"><![CDATA[select  SGAVPACKINGLIST.IDDOC, 
-SGAVPACKINGLIST.IDCABSTR as "Nº Albarán", 
-SGAVPACKINGLIST.IDCABNUM, 
+<sqlstring parseResult="0"><![CDATA[select  SGAVPACKINGLIST.IDDOC, 
+SGAVPACKINGLIST.IDCABSTR as "Nota", 
+SGAVPACKINGLIST.IDCABNUM,
+SGAVPACKINGLIST.NALBARAN,
+SGAVPACKINGLIST.NOMBRE,
+SGAVPACKINGLIST.CCLIENTE,
 SGAVPACKINGLIST.FALBARAN as "Fecha", 
-SGAVPACKINGLIST.IDBULTO as "Nº de Bulto",
+SGAVPACKINGLIST.IDBULTO,
 SGAVPACKINGLIST.LARGO || ' x ' || SGAVPACKINGLIST.ANCHO || ' x ' || SGAVPACKINGLIST.ALTO as "Medidas",
 SGAVPACKINGLIST.LARGO * SGAVPACKINGLIST.ANCHO * SGAVPACKINGLIST.ALTO / 1000 as "Volúmen ",
 SGAVPACKINGLIST.PESOCONT, 
@@ -435,10 +490,10 @@ SGAVPACKINGLIST.DESCRIP as "Descripción",
 SGAVPACKINGLIST.CANTOT as "Cantidad", 
 SGAVPACKINGLIST.PESO as "Peso", 
 SGAVPACKINGLIST.NOM, 
-SGAVPACKINGLIST.ADREÇA1 as "adreça1", 
-SGAVPACKINGLIST.ADREÇA2 as "adreça2", 
-SGAVPACKINGLIST.ADREÇA3 as "adreça3" 
-from SGAVPACKINGLIST  where SGAVPACKINGLIST.IDDOC = $(ParamIddoc)]]></sqlstring>
+SGAVPACKINGLIST.A1 as "A1", 
+SGAVPACKINGLIST.A2 as "A2", 
+SGAVPACKINGLIST.A3 as "A3" 
+from P_SGAVPACKINGLIST  SGAVPACKINGLIST  where SGAVPACKINGLIST.IDDOC = $(ParamIddoc)]]></sqlstring>
 </uniform_sql>
 <variable name="ParamIddoc" type="user" prompt="true" multipleSelection="false" customization="false" label="ParamIddoc" source="sgavpackinglist_l18n" xtype="string">
 </variable>

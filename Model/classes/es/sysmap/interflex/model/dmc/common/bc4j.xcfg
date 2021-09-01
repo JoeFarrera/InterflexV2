@@ -45,10 +45,10 @@
       <ENTRY name="user" value="ifdba"/>
       <ENTRY name="ConnectionName" value="servidorsga"/>
       <ENTRY name="SID" value="PROD"/>
-      <ENTRY name="password">
-         <![CDATA[{904}050E8A8ADC17508E3B9E2801926DDF0EC0]]>
-      </ENTRY>
       <ENTRY name="JdbcDriver" value="oracle.jdbc.driver.OracleDriver"/>
+      <ENTRY name="password">
+         <![CDATA[{904}051AB45B1C57EE355B4005DE4600DB6D6C]]>
+      </ENTRY>
       <ENTRY name="ORACLE_JDBC_TYPE" value="thin"/>
       <ENTRY name="DeployPassword" value="true"/>
    </ConnectionDefinition>

@@ -111,15 +111,27 @@ public class Interflex extends SgaMainFrame implements PuestoListener, PuestoExt
   {
     try
     { 
+//    UIManager.LookAndFeelInfo info[] = UIManager.getInstalledLookAndFeels();
+//      for( int i = 0; i < info.length; i++ ) {
+//         UIManager.LookAndFeelInfo lookAndFeelInfo = info[i];
+//         System.out.println( lookAndFeelInfo );
+//      }
       // 2018.12.17: Windows LookAndFeel has some defects on servidorsga
+      Properties properties = System.getProperties();
+      String lookAndFeel = SgaUtilPuesto.getInstance().getProperty("LookAndFeel");
+      if (lookAndFeel != null)
+        UIManager.setLookAndFeel(lookAndFeel);
+        else
       UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+      // 2021 for testing from jdev use:
+      // UIManager.setLookAndFeel("javax.swing.plaf.metal.MetalLookAndFeel");
       // UIManager.setLookAndFeel("com.sun.java.swing.plaf.gtk.GTKLookAndFeel");
       // UIManager.setLookAndFeel("com.sun.java.swing.plaf.motif.MotifLookAndFeel");
       // UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows");
       // Augmenta el tamany de totes les fonts utilitzades
       Interflex.setUIFont(2);
       //Intentem fixar algunes java options necessaries per stylereportpro
-      Properties properties = System.getProperties();
+      
       String value = SgaUtilPuesto.getInstance().getProperty("uql.home");
       if (value != null)
         properties.setProperty("uql.home", value);

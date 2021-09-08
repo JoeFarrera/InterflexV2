@@ -618,6 +618,11 @@
          FullName="es.sysmap.interflex.view.MDPanelSgacdocSortidesView2SgaldocView5UIModel" >
       </Containee>
       <Containee
+         id="MDPanelSgacdocSortidesView3SgaldocView6UIModel"
+         ObjectType="BindingContainerReference"
+         FullName="es.sysmap.interflex.view.MDPanelSgacdocSortidesView3SgaldocView6UIModel" >
+      </Containee>
+      <Containee
          id="PanelSgaldocView4UIModel"
          ObjectType="BindingContainerReference"
          FullName="es.sysmap.interflex.view.PanelSgaldocView4UIModel" >

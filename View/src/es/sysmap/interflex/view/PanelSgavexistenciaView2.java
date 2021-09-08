@@ -80,6 +80,8 @@ public class PanelSgavexistenciaView2 extends SgaJUPanel
     navBar.setPreferredSize(new Dimension(800, 29));
     navBar.setMinimumSize(new Dimension(800, 29));
     navBar.setMaximumSize(new Dimension(800, 29));
+    navBar.setHasDeleteButton(false);
+    navBar.setHasInsertButton(false);
     this.setLayout(borderLayout);
     this.setSize(new Dimension(800, 300));
     this.setPreferredSize(new Dimension(800, 300));
@@ -147,7 +149,29 @@ public class PanelSgavexistenciaView2 extends SgaJUPanel
   private void addPopup() {
       JMenuItem menuItem;
       
+      
+      boolean hasAccess = Interflex.getInstance().hasAcceso("MNUOPERACIONS");
+
+   
+      
       tableSgavexistenciaView2.addPopupSeparator();
+      
+    menuItem = new JMenuItem(SgaRecursos.getInstance().getString("Existencies.veureDisponibilitat_label"));
+      menuItem.setIcon(SgaRecursos.createImageIcon(getClass(), "16x16/plain/unknown.png", null));
+      menuItem.addActionListener(new ActionListener()
+      {
+        public void actionPerformed(ActionEvent e)
+        {
+          veureDisponibilitat();
+        }
+      });       
+      tableSgavexistenciaView2.addPopupMenuItem(menuItem);
+      
+      if (!hasAccess)
+        return;
+        
+       tableSgavexistenciaView2.addPopupSeparator();
+      
       
       menuItem = new JMenuItem(SgaRecursos.getInstance().getString("Existencies.treureContenidor_label"));
       menuItem.setIcon(SgaRecursos.createImageIcon(getClass(), "16x16/plain/undo.png", null));
@@ -251,16 +275,7 @@ public class PanelSgavexistenciaView2 extends SgaJUPanel
     }
 
       
-      menuItem = new JMenuItem(SgaRecursos.getInstance().getString("Existencies.veureDisponibilitat_label"));
-      menuItem.setIcon(SgaRecursos.createImageIcon(getClass(), "16x16/plain/unknown.png", null));
-      menuItem.addActionListener(new ActionListener()
-      {
-        public void actionPerformed(ActionEvent e)
-        {
-          veureDisponibilitat();
-        }
-      });       
-      tableSgavexistenciaView2.addPopupMenuItem(menuItem);
+
       
       if (idDoc != null)
       {

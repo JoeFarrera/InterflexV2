@@ -9,8 +9,9 @@
     <Item nomMenu="Operacions Manuals" tooltip="Operacions en ubicacions manuals" icona="16x16/plain/gears.png" panel="es.sysmap.interflex.view.MDPanelEntradesManuals" topicId="operacions" acces="MNUOPERACIONS"/>
     <Item nomMenu="Documents oberts" tooltip="Documents oberts en el puesto de treball" icona="16x16/plain/document_zoom_out.png" panel="es.sysmap.interflex.view.PanelSgavdocsObertsView1" topicId="docsoberts" acces="MNUOPERACIONS"/>
    </Seccio>
-   <Seccio nomMenu="Docs. Nous" tooltip="Documents Nous" icona="16x16/plain/scroll.png" acces="MNUOPERACIONS_DN">
+   <Seccio nomMenu="Comercial Documents" tooltip="Documents Nous" icona="16x16/plain/scroll.png" acces="MNUOPERACIONS_DN">
     <Item nomMenu="Documents nous" tooltip="Documents nous" icona="16x16/plain/document_zoom_out.png" panel="es.sysmap.interflex.view.PanelSgacdocSortidesView1" topicId="docsoberts" acces="MNUOPERACIONS_DN"/>
+   	<Item nomMenu="Documents acabats" tooltip="Sortides (acabades) magatzems" icona="16x16/plain/checks.png" panel="es.sysmap.interflex.view.MDPanelSgacdocSortidesView3SgaldocView6" topicId="sortides" acces="MNUOPERACIONS_DN"/>
   </Seccio>
   <Seccio nomMenu="Manteniment" tooltip="Manteniment de fitxers mestres" icona="16x16/plain/toolbox.png" acces="MNUMANTENIMENT">
    	<Item nomMenu="Articles" tooltip="Manteniment d'articles" icona="16x16/plain/nut_and_bolt.png" panel="es.sysmap.interflex.view.PanelSgaarticuloView1" topicId="articles" acces="MNUMANTENIMENT"/>

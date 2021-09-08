@@ -15,7 +15,7 @@ import sgalib.SgaRecursos;
 import sgalib.SgaRunPanel;
 import sgalib.SgaUtilPuesto;
 
-public class MDPanelSgacdocSortidesView2SgaldocView5 extends SgaJUPanel
+public class MDPanelSgacdocSortidesView3SgaldocView6 extends SgaJUPanel
 {
 // Panel layout
   private GridLayout panelLayout = new GridLayout(2, 1);
@@ -24,11 +24,11 @@ public class MDPanelSgacdocSortidesView2SgaldocView5 extends SgaJUPanel
 
 // Panel binding definition used by design time
 
-  private JUPanelBinding panelBinding = new JUPanelBinding("MDPanelSgacdocSortidesView2SgaldocView5UIModel");
+  private JUPanelBinding panelBinding = new JUPanelBinding("MDPanelSgacdocSortidesView3SgaldocView6UIModel");
 
 // The master panel definition
 
-  private PanelSgacdocSortidesView2 masterViewPanel = new PanelSgacdocSortidesView2(false);
+  private PanelSgacdocSortidesView2 masterViewPanel = new PanelSgacdocSortidesView2(true);
 // The detail panel definition
   private PanelSgaldocView5 detailViewPanel = new PanelSgaldocView5();
 
@@ -39,7 +39,7 @@ public class MDPanelSgacdocSortidesView2SgaldocView5 extends SgaJUPanel
    * 
    *  The default constructor for master-detail panel
    */
-  public MDPanelSgacdocSortidesView2SgaldocView5()
+  public MDPanelSgacdocSortidesView3SgaldocView6()
   {
   }
 
@@ -71,7 +71,7 @@ public class MDPanelSgacdocSortidesView2SgaldocView5 extends SgaJUPanel
 
     }
 
-    MDPanelSgacdocSortidesView2SgaldocView5 panel = new MDPanelSgacdocSortidesView2SgaldocView5();
+    MDPanelSgacdocSortidesView3SgaldocView6 panel = new MDPanelSgacdocSortidesView3SgaldocView6();
     panel.setBindingContext(JUTestFrame.startTestFrame("DataBindings.cpx", "AppModuleDataControl", panel, panel.getPanelBinding(), new Dimension(400, 300)));
     panel.revalidate();
   }
@@ -110,7 +110,7 @@ public class MDPanelSgacdocSortidesView2SgaldocView5 extends SgaJUPanel
       String puesto = SgaUtilPuesto.getInstance().getProperty("LlocTreball");
       if (puesto != null)
       {
-        MDPanelSgacdocSortidesView2SgaldocView5 panel = new MDPanelSgacdocSortidesView2SgaldocView5();
+        MDPanelSgacdocSortidesView3SgaldocView6 panel = new MDPanelSgacdocSortidesView3SgaldocView6();
         _runPanel = SgaRunPanel.startRunPanel("DataBindings.cpx", "AppModuleDataControl", panel, panel.getPanelBinding(), new Dimension(400, 300));
         panel.setBindingContext(_runPanel.getBindingContext());
         panel.revalidate();

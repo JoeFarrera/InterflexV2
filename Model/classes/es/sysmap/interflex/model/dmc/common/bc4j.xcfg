@@ -47,7 +47,7 @@
       <ENTRY name="SID" value="PROD"/>
       <ENTRY name="JdbcDriver" value="oracle.jdbc.driver.OracleDriver"/>
       <ENTRY name="password">
-         <![CDATA[{904}051AB45B1C57EE355B4005DE4600DB6D6C]]>
+         <![CDATA[{904}05559B4F7E0206CA19694A102683317CD6]]>
       </ENTRY>
       <ENTRY name="ORACLE_JDBC_TYPE" value="thin"/>
       <ENTRY name="DeployPassword" value="true"/>

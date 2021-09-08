@@ -94,13 +94,16 @@ public class PanelSgacdocSortidesView2 extends SgaJUPanel
   
   String currFiltroGrupatge = "P";  
   
+  private boolean soloConsulta = false;
+  
  
   /**
    * 
    *  The default constructor for panel
    */
-  public PanelSgacdocSortidesView2()
+  public PanelSgacdocSortidesView2(boolean consulta)
   {
+    soloConsulta = consulta;
   }
 
   /**
@@ -240,11 +243,14 @@ public class PanelSgacdocSortidesView2 extends SgaJUPanel
     
     
     // Layout the datapanel and the navigation bar
-    buttonsPanel.add(buttonObrirOrdre);
-    buttonsPanel.add(buttonTancarOrdre);
-    buttonsPanel.add(buttonSuspendreOrdre);
-    buttonsPanel.add(buttonReserves);
-    buttonsPanel.add(buttonResman);
+    if (!soloConsulta)
+    {
+      buttonsPanel.add(buttonObrirOrdre);
+      buttonsPanel.add(buttonTancarOrdre);
+      buttonsPanel.add(buttonSuspendreOrdre);
+      buttonsPanel.add(buttonReserves);
+      buttonsPanel.add(buttonResman);
+    } 
     buttonsPanel.add(buttonBultos);
     buttonsPanel.add(buttonBultosX, null);
     buttonsPanel.add(buttonPackingList);
@@ -260,53 +266,52 @@ public class PanelSgacdocSortidesView2 extends SgaJUPanel
     
     setCustomCellRenderer(tableSgacdocSortidesView1);
     
-      
-    navBar.afegirFiltreMagatzem(filtroMagatzem, "Filtrar per magatzem");
-    
-    navBar.afegirBoto(bultosCantErroneo);    
-    navBar.addSeparator();
+    if (!soloConsulta)
+    {
+      navBar.afegirFiltreMagatzem(filtroMagatzem, "Filtrar per magatzem");
+      navBar.afegirBoto(bultosCantErroneo);    
+      navBar.addSeparator();
    
-    navBar.afegirBoto(filtroGrupatgeButton);
+      navBar.afegirBoto(filtroGrupatgeButton);
 
     
-    navBar.afegirBotoFiltrarLegacy(); // Just to get right position!!
-    
-    
-    
-    
-    filtroMagatzem.addItemListener(new FiltroMagatzemComboChangeListener()); 
+      navBar.afegirBotoFiltrarLegacy(); // Just to get right position!!
+      filtroMagatzem.addItemListener(new FiltroMagatzemComboChangeListener()); 
     
  
-    bultosCantErroneo.addActionListener(new ActionListener()
-    {
-      public void actionPerformed(ActionEvent e)
-      {
-        showBultosErroneos();
-      }
-    });
-    
-    filtroGrupatgeButton.addActionListener(new ActionListener()
+      bultosCantErroneo.addActionListener(new ActionListener()
       {
         public void actionPerformed(ActionEvent e)
         {
-          if (currFiltroGrupatge.equals("P"))
-          {
-            filtroGrupatgeButton.setText("Paqueteria");
-            currFiltroGrupatge = "G";
-          }
-          else
-          {
-            filtroGrupatgeButton.setText("Grupatge");
-            currFiltroGrupatge = "P";
-          }
-          
-          setFiltroPreparacion(currFiltroGrupatge); 
+          showBultosErroneos();
         }
       });
       
+      filtroGrupatgeButton.addActionListener(new ActionListener()
+        {
+          public void actionPerformed(ActionEvent e)
+          {
+            if (currFiltroGrupatge.equals("P"))
+            {
+              filtroGrupatgeButton.setText("Paqueteria");
+              currFiltroGrupatge = "G";
+            }
+            else
+            {
+              filtroGrupatgeButton.setText("Grupatge");
+              currFiltroGrupatge = "P";
+            }
+            
+            setFiltroPreparacion(currFiltroGrupatge); 
+          }
+        });
+         setFiltroPreparacion(currFiltroGrupatge);
+    } // Solo consulta
+    else
+      setFiltroSoloAcabats();
       
-  
-    setFiltroPreparacion(currFiltroGrupatge);
+    
+   
 
   }
   
@@ -326,6 +331,9 @@ public class PanelSgacdocSortidesView2 extends SgaJUPanel
    */
   private void addPopup() {
       JMenuItem menuItem;
+      
+      if (!soloConsulta)
+      {
       // Michael 29.01.2009 Añadir posibilidad de bloquear/desbloquear la salida
       boolean enabled = Interflex.getInstance().hasAcceso("SGABLOQORD");
     
@@ -475,7 +483,10 @@ public class PanelSgacdocSortidesView2 extends SgaJUPanel
           insertarExpedicio();
         }
       });   
-     tableSgacdocSortidesView1.addPopupMenuItem(menuItem);
+      tableSgacdocSortidesView1.addPopupMenuItem(menuItem);
+     } // soloConsulta
+      
+   
       
   }
   
@@ -497,7 +508,7 @@ public class PanelSgacdocSortidesView2 extends SgaJUPanel
       exemp.printStackTrace();
     }
 
-    PanelSgacdocSortidesView2 panel = new PanelSgacdocSortidesView2();
+    PanelSgacdocSortidesView2 panel = new PanelSgacdocSortidesView2(false);
     panel.setBindingContext(JUTestFrame.startTestFrame("DataBindings.cpx", "AppModuleDataControl", panel, panel.getPanelBinding(), new Dimension(400, 300)));
     panel.revalidate();
     
@@ -1145,6 +1156,11 @@ public class PanelSgacdocSortidesView2 extends SgaJUPanel
     
     
 	}
+  
+  private void setFiltroSoloAcabats()
+  {
+     navBar.setDisponibleAcabat(false, true);;
+  }
   
   private void setFiltroPreparacion (String tipoPreparacion)
   {

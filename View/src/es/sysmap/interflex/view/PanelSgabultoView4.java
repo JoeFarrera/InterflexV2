@@ -71,9 +71,12 @@ public class PanelSgabultoView4 extends SgaJUPanel
 
       try
       {
+      if (Interflex.getInstance().hasAcceso("MNUMANTENIMENT"))
+      {
       //Modifiquem els renderers dels combobox i checkboxs
       setCellEditor(panelBinding.getLabel("SgabultoView4", "Idtipobulto", null), new SgaJComboEditor(panelBinding.getApplication().getApplicationModule(), "SgatipobultoView1", "Idtip", "Idtip", mTipoBulto));
       setCellRenderer(panelBinding.getLabel("SgabultoView4", "Idtipobulto", null), new SgaJComboRenderer(panelBinding.getApplication().getApplicationModule(), "SgatipobultoView1", "Idtip", "Idtip"));
+      }
   
 
       }
@@ -181,9 +184,14 @@ public class PanelSgabultoView4 extends SgaJUPanel
     navBar.setHasDeleteButton(false);
     navBar.setHasInsertButton(false);
     
+    boolean enabled = Interflex.getInstance().hasAcceso("MNUMANTENIMENT");
+    
     buttonsPanel.add(buttonRepartirBulto);
+    buttonRepartirBulto.setEnabled(enabled);
     buttonsPanel.add(buttonReagraparLinia);
+    buttonReagraparLinia.setEnabled(enabled);
     buttonsPanel.add(buttonReagruparBultos);
+    buttonReagruparBultos.setEnabled(enabled);
     buttonsPanel.add(buttonImprimirEtiqueta);
     add(navBar, BorderLayout.NORTH);
     add(dataPanel, BorderLayout.CENTER);

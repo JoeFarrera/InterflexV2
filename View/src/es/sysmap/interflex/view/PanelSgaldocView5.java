@@ -168,8 +168,11 @@ public class PanelSgaldocView5 extends SgaJUPanel
    */
   private void addPopup() {
       JMenuItem menuItem;
+      boolean enabled = true;
+      
       
       tableSgaldocView4.addPopupSeparator();
+      
       
       menuItem = new JMenuItem(SgaRecursos.getInstance().getString("Sortides.veureExistencies_label"));
       menuItem.setIcon(SgaRecursos.createImageIcon(getClass(), "consultes.gif", null));
@@ -181,6 +184,8 @@ public class PanelSgaldocView5 extends SgaJUPanel
         }
       });      
       tableSgaldocView4.addPopupMenuItem(menuItem);
+      
+
  
       tableSgaldocView4.addPopupSeparator();
       menuItemFormatN = new JMenuItem(SgaRecursos.getInstance().getString("Sortides.formatN"));
@@ -192,6 +197,7 @@ public class PanelSgaldocView5 extends SgaJUPanel
           sinFormato("N");
         }
       });      
+
       tableSgaldocView4.addPopupMenuItem(menuItemFormatN);
 
 
@@ -204,6 +210,7 @@ public class PanelSgaldocView5 extends SgaJUPanel
           sinFormato("P");
         }
       });      
+
       tableSgaldocView4.addPopupMenuItem(menuItemFormatP);
 
       menuItemFormatT = new JMenuItem(SgaRecursos.getInstance().getString("Sortides.formatT"));
@@ -215,6 +222,7 @@ public class PanelSgaldocView5 extends SgaJUPanel
           sinFormato("T");
         }
       });      
+
       tableSgaldocView4.addPopupMenuItem(menuItemFormatT);
 
 
@@ -241,9 +249,12 @@ public class PanelSgaldocView5 extends SgaJUPanel
   
   private void updatePopupMenuItems ()
   {
-    menuItemFormatT.setEnabled(!isFormatoActual("T"));
-    menuItemFormatP.setEnabled(!isFormatoActual("P"));
-    menuItemFormatN.setEnabled(!isFormatoActual("N"));
+    boolean hasAccess = Interflex.getInstance().hasAcceso("MNUOPERACIONS");
+    boolean okEstado = isEstatOKCambioFormato();
+    
+    menuItemFormatT.setEnabled(hasAccess && okEstado && !isFormatoActual("T"));
+    menuItemFormatP.setEnabled(hasAccess && okEstado && !isFormatoActual("P"));
+    menuItemFormatN.setEnabled(hasAccess && okEstado && !isFormatoActual("N"));
     
   }
 
@@ -336,6 +347,21 @@ public class PanelSgaldocView5 extends SgaJUPanel
     }
   }
 
+ private boolean isEstatOKCambioFormato ()
+ {
+   boolean okCambioFormato = false;
+   SgaldocViewRow currentRow = (SgaldocViewRow)panelBinding.findIterBinding("SgaldocView4Iter").getCurrentRow(); 
+   
+    if (currentRow != null)
+    {
+      // Si la capçalera esta disponible, activem els botons en funció de les linies
+      String estadoCabecera = currentRow.getEstadoCabecera();
+      if (!(estadoCabecera.equals("F") || estadoCabecera.equals("A") || estadoCabecera.equals("B")))
+      okCambioFormato = true;
+    }
+    return (okCambioFormato);
+      
+ }
 
   /**
    * Actualitza l'estat dels botons en funció de l'ordre

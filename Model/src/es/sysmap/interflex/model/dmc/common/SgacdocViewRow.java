@@ -46,6 +46,8 @@ public interface SgacdocViewRow extends Row
 
   boolean isOKExped();
 
+  String getTdnExped();
+
 
 
 }

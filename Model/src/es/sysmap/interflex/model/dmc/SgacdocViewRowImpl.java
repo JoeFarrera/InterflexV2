@@ -1229,6 +1229,11 @@ public class SgacdocViewRowImpl extends ViewRowImpl implements es.sysmap.interfl
   {
     // getSgacdoc().reservarTrasllat(idmac);
   }
+  
+  public String getTdnExped()
+  {
+    return getSgacdoc().getTdnExped();
+  }
 
   
   

@@ -772,6 +772,24 @@ public class SgacdocViewRowClient extends RowImpl implements es.sysmap.interflex
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   public oracle.jbo.RowIterator getSgabultoView()
   {
     Object _ret = getApplicationModuleProxy().riInvokeExportedMethod(this, "getSgabultoView", null, null);
@@ -782,6 +800,12 @@ public class SgacdocViewRowClient extends RowImpl implements es.sysmap.interflex
   {
     Object _ret = getApplicationModuleProxy().riInvokeExportedMethod(this, "getSgaldocView", null, null);
     return (oracle.jbo.RowIterator)_ret;
+  }
+
+  public String getTdnExped()
+  {
+    Object _ret = getApplicationModuleProxy().riInvokeExportedMethod(this, "getTdnExped", null, null);
+    return (String)_ret;
   }
 
   public void incrementarPrioridad(int incremento)

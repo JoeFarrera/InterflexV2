@@ -1,6 +1,7 @@
 package es.sysmap.interflex.model.dmc;
 import es.sysmap.interflex.etiquetes.EtiquetaPicking;
 import es.sysmap.interflex.model.bdc.common.FlexiDate;
+import es.sysmap.interflex.model.dmc.common.SgacdocViewRow;
 import java.text.DecimalFormat;
 import javax.swing.DefaultListModel;
 import oracle.jbo.Row;
@@ -569,6 +570,16 @@ public class SgabultoViewRowImpl extends ViewRowImpl implements es.sysmap.interf
             etiqueta.setTdnCodDelegacion(row.getCoddelegacion());
             etiqueta.setTdnNumExped(cdoc.getTdnNrExped());
             etiqueta.setEtiquetaTdn(true);
+            
+            
+            String barcodeData = "0239" + ((SgacdocViewRow)getSgacdocView()).getTdnExped() + "008" + row.getZonareparto() + row.getCoddelegacion() +  "01";
+            DecimalFormat bultoFormat = new DecimalFormat ("000");
+            int nbulto = getIdbulto().intValue();
+            String bulto = bultoFormat.format(nbulto);
+            barcodeData = barcodeData + bulto;
+            etiqueta.setTdnBarcodeString(barcodeData);
+
+
           }
           else
           {

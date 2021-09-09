@@ -59,40 +59,42 @@ from sgarefcodes where sgarefcodes.domain
                                                              
                                                              
                                                              
-                   =&#39;ESTORD&#39;                                 
-                        and                       sgarefcodes.value 
+                                     =&#39;ESTORD&#39;               
+                                             and             
+             sgarefcodes.value                               
                                                              
+                                                =          (select 
                                                              
-           =         (select                                 
-                                                      decode 
-                                                             
-              (sgacdoc.estado,                               
-                                                             
-                                                             
-                                              &#39;D&#39;,           
-                decode                                       
-         ((select                                            
-                  sum(numlineas)                             
-                                                             
-                                                             
-                 from                             sgavcdocldoclbultoenproceso 
+                              decode                         
+                                                       (sgacdoc.estado, 
                                                              
                                                              
                                                              
+                          &#39;D&#39;,                            decode 
+                                                  ((select   
                                                              
-                     v  where                              v.iddoc 
+ sum(numlineas)                                              
                                                              
-                           =            sgacdoc.iddoc),      
                                                              
-                                                0,           
-        sgacdoc.estado,                                      
+         from                                sgavcdocldoclbultoenproceso 
                                                              
-                               &#39;P&#39;),                         
-                                                   sgacdoc.estado) 
+                                                             
+                                                             
+                                                             
+                                   v   where                 
+             v.iddoc                                         
+                                                      =      
+      sgacdoc.iddoc),                                        
+                                                             
+                    0,                     sgacdoc.estado,   
+                                                             
+                                                             
+            &#39;P&#39;),                                            
+                                   sgacdoc.estado)           
                                                              
                                                              
                                                        from  
-                    dual)) AS Descestadolineas, 
+                      dual)) AS Descestadolineas, 
        Sgacdoc.IMPRIMIR, 
 
        Sgacdoc.ESTCOM, 
@@ -384,41 +386,42 @@ sgaexpeddoc.iddoc = sgacdoc.iddoc) AS idExped"
                                                              
                                                              
                                                              
-                                      =&#39;ESTORD&#39;              
-                                           and               
-        sgarefcodes.value                                    
+                                                        =&#39;ESTORD&#39; 
+                                                           and 
+                         sgarefcodes.value                   
                                                              
-                                     =         (select       
+                                                            = 
+         (select                                             
+                                               decode        
                                                              
-                   decode                                    
-                                        (sgacdoc.estado,     
-                                                             
-                                                             
-                                                             
-           &#39;D&#39;,                           decode             
-                                   ((select                  
-                                            sum(numlineas)   
+           (sgacdoc.estado,                                  
                                                              
                                                              
-                                           from              
-               sgavcdocldoclbultoenproceso                   
+                                                      &#39;D&#39;,   
+                         decode                              
+                     ((select                                
+                                 sum(numlineas)              
+                                                             
+                                                             
+                                         from                
+                sgavcdocldoclbultoenproceso                  
                                                              
                                                              
                                                              
                                                              
-   v  where                              v.iddoc             
+                  v   where                              v.iddoc 
                                                              
-               =            sgacdoc.iddoc),                  
+                                 =            sgacdoc.iddoc), 
                                                              
-                                    0,                   sgacdoc.estado, 
+                                                           0, 
+                    sgacdoc.estado,                          
+                                                             
+                                                  &#39;P&#39;),      
+                                                             
+            sgacdoc.estado)                                  
                                                              
                                                              
-       &#39;P&#39;),                                                 
-                           sgacdoc.estado)                   
-                                                             
-                                                             
-                                     from                    
-  dual))"
+                                from                        dual))"
       SQLType="VARCHAR" >
    </ViewAttribute>
    <ViewAttribute

@@ -95,12 +95,13 @@ public class EtiquetaPicking
   private String ramonedaContador = null;
   private String ramonedaCodigoPostal;
   private boolean etiquetaRamoneda = false;
-  String ramonedaBarcodeString;
+  private String ramonedaBarcodeString;
   
   private String tdnZonaReparto = null;
   private String tdnCodDelegacion = null;
   private String tdnNumExped = null;
-  private boolean tdnEtiqueta = false;
+  private boolean etiquetaTdn = false;
+  private String tdnBarcodeString;
   
             
   
@@ -292,7 +293,7 @@ public class EtiquetaPicking
       tecPrinter.writeData("{PC005;0051,0583,05,05,K,00,B|}");
       tecPrinter.writeData("{PC006;0051,0740,05,05,K,00,B|}");
       // tecPrinter.writeData("{PC007;0370,0740,05,05,K,00,B,J0101|}");
-      tecPrinter.writeData("{PC007;0260,0740,10,10,K,00,B|}");
+      tecPrinter.writeData("{PC007;0260,0760,10,10,K,00,B|}");
       tecPrinter.writeData("{PC008;0670,0740,05,05,K,00,B|}");
       // Michael tecPrinter.writeData("{PC009;0545,0880,05,05,K,00,B,J0101|}");
       tecPrinter.writeData("{PC009;0545,0820,05,05,K,00,B,J0101|}");
@@ -343,6 +344,15 @@ public class EtiquetaPicking
         // Punto en etiquea para indicar que és Ramoneda
         //tecPrinter.writeData("{PC016;0850,0410,10,10,M,00,W|}");
         
+      }
+      else if (etiquetaTdn)
+      {
+
+        // Plaza Dist.
+        tecPrinter.writeData("{PC013;0580,0620,10,10,M,00,B|}");
+        // Zona Reparto
+        tecPrinter.writeData("{PC014;0770,0620,10,10,M,00,B|}");
+
       }
       
       // Michael 26.10.2010 Pon el teléfono en todas etiquetas
@@ -450,6 +460,34 @@ public class EtiquetaPicking
          // tecPrinter.writeData("{RC016;RDA|}");
 
        }
+       else if (etiquetaTdn)
+       {
+          tecPrinter.writeData("{PC015;0800,0180,10,10,M,00,W|}");
+          tecPrinter.writeData("{RC015;TDN|}");   
+          
+          tecPrinter.writeData("{RC013;" + tdnZonaReparto + "|}");   
+          tecPrinter.writeData("{RC014;" + tdnCodDelegacion + "|}");
+          
+          
+          // Barcode 
+          // Tipo de Código: Interleaved 2 de 5, sin dígito de verifcación.
+          // Altura de las barras superior a 25mm.
+          // Anchura de la barra mas pequeña superior a 0,45 mm.
+          // 8mm de espacio en blanco antes del código y después.
+          // See Prog_handb_B_472 P69
+          // [ESC] XBaa; bbbb, cccc, d, e, ff, gg, hh, ii, jj, k, llll (, mnnnnnnnnnn, p, qq) (, r) (=sss------sss) [LF] [NUL]
+          // d: Barcode type e: Digito Control ff: narrow bar width gg: Narrow Space Width hh: Wide bar Width ii: Wide Space width
+          // jj: Char to char space width k: Rotation Angle llll: height of barcode
+          //                    XBaa; bbbb,cccc,d,e,ff,gg,hh,ii,jj,k,llll (, mnnnnnnnnnn, p, qq) (, r) (=sss------sss) [LF] [NUL]
+          tecPrinter.writeData("{XB00;0090,0940,2,1,03,04,07,07,03,0,0220|}"); 
+          // tecPrinter.writeData("{XB00;0051,0980,9,2,03,0,0150,+0000000000,000,0,00|}"); // No text below barcode
+
+          tecPrinter.writeData("{RB00;" + tdnBarcodeString + "|}");
+
+         
+       }
+       
+       
         // Michael 27.10.2010 Pon el teléfono si es etiqueta de barras
         if (getTelefono() != null && getTelefono().length() > 0)
           tecPrinter.writeData("{RC015;Tfno: " + getTelefono() + "|}");
@@ -814,9 +852,14 @@ public class EtiquetaPicking
   
   public void setEtiquetaTdn(boolean tdnEtiqueta)
   {
-    tdnEtiqueta = tdnEtiqueta;
+    etiquetaTdn = tdnEtiqueta;
   }
            
+           
+   public void setTdnBarcodeString(String tdnBarcodeString)
+   {
+     this.tdnBarcodeString = tdnBarcodeString;
+   }
 
 
 

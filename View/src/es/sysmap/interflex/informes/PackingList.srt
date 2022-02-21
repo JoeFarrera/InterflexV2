@@ -2,7 +2,7 @@
 <Report Type="TabularSheet" ScriptLanguage="1" Top="1.0" Left="1.0" Bottom="1.0" Right="1.0" HeaderFromEdge="0.5" FooterFromEdge="0.75" PageNumbering="0" HorizontalWrap="true" PaperSize="8.5x11.0" Orientation="1" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0"
  Prompting="true"><Version>7.0</Version>
 <ReportProperty Name="report.modified">
-<![CDATA[2021-08-30 12:17:15]]>
+<![CDATA[2021-09-21 06:24:20]]>
 </ReportProperty>
 <ReportProperty Name="TextMode">
 <![CDATA[false]]>
@@ -69,7 +69,7 @@
 </topn>
 </group>
 <group summarize="true">
-<dataRef class="inetsoft.report.internal.binding.CompositeField" attribute="" visible="true" dataType="string" order="0" ><dataRef class="inetsoft.report.internal.binding.BaseField" attribute="Nº de Bulto" visible="true" dataType="double" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.CompositeField" attribute="" visible="true" dataType="string" order="0" ><dataRef class="inetsoft.report.internal.binding.BaseField" attribute="IDBULTO" visible="true" dataType="string" order="0" ></dataRef>
 </dataRef>
 <groupSort sort="1" interval="1.0" option="1" others="1"><otherLabel><![CDATA[Others]]></otherLabel>
 </groupSort>
@@ -81,13 +81,13 @@
 <filter class="ColumnSelectionAttr" >
 <ColumnSelection>
 <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="IDDOC" visible="true" dataType="string" order="0" ></dataRef>
+<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="IDBULTO" visible="true" dataType="string" order="0" ></dataRef>
 <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="Nota" visible="true" dataType="string" order="0" ></dataRef>
 <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="NALBARAN" visible="true" dataType="string" order="0" ></dataRef>
 <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="NOMBRE" visible="true" dataType="string" order="0" ></dataRef>
 <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="CCLIENTE" visible="true" dataType="string" order="0" ></dataRef>
 <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="IDCABNUM" visible="true" dataType="string" order="0" ></dataRef>
 <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="Fecha" visible="true" dataType="string" order="0" ></dataRef>
-<dataRef class="inetsoft.report.internal.binding.BaseField" attribute="IDBULTO" visible="true" dataType="string" order="0" ></dataRef>
 <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="Medidas" visible="true" dataType="string" order="0" ></dataRef>
 <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="Volúmen " visible="true" dataType="string" order="0" ></dataRef>
 <dataRef class="inetsoft.report.internal.binding.BaseField" attribute="PESOCONT" visible="true" dataType="string" order="0" ></dataRef>
@@ -131,7 +131,7 @@
 </bindingAttr>
 <Section>
 <SectionHeader>
-<SectionBand Height="2.097222" Visible="true" ShrinkToFit="false" PageBefore="false" PageAfter="false" SuppressBlank="false" TopBorder="0" LeftBorder="0" Breakable="true" RepeatHeader="false" Underlay="false" AtBottom="false" KeepTogether="false" BottomBorder="0" RightBorder="0" OrphanControl="false" Elements="16">
+<SectionBand Height="2.375" Visible="true" ShrinkToFit="false" PageBefore="false" PageAfter="false" SuppressBlank="false" TopBorder="0" LeftBorder="0" Breakable="true" RepeatHeader="false" Underlay="false" AtBottom="false" KeepTogether="false" BottomBorder="0" RightBorder="0" OrphanControl="false" Elements="15">
 <ImageElement ID="Image2" Alignment="65" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-PLAIN-10" Foreground="-16777216" PathType="1" Embedded="true" Layout="0" Wrapping="3" Rotation="0" Size="2.1111112x0.8611111" Margin="0,0,0,0">
 <![CDATA[J:\users\projects\Interflex\View\src\resources\images\logo.gif]]>
 <property><name><![CDATA[adjust.height]]></name><value><![CDATA[false]]></value></property>
@@ -170,11 +170,6 @@ jB8@F]t[hL=KAqqg?XmhfR5h0XR/$g[]<]XGJ6"98E%!!$^"]fX@AO.aI)fg%X3._PpuiJddW#!@T@IC
 <![CDATA[XXXXX]]>
 </TextElement>
 <FieldProperty X="35" Y="80" Width="50" Height="14" VLine="0" VLineColor="-16777216" Binding="Fecha"/>
-<TextElement ID="Text3" Alignment="1" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-PLAIN-10" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
-<property><name><![CDATA[__column__]]></name><value><![CDATA[Nº Albarán]]></value></property>
-<![CDATA[Nº Albarán:]]>
-</TextElement>
-<FieldProperty X="0" Y="115" Width="50" Height="14" VLine="0" VLineColor="-16777216"/>
 <TextElement ID="Text12" Alignment="4" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-ITALIC-10" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
 <![CDATA[XXXX]]>
 </TextElement>
@@ -240,7 +235,7 @@ jB8@F]t[hL=KAqqg?XmhfR5h0XR/$g[]<]XGJ6"98E%!!$^"]fX@AO.aI)fg%X3._PpuiJddW#!@T@IC
 <SectionContent>
 <Section>
 <SectionHeader>
-<SectionBand Height="0.027777772" Visible="true" ShrinkToFit="false" PageBefore="false" PageAfter="false" SuppressBlank="true" TopBorder="0" LeftBorder="0" Breakable="true" RepeatHeader="false" Underlay="false" AtBottom="false" KeepTogether="false" BottomBorder="0" RightBorder="0" OrphanControl="false" Elements="0">
+<SectionBand Height="0.22222222" Visible="true" ShrinkToFit="false" PageBefore="false" PageAfter="false" SuppressBlank="false" TopBorder="0" LeftBorder="0" Breakable="true" RepeatHeader="false" Underlay="false" AtBottom="false" KeepTogether="false" BottomBorder="0" RightBorder="0" OrphanControl="false" Elements="0">
 <Shapes>
 </Shapes>
 </SectionBand>
@@ -248,27 +243,27 @@ jB8@F]t[hL=KAqqg?XmhfR5h0XR/$g[]<]XGJ6"98E%!!$^"]fX@AO.aI)fg%X3._PpuiJddW#!@T@IC
 <SectionContent>
 <Section>
 <SectionHeader>
-<SectionBand Height="0.37499997" Visible="true" ShrinkToFit="false" PageBefore="false" PageAfter="false" SuppressBlank="false" TopBorder="0" LeftBorder="0" Breakable="true" RepeatHeader="false" Underlay="false" AtBottom="false" KeepTogether="false" BottomBorder="0" RightBorder="0" OrphanControl="false" Elements="6">
+<SectionBand Height="0.45833334" Visible="true" ShrinkToFit="false" PageBefore="false" PageAfter="false" SuppressBlank="false" TopBorder="0" LeftBorder="0" Breakable="true" RepeatHeader="false" Underlay="false" AtBottom="false" KeepTogether="false" BottomBorder="0" RightBorder="0" OrphanControl="false" Elements="6">
 <TextElement ID="Text6" Alignment="1" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-BOLDUNDERLINE-9-4097-4097" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
 <property><name><![CDATA[__column__]]></name><value><![CDATA[Referencia]]></value></property>
 <![CDATA[Referencia ]]>
 </TextElement>
-<FieldProperty X="19" Y="15" Width="75" Height="16" VLine="0" VLineColor="-16777216"/>
+<FieldProperty X="19" Y="14" Width="75" Height="16" VLine="0" VLineColor="-16777216"/>
 <TextElement ID="Text7" Alignment="1" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-BOLDUNDERLINE-9-4097-4097" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
 <property><name><![CDATA[__column__]]></name><value><![CDATA[Descripción]]></value></property>
 <![CDATA[Descripción ]]>
 </TextElement>
-<FieldProperty X="98" Y="15" Width="117" Height="16" VLine="0" VLineColor="-16777216"/>
+<FieldProperty X="98" Y="14" Width="117" Height="16" VLine="0" VLineColor="-16777216"/>
 <TextElement ID="Text9" Alignment="1" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-BOLDUNDERLINE-9-4097-4097" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
 <property><name><![CDATA[__column__]]></name><value><![CDATA[Peso]]></value></property>
 <![CDATA[Peso ]]>
 </TextElement>
-<FieldProperty X="403" Y="15" Width="66" Height="16" VLine="0" VLineColor="-16777216"/>
+<FieldProperty X="402" Y="14" Width="66" Height="16" VLine="0" VLineColor="-16777216"/>
 <TextElement ID="Text8" Alignment="1" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-BOLDUNDERLINE-9-4097-4097" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
 <property><name><![CDATA[__column__]]></name><value><![CDATA[Cantidad]]></value></property>
 <![CDATA[Cantidad ]]>
 </TextElement>
-<FieldProperty X="349" Y="14" Width="51" Height="12" VLine="0" VLineColor="-16777216"/>
+<FieldProperty X="349" Y="14" Width="51" Height="16" VLine="0" VLineColor="-16777216"/>
 <TextElement ID="Text22" Alignment="1" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-BOLD-9" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
 <property><name><![CDATA[__suppressIfDuplicate__]]></name><value><![CDATA[true]]></value></property>
 <property><name><![CDATA[__suppressIfZero__]]></name><value><![CDATA[false]]></value></property>
@@ -285,45 +280,45 @@ jB8@F]t[hL=KAqqg?XmhfR5h0XR/$g[]<]XGJ6"98E%!!$^"]fX@AO.aI)fg%X3._PpuiJddW#!@T@IC
 </SectionBand>
 </SectionHeader>
 <SectionContent>
-<SectionBand Height="0.15277778" Visible="true" ShrinkToFit="false" PageBefore="false" PageAfter="false" SuppressBlank="true" TopBorder="0" LeftBorder="0" Breakable="true" RepeatHeader="false" Underlay="false" AtBottom="false" KeepTogether="false" BottomBorder="0" RightBorder="0" OrphanControl="false" Elements="5">
+<SectionBand Height="0.26388887" Visible="true" ShrinkToFit="false" PageBefore="false" PageAfter="false" SuppressBlank="false" TopBorder="0" LeftBorder="0" Breakable="true" RepeatHeader="false" Underlay="false" AtBottom="false" KeepTogether="false" BottomBorder="0" RightBorder="0" OrphanControl="false" Elements="5">
 <TextElement ID="Text15" Alignment="1" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-PLAIN-9" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
 <![CDATA[XXXXXXXX]]>
 </TextElement>
-<FieldProperty X="10" Y="0" Width="79" Height="11" VLine="0" VLineColor="-16777216" Binding="Referencia"/>
+<FieldProperty X="10" Y="4" Width="79" Height="11" VLine="0" VLineColor="-16777216" Binding="Referencia"/>
 <TextElement ID="Text17" Alignment="65" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-BOLD-9" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
 <property><name><![CDATA[adjust.height]]></name><value><![CDATA[true]]></value></property>
 <property><name><![CDATA[grow]]></name><value><![CDATA[false]]></value></property>
 <![CDATA[XXXXXXXX]]>
 </TextElement>
-<FieldProperty X="349" Y="0" Width="50" Height="11" VLine="0" VLineColor="-16777216" Binding="Cantidad"/>
+<FieldProperty X="349" Y="4" Width="50" Height="11" VLine="0" VLineColor="-16777216" Binding="Cantidad"/>
 <TextElement ID="Text18" Alignment="68" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-PLAIN-9" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
 <property><name><![CDATA[adjust.height]]></name><value><![CDATA[true]]></value></property>
 <property><name><![CDATA[grow]]></name><value><![CDATA[false]]></value></property>
 <![CDATA[XXXX]]>
 </TextElement>
-<FieldProperty X="403" Y="0" Width="44" Height="11" VLine="0" VLineColor="-16777216" Binding="Peso"/>
+<FieldProperty X="403" Y="4" Width="44" Height="11" VLine="0" VLineColor="-16777216" Binding="Peso"/>
 <TextElement ID="Text16" Alignment="1" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-PLAIN-9" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
 <![CDATA[XXXXXXXX]]>
 </TextElement>
-<FieldProperty X="99" Y="0" Width="245" Height="11" VLine="0" VLineColor="-16777216" Binding="Descripción"/>
+<FieldProperty X="98" Y="2" Width="245" Height="11" VLine="0" VLineColor="-16777216" Binding="Descripción"/>
 <TextElement ID="Text31" Alignment="1" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-PLAIN-9" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
 <![CDATA[Kg.]]>
 </TextElement>
-<FieldProperty X="452" Y="0" Width="15" Height="11" VLine="0" VLineColor="-16777216"/>
+<FieldProperty X="452" Y="4" Width="15" Height="11" VLine="0" VLineColor="-16777216"/>
 <Shapes>
 </Shapes>
 </SectionBand>
 </SectionContent>
 <SectionFooter>
-<SectionBand Height="0.30555555" Visible="true" ShrinkToFit="false" PageBefore="false" PageAfter="false" SuppressBlank="false" TopBorder="0" LeftBorder="0" Breakable="true" RepeatHeader="false" Underlay="false" AtBottom="false" KeepTogether="false" BottomBorder="0" RightBorder="0" OrphanControl="false" Elements="4">
+<SectionBand Height="0.2777778" Visible="true" ShrinkToFit="false" PageBefore="false" PageAfter="false" SuppressBlank="false" TopBorder="0" LeftBorder="0" Breakable="true" RepeatHeader="false" Underlay="false" AtBottom="false" KeepTogether="false" BottomBorder="0" RightBorder="0" OrphanControl="false" Elements="4">
 <TextElement ID="Text23" Alignment="1" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-BOLD-9" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
-<![CDATA[XXXXXXXX]]>
+<![CDATA[]]>
 </TextElement>
 <FieldProperty X="350" Y="8" Width="50" Height="11" VLine="0" VLineColor="-16777216" Binding="Cantidad"/>
 <TextElement ID="Text24" Alignment="68" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-BOLD-9" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
 <property><name><![CDATA[adjust.height]]></name><value><![CDATA[true]]></value></property>
 <property><name><![CDATA[grow]]></name><value><![CDATA[false]]></value></property>
-<![CDATA[XXXX]]>
+<![CDATA[]]>
 </TextElement>
 <FieldProperty X="404" Y="8" Width="44" Height="11" VLine="0" VLineColor="-16777216" Binding="Peso"/>
 <TextElement ID="Text30" Alignment="1" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-BOLDUNDERLINE-9-4097-4097" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
@@ -341,25 +336,25 @@ jB8@F]t[hL=KAqqg?XmhfR5h0XR/$g[]<]XGJ6"98E%!!$^"]fX@AO.aI)fg%X3._PpuiJddW#!@T@IC
 </Section>
 </SectionContent>
 <SectionFooter>
-<SectionBand Height="0.34722227" Visible="true" ShrinkToFit="false" PageBefore="false" PageAfter="false" SuppressBlank="false" TopBorder="0" LeftBorder="0" Breakable="true" RepeatHeader="false" Underlay="false" AtBottom="false" KeepTogether="false" BottomBorder="0" RightBorder="0" OrphanControl="false" Elements="4">
+<SectionBand Height="0.27777776" Visible="true" ShrinkToFit="false" PageBefore="false" PageAfter="false" SuppressBlank="false" TopBorder="0" LeftBorder="0" Breakable="true" RepeatHeader="false" Underlay="false" AtBottom="false" KeepTogether="false" BottomBorder="0" RightBorder="0" OrphanControl="false" Elements="4">
 <TextElement ID="Text20" Alignment="1" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-BOLD-9" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
-<![CDATA[XXXXXXXX]]>
+<![CDATA[]]>
 </TextElement>
-<FieldProperty X="349" Y="10" Width="50" Height="11" VLine="0" VLineColor="-16777216" Binding="Cantidad"/>
+<FieldProperty X="349" Y="6" Width="50" Height="11" VLine="0" VLineColor="-16777216" Binding="Cantidad"/>
 <TextElement ID="Text21" Alignment="68" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-BOLD-9" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
 <property><name><![CDATA[adjust.height]]></name><value><![CDATA[true]]></value></property>
 <property><name><![CDATA[grow]]></name><value><![CDATA[false]]></value></property>
-<![CDATA[XXXX]]>
+<![CDATA[]]>
 </TextElement>
-<FieldProperty X="403" Y="10" Width="44" Height="11" VLine="0" VLineColor="-16777216" Binding="Peso"/>
+<FieldProperty X="404" Y="6" Width="44" Height="11" VLine="0" VLineColor="-16777216" Binding="Peso"/>
 <TextElement ID="Text29" Alignment="1" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-BOLDUNDERLINE-9-4097-4097" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
 <![CDATA[Total general: ]]>
 </TextElement>
-<FieldProperty X="280" Y="10" Width="66" Height="11" VLine="0" VLineColor="-16777216"/>
+<FieldProperty X="278" Y="6" Width="66" Height="11" VLine="0" VLineColor="-16777216"/>
 <TextElement ID="Text33" Alignment="1" Indent="0.0" Hindent="0" Spacing="0" Visible="true" HideOnPrint="false" KeepWithNext="false" Font="Serif-BOLD-9" Foreground="-16777216" FillStyle="0" TabStops="0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0" Justify="false" Orphan="false" TextAdvance="3">
 <![CDATA[Kg.]]>
 </TextElement>
-<FieldProperty X="451" Y="10" Width="16" Height="11" VLine="0" VLineColor="-16777216"/>
+<FieldProperty X="449" Y="6" Width="16" Height="11" VLine="0" VLineColor="-16777216"/>
 <Shapes>
 </Shapes>
 </SectionBand>
@@ -367,7 +362,7 @@ jB8@F]t[hL=KAqqg?XmhfR5h0XR/$g[]<]XGJ6"98E%!!$^"]fX@AO.aI)fg%X3._PpuiJddW#!@T@IC
 </Section>
 </SectionContent>
 <SectionFooter>
-<SectionBand Height="0.111111134" Visible="true" ShrinkToFit="false" PageBefore="false" PageAfter="false" SuppressBlank="false" TopBorder="0" LeftBorder="0" Breakable="true" RepeatHeader="false" Underlay="false" AtBottom="false" KeepTogether="false" BottomBorder="0" RightBorder="0" OrphanControl="false" Elements="0">
+<SectionBand Height="0.22222216" Visible="true" ShrinkToFit="false" PageBefore="false" PageAfter="false" SuppressBlank="false" TopBorder="0" LeftBorder="0" Breakable="true" RepeatHeader="false" Underlay="false" AtBottom="false" KeepTogether="false" BottomBorder="0" RightBorder="0" OrphanControl="false" Elements="0">
 <Shapes>
 </Shapes>
 </SectionBand>
@@ -375,9 +370,9 @@ jB8@F]t[hL=KAqqg?XmhfR5h0XR/$g[]<]XGJ6"98E%!!$^"]fX@AO.aI)fg%X3._PpuiJddW#!@T@IC
 </Section>
 <Table Rows="2" Cols="20" HeaderRow="1" HeaderCol="0" TrailerRow="0" TrailerCol="0">
 <TR>
-<TD Type="string"><![CDATA[IDDOC]]></TD><TD Type="string"><![CDATA[Nota]]></TD><TD Type="string"><![CDATA[NALBARAN]]></TD><TD Type="string"><![CDATA[NOMBRE]]></TD><TD Type="string"><![CDATA[CCLIENTE]]></TD><TD Type="string"><![CDATA[IDCABNUM]]></TD><TD Type="string"><![CDATA[Fecha]]></TD><TD Type="string"><![CDATA[IDBULTO]]></TD><TD Type="string"><![CDATA[Medidas]]></TD><TD Type="string"><![CDATA[Volúmen ]]></TD><TD Type="string"><![CDATA[PESOCONT]]></TD><TD Type="string"><![CDATA[Peso Total]]></TD><TD Type="string"><![CDATA[Referencia]]></TD><TD Type="string"><![CDATA[Descripción]]></TD><TD Type="string"><![CDATA[Cantidad]]></TD><TD Type="string"><![CDATA[Peso]]></TD><TD Type="string"><![CDATA[NOM]]></TD><TD Type="string"><![CDATA[A1]]></TD><TD Type="string"><![CDATA[A2]]></TD><TD Type="string"><![CDATA[A3]]></TD></TR>
+<TD Type="string"><![CDATA[IDDOC]]></TD><TD Type="string"><![CDATA[IDBULTO]]></TD><TD Type="string"><![CDATA[Nota]]></TD><TD Type="string"><![CDATA[NALBARAN]]></TD><TD Type="string"><![CDATA[NOMBRE]]></TD><TD Type="string"><![CDATA[CCLIENTE]]></TD><TD Type="string"><![CDATA[IDCABNUM]]></TD><TD Type="string"><![CDATA[Fecha]]></TD><TD Type="string"><![CDATA[Medidas]]></TD><TD Type="string"><![CDATA[Volúmen ]]></TD><TD Type="string"><![CDATA[PESOCONT]]></TD><TD Type="string"><![CDATA[Peso Total]]></TD><TD Type="string"><![CDATA[Referencia]]></TD><TD Type="string"><![CDATA[Descripción]]></TD><TD Type="string"><![CDATA[Cantidad]]></TD><TD Type="string"><![CDATA[Peso]]></TD><TD Type="string"><![CDATA[NOM]]></TD><TD Type="string"><![CDATA[A1]]></TD><TD Type="string"><![CDATA[A2]]></TD><TD Type="string"><![CDATA[A3]]></TD></TR>
 <TR>
-<TD Type="string"><![CDATA[XXXXX]]></TD><TD Type="string"><![CDATA[XXXX]]></TD><TD Type="string"><![CDATA[XXXXXXXX]]></TD><TD Type="string"><![CDATA[XXXXXX]]></TD><TD Type="string"><![CDATA[XXXXXXXX]]></TD><TD Type="string"><![CDATA[XXXXXXXX]]></TD><TD Type="string"><![CDATA[XXXXX]]></TD><TD Type="string"><![CDATA[XXXXXXX]]></TD><TD Type="string"><![CDATA[XXXXXXX]]></TD><TD Type="string"><![CDATA[XXXXXXXX]]></TD><TD Type="string"><![CDATA[XXXXXXXX]]></TD><TD Type="string"><![CDATA[XXXXXXXX]]></TD><TD Type="string"><![CDATA[XXXXXXXX]]></TD><TD Type="string"><![CDATA[XXXXXXXX]]></TD><TD Type="string"><![CDATA[XXXXXXXX]]></TD><TD Type="string"><![CDATA[XXXX]]></TD><TD Type="string"><![CDATA[XXX]]></TD><TD Type="string"><![CDATA[XX]]></TD><TD Type="string"><![CDATA[XX]]></TD><TD Type="string"><![CDATA[XX]]></TD></TR>
+<TD Type="string"><![CDATA[XXXXX]]></TD><TD Type="string"><![CDATA[XXXXXXX]]></TD><TD Type="string"><![CDATA[XXXX]]></TD><TD Type="string"><![CDATA[XXXXXXXX]]></TD><TD Type="string"><![CDATA[XXXXXX]]></TD><TD Type="string"><![CDATA[XXXXXXXX]]></TD><TD Type="string"><![CDATA[XXXXXXXX]]></TD><TD Type="string"><![CDATA[XXXXX]]></TD><TD Type="string"><![CDATA[XXXXXXX]]></TD><TD Type="string"><![CDATA[XXXXXXXX]]></TD><TD Type="string"><![CDATA[XXXXXXXX]]></TD><TD Type="string"><![CDATA[XXXXXXXX]]></TD><TD Type="string"><![CDATA[XXXXXXXX]]></TD><TD Type="string"><![CDATA[XXXXXXXX]]></TD><TD Type="string"><![CDATA[XXXXXXXX]]></TD><TD Type="string"><![CDATA[XXXX]]></TD><TD Type="string"><![CDATA[XXX]]></TD><TD Type="string"><![CDATA[XX]]></TD><TD Type="string"><![CDATA[XX]]></TD><TD Type="string"><![CDATA[XX]]></TD></TR>
 </Table>
 </SectionElement>
 </GD>

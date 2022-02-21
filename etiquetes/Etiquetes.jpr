@@ -25,6 +25,10 @@
          <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
       </Item>
       <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/etiquetes/EtiquetaPicking2022.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
          <URL path="src/es/sysmap/interflex/etiquetes/SimpleWrite.java"/>
          <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
       </Item>

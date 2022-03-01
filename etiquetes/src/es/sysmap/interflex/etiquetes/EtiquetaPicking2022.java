@@ -205,7 +205,7 @@ public class EtiquetaPicking2022
    {
      this.tdnBarcodeString = tdnBarcodeString;
    }
-  public void PrintEtiqueta(String port)
+  public void PrintEtiquetaCabeos5(String port)
   {
     // For CAB EOS5 Printers see: cab_programming_manual_x4.pdf
     TecPrinter tecPrinter = new TecPrinter(port);
@@ -223,7 +223,9 @@ public class EtiquetaPicking2022
       tecPrinter.writeData("O R");
       // If TDN, print "TDN" on upper corner, in reverse
       // TODO
-      tecPrinter.writeData("T 80,05,0,596,pt20,n;TDN");
+      if (etiquetaTdn)
+        tecPrinter.writeData("T 80,05,0,596,pt20,n;TDN");
+        
       tecPrinter.writeData("T 40, 31, 0, 3, pt14;" + getIdConsignatari());
       tecPrinter.writeData("T 5,40,0,3,pt15,b;" + getNomConsignatari());
       tecPrinter.writeData("T 5,45,0,3,pt15,b" + getAdreçaConsignatari_1());
@@ -234,8 +236,8 @@ public class EtiquetaPicking2022
       tecPrinter.writeData("T 30,68,0,3,pt18;" + getAlbara());     
       tecPrinter.writeData("T 67,68,0,3,pt12;" + getPorts());
       tecPrinter.writeData("T 60,75,0,3,pt12,b;" + getIdBulto());
-      // tecPrinter.writeData("T 5,80,0,3,pt13;" + "Redur Nac.Z.Franca 209119266
-      // tecPrinter.writeData("T 5,83,0,3,pt7;Tracking: 5005100302255
+      tecPrinter.writeData("T 5,80,0,3,pt13;" + getTransportista());
+      // tecPrinter.writeData("T 5,83,0,3,pt7;Tracking: 5005100302255 // TODO - No tracking??
       tecPrinter.writeData("T 72,81,0,3,pt12,b;" + getPes());
       if (etiquetaTdn)
       {
@@ -245,4 +247,5 @@ public class EtiquetaPicking2022
       }
       tecPrinter.writeData("A 1");
     }
+}
 }

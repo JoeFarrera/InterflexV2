@@ -485,10 +485,12 @@ public class PanelSgabultoView4 extends SgaJUPanel
     if (bulto != null)
     {
       String pickingPort = SgaUtilPuesto.getInstance().getProperty("PickingPort");
+      String printerModel = SgaUtilPuesto.getInstance().getProperty("PrinterModel");
+      
       if (pickingPort != null)
       {
         EtiquetaPicking etiqueta = bulto.getDadesEtiqueta();
-        etiqueta.printEtiqueta(pickingPort);
+        etiqueta.printEtiqueta(pickingPort, printerModel);
       }
     }
   }

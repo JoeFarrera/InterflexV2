@@ -258,16 +258,66 @@ public class EtiquetaPicking
   }
   
   
+   public void PrintEtiquetaCabeos5(String port)
+  {
+    // For CAB EOS5 Printers see: cab_programming_manual_x4.pdf
+    TecPrinter tecPrinter = new TecPrinter(port);
+    if (tecPrinter != null && tecPrinter.isConnected())
+    {
+      // Set milimetres
+      tecPrinter.writeData("m m");
+      // Jobstart
+      tecPrinter.writeData("J");
+      // Heat (speed) setting (100mm/sec)
+      tecPrinter.writeData("H 100");
+      // Size of the label
+      tecPrinter.writeData("S l1;0,0,116,120,100");
+      // Orientation
+      tecPrinter.writeData("O R");
+      // If TDN, print "TDN" on upper corner, in reverse
+      // TODO
+      if (etiquetaTdn)
+        tecPrinter.writeData("T 80,05,0,596,pt20,n;TDN");
+        
+      tecPrinter.writeData("T 40, 31, 0, 3, pt14;" + getIdConsignatari());
+      tecPrinter.writeData("T 5,38,0,3,pt13,b;" + getNomConsignatari());
+      tecPrinter.writeData("T 5,43,0,3,pt13,b;" + getAdreçaConsignatari_1());
+      tecPrinter.writeData("T 5,48,0,3,pt13,b;" + getAdreçaConsignatari_2());
+      tecPrinter.writeData("T 5,55,0,3,pt15,b;" + getAdreçaConsignatari_3());
+
+      tecPrinter.writeData("T 5,68,0,3,pt12;" + getData());
+      tecPrinter.writeData("T 30,68,0,3,pt18;" + getAlbara());     
+      tecPrinter.writeData("T 67,68,0,3,pt12;" + getPorts());
+      tecPrinter.writeData("T 60,75,0,3,pt12,b;" + getIdBulto());
+      tecPrinter.writeData("T 5,81,0,3,pt13;" + getTransportista());
+      // tecPrinter.writeData("T 5,83,0,3,pt7;Tracking: 5005100302255 // TODO - No tracking??
+      tecPrinter.writeData("T 78,81,0,3,pt12,b;" + getPes() + "Kg.");
+      if (etiquetaTdn)
+      {
+        tecPrinter.writeData("T 47,55,0,3,pt15,b;" + tdnZonaReparto); // TODO ?? TDN
+        tecPrinter.writeData("T 75,55,0,3,pt20,b;" + tdnCodDelegacion); // TODO ?? TDN
+        tecPrinter.writeData("B 7,86,0,2OF5INTERLEAVED,25,0.35;" + tdnBarcodeString);
+      }
+      tecPrinter.writeData("A 1");
+    }
+  }
+  
   /**
    * Michael 08.02.2006 Comments added to code
    * @see <p>".pdf manual of printer: B-472-QQ/QP on file as: B472_lfm_12th.pdf"</p>
    * @see <p>"6.12 BAR CODE FORMAT COMMAND, and 6.15 BAR CODE DATA COMMAND"</p>
    * @param port
    */
-  public void printEtiqueta(String port)
+  public void printEtiqueta(String port, String printerModel)
   {
  
-  String feed = "0210";
+  if (printerModel != null && printerModel.equals("CAB"))
+    {
+      PrintEtiquetaCabeos5(port);
+      return;
+    }
+ 
+     String feed = "0210";
  
  
     
@@ -532,7 +582,7 @@ public class EtiquetaPicking
     
     etiqueta.setTelefono("+34 973622247");
     
-    etiqueta.printEtiqueta("LPT1");
+    etiqueta.printEtiqueta("LPT1", "CAB");
   }
 
   public String getEti_cli_redur()

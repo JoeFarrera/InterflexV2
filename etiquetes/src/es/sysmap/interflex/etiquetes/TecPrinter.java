@@ -107,6 +107,21 @@ public class TecPrinter
   
   public boolean isConnected()
   {
+  /*  Testing 01.03.2021
+  if (true)
+  {
+  try{
+    outputStream = new FileOutputStream("cabstream.txt");
+    return true;
+  }
+  catch (Exception ex)
+  {
+    ;
+  }
+  }
+  */
+    
+  
     if (portType == CommPortIdentifier.PORT_SERIAL)
       return serialPort != null;
     else

@@ -466,10 +466,11 @@ public class PanelSgavexpedbultoView2 extends JPanel implements JUPanel
         if (currbulto != null)
           {
           String pickingPort = SgaUtilPuesto.getInstance().getProperty("PickingPort");
+          String printerModel = SgaUtilPuesto.getInstance().getProperty("PrinterModel");
           if (pickingPort != null)
           {
             EtiquetaPicking etiqueta = currbulto.getDadesEtiqueta();
-            etiqueta.printEtiqueta(pickingPort);
+            etiqueta.printEtiqueta(pickingPort, printerModel);
           }
        }
     }

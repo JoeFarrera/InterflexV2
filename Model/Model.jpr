@@ -59,21 +59,9 @@
          <type>Package</type>
       </Item>
       <Item class="oracle.jbo.dt.jdevx.ui.JdxNode">
-         <URL path="src/es/sysmap/interflex/model/bdc/bdc.jbo"/>
+         <URL path="src/es/sysmap/sysmap.jbo"/>
          <owner path="src/Model.jpx"/>
-         <package>es.sysmap.interflex.model.bdc</package>
-         <type>Package</type>
-      </Item>
-      <Item class="oracle.jbo.dt.jdevx.ui.JdxNode">
-         <URL path="src/es/sysmap/interflex/interflex.jbo"/>
-         <owner path="src/Model.jpx"/>
-         <package>es.sysmap.interflex</package>
-         <type>Package</type>
-      </Item>
-      <Item class="oracle.jbo.dt.jdevx.ui.JdxNode">
-         <URL path="src/es/sysmap/interflex/model/dmc/dmc.jbo"/>
-         <owner path="src/Model.jpx"/>
-         <package>es.sysmap.interflex.model.dmc</package>
+         <package>es.sysmap</package>
          <type>Package</type>
       </Item>
       <Item class="oracle.jbo.dt.jdevx.ui.JdxNode">
@@ -83,15 +71,27 @@
          <type>Package</type>
       </Item>
       <Item class="oracle.jbo.dt.jdevx.ui.JdxNode">
-         <URL path="src/es/sysmap/sysmap.jbo"/>
+         <URL path="src/es/sysmap/interflex/model/bdc/bdc.jbo"/>
          <owner path="src/Model.jpx"/>
-         <package>es.sysmap</package>
+         <package>es.sysmap.interflex.model.bdc</package>
          <type>Package</type>
       </Item>
       <Item class="oracle.jbo.dt.jdevx.ui.JdxNode">
          <URL path="src/es/sysmap/interflex/model/model.jbo"/>
          <owner path="src/Model.jpx"/>
          <package>es.sysmap.interflex.model</package>
+         <type>Package</type>
+      </Item>
+      <Item class="oracle.jbo.dt.jdevx.ui.JdxNode">
+         <URL path="src/es/sysmap/interflex/model/dmc/dmc.jbo"/>
+         <owner path="src/Model.jpx"/>
+         <package>es.sysmap.interflex.model.dmc</package>
+         <type>Package</type>
+      </Item>
+      <Item class="oracle.jbo.dt.jdevx.ui.JdxNode">
+         <URL path="src/es/sysmap/interflex/interflex.jbo"/>
+         <owner path="src/Model.jpx"/>
+         <package>es.sysmap.interflex</package>
          <type>Package</type>
       </Item>
       <Item class="oracle.ide.model.Reference">
@@ -168,21 +168,11 @@
       </Item>
       <Item>
          <Key class="oracle.ide.model.Reference">
-            <URL path="src/es/sysmap/common/bc4j.xcfg"/>
+            <URL path="src/es/common/bc4j.xcfg"/>
             <nodeClass>oracle.jbo.dt.jdevx.ui.JdxXcfgNode</nodeClass>
          </Key>
          <Value class="oracle.ide.model.Reference">
-            <URL path="src/es/sysmap/sysmap.xml"/>
-            <nodeClass>oracle.jbo.dt.jdevx.JdvXmlNode</nodeClass>
-         </Value>
-      </Item>
-      <Item>
-         <Key class="oracle.ide.model.Reference">
-            <URL path="src/es/sysmap/interflex/model/common/bc4j.xcfg"/>
-            <nodeClass>oracle.jbo.dt.jdevx.ui.JdxXcfgNode</nodeClass>
-         </Key>
-         <Value class="oracle.ide.model.Reference">
-            <URL path="src/es/sysmap/interflex/model/model.xml"/>
+            <URL path="src/es/es.xml"/>
             <nodeClass>oracle.jbo.dt.jdevx.JdvXmlNode</nodeClass>
          </Value>
       </Item>
@@ -198,26 +188,6 @@
       </Item>
       <Item>
          <Key class="oracle.ide.model.Reference">
-            <URL path="src/es/sysmap/interflex/model/bdc/common/bc4j.xcfg"/>
-            <nodeClass>oracle.jbo.dt.jdevx.ui.JdxXcfgNode</nodeClass>
-         </Key>
-         <Value class="oracle.ide.model.Reference">
-            <URL path="src/es/sysmap/interflex/model/bdc/bdc.xml"/>
-            <nodeClass>oracle.jbo.dt.jdevx.JdvXmlNode</nodeClass>
-         </Value>
-      </Item>
-      <Item>
-         <Key class="oracle.ide.model.Reference">
-            <URL path="src/es/sysmap/interflex/common/bc4j.xcfg"/>
-            <nodeClass>oracle.jbo.dt.jdevx.ui.JdxXcfgNode</nodeClass>
-         </Key>
-         <Value class="oracle.ide.model.Reference">
-            <URL path="src/es/sysmap/interflex/interflex.xml"/>
-            <nodeClass>oracle.jbo.dt.jdevx.JdvXmlNode</nodeClass>
-         </Value>
-      </Item>
-      <Item>
-         <Key class="oracle.ide.model.Reference">
             <URL path="src/es/sysmap/interflex/model/dmc/common/bc4j.xcfg"/>
             <nodeClass>oracle.jbo.dt.jdevx.ui.JdxXcfgNode</nodeClass>
          </Key>
@@ -228,11 +198,41 @@
       </Item>
       <Item>
          <Key class="oracle.ide.model.Reference">
-            <URL path="src/es/common/bc4j.xcfg"/>
+            <URL path="src/es/sysmap/common/bc4j.xcfg"/>
             <nodeClass>oracle.jbo.dt.jdevx.ui.JdxXcfgNode</nodeClass>
          </Key>
          <Value class="oracle.ide.model.Reference">
-            <URL path="src/es/es.xml"/>
+            <URL path="src/es/sysmap/sysmap.xml"/>
+            <nodeClass>oracle.jbo.dt.jdevx.JdvXmlNode</nodeClass>
+         </Value>
+      </Item>
+      <Item>
+         <Key class="oracle.ide.model.Reference">
+            <URL path="src/es/sysmap/interflex/model/bdc/common/bc4j.xcfg"/>
+            <nodeClass>oracle.jbo.dt.jdevx.ui.JdxXcfgNode</nodeClass>
+         </Key>
+         <Value class="oracle.ide.model.Reference">
+            <URL path="src/es/sysmap/interflex/model/bdc/bdc.xml"/>
+            <nodeClass>oracle.jbo.dt.jdevx.JdvXmlNode</nodeClass>
+         </Value>
+      </Item>
+      <Item>
+         <Key class="oracle.ide.model.Reference">
+            <URL path="src/es/sysmap/interflex/model/common/bc4j.xcfg"/>
+            <nodeClass>oracle.jbo.dt.jdevx.ui.JdxXcfgNode</nodeClass>
+         </Key>
+         <Value class="oracle.ide.model.Reference">
+            <URL path="src/es/sysmap/interflex/model/model.xml"/>
+            <nodeClass>oracle.jbo.dt.jdevx.JdvXmlNode</nodeClass>
+         </Value>
+      </Item>
+      <Item>
+         <Key class="oracle.ide.model.Reference">
+            <URL path="src/es/sysmap/interflex/common/bc4j.xcfg"/>
+            <nodeClass>oracle.jbo.dt.jdevx.ui.JdxXcfgNode</nodeClass>
+         </Key>
+         <Value class="oracle.ide.model.Reference">
+            <URL path="src/es/sysmap/interflex/interflex.xml"/>
             <nodeClass>oracle.jbo.dt.jdevx.JdvXmlNode</nodeClass>
          </Value>
       </Item>
@@ -6218,21 +6218,21 @@
       </Item>
       <Item>
          <Key class="oracle.ide.model.Reference">
-            <URL path="src/es/sysmap/interflex/model/dmc/SgaventradaspendienteViewRowImpl.java"/>
-            <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
-         </Key>
-         <Value class="oracle.ide.model.Reference">
-            <URL path="src/es/sysmap/interflex/model/dmc/dmc.xml"/>
-            <nodeClass>oracle.jbo.dt.jdevx.JdvXmlNode</nodeClass>
-         </Value>
-      </Item>
-      <Item>
-         <Key class="oracle.ide.model.Reference">
             <URL path="src/es/sysmap/interflex/model/tst/SgaventradaspendienteViewRowImpl.java"/>
             <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
          </Key>
          <Value class="oracle.ide.model.Reference">
             <URL path="src/es/sysmap/interflex/model/tst/tst.xml"/>
+            <nodeClass>oracle.jbo.dt.jdevx.JdvXmlNode</nodeClass>
+         </Value>
+      </Item>
+      <Item>
+         <Key class="oracle.ide.model.Reference">
+            <URL path="src/es/sysmap/interflex/model/dmc/SgaventradaspendienteViewRowImpl.java"/>
+            <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+         </Key>
+         <Value class="oracle.ide.model.Reference">
+            <URL path="src/es/sysmap/interflex/model/dmc/dmc.xml"/>
             <nodeClass>oracle.jbo.dt.jdevx.JdvXmlNode</nodeClass>
          </Value>
       </Item>
@@ -9697,8 +9697,8 @@
          <Key>technologyScope</Key>
          <Value class="oracle.ide.model.TechnologyScope">
             <technologyKeys>
-               <Item>General</Item>
                <Item>ADFbc</Item>
+               <Item>General</Item>
                <Item>Java</Item>
             </technologyKeys>
          </Value>

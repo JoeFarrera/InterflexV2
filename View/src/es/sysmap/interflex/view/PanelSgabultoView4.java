@@ -492,6 +492,7 @@ public class PanelSgabultoView4 extends SgaJUPanel
         EtiquetaPicking etiqueta = bulto.getDadesEtiqueta();
         etiqueta.printEtiqueta(pickingPort, printerModel);
       }
+      else throw new Exception("El puesto no tiene el PickingPort (Puerto de la impresora) definido");
     }
   }
   catch (Exception ex)

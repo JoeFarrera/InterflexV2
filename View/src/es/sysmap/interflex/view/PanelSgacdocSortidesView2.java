@@ -835,6 +835,7 @@ public class PanelSgacdocSortidesView2 extends SgaJUPanel
           {
             //Pot ser que en algun cas no trobi el registre per que ja s'ha enviat al host
             JUMetaObjectManager.reportException(null, ex);
+            
           }
           ///-------------FI Esta en test 
           
@@ -1093,17 +1094,10 @@ public class PanelSgacdocSortidesView2 extends SgaJUPanel
   }
   
 
-  public void quizasImprimirEtiquetes(String iddoc)
+  public void quizasImprimirEtiquetes(String iddoc) throws Exception
   {
-    try
-    {
       AppModule appModule = (AppModule)panelBinding.getApplication().getApplicationModule();
       Etiqueta.imprimirEtiqueta(appModule, iddoc, null);
-    }
-    catch(Exception ex)
-    {
-      JUMetaObjectManager.reportException(null, ex);
-    }
   }
 
   private void quizasImprimirPackingList(String iddoc, String nalbaran)

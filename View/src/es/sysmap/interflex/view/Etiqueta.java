@@ -16,6 +16,7 @@ import java.net.URL;
 import javax.swing.JOptionPane;
 import oracle.jbo.RowIterator;
 import oracle.jbo.uicli.mom.JUMetaObjectManager;
+import org.apache.log4j.Logger;
 import sgalib.SgaRecursos;
 import sgalib.SgaUtilPuesto;
 
@@ -31,30 +32,31 @@ public class Etiqueta
    * @param iddoc
    * @param appModule
    */
-  public static void imprimirEtiqueta(AppModule appModule, String iddoc, String idlin)
+  public static void imprimirEtiqueta(AppModule appModule, String iddoc, String idlin) throws Exception
   {
-    try
-    {
+     
       RowIterator rowset = appModule.llistaBultosPendentsImprimir(iddoc, idlin);
       rowset.reset();
       while (rowset.hasNext())
       {
         SgabultoViewRow bulto = (SgabultoViewRow)rowset.next();
         String pickingPort = SgaUtilPuesto.getInstance().getProperty("PickingPort");
+        String printerModel = SgaUtilPuesto.getInstance().getProperty("PrinterModel");
         if (pickingPort != null)
         {
           EtiquetaPicking etiqueta = bulto.getDadesEtiqueta();
           if (etiqueta != null)
-            etiqueta.printEtiqueta(pickingPort);
+            etiqueta.printEtiqueta(pickingPort, printerModel);
         }
+        else
+          // Michael: See what happens if Exception thrown 20.10.2022
+          throw new Exception("No hay puerto de impresión definido para el puesto");
+          
+          
         // Actualitzem l'estat d'impressiï¿½ del bulto
         bulto.setImprimir("I");
       }
       appModule.getTransaction().commit();
-    }
-    catch (Exception ex)
-    {
-      JUMetaObjectManager.reportException(null, ex);
-    }
+
   }
 }

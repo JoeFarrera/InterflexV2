@@ -149,7 +149,7 @@ class ConfigDialog extends JDialog {
      String dsnew = mDatasource.getText();
      String dsori = SgaUtilPuesto.getInstance().getProperty("uql.home");
      
-     if (dsnew != null && dsori != null && !dsnew.equals(dsori))
+     if (dsnew != null && (dsori == null || dsori != null && !dsnew.equals(dsori)) )
      {
       SgaUtilPuesto.getInstance().storeNewProperty("uql.home", mDatasource.getText());
       JOptionPane.showMessageDialog(null, "<html><p>La nueva configuración no tendra efecto hasta reiniciar la aplicación.", "Configuración",

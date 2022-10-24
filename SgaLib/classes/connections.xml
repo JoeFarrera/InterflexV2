@@ -2,10 +2,10 @@
 <!DOCTYPE connections>
 <connections>
    <connection>
-      <URL>jdbc:informix-sqli://129.200.9.1:1526/sga:INFORMIXSERVER=se_interflex;</URL>
       <ConnectionName>Interflex_informix</ConnectionName>
-      <user>biosca</user>
+      <URL>jdbc:informix-sqli://129.200.9.1:1526/sga:INFORMIXSERVER=se_interflex;</URL>
       <ConnectionType>OTHER_JDBC</ConnectionType>
+      <user>biosca</user>
       <password>5465</password>
       <DeployPassword>true</DeployPassword>
       <JdbcDriver>com.informix.jdbc.IfxDriver</JdbcDriver>
@@ -13,14 +13,33 @@
    <connection>
       <JDBC_PORT>1521</JDBC_PORT>
       <ConnectionType>JDBC</ConnectionType>
-      <HOSTNAME>servidormap</HOSTNAME>
+      <HOSTNAME>servidorsganew</HOSTNAME>
       <DeployPassword>true</DeployPassword>
       <user>ifdbatest</user>
       <ConnectionName>interflex_test</ConnectionName>
       <SID>prod</SID>
-      <JdbcDriver>oracle.jdbc.driver.OracleDriver</JdbcDriver>
       <password>ifdbatest</password>
+      <JdbcDriver>oracle.jdbc.driver.OracleDriver</JdbcDriver>
       <ORACLE_JDBC_TYPE>thin</ORACLE_JDBC_TYPE>
+   </connection>
+   <connection>
+      <JDBC_PORT>1521</JDBC_PORT>
+      <ConnectionType>JDBC</ConnectionType>
+      <HOSTNAME>servidorsganew</HOSTNAME>
+      <DeployPassword>true</DeployPassword>
+      <user>ifdba</user>
+      <ConnectionName>servidorsga</ConnectionName>
+      <SID>PROD</SID>
+      <password>ifdba</password>
+      <JdbcDriver>oracle.jdbc.driver.OracleDriver</JdbcDriver>
+      <ORACLE_JDBC_TYPE>thin</ORACLE_JDBC_TYPE>
+   </connection>
+   <connection>
+      <URL>"jdbc:sqlserver://srverps:1433;user=sa;password=interpc;";</URL>
+      <ConnectionName>SQLServerConnection</ConnectionName>
+      <user>sa</user>
+      <ConnectionType>OTHER_JDBC</ConnectionType>
+      <JdbcDriver>com.microsoft.sqlserver.jdbc.SQLServerDriver</JdbcDriver>
    </connection>
    <connection>
       <JDBC_PORT>1521</JDBC_PORT>
@@ -30,15 +49,8 @@
       <user>ifdba</user>
       <ConnectionName>interflex</ConnectionName>
       <SID>PROD</SID>
-      <password>ifdba</password>
       <JdbcDriver>oracle.jdbc.driver.OracleDriver</JdbcDriver>
+      <password>ifdba</password>
       <ORACLE_JDBC_TYPE>thin</ORACLE_JDBC_TYPE>
-   </connection>
-   <connection>
-      <ConnectionName>SQLServerConnection</ConnectionName>
-      <URL>"jdbc:sqlserver://srverps:1433;user=sa;password=interpc;";</URL>
-      <ConnectionType>OTHER_JDBC</ConnectionType>
-      <user>sa</user>
-      <JdbcDriver>com.microsoft.sqlserver.jdbc.SQLServerDriver</JdbcDriver>
    </connection>
 </connections>

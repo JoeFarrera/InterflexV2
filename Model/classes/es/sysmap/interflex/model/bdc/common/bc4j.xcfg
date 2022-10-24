@@ -3,7 +3,7 @@
    <AppModuleConfigBag>
       <AppModuleConfig name="AppModuleLocal">
          <DeployPlatform>LOCAL</DeployPlatform>
-         <JDBCName>servidorsga</JDBCName>
+         <JDBCName>interflex</JDBCName>
          <jbo.project>Model</jbo.project>
          <AppModuleJndiName>es.sysmap.interflex.model.dmc.AppModule</AppModuleJndiName>
          <jbo.security.enforce>None</jbo.security.enforce>
@@ -11,32 +11,6 @@
          <ApplicationName>es.sysmap.interflex.model.dmc.AppModule</ApplicationName>
       </AppModuleConfig>
    </AppModuleConfigBag>
-   <ConnectionDefinition name="interflex_test">
-      <ENTRY name="JDBC_PORT" value="1521"/>
-      <ENTRY name="ConnectionType" value="JDBC"/>
-      <ENTRY name="HOSTNAME" value="servidormap"/>
-      <ENTRY name="DeployPassword" value="true"/>
-      <ENTRY name="user" value="ifdbatest"/>
-      <ENTRY name="ConnectionName" value="interflex_test"/>
-      <ENTRY name="SID" value="prod"/>
-      <ENTRY name="password">{904}051CFB950E636545473019B89E082276D9A4EB070B4E630F15</ENTRY>
-      <ENTRY name="JdbcDriver" value="oracle.jdbc.driver.OracleDriver"/>
-      <ENTRY name="ORACLE_JDBC_TYPE" value="thin"/>
-      <ENTRY name="DeployPassword" value="true"/>
-   </ConnectionDefinition>
-   <ConnectionDefinition name="interflex">
-      <ENTRY name="JDBC_PORT" value="1521"/>
-      <ENTRY name="ConnectionType" value="JDBC"/>
-      <ENTRY name="HOSTNAME" value="servidormap2"/>
-      <ENTRY name="DeployPassword" value="true"/>
-      <ENTRY name="user" value="ifdba"/>
-      <ENTRY name="ConnectionName" value="interflex"/>
-      <ENTRY name="SID" value="PROD"/>
-      <ENTRY name="password">{904}056B9475E0B8157F003BFE99DB377F6EFC</ENTRY>
-      <ENTRY name="JdbcDriver" value="oracle.jdbc.driver.OracleDriver"/>
-      <ENTRY name="ORACLE_JDBC_TYPE" value="thin"/>
-      <ENTRY name="DeployPassword" value="true"/>
-   </ConnectionDefinition>
    <ConnectionDefinition name="servidorsga">
       <ENTRY name="JDBC_PORT" value="1521"/>
       <ENTRY name="ConnectionType" value="JDBC"/>
@@ -45,10 +19,38 @@
       <ENTRY name="user" value="ifdba"/>
       <ENTRY name="ConnectionName" value="servidorsga"/>
       <ENTRY name="SID" value="PROD"/>
+      <ENTRY name="JdbcDriver" value="oracle.jdbc.driver.OracleDriver"/>
+      <ENTRY name="password">{904}05186F75D78C62A0E64BD40C9B07505142</ENTRY>
+      <ENTRY name="ORACLE_JDBC_TYPE" value="thin"/>
+      <ENTRY name="DeployPassword" value="true"/>
+   </ConnectionDefinition>
+   <ConnectionDefinition name="interflex_test">
+      <ENTRY name="JDBC_PORT" value="1521"/>
+      <ENTRY name="ConnectionType" value="JDBC"/>
+      <ENTRY name="HOSTNAME" value="servidorsganew"/>
+      <ENTRY name="DeployPassword" value="true"/>
+      <ENTRY name="user" value="ifdbatest"/>
+      <ENTRY name="ConnectionName" value="interflex_test"/>
+      <ENTRY name="SID" value="prod"/>
       <ENTRY name="password">
-         <![CDATA[{904}05D0C96A9FEF5C445B278C6278F78C774F]]>
+         <![CDATA[{904}0540300B00E8FDF26AE55885CF10E3CEDA323548DF3ED57475]]>
       </ENTRY>
       <ENTRY name="JdbcDriver" value="oracle.jdbc.driver.OracleDriver"/>
+      <ENTRY name="ORACLE_JDBC_TYPE" value="thin"/>
+      <ENTRY name="DeployPassword" value="true"/>
+   </ConnectionDefinition>
+   <ConnectionDefinition name="interflex">
+      <ENTRY name="JDBC_PORT" value="1521"/>
+      <ENTRY name="ConnectionType" value="JDBC"/>
+      <ENTRY name="HOSTNAME" value="servidorsganew"/>
+      <ENTRY name="DeployPassword" value="true"/>
+      <ENTRY name="user" value="ifdba"/>
+      <ENTRY name="ConnectionName" value="interflex"/>
+      <ENTRY name="SID" value="PROD"/>
+      <ENTRY name="JdbcDriver" value="oracle.jdbc.driver.OracleDriver"/>
+      <ENTRY name="password">
+         <![CDATA[{904}05C7135D6B17B3CDD458D1801216C74CBC]]>
+      </ENTRY>
       <ENTRY name="ORACLE_JDBC_TYPE" value="thin"/>
       <ENTRY name="DeployPassword" value="true"/>
    </ConnectionDefinition>

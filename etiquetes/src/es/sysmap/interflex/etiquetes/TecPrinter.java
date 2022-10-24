@@ -31,11 +31,11 @@ public class TecPrinter
   public TecPrinter(String port)
   {
     // Michael 19.07.2018 PC with parallel port printer using USB figures as USB00x
-    if (port.startsWith("LPT"))
-      portType = CommPortIdentifier.PORT_PARALLEL;
-    else if (port.startsWith("COM"))
-      portType = CommPortIdentifier.PORT_SERIAL;
- 
+   // if (port.startsWith("LPT"))
+     // portType = CommPortIdentifier.PORT_PARALLEL;
+   // else if (port.startsWith("COM"))
+     // portType = CommPortIdentifier.PORT_SERIAL;
+  portType = CommPortIdentifier.PORT_SERIAL;
     if (portType == CommPortIdentifier.PORT_PARALLEL || portType == CommPortIdentifier.PORT_SERIAL)
       openPort(port);
   }
@@ -49,6 +49,8 @@ public class TecPrinter
     while (portList.hasMoreElements()) 
     {
       portId = (CommPortIdentifier) portList.nextElement();
+      
+      
       
       // Michael 24.11.2016 if (portId.getPortType() == CommPortIdentifier.PORT_PARALLEL) 
       if (portType == CommPortIdentifier.PORT_SERIAL)

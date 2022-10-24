@@ -217,7 +217,8 @@ public class SgaRecursos
       {
         fc.addChoosableFileFilter(fileFilter);
         fc.setFileFilter(fileFilter);
-        fc.setSelectedFile(new File(path + "." + extension));
+        // Michael 21.10.2022: The next line doesn't set the directory if the file doesn't exist
+//        fc.setSelectedFile(new File(path + "." + extension));
         int returnVal = (bOpen ? fc.showOpenDialog(parent) : fc.showSaveDialog(parent));
         if (returnVal == JFileChooser.APPROVE_OPTION)
           return(fc.getSelectedFile());

@@ -205,7 +205,7 @@ public class EtiquetaPicking2022
    {
      this.tdnBarcodeString = tdnBarcodeString;
    }
-  public void PrintEtiquetaCabeos5(String port)
+  public void PrintEtiquetaCabeos5(String port) throws Exception
   {
     // For CAB EOS5 Printers see: cab_programming_manual_x4.pdf
     TecPrinter tecPrinter = new TecPrinter(port);
@@ -247,5 +247,7 @@ public class EtiquetaPicking2022
       }
       tecPrinter.writeData("A 1");
     }
+    else
+      throw new Exception ("No ha sido posible conectar a la impresora del puerto: " + port);
 }
 }

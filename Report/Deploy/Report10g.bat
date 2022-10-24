@@ -1,7 +1,5 @@
 @echo off
+echo arrancando Reports..
 set oldpath=%path%
-set path=.\jre\bin;%PATH%
-echo arrancando SgaBalay...
-java -jar Report.jar
-set path=%oldpath%
-exit
+set path=C:\StyleReportPro\bin\%PATH%
+java -Xms128m -Xmx512m -jar Report.jar 

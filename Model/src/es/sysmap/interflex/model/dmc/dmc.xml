@@ -1243,4 +1243,9 @@
       FullName="es.sysmap.interflex.model.dmc.SgatdnpobView"
       ObjectType="ViewObject" >
    </Containee>
+   <Containee
+      Name="Sgavhistexistusuari"
+      FullName="es.sysmap.interflex.model.dmc.Sgavhistexistusuari"
+      ObjectType="ViewObject" >
+   </Containee>
 </JboPackage>

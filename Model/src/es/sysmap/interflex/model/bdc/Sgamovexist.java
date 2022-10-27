@@ -27,6 +27,7 @@ public class Sgamovexist
   private String bloqueoExist = null;
   private String motivoBloqueo;
   private String existenciaEspecial = null;
+  private String idTipmac = null;
   
 
 
@@ -424,7 +425,17 @@ public class Sgamovexist
   {
     nalbaran = value;
   }
+  
+  public void setIdtipmac(String value)
+  {
+    idTipmac = value;
+  }
 
+
+  public String getIdtipmac()
+  {
+    return idTipmac;
+  }
 
   /**
    * Retorna una estructura movimiento a partir del moviment d'existència

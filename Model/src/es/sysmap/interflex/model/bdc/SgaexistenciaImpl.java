@@ -584,6 +584,9 @@ public class SgaexistenciaImpl extends EntityImpl
     
     setEspecial(movexist.getExistenciaEspecial());
     // Si la quantitat que s'ha mogut es 0, no fem res
+    
+    movexist.setIdtipmac(getSgamac().getIdtipmac());
+    
     // Insertem el registre corresponent a l'històric    
     SgahistexistDefImpl histexist = (SgahistexistDefImpl)SgahistexistImpl.getDefinitionObject();
     histexist.crearHistoric(getDBTransaction(), movexist);
@@ -658,6 +661,9 @@ public class SgaexistenciaImpl extends EntityImpl
          setCanres(getCanres().subtract(movexist.getCanres()));
          quizasBorrarExistencia();
         // Insertem el registre corresponent a l'històric    
+        
+        movexist.setIdtipmac(getSgamac().getIdtipmac());
+        
         SgahistexistDefImpl histexist = (SgahistexistDefImpl)SgahistexistImpl.getDefinitionObject();
         histexist.crearHistoric(getDBTransaction(), movexist);
   
@@ -693,6 +699,7 @@ public class SgaexistenciaImpl extends EntityImpl
     mov.setIdmac(getIdmac());
     mov.setUbipos(getSgamac().getUbipos());
     mov.setObserv((String)this.getEntityDef().getProperty("ESBORRAR_CONTAINER"));
+    mov.setIdtipmac(getSgamac().getIdtipmac());
     treureMaterial(mov);
     
     

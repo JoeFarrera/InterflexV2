@@ -1,55 +1,53 @@
 package es.sysmap.interflex.view;
 import java.awt.*;
-
+import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.table.*;
-
-import oracle.adf.model.*;
-
-import oracle.jbo.uicli.binding.*;
-import oracle.jbo.uicli.controls.*;
+import javax.swing.text.*;
 import oracle.jbo.uicli.jui.*;
-import oracle.jbo.uicli.mom.JUMetaObjectManager;
+import oracle.jbo.uicli.controls.*;
+import oracle.jbo.uicli.binding.*;
+import oracle.adf.model.*;
+import oracle.adf.model.binding.*;
+import java.util.ArrayList;
 
-import sgalib.SgaJTable;
+import oracle.jdeveloper.layout.*;
 import sgalib.SgaJUNavigationBar;
+import sgalib.SgaJTable;
 import sgalib.SgaJUPanel;
 import sgalib.SgaUtilPuesto;
 
-public class PanelSgavhistexistView1 extends SgaJUPanel 
+public class PanelSgavhistexistusuari1 extends SgaJUPanel
+//public class PanelSgavhistexistusuari1 extends JPanel implements JUPanel
 {
   // Panel binding definition used by design time
-  private JUPanelBinding panelBinding = new JUPanelBinding("PanelSgavhistexistView1UIModel");
+  private JUPanelBinding panelBinding = new JUPanelBinding("PanelSgavhistexistusuari1UIModel");
+  private JUStatusBar statusBar = new JUStatusBar();
 
 // Panel containing the data entry fields
 
   private JPanel dataPanel = new JPanel();
   private BorderLayout borderLayout = new BorderLayout();
 
-// The navigation bar
-
-  private SgaJUNavigationBar navBar = new SgaJUNavigationBar();
-
-// The status bar
-
-  private JUStatusBar statusBar = new JUStatusBar();
-
 // Layout used by panel
 
   private GridLayout gridLayout = new GridLayout();
 
-// Fields for attribute:  SgavhistexistView1
+// Fields for attribute:  Sgavhistexistusuari1
 
-  private SgaJTable tableSgavhistexistView1 = new SgaJTable();
-  
+
+   private SgaJTable tableSgavhistexistusuari1 = new SgaJTable();
   private JScrollPane scroller = new JScrollPane();
-
+  
+  
+  
+  private SgaJUNavigationBar navBar = new SgaJUNavigationBar();
 
   /**
    * 
    *  The default constructor for panel
    */
-  public PanelSgavhistexistView1()
+  public PanelSgavhistexistusuari1()
   {
   }
 
@@ -62,37 +60,35 @@ public class PanelSgavhistexistView1 extends SgaJUPanel
     // Layout definition for this panel
     dataPanel.setLayout(gridLayout);
     dataPanel.setMinimumSize(new Dimension(800, 250));
-    dataPanel.setBorder(BorderFactory.createTitledBorder(""));
-    dataPanel.setPreferredSize(new Dimension(800, 250));
+    this.setLayout(borderLayout);
+        dataPanel.setPreferredSize(new Dimension(800, 250));
     dataPanel.setMaximumSize(new Dimension(800, 250));
     navBar.setPreferredSize(new Dimension(800, 29));
     navBar.setMinimumSize(new Dimension(800, 29));
     navBar.setMaximumSize(new Dimension(800, 29));
-    this.setLayout(borderLayout);
     this.setSize(new Dimension(800, 300));
     this.setPreferredSize(new Dimension(800, 300));
     this.setMinimumSize(new Dimension(800, 300));
-    this.setMaximumSize(new Dimension(800, 300));
-    this.setLayout(borderLayout);
-    // Code support for view object:  SgavhistexistView1
-    tableSgavhistexistView1.setModel((TableModel)panelBinding.bindUIControl("SgavhistexistView1", tableSgavhistexistView1));
-    tableSgavhistexistView1.setEditable(false);
-    scroller.getViewport().add(tableSgavhistexistView1, null);
-    // Layout the datapanel and the navigation bar
-    dataPanel.add(scroller);
-    navBar.setModel(JUNavigationBar.createViewBinding(panelBinding, navBar, "SgavhistexistView1", null, "SgavhistexistView1Iter"));
+    this.setMaximumSize(new Dimension(1200, 300));
+
+    // Code support for view object:  Sgavhistexistusuari1
+    tableSgavhistexistusuari1.setModel((TableModel)panelBinding.bindUIControl("Sgavhistexistusuari1", tableSgavhistexistusuari1));
+      navBar.setModel(JUNavigationBar.createViewBinding(panelBinding, navBar, "Sgavhistexistusuari1", null, "Sgavhistexistusuari1Iter"));
     statusBar.setModel(JUStatusBar.createPanelBinding(panelBinding, statusBar));
     add(navBar, BorderLayout.NORTH);
-    add(dataPanel, BorderLayout.CENTER);
+    navBar.setMinimumSize(new Dimension(800, 29));
+    navBar.setMaximumSize(new Dimension(800, 29));
     add(statusBar, BorderLayout.SOUTH);
-
+    scroller.getViewport().add(tableSgavhistexistusuari1, null);
+    // Layout the datapanel and the navigation bar
+    dataPanel.add(scroller);
+    add(dataPanel, BorderLayout.CENTER);
 
 
   }
 
   public static void main(String [] args)
   {
-
     try
     {
         String lookAndFeel = SgaUtilPuesto.getInstance().getProperty("LookAndFeel");
@@ -106,7 +102,7 @@ public class PanelSgavhistexistView1 extends SgaJUPanel
       exemp.printStackTrace();
     }
 
-    PanelSgavhistexistView1 panel = new PanelSgavhistexistView1();
+    PanelSgavhistexistusuari1 panel = new PanelSgavhistexistusuari1();
     panel.setBindingContext(JUTestFrame.startTestFrame("DataBindings.cpx", "AppModuleDataControl", panel, panel.getPanelBinding(), new Dimension(400, 300)));
     panel.revalidate();
   }
@@ -120,44 +116,42 @@ public class PanelSgavhistexistView1 extends SgaJUPanel
     return panelBinding;
   }
 
-  // Afegit xavi
-  public void setPanelBinding(JUPanelBinding panelBinding)
+  private void unRegisterProjectGlobalVariables(BindingContext bindCtx)
   {
-    this.panelBinding = panelBinding;
+    JUUtil.unRegisterNavigationBarInterface(panelBinding, bindCtx);
   }
 
   private void registerProjectGlobalVariables(BindingContext bindCtx)
   {
-    JUUtil.registerNavigationBarInterface(getPanelBinding(), bindCtx);
+    JUUtil.registerNavigationBarInterface(panelBinding, bindCtx);
   }
-  
+
   public void setBindingContext(BindingContext bindCtx)
   {
-    // Afegit xavi
-    createPanelBinding(bindCtx);
-    // Fi afegit xavi
     if (panelBinding.getPanel() == null)
     {
       panelBinding = panelBinding.setup(bindCtx, this);
       registerProjectGlobalVariables(bindCtx);
-      //Truc per que no executi la consulta nomes entrar
-      panelBinding.findIterBinding("SgavhistexistView1Iter").getViewObject().setMaxFetchSize(0);
+            //Truc per que no executi la consulta nomes entrar
+      panelBinding.findIterBinding("Sgavhistexistusuari1Iter").getViewObject().setMaxFetchSize(0);
       panelBinding.refreshControl();
       try
       {
         jbInit();
         panelBinding.refreshControl();
-        panelBinding.findIterBinding("SgavhistexistView1Iter").getViewObject().setMaxFetchSize(-1);
+        panelBinding.findIterBinding("Sgavhistexistusuari1Iter").getViewObject().setMaxFetchSize(-1);
         navBar.enterQueryMode();
-        // Forçem l'entrada a query mode
-        
       }
       catch(Exception ex)
       {
-        JUMetaObjectManager.reportException(null, ex);
+        panelBinding.reportException(ex);
       }
+
     }
   }
-
-  
+    // Afegit xavi
+  public void setPanelBinding(JUPanelBinding panelBinding)
+  {
+    this.panelBinding = panelBinding;
+  }
 }

@@ -9,12 +9,7 @@
    <dependencyList class="java.util.ArrayList">
       <Item class="oracle.jdeveloper.library.ProjectLibrary">
          <locked>true</locked>
-         <sourceOwnerURL path="../InterflexV2.jws"/>
-         <sourceURL path="../Bascula/Bascula.jpr"/>
-      </Item>
-      <Item class="oracle.jdeveloper.library.ProjectLibrary">
-         <locked>true</locked>
-         <sourceOwnerURL path="../InterflexV2.jws"/>
+         <sourceOwnerURL path="../Interflex.jws"/>
          <sourceURL path="../Model/Model.jpr"/>
       </Item>
       <Item class="oracle.jdeveloper.library.ProjectLibrary">
@@ -24,8 +19,13 @@
       </Item>
       <Item class="oracle.jdeveloper.library.ProjectLibrary">
          <locked>true</locked>
-         <sourceOwnerURL path="../Interflex.jws"/>
+         <sourceOwnerURL path="../InterflexV2.jws"/>
          <sourceURL path="../Model/Model.jpr"/>
+      </Item>
+      <Item class="oracle.jdeveloper.library.ProjectLibrary">
+         <locked>true</locked>
+         <sourceOwnerURL path="../InterflexV2.jws"/>
+         <sourceURL path="../Bascula/Bascula.jpr"/>
       </Item>
    </dependencyList>
    <htmlRootDirectory path="public_html/"/>
@@ -1093,6 +1093,14 @@
          <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
       </Item>
       <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavhistexistusuari1.java"/>
+         <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
+         <URL path="src/es/sysmap/interflex/view/PanelSgavhistexistusuari1UIModel.xml"/>
+         <nodeClass>oracle.adf.dt.navigator.nodes.UIFormXmlNode</nodeClass>
+      </Item>
+      <Item class="oracle.ide.model.Reference">
          <URL path="src/es/sysmap/interflex/view/PanelSgavhistexistView1.java"/>
          <nodeClass>oracle.jdeveloper.model.JavaSourceNode</nodeClass>
       </Item>
@@ -1727,11 +1735,11 @@
          <Key>technologyScope</Key>
          <Value class="oracle.ide.model.TechnologyScope">
             <technologyKeys>
-               <Item>JClient</Item>
-               <Item>Swing/AWT</Item>
                <Item>Java</Item>
-               <Item>General</Item>
                <Item>JavaBeans</Item>
+               <Item>Swing/AWT</Item>
+               <Item>General</Item>
+               <Item>JClient</Item>
             </technologyKeys>
          </Value>
       </Item>

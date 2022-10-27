@@ -2941,14 +2941,6 @@ public class AppModuleImpl extends ApplicationModuleImpl implements es.sysmap.in
     return (ViewLinkImpl)findViewLink("SgavsaldiascandidatemanualLdocViewLink1");
   }
 
-  /**
-   * 
-   *  Container's getter for SgacdocSortidesresmanLocator1
-   */
-  public SgacdocSortidesresmanLocatorImpl getSgacdocSortidesresmanLocator1()
-  {
-    return (SgacdocSortidesresmanLocatorImpl)findViewObject("SgacdocSortidesresmanLocator1");
-  }
 
   /**
    * 
@@ -4141,6 +4133,25 @@ public class AppModuleImpl extends ApplicationModuleImpl implements es.sysmap.in
   public SgatdnpobViewImpl getSgatdnpobView1()
   {
     return (SgatdnpobViewImpl)findViewObject("SgatdnpobView1");
+  }
+
+
+  /**
+   * 
+   *  Container's getter for Sgavexistusuari
+   */
+  public SgacdocSortidesresmanLocatorImpl getSgavexistusuari()
+  {
+    return (SgacdocSortidesresmanLocatorImpl)findViewObject("Sgavexistusuari");
+  }
+
+  /**
+   * 
+   *  Container's getter for Sgavhistexistusuari1
+   */
+  public SgavhistexistusuariImpl getSgavhistexistusuari1()
+  {
+    return (SgavhistexistusuariImpl)findViewObject("Sgavhistexistusuari1");
   }
 
 

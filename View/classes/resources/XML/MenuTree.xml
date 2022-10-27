@@ -52,6 +52,7 @@
    </Seccio>   
    <Seccio nomMenu="Històrics" tooltip="Històrics" icona="16x16/plain/cabinet.png" acces="MNUHISTORIC">
    	<Item nomMenu="Moviments d'existències" tooltip="Moviments d'existències" icona="16x16/plain/folder_time.png" panel="es.sysmap.interflex.view.PanelSgavhistexistView1" topicId="existències" acces="MNUHISTORIC"/>
+   	<Item nomMenu="Mov. Exist. Usuari" tooltip="Moviments d'existències per usuari" icona="16x16/plain/folder_time.png" panel="es.sysmap.interflex.view.PanelSgavhistexistusuari1" topicId="existències" acces="MNUHISTORIC"/>
     <Item nomMenu="Históric Ordres de transport" tooltip="Históric d'ordres de transport" icona="16x16/plain/folder_time.png" panel="es.sysmap.interflex.view.PanelSgavhistordtranView1" topicId="histordtran" acces="MNUHISTORIC"/>
    </Seccio>   
    <Seccio nomMenu="Estadístiques" tooltip="Estadístiques" icona="16x16/plain/calendar.png" acces="MNUHISTORIC">

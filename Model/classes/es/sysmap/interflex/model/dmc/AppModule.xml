@@ -875,6 +875,9 @@
       Name="SgatdnpobView1"
       ViewObjectName="es.sysmap.interflex.model.dmc.SgatdnpobView" >
    </ViewUsage>
+   <ViewUsage
+      ViewObjectName="es.sysmap.interflex.model.dmc.Sgavhistexistusuari" >
+   </ViewUsage>
    <AttrArray Name="ViewImports">
       <Item Value="es.sysmap.interflex.model.dmc.SgaubicacionManualView" />
       <Item Value="es.sysmap.interflex.model.dmc.SgaubicacionMiniLoadView" />

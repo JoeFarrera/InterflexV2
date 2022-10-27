@@ -38,6 +38,8 @@ public class SgahistexistImpl extends EntityImpl
   public static final int INTEGRA = 20;
   public static final int TALBARAN = 21;
   public static final int NALBARAN = 22;
+  public static final int IDTIPMAC = 23;
+
 
 
 
@@ -85,6 +87,7 @@ public class SgahistexistImpl extends EntityImpl
     }
     return mDefinitionObject;
   }
+
 
 
 
@@ -495,6 +498,8 @@ public class SgahistexistImpl extends EntityImpl
         return getTalbaran();
       case NALBARAN:
         return getNalbaran();
+      case IDTIPMAC:
+        return getIdtipmac();
       default:
         return super.getAttrInvokeAccessor(index, attrDef);
       }
@@ -565,6 +570,9 @@ public class SgahistexistImpl extends EntityImpl
       case NALBARAN:
         setNalbaran((String)value);
         return;
+      case IDTIPMAC:
+        setIdtipmac((String)value);
+        return;
       default:
         super.setAttrInvokeAccessor(index, value, attrDef);
         return;
@@ -607,6 +615,7 @@ public class SgahistexistImpl extends EntityImpl
     setIntegra(movexist.getIntegra());
     setTalbaran(movexist.getTalbaran());
     setNalbaran(movexist.getNalbaran());    
+    setIdtipmac(movexist.getIdtipmac());
   }
 
 
@@ -673,6 +682,25 @@ public class SgahistexistImpl extends EntityImpl
   public void setNalbaran(String value)
   {
     setAttributeInternal(NALBARAN, value);
+  }
+
+
+  /**
+   * 
+   *  Gets the attribute value for Idtipmac, using the alias name Idtipmac
+   */
+  public String getIdtipmac()
+  {
+    return (String)getAttributeInternal(IDTIPMAC);
+  }
+
+  /**
+   * 
+   *  Sets <code>value</code> as the attribute value for Idtipmac
+   */
+  public void setIdtipmac(String value)
+  {
+    setAttributeInternal(IDTIPMAC, value);
   }
 
   /**

@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<DCContainer
+   id="PanelSgavhistexistusuari1UIModel"
+   xmlns="http://xmlns.oracle.com/adfm/uimodel"
+   version="10.1.2.17.96"
+   Package="es.sysmap.interflex.view"
+   FindMode="false"
+   EnableTokenValidation="true" >
+   <Contents >
+      <DCIterator
+         id="Sgavhistexistusuari1Iter"
+         Binds="AppModuleDataControl.Sgavhistexistusuari1" >
+      </DCIterator>
+      <DCControl
+         id="Sgavhistexistusuari1"
+         DefClass="oracle.jbo.uicli.jui.JUTableDef"
+         SubType="DCTable"
+         BindingClass="oracle.jbo.uicli.jui.JUTableBinding"
+         IterBinding="Sgavhistexistusuari1Iter"
+         ApplyValidation="false"
+         isDynamic="false" >
+         <AttrNames>
+            <Item Value="Fecmoviment" />
+            <Item Value="Fecha" />
+            <Item Value="Tipmoviment" />
+            <Item Value="Idmac" />
+            <Item Value="Idartif" />
+            <Item Value="Canmov" />
+            <Item Value="Nalbaran" />
+            <Item Value="Pesmov" />
+            <Item Value="Puesto" />
+            <Item Value="Usuari" />
+            <Item Value="Tipmac" />
+         </AttrNames>
+      </DCControl>
+   </Contents>
+</DCContainer>

@@ -315,6 +315,18 @@
          <Attr Name="_DisplaySize" Value="22" />
       </DesignTime>
    </Attribute>
+   <Attribute
+      Name="Idtipmac"
+      Precision="3"
+      ColumnName="IDTIPMAC"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="SGAHISTEXIST" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="3" />
+      </DesignTime>
+   </Attribute>
    <Key
       Name="SgahistexistPk11111157937656" >
       <AttrArray Name="Attributes">
@@ -323,6 +335,83 @@
       <DesignTime>
          <Attr Name="_DBObjectName" Value="SGAHISTEXIST_PK11111157937656" />
          <Attr Name="_isPrimary" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0011174" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgahistexist.Idmov" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0011174" />
+         <Attr Name="_checkCondition" Value="&#34;IDMOV&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0011175" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgahistexist.Tipmov" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0011175" />
+         <Attr Name="_checkCondition" Value="&#34;TIPMOV&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0011176" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgahistexist.Idmac" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0011176" />
+         <Attr Name="_checkCondition" Value="&#34;IDMAC&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0011177" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgahistexist.Idart" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0011177" />
+         <Attr Name="_checkCondition" Value="&#34;IDART&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0011178" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgahistexist.Canini" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0011178" />
+         <Attr Name="_checkCondition" Value="&#34;CANINI&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0011179" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgahistexist.Canfin" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0011179" />
+         <Attr Name="_checkCondition" Value="&#34;CANFIN&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC0011180" >
+      <AttrArray Name="Attributes">
+         <Item Value="es.sysmap.interflex.model.bdc.Sgahistexist.Createdon" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_DBObjectName" Value="SYS_C0011180" />
+         <Attr Name="_checkCondition" Value="&#34;CREATEDON&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
       </DesignTime>
    </Key>
    <Key

@@ -23,6 +23,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import oracle.jbo.uicli.mom.JUMetaObjectManager;
 import sgalib.SgaRecursos;
+import sgalib.SgaUtilPuesto;
 
 
 public class PackingList 
@@ -193,8 +194,22 @@ public class PackingList
     {
         
        String fileName = nAlbaran != null ? nAlbaran.replaceAll("[^a-zA-Z0-9.-]", "_") : "Packing_List";
-       File file = SgaRecursos.seleccionarFitxer("C:\\Packing Lists\\" + fileName, "xls", "Archivos EXCEL", false, null);
+       String directoriPackingLists = SgaUtilPuesto.getInstance().getProperty("DirectoriExcel");
+       if (directoriPackingLists == null)
+       {
+         directoriPackingLists = "C:\\Packing Lists\\";
+         SgaUtilPuesto.getInstance().storeNewProperty("DirectoriExcel", directoriPackingLists);
+       }
+       
+       
+       File file = SgaRecursos.seleccionarFitxer(directoriPackingLists + "\\" + fileName, "xls", "Archivos EXCEL", false, null);
+       // TODO: See has another directory been specified
        if(file != null) {
+          // Update directory for storing excels
+          String absPath = file.getAbsolutePath();
+          String currentPath = absPath.substring(0, absPath.lastIndexOf(File.separator)); 
+          if (currentPath != directoriPackingLists)
+            SgaUtilPuesto.getInstance().storeNewProperty("DirectoriExcel", currentPath);
           // EXCEL_DATA es optimizar por datos - normalmente deseable
           gen = ExcelGenerator.createExcelGenerator( new FileOutputStream(file), ExcelGenerator.EXCEL_DATA);
        }

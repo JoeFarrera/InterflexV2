@@ -876,6 +876,7 @@
       ViewObjectName="es.sysmap.interflex.model.dmc.SgatdnpobView" >
    </ViewUsage>
    <ViewUsage
+      Name="Sgavhistexistusuari1"
       ViewObjectName="es.sysmap.interflex.model.dmc.Sgavhistexistusuari" >
    </ViewUsage>
    <AttrArray Name="ViewImports">

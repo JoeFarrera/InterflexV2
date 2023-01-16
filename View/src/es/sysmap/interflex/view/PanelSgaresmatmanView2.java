@@ -364,16 +364,33 @@ public class PanelSgaresmatmanView2 extends SgaJUPanel
     }
   }
   
-  private void quizasImprimirEtiquetes(String iddoc, String idlin)
+  private void quizasImprimirEtiquetes(String iddoc, String idlin) throws Exception
   {
-    try
+    AppModule appModule = (AppModule)panelBinding.getApplication().getApplicationModule();
+    while (true)
     {
-      AppModule appModule = (AppModule)panelBinding.getApplication().getApplicationModule();
-      Etiqueta.imprimirEtiqueta(appModule, iddoc, idlin);
-    }
-    catch(Exception ex)
-    {
-      JUMetaObjectManager.reportException(null, ex);
+      try
+      {
+        Etiqueta.imprimirEtiqueta(appModule, iddoc, idlin);
+        break;
+      }
+      catch (Exception ex)
+      {
+         int result = JOptionPane.showOptionDialog(
+              Interflex.getInstance(),                                       // the parent that the dialog blocks
+              "Error d'impressió d'etiqueta: " + ex.getMessage(),
+              "Error de impressió d'etiqueta",                                    // the dialog message array
+              JOptionPane.DEFAULT_OPTION,                 // option type
+              JOptionPane.WARNING_MESSAGE,            // message type
+              null,                                       // optional icon, use null to use the default icon
+              new String [] { "Reintentar", "Cancelar"},                                    // options string array, will be made into buttons
+              null                                        // option that should be made into a default button
+          );
+          if (result == 0)
+            continue;
+          else 
+            throw ex;
+        }
     }
   }
 
